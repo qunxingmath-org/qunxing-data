@@ -18,11 +18,11 @@
   ],
   "answer_type": "proof",
   "checkability": "falsifiable",
-  "statement_fidelity": "unaudited",
+  "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
     "date": "2026-11-21",
-    "verdict": "fail"
+    "verdict": "pass_with_fixes"
   },
   "source_quote_lang": "zh",
   "formal": [],

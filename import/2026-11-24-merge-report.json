@@ -45,5 +45,53 @@
     "unlisted": 8,
     "possible_duplicates": 45
   },
-  "flags_file": "import/2026-11-24-review-flags.json"
+  "flags_file": "import/2026-11-24-review-flags.json",
+  "after_removal": {
+    "total": 2228,
+    "tracks": {
+      "open": 2164,
+      "verify": 64
+    },
+    "removed": 34,
+    "removed_log": "import/2026-11-24-removed.json",
+    "audit_reclassified": "QX-P-000040/046/049/050/052：原包写“FAIL（……已补全/已修正）”，改记为 pass_with_fixes",
+    "problem_type_primary": {
+      "decide": 822,
+      "prove": 545,
+      "existence": 288,
+      "classify": 168,
+      "value": 164,
+      "bound": 112,
+      "construct": 64,
+      "asymptotic": 43,
+      "compute": 13,
+      "disprove": 5,
+      "special_case": 4
+    },
+    "answer_type": {
+      "yes_no": 947,
+      "proof": 489,
+      "object": 233,
+      "value": 199,
+      "bound": 186,
+      "classification": 174
+    },
+    "checkability": {
+      "neither": 956,
+      "falsifiable": 751,
+      "unknown": 382,
+      "verifiable": 122,
+      "decidable": 17
+    },
+    "msc_confidence": {
+      "medium": 1638,
+      "low": 563,
+      "high": 27
+    },
+    "flags": {
+      "statement_fidelity_unknown": 268,
+      "possible_duplicates": 43,
+      "statement_audit_fail": 0
+    }
+  }
 }

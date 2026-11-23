@@ -22,7 +22,7 @@
   "statement_audit": {
     "by": "agent",
     "date": "2026-11-21",
-    "verdict": "fail"
+    "verdict": "pass_with_fixes"
   },
   "source_quote_lang": "zh",
   "formal": [],
@@ -83,7 +83,9 @@
     },
     "depth": "deep",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 原包核对：条件(3) 转录失准 1 处，已按 Wagstaff 形式修正；条件(1) 的精确变体待核。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {

@@ -7,7 +7,7 @@
 - **贡献者名单**：审核过的昵称。
 
 > 状态：
-> - 2262 张题卡，全部是**草稿**（card_status = draft）。
+> - 2228 张题卡，全部是**草稿**（card_status = draft）。首批导入 2262 张，2026-11-24 删除了题面有异议的 34 张。
 > - 题面、来源和查新记录来自原包。
 > - 题型、答案形式、MSC 分类、人话版和验收条件由 AI（DeepSeek）补出，经过机器检查，但**未经人工审校**。
 
@@ -41,12 +41,13 @@
 - 2262 张全部补上了题型、答案形式、可检验性、MSC 分类号（`msc2020.source = agent`）、关键词、英文标题、人话版和验收条件。
   - 52 张原来只有一句话题面，DeepSeek 照原文起草了题面，放在正文的"题面草稿（AI 起草，待核）"一节，原题面没动。
 - 补了验收条件，按规格题卡版本（card_rev）重算，修订号升到 2。查新结论是在旧版本上做的，开题前要重新查新。
-- 复核清单里的问题已经标进题卡，标记只加不删：
-  - 34 张题面有异议（`statement_disputed`），修正前不进抽题，其中 8 张是原包的占位条目，已隐藏（`visibility = unlisted`）；
-  - 279 张题面待补全（`statement_fidelity = unknown`）；
-  - 45 张可能与别的卡重复。
+- 复核清单里的问题已经处理：
+  - **题面有异议的 34 张已删除**（用户决定），其中 8 张是原包的占位条目。这些编号作废、不再复用，清单和原因见 `import/2026-11-24-removed.json`。
+  - 268 张题面待补全（`statement_fidelity = unknown`），具体说明写在各卡的 `novelty.statement_issues` 里；
+  - 43 张可能与别的卡重复（`provenance.possible_duplicates`）。
+- 首批导入时记为"核对不通过"的 5 张，原包其实写的是"FAIL（……已补全／已修正）"，已改记为修正后通过（`pass_with_fixes`）。其中 QX-P-000040 还有一个条件待核，已写进说明。
 
-问题的具体说明写在各卡的 `novelty.statement_issues` 里，清单见 `import/2026-11-24-review-flags.json`，统计见 `import/2026-11-24-merge-report.json`。
+标记清单见 `import/2026-11-24-review-flags.json`，统计见 `import/2026-11-24-merge-report.json`。
 
 ## 许可
 
