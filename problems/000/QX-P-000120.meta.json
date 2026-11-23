@@ -1,0 +1,127 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000120",
+  "revision": 1,
+  "card_rev": "67c3612841e8dbc6",
+  "title": "多项式 Hirsch 猜想（多面体图直径的多项式上界）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Hirsch 猜想弱化版（Kalai 1990s 主推；Polymath3 2009）",
+  "first_published": null,
+  "sources": [
+    {
+      "cite": "HF id=44；Kalai Polymath3 项目页；Wikipedia \"Hirsch conjecture\"",
+      "url": "https://en.wikipedia.org/wiki/Hirsch_conjecture",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "文献",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "HF 记录",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "67c3612841e8dbc6",
+    "scope": {
+      "sources": [
+        "WebSearch"
+      ],
+      "search_terms": [
+        "polynomial Hirsch conjecture polytope diameter 2024 2025 status open"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "组合几何/离散几何",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；线性 Hirsch 已被 Santos 2012 反例否定，多项式版本（Polymath3 主攻目标）仍开放；最佳上界仍为 Kalai–Kleitman 拟多项式 30 年未改进；与单纯形算法复杂性直接相关。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-1044",
+    "package_path": "02_一区二区_难度待定/B-1044_polynomial-hirsch-conjecture",
+    "tier_hint": "B(一二区待定)",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

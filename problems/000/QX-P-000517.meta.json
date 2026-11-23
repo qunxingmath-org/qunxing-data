@@ -1,0 +1,133 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000517",
+  "revision": 1,
+  "card_rev": "508f0113a82db466",
+  "title": "Herzog–Schönheim 猜想（非可解群情形）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Herzog & Schönheim（1974）",
+  "first_published": "1974（猜想）；2026-11（可解情形解决）",
+  "sources": [
+    {
+      "cite": "arXiv:2611.11002 \"The Herzog–Schönheim Conjecture for Solvable Groups\", 2026-11-07",
+      "url": "https://arxiv.org/abs/2611.11002",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "arXiv 摘要",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "社区/综述",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "arxiv",
+      "id": "2611.11002",
+      "url": "https://arxiv.org/abs/2611.11002"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "508f0113a82db466",
+    "scope": {
+      "sources": [
+        "WebSearch"
+      ],
+      "search_terms": [
+        "Herzog-Schönheim conjecture group coset partition repeated index non-solvable 2024 2025"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "群论/加性组合",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；猜想1974年提出，可解群（含无限）情形2026-11已证（arXiv:2611.11002），非可解情形为剩余核心；2025 首批非可解进展（Garonzi 等单群/对称群、A_5 直积），方向明确活跃，具体可攻。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-909",
+    "package_path": "02_一区二区_难度待定/B-909_herzog-schonheim-nonsolvable",
+    "tier_hint": "B(一二区难度待定)",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

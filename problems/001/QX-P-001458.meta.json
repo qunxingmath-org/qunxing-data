@@ -1,0 +1,128 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-001458",
+  "revision": 1,
+  "card_rev": "054b65dd655b471a",
+  "title": "batch_I I-078：是否存在 n>1 使 gnu(n)=n（群完全数 group-perfect number：n 阶群的同",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass_with_fixes"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Glen M Wilson",
+  "first_published": "2010-11-18；最后活动: 2010-11-18",
+  "sources": [
+    {
+      "cite": "MathOverflow",
+      "url": "https://mathoverflow.net/questions/46444",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "MathOverflow API 全文核验",
+      "url": "https://mathoverflow.net/questions/46444",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "MO 46444 全文核验",
+      "url": "https://mathoverflow.net/questions/46444",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "mo",
+      "id": "46444",
+      "url": "https://mathoverflow.net/questions/46444"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://mathoverflow.net/questions/46444",
+      "https://mathoverflow.net/questions/46444"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "054b65dd655b471a",
+    "scope": {
+      "sources": [
+        "SOL验证波3（WebSearch×2）",
+        "mathoverflow API",
+        "池内查重"
+      ],
+      "search_terms": [],
+      "as_of": "2026-11-21"
+    },
+    "depth": "basic",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "群论 / 计数",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 2,
+    "basis": "package",
+    "note": "三四区·小问题；Glen M Wilson 2010 引 Conway 等《Counting: Gnus, Moas, and other Exotica》；0 回答；Faisal/ Putman 评论确认开放。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "C-739",
+    "package_path": "03_三四区_小问题/C-739_I-078_gnu_n_equal_n",
+    "tier_hint": "C",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

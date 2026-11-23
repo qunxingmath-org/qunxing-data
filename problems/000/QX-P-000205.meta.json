@@ -1,0 +1,127 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000205",
+  "revision": 1,
+  "card_rev": "1f68b3df97ad25f9",
+  "title": "单色空三角形（原批次 A-088）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "OPG 编录（mdevos, 2008-10-08）",
+  "first_published": "2008-10-08",
+  "sources": [
+    {
+      "cite": "OPG 页",
+      "url": "https://www.openproblemgarden.org/op/monochromatic_empty_triangles",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "Open Problem Garden 页（curl 抓取）",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "arXiv API sweep",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "opg",
+      "id": "monochromatic_empty_triangles",
+      "url": "https://www.openproblemgarden.org/op/monochromatic_empty_triangles"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "1f68b3df97ad25f9",
+    "scope": {
+      "sources": [
+        "Open Problem Garden（curl）",
+        "arXiv API"
+      ],
+      "search_terms": [
+        "monochromatic_empty_triangles",
+        "abs:\"monochromatic empty triangles\"（重试后成功）"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "Ramsey 几何/离散几何（主）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；OPG 标注 High；2026-01 有邻域文献（almost empty 单色三角形计数）活跃；基本存在性问题未决。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-145",
+    "package_path": "02_一区二区_难度待定/B-145_monochromatic-empty-triangles",
+    "tier_hint": "B(一二区待定)",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

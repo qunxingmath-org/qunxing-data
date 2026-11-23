@@ -1,0 +1,139 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-001443",
+  "revision": 1,
+  "card_rev": "c36332029df39890",
+  "title": "batch_I I-129(提取2)：环面可嵌入图类（toroidal graphs）的禁用子式完全集是什么？（R–S 保证有限但证明无效",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "user676464327",
+  "first_published": "2020-04-24；最后活动: 2020-05-23",
+  "sources": [
+    {
+      "cite": "MathOverflow",
+      "url": "https://mathoverflow.net/questions/358385",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "MathOverflow API 全文核验",
+      "url": "https://mathoverflow.net/questions/358385",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "MO 358385 全文核验",
+      "url": "https://mathoverflow.net/questions/358385",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "Myrvold–Woodcock",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "mo",
+      "id": "358385",
+      "url": "https://mathoverflow.net/questions/358385"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://mathoverflow.net/questions/358385",
+      "https://mathoverflow.net/questions/358385"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "c36332029df39890",
+    "scope": {
+      "sources": [
+        "batch_C遗留轮",
+        "mathoverflow API",
+        "池内查重"
+      ],
+      "search_terms": [],
+      "as_of": "2026-11-21"
+    },
+    "depth": "basic",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "图论 / 子式理论",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 2,
+    "basis": "package",
+    "note": "三四区·小问题；MO 358385 答案（a358414, 票18）；Myrvold–Woodcock 论文；Timothy Chow 等评论讨论为何 R–S 不可被 proof-mining 出界。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "C-724",
+    "package_path": "03_三四区_小问题/C-724_I-129_toroidal_forbidden_minors",
+    "tier_hint": "C",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": [
+      "QX-P-000045",
+      "QX-P-000401"
+    ]
+  }
+}

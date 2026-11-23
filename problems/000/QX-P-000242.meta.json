@@ -1,0 +1,127 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000242",
+  "revision": 1,
+  "card_rev": "53fb95b1394825c2",
+  "title": "大直线或大团（原批次 A-079）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Kára, Pór, Wood (Discrete Comput. Geom. 2005)",
+  "first_published": "2005（OPG 编录）",
+  "sources": [
+    {
+      "cite": "OPG 页",
+      "url": "https://www.openproblemgarden.org/op/big_line_or_big_clique_in_planar_point_sets",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "Open Problem Garden 页（curl 抓取）",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "arXiv API sweep",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "opg",
+      "id": "big_line_or_big_clique_in_planar_point_sets",
+      "url": "https://www.openproblemgarden.org/op/big_line_or_big_clique_in_planar_point_sets"
+    }
+  ],
+  "informal_status": {
+    "value": "partially_solved",
+    "strength": null,
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "partial_result",
+    "card_rev": "53fb95b1394825c2",
+    "scope": {
+      "sources": [
+        "Open Problem Garden（curl）",
+        "arXiv API"
+      ],
+      "search_terms": [
+        "big_line_or_big_clique_in_planar_point_sets",
+        "big line（point sets）"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "离散几何（主）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；对每个 (l,c) 求 N(l,c)；2026-08/09 两篇新文推进 (4,6)/almost-7 情形——具体参数逐个攻，活跃。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-194",
+    "package_path": "02_一区二区_难度待定/B-194_big-line-big-clique",
+    "tier_hint": "B(一二区待定)",
+    "status_raw": "PARTIAL",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

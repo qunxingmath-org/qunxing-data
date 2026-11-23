@@ -1,0 +1,127 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000870",
+  "revision": 1,
+  "card_rev": "4256110241dfff60",
+  "title": "Kirby 1.72（Adams）：等长\"卡住\"平凡链（equilateral stuck unknot）是否存在",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "unaudited",
+  "statement_audit": {
+    "by": "agent",
+    "date": null,
+    "verdict": "not_sampled"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "C. Adams（经 Kirby 清单 1.72）",
+  "first_published": null,
+  "sources": [
+    {
+      "cite": "HF id=2731；unsolvedmath.com/problems/KP-1.72；Wikipedia \"Stuck unknot\"",
+      "url": null,
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "HF 记录",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "文献",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "4256110241dfff60",
+    "scope": {
+      "sources": [
+        "WebSearch"
+      ],
+      "search_terms": [
+        "equilateral stuck unknots conjecture open"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "basic",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "几何纽结理论（多边形链/stick knots）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 2,
+    "basis": "package",
+    "note": "三四区·小问题；不等长卡住平凡链已知（六边形例）；等长版本开放；构型空间连通性+计算实验双轨；Wikipedia stuck unknot 条目跟踪。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "C-1241",
+    "package_path": "03_三四区_小问题/C-1241_kp172-equilateral-stuck-unknot",
+    "tier_hint": "C(三四区小问题)",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

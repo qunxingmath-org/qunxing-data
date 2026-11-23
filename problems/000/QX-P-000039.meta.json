@@ -1,0 +1,121 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000039",
+  "revision": 1,
+  "card_rev": "23e9e6c7a4ddb097",
+  "title": "Fortune猜想：Fortunate数都不是合数",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "R. F. Fortune (1988)",
+  "first_published": "1988",
+  "sources": [
+    {
+      "cite": "Wikipedia: Fortunate number",
+      "url": "https://en.wikipedia.org/wiki/Fortunate_number",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "Wikipedia条目(batch_G采集,HandWiki同源)",
+      "url": "https://en.wikipedia.org/wiki/Fortunate_number",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "WebSearch(查新)",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://en.wikipedia.org/wiki/Fortunate_number"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "23e9e6c7a4ddb097",
+    "scope": {
+      "sources": [
+        "WebSearch"
+      ],
+      "search_terms": [
+        "Fortunate numbers conjecture composite Fortunate number status"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "数论（素数/序列）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·易证明；A层（初等有限验证）：第n个Fortunate数 = p_n#+g_n 的最小素数差；对每个n计算所有使p_n#+k为素数的最小k>1并检查合数性——对更大n直接延链计算即得结果；现验证至n≈3000(2017)。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "A-602",
+    "package_path": "01_一区二区_易证明/A-602_composite-fortunate-numbers",
+    "tier_hint": "A",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

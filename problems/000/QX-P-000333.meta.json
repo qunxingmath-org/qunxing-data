@@ -1,0 +1,131 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000333",
+  "revision": 1,
+  "card_rev": "5179555a273606b8",
+  "title": "Erdos P52: sum-product |A+A| and |AA| >= |A|^(2-epsilon) over integers",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Paul Erdős(及合作者; 由T. F. Bloom站点整理)",
+  "first_published": "见上述文献年份; 站点页面活跃维护",
+  "sources": [
+    {
+      "cite": "Erdős–Szemerédi 1983传统; 站点出处: (综合Er系列)",
+      "url": "https://www.erdosproblems.com/52",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "erdosproblems.com/#52 live",
+      "url": "https://www.erdosproblems.com/52",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "batch_F采集快照",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "erdos",
+      "id": "52",
+      "url": "https://www.erdosproblems.com/52"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://www.erdosproblems.com/52"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "5179555a273606b8",
+    "scope": {
+      "sources": [
+        "arxiv.org search",
+        "erdosproblems.com/52 (live)",
+        "原始文献核查"
+      ],
+      "search_terms": [
+        "页面状态",
+        "'sum-product conjecture exponent'",
+        "E–S 1983→Cu25纪录链+ BSSZ26实数否定"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "数论 / 加性组合",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；B层理由: 和积现象中心问题; 指数纪录1.3356距2很远; 实数情形2026年出现否定构造(BSSZ26)使问题版图刚变化; 未冻结。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-305",
+    "package_path": "02_一区二区_难度待定/B-305_sum-product-integers",
+    "tier_hint": "B(一二区难度待定)",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

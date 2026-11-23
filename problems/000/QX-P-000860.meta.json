@@ -1,0 +1,127 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000860",
+  "revision": 1,
+  "card_rev": "5f3e530a93526736",
+  "title": "Thomassen 猜想：k-正则无重弧有向图含 (k+1 choose 2) 条弧不交有向圈",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "unaudited",
+  "statement_audit": {
+    "by": "agent",
+    "date": null,
+    "verdict": "not_sampled"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "C. Thomassen（OPG 条目）",
+  "first_published": null,
+  "sources": [
+    {
+      "cite": "OPG；HF id=3271",
+      "url": null,
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "HF 记录",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "文献",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "5f3e530a93526736",
+    "scope": {
+      "sources": [
+        "WebSearch"
+      ],
+      "search_terms": [
+        "arc-disjoint directed cycles regular digraph Thomassen open"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "basic",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "图论（有向图圈分解）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 2,
+    "basis": "package",
+    "note": "三四区·小问题；完全对称有向图 K_{k+1} 显示界 (k+1 choose 2) 的紧性候选；Alon–McDiarmid–Molloy Ω(k²) 弧不交下界已知；与 Bermond–Thomassen（池内 B-1021 点不交版）平行。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "C-1232",
+    "package_path": "03_三四区_小问题/C-1232_arc-disjoint-cycles-regular-digraph",
+    "tier_hint": "C(三四区小问题)",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

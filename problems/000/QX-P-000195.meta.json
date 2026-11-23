@@ -1,0 +1,129 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000195",
+  "revision": 1,
+  "card_rev": "60e0e381a3eff9a7",
+  "title": "随机图 χ(G)−ζ(G) 发散（EP#625；原批次 A-027）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Heckel（1990s 提出），EP#625 编录",
+  "first_published": "页面 last edited 2026-09-05",
+  "sources": [
+    {
+      "cite": "erdosproblems.com #625",
+      "url": "https://www.erdosproblems.com/625",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "erdosproblems.com #625（curl 抓取）",
+      "url": "https://www.erdosproblems.com/625",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "arXiv API sweep",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "erdos",
+      "id": "625",
+      "url": "https://www.erdosproblems.com/625"
+    }
+  ],
+  "informal_status": {
+    "value": "partially_solved",
+    "strength": null,
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://www.erdosproblems.com/625"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "partial_result",
+    "card_rev": "60e0e381a3eff9a7",
+    "scope": {
+      "sources": [
+        "arXiv API",
+        "erdosproblems.com"
+      ],
+      "search_terms": [
+        "/625 直取",
+        "abs:\"cochromatic\""
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "随机图论（主）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；Heckel 猜想的收敛版；近年（2024/2026）有连续进展，方法链（nibble/second moment/分支过程）清晰但未封顶；非易证明。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-135",
+    "package_path": "02_一区二区_难度待定/B-135_ep625-random-graph-chi-zeta-gap",
+    "tier_hint": "B(一二区待定)",
+    "status_raw": "PARTIAL",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

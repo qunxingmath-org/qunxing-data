@@ -1,0 +1,129 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000193",
+  "revision": 1,
+  "card_rev": "5f004ded7056a3c8",
+  "title": "两组点间相异距离计数（EP#661；原批次 A-030）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Paul Erdős",
+  "first_published": "页面 last edited 2026-01-11",
+  "sources": [
+    {
+      "cite": "erdosproblems.com #661",
+      "url": "https://www.erdosproblems.com/661",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "erdosproblems.com #661（curl 抓取）",
+      "url": "https://www.erdosproblems.com/661",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "arXiv API sweep",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "erdos",
+      "id": "661",
+      "url": "https://www.erdosproblems.com/661"
+    }
+  ],
+  "informal_status": {
+    "value": "partially_solved",
+    "strength": null,
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://www.erdosproblems.com/661"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "partial_result",
+    "card_rev": "5f004ded7056a3c8",
+    "scope": {
+      "sources": [
+        "arXiv API",
+        "erdosproblems.com"
+      ],
+      "search_terms": [
+        "/661 直取",
+        "abs:\"distinct distances\""
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "组合几何（主）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；二维\"双集\"相异距离变体；Guth–Katz 型工具适用性不明；非易证明。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-133",
+    "package_path": "02_一区二区_难度待定/B-133_ep661-two-set-distinct-distances",
+    "tier_hint": "B(一二区待定)",
+    "status_raw": "PARTIAL",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

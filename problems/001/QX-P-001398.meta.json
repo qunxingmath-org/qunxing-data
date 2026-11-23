@@ -1,0 +1,121 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-001398",
+  "revision": 1,
+  "card_rev": "827a56d4f30b2bd6",
+  "title": "Klamkin–Liu 四面体立体角控制不等式（Crux 1581）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Murray S. Klamkin & Andy Liu（Crux 1581, 1990/1991）",
+  "first_published": null,
+  "sources": [
+    {
+      "cite": "Crux v41n10 (2015) 官方重印",
+      "url": "https://cms.math.ca/wp-content/uploads/crux-pdfs/CRUXv41n10.pdf",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "Crux v41n10 (2015) 官方重印",
+      "url": "https://cms.math.ca/wp-content/uploads/crux-pdfs/CRUXv41n10.pdf",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://cms.math.ca/wp-content/uploads/crux-pdfs/CRUXv41n10.pdf"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "827a56d4f30b2bd6",
+    "scope": {
+      "sources": [
+        "WebSearch"
+      ],
+      "search_terms": [
+        "Klamkin Liu tetrahedron circumsphere equal solid angles majorize open"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "basic",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "几何/不等式",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 2,
+    "basis": "package",
+    "note": "三四区·小问题；平面情形证明已知，三维尝试方向明确——非常适合入手。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "C-654",
+    "package_path": "03_三四区_小问题/C-654-klamkin-liu-tetrahedron-majorization",
+    "tier_hint": "C",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

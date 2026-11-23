@@ -1,0 +1,97 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-001663",
+  "revision": 1,
+  "card_rev": "c0461f0cb3a730df",
+  "title": "Erdős 等差数列猜想（EP#3，$5000）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "unaudited",
+  "statement_audit": null,
+  "source_quote_lang": null,
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": null,
+  "first_published": null,
+  "sources": [
+    {
+      "cite": "erdos:3",
+      "url": "https://www.erdosproblems.com/3",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "erdos",
+      "id": "3",
+      "url": "https://www.erdosproblems.com/3"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "weak",
+    "as_of": "2026-11-20",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-20"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-20",
+    "result": "not_found_in_scope",
+    "card_rev": "c0461f0cb3a730df",
+    "scope": {
+      "sources": [],
+      "search_terms": [],
+      "as_of": "2026-11-20"
+    },
+    "depth": "basic",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": null
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "加性组合",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "B 层"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-a",
+    "package_id": "B34",
+    "package_path": "problems/B34_erdos_ap",
+    "tier_hint": "B 层",
+    "status_raw": "OPEN_SUPPORTED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

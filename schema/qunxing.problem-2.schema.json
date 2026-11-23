@@ -1,0 +1,252 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.qunxingmath.org/schema/qunxing.problem-2.schema.json",
+  "title": "群星题卡（结构化部分，<id>.meta.json）/ Qunxing problem card (structured part)",
+  "description": "题卡格式 v2.2。题面等文字放在同名的 .text.md（CC BY-SA 4.0），本文件只放结构化元数据（CC0 1.0）。草稿（draft）只要求身份、轨道、来源、状态和查新；curated 及以上再要求题型、答案形式、可检验性、MSC 和验收条件。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "format_version", "id", "revision", "card_rev", "title", "language", "card_status", "track", "checkability", "statement_fidelity", "informal_status", "formal_status", "novelty", "visibility", "license"],
+  "properties": {
+    "schema": { "const": "qunxing.problem/2", "description": "固定值 / fixed" },
+    "format_version": { "enum": ["2.2"], "description": "题卡格式的小版本 / card format minor version" },
+    "id": { "type": "string", "pattern": "^(QX-P-[0-9]{6}|LOCAL-[0-9a-f]{12})$", "description": "编号：正式为 QX-P-000142，本地草稿为 LOCAL-<题面哈希前 12 位> / card id" },
+    "revision": { "type": "integer", "minimum": 1, "description": "题面、约定、歧义、验收任一项改动就加 1 / bumped when the statement changes" },
+    "card_rev": { "type": "string", "pattern": "^[0-9a-f]{16}$", "description": "内容哈希：sha256(规范化 JSON{题面, conventions, ambiguity, acceptance, challenge_sha256}) 前 16 位 / content hash" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 120, "description": "精确标题 / precise title" },
+    "title_en": { "type": ["string", "null"], "maxLength": 160, "description": "英文标题 / English title" },
+    "aliases": { "type": "array", "items": { "type": "string" }, "uniqueItems": true, "description": "别名和常见叫法 / aliases" },
+    "family": { "type": ["string", "null"], "description": "同源题组 / problem family" },
+    "parent": { "type": ["string", "null"], "description": "母题编号 / parent card id" },
+    "language": { "type": "string", "pattern": "^[a-z]{2}(-[A-Za-z]{2,8})?$", "description": "正文语言 / language of the text file" },
+    "card_status": { "enum": ["draft", "curated", "audited"], "description": "draft 草稿 / curated 已整理 / audited 已核对题面与来源" },
+    "track": { "enum": ["open", "verify", "self"], "description": "open 开放问题 / verify 验证 / self 自解题" },
+    "problem_type": {
+      "type": "array",
+      "items": { "enum": ["prove", "disprove", "decide", "value", "bound", "construct", "classify", "asymptotic", "existence", "compute", "special_case", "formalize_statement", "formalize_proof", "check_proof", "digest_formal", "literature", "repair_statement"] },
+      "uniqueItems": true,
+      "description": "方向，可多选，第一个为主 / directions, first is primary"
+    },
+    "answer_type": { "enum": [null, "yes_no", "value", "bound", "object", "proof", "classification", "formal_artifact", "report"], "description": "答案形式；界面上的四个题型由它推出 / answer type" },
+    "checkability": { "enum": ["falsifiable", "verifiable", "decidable", "neither", "unknown"], "description": "有限计算能否否定或证实 / finite checkability" },
+    "statement_fidelity": { "enum": ["source-fixed", "audited", "unaudited", "unknown"], "description": "题面与出处的一致程度 / statement fidelity" },
+    "statement_audit": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["by", "verdict"],
+      "properties": {
+        "by": { "enum": ["agent", "human"], "description": "核对者类型 / auditor kind" },
+        "date": { "$ref": "#/$defs/date_or_null" },
+        "verdict": { "enum": ["pass", "pass_with_fixes", "fail", "not_sampled"], "description": "SOL 轨道 A：命题对应核对 / SOL track A" },
+        "fixes": { "type": "integer", "minimum": 0, "description": "已修正的处数 / number of fixes" }
+      },
+      "description": "v2.2 新增：题面与出处的核对记录（SOL 轨道 A）/ statement-vs-source audit"
+    },
+    "source_quote_lang": { "type": ["string", "null"], "description": "原文摘录的语言；摘录本身在 .text.md / language of the quote" },
+    "formal": { "type": "array", "items": { "$ref": "#/$defs/formal_anchor" }, "description": "外部形式化锚点 / external formal anchors" },
+    "formal_challenge": {
+      "type": ["object", "null"],
+      "description": "锁定的 Lean 规范陈述 / locked Lean challenge",
+      "properties": {
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "path": { "type": "string" },
+        "decls": { "type": "array", "items": { "type": "string" } },
+        "toolchain": { "type": "string" },
+        "mathlib_rev": { "type": "string" },
+        "status": { "enum": ["none", "proposed", "locked"] },
+        "audit_verdict": { "type": ["string", "null"] }
+      }
+    },
+    "proposer": { "type": ["string", "null"], "description": "提出者 / proposer" },
+    "first_published": { "type": ["string", "null"], "description": "首次发表时间（原样记录）/ first published" },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" }, "description": "来源；开放和验证轨道至少一条 original / sources" },
+    "external_refs": { "type": "array", "items": { "$ref": "#/$defs/external_ref" }, "description": "外部编号，用于查重和链接 / external ids" },
+    "prize": { "type": ["object", "null"] },
+    "informal_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "as_of"],
+      "properties": {
+        "value": { "enum": ["open", "partially_solved", "claimed", "proved", "disproved", "solved", "disputed", "independent", "not_provable", "not_disprovable", "ambiguous", "unknown"] },
+        "strength": { "enum": [null, "confirmed", "weak"], "description": "v2.2 新增：开放状态证据的强弱（SOL：OPEN-CONFIRMED / OPEN-WEAK）/ evidence strength" },
+        "as_of": { "$ref": "#/$defs/date" },
+        "evidence": { "type": "array", "items": { "type": "string" }, "description": "证据链接 / evidence URLs" }
+      },
+      "description": "非形式化状态 / informal status"
+    },
+    "formal_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "as_of"],
+      "properties": {
+        "value": { "enum": ["none", "statement", "proof"] },
+        "as_of": { "$ref": "#/$defs/date" },
+        "system": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "human_reviewed": { "type": ["boolean", "null"] }
+      },
+      "description": "形式化状态 / formal status"
+    },
+    "novelty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["last_checked_at", "result", "card_rev", "scope"],
+      "properties": {
+        "last_checked_at": { "$ref": "#/$defs/date" },
+        "result": { "enum": ["not_found_in_scope", "known_result", "partial_result", "claimed_solution", "inconclusive"] },
+        "card_rev": { "type": "string", "pattern": "^[0-9a-f]{16}$" },
+        "scope": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sources", "as_of"],
+          "properties": {
+            "sources": { "type": "array", "items": { "type": "string" } },
+            "search_terms": { "type": "array", "items": { "type": "string" } },
+            "as_of": { "$ref": "#/$defs/date" }
+          }
+        },
+        "depth": { "enum": [null, "basic", "deep"], "description": "v2.2 新增：查新深度 / depth of the check" },
+        "hits": { "type": "array", "items": { "type": "object" } },
+        "statement_issues": { "type": "array", "items": { "type": "string" } },
+        "checker": { "type": "object" },
+        "report_id": { "type": ["string", "null"] },
+        "stale_after_days": { "type": "integer", "minimum": 1 },
+        "compliance": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["by", "verdict"],
+          "properties": {
+            "by": { "enum": ["agent", "human"] },
+            "date": { "$ref": "#/$defs/date_or_null" },
+            "verdict": { "enum": ["pass", "fail", "not_sampled"] }
+          },
+          "description": "v2.2 新增：查新合规复核（SOL 轨道 B）/ novelty compliance review"
+        }
+      },
+      "description": "查新与新鲜度 / novelty check"
+    },
+    "appears_in": { "type": "array", "items": { "type": "object" }, "description": "出现在哪些 AI 题库或基准 / appears in AI banks" },
+    "ai_claims": { "type": "array", "items": { "type": "object" }, "description": "AI 成果库里的解决声称 / AI claims" },
+    "msc2020": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["primary", "source"],
+      "properties": {
+        "primary": { "$ref": "#/$defs/msc" },
+        "secondary": { "type": "array", "items": { "$ref": "#/$defs/msc" } },
+        "source": { "enum": ["bank", "paper", "agent", "human"] },
+        "confidence": { "enum": [null, "low", "medium", "high"] }
+      },
+      "description": "MSC2020 分类号，只存代码 / MSC2020 codes only"
+    },
+    "domain_hint": { "type": ["string", "null"], "description": "v2.2 新增：导入时原包写的领域文字，供补 MSC 用，不在界面显示 / raw domain text from the source package" },
+    "keywords": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "zh": { "type": "array", "items": { "type": "string" } }, "en": { "type": "array", "items": { "type": "string" } } }
+    },
+    "difficulty": { "$ref": "#/$defs/estimate" },
+    "ai_suitability": { "$ref": "#/$defs/estimate" },
+    "acceptance": {
+      "type": ["object", "null"],
+      "properties": {
+        "criteria": { "type": "string", "minLength": 1 },
+        "partial": { "type": ["string", "null"] },
+        "checks": { "type": "array" },
+        "verification": { "type": ["string", "null"] }
+      },
+      "description": "怎样算解决 / acceptance"
+    },
+    "attachments": { "type": "array", "items": { "type": "object" } },
+    "visibility": { "enum": ["public", "unlisted", "private"] },
+    "license": { "const": "CC-BY-SA-4.0", "description": "正文（.text.md）的许可；本文件本身是 CC0 / license of the text file" },
+    "contributors": { "type": "array", "items": { "type": "object" } },
+    "redirect_from": { "type": "array", "items": { "type": "string" } },
+    "provenance": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["package", "package_id", "imported_at"],
+      "properties": {
+        "package": { "type": "string", "description": "来源包代号 / source package" },
+        "package_id": { "type": "string" },
+        "package_path": { "type": "string" },
+        "tier_hint": { "type": ["string", "null"] },
+        "status_raw": { "type": ["string", "null"] },
+        "imported_at": { "$ref": "#/$defs/date" },
+        "possible_duplicates": { "type": "array", "items": { "type": "string" } }
+      },
+      "description": "v2.2 新增：导入来源 / import provenance"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "card_status": { "enum": ["curated", "audited"] } } },
+      "then": {
+        "required": ["problem_type", "answer_type", "msc2020", "acceptance"],
+        "properties": {
+          "problem_type": { "minItems": 1 },
+          "answer_type": { "not": { "const": null } },
+          "msc2020": { "type": "object" },
+          "acceptance": { "type": "object", "required": ["criteria"] }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "track": { "enum": ["open", "verify"] } } },
+      "then": {
+        "required": ["sources"],
+        "properties": { "sources": { "minItems": 1 } }
+      }
+    }
+  ],
+  "$defs": {
+    "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "date_or_null": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "msc": { "type": "string", "pattern": "^[0-9]{2}(-XX|[A-Z]xx|[A-Z][0-9]{2})$", "description": "如 11B25、11Bxx 或 11-XX / e.g. 11B25, 11Bxx, 11-XX" },
+    "estimate": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["level", "basis"],
+      "properties": {
+        "level": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "basis": { "enum": ["maintainer", "agent", "community", "history", "package"] },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role"],
+      "properties": {
+        "cite": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "doi": { "type": ["string", "null"] },
+        "role": { "enum": ["original", "restatement", "survey", "database", "formalization", "progress", "novelty"] },
+        "license": { "type": ["string", "null"] },
+        "accessed": { "$ref": "#/$defs/date_or_null" }
+      }
+    },
+    "external_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "id"],
+      "properties": {
+        "source": { "enum": ["erdos", "fc", "opg", "mo", "mse", "oeis", "arxiv", "wiki", "kourovka", "green100", "doi", "other"] },
+        "id": { "type": "string", "minLength": 1 },
+        "url": { "type": ["string", "null"] }
+      }
+    },
+    "formal_anchor": {
+      "type": "object",
+      "properties": {
+        "system": { "type": "string" },
+        "repo": { "type": "string" },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "path": { "type": "string" },
+        "decl": { "type": "string" },
+        "toolchain": { "type": "string" },
+        "mathlib_rev": { "type": "string" },
+        "fidelity": { "type": "string" }
+      }
+    }
+  }
+}
