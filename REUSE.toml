@@ -1,0 +1,22 @@
+# 每个文件的许可（REUSE 规范，https://reuse.software/）。
+# 同一个文件匹配多条时，以写在后面的一条为准。
+# 从第三方导入的内容，请在文件末尾为它们单独加一条，写明原作者和原许可。
+version = 1
+
+# 默认：结构化数据（题卡元数据、逐次记录、统计）和工具文件
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "2026 The Qunxing Contributors"
+SPDX-License-Identifier = "CC0-1.0"
+
+# 文字：题卡文字、查新报告、说明文档
+[[annotations]]
+path = "**.md"
+SPDX-FileCopyrightText = "2026 The Qunxing Contributors"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+# Lean 题面，与 Mathlib、formal-conjectures 一致
+[[annotations]]
+path = "**.lean"
+SPDX-FileCopyrightText = "2026 The Qunxing Contributors"
+SPDX-License-Identifier = "Apache-2.0"

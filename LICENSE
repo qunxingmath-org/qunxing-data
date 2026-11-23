@@ -1,0 +1,26 @@
+本仓库的内容按类型使用不同的许可：
+
+- 题卡的结构化元数据（*.meta.json）、匿名的逐次记录、汇总统计：
+  CC0 1.0，全文见 LICENSES/CC0-1.0.txt
+- 题卡文字（*.text.md）、查新报告、说明文档：
+  CC BY-SA 4.0，全文见 LICENSES/CC-BY-SA-4.0.txt
+- Lean 题面（*.lean）：
+  Apache-2.0，全文见 LICENSES/Apache-2.0.txt
+- 从第三方导入的内容：保持原许可，在 REUSE.toml 里单独标注。
+
+每个文件的许可以 REUSE.toml 为准（REUSE 规范：https://reuse.software/）。
+"群星"的名称和标志不在以上任何许可之内。
+
+---
+
+This repository uses different licenses by content type:
+
+- Structured card metadata (*.meta.json), anonymous per-run records and
+  aggregated statistics: CC0-1.0 (LICENSES/CC0-1.0.txt)
+- Card texts (*.text.md), novelty reports and documentation:
+  CC-BY-SA-4.0 (LICENSES/CC-BY-SA-4.0.txt)
+- Lean statements (*.lean): Apache-2.0 (LICENSES/Apache-2.0.txt)
+- Third-party content keeps its original license and is marked in REUSE.toml.
+
+REUSE.toml is authoritative for per-file licensing.
+The Qunxing name and logos are not licensed under any of these licenses.
