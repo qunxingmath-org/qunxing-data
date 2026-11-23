@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001807",
-  "revision": 1,
-  "card_rev": "ff588c3acaccf487",
+  "revision": 2,
+  "card_rev": "1893f155f54259d6",
   "title": "交换代数导子-流实现",
-  "title_en": null,
+  "title_en": "Does every derivation on a commutative algebra generate a flow?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "13N15",
+    "secondary": [
+      "34A12",
+      "58A99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "代数/分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "导子",
+      "流",
+      "交换代数",
+      "指数映射"
+    ],
+    "en": [
+      "derivations",
+      "flows",
+      "commutative algebras",
+      "exponential maps"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在给定代数类中每个导子都能生成（局部）流，或给出一个导子无法指数化的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001705",
-  "revision": 1,
-  "card_rev": "3afec4c1652f64fc",
+  "revision": 2,
+  "card_rev": "01ef04f9cf44e7b0",
   "title": "Mersenne 素数无穷",
-  "title_en": null,
+  "title_en": "Are there infinitely many Mersenne primes?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A41",
+    "secondary": [
+      "11A51",
+      "11N05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Mersenne 素数",
+      "梅森数",
+      "素数无穷",
+      "完全数",
+      "Lucas–Lehmer"
+    ],
+    "en": [
+      "Mersenne primes",
+      "Mersenne numbers",
+      "infinitely many primes",
+      "perfect numbers",
+      "Lucas-Lehmer test"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -73,7 +96,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在无穷多个素数 p 使 2^p−1 为素数，或证明这样的 p 只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -86,6 +114,8 @@
     "tier_hint": "C 层",
     "status_raw": "OPEN_SUPPORTED",
     "imported_at": "2026-11-23",
-    "possible_duplicates": []
+    "possible_duplicates": [
+      "QX-P-001706"
+    ]
   }
 }

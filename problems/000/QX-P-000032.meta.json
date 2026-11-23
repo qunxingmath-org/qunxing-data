@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000032",
-  "revision": 1,
-  "card_rev": "b33d430046399f67",
+  "revision": 2,
+  "card_rev": "985c897d8b5ef985",
   "title": "WOWII 猜想 96：α(G) ≤ 1 + min distEven(v)·(max λ(v) − 1)",
-  "title_en": null,
+  "title_en": "WOWII 96: bounding the independence number by even-distance counts and neighbourhood independence",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +95,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C69",
+    "secondary": [
+      "05C12"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（机器生成猜想）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "独立数",
+      "偶距离点数",
+      "邻域独立数",
+      "机器生成猜想"
+    ],
+    "en": [
+      "independence number",
+      "even-distance counts",
+      "neighbourhood independence number",
+      "machine-generated conjectures"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +124,12 @@
     "note": "一区二区·易证明；独立数上界不等式，全为可计算量（distEven、邻域独立数）；难度直觉标'小'；可直接穷举反例或按层分解论证，参数空间小。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个顶点数至少 2 的连通图 G 都有 α(G) ≤ 1 + min_v distEven(v)·(max_v λ(v) − 1)；或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002106",
-  "revision": 1,
-  "card_rev": "325c36af12492e76",
+  "revision": 2,
+  "card_rev": "a7c95b19d62ae522",
   "title": "n^k 数字和无穷多次递减？",
-  "title_en": null,
+  "title_en": "Does the digit sum of n^k decrease infinitely often?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A63",
+    "secondary": [
+      "11K16"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "数位和",
+      "幂",
+      "数位表示",
+      "递推",
+      "数论"
+    ],
+    "en": [
+      "digit sums",
+      "powers",
+      "base expansions",
+      "recurrences",
+      "number theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对给定的 k，数列 S(n^k) 无穷多次下降；或证明它最终单调递增（给出证明）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

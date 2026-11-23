@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000580",
-  "revision": 1,
-  "card_rev": "d18b6246e88b418b",
+  "revision": 2,
+  "card_rev": "90e77f91c8404563",
   "title": "装饰交叉猜想（保纽结型的交叉变换必平庸）",
-  "title_en": null,
+  "title_en": "Must a crossing change that preserves a knot's isotopy type be nugatory?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K10",
+    "secondary": [
+      "57M25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "纽结理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "交叉变换",
+      "nugatory 交叉",
+      "纽结同痕",
+      "纽结图"
+    ],
+    "en": [
+      "crossing change",
+      "nugatory crossing",
+      "knot isotopy",
+      "knot diagrams"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +138,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 Taniyama 猜想线（1989）；非平庸交叉变换不变同伦型"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何保持纽结同痕类型的交叉变换都发生在 nugatory 交叉处，或给出一个保持同痕类型却非 nugatory 的交叉变换。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

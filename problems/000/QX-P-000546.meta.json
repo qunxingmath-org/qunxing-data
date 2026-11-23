@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000546",
-  "revision": 1,
-  "card_rev": "45fe8c672f992737",
+  "revision": 2,
+  "card_rev": "4e11a46184f8899c",
   "title": "21.138 双曲+虚拟紧特殊+有界第二Betti ⇒ 虚拟自由/曲面？",
-  "title_en": null,
+  "title_en": "Virtually compact special hyperbolic groups with bounded second Betti numbers: free or surface?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,7 +96,9 @@
     },
     "depth": "deep",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 题面与原文不符：statement 讲“双曲+虚拟紧特殊+第二 Betti 数有界⇒虚拟自由/曲面”，原文是“每个无限指数子群都自由⇒自由群或曲面群”。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -105,11 +109,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F67",
+    "secondary": [
+      "20F65",
+      "20J05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双曲群",
+      "虚拟紧特殊群",
+      "第二 Betti 数",
+      "曲面群"
+    ],
+    "en": [
+      "hyperbolic groups",
+      "virtually compact special groups",
+      "second Betti number",
+      "surface groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Wilton）G 双曲、虚拟紧特殊（Haglund–Wise 意义），且有限指数子群的第二 Betti 数集有界。G …（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足题设的 G 必虚拟同构于自由群或曲面群，或构造一个满足题设却两者都不是的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -131,5 +158,6 @@
     "status_raw": "OPEN",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

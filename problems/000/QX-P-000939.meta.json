@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000939",
-  "revision": 1,
-  "card_rev": "94ca690c24d84d86",
+  "revision": 2,
+  "card_rev": "76435431c4ad8589",
   "title": "Maximal Linear Arrangement is NP-complete on Bipartite Graphs",
-  "title_en": null,
+  "title_en": "Complexity of Maximal Linear Arrangement on bounded-treewidth and planar bipartite graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q25",
+    "secondary": [
+      "05C85",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图算法（线性排列）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最大线性排列",
+      "NP-完全",
+      "有界树宽",
+      "平面二部图",
+      "复杂性二分"
+    ],
+    "en": [
+      "maximal linear arrangement",
+      "NP-completeness",
+      "bounded treewidth",
+      "planar bipartite graphs",
+      "complexity dichotomy"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +134,12 @@
     "note": "三四区·小问题；易证明~中等——maxLA 在二部图 NP-完全已证（主线已闭）；剩余为有界树宽/平面二部图的参数化精确分类；MLA 经典结果作参照，动态规划+难度传导论证路线明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对有界树宽图与平面二部图给出 maxLA 的完整复杂性分类表（每类标明多项式可解或 NP-完全），并给出相应算法或归约。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

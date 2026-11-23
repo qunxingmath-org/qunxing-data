@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000050",
-  "revision": 1,
-  "card_rev": "df00d3b17d271a66",
+  "revision": 2,
+  "card_rev": "ffb0d930ef2125f6",
   "title": "Balister–Győri–Schelp 零和向量列表规定形状猜想",
-  "title_en": null,
+  "title_en": "Balister-Gyori-Schelp: every zero-sum list of 2^(s-1) nonzero vectors in F_2^s has the prescribed shape",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +91,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "11B75",
+      "05B40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合线性代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "零和列表",
+      "完美匹配",
+      "差分轮廓",
+      "向量空间 F₂^s",
+      "组合线性代数"
+    ],
+    "en": [
+      "zero-sum lists",
+      "perfect matchings",
+      "prescribed differences",
+      "vector spaces over F_2",
+      "combinatorial linear algebra"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +123,12 @@
     "note": "一区二区·易证明；固定 s 时命题为有限对象断言（F₂^s 中 2^{s−1} 个非零向量、和为零、列表呈规定形状），小 s 可完全机检；证明若为真预计是线性代数+情形分析，路线明确，A层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 s ≥ 2，任何由 2^{s−1} 个非零向量组成且总和为 0 的多重集都能实现为 F₂^s 上某个完美配对的差分轮廓；或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

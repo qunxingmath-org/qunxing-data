@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000133",
-  "revision": 1,
-  "card_rev": "f5770410733b43d6",
+  "revision": 2,
+  "card_rev": "e0f1d12045bb4a5c",
   "title": "复曲面上 ≥3 个互不同构的曲面丛结构（Kirby 2.24）",
-  "title_en": null,
+  "title_en": "A complex surface with three or more non-isomorphic surface-bundle structures",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57R22",
+    "secondary": [
+      "14D06",
+      "57K20"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "低维拓扑/代数几何（曲面丛）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "曲面丛",
+      "复曲面",
+      "纤维化",
+      "非同构结构",
+      "低维拓扑"
+    ],
+    "en": [
+      "surface bundle",
+      "complex surface",
+      "fibration",
+      "non-isomorphic structures",
+      "low-dimensional topology"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；双丛结构例子已知（Bryan 2001 等），≥3 个互不同构丛结构的存在性开放；Salter 2019 综述专门讨论；单变方法+ signature/欧拉计数组合可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个复曲面 X 和三组两两不同构的曲面丛结构并验证它们互不同构，或证明任何复曲面至多只有两种这样的结构。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

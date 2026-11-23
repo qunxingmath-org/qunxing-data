@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001195",
-  "revision": 1,
-  "card_rev": "6e915dceab0facbf",
+  "revision": 2,
+  "card_rev": "8560ef17e77fd84d",
   "title": "固定围长平面图多色（polychromatic）染色最小数",
-  "title_en": null,
+  "title_en": "Minimum polychromatic number for plane graphs of fixed girth",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -88,11 +91,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C10",
+      "05C62"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（平面图染色）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "多色染色",
+      "平面图",
+      "围长",
+      "面染色",
+      "顶点染色"
+    ],
+    "en": [
+      "polychromatic colouring",
+      "plane graphs",
+      "girth",
+      "facial colouring",
+      "vertex colouring"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -100,7 +123,12 @@
     "note": "三四区·小问题；围长 ≥5 平面图的'每面见全色'最小色数：EGRES 编目；放电论证+小例计算可续接；三四区标准。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定围长下界 g 确定多色色数的确切最小值（给出匹配的上界构造与下界证明），至少对所有 g 给出完整的函数值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

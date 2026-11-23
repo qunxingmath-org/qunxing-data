@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001915",
-  "revision": 1,
-  "card_rev": "a874eceebb835ad2",
+  "revision": 2,
+  "card_rev": "c53c63010060d60c",
   "title": "两两和序型总数",
-  "title_en": null,
+  "title_en": "How many order types can the pairwise sums of n numbers realize?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "06A07"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "两两和",
+      "序型",
+      "计数",
+      "弱序"
+    ],
+    "en": [
+      "pairwise sums",
+      "order types",
+      "enumeration",
+      "weak orders"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +98,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出对一般的 n 计算不同序型总数的公式或递推，并证明没有遗漏也没有重复计数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

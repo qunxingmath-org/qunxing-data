@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000353",
-  "revision": 1,
-  "card_rev": "d6440ab636513ae8",
+  "revision": 2,
+  "card_rev": "fa063c5667ce2626",
   "title": "Kaplansky猜想族（群代数/正则环）",
-  "title_en": null,
+  "title_en": "Kaplansky's conjectures on group rings: must a torsion-free group ring have no zero divisors?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "disprove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16S34",
+    "secondary": [
+      "20C07",
+      "16N60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "环论/群代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Kaplansky 猜想",
+      "群代数",
+      "零因子",
+      "无挠群",
+      "单位猜想"
+    ],
+    "en": [
+      "Kaplansky conjectures",
+      "group algebras",
+      "zero divisors",
+      "torsion-free groups",
+      "unit conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -105,7 +128,12 @@
     "note": "一区二区·难度待定；B层：族条目——群代数零因子猜想对torsion-free群开放（unit猜想2021被Gardam否定后重新活跃）；正则环稠密右理想等变体开放；有Fisher/Mineyev 2024等活跃文献。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意无挠群 G 与任意域 K 上 K[G] 都无零因子，或给出一个群代数含零因子的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

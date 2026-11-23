@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001552",
-  "revision": 1,
-  "card_rev": "aa672253fdecf106",
+  "revision": 2,
+  "card_rev": "2f06169c8db74821",
   "title": "20.49 每个有限群有同指数的2生成子群？",
-  "title_en": null,
+  "title_en": "Does every finite group have a 2-generated subgroup with the same exponent?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "生成元个数",
+      "指数",
+      "子群",
+      "有限群",
+      "可解群"
+    ],
+    "en": [
+      "number of generators",
+      "exponent",
+      "subgroups",
+      "finite groups",
+      "soluble groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；任何有限群是否含与其指数相同的 2-生成子群？可解群已证；3-生成已证（Detomi–Lucchini）。…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有限群都含 2-生成且同指数的子群，或给出一个反例群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

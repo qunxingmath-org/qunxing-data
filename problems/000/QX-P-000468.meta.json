@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000468",
-  "revision": 1,
-  "card_rev": "7d328d3e793890bf",
+  "revision": 2,
+  "card_rev": "9219f1e532b06290",
   "title": "p-adic Littlewood 猜想（Bugeaud 书问题 10.8）",
-  "title_en": null,
+  "title_en": "The p-adic Littlewood conjecture: inf q||q xi|| |q|_p = 0 for every real xi and prime p",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J61",
+    "secondary": [
+      "11J04",
+      "11K60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Diophantine 逼近",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-进绝对值",
+      "Littlewood 猜想",
+      "丢番图逼近",
+      "下确界",
+      "素数"
+    ],
+    "en": [
+      "p-adic absolute value",
+      "Littlewood conjecture",
+      "Diophantine approximation",
+      "infimum",
+      "primes"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -103,7 +125,12 @@
     "note": "一区二区·难度待定；经典 Littlewood 猜想的 p-adic 版本，深水区（经典版亦开——排除清单 B09 Zaremba 为不同条目，EXCLUDED-CHECK 裁决保留）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有实数 ξ 与素数 p 证明该下确界为 0，或给出一个 ξ 与 p 使下确界为正。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

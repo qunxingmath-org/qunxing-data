@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001736",
-  "revision": 1,
-  "card_rev": "52aac39d5985e657",
+  "revision": 2,
+  "card_rev": "b332ffba08cd517e",
   "title": "∑1/(an²+bn+c) 有理性逆判据",
-  "title_en": null,
+  "title_en": "A converse criterion for rationality of the series sum of 1/(an^2+bn+c)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "special_case"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -80,11 +83,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J72",
+    "secondary": [
+      "40A05",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/级数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "级数求和",
+      "有理性",
+      "判别式",
+      "部分分式",
+      "逆命题"
+    ],
+    "en": [
+      "series summation",
+      "rationality",
+      "discriminant",
+      "partial fractions",
+      "converse"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -92,7 +115,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 (b) 的逆命题成立（即级数为有理数必然推出存在这样的 k），或给出一个级数为有理数但不满足该判别式条件的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

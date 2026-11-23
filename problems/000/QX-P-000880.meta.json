@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000880",
-  "revision": 1,
-  "card_rev": "7a27ab565f2f0afa",
+  "revision": 2,
+  "card_rev": "2176badc7ba71a21",
   "title": "q-Stirling 多项式的对数凹性（OWR 2022/57）",
-  "title_en": null,
+  "title_en": "Log-concavity of the q-Stirling polynomials",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -98,11 +101,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A30",
+    "secondary": [
+      "05A15",
+      "26C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数组合（多项式 positivity）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "q-Stirling 数",
+      "对数凹性",
+      "多项式系数",
+      "组合不等式"
+    ],
+    "en": [
+      "q-Stirling numbers",
+      "log-concavity",
+      "polynomial coefficients",
+      "combinatorial inequalities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +131,12 @@
     "note": "三四区·小问题；S_q[n,k] 对数凹与渐近正态两问；Mason 型 UM/ULC 方法与实根性技术可迁移；2022 arXiv:2205.14078（type B）为相邻；n,k 固定时符号计算可验证。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有 n、k，q-Stirling 多项式这一行在对数凹意义下成立（等价于相应二次型非负）；或给出一个破坏对数凹的具体 n、k。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

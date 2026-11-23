@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001569",
-  "revision": 1,
-  "card_rev": "22215a5bb65efafe",
+  "revision": 2,
+  "card_rev": "356869c59dacdff0",
   "title": "21.2 与单群有\"阶整除\"双射的有限群必单？",
-  "title_en": null,
+  "title_en": "Must G be simple if a bijection to a simple group preserves divisibility of orders?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D05",
+    "secondary": [
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单群",
+      "元素阶",
+      "双射",
+      "整除条件",
+      "有限群"
+    ],
+    "en": [
+      "simple groups",
+      "element orders",
+      "bijections",
+      "divisibility conditions",
+      "finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；S 有限单群，G 有限群且存在双射 f:G→S 使 |x| 整除 |f(x)| 对所有 x。G 必单吗？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足条件的 G 必为单群，或构造一个非单的 G 与满足整除条件的双射 f。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001398",
-  "revision": 1,
-  "card_rev": "827a56d4f30b2bd6",
+  "revision": 2,
+  "card_rev": "db7fd77b8b23083d",
   "title": "Klamkin–Liu 四面体立体角控制不等式（Crux 1581）",
-  "title_en": null,
+  "title_en": "Klamkin-Liu: does majorization of solid angles control volume, surface area and edge length?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B10",
+    "secondary": [
+      "52A40",
+      "26D15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何/不等式",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "四面体",
+      "立体角",
+      "控制不等式",
+      "体积与表面积"
+    ],
+    "en": [
+      "tetrahedra",
+      "solid angles",
+      "majorization",
+      "volume and surface area"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +123,12 @@
     "note": "三四区·小问题；平面情形证明已知，三维尝试方向明确——非常适合入手。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在给定条件下三个量都不超过 T₁，或给出一对满足控制关系但某个量反而更大的四面体。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

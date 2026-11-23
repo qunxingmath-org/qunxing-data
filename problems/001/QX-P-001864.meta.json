@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001864",
-  "revision": 1,
-  "card_rev": "cd339645c90157f7",
+  "revision": 2,
+  "card_rev": "a48f418838b3558d",
   "title": "横贯版 Katona–Kierstead",
-  "title_en": null,
+  "title_en": "A transversal version of the Katona-Kierstead theorem",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C65",
+    "secondary": [
+      "05C70",
+      "05C45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "超图 Hamilton",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超图系统",
+      "横贯",
+      "紧 Hamilton 圈",
+      "最低度"
+    ],
+    "en": [
+      "hypergraph systems",
+      "transversals",
+      "tight Hamilton cycles",
+      "minimum degree"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出超图系统中保证横贯紧 Hamilton 圈的最低度条件，并证明其精确性。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

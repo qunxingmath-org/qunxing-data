@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001387",
-  "revision": 1,
-  "card_rev": "999d3ae2babe3960",
+  "revision": 2,
+  "card_rev": "a1d5ce4272c92708",
   "title": "Hoggatt：正整数的 Lucas-和-自由二划分（FQ H-304）",
-  "title_en": null,
+  "title_en": "Hoggatt's unique two-coloring of the positive integers avoiding Lucas sums",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B39",
+    "secondary": [
+      "05A18",
+      "11B75"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lucas 数",
+      "集合二划分",
+      "和自由",
+      "表示定理"
+    ],
+    "en": [
+      "Lucas numbers",
+      "two-coloring",
+      "sum-free",
+      "representation theorems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +124,12 @@
     "note": "三四区·小问题；结构规则清晰，可从 Zeckendorf 分解试验入手，很可能可解。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足条件的二划分 A₁∪A₂ 存在且唯一，并证明每个非 Lucas 的正整数都可表为同一块中两个不同元素之和。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

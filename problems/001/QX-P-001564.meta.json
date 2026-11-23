@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001564",
-  "revision": 1,
-  "card_rev": "2c402cc5eac4ae29",
+  "revision": 2,
+  "card_rev": "34d26ebb4de0efca",
   "title": "20.107 指数 8 群中 2 阶左 3-Engel 元的正规闭包局部有限？",
-  "title_en": null,
+  "title_en": "Is the normal closure of a left 3-Engel involution locally finite in a group of exponent 8?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F45",
+    "secondary": [
+      "20F50",
+      "20F19"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Engel 元",
+      "指数 8",
+      "正规闭包",
+      "局部有限",
+      "Burnside 型问题"
+    ],
+    "en": [
+      "Engel elements",
+      "exponent 8",
+      "normal closures",
+      "local finiteness",
+      "Burnside-type problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；G 为指数 8 的群，x 为 2 阶左 3-Engel 元。⟨x^G⟩ 是否局部有限？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明指数 8 的群中 2 阶左 3-Engel 元的正规闭包必局部有限，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

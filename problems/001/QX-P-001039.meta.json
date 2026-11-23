@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001039",
-  "revision": 1,
-  "card_rev": "5eaad4c300a6d1c2",
+  "revision": 2,
+  "card_rev": "8abd1cca2dc360c3",
   "title": "Kourovka 16.95：（Thompson 猜想）对域 F 与 A∈GL(n,F)，存在置换矩阵 P 使 AP 循环（特征多项式=极小多项式）",
-  "title_en": null,
+  "title_en": "Thompson's conjecture: a permutation matrix P making AP cyclic",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A21",
+    "secondary": [
+      "20B99",
+      "15A27"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Thompson 猜想",
+      "置换矩阵",
+      "循环矩阵",
+      "极小多项式",
+      "特征多项式"
+    ],
+    "en": [
+      "Thompson's conjecture",
+      "permutation matrices",
+      "cyclic matrices",
+      "minimal polynomials",
+      "characteristic polynomials"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意域 F 与 A∈GL(n,F) 都存在置换矩阵 P 使 AP 循环，或给出一个反例 (F,A)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

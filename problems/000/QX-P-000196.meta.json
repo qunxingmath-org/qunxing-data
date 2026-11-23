@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000196",
-  "revision": 1,
-  "card_rev": "38104c906af1d122",
+  "revision": 2,
+  "card_rev": "af260e06f9c42868",
   "title": "最小度≥3 图中 2^k 长圈（EP#64 = Erdős–Gyárfás 猜想；原批次 A-016）",
-  "title_en": null,
+  "title_en": "Erdos-Gyarfas conjecture: must minimum degree 3 force a cycle of length 2^k?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C38",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最小度",
+      "圈长",
+      "2 的幂",
+      "Erdős–Gyárfás 猜想",
+      "图论"
+    ],
+    "en": [
+      "minimum degree",
+      "cycle lengths",
+      "powers of two",
+      "Erdos-Gyarfas conjecture",
+      "graph theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +133,12 @@
     "note": "一区二区·难度待定；著名猜想（Erdős–Gyárfás），Liu–Montgomery 证大最小度情形；2025-2026 三篇活跃进展（极小反例结构、Exoo 构造修正等）；一般情形未决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个最小度至少 3 的有限图都含长度 2^k（某 k≥2）的圈，或构造一个最小度至少 3 却没有这种圈长的有限图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

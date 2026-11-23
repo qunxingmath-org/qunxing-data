@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001133",
-  "revision": 1,
-  "card_rev": "67cc81a7a903aaf8",
+  "revision": 2,
+  "card_rev": "281cc31ce2c21a18",
   "title": "Kourovka 14.76：有限 p-群 P 有交换截断 |A|^c>|P|？",
-  "title_en": null,
+  "title_en": "Is there an abelian section A of a finite p-group P with |A|^c > |P|?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "existence"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D60",
+      "20E34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限 p-群",
+      "交换截断",
+      "绝对常数",
+      "秩"
+    ],
+    "en": [
+      "finite p-groups",
+      "abelian sections",
+      "absolute constants",
+      "rank"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +158,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出绝对常数 c 并证明每个有限 p-群都有满足 |A|^c>|P| 的交换截断；或证明这样的常数不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

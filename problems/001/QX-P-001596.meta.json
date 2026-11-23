@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001596",
-  "revision": 1,
-  "card_rev": "d419df07c088d844",
+  "revision": 2,
+  "card_rev": "e3e1fdcaf253476f",
   "title": "21.114 弱 ab-极大群派生长是否有界",
-  "title_en": null,
+  "title_en": "Do weakly ab-maximal finite groups have bounded derived length?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20D15",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "弱 ab-极大群",
+      "派生长",
+      "换位子群",
+      "p-群",
+      "有界性"
+    ],
+    "en": [
+      "weakly ab-maximal groups",
+      "derived length",
+      "commutator subgroup",
+      "p-groups",
+      "boundedness"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；G 弱 ab-极大：任意 H≤G 有 |H:H′|≤|G:G′|。弱 ab-极大群派生长是否有界？（已知=弱 ab-极大…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在常数 c 使所有有限弱 ab-极大群的派生长都不超过 c；或构造一列派生长无界的弱 ab-极大群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

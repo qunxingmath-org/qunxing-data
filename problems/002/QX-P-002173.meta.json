@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002173",
-  "revision": 1,
-  "card_rev": "c78e3b3901ce1403",
+  "revision": 2,
+  "card_rev": "bab0b0f5515cf3ca",
   "title": "WF/UB 分离的纯描述集合论重证",
-  "title_en": null,
+  "title_en": "A purely descriptive set-theoretic reproof of the separation of WF and UB",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E15",
+    "secondary": [
+      "03E60",
+      "03E55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "描述集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "WF 与 UB",
+      "分离定理",
+      "描述集合论",
+      "决定性公理",
+      "可测基数"
+    ],
+    "en": [
+      "WF versus UB",
+      "separation theorems",
+      "descriptive set theory",
+      "determinacy",
+      "measurable cardinals"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 ZF 或某个更弱的基础理论下给出 WF 与 UB 分离的纯描述集合论证明，并明确说明所牵涉的决定性或大基数假设如何被避开。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

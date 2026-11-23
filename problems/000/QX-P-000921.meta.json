@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000921",
-  "revision": 1,
-  "card_rev": "512458d91014b277",
+  "revision": 2,
+  "card_rev": "95e808c5c51d7264",
   "title": "Kourovka 19.12：有限群 G 称共轭扩张，若对任意正规子集 N 与共轭类 C，NC 含至少同样多共轭类",
-  "title_en": null,
+  "title_en": "Kourovka 19.12: is every finite simple group conjugacy-expansive?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D05",
+    "secondary": [
+      "20E45",
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共轭扩张",
+      "有限单群",
+      "共轭类",
+      "正规子集",
+      "乘积集"
+    ],
+    "en": [
+      "conjugacy-expansive groups",
+      "finite simple groups",
+      "conjugacy classes",
+      "normal subsets",
+      "product sets"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有限单群都是共轭扩张的，或给出一个不是共轭扩张的有限单群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

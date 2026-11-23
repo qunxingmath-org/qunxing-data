@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001775",
-  "revision": 1,
-  "card_rev": "d4d43b82f278d6d8",
+  "revision": 2,
+  "card_rev": "aee05bbdba9aa281",
   "title": "无穷乘积空间同调群",
-  "title_en": null,
+  "title_en": "Homology of infinite product spaces",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "55T10",
+    "secondary": [
+      "55P35",
+      "55U10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "同调群",
+      "无穷乘积",
+      "谱序列",
+      "同伦极限"
+    ],
+    "en": [
+      "homology groups",
+      "infinite products",
+      "spectral sequences",
+      "homotopy limits"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出无穷乘积空间同调群的一般计算方法（谱序列或极限构造）及收敛条件，或指出某些情形的同调无法由因子同调决定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

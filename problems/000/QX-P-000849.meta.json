@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000849",
-  "revision": 1,
-  "card_rev": "18e57dadd197328e",
+  "revision": 2,
+  "card_rev": "86be24e7d4a0a8fb",
   "title": "3-连通图的边长赋值使所有测地圈为外周圈？（Georgakopoulos，Tutte 定理推广）",
-  "title_en": null,
+  "title_en": "Edge lengths making every geodesic cycle peripheral in a 3-connected graph",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C38",
+    "secondary": [
+      "05C40",
+      "05C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（结构图论/测地几何）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "测地圈",
+      "外周圈",
+      "边长赋值",
+      "3-连通图",
+      "Tutte 定理"
+    ],
+    "en": [
+      "geodesic cycles",
+      "peripheral cycles",
+      "edge length assignment",
+      "3-connected graphs",
+      "Tutte's theorem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +138,12 @@
     "note": "三四区·小问题；Tutte 定理（3-连通平面图的非分离诱导圈=外周圈）的\"可否赋权实现测地化\"推广；Georgakopoulos 2007 局部有限图拓扑圈工作为背景；AI 验证页声称个别图反例——未经同行评审，记参考。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意 3-连通有限图构造出正长度赋值 ℓ:E(G)→R⁺，使每条 ℓ-测地圈都是外周圈；或给出一个不存在这种赋值的 3-连通图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

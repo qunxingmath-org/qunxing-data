@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000327",
-  "revision": 1,
-  "card_rev": "e7d455559872d041",
+  "revision": 2,
+  "card_rev": "f37ffad03c049d28",
   "title": "Dirac 猜想（直线构型版；原批次 A-089）",
-  "title_en": null,
+  "title_en": "Dirac's conjecture, line-incidence form: a point on at least n/2 - K determined lines",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "51A20",
+      "05B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Dirac 猜想",
+      "直线条数",
+      "关联几何",
+      "离散几何",
+      "点集"
+    ],
+    "en": [
+      "Dirac's conjecture",
+      "number of lines",
+      "incidence geometry",
+      "discrete geometry",
+      "point sets"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；非全共线 n 点集必有点位于 ≥ n/2 − c 条决定直线上（c 为普适常数）；Beck/ST/Payne–Wood 部分界已知；精确常数版未决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个普适常数 K 并证明每个非全共线 n 点集都有某点落在至少 n/2−K 条决定直线上，或证明这样的 K 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

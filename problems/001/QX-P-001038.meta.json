@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001038",
-  "revision": 1,
-  "card_rev": "769ba0113163d0d9",
+  "revision": 2,
+  "card_rev": "9a0f42655efb0625",
   "title": "Kourovka 16.93：有限秩 n≥2 自由群 Fn 的 Inn Fn 是 Aut Fn 的一阶可定义子群吗",
-  "title_en": null,
+  "title_en": "Is Inn(F_n) first-order definable in Aut(F_n)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E36",
+    "secondary": [
+      "03C60",
+      "20F28"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "一阶可定义",
+      "内自同构",
+      "自由群",
+      "Aut(Fn)",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "first-order definability",
+      "inner automorphisms",
+      "free groups",
+      "Aut(F_n)",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个一阶公式恰好在 Aut(F_n) 中刻画 Inn F_n，或证明不存在这样的一阶公式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001895",
-  "revision": 1,
-  "card_rev": "4fb82c435cac6a27",
+  "revision": 2,
+  "card_rev": "94d86e7030b895ce",
   "title": "超实数普适性=弱全局选择？",
-  "title_en": null,
+  "title_en": "Is universality of the hyperreal line equivalent to weak global choice?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E25",
+    "secondary": [
+      "03H05",
+      "12J15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超实数",
+      "弱全局选择",
+      "选择公理",
+      "有序域"
+    ],
+    "en": [
+      "hyperreals",
+      "weak global choice",
+      "axiom of choice",
+      "ordered fields"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 ZF 中证明超实数线的普适性陈述与弱全局选择等价（两个方向都给出证明），或给出一个方向失败的反例模型。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

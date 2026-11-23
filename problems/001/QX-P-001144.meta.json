@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001144",
-  "revision": 1,
-  "card_rev": "6621caa184540af8",
+  "revision": 2,
+  "card_rev": "76b878b41f2b19bc",
   "title": "Kourovka 15.100/15.101：族条目（15.100+15.101）：中心化子条件⇒周期群局部有限（自中心化 4 阶子群；Sylow2 阶2）",
-  "title_en": null,
+  "title_en": "Two centralizer conditions forcing a periodic group to be locally finite",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -134,11 +136,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E25",
+      "20D45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "周期群",
+      "局部有限",
+      "中心化子",
+      "对合",
+      "Sylow 2-子群"
+    ],
+    "en": [
+      "periodic groups",
+      "local finiteness",
+      "centralizers",
+      "involutions",
+      "Sylow 2-subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -146,7 +168,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对两个条件分别证明周期群必局部有限，或各给出一个周期但非局部有限的群作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

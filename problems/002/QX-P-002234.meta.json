@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002234",
-  "revision": 1,
-  "card_rev": "b54fe8d710ffc8fd",
+  "revision": 2,
+  "card_rev": "7c8b875f842eb83a",
   "title": "LCP 有限生成赋值存在（P44；最冷）",
-  "title_en": null,
+  "title_en": "Existence of a finitely generated LCP valuation (P44)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14E30",
+    "secondary": [
+      "13A18",
+      "14B05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限生成赋值",
+      "LCP",
+      "存在性",
+      "极小模型纲领"
+    ],
+    "en": [
+      "finitely generated valuations",
+      "LCP",
+      "existence",
+      "minimal model program"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出落在 LCP 上的有限生成赋值并验证其性质,或证明这样的赋值不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

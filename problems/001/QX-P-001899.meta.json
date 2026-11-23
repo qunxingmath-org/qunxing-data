@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001899",
-  "revision": 1,
-  "card_rev": "1cd4bec398cdfb59",
+  "revision": 2,
+  "card_rev": "59a1566e1259fe22",
   "title": "非线段连通集必穿二进方格？",
-  "title_en": null,
+  "title_en": "Must a connected planar set that is not a segment cross some dyadic square?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52Cxx",
+    "secondary": [
+      "28A75",
+      "54D05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "连通集",
+      "二进方格",
+      "平面集合",
+      "横穿"
+    ],
+    "en": [
+      "connected sets",
+      "dyadic squares",
+      "planar sets",
+      "crossing"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何不是线段的平面连通集都横穿某个二进方格，或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002065",
-  "revision": 1,
-  "card_rev": "5e8dd3a5c01e34bb",
+  "revision": 2,
+  "card_rev": "3ea4e358317b6547",
   "title": "非实值特征群结构问题（题面修正）",
-  "title_en": null,
+  "title_en": "Why is the centralizer order of an order-4 element a square with exactly two non-real classes?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论/表示论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共轭类",
+      "中心化子",
+      "特征标理论",
+      "实值特征",
+      "有限群"
+    ],
+    "en": [
+      "conjugacy classes",
+      "centralizer",
+      "character theory",
+      "real-valued characters",
+      "finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出纯群论的证明：由「恰有两个非自逆共轭类」与 x 的阶为 4，推出 |C_G(x)| 是平方数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

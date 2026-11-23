@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001119",
-  "revision": 1,
-  "card_rev": "02f89da87c2ea98e",
+  "revision": 2,
+  "card_rev": "7c02aeed43804b8a",
   "title": "Kourovka 12.12/12.53：族条目（12.12+12.53）：自由 l-群 Hopf 性；l-群共轭问题可判定性",
-  "title_en": null,
+  "title_en": "Conjugacy problem in nilpotent lattice-ordered groups and in free l-groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -134,11 +136,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "06F15",
+    "secondary": [
+      "20F10",
+      "20F18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "l-群",
+      "共轭问题",
+      "可判定性",
+      "幂零群"
+    ],
+    "en": [
+      "lattice-ordered groups",
+      "conjugacy problem",
+      "decidability",
+      "nilpotent groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -146,7 +166,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 12.12 给出判定有限生成幂零 l-群共轭问题的算法或不可判定性证明；对 12.53 判定自由 l-群中共轭问题是否可解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000230",
-  "revision": 1,
-  "card_rev": "4b318a94fea75916",
+  "revision": 2,
+  "card_rev": "a5b2342775931726",
   "title": "Erdős–Hajnal–Milner 极限序数图问题（EP#601；原批次 A-025）",
-  "title_en": null,
+  "title_en": "Erdos-Hajnal-Milner type problems for graphs on limit ordinals",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E10",
+    "secondary": [
+      "05C63",
+      "03E02"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "序数组合/图论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "极限序数",
+      "无限图",
+      "无穷路",
+      "独立集",
+      "分划关系"
+    ],
+    "en": [
+      "limit ordinals",
+      "infinite graphs",
+      "infinite paths",
+      "independent sets",
+      "partition relations"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +134,12 @@
     "note": "一区二区·难度待定；极限序数上的路/独立集二分命题；集合论图论 niche。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定哪些极限序数 α 具有题面所述性质（必含无穷路或指定规模的独立集），并对这些 α 给出证明、对不成立的 α 给出反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

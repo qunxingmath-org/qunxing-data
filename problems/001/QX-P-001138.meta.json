@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001138",
-  "revision": 1,
-  "card_rev": "bc51d6f2853a4bb4",
+  "revision": 2,
+  "card_rev": "da758439c4f36fe2",
   "title": "Kourovka 15.3：两忠实不可约特征标之积仍不可约的群（I. M. Isaacs）",
-  "title_en": null,
+  "title_en": "Do solvable examples exist for faithful non-linear irreducible characters with irreducible product?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D10",
+      "20E45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不可约特征标",
+      "特征标乘积",
+      "可解群",
+      "忠实特征标"
+    ],
+    "en": [
+      "irreducible characters",
+      "products of characters",
+      "soluble groups",
+      "faithful characters"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个可解群 G 及两个忠实非线性不可约特征标 α、β 使 αβ 仍不可约，或证明这样的可解例子不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

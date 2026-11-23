@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000170",
-  "revision": 1,
-  "card_rev": "aec0419c6fec5649",
+  "revision": 2,
+  "card_rev": "777b64223eb18f77",
   "title": "Kourovka 18.108：性质(τ) 群满映到每个有限单群？",
-  "title_en": null,
+  "title_en": "A finitely generated property (tau) group mapping onto every finite simple group",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F65",
+    "secondary": [
+      "22D10",
+      "20E18"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "性质(τ)",
+      "有限单群",
+      "有限生成群",
+      "满同态",
+      "酉对偶"
+    ],
+    "en": [
+      "property (tau)",
+      "finite simple groups",
+      "finitely generated groups",
+      "epimorphisms",
+      "unitary dual"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +160,12 @@
     "note": "一区二区·难度待定；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出满足性质(τ)且能满映到每个有限单群的有限生成群并证明这两条性质，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

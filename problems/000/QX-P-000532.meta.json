@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000532",
-  "revision": 1,
-  "card_rev": "fa3619a11bf71abb",
+  "revision": 2,
+  "card_rev": "dd7379133a88385e",
   "title": "19.107 可算 tdlc 群是否都初等",
-  "title_en": null,
+  "title_en": "Is every amenable totally disconnected locally compact group in the class AE?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22D05",
+    "secondary": [
+      "22D25",
+      "43A07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "tdlc 群",
+      "amenable 群",
+      "可均性",
+      "群扩张",
+      "局部紧群"
+    ],
+    "en": [
+      "tdlc groups",
+      "amenable groups",
+      "amenability",
+      "group extensions",
+      "locally compact groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Wesolek）AE 为含紧群与离散可算群、对闭子群/Hausdorff 商/开子群有向并/扩张封闭的最小类。每个可算…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个可均的全不连通局部紧群都属于类 AE，或构造出一个可均却不属于 AE 的 tdlc 群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

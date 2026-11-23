@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000113",
-  "revision": 1,
-  "card_rev": "91d70b601ae738ff",
+  "revision": 2,
+  "card_rev": "3652d2b7d78afa1b",
   "title": "中心对称 Viterbo 猜想（c_EHZ(X)^n ≤ n!·vol(X)）",
-  "title_en": null,
+  "title_en": "The symmetric Viterbo conjecture: c_EHZ(X)^n is at most n! times vol(X)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -117,11 +120,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53D35",
+    "secondary": [
+      "52A40",
+      "52A20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "辛几何/凸几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Viterbo 猜想",
+      "EHZ 容量",
+      "辛容量",
+      "中心对称凸体",
+      "体积上界"
+    ],
+    "en": [
+      "Viterbo conjecture",
+      "EHZ capacity",
+      "symplectic capacity",
+      "centrally symmetric convex body",
+      "volume bound"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -129,7 +152,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 非对称版本已否（2024-2026）；本条限中心对称陈述；与 B-1023 对称 Mahler 族相邻"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 ℝ^{2n} 中的中心对称凸体 X 都满足 c_EHZ(X)^n ≤ n!·vol(X)，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

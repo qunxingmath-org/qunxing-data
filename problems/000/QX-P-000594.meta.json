@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000594",
-  "revision": 1,
-  "card_rev": "6fcc6c469243bc69",
+  "revision": 2,
+  "card_rev": "47bd9a8ab2bea25e",
   "title": "（来源 C-001）是否每个素数 p 都可写成 p = n² − q（q 素数）？",
-  "title_en": null,
+  "title_en": "Can every prime be written as a square minus a prime?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -95,11 +97,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N32",
+    "secondary": [
+      "11N05",
+      "11P32"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（素数分布/Bunyakovsky 型）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数",
+      "平方数",
+      "Bateman–Horn 猜想",
+      "Bunyakovsky 猜想"
+    ],
+    "en": [
+      "primes",
+      "squares",
+      "Bateman-Horn conjecture",
+      "Bunyakovsky conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -107,7 +127,12 @@
     "note": "三四区·小问题；孤立小问题：MSE 最高票回答（Especially Lime, 2024-12-06, 17票）明言 unknown 且 hard to approach，属于平方素数型加性数论；无法期望解决原命题，但可做三/四区级部分结果：如正密度版本的 Chen/Iwaniec 型转型、或对例外集的密度上界（参照 x²+p 型 Linnik/Heath-Brown 方法）。有限部分目标明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个素数 p 都存在整数 n 使 n²−p 为素数，或给出一个反例素数 p 并证明不存在这样的 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

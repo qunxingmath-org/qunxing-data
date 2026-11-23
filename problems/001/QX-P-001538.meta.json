@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001538",
-  "revision": 1,
-  "card_rev": "9b1c175291cae253",
+  "revision": 2,
+  "card_rev": "f6158a24d49be93d",
   "title": "19.110 存在自由群秩2有限、秩3无限的群变元簇吗",
-  "title_en": null,
+  "title_en": "Is there a variety of groups with F_2 finite but F_3 infinite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E10",
+    "secondary": [
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群变元簇",
+      "相对自由群",
+      "秩",
+      "有限性",
+      "恒等式"
+    ],
+    "en": [
+      "varieties of groups",
+      "relatively free groups",
+      "rank",
+      "finiteness",
+      "identities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在群变元簇，其秩 2 相对自由群有限而秩 3 相对自由群无限？（B.H. Neumann 型经典问题，Bergma…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个变元簇 V 使 F₂(V) 有限而 F₃(V) 无限，或证明这样的变元簇不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

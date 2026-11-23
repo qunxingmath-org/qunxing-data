@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001117",
-  "revision": 1,
-  "card_rev": "604efad128be1cf5",
+  "revision": 2,
+  "card_rev": "fbc68f4ec7489184",
   "title": "Kourovka 11.123：有限群自同构塔 Aᵢ(G) 能否含无限多非同构群",
-  "title_en": null,
+  "title_en": "Can the automorphism tower of a finite group contain infinitely many non-isomorphic groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20F28",
+      "20E36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自同构塔",
+      "有限群",
+      "同构型",
+      "无限序列"
+    ],
+    "en": [
+      "automorphism towers",
+      "finite groups",
+      "isomorphism types",
+      "infinite sequences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个有限群 G，证明其自同构塔 A₁(G), A₂(G), … 中含无穷多个互不同构的群；或证明任何有限群的塔都只有有限多个同构型。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001795",
-  "revision": 1,
-  "card_rev": "9fc1a564be8986ec",
+  "revision": 2,
+  "card_rev": "f951613c22324360",
   "title": "{a/(b+c)+b/(a+c)+c/(a+b)} 整数集刻画",
-  "title_en": null,
+  "title_en": "Characterizing the integers attained by a/(b+c) + b/(a+c) + c/(a+b)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D68",
+    "secondary": [
+      "11A99",
+      "11Y50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有理和式",
+      "整数取值",
+      "丢番图条件",
+      "可计算性"
+    ],
+    "en": [
+      "rational sums",
+      "integer values",
+      "Diophantine conditions",
+      "computability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "刻画使 S 为整数的 (a,b,c) 全体（或判定其是否为可计算集），并给出可取的整数值清单及证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

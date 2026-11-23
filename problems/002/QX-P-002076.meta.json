@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002076",
-  "revision": 1,
-  "card_rev": "49cc9d91339e82f8",
+  "revision": 2,
+  "card_rev": "3120181483087103",
   "title": "全二面角 π/4 的多面体（嵌入不可能线索；自交实问）",
-  "title_en": null,
+  "title_en": "Is there a finite bounded dyadic polyhedron with every dihedral angle pi/4?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B10",
+    "secondary": [
+      "51M20",
+      "52B05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "二面角",
+      "多面体",
+      "自交多面体",
+      "平面面片",
+      "dyadic 多面体"
+    ],
+    "en": [
+      "dihedral angles",
+      "polyhedra",
+      "self-intersecting polyhedra",
+      "planar faces",
+      "dyadic polyhedra"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "造出满足上述四条要求、且所有二面角均为 π/4 的多面体（可自交），或证明这样的多面体不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

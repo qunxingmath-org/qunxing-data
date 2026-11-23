@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001200",
-  "revision": 1,
-  "card_rev": "b22e8dca2e74ca88",
+  "revision": 2,
+  "card_rev": "020d0ce64e2b0934",
   "title": "Williamson矩阵：找全/分阶构造",
-  "title_en": null,
+  "title_en": "Williamson matrices: completing the order-existence table",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "compute",
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B20",
+    "secondary": [
+      "15B34",
+      "05B30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合矩阵论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Williamson 矩阵",
+      "Hadamard 矩阵",
+      "±1 四元组",
+      "存在的阶",
+      "构造"
+    ],
+    "en": [
+      "Williamson matrices",
+      "Hadamard matrices",
+      "plus-minus-one quadruples",
+      "orders of existence",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +126,12 @@
     "note": "三四区·小问题；C层：具体构造/搜索问题——2024-2025仍有新阶（63阶SAT+CAS新发现；78/406/606等2025新阶）；Williamson猜想（全奇阶）已知为假（35,47,53,59），残余为分阶完成表。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定存在 Williamson 型四元组的阶的完整集合（至少补齐所有小阶并给出最小未决阶），并对存在与不存在两侧都给出证明或构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

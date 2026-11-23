@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002005",
-  "revision": 1,
-  "card_rev": "aaa31ad4ac3a01b9",
+  "revision": 2,
+  "card_rev": "6f76367b9334319e",
   "title": "（（来源错配区块））",
-  "title_en": null,
+  "title_en": "A four-quantifier formulation of the Axiom of Choice",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -73,18 +76,40 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 原包占位条目（来源错配区块）：标题是占位符，题面只有一句，无法核对。待用户决定保留还是删除。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": null
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E25",
+    "secondary": [
+      "03E30",
+      "03B10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "来源错配（MO ID 内容不符）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "选择公理",
+      "量词形式",
+      "Zermelo 集论",
+      "等价表述",
+      "集合论"
+    ],
+    "en": [
+      "Axiom of Choice",
+      "quantifier forms",
+      "Zermelo set theory",
+      "equivalent formulations",
+      "set theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -92,9 +117,14 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "写出一个四量词的语句并在 ZF 中证明它与选择公理等价（或证明其不等价并给出反模型），同时说明为何不能减少量词个数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
-  "visibility": "public",
+  "visibility": "unlisted",
   "license": "CC-BY-SA-4.0",
   "contributors": [],
   "redirect_from": [],
@@ -106,5 +136,6 @@
     "status_raw": "UNKNOWN",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001028",
-  "revision": 1,
-  "card_rev": "1fe1d2818f44356d",
+  "revision": 2,
+  "card_rev": "3d731c2e35df0629",
   "title": "Kourovka 15.96：分裂自同构（φⁿ=1 且 xx^φ...x^{φ^{n-1}}=1）",
-  "title_en": null,
+  "title_en": "Derived length of nilpotent p-groups with a splitting automorphism of order pn",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20D15",
+      "20E36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "分裂自同构",
+      "幂零 p-群",
+      "导长",
+      "生成元个数",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "splitting automorphisms",
+      "nilpotent p-groups",
+      "derived length",
+      "number of generators",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (a)(b) 分别证明导长被 d、p、n（或相应参数）的函数界住，或构造使导长无界的反例族。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

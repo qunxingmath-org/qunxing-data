@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001932",
-  "revision": 1,
-  "card_rev": "0be274af0ce77750",
+  "revision": 2,
+  "card_rev": "237b9dc54f485cbe",
   "title": "q-阶乘 +1 不可约性",
-  "title_en": null,
+  "title_en": "Is the q-factorial [n]_q! + 1 irreducible over Z?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "12E05",
+    "secondary": [
+      "13P05",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "q-阶乘",
+      "不可约多项式",
+      "整数多项式",
+      "因式分解"
+    ],
+    "en": [
+      "q-factorials",
+      "irreducible polynomials",
+      "integer polynomials",
+      "factorization"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个正整数 n，[n]_q!+1 在 Z 上不可约；或给出一个使它可约的 n 及显式分解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

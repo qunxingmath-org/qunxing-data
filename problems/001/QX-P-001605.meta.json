@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001605",
-  "revision": 1,
-  "card_rev": "6c838b94d8fe5fd6",
+  "revision": 2,
+  "card_rev": "45930cdd94ba0b4a",
   "title": "21.135 χ₁(H)=χ₁(G), G 平凡可解根 ⇒ H 亦然？",
-  "title_en": null,
+  "title_en": "Equal multisets of irreducible character degrees and the solvable radical",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D10",
+      "20D25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不可约特征标次数",
+      "可解根",
+      "多重集",
+      "有限群",
+      "特征标次数集"
+    ],
+    "en": [
+      "irreducible character degrees",
+      "solvable radical",
+      "multisets",
+      "finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；χ₁(G) 为计重数的不可约特征标次数全体。若 χ₁(H)=χ₁(G) 且 G 的可解根平凡，H 的可解根是否也平凡？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在 χ₁(H)=χ₁(G) 且 R(G)=1 时必有 R(H)=1；或给出一对满足 χ₁(H)=χ₁(G) 而可解根一平凡一非平凡的有限群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

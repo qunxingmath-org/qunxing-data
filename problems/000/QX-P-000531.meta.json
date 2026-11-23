@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000531",
-  "revision": 1,
-  "card_rev": "c8f1a4ca80b8b649",
+  "revision": 2,
+  "card_rev": "5d3e9adb953d40e2",
   "title": "19.91 不用 CFSG 证强封闭初等交换子群定理",
-  "title_en": null,
+  "title_en": "A CFSG-free proof of the strongly closed elementary abelian subgroup theorem",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D20",
+    "secondary": [
+      "20D05",
+      "20D06"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "强封闭子群",
+      "Sylow p-子群",
+      "CFSG-free 证明",
+      "初等交换子群",
+      "有限群论"
+    ],
+    "en": [
+      "strongly closed subgroups",
+      "Sylow p-subgroups",
+      "CFSG-free proofs",
+      "elementary abelian subgroups",
+      "finite group theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Solomon）G 有限群、A 为交换 Sylow p-子群、B≤A 强封闭初等交换。不用分类定理证明：G 有正规子群…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出该结论在一般情形下不依赖 CFSG 的完整证明；题面指出哪怕是 p=3 且 A 的 3-秩为 3 这一特例的 CFSG-free 证明也已有价值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

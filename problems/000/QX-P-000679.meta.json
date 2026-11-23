@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000679",
-  "revision": 1,
-  "card_rev": "5cfe4f9d8ae0acfc",
+  "revision": 2,
+  "card_rev": "4249d0a2ee31df95",
   "title": "16.7 F_n⋊F_n 的隶属问题不可判定？",
-  "title_en": null,
+  "title_en": "Is the membership problem undecidable for semidirect products F_n semidirect F_n?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "03D40",
+      "20E22"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "隶属问题",
+      "自由群",
+      "半直积",
+      "不可判定性",
+      "算法"
+    ],
+    "en": [
+      "membership problem",
+      "free groups",
+      "semidirect products",
+      "undecidability",
+      "algorithms"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 n≥2 半直积 F_n⋋F_n 的隶属问题都不可判定，或给出某个 n 使该问题可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

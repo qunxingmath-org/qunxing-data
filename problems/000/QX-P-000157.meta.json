@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000157",
-  "revision": 1,
-  "card_rev": "08bf80424bcb866c",
+  "revision": 2,
+  "card_rev": "4d9f18bccb921a8d",
   "title": "Kourovka 18.74：fg 初等可和非虚拟幂零群必有 fg 非虚拟幂零可换metabelian 截段吗",
-  "title_en": null,
+  "title_en": "Sections of finitely generated elementary amenable groups: a metabelian non-virtually-nilpotent quotient?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F16",
+    "secondary": [
+      "20F05",
+      "20E26"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "初等可和群",
+      "虚拟幂零",
+      "metabelian 截段",
+      "有限生成",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "elementary amenable group",
+      "virtually nilpotent",
+      "metabelian section",
+      "finitely generated",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：Olshanskii 问题；Chou 1980、Breuillard 2006 JNVN 背景"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的有限生成 metabelian 非虚拟幂零截段必定存在，或给出一个没有这种截段的群作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

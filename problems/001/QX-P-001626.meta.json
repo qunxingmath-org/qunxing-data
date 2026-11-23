@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001626",
-  "revision": 1,
-  "card_rev": "24dbfd79832e2570",
+  "revision": 2,
+  "card_rev": "f708e25b2f6e3339",
   "title": "Singmaster 猜想",
-  "title_en": null,
+  "title_en": "Singmaster's conjecture: a uniform bound on how often an integer occurs in Pascal's triangle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -82,11 +85,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B65",
+    "secondary": [
+      "05A10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Singmaster 猜想",
+      "二项式系数",
+      "Pascal 三角形",
+      "出现次数",
+      "重数"
+    ],
+    "en": [
+      "Singmaster's conjecture",
+      "binomial coefficients",
+      "Pascal's triangle",
+      "multiplicity"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -94,7 +115,12 @@
     "note": "A 层：一区二区、预期较易证明"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在常数 C，使每个大于 1 的整数在 Pascal 三角形中最多出现 C 次，或给出出现次数无界的整数序列。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

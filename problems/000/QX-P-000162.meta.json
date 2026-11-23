@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000162",
-  "revision": 1,
-  "card_rev": "00738f41ed6350b0",
+  "revision": 2,
+  "card_rev": "c2e01c3c270150c9",
   "title": "Kourovka 9.24：Thompson 猜想：有限非交换单群 G=C·C（某共轭类）",
-  "title_en": null,
+  "title_en": "Thompson's conjecture: every finite non-abelian simple group is a product of two conjugacy classes",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D05",
+    "secondary": [
+      "20E45",
+      "20C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Thompson 猜想",
+      "共轭类乘积",
+      "有限单群",
+      "乘积覆盖",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "Thompson conjecture",
+      "product of conjugacy classes",
+      "finite simple group",
+      "product cover",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +160,12 @@
     "note": "一区二区·难度待定；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个有限非交换单群给出一个共轭类 C 并证明 CC=G，或给出一个不存在这种共轭类的单群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

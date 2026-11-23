@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001015",
-  "revision": 1,
-  "card_rev": "48b8db641ff0cab1",
+  "revision": 2,
+  "card_rev": "6ef75da022c3cefc",
   "title": "On the Open Problem in the 2023 Simon Marais Mathematics Competition",
-  "title_en": null,
+  "title_en": "Classifying exponent pairs a, b with r^a + sqrt(n) and r^b + sqrt(n) rational",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "12F05",
+    "secondary": [
+      "11R04",
+      "12E05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "代数数论/竞赛延伸",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "代数数",
+      "有理数平方根",
+      "指数对",
+      "分类",
+      "竞赛题"
+    ],
+    "en": [
+      "algebraic numbers",
+      "square roots of rationals",
+      "exponent pairs",
+      "classification",
+      "competition problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +133,12 @@
     "note": "三四区·小问题；易证明~中等——2023 Simon Marais 原题已解（主线已闭）；向k个幂次/一般平方根和的推广是自然的出题级延伸，代数数域工具+小规模计算可入手。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 k≥3 个指数以及多个平方根 √n_j 的情形，给出所有满足条件的指数组与 r 的完整分类；或证明不存在这样的分类。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

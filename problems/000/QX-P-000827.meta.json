@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000827",
-  "revision": 1,
-  "card_rev": "d4f893dbf5fd7ed3",
+  "revision": 2,
+  "card_rev": "a409fd7b129ee4df",
   "title": "Green 问题 63：Hofstadter 型闭包集正密度？（含 2,3 且 a·b−1 封闭）",
-  "title_en": null,
+  "title_en": "Green problem 63: does the Hofstadter-type closure of {2,3} have positive density?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B05",
+    "secondary": [
+      "11A99",
+      "06A99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（乘性结构/递归集合）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "闭包集",
+      "正密度",
+      "乘性结构",
+      "递归定义",
+      "Green 问题"
+    ],
+    "en": [
+      "closure set",
+      "positive density",
+      "multiplicative structure",
+      "recursive definition",
+      "Green problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；Erdős 归于 Hofstadter 的老问题；生成规则极简（S 最小闭包：2,3∈S，a,b∈S⟹ab−1∈S），可编程枚举前 N 项看密度趋势；Green 注\"answer probably yes\"。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 A 具有正密度（给出 liminf |A∩[1,N]|/N > 0 的证明），或证明其密度为零。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

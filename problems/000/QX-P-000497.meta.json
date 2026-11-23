@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000497",
-  "revision": 1,
-  "card_rev": "e466c359aed6712b",
+  "revision": 2,
+  "card_rev": "8afb91378e854242",
   "title": "Bateman–Horn 猜想",
-  "title_en": null,
+  "title_en": "The Bateman-Horn conjecture: simultaneous prime values of irreducible polynomials",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "prove"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N32",
+    "secondary": [
+      "11N05",
+      "11C08"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "解析数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Bateman–Horn 猜想",
+      "素数取值",
+      "渐近公式",
+      "不可约多项式",
+      "奇异级数"
+    ],
+    "en": [
+      "Bateman-Horn conjecture",
+      "prime values",
+      "asymptotic formula",
+      "irreducible polynomials",
+      "singular series"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；不可约整多项式组同时取素值的渐近公式—— Hardy–Littlewood C 谱系总纲领，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所给的一族不可约整多项式证明计数满足该渐近公式（含常数 C 的显式表达），或给出一个多项式组使公式失败。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

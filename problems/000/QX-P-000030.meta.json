@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000030",
-  "revision": 1,
-  "card_rev": "bc4f5af67eb19144",
+  "revision": 2,
+  "card_rev": "df05c27d3baf5649",
   "title": "WOWII 猜想 189：max distEven ≤ 1+σ(G) 蕴含 Hamilton 路",
-  "title_en": null,
+  "title_en": "WOWII 189: a condition on even-distance counts that forces a Hamilton path",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,7 +83,9 @@
     },
     "depth": "deep",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 题面自相矛盾：statement/source 写 σ(G)，formal 写 δ(G)，无法确认是否同一参数。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -92,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C45",
+    "secondary": [
+      "05C12",
+      "05C07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（机器生成猜想）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hamilton 路",
+      "偶距离点数",
+      "最小度",
+      "机器生成猜想",
+      "图论"
+    ],
+    "en": [
+      "Hamilton paths",
+      "even-distance counts",
+      "minimum degree",
+      "machine-generated conjectures",
+      "graph theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +128,12 @@
     "note": "一区二区·易证明；条件式蕴含型猜想：distEven(v)=偶距离点数，σ(G)=最小度和；可用小图穷举验证，且与已知 Hamilton 性质（Ore/Dirac 型）结构相近，存在可延续的度序列方法。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个满足 max_v distEven(v) ≤ 1 + σ(G) 的连通图都有 Hamilton 路；或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -118,5 +147,6 @@
     "status_raw": "OPEN-WEAK",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

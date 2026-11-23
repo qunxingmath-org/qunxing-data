@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000341",
-  "revision": 1,
-  "card_rev": "27021138609c69c8",
+  "revision": 2,
+  "card_rev": "364a618410cc94b5",
   "title": "Is the rank-one convex energy W_magic^+ = λmax/λmin − 2 log λmin quasiconvex? (Morrey's conjecture reduction)",
-  "title_en": null,
+  "title_en": "Is the rank-one convex energy W_magic^+ = λmax/λmin − 2 log λmin quasiconvex?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "special_case"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -115,11 +118,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "49J45",
+    "secondary": [
+      "74B20",
+      "26B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "分析/PDE（变分法/凸性层级）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟凸性",
+      "rank-one 凸性",
+      "Morrey 猜想",
+      "变分法",
+      "非线性弹性"
+    ],
+    "en": [
+      "quasiconvexity",
+      "rank-one convexity",
+      "Morrey's conjecture",
+      "calculus of variations",
+      "nonlinear elasticity"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -127,7 +150,12 @@
     "note": "一区二区·难度待定；中等偏难但未冻结——Morrey猜想（平面rank-one凸⟹拟凸）是变分法著名开放问题；本条是其等价化约后的单个显式函数判定问题（W_magic⁺），有数值方法与二分量映照正结果支撑，路径明确但函数判定本身为活性难题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 W_magic⁺ 是拟凸的，或构造一个使其违反拟凸不等式的扰动场。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

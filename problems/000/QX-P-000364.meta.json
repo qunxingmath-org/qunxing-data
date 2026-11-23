@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000364",
-  "revision": 1,
-  "card_rev": "db021353defd1f86",
+  "revision": 2,
+  "card_rev": "0411663ca699973d",
   "title": "Newman猜想（分拆函数同余遍历性）",
-  "title_en": null,
+  "title_en": "Newman's conjecture: the partition function hits every residue class infinitely often",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11P83",
+    "secondary": [
+      "05A17",
+      "11F33"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/模形式",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "分拆函数",
+      "同余",
+      "剩余类",
+      "Ramanujan 同余",
+      "模形式"
+    ],
+    "en": [
+      "partition function",
+      "congruences",
+      "residue classes",
+      "Ramanujan congruences",
+      "modular forms"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +135,12 @@
     "note": "一区二区·难度待定；B层：奇模数已证（Ono路线），偶模数大部分开放——'推广到下一个模类'是明确的逐模路径（Choi–Lee等2022-2025持续）；p-adic/eta-quotient工具成熟。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 m≥1 与每个剩余类 r，都有无穷多个 n 使 p(n)≡r (mod m)，或给出一个取不到某类的反例模数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

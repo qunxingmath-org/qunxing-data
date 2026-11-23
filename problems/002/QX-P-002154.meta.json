@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002154",
-  "revision": 1,
-  "card_rev": "11c9214d9a6405a8",
+  "revision": 2,
+  "card_rev": "2aff844c59d2eff3",
   "title": "诺特环左右单模的双射",
-  "title_en": null,
+  "title_en": "A bijection between left and right simple modules over Noetherian rings",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16D60",
+    "secondary": [
+      "16P40",
+      "16D40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "环论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "诺特环",
+      "单模",
+      "左右对称",
+      "Jacobson 根",
+      "环论"
+    ],
+    "en": [
+      "Noetherian rings",
+      "simple modules",
+      "left-right symmetry",
+      "Jacobson radical"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个诺特环给出左单模同构类与右单模同构类之间的自然双射并证明，或构造一个使两侧基数不同的诺特环。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

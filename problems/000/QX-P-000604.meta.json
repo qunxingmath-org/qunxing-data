@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000604",
-  "revision": 1,
-  "card_rev": "0f40ea77ac8a7591",
+  "revision": 2,
+  "card_rev": "4b59aa128270d856",
   "title": "（来源 C-011）1 + 1/4 + 1/9 + … + 1/n² 何时为有理数平方？",
-  "title_en": null,
+  "title_en": "For which n is the sum 1 + 1/4 + ... + 1/n^2 a rational square?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D61",
+    "secondary": [
+      "11B65",
+      "11A99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论（调和数平方性/Erdős-Niven 型）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "调和数",
+      "平方和",
+      "有理平方",
+      "分母素因子"
+    ],
+    "en": [
+      "harmonic numbers",
+      "sums of reciprocal squares",
+      "rational squares",
+      "prime divisors of denominators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +125,12 @@
     "note": "三四区·小问题；孤立小问题：无证明路线，但与已知结果（Erdős-Niven：Σ1/k 整数仅 n=1；Yates 类 H_n^{(2)} 非平方结果部分存在？）相关。三四区级目标：证明无穷多 n 处分子含奇次素因子（Will Jagy 的模式可被证明——他自注 the following pattern happens and can probably be proved），即证明 H_n^{(2)} 在正密度 n 上非平方。这是可写的小结果。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定使 H_n^(2) 为有理数平方的全部 n 并给出证明（或给出新的解），而不只是有限范围的计算机验证。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

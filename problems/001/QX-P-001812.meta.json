@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001812",
-  "revision": 1,
-  "card_rev": "f13aa61f879d8465",
+  "revision": 2,
+  "card_rev": "696e4021f96c13fe",
   "title": "∣φ(n+1)−φ(n)∣=2 无穷解？",
-  "title_en": null,
+  "title_en": "Are there infinitely many n with |phi(n+1) - phi(n)| = 2?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11N36",
+      "11B65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Euler 函数",
+      "相邻整数",
+      "Sierpiński 猜想",
+      "无穷解"
+    ],
+    "en": [
+      "Euler totient",
+      "consecutive integers",
+      "Sierpinski's conjecture",
+      "infinitely many solutions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在无穷多个 n 使 |φ(n+1)−φ(n)|=2，或证明这样的 n 只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000977",
-  "revision": 1,
-  "card_rev": "4032d286f805b2fc",
+  "revision": 2,
+  "card_rev": "3c0faa08d2121eaa",
   "title": "Kourovka 21.71：FL(R)：平凡 RG-模有有限自由消解",
-  "title_en": null,
+  "title_en": "Kourovka 21.71: type FL over two fields with different Euler characteristics",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20J05",
+    "secondary": [
+      "18G15",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "FL 型",
+      "欧拉示性数",
+      "有限自由消解",
+      "系数域",
+      "Kielak 问题"
+    ],
+    "en": [
+      "type FL",
+      "Euler characteristic",
+      "finite free resolutions",
+      "coefficient fields",
+      "Kielak's problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个群与两个域，使它在两个域上都属 FL 型但欧拉示性数不同，或证明这种情况不可能。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

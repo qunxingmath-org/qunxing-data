@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002194",
-  "revision": 1,
-  "card_rev": "fe0383b0f835ecbe",
+  "revision": 2,
+  "card_rev": "7336dac211eff78d",
   "title": "ω^ω 的拓扑范畴度",
-  "title_en": null,
+  "title_en": "The degree of categoricity of Baire space omega^omega",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D78",
+    "secondary": [
+      "03D30",
+      "03E15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "可计算分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "范畴度",
+      "图灵度",
+      "Baire 空间",
+      "可计算副本",
+      "同构"
+    ],
+    "en": [
+      "degree of categoricity",
+      "Turing degrees",
+      "Baire space",
+      "computable copies",
+      "isomorphism"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 ω^ω 作为可计算 Polish 空间的范畴度,并证明这个图灵度确实是最小的。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

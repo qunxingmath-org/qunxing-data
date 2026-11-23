@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001606",
-  "revision": 1,
-  "card_rev": "fa424966dafd5342",
+  "revision": 2,
+  "card_rev": "f7e0c76718d51f6e",
   "title": "21.136 剩余有限 profinite 群 <2^ℵ0 条无限阶共轭类 ⇒ 挠群？",
-  "title_en": null,
+  "title_en": "A profinite group with fewer than continuum many infinite-order conjugacy classes: must it be torsion?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "20E45",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "profinite 群",
+      "共轭类",
+      "挠群",
+      "无限阶元素",
+      "剩余有限"
+    ],
+    "en": [
+      "profinite groups",
+      "conjugacy classes",
+      "torsion groups",
+      "infinite-order elements"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Wilson）profinite 群 G 的无限阶元素共轭类少于 2^ℵ0 条，G 必为挠群？有限生成情形已证（Wil…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何无限阶元素共轭类少于 2^ℵ₀ 条的 profinite 群都是挠群，或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

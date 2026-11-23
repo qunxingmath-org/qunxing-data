@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000947",
-  "revision": 1,
-  "card_rev": "b2fae15530e4b0ab",
+  "revision": 2,
+  "card_rev": "b6d255c51fc5ada8",
   "title": "Kourovka 20.46：局部紧群 G 在其 Furstenberg 边界 ∂spG 上的作用是否拓扑自由（平凡稳定子点稠密）",
-  "title_en": null,
+  "title_en": "Kourovka 20.46: topological freeness of lattice actions on the Furstenberg boundary",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,7 +97,9 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 卡面比原文宽：卡面问法与原文实际问句不一致。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -105,11 +110,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22F10",
+    "secondary": [
+      "37A15",
+      "22D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Furstenberg 边界",
+      "拓扑自由作用",
+      "格",
+      "强近端",
+      "忠实作用"
+    ],
+    "en": [
+      "Furstenberg boundary",
+      "topologically free actions",
+      "lattices",
+      "strong proximality",
+      "faithful actions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +142,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (a) 给出例子说明两个格的作用可以一个有拓扑自由一个没有（或证明不可能），并对 (b) 在齐性边界情形给出同样的判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -131,5 +161,6 @@
     "status_raw": "OPEN",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

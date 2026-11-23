@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000577",
-  "revision": 1,
-  "card_rev": "1e2faf3d7025197e",
+  "revision": 2,
+  "card_rev": "da7ec5d97973d4d7",
   "title": "14.51 abelian-by-nilpotent 群恒等式的有限基（三子问）",
-  "title_en": null,
+  "title_en": "Are the identities of abelian-by-nilpotent groups finitely based?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E10",
+    "secondary": [
+      "20F16",
+      "08B05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "恒等式基",
+      "abelian-by-nilpotent",
+      "有限基",
+      "群变元簇"
+    ],
+    "en": [
+      "basis of identities",
+      "abelian-by-nilpotent groups",
+      "finite basis property",
+      "varieties of groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (a)(b)(c) 各自给出结论：要么给出有限条恒等式并证明其能推出全部恒等式，要么证明存在需要无穷多条的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

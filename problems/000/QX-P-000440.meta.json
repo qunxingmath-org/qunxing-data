@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000440",
-  "revision": 1,
-  "card_rev": "435000d842d01faa",
+  "revision": 2,
+  "card_rev": "e3d2c054fc584685",
   "title": "2^n 的三进制表示对 n>8 必含数字 2",
-  "title_en": null,
+  "title_en": "For n > 8 the ternary expansion of 2^n must contain the digit 2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A63",
+    "secondary": [
+      "03D10",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/可计算性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三进制表示",
+      "数字 2",
+      "2 的幂",
+      "可计算性",
+      "图灵机"
+    ],
+    "en": [
+      "ternary expansion",
+      "digit 2",
+      "powers of two",
+      "computability",
+      "Turing machines"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；与 15-态图灵机不停机等价的自动化验证型命题（Terras/忙碌海狸相邻族），验证可无限推进、一般证明无路线，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n>8 证明 2^n 的三进制表示含数字 2（等价地，2^n 不是互异 3 的幂之和），或给出一个反例 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

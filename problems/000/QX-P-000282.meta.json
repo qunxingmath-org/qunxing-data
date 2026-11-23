@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000282",
-  "revision": 1,
-  "card_rev": "4ed3753e7be3f1d4",
+  "revision": 2,
+  "card_rev": "7fd626e913bf9977",
   "title": "强多项式线性规划问题（Smale 问题）",
-  "title_en": null,
+  "title_en": "Smale's problem 9: is there a strongly polynomial algorithm for linear programming?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +85,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "90C05",
+    "secondary": [
+      "68Q25",
+      "90C60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "优化/复杂性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "线性规划",
+      "强多项式算法",
+      "Smale 问题",
+      "算法复杂度"
+    ],
+    "en": [
+      "linear programming",
+      "strongly polynomial algorithm",
+      "Smale's problems",
+      "algorithmic complexity"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +115,12 @@
     "note": "一区二区·难度待定；LP 是否有多项式(输入位数)步数算法——理论计算机+数值优化核心开放；单形/内点法的强多项式变体持续有改进文献；子问题（2D LP 等已证强多项式）可作三四区目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个强多项式的线性规划算法并证明其复杂度与输入位数无关，或证明这样的算法不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

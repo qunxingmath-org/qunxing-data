@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001912",
-  "revision": 1,
-  "card_rev": "dc16ae9626d0a4f5",
+  "revision": 2,
+  "card_rev": "ea8d2916c167075d",
   "title": "彩窗问题：圆内随机弦几何概率",
-  "title_en": null,
+  "title_en": "The stained glass window problem: geometric probability for random chords in a disk",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "60D05",
+    "secondary": [
+      "52A22"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何概率",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "几何概率",
+      "随机弦",
+      "圆盘",
+      "彩窗问题"
+    ],
+    "en": [
+      "geometric probability",
+      "random chords",
+      "disk",
+      "stained glass window"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +98,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "明确随机模型后，给出所问几何概率的精确值及其推导。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

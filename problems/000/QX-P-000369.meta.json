@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000369",
-  "revision": 1,
-  "card_rev": "9291a78d7eb1bf0e",
+  "revision": 2,
+  "card_rev": "b82e84a08e756f76",
   "title": "Brouwer猜想（Laplacian前k大特征值和）",
-  "title_en": null,
+  "title_en": "Brouwer's conjecture: bounding the sum of the k largest Laplacian eigenvalues by m + k(k+1)/2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C50",
+    "secondary": [
+      "15A18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "谱图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Laplacian 特征值",
+      "谱图论",
+      "特征值和",
+      "Brouwer 猜想",
+      "上界"
+    ],
+    "en": [
+      "Laplacian eigenvalues",
+      "spectral graph theory",
+      "eigenvalue sums",
+      "Brouwer's conjecture",
+      "upper bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +134,12 @@
     "note": "一区二区·难度待定；B层：2024-2025持续按图类推进（积图、threshold、split等）；m+C(k+1,2)界的形式化利于逐类证明——三四区论文产出模式成熟，一般形式留B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个图 G 与每个 k≤n 都有 Σ_{i≤k}λ_i(L(G)) ≤ m+k(k+1)/2，或给出一个违反它的图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

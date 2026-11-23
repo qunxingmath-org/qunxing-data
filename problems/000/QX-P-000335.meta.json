@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000335",
-  "revision": 1,
-  "card_rev": "33606d998ae3ff00",
+  "revision": 2,
+  "card_rev": "bc2720d7dfdbd4c0",
   "title": "Erdos P128: every induced subgraph on n/2 vertices has > n^2/50 edges => triangle",
-  "title_en": null,
+  "title_en": "Erdős–Rousseau problem: if every half-sized induced subgraph has more than n^2/50 edges, must G contain a triangle?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论 / Ramsey理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无三角形图",
+      "诱导子图",
+      "边数下界",
+      "Erdős–Rousseau 问题",
+      "极值图论"
+    ],
+    "en": [
+      "triangle-free graphs",
+      "induced subgraphs",
+      "edge density",
+      "Erdős–Rousseau problem",
+      "extremal graph theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +134,12 @@
     "note": "一区二区·难度待定；B层理由: 常数从50压到27.4的过程活跃( Razborov flag algebra ), 但突破16→50区间目标仍远; 1个未采纳proof claim需留意。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足该边数条件的图必含三角形，或构造一个不含三角形的反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

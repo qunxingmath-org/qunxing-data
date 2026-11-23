@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001438",
-  "revision": 1,
-  "card_rev": "3eb7057cc0d33bc0",
+  "revision": 2,
+  "card_rev": "03963f82d9c17abf",
   "title": "batch_I I-048：Jacobi 特征值算法在 Brent–Luk 并行排序（固定循环模式，如 4×4 的 1a)12",
-  "title_en": null,
+  "title_en": "Convergence of Jacobi's eigenvalue algorithm under Brent-Luk parallel ordering",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "65F15",
+    "secondary": [
+      "15A18",
+      "65Y05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数值线性代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Jacobi 特征值算法",
+      "并行排序",
+      "收敛性",
+      "Hermitian 矩阵"
+    ],
+    "en": [
+      "Jacobi eigenvalue algorithm",
+      "parallel ordering",
+      "convergence",
+      "Hermitian matrices"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Alexander Chervov 2011 提出（咨询众多专家后未证）；Denis Serre 评论给 a.e.-ordering 结果；0 实质回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对固定并行顺序的 Jacobi 法收敛（最好给出速度估计），或给出一个使该顺序下算法不收敛的矩阵。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

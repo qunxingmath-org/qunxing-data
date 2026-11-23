@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001885",
-  "revision": 1,
-  "card_rev": "9622a09899eba855",
+  "revision": 2,
+  "card_rev": "21112bfac53ce072",
   "title": "(an+1)(bn+1)(cn+1) 为平方的频率",
-  "title_en": null,
+  "title_en": "How often is (an+1)(bn+1)(cn+1) a perfect square?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N37",
+    "secondary": [
+      "11D61",
+      "11N25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平方数",
+      "乘积",
+      "频率",
+      "数论函数"
+    ],
+    "en": [
+      "perfect squares",
+      "products",
+      "frequency",
+      "arithmetic functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定参数确定满足条件的 n 的计数函数随 N 的渐近公式（主项与误差），或证明只能做到上下界估计。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

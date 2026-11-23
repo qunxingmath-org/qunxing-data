@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001456",
-  "revision": 1,
-  "card_rev": "05076c9b8955caf3",
+  "revision": 2,
+  "card_rev": "e3ea77648307c3b0",
   "title": "batch_I I-076：t∈Q[t] 是否为 Q[t] 中三个多项式的立方和？",
-  "title_en": null,
+  "title_en": "Is the polynomial t a sum of three cubes of polynomials in Q[t]?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11C08",
+    "secondary": [
+      "11D25",
+      "12E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 多项式丢番图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三立方和",
+      "多项式环",
+      "丢番图方程",
+      "有理系数多项式"
+    ],
+    "en": [
+      "sums of three cubes",
+      "polynomial rings",
+      "Diophantine equations",
+      "rational polynomials"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +130,12 @@
     "note": "三四区·小问题；Luis H Gallardo 2011 问新进展；1 回答（文献检索无新）；Watson 评论给 Z[t] 否定（求导 mod 3）；Q[t] 情形开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出三个有理系数多项式 f、g、h 使 f³+g³+h³=t，或证明这样的三个多项式不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

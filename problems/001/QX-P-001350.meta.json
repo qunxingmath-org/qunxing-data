@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001350",
-  "revision": 1,
-  "card_rev": "81ff5871c0bf9a4a",
+  "revision": 2,
+  "card_rev": "4c857826f6b70bdc",
   "title": "Hsu 函数方程 F(x,y)+F(φ(x),ψ(y))=F(x,ψ(y))+F(g(x),y) 的一般解理论",
-  "title_en": null,
+  "title_en": "General solution theory for Hsu's four-term functional equation",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +83,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "39B22",
+    "secondary": [
+      "39B52",
+      "26A99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "函数方程/集合论分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "函数方程",
+      "对合",
+      "一般解",
+      "分类",
+      "四项方程"
+    ],
+    "en": [
+      "functional equations",
+      "involutions",
+      "general solutions",
+      "classification",
+      "four-term equations"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +115,12 @@
     "note": "三四区·小问题；一行方程；轨道分解框架现成（Howe/Lew/Rice 表示论路线），分类剩余情形是可写的小工作。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出满足该方程的全部 F（对任意给定 φ、ψ），并完成 φ、ψ 为对合时的完全分类。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

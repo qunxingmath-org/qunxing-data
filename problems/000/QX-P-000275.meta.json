@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000275",
-  "revision": 1,
-  "card_rev": "892471a9e25d4606",
+  "revision": 2,
+  "card_rev": "9a6da08d78eadcb3",
   "title": "Lehmer 数（Mahler 测度）极小性问题",
-  "title_en": null,
+  "title_en": "Lehmer's problem: the smallest Mahler measure above 1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "prove"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +95,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11R06",
+    "secondary": [
+      "11C08",
+      "11R09"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（Mahler 测度）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Mahler 测度",
+      "Lehmer 问题",
+      "分圆多项式",
+      "整系数多项式"
+    ],
+    "en": [
+      "Mahler measure",
+      "Lehmer's problem",
+      "cyclotomic polynomials",
+      "integer polynomials"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +125,12 @@
     "note": "一区二区·难度待定；Lehmer 多项式 L 的 M(L)≈1.17628 为已知最小非 1 值；Mossinghoff 改进下界但距目标远；计算搜索（高精度 LLL）可推进下界——'计算可推进+理论缺位'结构。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何非分圆整系数多项式只要 M(P)>1 就有 M(P)≥M(L)，或给出一个测度更小且大于 1 的整系数多项式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

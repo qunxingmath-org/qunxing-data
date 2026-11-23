@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001618",
-  "revision": 1,
-  "card_rev": "20592ea969fb2846",
+  "revision": 2,
+  "card_rev": "3bbde7d667c5b024",
   "title": "17.25 Farbman 例外集 X 的有理点问题",
-  "title_en": null,
+  "title_en": "Rational parameters in Farbman's exceptional set for two-generated matrix groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E05",
+    "secondary": [
+      "20H20",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由群",
+      "矩阵生成",
+      "例外集",
+      "有理参数",
+      "非自由性"
+    ],
+    "en": [
+      "free groups",
+      "matrix generation",
+      "exceptional sets",
+      "rational parameters"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "分别判定 a) 与 b)：给出 (−4,4) 内某个不在 X 中的有理数，或证明全部有理数都在 X 中；并对 [27/7,4) 给出有理数实例或排除。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

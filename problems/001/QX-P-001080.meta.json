@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001080",
-  "revision": 1,
-  "card_rev": "21cdb15143b77a9d",
+  "revision": 2,
+  "card_rev": "553d0c832d922451",
   "title": "Kourovka 6.38：GLn(k) 中与每个共轭类相交的子群必抛物？",
-  "title_en": null,
+  "title_en": "Must a subgroup of GL(n,k) meeting every conjugacy class be parabolic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20G15",
+    "secondary": [
+      "20E07",
+      "20H20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "抛物子群",
+      "共轭类",
+      "一般线性群",
+      "Lie 型群"
+    ],
+    "en": [
+      "parabolic subgroups",
+      "conjugacy classes",
+      "general linear groups",
+      "groups of Lie type"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +158,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "判定 GLₙ(k) 中与每个共轭类都相交的子群是否必为抛物子群，并说明该结论在其他 Lie 型群中成立的范围。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

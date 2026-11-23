@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001542",
-  "revision": 1,
-  "card_rev": "6d90c9402ed3abfd",
+  "revision": 2,
+  "card_rev": "c601ce7524e4a1aa",
   "title": "20.18 R_pk 变元簇中无限多\"无独立拟恒等式基\"的子拟变元簇",
-  "title_en": null,
+  "title_en": "Infinitely many subquasivarieties of R_pk without an independent basis of quasi-identities",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "08C15",
+    "secondary": [
+      "20E10",
+      "20D15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟变元簇",
+      "拟恒等式基",
+      "幂零类 2",
+      "指数 p^k",
+      "有限群"
+    ],
+    "en": [
+      "quasivarieties",
+      "bases of quasi-identities",
+      "class 2 nilpotent",
+      "exponent p^k",
+      "finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；R_pk = 类2幂零、指数 p^k 变元簇。对每个 p,k，R_pk 中是否确有无限多个由\"导群指数 p^k 的有限群…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个素数 p 与 k≥2 构造出无限多个这样的子拟变元簇，或证明对某个 p、k 这样的子簇只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

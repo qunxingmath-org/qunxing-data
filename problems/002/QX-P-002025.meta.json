@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002025",
-  "revision": 1,
-  "card_rev": "44ca796194726048",
+  "revision": 2,
+  "card_rev": "170158b8abe4dac5",
   "title": "Sₙ 类和特征空间唯一性（题面校准）",
-  "title_en": null,
+  "title_en": "Uniqueness of character spaces for classes of the symmetric group",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C30",
+    "secondary": [
+      "05E10",
+      "20G05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "表示论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "对称群",
+      "共轭类",
+      "特征标",
+      "不可约表示",
+      "唯一性判据"
+    ],
+    "en": [
+      "symmetric groups",
+      "conjugacy classes",
+      "characters",
+      "irreducible representations",
+      "uniqueness criteria"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所述的类集合 C 给出判据成立或不成立的完整证明：说明哪些 C 能唯一区分所有不可约表示、哪些不能，并给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

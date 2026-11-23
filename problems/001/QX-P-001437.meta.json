@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001437",
-  "revision": 1,
-  "card_rev": "50b5cd4116c41307",
+  "revision": 2,
+  "card_rev": "b6da7dcf9a60a312",
   "title": "batch_I I-046：给定一个广义 de Bruijn 环面（周期矩形符号阵列及其 k×l 子阵多重集结构），共享同一子阵",
-  "title_en": null,
+  "title_en": "How many generalized de Bruijn tori share the same multiset of subarrays?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "decidable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B30",
+    "secondary": [
+      "37B10",
+      "68R15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合 / 符号动力学",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "de Bruijn 序列",
+      "子阵多重集",
+      "符号动力系统",
+      "计数"
+    ],
+    "en": [
+      "de Bruijn sequences",
+      "multisets of subarrays",
+      "symbolic dynamics",
+      "enumeration"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +131,12 @@
     "note": "三四区·小问题；Steve Huntsman 2010 提出；0 回答； Huntsman 自评\"likely very hard\"（关联 Levin 通用单向平铺展开函数）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 N(结构) 的计数公式或正确算法（对所有 q、k、l 成立），并证明它数得不重不漏。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001255",
-  "revision": 1,
-  "card_rev": "6b7f4d92207a09c0",
+  "revision": 2,
+  "card_rev": "2c2f14b0dc59a933",
   "title": "二叉树旋转距离复杂度",
-  "title_en": null,
+  "title_en": "Complexity of rotation distance between binary trees",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -72,7 +75,9 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 数值存疑：输入“已改进至约 6n?”带问号。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -83,11 +88,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q25",
+    "secondary": [
+      "05C12",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法/组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "旋转距离",
+      "二叉树",
+      "计算复杂性",
+      "tanglegram",
+      "上界常数"
+    ],
+    "en": [
+      "rotation distance",
+      "binary trees",
+      "computational complexity",
+      "tanglegram",
+      "upper bound constant"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +120,12 @@
     "note": "三四区·小问题；C层：具体算法问题——旋转距离多项式时间可计算否；界已改进至~6n（2022-2025文献）；算法设计与上界并行路径。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出计算旋转距离的多项式时间算法；或证明该问题是 NP-难的；或确定 n 结点二叉树旋转距离的精确常数上界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -109,5 +139,6 @@
     "status_raw": "OPEN-WEAK",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

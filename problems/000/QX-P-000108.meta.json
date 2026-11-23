@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000108",
-  "revision": 1,
-  "card_rev": "5dbd14d15a8e4fe9",
+  "revision": 2,
+  "card_rev": "cd63eaa61a09100b",
   "title": "Bermond–Thomassen 猜想（k=4 情形：最小出度≥7 蕴含 4 个不交有向圈）",
-  "title_en": null,
+  "title_en": "Bermond-Thomassen for k=4: minimum outdegree 7 forces four vertex-disjoint directed cycles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C38",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有向图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Bermond–Thomassen 猜想",
+      "最小出度",
+      "顶点不交有向圈",
+      "有向图"
+    ],
+    "en": [
+      "Bermond-Thomassen conjecture",
+      "minimum outdegree",
+      "vertex-disjoint directed cycles",
+      "digraph"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +132,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 一般形式（min outdegree ≥2k−1 ⇒ k 个不交有向圈）CB 登记为 k=4 定向情形；k≤2 已证"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个最小出度至少 7 的有限、无自环的简单有向图都含 4 个两两顶点不交的有向圈，或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

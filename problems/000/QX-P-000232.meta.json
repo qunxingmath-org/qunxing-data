@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000232",
-  "revision": 1,
-  "card_rev": "009ca8b0b8965b51",
+  "revision": 2,
+  "card_rev": "fc804a86a6b4a173",
   "title": "无限 Sidon 集的精细尺度（EP#1191；原批次 A-031）",
-  "title_en": null,
+  "title_en": "Fine-scale bounds for infinite Sidon sets: is |A cap [1,x]| = o(sqrt(x/log x))?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B75",
+    "secondary": [
+      "11B13",
+      "05B10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Sidon 集",
+      "精细尺度",
+      "加性组合",
+      "计数函数",
+      "下极限"
+    ],
+    "en": [
+      "Sidon sets",
+      "fine scales",
+      "additive combinatorics",
+      "counting functions",
+      "limit inferior"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +134,12 @@
     "note": "一区二区·难度待定；与 EP#39（B-137）相邻的 liminf 精细尺度问题；Ruzsa 构造背景下开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个无穷 Sidon 集都有 liminf |A∩[1,x]|·√(log x)/√x = 0，或构造一个使该比值在无穷多个 x 上保持正下界的无穷 Sidon 集。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

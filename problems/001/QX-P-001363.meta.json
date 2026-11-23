@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001363",
-  "revision": 1,
-  "card_rev": "1afa0a828e2b90d3",
+  "revision": 2,
+  "card_rev": "25fb67a4a8894e57",
   "title": "2 的幂的十进制无零数字（CRUX 410）",
-  "title_en": null,
+  "title_en": "Are there only finitely many powers of 2 whose decimal expansion contains no zero digit?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A63",
+    "secondary": [
+      "11K16",
+      "11B85"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（数字分布）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "2 的幂",
+      "十进制数字",
+      "无零数字",
+      "有限性",
+      "数字分布"
+    ],
+    "en": [
+      "powers of two",
+      "decimal digits",
+      "zero-free digits",
+      "finiteness",
+      "digit distribution"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +135,12 @@
     "note": "三四区·小问题；陈述人人能懂；等分布理论对\"禁数字\"问题无能为力；启发式论文/计算纪录可做。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明只有有限多个 n 使 2ⁿ 的十进制表示不含数字 0，或证明存在无穷多个这样的 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

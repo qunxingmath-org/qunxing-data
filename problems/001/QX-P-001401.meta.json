@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001401",
-  "revision": 1,
-  "card_rev": "321c4d838f130099",
+  "revision": 2,
+  "card_rev": "52aaafb01610a274",
   "title": "Kimberling 逐出数组：2 或全部正整数是否终被逐出（Crux 1615）",
-  "title_en": null,
+  "title_en": "Kimberling's expulsion array: is 2 ever expelled, and is every positive integer?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -92,11 +94,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "37E15",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合序列/动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "逐出数组",
+      "对角线元素",
+      "整数序列",
+      "OEIS A007063"
+    ],
+    "en": [
+      "expulsion arrays",
+      "diagonal entries",
+      "integer sequences",
+      "OEIS A007063"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -104,7 +124,12 @@
     "note": "三四区·小问题；规则如元胞自动机，计算实验立刻可做；证\"2 被逐出\"是明确中间目标；OEIS 主线记录。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "回答 2 是否终被逐出，并证明每个正整数都终被逐出，或指出某个永不逐出的正整数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000299",
-  "revision": 1,
-  "card_rev": "92ab866ecad6cdd5",
+  "revision": 2,
+  "card_rev": "656bbe5c4586f4d6",
   "title": "广义 Property R 猜想（零框 surgery 与 handle-slide）",
-  "title_en": null,
+  "title_en": "The generalized Property R conjecture: zero-framed surgery and handle slides",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +91,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K30",
+    "secondary": [
+      "57R65",
+      "57M27"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "低维拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Property R 猜想",
+      "handle-slide 变换",
+      "零框 surgery",
+      "链环"
+    ],
+    "en": [
+      "Property R",
+      "handle slides",
+      "zero-framed surgery",
+      "links"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +121,12 @@
     "note": "一区二区·难度待定；Property R 已证（Gompf–?），广义版开放；与 4 维 handle 体理论/Heegaard Floer 相连；低维拓扑三区~二区可及。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足该 surgery 条件的链环必可经 handle-slide 化为零框平凡链环，或给出一个反例链环。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

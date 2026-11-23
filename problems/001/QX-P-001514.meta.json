@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001514",
-  "revision": 1,
-  "card_rev": "3bbd9fa8ae5083c5",
+  "revision": 2,
+  "card_rev": "91bda3ce0a74b042",
   "title": "Sustainable 树的完全刻画与渐近占比",
-  "title_en": null,
+  "title_en": "Characterizing sustainable trees and their asymptotic proportion",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "asymptotic"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C50",
+    "secondary": [
+      "05C05",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "谱图理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "谱半径",
+      "树",
+      "换边",
+      "sustainable",
+      "渐近占比"
+    ],
+    "en": [
+      "spectral radius",
+      "trees",
+      "edge swaps",
+      "sustainable trees",
+      "asymptotic proportion"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +138,12 @@
     "note": "三四区·小问题；Bencs–van Dijk–Guo 2026-10 引入 sustainable（每条边可被替换而不降谱半径），已证无穷族正/反例、Δ≥n/2+1 全部非 sustainable、边界 Δ=n/2 已分类；完全刻画开放+作者结论自留渐近占比问题；小而冷门但目标明确（采集原标\"冷门二源弱\"——本轮以论文自留问题+van Dijk 2025 学位论文补强至2源）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 sustainable 树的完整刻画，并判定 sustainable 树在 n 顶点树中的渐近占比是否趋于 0。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

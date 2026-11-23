@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002089",
-  "revision": 1,
-  "card_rev": "e8d073470156e70c",
+  "revision": 2,
+  "card_rev": "6a621a13b64517cb",
   "title": "拓扑 K-理论的计算复杂度",
-  "title_en": null,
+  "title_en": "What is the computational complexity of topological K-theory?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q17",
+    "secondary": [
+      "19L47",
+      "55N15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑/复杂度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拓扑 K-理论",
+      "计算复杂度",
+      "向量丛",
+      "有限复形",
+      "算法"
+    ],
+    "en": [
+      "topological K-theory",
+      "computational complexity",
+      "vector bundles",
+      "finite complexes",
+      "algorithms"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "先把输入与输出格式固定下来（如何编码复形、K 群如何表示），再确定该问题的复杂度：给出多项式时间算法，或证明它在某个复杂度类下困难/不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

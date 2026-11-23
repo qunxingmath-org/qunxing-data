@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001672",
-  "revision": 1,
-  "card_rev": "24fb73598174993c",
+  "revision": 2,
+  "card_rev": "d820e0e0754ef360",
   "title": "1-因子分解猜想（充分大 n 已证 CKLOT）",
-  "title_en": null,
+  "title_en": "1-factorization of dense regular graphs on an even number of vertices",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "1-因子分解",
+      "完美匹配",
+      "正则图",
+      "边分解",
+      "充分大 n"
+    ],
+    "en": [
+      "1-factorization",
+      "perfect matching",
+      "regular graphs",
+      "edge decomposition",
+      "large n"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -73,7 +95,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在 n₀，使所有 n≥n₀ 的这类足够稠密的 2n 顶点正则图都有 1-因子分解（或去掉充分大 n 的限制），或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

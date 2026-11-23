@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001347",
-  "revision": 1,
-  "card_rev": "c31a4869fe33b2b5",
+  "revision": 2,
+  "card_rev": "93ada77fc01e492a",
   "title": "整数复杂度：Mahler–Popken f(n) 的 Selfridge 2f(x)+11 与 Isbell–Myerson 2f(x)+13 差距",
-  "title_en": null,
+  "title_en": "Integer complexity: closing the gap between 2f(x)+11 and 2f(x)+13",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "value"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A67",
+    "secondary": [
+      "68Q17",
+      "11B75"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/整数复杂度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整数复杂度",
+      "Mahler–Popken 问题",
+      "加法乘法表示",
+      "缺陷函数",
+      "上界差距"
+    ],
+    "en": [
+      "integer complexity",
+      "Mahler-Popken problem",
+      "addition-multiplication expressions",
+      "defect",
+      "upper bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +135,12 @@
     "note": "三四区·小问题；题面小学生可懂、可大量计算；缺陷(defect)框架已有成熟工具，具体常数差距是否闭合未定——现成的小论文题材。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出 x 使 f((3x+1)²+6) ≥ 2f(x)+12，或证明所有此类 n 的复杂度都不超过 2f(x)+11。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

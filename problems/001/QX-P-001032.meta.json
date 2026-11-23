@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001032",
-  "revision": 1,
-  "card_rev": "7eec42ef1fb96731",
+  "revision": 2,
+  "card_rev": "d86f3a638dc02293",
   "title": "Kourovka 16.18：存在衍长恰 n 的线性可序可解群，恰有一个真正规相对凸子群",
-  "title_en": null,
+  "title_en": "Linearly orderable soluble groups of derived length n with one convex subgroup",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F60",
+    "secondary": [
+      "06F15",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "线性可序群",
+      "导长",
+      "相对凸子群",
+      "可解群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "linearly orderable groups",
+      "derived length",
+      "relatively convex subgroups",
+      "soluble groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 n=3 及每个 n>4 构造出导长恰为 n、只有一个真正规相对凸子群的线性可序可解群；或证明某类 n 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

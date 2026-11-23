@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002168",
-  "revision": 1,
-  "card_rev": "97422dd8c397a061",
+  "revision": 2,
+  "card_rev": "4a7939acd08c9d91",
   "title": "数集合博弈 Alice 必胜判据（MSE 交叉帖 1 非完整回答）",
-  "title_en": null,
+  "title_en": "For which sets A does Alice have a winning strategy in the number-set game?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "91A46",
+    "secondary": [
+      "91A05",
+      "05A18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "博弈论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "组合博弈",
+      "必胜策略",
+      "划分博弈",
+      "二人零和",
+      "递增序列"
+    ],
+    "en": [
+      "combinatorial games",
+      "winning strategies",
+      "partition games",
+      "two-player zero-sum"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n 与所有满足条件的子集 A，给出 Alice 有必胜策略的充要刻画并证明，或给出完整的递归判定算法。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

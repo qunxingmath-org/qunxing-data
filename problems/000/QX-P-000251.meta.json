@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000251",
-  "revision": 1,
-  "card_rev": "61e98534fe3a176d",
+  "revision": 2,
+  "card_rev": "9ef27e11987ab91b",
   "title": "Green 问题 93：随机 {0,1} 系数多项式是否几乎必然不可约",
-  "title_en": null,
+  "title_en": "Green's problem 93: are random 0-1 polynomials almost surely irreducible?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11R09",
+    "secondary": [
+      "11T06",
+      "60C05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论（多项式）/概率",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "随机多项式",
+      "不可约性",
+      "0-1 系数",
+      "渐近概率"
+    ],
+    "en": [
+      "random polynomials",
+      "irreducibility",
+      "0-1 coefficients",
+      "limiting probability"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +140,12 @@
     "note": "一区二区·难度待定；随机多项式不可约概率的精确渐近：Monsky 线给出 {0,1}+常数项非零情形的'不可约概率→A034?'类猜想；与经典 Odlyzko–Poonen（随机 0-1 多项式不可约概率趋 B_2）衔接——注意 Odlyzko–Poonen 1993 已证几乎必然不可约【需核对 FC 精确陈述与 OP 的差别（可能问的是渐近常数/无平方因子版）】。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该不可约概率趋于 1（或求出它的精确极限值），或证明它不趋于 1。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

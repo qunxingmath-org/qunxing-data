@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000126",
-  "revision": 1,
-  "card_rev": "323efb105ddf7da0",
+  "revision": 2,
+  "card_rev": "0b765afb040c926d",
   "title": "Converse to Euclid's fifth postulate (Ghomi)",
-  "title_en": null,
+  "title_en": "A converse to Euclid's fifth postulate for complete Riemannian metrics on R^2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C20",
+    "secondary": [
+      "53C22",
+      "53A35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "黎曼几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "第五公设",
+      "完备黎曼度量",
+      "测地线",
+      "唯一平行",
+      "欧氏平面刻画"
+    ],
+    "en": [
+      "fifth postulate",
+      "complete Riemannian metric",
+      "geodesics",
+      "unique parallel",
+      "characterisation of Euclidean plane"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +124,12 @@
     "note": "一区二区·难度待定；难度高：Ghomi 2017 广告的问题；唯一回答给出条件性思路（无共轭点+渐近平坦⇒平坦），一般情形开放；非正曲率情形为 Burns 问题也开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何满足该唯一平行公理的完备黎曼度量 (R²,g) 都等距于欧氏平面，或给出一个满足公理却不与欧氏平面等距的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

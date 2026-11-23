@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000545",
-  "revision": 1,
-  "card_rev": "c60b3d5f1693864e",
+  "revision": 2,
+  "card_rev": "673c911f898f4b53",
   "title": "21.118 存在非\"剩余有限/可算核\"商群吗",
-  "title_en": null,
+  "title_en": "Is every group a quotient of a residually finite group by an amenable normal subgroup?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "43A07",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "剩余有限群",
+      "可均正规子群",
+      "商群",
+      "可均群"
+    ],
+    "en": [
+      "residually finite groups",
+      "amenable normal subgroups",
+      "quotients",
+      "amenable groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Schesler/A. Thom）是否存在群不同构于\"剩余有限群模可算正规子群\"的商？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个群并证明它不同构于任何剩余有限群模去可均正规子群的商，或证明每个群都有这样的表示。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

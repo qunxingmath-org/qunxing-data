@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001474",
-  "revision": 1,
-  "card_rev": "f32e674fc4b6ebdb",
+  "revision": 2,
+  "card_rev": "cc49dc7148647677",
   "title": "batch_I I-120：Simon 定理 C.5.2 的谱投影 Radon–Nikodym 导数积分核 F(x,y;λ)=dE(",
-  "title_en": null,
+  "title_en": "Is the spectral kernel F(x,x;lambda) strictly positive for almost every lambda?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "35P05",
+    "secondary": [
+      "47A10",
+      "81Q10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数学物理 / 谱理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "谱投影",
+      "Radon–Nikodym 导数",
+      "积分核",
+      "唯一延拓",
+      "Schrödinger 算子"
+    ],
+    "en": [
+      "spectral projections",
+      "Radon-Nikodym derivatives",
+      "integral kernels",
+      "unique continuation",
+      "Schrödinger operators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；heiner 2012 引 Barry Simon《Schrödinger Semigroups》(Bull. AMS 1982) p.510 明示\"Open question\"；0 回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对几乎每个 λ 都有 F(x,x;λ)>0，或构造一个例子使该量在某个正测度集上为零。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

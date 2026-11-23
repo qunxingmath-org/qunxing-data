@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000859",
-  "revision": 1,
-  "card_rev": "09dd0128a4192e85",
+  "revision": 2,
+  "card_rev": "31175205c22114fb",
   "title": "Sullivan 猜想：最小出度 k 的定向图含长 2k 有向路",
-  "title_en": null,
+  "title_en": "Sullivan's conjecture: minimum outdegree k forces a directed path of length 2k",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C38",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "图论（有向图）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "定向图",
+      "最小出度",
+      "有向路",
+      "长度下界",
+      "Sullivan 猜想"
+    ],
+    "en": [
+      "oriented graphs",
+      "minimum outdegree",
+      "directed paths",
+      "length bounds",
+      "Sullivan's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Jackson 1981 在 |V|>2k+2 时证长 2k；一般情形开放（UnsolvedMath 页注 2-圈存在时易）；2025 反路/双块路工作活跃；k 逐档攻坚可行。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个最小出度为 k 的定向图都含长度至少 2k 的有向路；或给出一个最小出度为 k 但最长有向路不足 2k 的定向图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

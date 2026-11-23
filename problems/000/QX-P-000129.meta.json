@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000129",
-  "revision": 1,
-  "card_rev": "5ffb36deb8725422",
+  "revision": 2,
+  "card_rev": "28f3bc696279a86a",
   "title": "虚拟欧拉类一猜想（双曲 3-流形上叶状结构的有限覆盖提升）",
-  "title_en": null,
+  "title_en": "Virtual Euler class one: lifting a taut foliation class to a finite cover",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57R30",
+    "secondary": [
+      "57M50",
+      "57N10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "低维拓扑（叶状结构）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "taut 叶状结构",
+      "欧拉类",
+      "有限覆盖",
+      "双曲 3-流形",
+      "Thurston 范数"
+    ],
+    "en": [
+      "taut foliation",
+      "Euler class",
+      "finite cover",
+      "hyperbolic 3-manifold",
+      "Thurston norm"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +138,12 @@
     "note": "一区二区·难度待定；Nariman–Yazdi 2025 问题清单（arXiv:2503.18274）Question 1，2025 年 3 月新鲜发布；b₁≥1 双曲 3-流形+Thurston 范数对偶类一——有限覆盖上实现为叶状结构欧拉类；方法池（taut foliation、sutured Floer）活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个这样的 (M,a) 都存在有限覆盖与 taut 叶状结构使 e(F)=p*(a)，或给出一个不存在任何此类覆盖的 (M,a) 反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001175",
-  "revision": 1,
-  "card_rev": "187366a20622f64f",
+  "revision": 2,
+  "card_rev": "c1e5289cbd3fe2dc",
   "title": "红-蓝二部图精确匹配问题（复杂度边界刻画）",
-  "title_en": null,
+  "title_en": "Perfect matchings with exactly k red edges: charting the P versus NP-hard boundary",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q25",
+    "secondary": [
+      "05C85",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法/图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "完美匹配",
+      "边染色二部图",
+      "精确计数",
+      "计算复杂性",
+      "NP-难"
+    ],
+    "en": [
+      "perfect matchings",
+      "edge-coloured bipartite graphs",
+      "exact counts",
+      "computational complexity",
+      "NP-hardness"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；恰含 k 条红边的完美匹配存在性：奇偶子行列式（Pfaffian 型）方法给出若干多项式/难解片段，完整边界刻画开放——算法论文标准题（EGRES 编目）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 k 的取值范围与图的类别给出完整刻画：明确哪些情形可在多项式时间内判定、哪些是 NP-难的，并对两侧都给出证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

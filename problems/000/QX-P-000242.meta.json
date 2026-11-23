@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000242",
-  "revision": 1,
-  "card_rev": "53fb95b1394825c2",
+  "revision": 2,
+  "card_rev": "c6e9786a292bee2d",
   "title": "大直线或大团（原批次 A-079）",
-  "title_en": null,
+  "title_en": "Large collinear subsets or large visibility cliques in planar point sets",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -86,7 +88,9 @@
     },
     "depth": "deep",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 表述冲突：formal 写“一般位置点集”却要求“含 l 个共线点”，一般位置通常排除三点共线。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -97,11 +101,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "05C62",
+      "05C55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共线点",
+      "可见性图",
+      "离散几何",
+      "Ramsey 型问题"
+    ],
+    "en": [
+      "collinear points",
+      "visibility graph",
+      "discrete geometry",
+      "Ramsey-type problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +131,12 @@
     "note": "一区二区·难度待定；对每个 (l,c) 求 N(l,c)；2026-08/09 两篇新文推进 (4,6)/almost-7 情形——具体参数逐个攻，活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每对 (l,c) 都存在这样的 N(l,c)，或对某对 (l,c) 构造出任意大的点集既不共线也不含 c 个互见点。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -123,5 +150,6 @@
     "status_raw": "PARTIAL",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

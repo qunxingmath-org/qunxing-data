@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001055",
-  "revision": 1,
-  "card_rev": "82a3bb325fc864c8",
+  "revision": 2,
+  "card_rev": "56448915f3d6c34c",
   "title": "Kourovka 18.116：2^n 阶有限 2-群 G：存在 |S|≤n 的素数集 S 使 G 为 Q 的 S∪{∞} 外非分歧最大 2-扩张的…",
-  "title_en": null,
+  "title_en": "Realizing finite 2-groups as quotients of maximal 2-extensions unramified outside S",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "12G05",
+    "secondary": [
+      "20E18",
+      "11R34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Galois 群",
+      "2-扩张",
+      "非分歧",
+      "素数集",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "Galois groups",
+      "2-extensions",
+      "unramified extensions",
+      "sets of primes",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 2^n 阶有限 2-群 G 构造出满足 |S|≤n 的素数集 S 使 G 为 G_S(2) 的商，或给出一个无法这样实现的 G。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

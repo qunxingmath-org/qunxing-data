@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000469",
-  "revision": 1,
-  "card_rev": "dcb7ae7f061ce1e8",
+  "revision": 2,
+  "card_rev": "64a000a7d47d4211",
   "title": "Mahler Z-数不存在猜想",
-  "title_en": null,
+  "title_en": "Mahler's Z-number conjecture: no real xi has {xi (3/2)^n} always below 1/2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J71",
+    "secondary": [
+      "11K06",
+      "11J04"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Diophantine 逼近/动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Mahler Z-数",
+      "小数部分",
+      "3/2 的幂",
+      "模 1 分布",
+      "动力系统"
+    ],
+    "en": [
+      "Mahler's Z-numbers",
+      "fractional parts",
+      "powers of 3/2",
+      "distribution modulo one",
+      "dynamical systems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；Mahler 1968 经典猜想（0≤{ξ(3/2)^n}<1/2 无解），著名深水区（与 B-808 Green28 关联），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明不存在这样的实数 ξ（即对每个 ξ 都能找到 n 使小数部分 ≥1/2），或构造出一个 Z-数 ξ。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

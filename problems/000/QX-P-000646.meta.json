@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000646",
-  "revision": 1,
-  "card_rev": "38cb90b03f8bf83e",
+  "revision": 2,
+  "card_rev": "81e3f7aae3cf48eb",
   "title": "18.25 复合列 (Zp,X,Zq) 型群生成的形成有无限多子形成？",
-  "title_en": null,
+  "title_en": "Infinitely many subformations in form(G) when p = q?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F17",
+    "secondary": [
+      "20D10",
+      "20D30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "形成",
+      "子形成",
+      "复合列",
+      "单群",
+      "有限群"
+    ],
+    "en": [
+      "formations",
+      "subformations",
+      "composition series",
+      "simple groups",
+      "finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 form(G) 有无穷多子形成当且仅当 p=q，或给出一个反例（p=q 但子形成有限，或 p≠q 但子形成无穷）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

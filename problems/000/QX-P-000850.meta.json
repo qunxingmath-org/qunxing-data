@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000850",
-  "revision": 1,
-  "card_rev": "d6e0a826a4e9a138",
+  "revision": 2,
+  "card_rev": "b662c2006f420124",
   "title": "Thomassen 猜想：4-连通 Hamilton 图必有第二个 Hamilton 圈",
-  "title_en": null,
+  "title_en": "Thomassen's conjecture: every 4-connected graph with a Hamilton cycle has a second one",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C45",
+    "secondary": [
+      "05C40"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "图论（Hamilton 性）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hamilton 圈",
+      "4-连通",
+      "唯一 Hamilton",
+      "圈空间",
+      "Thomassen 猜想"
+    ],
+    "en": [
+      "Hamilton cycles",
+      "4-connected graphs",
+      "uniquely Hamiltonian",
+      "cycle space",
+      "Thomassen's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +136,12 @@
     "note": "三四区·小问题；Thomason 定理（奇度 Hamilton 图有第二 Hamilton 圈）与 Smith 定理为方法模板；Sheehan 4 正则猜想（池内 C-217 族）同域；反例搜索（唯一 Hamilton 4-连通图）可程序化。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个含 Hamilton 圈的 4-连通图至少含两个不同的 Hamilton 圈；或给出一个唯一 Hamilton 的 4-连通图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

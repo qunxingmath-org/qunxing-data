@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002051",
-  "revision": 1,
-  "card_rev": "216b4756b76e2fd1",
+  "revision": 2,
+  "card_rev": "34cd40d56d5662e3",
   "title": "Thompson F 可迷向的逆向数学强度",
-  "title_en": null,
+  "title_en": "Reverse-mathematical strength of the amenability of Thompson's group F",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03B30",
+    "secondary": [
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数理逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Thompson 群 F",
+      "顺从性",
+      "逆向数学",
+      "公理系统",
+      "可均群"
+    ],
+    "en": [
+      "Thompson's group F",
+      "amenability",
+      "reverse mathematics",
+      "subsystems",
+      "amenable groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定「F 是顺从群」在逆向数学框架下对应或可推出的公理系统，说明它带来哪些具体推论，或证明该假设与某个子系统等价。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

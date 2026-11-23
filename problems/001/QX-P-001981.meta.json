@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001981",
-  "revision": 1,
-  "card_rev": "205b7d25a206351d",
+  "revision": 2,
+  "card_rev": "9b0f96974b540c89",
   "title": "Meas 有限表现对象（范畴论口径）",
-  "title_en": null,
+  "title_en": "Which objects of the category Meas are finitely presentable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "18A30",
+    "secondary": [
+      "28A05",
+      "18A35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "范畴/测度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可测空间范畴",
+      "有限表现对象",
+      "过滤余极限",
+      "hom 函子",
+      "范畴论刻划"
+    ],
+    "en": [
+      "category of measurable spaces",
+      "finitely presentable objects",
+      "filtered colimits",
+      "hom functors",
+      "categorical characterization"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 Meas 中对象有限表现的充要条件（并证明该条件在可测映射下确实刻画了过滤余极限的保持性），或指出该范畴里根本没有非平凡有限表现对象并证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

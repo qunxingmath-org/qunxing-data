@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000416",
-  "revision": 1,
-  "card_rev": "9e623bc8d74528b3",
+  "revision": 2,
+  "card_rev": "99e9f09cd6c2fd32",
   "title": "无唯一表示和集的最小集（Green 问题 27）",
-  "title_en": null,
+  "title_en": "Smallest subset of Z/pZ without uniquely represented elements in its sumset",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "decidable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "11P70",
+      "05B10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "和集",
+      "唯一表示",
+      "循环群",
+      "最小基数",
+      "有限搜索"
+    ],
+    "en": [
+      "sumsets",
+      "unique representation",
+      "cyclic groups",
+      "minimum size",
+      "finite search"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；对固定 p 为有限搜索（计算机可及得数据），渐近答案需证明——半计算半理论，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 m(p) 作为 p 的函数的精确值（或给出对所有素数 p 成立的精确公式），并用计算与证明共同确认。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

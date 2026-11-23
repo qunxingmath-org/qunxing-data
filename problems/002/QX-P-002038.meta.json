@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002038",
-  "revision": 1,
-  "card_rev": "500e207a810dc70f",
+  "revision": 2,
+  "card_rev": "291f6a22405aacd8",
   "title": "高维凸体最小投影面积数量级",
-  "title_en": null,
+  "title_en": "Order of magnitude of the minimal projection area of a convex body",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52A20",
+    "secondary": [
+      "52A40",
+      "60D05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "凸几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "高维凸体",
+      "投影面积",
+      "最小投影",
+      "渐近阶",
+      "Brunn–Minkowski"
+    ],
+    "en": [
+      "high-dimensional convex bodies",
+      "projection areas",
+      "minimal projections",
+      "asymptotic order",
+      "Brunn-Minkowski"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出最小投影面积随 n、k 增长的精确阶（上下界只差常数倍）并对所有凸体成立，或构造一族凸体使该量比所猜的界更小。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

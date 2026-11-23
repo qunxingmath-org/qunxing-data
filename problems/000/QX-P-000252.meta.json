@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000252",
-  "revision": 1,
-  "card_rev": "81b0b29a7c89713f",
+  "revision": 2,
+  "card_rev": "3f5b79270735675b",
   "title": "Green 问题 97：n-皇后放置数 Q(n) 的显式渐近",
-  "title_en": null,
+  "title_en": "Green's problem 97: an explicit asymptotic for the n-queens count Q(n)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "05A16",
+      "05B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合枚举",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "n-皇后问题",
+      "显式渐近",
+      "计数",
+      "误差项"
+    ],
+    "en": [
+      "n-queens problem",
+      "explicit asymptotic",
+      "enumeration",
+      "error term"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +140,12 @@
     "note": "一区二区·难度待定；Simkin 2021 (arXiv:2107.13460) 已得 Q(n)=(1+o(1))·n!·e^{-α*?}/n 型主阶（(1+o(1))ne^{-c} 级），精确常数与二阶项开放；熵/变分方法路线清晰，属可续接的活跃方向。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 Q(n) 的显式渐近公式（含主项常数与误差项）并证明，或把误差项改进到明显更强的形式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

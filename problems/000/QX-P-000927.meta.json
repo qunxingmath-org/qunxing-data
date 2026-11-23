@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000927",
-  "revision": 1,
-  "card_rev": "93432d0a6075997e",
+  "revision": 2,
+  "card_rev": "cf9796923aac871d",
   "title": "Kourovka 19.32：p≥673 素数，B 为 Burnside 变元簇（指数 p）自由群",
-  "title_en": null,
+  "title_en": "Kourovka 19.32: one-variable equations over free Burnside groups of exponent p >= 673",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E10",
+      "20F70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Burnside 簇",
+      "指数 p",
+      "一元方程",
+      "解的个数",
+      "自由群"
+    ],
+    "en": [
+      "Burnside variety",
+      "exponent p",
+      "one-variable equations",
+      "number of solutions",
+      "free groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个非平凡一元方程在 B 中只有有限多个解，或给出一个在 B 中有无限多解的一元方程。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002156",
-  "revision": 1,
-  "card_rev": "101e1857eed037fa",
+  "revision": 2,
+  "card_rev": "7e82d6b696eac5cf",
   "title": "L-函数导数零点（自守之外；⏰REU 级时限风险优先跟踪）",
-  "title_en": null,
+  "title_en": "Zeros of derivatives of L-functions beyond the automorphic case",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11M26",
+    "secondary": [
+      "11F66",
+      "11M06"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "L-函数",
+      "导数零点",
+      "自守 L-函数",
+      "Riemann 假设",
+      "零点分布"
+    ],
+    "en": [
+      "L-functions",
+      "zeros of derivatives",
+      "automorphic L-functions",
+      "Riemann hypothesis",
+      "distribution of zeros"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对指定的非自守 L-函数类证明其导数零点仍位于临界带内（或仍满足相应的零点分布），或构造一个使该性质失败的具体 L-函数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001442",
-  "revision": 1,
-  "card_rev": "147d3b5836a7e20b",
+  "revision": 2,
+  "card_rev": "7bb630cfed8c614d",
   "title": "batch_I I-128(提取3)：最大整数 k*：平面上任意 k≤k* 个点总可用两两内部不交的单位圆盘覆盖？",
-  "title_en": null,
+  "title_en": "Largest k such that any k planar points can be covered by pairwise disjoint unit disks",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -106,11 +109,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "52C10",
+      "05B40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何 / 覆盖",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单位圆盘覆盖",
+      "内部不交",
+      "点集覆盖",
+      "组合几何",
+      "最大整数 k"
+    ],
+    "en": [
+      "unit disk covering",
+      "disjoint interiors",
+      "covering point sets",
+      "combinatorial geometry",
+      "largest integer k"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -118,7 +141,12 @@
     "note": "三四区·小问题；MO 53797 答案 a202867（票10）+链接 MO 20558（Ambrus 问）；Erdős 型覆盖问题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 k* 的准确数值：证明任意 k* 个点都能被两两内部不交的单位圆盘覆盖，并给出 k*+1 个点的一个反例点集。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

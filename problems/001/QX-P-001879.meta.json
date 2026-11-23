@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001879",
-  "revision": 1,
-  "card_rev": "7e2fc0cfa9854495",
+  "revision": 2,
+  "card_rev": "eef5c41e4d43543c",
   "title": "平面万花筒染色",
-  "title_en": null,
+  "title_en": "Kaleidoscopic colourings of the plane",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "52C10",
+      "05D10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平面染色",
+      "万花筒染色",
+      "单色构型",
+      "欧氏 Ramsey"
+    ],
+    "en": [
+      "plane colourings",
+      "kaleidoscopic colourings",
+      "monochromatic configurations",
+      "Euclidean Ramsey theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式构造出平面的万花筒染色并证明它满足要求，或证明这样的染色不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

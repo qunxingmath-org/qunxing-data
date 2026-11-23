@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000383",
-  "revision": 1,
-  "card_rev": "bd68852961cac780",
+  "revision": 2,
+  "card_rev": "2da63f9cdb9448aa",
   "title": "batch_I I-020：指标 >4 的有限指标有限深度 II₁ 子因子中，是否存在超过 7-super-transitive",
-  "title_en": null,
+  "title_en": "Are there subfactors of index above 4 that are k-super-transitive for some k >= 8?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46L37",
+    "secondary": [
+      "46L54",
+      "18Mxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "算子代数 / 子因子理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "子因子",
+      "有限指标",
+      "超传递性",
+      "平面代数",
+      "Haagerup 子因子"
+    ],
+    "en": [
+      "subfactors",
+      "finite index",
+      "super-transitivity",
+      "planar algebras",
+      "Haagerup subfactor"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +131,12 @@
     "note": "一区二区·难度待定；MO 第 182 号问题（2009 年开站初月），子因子社区公认开放；提问者与 Emily Peters 有\"香槟赌约\"；0 回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出指标大于 4、有限深度且 k-超传递（某个 k≥8）的 II₁ 子因子，或证明这样的子因子不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

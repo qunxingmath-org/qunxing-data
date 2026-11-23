@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002143",
-  "revision": 1,
-  "card_rev": "aa75a2f380a2d1b7",
+  "revision": 2,
+  "card_rev": "9e7e5624fc59a10a",
   "title": "非 Kac 复半单有限维 Hopf 代数",
-  "title_en": null,
+  "title_en": "Do non-Kac semisimple finite-dimensional Hopf algebras over C exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16T05",
+    "secondary": [
+      "16W30",
+      "17B37"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "Hopf 代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "半单 Hopf 代数",
+      "Kac 型",
+      "对极",
+      "Haar 积分",
+      "量子群"
+    ],
+    "en": [
+      "semisimple Hopf algebras",
+      "Kac type",
+      "antipode",
+      "Haar integrals",
+      "quantum groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个复上半单有限维、且非 Kac 型（S²≠id 或 Haar 积分非迹）的 Hopf 代数并逐条验证其 Hopf 代数公理与半单性，或证明这样的例子不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

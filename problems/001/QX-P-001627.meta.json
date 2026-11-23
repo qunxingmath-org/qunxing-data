@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001627",
-  "revision": 1,
-  "card_rev": "aa292272716ecbbd",
+  "revision": 2,
+  "card_rev": "76ffd630172d5320",
   "title": "Erdős–Szekeres g(7) 精确值",
-  "title_en": null,
+  "title_en": "The Erdos-Szekeres number g(7): exact value of the happy ending constant",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -72,11 +75,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "05D10",
+      "52A37"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Erdős–Szekeres",
+      "快乐结局问题",
+      "凸 n 边形",
+      "精确值",
+      "离散几何"
+    ],
+    "en": [
+      "Erdos-Szekeres",
+      "happy ending problem",
+      "convex n-gons",
+      "exact values",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -84,7 +107,12 @@
     "note": "A 层：一区二区、预期较易证明"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 g(7) 的精确值（给出下界构型与上界证明），或显著改进现有上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

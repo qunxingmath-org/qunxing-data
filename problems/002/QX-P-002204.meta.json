@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002204",
-  "revision": 1,
-  "card_rev": "43ba4dbe9c003919",
+  "revision": 2,
+  "card_rev": "4d7d356866737fb7",
   "title": "Sch(x) 可测完美匹配的 Σ₁¹-完全性",
-  "title_en": null,
+  "title_en": "Sigma-1-1-completeness of having a measurable perfect matching in Sch(x)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E15",
+    "secondary": [
+      "05C70",
+      "03E05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "Borel 组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可测完美匹配",
+      "Σ₁¹-完全",
+      "Borel 图",
+      "Schreier 图",
+      "描述集合论"
+    ],
+    "en": [
+      "measurable perfect matchings",
+      "Sigma-1-1 completeness",
+      "Borel graphs",
+      "Schreier graphs",
+      "descriptive set theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明那些使 Sch(x) 有可测完美匹配的 x 构成 Σ₁¹-完全的集合,或把它归到更低的复杂度层。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

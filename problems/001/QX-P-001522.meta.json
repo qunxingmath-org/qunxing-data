@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001522",
-  "revision": 1,
-  "card_rev": "5c880186e1b6a8de",
+  "revision": 2,
+  "card_rev": "a5e25df9c12f757a",
   "title": "Jackson–Bernstein 型逼近常数的精确值",
-  "title_en": null,
+  "title_en": "Sharp constants in Jackson-Bernstein type approximation estimates",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "41A17",
+    "secondary": [
+      "41A10",
+      "42A10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "逼近论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Jackson 定理",
+      "Bernstein 不等式",
+      "逼近常数",
+      "最优常数",
+      "三角多项式"
+    ],
+    "en": [
+      "Jackson's theorem",
+      "Bernstein inequality",
+      "approximation constants",
+      "sharp constants",
+      "trigonometric polynomials"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +117,12 @@
     "note": "三四区·小问题；[表述不全] atlas 条目仅给出\"逼近论中 Jackson–Bernstein 型定量常数的精确值\"（opa.mathematics.approximation-theory.approximation-jackson-bernstein-sharp, tier_1），未给完整定量命题；按孤立小问题/常数精化登记 C层[表述不全]，待主控补全后升级。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对明确写出的一族 Jackson–Bernstein 型不等式，确定其中常数的最优值，并证明上下界吻合。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

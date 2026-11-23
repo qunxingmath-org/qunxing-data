@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000847",
-  "revision": 1,
-  "card_rev": "7062530d0867f433",
+  "revision": 2,
+  "card_rev": "24d6f578b50c36e3",
   "title": "度 57 Moore 图是否存在（直径 2、围长 5、57 正则）",
-  "title_en": null,
+  "title_en": "Does a 57-regular Moore graph of diameter 2 and girth 5 exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C75",
+    "secondary": [
+      "05E30",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "代数图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Moore 图",
+      "强正则图",
+      "直径",
+      "围长",
+      "顶点度"
+    ],
+    "en": [
+      "Moore graphs",
+      "strongly regular graphs",
+      "diameter",
+      "girth",
+      "degree"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Hoffman–Singleton 定理限定度∈{2,3,7,57}，前三者图已知；57 情形若存在为 3250 点 SRG(3250,57,0,1)；65+ 年未决；谱/自同构约束法持续（2023 优化模型、2026 循环构造尝试）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个 57-正则、直径 2、围长 5 的图（等价于 SRG(3250,57,0,1)），或证明这样的图不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

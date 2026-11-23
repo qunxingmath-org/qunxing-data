@@ -2,19 +2,23 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000982",
-  "revision": 1,
-  "card_rev": "96c1f61d09f39135",
+  "revision": 2,
+  "card_rev": "1d2ed6020b5f9d9a",
   "title": "Distributions of Mesh Patterns of Short Lengths on Separable Permutations",
-  "title_en": null,
+  "title_en": "Equidistribution of short mesh patterns of type {12,21} on separable permutations",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "disprove",
+    "compute"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "05A05",
+      "68R05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "排列模式",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "mesh pattern",
+      "等分布",
+      "可分置换",
+      "模式计数",
+      "计算机枚举"
+    ],
+    "en": [
+      "mesh patterns",
+      "equidistribution",
+      "separable permutations",
+      "pattern occurrence",
+      "computer enumeration"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +135,12 @@
     "note": "三四区·小问题；易证明~中等（计算+结构）——计算机实验猜测124对等分布（38类，24类已定）；剩余类多为小模式双射/统计量构造，计算验证门槛低；permutation patterns 方法成熟。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式确定剩余 14 类 mesh pattern 的分布，从而证明（或否定）至多 124 对等分布这一猜想，或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

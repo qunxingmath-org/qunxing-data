@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001960",
-  "revision": 1,
-  "card_rev": "950c63c5d4890cf7",
+  "revision": 2,
+  "card_rev": "ac118f91cc9f4570",
   "title": "余同调环刻画",
-  "title_en": null,
+  "title_en": "Which rings are cohomology rings?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "55Sxx",
+    "secondary": [
+      "55Nxx",
+      "55Pxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "上同调环",
+      "可实现性",
+      "Steenrod 运算",
+      "分次环"
+    ],
+    "en": [
+      "cohomology rings",
+      "realizability",
+      "Steenrod operations",
+      "graded rings"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个分次环可实现为上同调环的充要条件（或对某类环给出完整判定），并证明标准必要且充分。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002211",
-  "revision": 1,
-  "card_rev": "65cbc1393efa1df1",
+  "revision": 2,
+  "card_rev": "f8dda2c70ec1e2b1",
   "title": "超曲面 K-稳定性（3≤d≤n+1）",
-  "title_en": null,
+  "title_en": "K-stability of hypersurfaces of degree 3 <= d <= n+1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14J45",
+    "secondary": [
+      "14J70",
+      "14L24"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "K-稳定性/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "K-稳定性",
+      "超曲面",
+      "Fano 簇",
+      "法诺指数",
+      "几何不变量"
+    ],
+    "en": [
+      "K-stability",
+      "hypersurfaces",
+      "Fano varieties",
+      "Fano index",
+      "geometric invariant theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个满足 3 ≤ d ≤ n+1 的 (n,d),确定相应超曲面是否 K-稳定,或给出统一的判别结论。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

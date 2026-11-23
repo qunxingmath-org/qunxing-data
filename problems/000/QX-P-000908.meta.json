@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000908",
-  "revision": 1,
-  "card_rev": "d92118496e1fb865",
+  "revision": 2,
+  "card_rev": "4314abfd3da8bb39",
   "title": "Propp 三聚体问题 1：benzel B(k(3k−1)/2, k(3k+1)/2) 的 T_{003} 计数公式",
-  "title_en": null,
+  "title_en": "Tilings of benzel regions by 003-trominoes: an exact formula",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "05B45",
+      "05C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合（铺砌/三聚体）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三聚体",
+      "铺砌计数",
+      "三角网格",
+      "精确公式",
+      "递推关系"
+    ],
+    "en": [
+      "tromino tilings",
+      "tiling counts",
+      "triangular lattices",
+      "exact formulae",
+      "recurrences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +138,12 @@
     "note": "三四区·小问题；Propp 2022（arXiv:2206.06472，20 题单）；该 benzel 形状二聚体对应点有解析公式传统（六边形/双形）；压缩法（compression）为工具；Propp benzel 网页跟踪进展。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 T_{003}(k(3k−1)/2, k(3k+1)/2) 的精确公式；或给出一个比暴力枚举高效得多的递推关系或算法。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000602",
-  "revision": 1,
-  "card_rev": "24e9e6db7a42ea7a",
+  "revision": 2,
+  "card_rev": "7d9e76d07e760bbd",
   "title": "（来源 C-009）存在非平凡的十进制仅含 0/1 的奇完全平方数吗？",
-  "title_en": null,
+  "title_en": "Is there a nontrivial odd perfect square whose decimal digits are only 0s and 1s?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A63",
+    "secondary": [
+      "11B39",
+      "11D99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（数字结构/p-adic 平方根）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "十进制数字",
+      "完全平方数",
+      "奇平方数",
+      "模 8 条件"
+    ],
+    "en": [
+      "decimal digits",
+      "perfect squares",
+      "odd squares",
+      "mod 8 conditions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +125,12 @@
     "note": "三四区·小问题；有限参数空间的数字型问题：模 10^n 的 0/1 剩余是否为平方可递归枚举（Ruibo Zhao 的 Sr_n 树结构给出了完整的算法框架），但全局存在性开放。可做三四区级：证明任意长的末 n 位 0/1 平方存在/不存在、优化 Sr_n 树搜索、或对 x² mod 10^n 的 0/1 剩余给出结构性刻画。方法路线明确（Lifting the exponent + 树搜索）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个具体整数 x>1 使 x² 的十进制只含 0 和 1，或证明这样的奇数 x 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001366",
-  "revision": 1,
-  "card_rev": "0d4143758a18746a",
+  "revision": 2,
+  "card_rev": "d662b6bf34296de7",
   "title": "Erdős S21：α(m,k)=α(n,k) 的重复（AMM S21）",
-  "title_en": null,
+  "title_en": "Erdos S21: can alpha(m,k) equal alpha(n,k) for some m beyond n+k-1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A05",
+    "secondary": [
+      "11A25",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最小公倍数",
+      "连续整数乘积",
+      "α 比值",
+      "重复值",
+      "Erdős 问题"
+    ],
+    "en": [
+      "least common multiple",
+      "products of consecutive integers",
+      "ratio alpha",
+      "repeated values",
+      "Erdos problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -113,7 +135,12 @@
     "note": "三四区·小问题；初等定义、计算可探索；需要\"连续 k 个合数\"结构知识（Grimm 猜想氛围）——难但可出部分结果。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意 n、k 证明不存在 m>n+k−1 使 α(m,k)=α(n,k)，或给出具体三元组 (n,k,m) 使等式成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

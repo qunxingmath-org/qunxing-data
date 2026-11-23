@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000482",
-  "revision": 1,
-  "card_rev": "4b9267eaae70a3f8",
+  "revision": 2,
+  "card_rev": "fbe9b8ecfc33936e",
   "title": "Černý 猜想",
-  "title_en": null,
+  "title_en": "The Cerny conjecture: a synchronizing automaton on n states has a reset word of length at most (n-1)^2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q45",
+    "secondary": [
+      "68Q70",
+      "20M35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "自动机理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "同步自动机",
+      "同步字",
+      "Cerny 猜想",
+      "状态转移",
+      "有限自动机"
+    ],
+    "en": [
+      "synchronizing automata",
+      "reset words",
+      "Cerny conjecture",
+      "state transitions",
+      "finite automata"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；n 状态同步自动机同步字长 ≤(n−1)²——自动机理论 60 年基准难题（现最好界 ~0.1654n³ 型），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n 与所有 n 状态同步自动机证明存在长度 ≤(n−1)² 的同步字，或给出一个必须用更长同步字的反例自动机。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000873",
-  "revision": 1,
-  "card_rev": "39da3cfd32216e25",
+  "revision": 2,
+  "card_rev": "c4acdd551b08e44d",
   "title": "Kirby 1.79：除 Reidemeister 移动外补充何种移动可实现平凡结图的严格单调降交叉简化",
-  "title_en": null,
+  "title_en": "Which extra moves allow strict monotonic descent in crossing number for unknot diagrams?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "construct",
+    "decide"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K10",
+    "secondary": [
+      "68U05",
+      "57M99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何纽结理论/算法（图简化）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Reidemeister 移动",
+      "平凡结图",
+      "交叉数",
+      "单调化简",
+      "纽结算法"
+    ],
+    "en": [
+      "Reidemeister moves",
+      "unknot diagrams",
+      "crossing number",
+      "monotonic simplification",
+      "knot algorithms"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +138,12 @@
     "note": "三四区·小问题；Reidemeister-only 单调简化已知有障碍（Goeritz 例）；加\"under-pass\"等移动后能否对一切平凡结图单调简化是 MO#182961 活跃问题；Burton \"hard diagrams\" 给部分肯定；Lackenby 2025 RL 工具注入新能量。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出在三个 Reidemeister 移动之外的一组补充移动，并证明任何平凡结图都可用交叉数严格不增的这类移动序列化简到零交叉；或证明不存在这样的移动集。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

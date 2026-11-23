@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001553",
-  "revision": 1,
-  "card_rev": "4d5ccc3824562051",
+  "revision": 2,
+  "card_rev": "15221c63a993642b",
   "title": "20.52 奇阶非交换群实现 |G|−k(G)=16m 对每个 m>0？",
-  "title_en": null,
+  "title_en": "Realizing |G| - k(G) = 16m for every m > 0 by a non-abelian group of odd order",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E45",
+    "secondary": [
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共轭类数",
+      "奇阶群",
+      "Burnside 定理",
+      "整除性",
+      "构造"
+    ],
+    "en": [
+      "number of conjugacy classes",
+      "odd order groups",
+      "Burnside's theorem",
+      "divisibility",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；Burnside：奇阶群 |G|−k(G) 被 16 整除。是否对每个 m>0 存在奇阶非交换群 G(m) 使 |G(m…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 m>0 构造出奇阶非交换群 G(m) 使 |G(m)|−k(G(m))=16m，或证明某些 m 无法被取到。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002152",
-  "revision": 1,
-  "card_rev": "0a8a365a0a5c1650",
+  "revision": 2,
+  "card_rev": "356dd26230d449ac",
   "title": "真非同余模尖形式满足 Deligne 界（评论级否定共识）",
-  "title_en": null,
+  "title_en": "Do genuine non-congruence cusp forms satisfy the Deligne bound?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11F30",
+    "secondary": [
+      "11F11",
+      "11F80"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "模形式",
+      "尖形式",
+      "非合流子群",
+      "Deligne 界",
+      "Hecke 特征值"
+    ],
+    "en": [
+      "modular forms",
+      "cusp forms",
+      "non-congruence subgroups",
+      "Deligne's bound",
+      "Hecke eigenvalues"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明真非合流尖形式的 Hecke 特征值仍满足 |a_p|≤2p^{(k−1)/2}，或构造一个明确违反该界的真非合流尖形式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

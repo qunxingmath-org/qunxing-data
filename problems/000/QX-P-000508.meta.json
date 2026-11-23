@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000508",
-  "revision": 1,
-  "card_rev": "61b9236c70e8cd86",
+  "revision": 2,
+  "card_rev": "0cadc63e832488bd",
   "title": "4-流形 Einstein 度量存在性刻画",
-  "title_en": null,
+  "title_en": "Characterizing which compact 4-manifolds admit Einstein metrics",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C25",
+    "secondary": [
+      "53C20",
+      "57R57"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "微分几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Einstein 度量",
+      "四维流形",
+      "Ricci 曲率",
+      "存在性判据",
+      "微分几何"
+    ],
+    "en": [
+      "Einstein metrics",
+      "4-manifolds",
+      "Ricci curvature",
+      "existence criteria",
+      "differential geometry"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；紧 4-流形 Einstein 度量存在/不存在完全刻画——LeBrun 禁阻定理族 vs 构造族，深水区，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出紧四维流形上 Einstein 度量存在性的充分必要条件（可实际判定的判据），并对所有情形证明该判据成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

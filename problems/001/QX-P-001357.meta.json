@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001357",
-  "revision": 1,
-  "card_rev": "13408a321c6d38da",
+  "revision": 2,
+  "card_rev": "e7751bbf19b3527c",
   "title": "Rinds 剥离问题的 Schwenk 猜想（n≥15）",
-  "title_en": null,
+  "title_en": "Schwenk's peeling conjecture for rind sequences with n at least 15",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +84,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A05",
+    "secondary": [
+      "05C70",
+      "68R15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图论/组合序列",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "rind 剥离",
+      "符号序列",
+      "匹配消除",
+      "最大层数",
+      "Schwenk 猜想"
+    ],
+    "en": [
+      "rind peeling",
+      "symbol sequences",
+      "matching elimination",
+      "maximum number of layers",
+      "Schwenk's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +116,12 @@
     "note": "三四区·小问题；组合结构清晰，可从小 n 计算验证并找反例或归纳。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n≥8 证明 Schwenk 构造达到最大 rind 层数，或给出使最大层数更大的构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

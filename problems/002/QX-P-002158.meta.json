@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002158",
-  "revision": 1,
-  "card_rev": "a62e2a0400b49b65",
+  "revision": 2,
+  "card_rev": "b55e957680ec4bd2",
   "title": "无处稠密集 vs 贫集复杂性（cof(ND) vs cof(M)）",
-  "title_en": null,
+  "title_en": "Complexity of the ideal of nowhere dense sets versus the ideal of meager sets",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E15",
+    "secondary": [
+      "03E05",
+      "54E52"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "描述集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无处稠密集",
+      "贫集",
+      "理想",
+      "共尾数",
+      "描述集合论"
+    ],
+    "en": [
+      "nowhere dense sets",
+      "meager sets",
+      "ideals",
+      "cofinality",
+      "descriptive set theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 cof(ND) 与 cof(M) 能否相等（给出 ZFC 证明，或给出使两者相等与不相等分别成立的模型）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

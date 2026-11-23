@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000262",
-  "revision": 1,
-  "card_rev": "24924fd6a20ed5ff",
+  "revision": 2,
+  "card_rev": "ade26f33b361b62a",
   "title": "Zagier 猜想：MZV 权空间维数递推 d_n=d_{n-2}+d_{n-3}",
-  "title_en": null,
+  "title_en": "Zagier's conjecture: the dimension of the space of weight-n multiple zeta values follows d_n = d_(n-2) + d_(n-3)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "prove"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11M32",
+    "secondary": [
+      "11G55",
+      "11M06"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/MZV（多重 ζ 值）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "多重 ζ 值",
+      "权",
+      "维数",
+      "递推",
+      "Q-线性空间"
+    ],
+    "en": [
+      "multiple zeta values",
+      "weight",
+      "dimension",
+      "recurrence",
+      "Q-linear span"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +135,12 @@
     "note": "一区二区·难度待定；MZV 维数猜想是 Hoffman/ Zagier 代数纲领核心；生成函数证明或代数实现均顶刊级；但'验证型'成果（更高权重数值验证、双 shuffle 空间计算）为可出论文的中间目标——难度未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有 n，权为 n 的多重 ζ 值空间维数恰为 d_n，或指出某个 n 上维数与递推不符。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000250",
-  "revision": 1,
-  "card_rev": "696070c9d2745566",
+  "revision": 2,
+  "card_rev": "39c8dfa7fa844c64",
   "title": "Green 问题 50：10A 是否含大余维数余子空间",
-  "title_en": null,
+  "title_en": "Green's problem 50: must 10A contain a subspace of codimension O(log(1/alpha))?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11P70",
+      "05D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合（有限域）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "和集",
+      "子空间",
+      "有限域",
+      "密度",
+      "余维数"
+    ],
+    "en": [
+      "sumsets",
+      "subspaces",
+      "finite fields",
+      "density",
+      "codimension"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +126,12 @@
     "note": "一区二区·难度待定；F_2^n 上加性结构问题，与 Bogolyubov–Ruzsa 引理直接相关：已知 2A·2A 型结论给出余维 O(log²(1/α))，10A 改进到 O(log) 是当前技术可冲刺的目标，方法路线明确（更高阶 Fourier/熵方法）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在常数 C 使结论对一切 n 和一切集合 A 成立，或构造反例说明十次加法也撑不出这么大的子空间。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

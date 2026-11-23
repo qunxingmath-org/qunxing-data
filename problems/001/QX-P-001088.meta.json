@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001088",
-  "revision": 1,
-  "card_rev": "2ef3875481e08255",
+  "revision": 2,
+  "card_rev": "3fbb77c56edf13f2",
   "title": "Kourovka 7.56：两子群各满足极小（极大）条件⇒群满足？",
-  "title_en": null,
+  "title_en": "Does a product of two subgroups with the minimum (maximum) condition inherit it?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E15",
+    "secondary": [
+      "20E34",
+      "20F22"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "极小条件",
+      "极大条件",
+      "子群乘积",
+      "链条件"
+    ],
+    "en": [
+      "minimum condition",
+      "maximum condition",
+      "products of subgroups",
+      "chain conditions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "分别判定两个满足极小条件（极大条件）的子群之积是否必满足同一条件，给出证明或反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

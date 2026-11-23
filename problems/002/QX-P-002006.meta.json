@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002006",
-  "revision": 1,
-  "card_rev": "1323ca32edea19c8",
+  "revision": 2,
+  "card_rev": "5a467ff938cf53af",
   "title": "猜测有理生成函数验证",
-  "title_en": null,
+  "title_en": "Verifying a conjectured rational generating function",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "compute"
+  ],
+  "answer_type": "proof",
+  "checkability": "verifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "68W30",
+      "05A19"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有理生成函数",
+      "线性递推",
+      "计算验证",
+      "组合序列",
+      "猜想证明"
+    ],
+    "en": [
+      "rational generating functions",
+      "linear recurrences",
+      "computational verification",
+      "combinatorial sequences",
+      "conjecture proving"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对该生成函数给出严格证明：说明对应的线性递推来自何种组合结构，并证明它对所有 n 成立（可辅以符号计算验证），而非仅作有限项的数值检验。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

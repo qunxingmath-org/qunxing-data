@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002066",
-  "revision": 1,
-  "card_rev": "3dcafec23a2473a1",
+  "revision": 2,
+  "card_rev": "819c9e7191fb9b34",
   "title": "连通分量≤3 染色密度（题面修正）",
-  "title_en": null,
+  "title_en": "Maximum density of a black-white colouring with components of size at most 3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B45",
+    "secondary": [
+      "05C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "方格棋盘",
+      "连通分支",
+      "密度",
+      "着色",
+      "多联骨牌"
+    ],
+    "en": [
+      "square lattice",
+      "connected components",
+      "density",
+      "colourings",
+      "polyominoes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定黑色格子的最大可能的上确界密度，并给出达到或逼近该密度的显式着色，同时证明不可能超过它。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

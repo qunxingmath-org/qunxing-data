@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001855",
-  "revision": 1,
-  "card_rev": "7240794b66a8378c",
+  "revision": 2,
+  "card_rev": "80297b5c14e7cb2c",
   "title": "指定着色横贯拷贝（普适性）",
-  "title_en": null,
+  "title_en": "Transversal copies under prescribed colourings: a universality condition",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C70",
+      "05C15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "图系统",
+      "指定着色",
+      "横贯拷贝",
+      "普适性"
+    ],
+    "en": [
+      "graph systems",
+      "prescribed colourings",
+      "transversal copies",
+      "universality"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出充分条件，使得对任意顶点着色都存在满足指定颜色的横贯 H 拷贝；并说明该条件在边界上不可改进。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

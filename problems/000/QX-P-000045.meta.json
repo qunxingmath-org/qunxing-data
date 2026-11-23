@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000045",
-  "revision": 1,
-  "card_rev": "b997d4dc5d7f3f4e",
+  "revision": 2,
+  "card_rev": "ed23be99bf9bb115",
   "title": "batch_I I-129(提取)：确定 van der Waerden 数 W(3,5)：使得任意 3-染色 {1,…,N} 必含长为",
-  "title_en": null,
+  "title_en": "Determining the van der Waerden number W(3,5)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "decidable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -88,7 +91,9 @@
     },
     "depth": "deep",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 参数顺序冲突：statement/formal 用 W(3,5)，source_text 用 W(L,K)（先长度后颜色数），两种读法互斥。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -99,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "11B25",
+      "05C55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合 / Ramsey理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "van der Waerden 数",
+      "单色等差数列",
+      "染色",
+      "Ramsey 理论",
+      "精确值"
+    ],
+    "en": [
+      "van der Waerden numbers",
+      "monochromatic arithmetic progressions",
+      "colourings",
+      "Ramsey theory",
+      "exact values"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +136,12 @@
     "note": "一区二区·易证明；有限验证目标：单一常数的上下界夹逼；SAT/可满足性编码可及；W(3,4)=293 先例方法可延续；Radziszowski 动态综述持续维护下界构造。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "按钉死的参数顺序给出 W(3,5) 的确切数值：证明 [1,N] 的任何相应染色都含目标长度的单色等差数列，并给出 [1,N−1] 的一个反例染色。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -128,5 +158,6 @@
       "QX-P-000401",
       "QX-P-001443"
     ]
-  }
+  },
+  "statement_disputed": true
 }

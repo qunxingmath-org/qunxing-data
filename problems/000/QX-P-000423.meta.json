@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000423",
-  "revision": 1,
-  "card_rev": "7f988dbab697583a",
+  "revision": 2,
+  "card_rev": "8d11ac9344c451f9",
   "title": "素数剩余类覆盖每个整数至少 10 次（Green 问题 45 / Erdős 689 变体）",
-  "title_en": null,
+  "title_en": "Can each prime below N be assigned a residue class covering every integer ten times?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -102,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N35",
+    "secondary": [
+      "11N36",
+      "11B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "筛法/覆盖同余",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "筛法",
+      "剩余类覆盖",
+      "覆盖同余",
+      "素数",
+      "Erdős 问题"
+    ],
+    "en": [
+      "sieves",
+      "residue class covers",
+      "covering congruences",
+      "primes",
+      "Erdős problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -114,7 +137,12 @@
     "note": "一区二区·难度待定；多元覆盖下界问题（Erdős 称换成 2 也不会做），筛法权重方法活跃但未冻结，B层。EXCLUDED-CHECK 裁决：与排除条目 EP#7/C28（全奇模覆盖系统存在性）命题类型不同（此处为覆盖重数下界非构造覆盖系统），保留。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在这样的剩余类选择使每个 m≤N 被覆盖至少 10 次，或证明这样的选择不存在；哪怕只解决覆盖 2 次的情形也算进展。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

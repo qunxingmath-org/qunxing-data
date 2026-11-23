@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001410",
-  "revision": 1,
-  "card_rev": "5abccea63beae281",
+  "revision": 2,
+  "card_rev": "78ca0cd72588310f",
   "title": "Lew：圆盘平均 ℓp 距离的极值 λ(p),μ(p)（SIAM 78-1）",
-  "title_en": null,
+  "title_en": "Lew: the extremal ratios lambda(p) and mu(p) of mean l_p distances in a disk",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +92,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52A40",
+    "secondary": [
+      "60D05",
+      "46Bxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "积分几何/概率",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "ℓp 距离",
+      "单位圆盘",
+      "旋转平均",
+      "极值比"
+    ],
+    "en": [
+      "l_p distances",
+      "unit disk",
+      "rotation averages",
+      "extremal ratios"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -101,7 +122,12 @@
     "note": "三四区·小问题；积分几何计算明确，模拟即可入局；Lew 本人同年有伴随论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 p→2 时 λ(p) 上升趋于 1 而 μ(p) 下降趋于 1（含单调性），或给出反例说明该猜想不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

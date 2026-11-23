@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002019",
-  "revision": 1,
-  "card_rev": "621d9b6c609f5942",
+  "revision": 2,
+  "card_rev": "b8e911f9714a07f7",
   "title": "凸多面体棱长+角亏唯一性",
-  "title_en": null,
+  "title_en": "Does edge length plus angle defect determine a convex polyhedron?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B10",
+    "secondary": [
+      "52C25",
+      "52B70"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸多面体",
+      "棱长",
+      "角亏",
+      "唯一性",
+      "刚性"
+    ],
+    "en": [
+      "convex polyhedra",
+      "edge lengths",
+      "angle defects",
+      "uniqueness",
+      "rigidity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明同时给定棱长与各顶点角亏时凸多面体被唯一确定（相差刚体运动与镜像），或构造两个棱长与角亏完全相同却互不全等的凸多面体。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

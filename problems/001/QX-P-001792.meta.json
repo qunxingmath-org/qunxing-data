@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001792",
-  "revision": 1,
-  "card_rev": "ddbffd025c5256ab",
+  "revision": 2,
+  "card_rev": "0dbb09ee94eec345",
   "title": "1/(n^p·sin n)→0 的 p 存在？",
-  "title_en": null,
+  "title_en": "Is there a p with 1/(n^p sin n) tending to 0?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J68",
+    "secondary": [
+      "11J04",
+      "11K60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Diophantine 逼近",
+      "sin n",
+      "无理性度量",
+      "渐近"
+    ],
+    "en": [
+      "Diophantine approximation",
+      "sin n",
+      "irrationality measure",
+      "asymptotics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定使 1/(n^p sin n)→0 的 p 的确切范围（存在性阈值），并证明阈值两侧的结论。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002112",
-  "revision": 1,
-  "card_rev": "0a325ff8fe9513a9",
+  "revision": 2,
+  "card_rev": "d2a2ec6d87f43fe6",
   "title": "（|{ab+c}| 最小值（sum-product 型））",
-  "title_en": null,
+  "title_en": "Minimum size of {ab + c} over three n-element integer sets",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -72,11 +75,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B75",
+    "secondary": [
+      "11P70",
+      "05D99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "{ab+c}",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "和积问题",
+      "加性组合",
+      "表示集",
+      "整数集",
+      "渐近"
+    ],
+    "en": [
+      "sum-product problems",
+      "additive combinatorics",
+      "product sets",
+      "integer sets",
+      "asymptotics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -84,7 +107,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 min|S_{A,B,C}| 的精确渐近阶（例如是否等于 Θ(n²)，或给出更精细的系数），并证明相应的上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

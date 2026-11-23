@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001858",
-  "revision": 1,
-  "card_rev": "84b2264b4f56e724",
+  "revision": 2,
+  "card_rev": "cbd6a8b4775ba288",
   "title": "两整矩阵何时生成自由群",
-  "title_en": null,
+  "title_en": "When do two integer matrices generate a free group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E05",
+    "secondary": [
+      "20F10",
+      "15B36"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论/算法",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由群",
+      "整矩阵",
+      "生成元",
+      "判定问题"
+    ],
+    "en": [
+      "free groups",
+      "integer matrices",
+      "generators",
+      "decision problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出整矩阵对自由生成自由群的充要判据，并说明该判据可判定（或证明该问题不可判定）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

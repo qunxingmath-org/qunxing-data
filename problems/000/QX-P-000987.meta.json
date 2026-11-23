@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000987",
-  "revision": 1,
-  "card_rev": "0cfd103f61efff07",
+  "revision": 2,
+  "card_rev": "5116ca7be5683504",
   "title": "Kourovka 21.112：完全类 X（子群/同态像/扩张封闭）的对称边界",
-  "title_en": null,
+  "title_en": "Kourovka 21.112: the symmetric boundary of a complete class of finite groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D30",
+    "secondary": [
+      "20D05",
+      "20E28"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "完全类",
+      "对称边界",
+      "对称群",
+      "扩张封闭",
+      "CFSG"
+    ],
+    "en": [
+      "complete classes",
+      "symmetric boundary",
+      "symmetric groups",
+      "extension closure",
+      "CFSG"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "先补齐原文的问句，再给出对称边界的完整刻画（例如可能取值的确定与相应完全类的构造），或回答原文关于整数 m 的那条判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

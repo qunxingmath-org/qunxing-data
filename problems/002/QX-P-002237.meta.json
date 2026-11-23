@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002237",
-  "revision": 1,
-  "card_rev": "9aefcf012b90397f",
+  "revision": 2,
+  "card_rev": "60856f8df19dd8d1",
   "title": "Fvol 次数公式（P49；v̂ 已闭合 Fvol 开放）",
-  "title_en": null,
+  "title_en": "Degree formula for Fvol (Xu-Zhuang P49): the v-hat side is closed, Fvol side open",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "prove"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14E30",
+    "secondary": [
+      "14G17",
+      "14B05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/算术几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Fvol",
+      "次数公式",
+      "归一化体积",
+      "正特征",
+      "极小模型纲领"
+    ],
+    "en": [
+      "Fvol",
+      "degree formula",
+      "normalized volume",
+      "positive characteristic",
+      "minimal model program"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出并证明正特征下 Fvol 的次数公式,使其与 v̂ 侧已闭合的公式相匹配。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

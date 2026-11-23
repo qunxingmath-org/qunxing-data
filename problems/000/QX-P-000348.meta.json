@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000348",
-  "revision": 1,
-  "card_rev": "35cc5aa8563ac593",
+  "revision": 2,
+  "card_rev": "7ac73ca971a72498",
   "title": "Lehmer totient 猜想（不存在合数 n 使 φ(n) | n−1）",
-  "title_en": null,
+  "title_en": "Lehmer's totient problem: is there a composite n with phi(n) dividing n-1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11A05",
+      "11N32"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（乘性函数）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "欧拉函数",
+      "Lehmer 问题",
+      "合数",
+      "整除条件",
+      "乘性函数"
+    ],
+    "en": [
+      "Euler totient",
+      "Lehmer's problem",
+      "composite numbers",
+      "divisibility",
+      "multiplicative functions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·难度待定；陈述仅用欧拉函数，看似初等；任何反例必须为奇、无平方因子、Carmichael 数且素因子个数极多——与强素数分布纠缠，公认极难；计算搜索可入门但理论工具不足。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明不存在满足 φ(n)|n−1 的合数 n，或给出一个具体的合数反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

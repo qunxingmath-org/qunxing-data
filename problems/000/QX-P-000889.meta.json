@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000889",
-  "revision": 1,
-  "card_rev": "58db08eb9d901b06",
+  "revision": 2,
+  "card_rev": "b9471030054af8ca",
   "title": "OWR 2023/1：无短奇圈、χ≥4 且最小度 ≈n/k 的图是否存在",
-  "title_en": null,
+  "title_en": "Graphs with no short odd cycles, chromatic number 4, and minimum degree of order n/k",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35",
+      "05C38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（染色画像/极值）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "奇圈",
+      "色数",
+      "最小度",
+      "染色画像",
+      "高围长"
+    ],
+    "en": [
+      "odd cycles",
+      "chromatic number",
+      "minimum degree",
+      "colouring profile",
+      "high girth"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Letzter–Snyder 问题谱系；已知构造 ~1/k²、已知定理在 ≥n/2 处强制 3-可染（Böttcher–Letzter–Snyder 2023）；1/k 阈值区域为缺口。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个固定 k 构造出满足这三个条件的图族（最小度达到 1/k 阶）；或证明这样的图族不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

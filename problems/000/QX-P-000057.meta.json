@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000057",
-  "revision": 1,
-  "card_rev": "15f659e9ab55e810",
+  "revision": 2,
+  "card_rev": "0cb8d25556ceb629",
   "title": "20.21 存在两个指数12正规子群同构但商为 C12 与 A4 的群吗",
-  "title_en": null,
+  "title_en": "Kourovka 20.21: two isomorphic index-12 normal subgroups with quotients C12 and A4",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E07",
+    "secondary": [
+      "20D30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正规子群",
+      "同构",
+      "商群",
+      "C12 与 A4",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "normal subgroups",
+      "isomorphic subgroups",
+      "quotients",
+      "C12 and A4",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·易证明；Kourovka 21版在列开放题；（Conder/Verret）是否存在有限群 G 带两个同构的正规子群 K,L，|G:K|=|G:L|=12，而 G/K…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个有限群 G 与两个正规子群 K、L，验证 K≅L、指标均为 12、且 G/K≅C₁₂、G/L≅A₄；或证明这样的配置不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

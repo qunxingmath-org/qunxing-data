@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000422",
-  "revision": 1,
-  "card_rev": "2ca4e1c0506626d6",
+  "revision": 2,
+  "card_rev": "ce2e2d996026b5c9",
   "title": "覆盖 1..N 所有公差的 k 项等差数列的最小集（Green 问题 37）",
-  "title_en": null,
+  "title_en": "Smallest set containing a k-term progression of every common difference up to N",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B25",
+    "secondary": [
+      "05B10",
+      "11B13"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "等差数列",
+      "公差",
+      "稀疏标尺",
+      "渐近增长",
+      "覆盖问题"
+    ],
+    "en": [
+      "arithmetic progressions",
+      "common differences",
+      "sparse rulers",
+      "asymptotic growth",
+      "covering problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；稀疏标尺（sparse ruler）的 k≥3 推广——k=2 即池内 A-220 稀疏标尺常数（同族参考）；有限验证+结构证明混合，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 S_k(N) 的渐近增长阶（给出匹配的上下界），并特别给出 k=2（稀疏标尺）情形的进展。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

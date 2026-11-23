@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000460",
-  "revision": 1,
-  "card_rev": "2ffa1402646f6989",
+  "revision": 2,
+  "card_rev": "3f8b4e5d0b91b252",
   "title": "MO#34145：1/(n+1)×1/(n+2) 矩形能否装满单位方形",
-  "title_en": null,
+  "title_en": "Can a unit square be tiled by rectangles 1/(n+1) by 1/(n+2)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "construct"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,7 +92,9 @@
     },
     "depth": "deep",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 题面自相矛盾：写 n≥1 且总面积恰为 1，但 Σ1/((n+1)(n+2))=1/2。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -100,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C20",
+    "secondary": [
+      "05B45",
+      "52B45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/装填",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "矩形装填",
+      "单位方形",
+      "精确铺满",
+      "面积",
+      "离散几何"
+    ],
+    "en": [
+      "rectangle tilings",
+      "unit square",
+      "exact tilings",
+      "area",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +137,12 @@
     "note": "一区二区·难度待定；Concrete Mathematics 练习谱系、Brass–Moser–Pach 书中问题；MO 原帖核查（2026-11-20 WebFetch）确认未解决——已 packing 数万矩形（Wynn/Vogler/Paulhus），Greg Martin 紧性定理提供极限转换；计算+构造路线明确但未闭合，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出用这些矩形精确铺满单位正方形的显式构造，或证明这样的铺法不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -126,5 +156,6 @@
     "status_raw": "OPEN-CONFIRMED",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

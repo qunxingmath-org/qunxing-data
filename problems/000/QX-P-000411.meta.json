@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000411",
-  "revision": 1,
-  "card_rev": "34441f12f296450c",
+  "revision": 2,
+  "card_rev": "59eca9c3485ace31",
   "title": "Lipschitz 图无 3 项等差（Green 问题 15）",
-  "title_en": null,
+  "title_en": "Can a Lipschitz function on N have a graph free of nontrivial 3-term progressions?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B25",
+    "secondary": [
+      "11B30",
+      "05D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lipschitz 函数",
+      "三项等差数列",
+      "图像",
+      "加性组合",
+      "构造"
+    ],
+    "en": [
+      "Lipschitz functions",
+      "3-term arithmetic progressions",
+      "graphs",
+      "additive combinatorics",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；离散 Lipschitz 函数构造/反构造问题，已有声称构造（Liam Kruer 在线稿）待验证——验证或推翻一个显式构造是有限可核任务；但问题整体未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个 Lipschitz 函数 f:N→Z 并证明其图像不含非平凡三项等差数列，或证明任何 Lipschitz 函数的图像都必含这样的三项等差。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

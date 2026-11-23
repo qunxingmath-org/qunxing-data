@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000555",
-  "revision": 1,
-  "card_rev": "3a66978294050619",
+  "revision": 2,
+  "card_rev": "3a36daaa58c37cf8",
   "title": "17.109 一致椭圆字在什么类中（Segal 问题）",
-  "title_en": null,
+  "title_en": "Characterising the classes in which a given word is uniformly elliptic (Segal's problem)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F69",
+    "secondary": [
+      "20E18",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "字宽",
+      "一致椭圆字",
+      "verbal 子群",
+      "pro-C 群"
+    ],
+    "en": [
+      "word width",
+      "uniformly elliptic words",
+      "verbal subgroups",
+      "pro-C groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出对给定字 w 判定群类 C 中是否一致椭圆的充要条件（并说明它与 pro-C 闭性的对应），形成完整的分类。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

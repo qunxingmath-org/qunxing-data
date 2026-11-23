@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001527",
-  "revision": 1,
-  "card_rev": "4cad4ec568ec9079",
+  "revision": 2,
+  "card_rev": "33ce4685c2337fe0",
   "title": "19.34 集合 {[x,g] | x∈G} 为子群 ⇒ G 剩余幂零？",
-  "title_en": null,
+  "title_en": "If every set of commutators {[x,g]} is a subgroup, is the group residually nilpotent?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20F12"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "换位子",
+      "剩余幂零",
+      "有限生成群",
+      "子群条件",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "commutators",
+      "residual nilpotence",
+      "finitely generated groups",
+      "subgroup conditions",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；若对每个 g∈G，集合 {[x,g] | x∈G} 都是子群，则 G 是否剩余幂零？（有限群情形答案肯定。）…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的有限生成群必剩余幂零，或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

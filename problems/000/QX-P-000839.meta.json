@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000839",
-  "revision": 1,
-  "card_rev": "6617a7a58c15c4f9",
+  "revision": 2,
+  "card_rev": "7c706372337988df",
   "title": "近均分四染色 Z_p 中是否必有彩虹 4 项等差（Conlon–Jungić–Radoičić 问题）",
-  "title_en": null,
+  "title_en": "Rainbow 4-term progressions in balanced 4-colourings of Z_p",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "11B25",
+      "05C55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "彩虹 Ramsey 理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "彩虹等差",
+      "四染色",
+      "近均分",
+      "Z_p",
+      "彩虹 Ramsey"
+    ],
+    "en": [
+      "rainbow arithmetic progression",
+      "four-colouring",
+      "balanced classes",
+      "Z_p",
+      "rainbow Ramsey theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +137,12 @@
     "note": "三四区·小问题；整数版 [4n] 有反例（Conlon 2007），Z_p 版（大素数循环群）开放；Fox 等 (n+1)/6 密度型结果为工具基线；Jana 2025 小群验证 Z_8；循环群结构可精确枚举。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在 p₀ 使所有 p>p₀ 的近均分四染色都含彩虹 4 项等差，或对无穷多大素数构造出避开彩虹四元组的近均分四染色。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

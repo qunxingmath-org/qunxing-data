@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000840",
-  "revision": 1,
-  "card_rev": "42d6c168f937bae5",
+  "revision": 2,
+  "card_rev": "03c33deb69f16f04",
   "title": "Kahn 永久式猜想：[A A] 有 n 阶子阵 permanent 非零",
-  "title_en": null,
+  "title_en": "Kahn's permanent conjecture for the doubled matrix [A A]",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A15",
+    "secondary": [
+      "05B35",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合矩阵论（永久式/Alon–Tarsi 线）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "永久式",
+      "可逆矩阵",
+      "列子阵",
+      "Alon–Tarsi",
+      "组合矩阵论"
+    ],
+    "en": [
+      "permanent",
+      "invertible matrix",
+      "column submatrix",
+      "Alon-Tarsi",
+      "combinatorial matrix theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +137,12 @@
     "note": "三四区·小问题；与 Alon–Jaeger–Tarsi 方向直接关联（经 Alon–Tarsi 方法）；\"permanent rank of [M M]=n\" 等价形式清晰；n 固定时有限验证+永久式计算可攻；OPG 2007 条目以来无解决记录。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意域和任意可逆的 n×n 矩阵 A，都存在这样的 n 列使 permanent 非零，或给出一个反例矩阵 A。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

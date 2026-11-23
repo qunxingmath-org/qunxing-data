@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001426",
-  "revision": 1,
-  "card_rev": "9b8d88edc4b555a1",
+  "revision": 2,
+  "card_rev": "c95f2b1ddb095daa",
   "title": "batch_I I-028：两个纽结的基本 bikei 何时同构？（由 Ishikawa：基本 biquandle 同构 ⟺ 基",
-  "title_en": null,
+  "title_en": "When are the fundamental bikeis of two knots isomorphic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K12",
+    "secondary": [
+      "57K10",
+      "18Mxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "纽结理论 / 代数纽结不变量",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "纽结不变量",
+      "bikei",
+      "quandle",
+      "基本不变量",
+      "同构分类"
+    ],
+    "en": [
+      "knot invariants",
+      "bikei",
+      "quandles",
+      "fundamental invariants",
+      "isomorphism classification"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Keshav Srinivasan 2019 提出；0 回答；Ishikawa IJM 论文给 biquandle/quandle 二择一，kei 层面 granny=square 反例。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出基本 bikei 同构的完整判定（或充分必要条件），并说明它对 twist 结这类已知难例的区分能力。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

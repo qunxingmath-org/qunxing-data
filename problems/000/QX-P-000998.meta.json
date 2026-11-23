@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000998",
-  "revision": 1,
-  "card_rev": "9b7a32dcfb78e070",
+  "revision": 2,
+  "card_rev": "803a17d685f2983d",
   "title": "Kourovka 13.30：B-群：含其正则表示的每个本原置换群双重传递",
-  "title_en": null,
+  "title_en": "Do countable infinite B-groups exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B15",
+    "secondary": [
+      "20B07",
+      "20B35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "B-群",
+      "本原置换群",
+      "正则表示",
+      "双重传递",
+      "可数群"
+    ],
+    "en": [
+      "B-groups",
+      "primitive permutation groups",
+      "regular representation",
+      "doubly transitive groups",
+      "countable groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个可数无限的 B-群并验证它满足定义，或证明不存在可数无限的 B-群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

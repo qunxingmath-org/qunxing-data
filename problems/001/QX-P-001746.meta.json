@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001746",
-  "revision": 1,
-  "card_rev": "9b0175a0044518d1",
+  "revision": 2,
+  "card_rev": "59924f3eaa0a1bc6",
   "title": "无平方因子整数序列符号变化 ~x^{3/4}",
-  "title_en": null,
+  "title_en": "Sign changes in the sequence of squarefree integers: order x^(3/4)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N25",
+    "secondary": [
+      "11N37",
+      "11L07"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "解析数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无平方因子数",
+      "符号变化",
+      "误差项",
+      "Möbius 函数",
+      "渐近阶"
+    ],
+    "en": [
+      "squarefree numbers",
+      "sign changes",
+      "error terms",
+      "Möbius function",
+      "asymptotic order"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明符号改变次数与 x^{3/4} 同阶（给出相匹配的上下界），或给出违反该阶的构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

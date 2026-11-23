@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000968",
-  "revision": 1,
-  "card_rev": "3eb54b3a789b62a8",
+  "revision": 2,
+  "card_rev": "62e77d21af21c2dc",
   "title": "Kourovka 21.19：S 无限、M 非平凡连通均为有限 Morley 秩群，M 定义性忠实作用在 S 上（不可约：不变任何真定义正规子群则…）",
-  "title_en": null,
+  "title_en": "Kourovka 21.19: irreducible definable actions of finite Morley rank groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F11",
+    "secondary": [
+      "03C60",
+      "20E32"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限 Morley 秩",
+      "可定义作用",
+      "不可约作用",
+      "幂零真子群",
+      "共轭作用"
+    ],
+    "en": [
+      "finite Morley rank",
+      "definable actions",
+      "irreducible actions",
+      "nilpotent proper subgroups",
+      "conjugation action"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在题设条件下证明该作用必等价于 S 的共轭作用（给出完整的结构性论证）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

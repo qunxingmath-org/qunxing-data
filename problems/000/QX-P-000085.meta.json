@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000085",
-  "revision": 1,
-  "card_rev": "ff46b62cf2c62508",
+  "revision": 2,
+  "card_rev": "e3d41747f21ec9b1",
   "title": "Kourovka 15.48：任意生成集下 <2log₂|G| 次乘法枚举全群？",
-  "title_en": null,
+  "title_en": "Kourovka 15.48 (Leedham-Green): fewer than 2 log_2 |G| multiplications suffice to reach every element",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F05",
+    "secondary": [
+      "68W30",
+      "20D99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "生成集",
+      "乘法计数",
+      "加法链",
+      "有效算法",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "generating sets",
+      "multiplication counts",
+      "addition chains",
+      "efficient algorithms",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +160,12 @@
     "note": "一区二区·易证明；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。A层画像：可计算/数表/构造验证型。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任何非平凡有限群 G 与任何生成集 X，每个元素都可用少于 2 log₂|G| 次乘法从 X 得到；或给出一个反例群与反例元素。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001425",
-  "revision": 1,
-  "card_rev": "7c084551807a9904",
+  "revision": 2,
+  "card_rev": "b9d5c897683d1d77",
   "title": "batch_I I-025：P₁=(p,1−p)，P_{n+1}=pL(P_n)+(1−p)R(P_n)（L,R 为左/右嵌入至",
-  "title_en": null,
+  "title_en": "Is the entropy of a Bernoulli-recursively embedded probability vector concave in p?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "94A17",
+    "secondary": [
+      "60C05",
+      "26B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "概率论 / 信息论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "熵",
+      "凹性",
+      "Bernoulli 卷积",
+      "概率向量嵌入",
+      "符号动力学"
+    ],
+    "en": [
+      "entropy",
+      "concavity",
+      "Bernoulli convolutions",
+      "probability vectors",
+      "symbolic dynamics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -119,7 +141,12 @@
     "note": "三四区·小问题；Jörg Neunhäuserer 2026 提出（附 arXiv:2609.05546 预印本）；Amir 回答给等价形式并证 m=2,3；异质概率版有 m=3 反例（ssss nnnn）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意递增整数列 (a_n) 证明 p↦H(P_n(p)) 在 [0,1] 上凹，或给出一个反例列与 n 使凹性失效。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

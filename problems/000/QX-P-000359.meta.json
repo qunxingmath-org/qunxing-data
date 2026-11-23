@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000359",
-  "revision": 1,
-  "card_rev": "1765898f65e9bcd7",
+  "revision": 2,
+  "card_rev": "4ff9f11a253b0503",
   "title": "Borsuk问题：最小反例维数（4≤d≤62）",
-  "title_en": null,
+  "title_en": "Borsuk's problem: which is the smallest dimension where the conjecture fails (4 to 62)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "decide"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "52A20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/凸几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Borsuk 猜想",
+      "直径",
+      "覆盖",
+      "反例维数",
+      "离散几何"
+    ],
+    "en": [
+      "Borsuk conjecture",
+      "diameter",
+      "coverings",
+      "counterexample dimension",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +134,12 @@
     "note": "一区二区·难度待定；B层：d≤3已证、d=4为最小开放维数且可能有针对性方法（有限直径图刻画路线）；高维反例已知（63维起）——开放区间4..62明确，d=4是具体目标。2025-2026有声称d=9否定（OpenAI/Kalai博客，未获确认）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 4 到 62 中最小失效维数的确切数值，并给出该维度的反例以及在所有更低维度的证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

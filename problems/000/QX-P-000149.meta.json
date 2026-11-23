@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000149",
-  "revision": 1,
-  "card_rev": "c7593dcd5b9e09f1",
+  "revision": 2,
+  "card_rev": "d0dd7bd35ae9ecb8",
   "title": "A function whose fixed points are the primes (Pérez)",
-  "title_en": null,
+  "title_en": "Iterating n to n + (largest proper divisor of n) - 1: does every orbit reach a prime?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "37P05",
+      "11B37"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论/动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "迭代",
+      "最大真因子",
+      "素数不动点",
+      "前周期",
+      "动力系统"
+    ],
+    "en": [
+      "iteration",
+      "largest proper divisor",
+      "prime fixed point",
+      "preperiodic",
+      "dynamical system"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +124,12 @@
     "note": "一区二区·难度待定；中等偏难：类 3x+1 型迭代问题；数值验证至 10^7（轨道长 ≤226）；Brunault 启发式支持；无理论工具。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 n≥2 都存在 k 使 f^k(n) 是素数，或给出一个永远不落到素数上的起始值（例如陷入某个循环）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

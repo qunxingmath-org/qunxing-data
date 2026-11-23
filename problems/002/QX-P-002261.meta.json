@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002261",
-  "revision": 1,
-  "card_rev": "12eab26ace992f1c",
+  "revision": 2,
+  "card_rev": "94da836bb12e6a52",
   "title": "均等染色猜想",
-  "title_en": null,
+  "title_en": "The equitable colouring conjecture (Chen-Lih-Wu, reformulated)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35",
+      "05C69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "均等染色",
+      "公平染色",
+      "色类大小",
+      "Chen–Lih–Wu 猜想"
+    ],
+    "en": [
+      "equitable colouring",
+      "fair colouring",
+      "class sizes",
+      "Chen-Lih-Wu conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -73,7 +94,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明改写后的均等染色猜想(Δ 充分大时 χ_eq 的取值),或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001513",
-  "revision": 1,
-  "card_rev": "49c8ed8fb3e2024d",
+  "revision": 2,
+  "card_rev": "f1f0cc390d97b177",
   "title": "Max Cut 在 G⊠P_ℓ 上的复杂性（Question 37：cactus 情形开放）",
-  "title_en": null,
+  "title_en": "Complexity of Max Cut on the strong product of a graph with a path",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q17",
+    "secondary": [
+      "05C85",
+      "05C76"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图算法/计算复杂性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Max Cut",
+      "强积",
+      "cactus 图",
+      "图的乘积",
+      "计算复杂性"
+    ],
+    "en": [
+      "Max Cut",
+      "strong products",
+      "cactus graphs",
+      "graph products",
+      "computational complexity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；2611.13917 结论节 Question 37 精确提问：当 G 上 Max Cut 多项式可解时 G⊠P_ℓ 上如何？原文注明\"cactus 图即开放\"；另有 Question 38（FVS 奇 ℓ）；强积结构算法目标小而具体。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 Max Cut 可多项式求解的图类 G，确定 G⊠P_ℓ 上 Max Cut 的复杂性——至少判定 cactus 图情形是多项式可解还是 NP-难。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

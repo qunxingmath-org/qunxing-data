@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001462",
-  "revision": 1,
-  "card_rev": "afabe8c356739017",
+  "revision": 2,
+  "card_rev": "83a56a09861ee46a",
   "title": "batch_I I-087：Rassias 猜想：对每个素数 p>2，存在素数 q 使 (p−1)q−1 为素数。验证到多大？有哪些",
-  "title_en": null,
+  "title_en": "Rassias' conjecture: for every prime p>2 there is a prime q with (p-1)q-1 prime",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N32",
+    "secondary": [
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 素数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数",
+      "线性型",
+      "Rassias 猜想",
+      "计算验证",
+      "素数分布"
+    ],
+    "en": [
+      "prime numbers",
+      "linear forms",
+      "Rassias conjecture",
+      "computational verification",
+      "distribution of primes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Peter 2015 问验证上界；Rassias 猜想有其自身文献（Rassias《Problem-Solving and Selected Topics in Number Theory》Springer 2011/2013 提出）；0 回答；帖内验证至 10⁹。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有素数 p>2 证明存在素数 q 使 (p−1)q−1 为素数，或给出一个使猜想失败的素数 p。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

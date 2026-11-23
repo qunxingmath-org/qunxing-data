@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002189",
-  "revision": 1,
-  "card_rev": "5695232564dc66d9",
+  "revision": 2,
+  "card_rev": "947ab77faa265a4e",
   "title": "可判定范畴度与范畴度等价？",
-  "title_en": null,
+  "title_en": "Are decidable categoricity degrees the same as categoricity degrees?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C57",
+    "secondary": [
+      "03D45",
+      "03C35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "可计算结构论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可计算结构",
+      "范畴性",
+      "图灵度",
+      "可判定范畴度",
+      "谱"
+    ],
+    "en": [
+      "computable structures",
+      "categoricity",
+      "Turing degrees",
+      "decidable categoricity",
+      "spectra"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明可判定范畴度与范畴度是同一批图灵度，或给出一个只实现其中一类的理论（或度）作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

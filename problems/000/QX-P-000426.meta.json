@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000426",
-  "revision": 1,
-  "card_rev": "e0c756adf4e3ac24",
+  "revision": 2,
+  "card_rev": "1568953a9ca61d44",
   "title": "大和集必含合数（Green 问题 58）",
-  "title_en": null,
+  "title_en": "Must the sumset of two large subsets of [N] contain a composite number?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "11P32",
+      "11N05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "和集",
+      "合数",
+      "素数",
+      "加性数论",
+      "大子集"
+    ],
+    "en": [
+      "sumsets",
+      "composite numbers",
+      "primes",
+      "additive number theory",
+      "large subsets"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；素数计数+加性组合交叉；|A|,|B|≥N^{0.49} 的窗口可攻击，未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意满足 |A|,|B|≥N^{0.49} 的子集，A+B 都必含合数；或给出两个这样的集合使 A+B 中全为素数与 1。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

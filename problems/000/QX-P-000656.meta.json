@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000656",
-  "revision": 1,
-  "card_rev": "1728795d6ca6c1df",
+  "revision": 2,
+  "card_rev": "e638012d98db8094",
   "title": "18.51 fp(n) 增长率：超多项式但亚指数？",
-  "title_en": null,
+  "title_en": "Does f_p(n) grow faster than polynomially but slower than exponentially?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20E22",
+      "20E07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-群",
+      "统一嵌入",
+      "增长阶",
+      "指数",
+      "阶"
+    ],
+    "en": [
+      "p-groups",
+      "uniform embeddings",
+      "growth rate",
+      "exponent",
+      "group order"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 f_p(n) 既非多项式有界又非指数增长（即介于两者之间），或证明它落在多项式或指数的一端。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

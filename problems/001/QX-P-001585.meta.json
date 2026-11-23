@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001585",
-  "revision": 1,
-  "card_rev": "172c4983cc60e109",
+  "revision": 2,
+  "card_rev": "bf0ad42e135f7b18",
   "title": "21.69 判定单关系群双曲性的算法存在？",
-  "title_en": null,
+  "title_en": "Is there an algorithm deciding whether a one-relator group is hyperbolic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F67",
+    "secondary": [
+      "20F10",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单关系群",
+      "双曲群",
+      "可判定性",
+      "算法",
+      "组合群论"
+    ],
+    "en": [
+      "one-relator groups",
+      "hyperbolic groups",
+      "decidability",
+      "algorithms",
+      "combinatorial group theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在算法判定给定单关系群是否双曲？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个对任意单关系群表现都能判定其是否双曲并停机的算法，或证明这样的算法不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000700",
-  "revision": 1,
-  "card_rev": "2be17d66b46a506a",
+  "revision": 2,
+  "card_rev": "e1a7bd5d6e1a6f31",
   "title": "15.47 Li–Praeger 分解与循环诱导置换",
-  "title_en": null,
+  "title_en": "Kourovka 15.47: Li-Praeger decompositions with cyclic action on the parts",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B25",
+    "secondary": [
+      "05E30",
+      "05C25"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "置换群",
+      "传递群",
+      "不变划分",
+      "循环诱导",
+      "有向图分解"
+    ],
+    "en": [
+      "permutation groups",
+      "transitive groups",
+      "invariant partitions",
+      "cyclic action",
+      "digraph decompositions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "完整刻画当 G 在划分 P 上诱导循环置换时，哪些参数 n=|Ω|、k=|P| 与哪些群结构能够实现。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

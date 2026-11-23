@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001124",
-  "revision": 1,
-  "card_rev": "68bdf064d4115fb9",
+  "revision": 2,
+  "card_rev": "25de7a388c044230",
   "title": "Kourovka 12.88：两个 fg 群可有同一局部有限 Cayley 图？",
-  "title_en": null,
+  "title_en": "Two finitely generated groups with the same locally finite Cayley graph, one periodic and one not",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F65",
+    "secondary": [
+      "05C25",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Cayley 图",
+      "局部有限",
+      "周期群",
+      "有限生成群"
+    ],
+    "en": [
+      "Cayley graphs",
+      "local finiteness",
+      "periodic groups",
+      "finitely generated groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造两个有限生成群及同一张局部有限 Cayley 图，使一个为周期群、另一个含无限阶元素；或证明这样的图不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

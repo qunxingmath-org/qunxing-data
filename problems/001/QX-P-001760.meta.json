@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001760",
-  "revision": 1,
-  "card_rev": "a13bd5ca34d21627",
+  "revision": 2,
+  "card_rev": "33ffbf1c07dbbd86",
   "title": "Hilbert 空间闭连通加法子群分类",
-  "title_en": null,
+  "title_en": "Classifying closed connected additive subgroups of a Hilbert space",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46C05",
+    "secondary": [
+      "22A05",
+      "54H11"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "泛函分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "闭子群",
+      "连通性",
+      "Hilbert 空间",
+      "加法群",
+      "拓扑群"
+    ],
+    "en": [
+      "closed subgroups",
+      "connectedness",
+      "Hilbert spaces",
+      "additive groups",
+      "topological groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 H 的所有闭连通加法子群的完整分类（证明它们必为某类对象，并说明该类的实现），或给出分类无法如此之简的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

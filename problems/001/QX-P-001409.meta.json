@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001409",
-  "revision": 1,
-  "card_rev": "7b79ba136ec5c807",
+  "revision": 2,
+  "card_rev": "57357ec36bc2048e",
   "title": "Kristiansen：F=(I−ceᵀ)P 的谱半径 ≤1？（SIAM 77-14）",
-  "title_en": null,
+  "title_en": "Kristiansen: is the spectral radius of (I - c e^T)P always at most 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +83,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A42",
+    "secondary": [
+      "15B48",
+      "65Fxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "矩阵分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "谱半径",
+      "秩一修正",
+      "三对角矩阵",
+      "正矩阵"
+    ],
+    "en": [
+      "spectral radius",
+      "rank-one modification",
+      "tridiagonal matrices",
+      "positive matrices"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +113,12 @@
     "note": "三四区·小问题；具体矩阵不等式，计算门槛低，可能很快出反例或证明。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有满足条件的 (P,c) 都有 ρ(F)≤1，或给出一个反例及使阶数最小的构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

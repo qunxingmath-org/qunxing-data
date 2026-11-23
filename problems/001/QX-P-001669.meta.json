@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001669",
-  "revision": 1,
-  "card_rev": "c004ef925faa962f",
+  "revision": 2,
+  "card_rev": "9140064f4a7d3ec0",
   "title": "Lovász 双临界图猜想（k≤5 已证；k=6 前沿）",
-  "title_en": null,
+  "title_en": "Lovasz's double-critical conjecture: is K_k the only example for k >= 6?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "prove"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双临界图",
+      "色数",
+      "完全图",
+      "Lovász 猜想",
+      "临界图"
+    ],
+    "en": [
+      "double-critical graphs",
+      "chromatic number",
+      "complete graphs",
+      "Lovasz conjecture",
+      "critical graphs"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -73,7 +95,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 k≥6 证明双临界的 k 色图必同构于 K_k，或给出一个 k≥6 的反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

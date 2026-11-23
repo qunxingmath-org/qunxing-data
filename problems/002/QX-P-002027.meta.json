@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002027",
-  "revision": 1,
-  "card_rev": "2e8005fd2b0f31de",
+  "revision": 2,
+  "card_rev": "a872e34b4aadd484",
   "title": "p≡1(4) 素数行列式问题",
-  "title_en": null,
+  "title_en": "A determinant problem for primes congruent to 1 modulo 4",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "value"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11C20",
+    "secondary": [
+      "11A15",
+      "11R11"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "行列式",
+      "整数矩阵",
+      "同余类",
+      "二次剩余",
+      "素数"
+    ],
+    "en": [
+      "determinants",
+      "integer matrices",
+      "congruence classes",
+      "quadratic residues",
+      "primes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所指的矩阵族给出行列式取值集合的完整刻画并证明（须写明阶数与元素限制），或给出一个 p≡1 (mod 4) 的反例推翻所猜的规律。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002040",
-  "revision": 1,
-  "card_rev": "e3f579bd0bc20907",
+  "revision": 2,
+  "card_rev": "e6edaab076a02e68",
   "title": "单位立方体装单位球最大数",
-  "title_en": null,
+  "title_en": "How many unit spheres fit inside a unit cube?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -60,18 +63,40 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 字面矛盾：“半径 1 的单位球装进棱长 1 的单位立方体”一个都放不下，单位约定另有含义。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": null
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "05B40",
+      "52A40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "球装填",
+      "单位立方体",
+      "体积界",
+      "边界效应",
+      "离散几何"
+    ],
+    "en": [
+      "sphere packing",
+      "unit cube",
+      "volume bounds",
+      "boundary effects",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +104,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定的立方体棱长与球半径，定出最大可放球数并给出达到它的显式摆法，或给出上下界并证明二者相等。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -93,5 +123,6 @@
     "status_raw": "OPEN_SUPPORTED",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

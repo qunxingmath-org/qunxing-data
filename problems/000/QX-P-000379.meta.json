@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000379",
-  "revision": 1,
-  "card_rev": "2caf881f2d6fa059",
+  "revision": 2,
+  "card_rev": "f7981c7a92b368d5",
   "title": "batch_I I-011：确定 Bloch 常数 B 与 Landau（Bloch–Landau）常数 L 的精确值（Ahlf",
-  "title_en": null,
+  "title_en": "Determining the exact Bloch constant and Landau constant",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "30C99",
+    "secondary": [
+      "30C25",
+      "30D45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "复分析 / 单叶函数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Bloch 常数",
+      "Landau 常数",
+      "单叶函数",
+      "Ahlfors–Grunsky",
+      "复分析"
+    ],
+    "en": [
+      "Bloch constant",
+      "Landau constant",
+      "univalent functions",
+      "Ahlfors–Grunsky",
+      "complex analysis"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；经典常数精确值百年未决；MO 答案给 2012 年前纪录；2026 年 Wikström 计算机辅助新下界表明问题活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 Bloch 常数与 Landau 常数的精确数值（例如证明 Ahlfors–Grunsky 的 Gamma 函数表达式成立），或证明该猜想值不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001173",
-  "revision": 1,
-  "card_rev": "7226d1fd1cd31964",
+  "revision": 2,
+  "card_rev": "132aba9a70aa56de",
   "title": "Wall–Sun–Sun 素数不存在猜想",
-  "title_en": null,
+  "title_en": "The Wall-Sun-Sun conjecture: no Fibonacci-Wieferich primes exist",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B39",
+    "secondary": [
+      "11A07",
+      "11A51"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "数论（Lucas 序列）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Fibonacci 数列",
+      "Wall–Sun–Sun 素数",
+      "Wieferich 型同余",
+      "模 p 平方",
+      "进点"
+    ],
+    "en": [
+      "Fibonacci numbers",
+      "Wall-Sun-Sun primes",
+      "Wieferich-type congruences",
+      "mod p squared",
+      "rank of apparition"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；计算先行（已核验至 2^64+）+ 理论缺位；Lucas 序列进点结构文献活跃（2026-11 2611.x Primitive Divisor Multiplicities 等）——核验扩展或 p-adic 理论中间结果均可成文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有素数 p 都有 p²∤F_{p−(p|5)}，或找出一个使 p² 整除该 Fibonacci 数的素数 p。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000382",
-  "revision": 1,
-  "card_rev": "df3bac4606de9c2d",
+  "revision": 2,
+  "card_rev": "0b9faa0ea7cca177",
   "title": "batch_I I-019：每个 IΔ₀ 模是否都有末端扩张为 IΔ₀+Ω₁ 的模型？",
-  "title_en": null,
+  "title_en": "Does every model of IΔ_0 have an end extension to a model of IΔ_0 + Ω_1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03H15",
+    "secondary": [
+      "03C62",
+      "03F30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数理逻辑 / 有界算术",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "IΔ₀",
+      "末端扩张",
+      "有界算术",
+      "Ω₁ 规则",
+      "可定义性"
+    ],
+    "en": [
+      "IΔ_0",
+      "end extensions",
+      "bounded arithmetic",
+      "Omega_1 rule",
+      "definability"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；Erfan Khaniki 2015 提出，其论文《End extensions of models of linearly bounded arithmetic》明示开放；0 回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 IΔ₀ 模型都有到 IΔ₀+Ω₁ 模型的末端扩张，或构造出一个没有这种扩张的 IΔ₀ 模型。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

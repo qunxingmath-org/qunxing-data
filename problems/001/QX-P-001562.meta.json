@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001562",
-  "revision": 1,
-  "card_rev": "4e6a420229287e5a",
+  "revision": 2,
+  "card_rev": "c2f4849ee4c0878c",
   "title": "20.105 完全局部幂零 p-群、真子群皆超中心——存在？",
-  "title_en": null,
+  "title_en": "A perfect locally nilpotent p-group whose proper subgroups are all hypercentral?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F19",
+    "secondary": [
+      "20D15",
+      "20E34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "完全群",
+      "局部幂零",
+      "p-群",
+      "超中心",
+      "真子群"
+    ],
+    "en": [
+      "perfect groups",
+      "local nilpotence",
+      "p-groups",
+      "hypercentral subgroups",
+      "proper subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在某素数 p 的完全（perfect）局部幂零 p-群，其所有真子群都超中心？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对某个素数 p 构造出完全、局部幂零、且所有真子群都超中心的 p-群，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000243",
-  "revision": 1,
-  "card_rev": "f9cd346af0a7b68d",
+  "revision": 2,
+  "card_rev": "6d4b70cf972b5d68",
   "title": "凸多边形的凸公平剖分（Nandakumar–Ramana 猜想；原批次 A-080）",
-  "title_en": null,
+  "title_en": "Fair convex partitions of a convex polygon: equal areas and equal perimeters",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "construct"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C20",
+    "secondary": [
+      "52B45",
+      "52A38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸多边形剖分",
+      "等面积等周长",
+      "公平剖分",
+      "凸块"
+    ],
+    "en": [
+      "convex partition",
+      "equal area and perimeter",
+      "fair partition",
+      "convex pieces"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +130,12 @@
     "note": "一区二区·难度待定；n=2 容易、n=3 与素数 n 是公认起点；拓扑工具（Borsuk–Ulam）路线；近年邻域（Borsuk–Ulam 推广 2026-07）活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意凸多边形和任意正整数 n 都能这样剖分（并给出构造方法），或给出一个无法这样剖分的凸多边形与 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001782",
-  "revision": 1,
-  "card_rev": "13c8a2d505668596",
+  "revision": 2,
+  "card_rev": "b9ac259937702285",
   "title": "Q(a,b) 次数值域",
-  "title_en": null,
+  "title_en": "Which degrees occur for Q(a,b)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "12F05",
+    "secondary": [
+      "12F10",
+      "11R21"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "域论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "域扩张次数",
+      "生成元",
+      "本原元",
+      "次数值域"
+    ],
+    "en": [
+      "field extension degrees",
+      "generators",
+      "primitive elements",
+      "degree spectrum"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定可实现次数的集合（给出构造与排除），并证明不在集合中的次数确实不能出现。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

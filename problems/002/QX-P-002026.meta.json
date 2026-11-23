@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002026",
-  "revision": 1,
-  "card_rev": "515433c01e289e88",
+  "revision": 2,
+  "card_rev": "c1711e00d629622d",
   "title": "4-流形 exotic 扭倍存在性",
-  "title_en": null,
+  "title_en": "Do exotic twisted doubles of four-manifolds exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K40",
+    "secondary": [
+      "57R55",
+      "57N13"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "4维拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "四维流形",
+      "exotic 光滑结构",
+      "扭倍",
+      "同胚",
+      "微分同胚"
+    ],
+    "en": [
+      "four-manifolds",
+      "exotic smooth structures",
+      "twisted doubles",
+      "homeomorphism",
+      "diffeomorphism"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式构造一个四维流形及其扭倍，给出两种光滑结构并证明它们同胚但不微分同胚，或证明这样的 exotic 扭倍不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

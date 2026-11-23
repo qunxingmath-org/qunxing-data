@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000716",
-  "revision": 1,
-  "card_rev": "57f7855f81286a54",
+  "revision": 2,
+  "card_rev": "8946346b789460de",
   "title": "14.43 G=AB（幂零类 α,β）的派生长界",
-  "title_en": null,
+  "title_en": "Kourovka 14.43: bounding the derived length of G = AB with nilpotent A and B",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D40",
+    "secondary": [
+      "20D10",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "子群乘积",
+      "幂零类",
+      "派生长",
+      "可解群",
+      "Kegel–Wielandt"
+    ],
+    "en": [
+      "products of subgroups",
+      "nilpotency class",
+      "derived length",
+      "soluble groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出常数 c 并证明 dl(G) ≤ c·(α+β)（或其它明确的线性函数），或构造一族使派生长相对 α、β 超线性增长的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

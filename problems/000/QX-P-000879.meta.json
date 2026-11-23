@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000879",
-  "revision": 1,
-  "card_rev": "5e5d6bd4863e7976",
+  "revision": 2,
+  "card_rev": "90d7ac1583cd0cb7",
   "title": "Small complete 3-term progression free sets in cyclic groups and vector spaces",
-  "title_en": null,
+  "title_en": "Minimum size of complete 3-term-progression-free sets in cyclic groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B25",
+    "secondary": [
+      "51E21",
+      "05B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有限几何/加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无三项等差数列",
+      "极大集",
+      "循环群",
+      "完全帽集",
+      "饱和集"
+    ],
+    "en": [
+      "3-term-progression-free sets",
+      "maximal sets",
+      "cyclic groups",
+      "complete caps",
+      "saturating sets"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +134,12 @@
     "note": "三四区·小问题；中等——\"complete\" 3-AP-free 集最小规模的精确值；原文证√m下界本质紧（<2√m构造），向量空间情形2025已有前序文献；精确常数与一般族推进可行。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 Z_m 与 F_q^k 中 complete 3-AP-free 集合最小规模的确切值或渐近常数（把 √m 附近的常数钉死）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

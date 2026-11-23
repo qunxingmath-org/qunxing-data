@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001999",
-  "revision": 1,
-  "card_rev": "ec4ed09fdaab92d1",
+  "revision": 2,
+  "card_rev": "64f6e1b40ba4ee55",
   "title": "同源类主极化阿贝尔簇计数（Howe 2020 部分解决）",
-  "title_en": null,
+  "title_en": "Counting principally polarised abelian varieties in an isogeny class",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11G10",
+    "secondary": [
+      "11G18",
+      "14K15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "主极化阿贝尔簇",
+      "同源类",
+      "计数",
+      "Galois 表示",
+      "Weil 数"
+    ],
+    "en": [
+      "principally polarised abelian varieties",
+      "isogeny classes",
+      "counting",
+      "Galois representations",
+      "Weil numbers"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出同源类中主极化阿贝尔簇个数的确切公式（或精确的渐近主项）并对相应情形证明，或指出该数无穷并给出构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002165",
-  "revision": 1,
-  "card_rev": "7e5c243d475503f3",
+  "revision": 2,
+  "card_rev": "464a33ee4fbb6259",
   "title": "有限生成斜域（=Latyshev 问题）",
-  "title_en": null,
+  "title_en": "Must a skewfield finitely generated as a ring be finite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16K40",
+    "secondary": [
+      "16P99",
+      "12E15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "环论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "斜域",
+      "除环",
+      "有限生成环",
+      "Latyshev 问题",
+      "代数性"
+    ],
+    "en": [
+      "skewfields",
+      "division rings",
+      "finitely generated rings",
+      "Latyshev's problem",
+      "algebraicity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明作为环有限生成的斜域必为有限域（或必在基域上代数），或构造一个反例斜域。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

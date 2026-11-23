@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001559",
-  "revision": 1,
-  "card_rev": "fb74f42ef3b414d7",
+  "revision": 2,
+  "card_rev": "44cc0051e00ff5cb",
   "title": "20.97 2-群：每个对合的中心化子局部有限 ⇒ 群局部有限？",
-  "title_en": null,
+  "title_en": "If every involution centralizer is locally finite, must the 2-group be locally finite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E25",
+      "20F99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "局部有限",
+      "2-群",
+      "对合",
+      "中心化子",
+      "Burnside 型问题"
+    ],
+    "en": [
+      "local finiteness",
+      "2-groups",
+      "involutions",
+      "centralizers",
+      "Burnside-type problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Suchkov）2-群 G 若每个对合的中心化子局部有限，G 是否局部有限？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这类 2-群必局部有限，或构造一个每个对合的中心化子都局部有限、但自身不局部有限的 2-群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

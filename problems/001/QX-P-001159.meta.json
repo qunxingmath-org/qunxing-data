@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001159",
-  "revision": 1,
-  "card_rev": "3d774504b3af9809",
+  "revision": 2,
+  "card_rev": "5988532d73967884",
   "title": "Kourovka 18.79/18.80：族条目（18.79+18.80）：群代数 Jacobson 根=幂零理想并；增广理想=根 ⇔ 局部有限 p-群",
-  "title_en": null,
+  "title_en": "Jacobson radical versus nilpotent ideals for group algebras; augmentation ideal as radical",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -134,11 +137,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16S34",
+    "secondary": [
+      "16N20",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群代数",
+      "Jacobson 根",
+      "幂零理想",
+      "增广理想",
+      "局部有限 p-群"
+    ],
+    "en": [
+      "group algebras",
+      "Jacobson radical",
+      "nilpotent ideals",
+      "augmentation ideal",
+      "locally finite p-groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -146,7 +169,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对第一问证明等式恒成立或给出反例；对第二问给出充要条件的完整证明（两个方向都要）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

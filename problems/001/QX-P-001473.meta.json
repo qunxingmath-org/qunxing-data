@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001473",
-  "revision": 1,
-  "card_rev": "d4af9c4ae1d33c62",
+  "revision": 2,
+  "card_rev": "70436f9fa0ddd344",
   "title": "batch_I I-114：离散无记忆\"极弱干扰\"信道上，Han–Kobayashi 内界的最大和速率是否等于容量区域的最大和速率？",
-  "title_en": null,
+  "title_en": "Does the Han-Kobayashi inner bound attain the sum capacity of the very weak interference channel?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "94A15",
+    "secondary": [
+      "94A24",
+      "94A40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "信息论 / 干扰信道",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "干扰信道",
+      "Han–Kobayashi 内界",
+      "和速率",
+      "信道容量",
+      "信息论"
+    ],
+    "en": [
+      "interference channels",
+      "Han-Kobayashi inner bound",
+      "sum rate",
+      "channel capacity",
+      "information theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；SouthChinaSeaPupil 2023；0 回答；表述完整（HK 内界和速率=max I(X₁;Y₁)+I(X₂;Y₂) 是否达到容量区域和速率最大值）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明极弱干扰信道中 Han–Kobayashi 内界的最大和速率等于容量区域的最大和速率（或给出严格更小的上界证明内界不紧），特别是判定 λ=1 的情形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

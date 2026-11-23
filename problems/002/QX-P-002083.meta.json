@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002083",
-  "revision": 1,
-  "card_rev": "0788a26e94583107",
+  "revision": 2,
+  "card_rev": "a76d6be675e01bf4",
   "title": "Julia 集上的丢番图逼近",
-  "title_en": null,
+  "title_en": "Diophantine approximation on Julia sets",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "decide"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37F10",
+    "secondary": [
+      "11J83",
+      "28A78"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统/数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Julia 集",
+      "丢番图逼近",
+      "Hausdorff 维数",
+      "有理逼近",
+      "复动力系统"
+    ],
+    "en": [
+      "Julia sets",
+      "Diophantine approximation",
+      "Hausdorff dimension",
+      "rational approximation",
+      "complex dynamics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定的有理函数族，确定 Julia 集上可被有理数以给定精度无穷多次逼近的点集的 Hausdorff 维数（或阈值 τ），并给出证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

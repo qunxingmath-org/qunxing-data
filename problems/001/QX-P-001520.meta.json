@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001520",
-  "revision": 1,
-  "card_rev": "9d5e39dc1f944c0c",
+  "revision": 2,
+  "card_rev": "6d29a87b7738e9b2",
   "title": "程序证明的自动断言补全（TAOCP v1 1.2.1 ex.14）",
-  "title_en": null,
+  "title_en": "Filling in the assertions needed to prove a program correct",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q60",
+    "secondary": [
+      "68N30",
+      "03B70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "程序验证（AI 高度相关）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "程序验证",
+      "断言补全",
+      "正确性证明",
+      "不变式",
+      "自动化"
+    ],
+    "en": [
+      "program verification",
+      "assertion completion",
+      "correctness proofs",
+      "invariants",
+      "automation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +117,12 @@
     "note": "三四区·小问题；[表述不全] 原题为\"编写程序自动补全正确性证明所需断言\"（如仅给起始断言证明 Algorithm E 有效），非单一数学命题而是工程+理论任务；可分解为具体实例（对 TAOCP 各算法补断言）作三四区/AI 论文，故降权登记为 C层[表述不全]。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "写出这样的程序并说明适用范围：给定程序与可选断言，输出足以完成正确性证明的断言集合，且每条断言都能被机械验证。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

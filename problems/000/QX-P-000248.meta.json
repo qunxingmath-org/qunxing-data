@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000248",
-  "revision": 1,
-  "card_rev": "fdb63fda8753d2e5",
+  "revision": 2,
+  "card_rev": "73c49aeb810fe760",
   "title": "van der Waerden 数 Large Sets 猜想（原批次 A-049）",
-  "title_en": null,
+  "title_en": "The Large Sets conjecture for van der Waerden numbers",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "11B25",
+      "05B30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Ramsey理论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "van der Waerden 数",
+      "大集猜想",
+      "等差数列",
+      "着色划分"
+    ],
+    "en": [
+      "van der Waerden numbers",
+      "large sets",
+      "arithmetic progressions",
+      "colouring partition"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +129,12 @@
     "note": "一区二区·难度待定；Brown–Graham–Landman 表述的 W(k,r) 大集命题；近年无直接文献；小众。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对一切 k、r 给出这样的分块（大集）存在性证明，或指出某一对 (k,r) 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

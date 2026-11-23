@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000047",
-  "revision": 1,
-  "card_rev": "dc4ec0848788a4fa",
+  "revision": 2,
+  "card_rev": "f4655ec7ce9f4094",
   "title": "TxGraffiti 猜想 3：r-正则图的独立支配数 ≤ 饱和数上界参数",
-  "title_en": null,
+  "title_en": "TxGraffiti conjecture 3: independent domination number at most mu-star for r-regular graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C69",
+    "secondary": [
+      "05C07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（AI 生成猜想）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "独立支配数",
+      "正则图",
+      "机器生成猜想",
+      "TxGraffiti",
+      "图不变量"
+    ],
+    "en": [
+      "independent domination number",
+      "regular graphs",
+      "machine-generated conjectures",
+      "TxGraffiti",
+      "graph invariants"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -110,7 +132,12 @@
     "note": "一区二区·易证明；纯有限验证目标——对所有小阶 r-正则图枚举/生成即可找反例（n≤12 的正则图全空间可穷举）；若为真，独立支配数 i(G) 与饱和数相关不等式已有大量已知链（Tavakoli–Samadi 2022 等）可拼接；反例搜索与已知不等式网络双路线，A层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 r ≥ 1 的 r-正则图 G 都有 i(G) ≤ μ*(G)（并明确 μ* 的定义）；或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

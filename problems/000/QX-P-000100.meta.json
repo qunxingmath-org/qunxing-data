@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000100",
-  "revision": 1,
-  "card_rev": "82c165e8d06eaa9e",
+  "revision": 2,
+  "card_rev": "87ba4b9d90464c01",
   "title": "D5 格球堆积最优性猜想（5维）",
-  "title_en": null,
+  "title_en": "Is the D5 root lattice the densest unit-sphere packing in dimension five?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -111,11 +113,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "11H31"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "球堆积",
+      "D₅ 格",
+      "根格",
+      "堆积密度",
+      "五维"
+    ],
+    "en": [
+      "sphere packing",
+      "D5 lattice",
+      "root lattice",
+      "packing density",
+      "dimension five"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -123,7 +144,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 维8/24 已由 Viazovska 线解决为对照；维4 主条目 B-1013 同族"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明五维中任何单位球堆积的密度都不超过 D₅ 格堆积的密度，或给出一个密度更大的五维堆积。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

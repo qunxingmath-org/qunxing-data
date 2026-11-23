@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000148",
-  "revision": 1,
-  "card_rev": "ee7e742f75e0a02a",
+  "revision": 2,
+  "card_rev": "b788a7ebd5c63541",
   "title": "Kourovka 21.27：有限单传递置换群每个元素都是两个 derangement 之积吗",
-  "title_en": null,
+  "title_en": "Is every element of a finite simple transitive permutation group a product of two derangements?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B05",
+    "secondary": [
+      "20D05",
+      "20E45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无不动点置换",
+      "传递置换群",
+      "有限单群",
+      "乘积分解",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "derangement",
+      "transitive permutation group",
+      "finite simple group",
+      "product decomposition",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：Larsen-Shalev-Tiep Forum Math Sigma 2022 充分大群已证；小群情形开放"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个这样的元素都能写成两个 derangement 的乘积，或给出一个不能这样分解的元素。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

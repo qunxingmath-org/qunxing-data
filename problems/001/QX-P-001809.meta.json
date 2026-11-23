@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001809",
-  "revision": 1,
-  "card_rev": "63688a7abf5f5f0c",
+  "revision": 2,
+  "card_rev": "185fd0399f182de5",
   "title": "exp(π√n) 小数部分稠密",
-  "title_en": null,
+  "title_en": "Are the fractional parts of exp(pi sqrt(n)) dense?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J71",
+    "secondary": [
+      "11K60",
+      "11J81"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "小数部分",
+      "稠密性",
+      "指数函数",
+      "等分布"
+    ],
+    "en": [
+      "fractional parts",
+      "density",
+      "exponential functions",
+      "equidistribution"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 {exp(π√n)} 在 [0,1] 中稠密，或证明存在某个开区间永远不含这些小数部分。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

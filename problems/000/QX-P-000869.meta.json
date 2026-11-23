@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000869",
-  "revision": 1,
-  "card_rev": "c1d721dfa2230f74",
+  "revision": 2,
+  "card_rev": "b17075441825471e",
   "title": "Kirby 1.60：在整同调球（或 Z/2 同调球）中光滑切片但非 B⁴ 切片的纽结",
-  "title_en": null,
+  "title_en": "A knot slice in an integer homology ball but not in the 4-ball (Kirby 1.60)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -97,11 +100,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K10",
+    "secondary": [
+      "57K40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "低维拓扑（纽结配边/同调球填充）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "切片纽结",
+      "整同调球",
+      "四维球",
+      "圆盘",
+      "同调配边"
+    ],
+    "en": [
+      "slice knots",
+      "integer homology balls",
+      "4-ball",
+      "disks",
+      "homology cobordism"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；Levine 2023（NY J. Math.）明确列为开放；Hom–Nagel–Park–Tristram 2025（Selecta Math.）有理切片进展为相邻；Z/2 情形为 Levin 注记策略的直接测试点。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个 S³ 纽结 K 与一个整同调 4-球 W，使 K 在 W 中光滑切片但不在 B⁴ 中光滑切片（Z/2 同调球版本亦算解决）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

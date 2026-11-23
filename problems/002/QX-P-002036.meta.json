@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002036",
-  "revision": 1,
-  "card_rev": "60c5a143841c3761",
+  "revision": 2,
+  "card_rev": "9bc798744f2803c3",
   "title": "Hausdorff 维 1 实加法子群的中间维数",
-  "title_en": null,
+  "title_en": "Which Hausdorff dimensions can real additive subgroups have?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "classify"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "28A80",
+    "secondary": [
+      "20K99",
+      "03E15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "集合论/加法",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hausdorff 维数",
+      "加法子群",
+      "实直线",
+      "维数谱",
+      "分形"
+    ],
+    "en": [
+      "Hausdorff dimension",
+      "additive subgroups",
+      "the real line",
+      "dimension spectrum",
+      "fractals"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 s∈(0,1) 都存在 Hausdorff 维数为 s 的实加法子群并给出构造，或指出维数谱确实有空隙并把它完整刻画出来。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000245",
-  "revision": 1,
-  "card_rev": "b41ad24e871cd4e6",
+  "revision": 2,
+  "card_rev": "62c9bff186dd18f0",
   "title": "Kahn 永久猜想（原批次 A-043）",
-  "title_en": null,
+  "title_en": "Kahn's permanent-type conjecture for bases counted with weights",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +99,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A15",
+    "secondary": [
+      "05B35",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合/matroid/矩阵（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "永久式",
+      "矩阵不等式",
+      "基计数",
+      "Kahn 猜想"
+    ],
+    "en": [
+      "permanent",
+      "matrix inequality",
+      "base count",
+      "Kahn's conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +129,12 @@
     "note": "一区二区·难度待定；可逆矩阵与其永久式的组合不等式猜想；小众、近年无直接文献。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "核对原页得到精确陈述后，给出该组合不等式的证明，或给出一个违反它的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

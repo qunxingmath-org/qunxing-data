@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001897",
-  "revision": 1,
-  "card_rev": "207546978312b7b9",
+  "revision": 2,
+  "card_rev": "fd54509f34c91853",
   "title": "纽结 tightness 可判定性",
-  "title_en": null,
+  "title_en": "Is tightness of a contact structure decidable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K33",
+    "secondary": [
+      "57R17",
+      "57K10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "纽结理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "接触结构",
+      "tightness",
+      "可判定性",
+      "三维流形"
+    ],
+    "en": [
+      "contact structures",
+      "tightness",
+      "decidability",
+      "3-manifolds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出判定给定三维流形上接触结构是否 tight 的算法，或证明这个问题不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001368",
-  "revision": 1,
-  "card_rev": "2b2b704f04b48d16",
+  "revision": 2,
+  "card_rev": "edb1819323b5c189",
   "title": "Propp\"肚脐\"（navel）面积比上界（MM 1068）",
-  "title_en": null,
+  "title_en": "Propp's navel problem: sharp bound for the area ratio of an area-bisecting envelope",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "value"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52A10",
+    "secondary": [
+      "52A40",
+      "53A04"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "凸几何/几何分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "面积平分线",
+      "包络",
+      "凸曲线",
+      "面积比",
+      "上确界"
+    ],
+    "en": [
+      "area-bisecting lines",
+      "envelopes",
+      "convex curves",
+      "area ratio",
+      "supremum"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -101,7 +124,12 @@
     "note": "三四区·小问题；几何直观强，凸情形可先做；发表部分结果可能性高。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定该面积比在全部简单闭曲线（至少是凸曲线）上的精确上确界，并说明哪些曲线取到或逼近它。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

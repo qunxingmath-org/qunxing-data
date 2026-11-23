@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000257",
-  "revision": 1,
-  "card_rev": "dd928981c53f5c93",
+  "revision": 2,
+  "card_rev": "135d549aba63fdac",
   "title": "可融数主猜想：后继区间可融数的分形结构",
-  "title_en": null,
+  "title_en": "The main conjecture on fusible numbers and the fractal structure of successor intervals",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -98,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E10",
+    "secondary": [
+      "03D20",
+      "06A05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "递归论/序结构",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可融数",
+      "融合递归",
+      "序型",
+      "分形结构"
+    ],
+    "en": [
+      "fusible numbers",
+      "fusion recursion",
+      "order type",
+      "fractal structure"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -110,7 +130,12 @@
     "note": "一区二区·难度待定；与停机问题的有界关联使其'看似初等实则可难可易'：分形结构部分可能可用组合方法推进（已有 Anderson 2012/2022 系列部分结果），低区间验证型成果可出三区，主猜想若真则触及 PA 不可证性。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出该分形递归结构的精确陈述并证明它对一切可融数成立，或指出某个后继区间不符合预测。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

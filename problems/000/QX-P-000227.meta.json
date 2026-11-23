@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000227",
-  "revision": 1,
-  "card_rev": "ab5e77ef2a161524",
+  "revision": 2,
+  "card_rev": "a2fed1b32d49c770",
   "title": "Turán 四面体问题 ex_3(n,K_4^3)→5/9?（EP#500；原批次 A-021）",
-  "title_en": null,
+  "title_en": "The Turan tetrahedron problem: does ex_3(n, K_4^3)/C(n,3) tend to 5/9?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C65",
+      "05D05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "极值超图论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Turán 密度",
+      "K₄³",
+      "三一致超图",
+      "极值问题",
+      "上界改进"
+    ],
+    "en": [
+      "Turan density",
+      "K_4^3",
+      "3-uniform hypergraphs",
+      "extremal problems",
+      "upper bound improvements"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +142,12 @@
     "note": "一区二区·难度待定；千元名题；2026-09 新上界 0.557789（Lean 形式化 flag 代数）关闭 62% 鸿沟——距 5/9 尚余 0.0022；活跃但非易证明。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 ex₃(n,K₄³)/C(n,3) 的极限等于 5/9，或给出一个密度超过 5/9+ε 的 K₄³-自由构造来推翻该猜想。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

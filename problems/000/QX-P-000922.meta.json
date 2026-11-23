@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000922",
-  "revision": 1,
-  "card_rev": "22190d4eed6e0b97",
+  "revision": 2,
+  "card_rev": "45c1d14a9920f6c7",
   "title": "Kourovka 19.19：有限传递置换群具有'道路封闭性质'（任一 2-集轨道的真块系统去掉后图仍连通）必本原且基本；哪些群具有该性质",
-  "title_en": null,
+  "title_en": "Kourovka 19.19: which transitive groups have the road closure property?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B15",
+    "secondary": [
+      "20B05",
+      "05C25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "道路封闭性质",
+      "本原群",
+      "基本群",
+      "2-集轨道",
+      "块系统"
+    ],
+    "en": [
+      "road closure property",
+      "primitive groups",
+      "basic groups",
+      "orbits on 2-sets",
+      "blocks of imprimitivity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出具有道路封闭性质的有限传递置换群的完整分类，并证明分类之外没有其他群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

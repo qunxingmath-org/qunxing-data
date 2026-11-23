@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000867",
-  "revision": 1,
-  "card_rev": "6c82e005019f2ace",
+  "revision": 2,
+  "card_rev": "0e0c8be9e9f11fb5",
   "title": "2-纽结补群是否必有可解字问题（González-Acuña 猜想）",
-  "title_en": null,
+  "title_en": "Gonzalez-Acuna's question: 2-knot groups with unsolvable word problem",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -108,11 +111,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K45",
+    "secondary": [
+      "20F10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何拓扑（高维纽结/群论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "二维纽结",
+      "补空间基本群",
+      "字问题",
+      "可解性",
+      "S⁴ 嵌入"
+    ],
+    "en": [
+      "2-knots",
+      "complement fundamental group",
+      "word problem",
+      "solvability",
+      "embeddings in S^4"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -120,7 +142,12 @@
     "note": "三四区·小问题；S⁴ 一般子流形补群可有不可解字问题，但 2-纽结补群受\"无限循环正规商\"约束；González-Acuña 2010 两猜想（字问题不可解例存在性/fp 群嵌入）均开放；2025-26 高维纽结不可解性结果不覆盖 S⁴ 尖锐情形。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出 S² 在 S⁴ 中的光滑或 PL 嵌入，使得补空间基本群的字问题不可解；或证明任何这样的补群字问题都可解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

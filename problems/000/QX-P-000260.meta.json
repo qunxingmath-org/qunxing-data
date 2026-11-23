@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000260",
-  "revision": 1,
-  "card_rev": "0310e986db61b000",
+  "revision": 2,
+  "card_rev": "8eac02ab2a05f3ed",
   "title": "Ringel 猜想（一般 n）：K_{2n+1} 分解为 2n+1 棵任意 n 边树",
-  "title_en": null,
+  "title_en": "Ringel's conjecture for all n: K_(2n+1) decomposes into 2n+1 copies of any n-edge tree",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C51",
+    "secondary": [
+      "05C70",
+      "05C05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（分解）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "图分解",
+      "树",
+      "完全图",
+      "Ringel 猜想"
+    ],
+    "en": [
+      "graph decomposition",
+      "trees",
+      "complete graphs",
+      "Ringel's conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +139,12 @@
     "note": "一区二区·难度待定；大 n 情形已证（Keevash 2020 设计理论+Montgomery），剩余困难集中在'小 n 与一般 n'的过渡；设计/概率构造路线明确，小 n 情形可计算机辅助——一二区论文级。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 n≥1 和每棵 n 边树 T，K_{2n+1} 都能分解成 2n+1 个 T 的拷贝，或给出一个无法分解的 (n,T)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

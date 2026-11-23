@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000264",
-  "revision": 1,
-  "card_rev": "4608774b766e6142",
+  "revision": 2,
+  "card_rev": "5fa45ec1197b860a",
   "title": "Pudlák 有限域不完全性猜想组（p-最优证明系统）",
-  "title_en": null,
+  "title_en": "Pudlak's conjectures on p-optimal proof systems and finite-domain principles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03F20",
+    "secondary": [
+      "68Q15",
+      "03F30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "证明复杂性/逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "证明复杂性",
+      "p-最优证明系统",
+      "有限域原理",
+      "不可证性"
+    ],
+    "en": [
+      "proof complexity",
+      "p-optimal proof systems",
+      "finite-domain principles",
+      "unprovability"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +135,12 @@
     "note": "一区二区·难度待定；证明复杂性根基问题（P vs NP 的前厅）；虽'极高'难度，但分组内部分等价（如 p-optimal 与 NP∩coNP 性质）已系统理清，子问题可作为一二区逻辑论文级目标——难度未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "逐条给出这些猜想的证明（例如证明不存在 p-最优的命题证明系统），或给出反例说明某条猜想不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

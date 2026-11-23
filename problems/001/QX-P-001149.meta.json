@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001149",
-  "revision": 1,
-  "card_rev": "a86c9a40d9226e8e",
+  "revision": 2,
+  "card_rev": "12846f022ead0952",
   "title": "Kourovka 16.110：判定∀φ 循环长 φ(u)=φ(v) 的算法（F_n）",
-  "title_en": null,
+  "title_en": "Is there an algorithm deciding cyclic-length equality under all automorphisms of F_n?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "20E05",
+      "20F28"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由群",
+      "自同构",
+      "循环长",
+      "算法的可判定性",
+      "字问题"
+    ],
+    "en": [
+      "free groups",
+      "automorphisms",
+      "cyclic length",
+      "algorithmic decidability",
+      "word problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出对所有 n 都适用、并证明其正确性与终止性的判定算法，或证明这样的算法不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000034",
-  "revision": 1,
-  "card_rev": "5f22c4f2c493e48d",
+  "revision": 2,
+  "card_rev": "0eafc70df20f20b9",
   "title": "Catch-Up 对策猜想：总分为偶时最优对策下全平局",
-  "title_en": null,
+  "title_en": "Catch-Up game conjecture: optimal play yields a tie whenever the total score is even",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "91A46",
+    "secondary": [
+      "05C57",
+      "91A05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合对策",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "取数对策",
+      "零和博弈",
+      "平局",
+      "组合对策",
+      "最优对策"
+    ],
+    "en": [
+      "number-picking games",
+      "combinatorial games",
+      "tie under optimal play",
+      "backward induction",
+      "Catch-Up"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·易证明；有限完全信息对策，状态空间 {1..N} 子集；N≤25 可直接暴力搜索验证；猜想断言'平局'，属可计算机先证后理论化的典型小型对策问题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明当 N(N+1)/2 为偶数时，Catch-Up 在双方最优对策下的得分必然相等；或给出某个满足该条件的 N 使先手（或后手）必胜。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

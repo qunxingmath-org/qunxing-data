@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001113",
-  "revision": 1,
-  "card_rev": "816e4ecd768cb593",
+  "revision": 2,
+  "card_rev": "da43dd50f29ec172",
   "title": "Kourovka 11.71：A-覆盖子群 |H:U|≤f(n)（n=|A:H|）",
-  "title_en": null,
+  "title_en": "Bounding the index of A-covering subgroups by a function of |A:H|",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D40",
+    "secondary": [
+      "20E34",
+      "20D30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "A-覆盖子群",
+      "子群指数",
+      "有界性",
+      "Neumann–Praeger 问题"
+    ],
+    "en": [
+      "A-covering subgroups",
+      "subgroup indices",
+      "boundedness",
+      "Neumann-Praeger problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在只依赖 n=|A:H| 的函数 f 使 |H:U|≤f(n) 恒成立，或构造一列 A-覆盖子群使 |H:U| 相对 n 无界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

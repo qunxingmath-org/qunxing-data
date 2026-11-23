@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001555",
-  "revision": 1,
-  "card_rev": "72e6d78de3045624",
+  "revision": 2,
+  "card_rev": "58f795be03d7241a",
   "title": "20.59 虚拟自由群的 fg 子群都是虚拟收缩核？",
-  "title_en": null,
+  "title_en": "Is every finitely generated subgroup of a virtually free group a virtual retract?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E05",
+    "secondary": [
+      "20F65",
+      "20E26"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "虚拟自由群",
+      "虚拟收缩核",
+      "有限生成子群",
+      "有限指数",
+      "几何群论"
+    ],
+    "en": [
+      "virtually free groups",
+      "virtual retracts",
+      "finitely generated subgroups",
+      "finite index",
+      "geometric group theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；H 是 G 的虚拟收缩核 = H 是某有限指数子群的收缩核。有限生成虚拟自由群的每个 fg 子群是否为虚拟收缩核？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有限生成子群都是虚拟收缩核，或给出一个不是虚拟收缩核的有限生成子群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

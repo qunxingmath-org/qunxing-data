@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001094",
-  "revision": 1,
-  "card_rev": "08a377d949eee884",
+  "revision": 2,
+  "card_rev": "e1a4fab2483a5771",
   "title": "Kourovka 8.77：SRG(k,0,2)（λ=0,μ=2）k>10 存在？",
-  "title_en": null,
+  "title_en": "Strongly regular graphs with parameters (k,0,2) for k > 10",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E30",
+    "secondary": [
+      "20B25",
+      "05C25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "强正则图",
+      "参数组",
+      "本原置换群",
+      "秩 3",
+      "图的自同构"
+    ],
+    "en": [
+      "strongly regular graphs",
+      "parameter sets",
+      "primitive permutation groups",
+      "rank three",
+      "graph automorphisms"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对某个 k>10 构造出参数为 (k,0,2) 的强正则图，或证明 k>10 时这样的图都不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

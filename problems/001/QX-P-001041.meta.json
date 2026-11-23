@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001041",
-  "revision": 1,
-  "card_rev": "14e036019d12470c",
+  "revision": 2,
+  "card_rev": "e4f10dcb0ad6f405",
   "title": "Kourovka 17.48：两个一阶理论稳定的群的自由积也稳定吗",
-  "title_en": null,
+  "title_en": "Is the free product of two stable groups stable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C60",
+    "secondary": [
+      "20E06",
+      "03C45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "稳定性",
+      "一阶理论",
+      "自由积",
+      "模型论",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "stability",
+      "first-order theories",
+      "free products",
+      "model theory",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明两个稳定群的自由积仍稳定，或给出两个稳定群使其自由积不稳定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

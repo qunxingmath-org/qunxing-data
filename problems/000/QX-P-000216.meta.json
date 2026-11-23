@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000216",
-  "revision": 1,
-  "card_rev": "e4455cf3b34dab99",
+  "revision": 2,
+  "card_rev": "28884c26d02938d5",
   "title": "Erdos P12: set with no element dividing sum of two larger elements",
-  "title_en": null,
+  "title_en": "Erdos P12: sets with no element dividing the sum of two larger elements",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B75",
+    "secondary": [
+      "11B05",
+      "11N25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整除条件",
+      "下密度",
+      "倒数和",
+      "整数集合",
+      "加性组合"
+    ],
+    "en": [
+      "divisibility conditions",
+      "lower density",
+      "sum of reciprocals",
+      "integer sets",
+      "additive combinatorics"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·难度待定；B层理由: 剩余Q3(收敛性)为核心数论难题; DeepMind 2024构造大幅改变局面(密度可接近N/polylog); 状态刚演化, 难度未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "回答这三个子问题：构造出正下密度的例子（或证明不存在）、判定 Q2 中的上界是否必然成立、并判定 Σ_{n∈A}1/n 是否总收敛。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001179",
-  "revision": 1,
-  "card_rev": "99511bf4505e9437",
+  "revision": 2,
+  "card_rev": "3cae2e53e073a8dc",
   "title": "R³ 中直线集 Voronoi 图的复杂度",
-  "title_en": null,
+  "title_en": "Worst-case complexity of the Voronoi diagram of n lines in R^3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68U05",
+    "secondary": [
+      "68Q25",
+      "52B55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "计算几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Voronoi 图",
+      "三维直线",
+      "组合复杂度",
+      "最坏情形",
+      "计算几何"
+    ],
+    "en": [
+      "Voronoi diagrams",
+      "lines in 3-space",
+      "combinatorial complexity",
+      "worst case",
+      "computational geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；3D 线 Voronoi 图复杂度上界与构造：既有 Ω(n²) 下界与更好的猜赶上界；计算几何核心未决——组合几何计数型可出论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 n 条空间直线的 Voronoi 图在最坏情形下的组合复杂度的确切量级（给出匹配的上下界构造），并给出相应复杂度的构造算法。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

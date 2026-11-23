@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000138",
-  "revision": 1,
-  "card_rev": "e442debf8f73a85b",
+  "revision": 2,
+  "card_rev": "b09edd263814e0c8",
   "title": "Lebesgue's universal covering problem",
-  "title_en": null,
+  "title_en": "Lebesgue's universal covering problem: the smallest convex cover for all planar sets of diameter one",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -89,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "52A40",
+      "51M25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "凸几何/覆盖",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "通用覆盖",
+      "直径 1",
+      "凸集面积",
+      "Lebesgue 覆盖问题",
+      "最优形状"
+    ],
+    "en": [
+      "universal cover",
+      "diameter one",
+      "area of convex set",
+      "Lebesgue covering problem",
+      "optimal shape"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +124,12 @@
     "note": "一区二区·难度待定；难度高：1914 年至今；上界 ~0.84409（2024 Gibbs 改进）与下界 0.832 距离仍大；无解决迹象。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定这个最小面积的精确值：给出面积恰为 δ 的通用凸覆盖，并证明任何能容纳所有直径 1 集合的凸集面积都不小于 δ。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

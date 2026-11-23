@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000001",
-  "revision": 1,
-  "card_rev": "c1a4e7aa58dfa574",
+  "revision": 2,
+  "card_rev": "787040d625cc5943",
   "title": "（来源 A-001）3^{n+1} mod 2^n > 2^n - 1.5^n 的解是否只有 n=1,2,5,10？",
-  "title_en": null,
+  "title_en": "Are 1, 2, 5, 10 the only solutions of 3^(n+1) mod 2^n > 2^n - 1.5^n?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J71",
+    "secondary": [
+      "11A07",
+      "11P05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（模幂/丢番图逼近）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "模幂",
+      "Waring 常数",
+      "Mahler 1.5^n 问题",
+      "分数部分",
+      "丢番图逼近"
+    ],
+    "en": [
+      "modular exponentiation",
+      "Waring's constant",
+      "Mahler's 1.5^n problem",
+      "fractional parts",
+      "Diophantine approximation"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -105,7 +127,12 @@
     "note": "一区二区·易证明；与 Waring 问题 g(k) 公式相关的经典开放不等式 2^n{1.5^n}<... 的直接后继变体；单一同余序列、参数空间一维、PARI/GP 数值证据充分（n<10^5），可用 2-adic 分析/Baker 型界尝试；属于可写小论文的有限验证目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出对所有正整数 n 成立的证明，说明满足不等式的 n 恰为 1、2、5、10；或给出一个新的 n 使不等式成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

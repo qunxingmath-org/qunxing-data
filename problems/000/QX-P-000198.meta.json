@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000198",
-  "revision": 1,
-  "card_rev": "ee73b609ae7ac674",
+  "revision": 2,
+  "card_rev": "e90f943e8452bd28",
   "title": "Wide partition 猜想（原批次 A-038）",
-  "title_en": null,
+  "title_en": "The wide partition conjecture: does wide imply Latin?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -108,11 +111,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A17",
+    "secondary": [
+      "05E10",
+      "05B35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合（主）；代数组合/matroid（辅）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整分拆",
+      "Young 表",
+      "支配序",
+      "wide 分拆",
+      "Latin 性质"
+    ],
+    "en": [
+      "integer partitions",
+      "Young tableaux",
+      "dominance order",
+      "wide partitions",
+      "Latin property"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -120,7 +143,12 @@
     "note": "一区二区·难度待定；Latin⇒wide 已证（2003），反向 20+ 年未决；与 Rota 基猜想（著名难题）相连；2024/2026 有持续进展（计算证据 + 类扩展），难度未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 wide 分拆都是 Latin 分拆（从而两种性质等价），或给出一个 wide 但非 Latin 的分拆作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

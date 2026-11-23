@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001486",
-  "revision": 1,
-  "card_rev": "64a2c6667705cc09",
+  "revision": 2,
+  "card_rev": "6fdebfdf1a9286cb",
   "title": "batch_I I-148：Baer*-环 A 中，x 为单边移位（存在游荡投影 p 使 Σ[xⁿp]=1）、q 为有限投影：是否必",
-  "title_en": null,
+  "title_en": "Is inf_n [x^{*n} q] = 0 for unilateral shifts and finite projections in Baer*-rings?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46L51",
+    "secondary": [
+      "46K50",
+      "16W10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算子代数 / Baer*-环",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Baer*-环",
+      "单边移位",
+      "游荡投影",
+      "有限投影",
+      "Wold 分解"
+    ],
+    "en": [
+      "Baer*-rings",
+      "unilateral shifts",
+      "wandering projections",
+      "finite projections",
+      "Wold decomposition"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；ABB 2018；0 回答；Wold 分解已由所引论文推广到 Baer*-环，本问为其推论命题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在任意 Baer*-环中，对单边移位 x 与有限投影 q 都有 inf_n [x*ⁿq]=0；或构造一个使该下确界不为 0 的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

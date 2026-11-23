@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001162",
-  "revision": 1,
-  "card_rev": "769f43f9ece57e04",
+  "revision": 2,
+  "card_rev": "92f43ac3e3b3daad",
   "title": "Kourovka 20.47：极小+强近端作用必拓扑自由？",
-  "title_en": null,
+  "title_en": "Is a faithful, minimal, strongly proximal action of a free group always topologically free?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37B05",
+    "secondary": [
+      "20E05",
+      "54H20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由群作用",
+      "极小作用",
+      "强近端",
+      "拓扑自由",
+      "紧空间"
+    ],
+    "en": [
+      "free group actions",
+      "minimal actions",
+      "strong proximality",
+      "topological freeness",
+      "compact spaces"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意秩 n 与任意满足忠实、极小、强近端的紧 G-空间证明作用拓扑自由，或构造一个不拓扑自由的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

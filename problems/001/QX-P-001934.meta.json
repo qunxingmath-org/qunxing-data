@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001934",
-  "revision": 1,
-  "card_rev": "5cfc5f6c376a4a8f",
+  "revision": 2,
+  "card_rev": "6a547e9b7b6a3d2e",
   "title": "每个 5 格动物都能铺满平面？",
-  "title_en": null,
+  "title_en": "Does every 5-cell animal tile the plane?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B45",
+    "secondary": [
+      "05B50",
+      "52C20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合/铺砌",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平面铺砌",
+      "动物（animal）",
+      "五格图形",
+      "平移铺砌"
+    ],
+    "en": [
+      "plane tilings",
+      "polyominoes",
+      "five-cell animals",
+      "translational tilings"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个五格动物都能用自身的平移副本铺满平面，或给出一个不能如此铺满的五格动物及证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

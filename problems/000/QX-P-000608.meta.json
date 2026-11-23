@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000608",
-  "revision": 1,
-  "card_rev": "ea0b26c8cc5de08d",
+  "revision": 2,
+  "card_rev": "1817f42af1688a96",
   "title": "（来源 C-015）Frankl 并闭集猜想的数论推广（lcm-闭集 + p-adic 赋值两个猜想）有反例吗？",
-  "title_en": null,
+  "title_en": "Do the number-theoretic generalisations of the union-closed sets conjecture have counterexamples?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "disprove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +96,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D05",
+    "secondary": [
+      "11A05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合（Frankl 猜想推广）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "并闭集猜想",
+      "lcm-闭集",
+      "p-进赋值",
+      "反例搜索"
+    ],
+    "en": [
+      "union-closed sets conjecture",
+      "lcm-closed sets",
+      "p-adic valuations",
+      "counterexample search"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +125,12 @@
     "note": "三四区·小问题；孤立小问题：0 回答，但评论已指出疑似反例——jackson（2023-09-12）：{8,27,8·27} 疑似猜想1反例（非猜想2）；{2,3,6,6⁴} 疑似两个猜想共同反例（但补充说 maybe I should just keep the 1/2 coefficient——表述不精确，需精确验证）。可做三四区级：精确验证/修正这两个反例、给出猜想1完整反例或证明小情形。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个 lcm-闭集合并算清 ν_p 说明两个猜想之一不成立，或证明这两个猜想都成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

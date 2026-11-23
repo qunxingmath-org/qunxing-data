@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001778",
-  "revision": 1,
-  "card_rev": "909806b371ecff28",
+  "revision": 2,
+  "card_rev": "f1a933c5627b40b0",
   "title": "大 Witt 向量环素理想谱",
-  "title_en": null,
+  "title_en": "The prime ideal spectrum of the big Witt vector ring",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "13F35",
+    "secondary": [
+      "13B25",
+      "11S05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Witt 向量",
+      "素理想谱",
+      "环论",
+      "λ-环"
+    ],
+    "en": [
+      "Witt vectors",
+      "prime spectrum",
+      "ring theory",
+      "lambda rings"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 Spec Λ(A) 的完整描述（素理想的分类与各纤维的结构），或证明它不能由 A 的谱简单决定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

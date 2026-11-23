@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000273",
-  "revision": 1,
-  "card_rev": "831c56fb12e64542",
+  "revision": 2,
+  "card_rev": "85eb1d98567f23e4",
   "title": "Borodin–Kostochka 猜想：Δ≥9 时 χ≤max(Δ−1,ω)",
-  "title_en": null,
+  "title_en": "The Borodin-Kostochka conjecture: chi at most max(Delta - 1, omega) for Delta at least 9",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35",
+      "05C69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图染色",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "色数",
+      "最大度",
+      "团数",
+      "Borodin–Kostochka 猜想"
+    ],
+    "en": [
+      "chromatic number",
+      "maximum degree",
+      "clique number",
+      "Borodin-Kostochka conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +139,12 @@
     "note": "一区二区·难度待定；1977 提出；Reed 已证 Δ≥?极大情形；2026-11 arXiv:2611.05423 把数值门槛推到 Δ≥750——'从 750 降到 9'的有限余量是典型可推进目标（放电论证链活跃）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个最大度 Δ≥9 的图都满足 χ(G)≤max(Δ−1, ω(G))，或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001781",
-  "revision": 1,
-  "card_rev": "cbba4252e1155744",
+  "revision": 2,
+  "card_rev": "93e4e047bac04306",
   "title": "无条件收敛级数 Cauchy 乘积封闭",
-  "title_en": null,
+  "title_en": "Is the Cauchy product of unconditionally convergent series in a Banach algebra unconditionally convergent?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46H05",
+    "secondary": [
+      "40A05",
+      "46B99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "泛函分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无条件收敛",
+      "Cauchy 乘积",
+      "Banach 代数",
+      "级数"
+    ],
+    "en": [
+      "unconditional convergence",
+      "Cauchy products",
+      "Banach algebras",
+      "series"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 Banach 代数中证明两个无条件收敛级数的 Cauchy 乘积仍无条件收敛，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001050",
-  "revision": 1,
-  "card_rev": "994b93a6cd9eda3a",
+  "revision": 2,
+  "card_rev": "f3e15d3adc70a35e",
   "title": "Kourovka 18.66：G 承受 Frobenius 自同构群 FH（核 F 补 H）使 GF 也 Frobenius（核 G 补 F）",
-  "title_en": null,
+  "title_en": "Derived length under a Frobenius group of automorphisms FH with G^F also Frobenius",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20D15",
+      "20D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Frobenius 自同构群",
+      "导长",
+      "中心化子",
+      "有界性",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "Frobenius groups of automorphisms",
+      "derived length",
+      "centralizers",
+      "boundedness",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在函数 f 使 dl(G) ≤ f(|H|, dl(C_G(H))) 对所有满足条件的 G 成立，或构造使导长无界的反例族。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

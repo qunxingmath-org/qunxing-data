@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000932",
-  "revision": 1,
-  "card_rev": "42f9d4b31fea3cf4",
+  "revision": 2,
+  "card_rev": "aa8c4278832a4cd7",
   "title": "Kourovka 19.68：bG(K) 为 K 中同构于 G 的正规子群共轭类数",
-  "title_en": null,
+  "title_en": "Kourovka 19.68: bounding the number of conjugacy classes of regular subgroups isomorphic to G",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "decide"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,7 +97,9 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 术语误译：中文写“正规子群”，英文原文是 regular subgroups（正则子群），二者不同。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -105,11 +110,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B35",
+    "secondary": [
+      "20E45",
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正则子群",
+      "共轭类数",
+      "置换群",
+      "交换群",
+      "秩"
+    ],
+    "en": [
+      "regular subgroups",
+      "number of conjugacy classes",
+      "permutation groups",
+      "abelian groups",
+      "rank"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +142,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出只依赖秩 r 的函数 f，证明 bG(K) ≤ n^{f(r)} 恒成立；或说明这样的 f 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -131,5 +161,6 @@
     "status_raw": "OPEN",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

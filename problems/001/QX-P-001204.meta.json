@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001204",
-  "revision": 1,
-  "card_rev": "89d88f296563f2fc",
+  "revision": 2,
+  "card_rev": "01ec0b1b0062aeba",
   "title": "Kung–Traub猜想（无记忆迭代最优阶）",
-  "title_en": null,
+  "title_en": "The Kung-Traub conjecture: is the optimal order of an n-point memoryless iteration 2^(n-1)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove",
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "65H05",
+    "secondary": [
+      "41A25",
+      "65Y20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数值分析/迭代法",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Kung–Traub 猜想",
+      "迭代法收敛阶",
+      "无记忆多点法",
+      "求根算法",
+      "最优阶"
+    ],
+    "en": [
+      "Kung-Traub conjecture",
+      "order of convergence",
+      "memoryless multipoint methods",
+      "root finding",
+      "optimal order"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体常数猜想（n次求值最优阶2^(n-1)）；每个具体n的最优方法构造与阶上界证明=三四区论文成熟模式。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n 证明任何 n 点无记忆迭代法的收敛阶都不超过 2^{n−1} 并给出达到该阶的方法，或给出一个 n 与超过该界的方法。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

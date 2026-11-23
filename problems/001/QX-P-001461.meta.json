@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001461",
-  "revision": 1,
-  "card_rev": "4b618e0f1bffbabc",
+  "revision": 2,
+  "card_rev": "4e621b365df824db",
   "title": "batch_I I-084：边带权图上求完美匹配 M 使 (max_{e∈M}w_e − min_{e∈M}w_e) 最小（bala",
-  "title_en": null,
+  "title_en": "Balanced weight perfect matching: minimizing the weight spread over a perfect matching",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "value"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q25",
+    "secondary": [
+      "05C70",
+      "90C27"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合优化 / 图匹配",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "完美匹配",
+      "权重跨度",
+      "组合优化",
+      "计算复杂性",
+      "匹配理论"
+    ],
+    "en": [
+      "perfect matching",
+      "weight spread",
+      "combinatorial optimization",
+      "computational complexity",
+      "matching theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；illigrad 2019 提出；0 回答；求归约到已知问题或算法。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出多项式时间算法（或把它归约到已知可解问题），或证明这个优化问题是 NP-难的。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

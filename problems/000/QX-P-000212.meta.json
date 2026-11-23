@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000212",
-  "revision": 1,
-  "card_rev": "6d04626c893c7678",
+  "revision": 2,
+  "card_rev": "35cfe746334bf746",
   "title": "Erdos P104: unit circles through >=3 points number o(n^2)",
-  "title_en": null,
+  "title_en": "Erdos P104: how many unit circles can pass through at least three of n points?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "value"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "05C35",
+      "51K05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何 / 组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单位圆",
+      "三重圆",
+      "组合几何",
+      "相异距离",
+      "上界"
+    ],
+    "en": [
+      "unit circles",
+      "3-rich circles",
+      "combinatorial geometry",
+      "distinct distances",
+      "upper bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·难度待定；B层理由: 上下界缺口由n^{3/2}到n²; Elekes构造暗示真值可能Θ(n^{3/2})但o(n²)本身未证; 加法组合/射影变换方法活跃, 难度未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明至少经过 3 个给定点的单位圆个数为 O(n^{3/2})，或把下界提高到超过 n^{3/2} 一个增长因子（从而推翻 Erdős 的猜想）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

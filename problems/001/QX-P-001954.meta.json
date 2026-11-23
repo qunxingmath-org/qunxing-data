@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001954",
-  "revision": 1,
-  "card_rev": "871c07aedc6cea8f",
+  "revision": 2,
+  "card_rev": "7bb103ae62a8c1eb",
   "title": "保乘法后继⇒保加法",
-  "title_en": null,
+  "title_en": "Does preserving multiplication and successor force preserving addition?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "08A35",
+    "secondary": [
+      "08A05",
+      "20N02"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "泛代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "泛代数",
+      "运算保持映射",
+      "后继",
+      "定义域问题"
+    ],
+    "en": [
+      "universal algebra",
+      "operation-preserving maps",
+      "successor",
+      "definability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何保持乘法与后继的映射都自动保持加法，或给出一个保持乘法与后继但不保持加法的映射。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

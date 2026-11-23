@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000560",
-  "revision": 1,
-  "card_rev": "4220a0e2adfa270e",
+  "revision": 2,
+  "card_rev": "1e0c191a6dc7a0eb",
   "title": "18.21 d-生成群皆有限的变元簇是否局部有限",
-  "title_en": null,
+  "title_en": "If all d-generated groups in a variety are finite, must the variety be locally finite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E10",
+    "secondary": [
+      "20F50",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群变元簇",
+      "局部有限",
+      "d-生成群",
+      "Neumann 问题"
+    ],
+    "en": [
+      "varieties of groups",
+      "local finiteness",
+      "d-generated groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +136,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 d≥2，条件「所有 d-生成成员有限」都能推出变元簇局部有限；或构造一个反例变元簇。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000541",
-  "revision": 1,
-  "card_rev": "b2c03d8e4fd9d98c",
+  "revision": 2,
+  "card_rev": "5794e0c8dd829800",
   "title": "21.49 fg 双曲性群的自同构群也双曲性？",
-  "title_en": null,
+  "title_en": "Is the automorphism group of a finitely generated acylindrically hyperbolic group acylindrically hyperbolic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F67",
+    "secondary": [
+      "20E36",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无柱双曲群",
+      "自同构群",
+      "双曲空间上的作用",
+      "几何群论"
+    ],
+    "en": [
+      "acylindrically hyperbolic groups",
+      "automorphism group",
+      "actions on hyperbolic spaces",
+      "geometric group theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Genevois）G 有限生成双曲性群，Aut(G) 是否也双曲性（非虚循环+无界轨道双曲作用）？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有限生成的无柱双曲群，其自同构群都是无柱双曲的；或给出一个具体的反例并证明它不具备该性质。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

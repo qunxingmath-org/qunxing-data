@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001908",
-  "revision": 1,
-  "card_rev": "7a567bab34ace5b3",
+  "revision": 2,
+  "card_rev": "874afb243df9f169",
   "title": "1,2,8,24 维外完美 kissing 构型",
-  "title_en": null,
+  "title_en": "Locked optimal kissing configurations in dimensions other than 1, 2, 8 and 24",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify",
+    "existence"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "52C25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "接吻数",
+      "锁定构型",
+      "刚性",
+      "球堆积"
+    ],
+    "en": [
+      "kissing number",
+      "locked configurations",
+      "rigidity",
+      "sphere packing"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定具有锁定（刚性）最优接触构型的全部维数，或给出新维数中的显式构型并证明其刚性。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000312",
-  "revision": 1,
-  "card_rev": "d2b75ac6e70e145d",
+  "revision": 2,
+  "card_rev": "3514452586bca122",
   "title": "Jaeger–Linial–Payan–Tarsi 加法基猜想（原批次 A-052）",
-  "title_en": null,
+  "title_en": "The Jaeger-Linial-Payan-Tarsi additive basis conjecture",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "05B35",
+      "11T99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "线性代数组合（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "加法基",
+      "有限域",
+      "向量空间覆盖",
+      "基的和集"
+    ],
+    "en": [
+      "additive basis",
+      "finite fields",
+      "covering vector spaces",
+      "sums of bases"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +130,12 @@
     "note": "一区二区·难度待定；F_p 上基族的逐坐标和覆盖问题；与 Alon–Tarsi/Rota 族相邻但独立；2025-10 有直接相关文（Permanent Rank Part Three: Note on the Additive Basis Conjecture）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个素数 p 给出常数 c(p)，并证明任意 c(p) 个基都能通过逐坐标相加覆盖整个 F_p^n，或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

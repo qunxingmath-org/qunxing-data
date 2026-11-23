@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000028",
-  "revision": 1,
-  "card_rev": "e5bae625dec7553b",
+  "revision": 2,
+  "card_rev": "9782d36247895951",
   "title": "Kourovka 20.51：奇数阶非交换群恰有 t 个共轭类（每奇 t>3）",
-  "title_en": null,
+  "title_en": "Kourovka 20.51: odd-order non-abelian groups with exactly t classes for every odd t > 3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "20E45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有限群论（构造/算例型）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共轭类数",
+      "奇阶群",
+      "非交换群",
+      "构造",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "conjugacy class number",
+      "odd order groups",
+      "non-abelian groups",
+      "construction",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +141,12 @@
     "note": "一区二区·易证明；构造+算例型：对给定 t 找一个奇数阶非交换群，小参数空间可用 GAP/Sage 系统搜索；已有 t=5 等零星实例，方法路线明确（构造 dihedral 型/半直积并数共轭类）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个大于 3 的奇数 t 构造出奇阶非交换群 G 使 k(G)=t；或指出某个 t 使这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

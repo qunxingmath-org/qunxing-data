@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001439",
-  "revision": 1,
-  "card_rev": "87b78a3578b93ddf",
+  "revision": 2,
+  "card_rev": "c1575985f7272c8b",
   "title": "batch_I I-049：w⁵+x⁵+y⁵+z⁵=1（整数）是否存在非平凡解（|wxyz|>1）？",
-  "title_en": null,
+  "title_en": "Are there nontrivial integer solutions of w^5 + x^5 + y^5 + z^5 = 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D41",
+    "secondary": [
+      "11D72",
+      "11Y50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 丢番图方程",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "五次丢番图方程",
+      "整数解",
+      "计算搜索",
+      "非平凡解"
+    ],
+    "en": [
+      "quintic Diophantine equations",
+      "integer solutions",
+      "computational search",
+      "nontrivial solutions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +130,12 @@
     "note": "三四区·小问题；Guruprasad 2026 提出；0 回答；Braun 论文穷举至 1.45×10⁶。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "找出一个满足 |wxyz|>1 的整数解，或证明这样的解不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

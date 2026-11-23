@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-24",
+  "what": "DeepSeek 补判断类字段，经 merge_results.py 逐条检查后合并；再按复核清单加标记",
+  "merged": 2262,
+  "rejected": 0,
+  "revision_after": 2,
+  "note": "补了验收条件，按规格 card_rev 重算、revision 升到 2；novelty.card_rev 仍是旧版本，开题前按规定重新查新。",
+  "problem_type_primary": {
+    "decide": 833,
+    "prove": 551,
+    "existence": 292,
+    "value": 171,
+    "classify": 171,
+    "bound": 115,
+    "construct": 64,
+    "asymptotic": 43,
+    "compute": 13,
+    "disprove": 5,
+    "special_case": 4
+  },
+  "answer_type": {
+    "yes_no": 959,
+    "proof": 494,
+    "object": 236,
+    "value": 206,
+    "bound": 190,
+    "classification": 177
+  },
+  "checkability": {
+    "neither": 969,
+    "falsifiable": 756,
+    "unknown": 396,
+    "verifiable": 123,
+    "decidable": 18
+  },
+  "msc_confidence": {
+    "medium": 1655,
+    "low": 580,
+    "high": 27
+  },
+  "statement_drafts": 52,
+  "flags": {
+    "statement_disputed": 34,
+    "statement_fidelity_unknown": 279,
+    "unlisted": 8,
+    "possible_duplicates": 45
+  },
+  "flags_file": "import/2026-11-24-review-flags.json"
+}

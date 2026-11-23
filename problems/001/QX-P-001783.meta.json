@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001783",
-  "revision": 1,
-  "card_rev": "94dc75280b1702c8",
+  "revision": 2,
+  "card_rev": "f87eade1d02bbed7",
   "title": "₂F₁(a,b;1/2;γ)=δ 代数对无穷",
-  "title_en": null,
+  "title_en": "Are there infinitely many algebraic pairs (gamma, delta) with 2F1(a,b;1/2;gamma) = delta?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "33C05",
+    "secondary": [
+      "11J81",
+      "11J91"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "超越数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超几何函数",
+      "代数值",
+      "超越数论",
+      "特殊函数"
+    ],
+    "en": [
+      "hypergeometric functions",
+      "algebraic values",
+      "transcendence theory",
+      "special functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对给定参数存在无穷多组代数数 (γ,δ) 满足 ₂F₁(a,b;1/2;γ)=δ，或证明这样的代数点只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

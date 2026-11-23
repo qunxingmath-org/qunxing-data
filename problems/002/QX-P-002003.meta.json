@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002003",
-  "revision": 1,
-  "card_rev": "af8aa458bdd99714",
+  "revision": 2,
+  "card_rev": "91b961b5af2d3f06",
   "title": "（（来源错配区块））",
-  "title_en": null,
+  "title_en": "Counting meanders: an open family of problems",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -73,18 +76,40 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 原包占位条目（来源错配区块）：标题是占位符，题面只有一句，无法核对。待用户决定保留还是删除。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": null
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "05A16",
+      "57M99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "来源错配（MO ID 内容不符）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "meander 计数",
+      "组合计数",
+      "渐近",
+      "生成函数",
+      "枚举"
+    ],
+    "en": [
+      "meander counting",
+      "combinatorial enumeration",
+      "asymptotics",
+      "generating functions",
+      "enumeration"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -92,9 +117,14 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 meander 数的精确公式或生成函数（或确定的渐近主项与常数）并对所有 n 证明，或给出新的可验证计算结果并说明其无法由已有公式得出。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
-  "visibility": "public",
+  "visibility": "unlisted",
   "license": "CC-BY-SA-4.0",
   "contributors": [],
   "redirect_from": [],
@@ -106,5 +136,6 @@
     "status_raw": "UNKNOWN",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

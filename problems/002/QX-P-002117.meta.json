@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002117",
-  "revision": 1,
-  "card_rev": "9e241d035ff28daf",
+  "revision": 2,
+  "card_rev": "2703af08ba8cdf9a",
   "title": "AC 对 ZF 射影层级的保守性边界（Σ¹₃ 及以上悬置）",
-  "title_en": null,
+  "title_en": "Where is the conservativity boundary of AC over ZF in the projective hierarchy?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E15",
+    "secondary": [
+      "03E25",
+      "03E35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数理逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Shoenfield 绝对性",
+      "射影层级",
+      "选择公理",
+      "保守扩张",
+      "Σ¹₃ 语句"
+    ],
+    "en": [
+      "Shoenfield absoluteness",
+      "projective hierarchy",
+      "axiom of choice",
+      "conservativity",
+      "Sigma^1_3 sentences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定射影层级中使 ZF 与 ZFC 证明同一批语句的确切层级，并证明该边界，特别处理 Σ¹₃ 及以上的情形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

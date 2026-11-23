@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000388",
-  "revision": 1,
-  "card_rev": "f19264e9bb3f0141",
+  "revision": 2,
+  "card_rev": "08f5d18da39a1180",
   "title": "batch_I I-029：（Pełczyński 两问）X 为可分无穷维非希尔伯特 Banach 空间：(i) 是否存在带 S",
-  "title_en": null,
+  "title_en": "Two Pełczyński problems: non-complemented basic subspaces and non-isomorphic basic subspaces of a non-Hilbert space",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46B03",
+    "secondary": [
+      "46B15",
+      "46B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析 / Banach空间",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Schauder 基",
+      "可补子空间",
+      "Pełczyński 问题",
+      "Banach 空间",
+      "同构分类"
+    ],
+    "en": [
+      "Schauder basis",
+      "complemented subspaces",
+      "Pełczyński problems",
+      "Banach spaces",
+      "isomorphism classification"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Idonknow 2018 引 GGL 专著《Open Problems in the Geometry and Analysis of Banach Spaces》；Bunyamin Sari 与 Bill Johnson 专家评论认为开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (i) 与 (ii) 分别给出证明（说明每个这样的 X 都含有所需的子空间），或分别构造一个反例空间。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

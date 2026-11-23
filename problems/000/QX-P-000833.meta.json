@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000833",
-  "revision": 1,
-  "card_rev": "a3fef8957e16e146",
+  "revision": 2,
+  "card_rev": "52726b272980d8b9",
   "title": "Green 问题 32：√p 大小集合的伸缩版是否含 100√p 长间隙",
-  "title_en": null,
+  "title_en": "Green problem 32: does some dilate of a sqrt(p)-set have a long gap?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11B13",
+      "11P70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合/有限域（Bohr 集）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "循环群",
+      "伸缩",
+      "空隙",
+      "Bohr 集",
+      "加性组合"
+    ],
+    "en": [
+      "cyclic group",
+      "dilation",
+      "gap",
+      "Bohr set",
+      "additive combinatorics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；Shakan 多项式方法已证 2√p 情形且\"此为该法极限\"（Green 注）；100√p 与 Dirichlet/Bohr 集下界衔接；参数化变体（100√p/ω(p)）谱系清晰可逐档攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个这样的 A 都存在非零 λ 使 λA 有长度至少 100√p 的空隙，或构造一个 A 使任何伸缩的空隙都远小于此。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

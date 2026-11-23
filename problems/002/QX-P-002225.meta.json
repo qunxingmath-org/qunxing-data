@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002225",
-  "revision": 1,
-  "card_rev": "9f1b27a33f2e35ff",
+  "revision": 2,
+  "card_rev": "f677452d60ab4afc",
   "title": "4-正则图必含 3-正则子图？",
-  "title_en": null,
+  "title_en": "Must every 4-regular simple graph contain a 3-regular subgraph?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C07",
+    "secondary": [
+      "05C35",
+      "05C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正则图",
+      "子图",
+      "4-正则",
+      "3-正则",
+      "度序列"
+    ],
+    "en": [
+      "regular graphs",
+      "subgraphs",
+      "4-regular",
+      "3-regular",
+      "degree sequences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 4-正则简单图都含 3-正则子图,或给出一张不含 3-正则子图的 4-正则简单图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

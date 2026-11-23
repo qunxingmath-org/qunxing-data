@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000477",
-  "revision": 1,
-  "card_rev": "ad7b266711e50b8a",
+  "revision": 2,
+  "card_rev": "82610491891a74b6",
   "title": "模立方根提取是否等价于因数分解（TAOCP v2 4.5.4 ex.33, M50）",
-  "title_en": null,
+  "title_en": "Is extracting cube roots modulo N = pq as hard as factoring when p = q = 2 mod 3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "94A60",
+    "secondary": [
+      "11Y05",
+      "68Q17"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "密码学/数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "模立方根",
+      "因数分解归约",
+      "RSA 型模数",
+      "平均情形复杂度",
+      "密码假设"
+    ],
+    "en": [
+      "modular cube roots",
+      "reductions to factoring",
+      "RSA moduli",
+      "average-case complexity",
+      "cryptographic assumptions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；密码学归约猜想（N=pq, p≡q≡2 mod 3）：立方根算法 ⇒ 分解算法；RSA 安全性基础问题，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出从立方根提取算法到因数分解的多项式时间（可随机化）归约，或证明这样的归约不可能存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

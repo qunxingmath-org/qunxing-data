@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000060",
-  "revision": 1,
-  "card_rev": "528fe42ead61c31a",
+  "revision": 2,
+  "card_rev": "7fab1b7639460e6a",
   "title": "21.89 n>39 时 p(n) 整除 n! 永不成立？",
-  "title_en": null,
+  "title_en": "Kourovka 21.89: is p(n) never a divisor of n! for n > 39?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11P82",
+    "secondary": [
+      "20E45",
+      "11A25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "分拆数",
+      "阶乘整除",
+      "对称群",
+      "共轭类数",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "partition numbers",
+      "divisibility of factorials",
+      "symmetric groups",
+      "conjugacy classes",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·易证明；Kourovka 21版在列开放题；（MacHale）n>39 时，Sn 的共轭类数 k(Sn)=p(n)（分拆数）是否永不整除 |Sn|=n!?（数表验证…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 n > 39 都有 p(n) ∤ n!；或给出一个 n > 39 使 p(n) 整除 n!。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

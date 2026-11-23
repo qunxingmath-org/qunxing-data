@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001367",
-  "revision": 1,
-  "card_rev": "8d5bb7e82e7231a5",
+  "revision": 2,
+  "card_rev": "1c804a4bc1e53088",
   "title": "五个以上奇无平方因子数的倒数和为 1（MM 1015）",
-  "title_en": null,
+  "title_en": "2n+1 distinct odd squarefree numbers whose reciprocals sum to 1, for every n >= 5",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D68",
+    "secondary": [
+      "11N25",
+      "11B75"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（Egyptian fractions）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "埃及分数",
+      "单位分数和",
+      "无平方因子数",
+      "奇数",
+      "构造"
+    ],
+    "en": [
+      "Egyptian fractions",
+      "unit fraction sums",
+      "squarefree numbers",
+      "odd integers",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +134,12 @@
     "note": "三四区·小问题；构造性数论，计算机辅助搜索即可入门——很适合三区论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n≥5 给出 2n+1 个互不相同的正奇无平方因子数并验证倒数和为 1，或证明这样的选取不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

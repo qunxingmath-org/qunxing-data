@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000452",
-  "revision": 1,
-  "card_rev": "024dd2b170aa6c2e",
+  "revision": 2,
+  "card_rev": "8406f1629b8763da",
   "title": "Rule 30 奖金问题 1 与 2（中心列非最终周期 / 等频率）",
-  "title_en": null,
+  "title_en": "Rule 30 prize problems: aperiodicity and equal frequencies in the center column",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37B15",
+    "secondary": [
+      "68Q30",
+      "37B10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "可计算性/动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Rule 30",
+      "元胞自动机",
+      "中心列",
+      "最终周期",
+      "等频率"
+    ],
+    "en": [
+      "Rule 30",
+      "cellular automata",
+      "center column",
+      "eventual periodicity",
+      "equal frequencies"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；Wolfram 设奖金的经典元胞自动机问题，统计/计算双难，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 Rule 30 的中心列不是最终周期的，并证明各类符号在中心列中具有相等的极限频率；或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

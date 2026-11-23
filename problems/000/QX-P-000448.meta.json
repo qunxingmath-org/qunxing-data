@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000448",
-  "revision": 1,
-  "card_rev": "998976fd672026ed",
+  "revision": 2,
+  "card_rev": "e48cf81b2e4d57eb",
   "title": "Etingof–Ostrik 有限维 Hopf 代数上同调有限生成猜想",
-  "title_en": null,
+  "title_en": "Is H*(A,k) finitely generated for a finite-dimensional Hopf algebra A?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16T05",
+    "secondary": [
+      "16E40",
+      "16E65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Hopf 代数/表示论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hopf 代数",
+      "上同调",
+      "有限生成",
+      "Ext 代数",
+      "Noether 环"
+    ],
+    "en": [
+      "Hopf algebras",
+      "cohomology",
+      "finite generation",
+      "Ext algebras",
+      "Noetherian rings"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；有限维 Hopf 代数上同调环有限生成——与有限群/李型上同调类比动机明确，Friedlander–Suslin 型方法不完全适用，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任何有限维 Hopf 代数 A，H*(A,k) 都是有限生成的分次环，或给出一个使 H*(A,k) 非有限生成的 A。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

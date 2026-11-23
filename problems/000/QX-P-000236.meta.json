@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000236",
-  "revision": 1,
-  "card_rev": "2fa269bf41e73fa8",
+  "revision": 2,
+  "card_rev": "049fa0d8656eb2d9",
   "title": "超立方体的饱和数（原批次 A-041）",
-  "title_en": null,
+  "title_en": "Saturation numbers of the hypercube for even cycles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C38",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "极值图论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "饱和数",
+      "超立方体",
+      "偶圈",
+      "生成子图",
+      "极限存在性"
+    ],
+    "en": [
+      "saturation numbers",
+      "hypercube",
+      "even cycles",
+      "spanning subgraphs",
+      "existence of limits"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；C_{2k}-饱和生成子图最小边数（sat(Q_n,C_{2k})）的量级与收敛性；Morrison–Noel–Scott 框架后精确常数开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 sat(Q_n,C_{2k}) 的精确值或渐近阶，并判定 n→∞ 时它是否收敛（子立方体版本同样给出结论）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

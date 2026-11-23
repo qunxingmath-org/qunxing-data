@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000634",
-  "revision": 1,
-  "card_rev": "9126d59cacd59755",
+  "revision": 2,
+  "card_rev": "b35eb99392c1b08d",
   "title": "17.118 指数 p 指标 p 子群 ⇒ 特征指数 p 子群？",
-  "title_en": null,
+  "title_en": "From a subgroup of exponent p and index p to a characteristic one",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D25",
+      "20D35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限 p-群",
+      "特征子群",
+      "指数",
+      "Frattini 子群"
+    ],
+    "en": [
+      "finite p-groups",
+      "characteristic subgroups",
+      "exponent",
+      "Frattini subgroup"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在只依赖 p 的界，使这样的 G 必有指数 p、指数不超过该界的特征子群；或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001829",
-  "revision": 1,
-  "card_rev": "5b7bab5c8b80cbfc",
+  "revision": 2,
+  "card_rev": "45d1b214d89ca2dd",
   "title": "ℵ_ω 处朴素力迫违反 SCH",
-  "title_en": null,
+  "title_en": "Violating SCH at aleph_omega by naive forcing",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E35",
+    "secondary": [
+      "03E55",
+      "03E10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "奇异基数假设",
+      "力迫法",
+      "ℵ_ω",
+      "一致性"
+    ],
+    "en": [
+      "singular cardinals hypothesis",
+      "forcing",
+      "aleph_omega",
+      "consistency"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个保持基数的朴素力迫并证明它使 ℵ_ω 处 SCH 失效，或证明不用强假设就不可能做到。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

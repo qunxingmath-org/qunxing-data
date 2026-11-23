@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000412",
-  "revision": 1,
-  "card_rev": "27ec59ac3013b1eb",
+  "revision": 2,
+  "card_rev": "b7f381893e0612ff",
   "title": "[N] 中避免 x+3y=2z+2w 的最大子集（Green 问题 16 + Zhao 变体）",
-  "title_en": null,
+  "title_en": "How large is a subset of [N] avoiding distinct solutions of x + 3y = 2z + 2w?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "05D10",
+      "11B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合/Roth型",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "加性组合",
+      "Roth 型定理",
+      "无解子集",
+      "表示函数",
+      "渐近阶"
+    ],
+    "en": [
+      "additive combinatorics",
+      "Roth-type theorems",
+      "equation-free sets",
+      "asymptotic order"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；Roth 型密度问题，Kelley–Meka/Bloom–Sisask 2023 后方法链活跃，但该四元方程的精确指数未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定该最大子集的渐近阶（给出匹配的上下界），或显著改进现有的上界与下界；并同样处理 Zhao 变体。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001968",
-  "revision": 1,
-  "card_rev": "289fdc9d4514b6d0",
+  "revision": 2,
+  "card_rev": "34e128d242f606eb",
   "title": "图的子类偏序自同构自由？",
-  "title_en": null,
+  "title_en": "Is the partial order of graph classes automorphism-free (rigid)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "06A06",
+    "secondary": [
+      "05C99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "图类偏序",
+      "自同构",
+      "刚性",
+      "包含关系",
+      "偏序集"
+    ],
+    "en": [
+      "poset of graph classes",
+      "automorphism",
+      "rigidity",
+      "inclusion order",
+      "partially ordered sets"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该偏序集的自同构只有恒等映射，或构造一个非平凡的保序双射并验证它保持所讨论的偏序。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

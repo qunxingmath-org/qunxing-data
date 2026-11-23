@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001223",
-  "revision": 1,
-  "card_rev": "725bc222935f4b0e",
+  "revision": 2,
+  "card_rev": "33a1cf22e87342df",
   "title": "不透明集问题（单位正方形最短遮挡）",
-  "title_en": null,
+  "title_en": "Shortest opaque set (barrier) for the unit square",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52A40",
+    "secondary": [
+      "52C10",
+      "49Q10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散几何/几何优化",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不透明集",
+      "遮挡",
+      "单位正方形",
+      "最短长度",
+      "几何优化"
+    ],
+    "en": [
+      "opaque set",
+      "barrier",
+      "unit square",
+      "shortest curve",
+      "geometric optimization"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体常数问题——单位正方形最短opaque set界∈[2, 2.638?]；构形改进/下界推进为标准模式（Jones、Dumitrescu等构形文献链）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定单位正方形最短不透明集的确切长度（给出达到该长度的构造与匹配的下界证明）；或把现有上界 2.638 与下界 2 之间的差距显著缩小。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

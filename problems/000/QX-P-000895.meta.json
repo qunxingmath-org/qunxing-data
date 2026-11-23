@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000895",
-  "revision": 1,
-  "card_rev": "7b281819b1423834",
+  "revision": 2,
+  "card_rev": "823f185c1748bbe0",
   "title": "OWR 2026/1：K_n 边染色无\"两个不相交同色同构三角形\"所需最少色数 g(n) 的阶",
-  "title_en": null,
+  "title_en": "Growth order of g(n): colouring K_n with no two disjoint colour-isomorphic triangles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -90,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C55",
+    "secondary": [
+      "05C15",
+      "05D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Ramsey 理论（边染色）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "边染色",
+      "同色同构三角形",
+      "Ramsey 型问题",
+      "色数增长阶"
+    ],
+    "en": [
+      "edge colourings",
+      "colour-isomorphic triangles",
+      "Ramsey-type problems",
+      "chromatic growth order"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +123,12 @@
     "note": "三四区·小问题；已知界 √n 到 n−4；目标 Θ(n) 或 n−O(1)；与 Ramsey 型 anti-Ramsey 构造衔接；2026 年 1 月新鲜题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 g(n) 的增长阶：证明 g(n)=Θ(n)（或更强地 g(n)=n−O(1)），或证明它偏离该阶。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

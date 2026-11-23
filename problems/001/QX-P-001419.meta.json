@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001419",
-  "revision": 1,
-  "card_rev": "f0dc1ca239ec5a51",
+  "revision": 2,
+  "card_rev": "ce3e2bc2134cd8e4",
   "title": "全局邮票问题：n(h,k) 最优基（AMM 1980 / Guy 综述）",
-  "title_en": null,
+  "title_en": "The global postage stamp problem: determining the optimal basis n(h,k)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "decidable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "05Axx",
+      "90C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加法数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "邮票问题",
+      "面额集",
+      "连续邮资",
+      "加法基"
+    ],
+    "en": [
+      "postage stamp problem",
+      "denominations",
+      "consecutive postage",
+      "additive bases"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +133,12 @@
     "note": "三四区·小问题；计算搜索友好（小 h,k 可枚举），理论刻画难；逐参数记录是现成论文模式（2020s 仍有算法论文）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定的 (h,k) 给出 n(h,k) 的确切值（含最优面额集），或给出 n(h,k) 的渐近主项并证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000962",
-  "revision": 1,
-  "card_rev": "761c8e0e302d32eb",
+  "revision": 2,
+  "card_rev": "3101a7178be73dbf",
   "title": "Kourovka 20.95：周期群饱和于有限 Frobenius 群、含对合、无 4 阶非循环子群，必为 Frobenius 群吗",
-  "title_en": null,
+  "title_en": "Kourovka 20.95: periodic groups saturated with finite Frobenius groups and containing involutions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E25",
+    "secondary": [
+      "20F50",
+      "20E34"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Frobenius 群",
+      "周期群",
+      "对合",
+      "饱和性质",
+      "有限子群"
+    ],
+    "en": [
+      "Frobenius groups",
+      "periodic groups",
+      "involutions",
+      "saturation",
+      "finite subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足这些条件的周期群必为 Frobenius 群，或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

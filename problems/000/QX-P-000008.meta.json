@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000008",
-  "revision": 1,
-  "card_rev": "d24a7f7204493e22",
+  "revision": 2,
+  "card_rev": "ea2abf49bf5202ef",
   "title": "Erdos P15: convergence of sum (-1)^n n/p_n",
-  "title_en": null,
+  "title_en": "Does the series of (-1)^n n/p_n converge?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "40A05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 素数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数级数",
+      "交错级数",
+      "收敛性",
+      "Erdős 问题"
+    ],
+    "en": [
+      "prime series",
+      "alternating series",
+      "convergence",
+      "Erdős problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +132,12 @@
     "note": "一区二区·易证明；A层理由: Erdős本人建议计算机探索(部分和可精确数值计算, 误差可估计); 目标单一(仅判定收敛); Tao 2023条件性收敛+部分和结构分析提供了明确的方法路线; 但无条件证明依赖素数间隙精细控制, 风险中等——按'表述初等+有限目标+可数值探索'保留A层并标注风险。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该级数收敛，或证明它发散。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000152",
-  "revision": 1,
-  "card_rev": "e6c9ebade9b3f712",
+  "revision": 2,
+  "card_rev": "a69097ce59402200",
   "title": "Kourovka 21.120：pro-p 群的（相对）严格有限表现与有限可公理化（在 pro-p 类中一阶公理化）的关系刻画",
-  "title_en": null,
+  "title_en": "Strictly finitely presented pro-p groups: are they finitely axiomatizable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "03C60",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "pro-p 群",
+      "严格有限表现",
+      "有限可公理化",
+      "一阶语句",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "pro-p group",
+      "strictly finitely presented",
+      "finitely axiomatizable",
+      "first-order sentence",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：Nies-Segal-Tent PLMS 2019(⇒方向)；Segal 2025 相对自由 pro-p"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (a) 给出一个非有限可公理化的严格有限表现 pro-p 群，或证明这类群都可公理化；并对 (b) 给出自由 pro-p 群的肯定或否定回答。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

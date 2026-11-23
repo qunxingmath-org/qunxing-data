@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000355",
-  "revision": 1,
-  "card_rev": "ff1269b652b18aaf",
+  "revision": 2,
+  "card_rev": "2f0d04bbb65a15fb",
   "title": "Rota基猜想（拟阵n个不交彩虹基）",
-  "title_en": null,
+  "title_en": "Rota's basis conjecture: arranging n bases of a rank-n matroid into a square with all rows and columns bases",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B35",
+    "secondary": [
+      "05A05"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "拟阵论/组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Rota 基猜想",
+      "拟阵",
+      "基",
+      "彩虹基",
+      "排列"
+    ],
+    "en": [
+      "Rota's basis conjecture",
+      "matroids",
+      "bases",
+      "rainbow bases",
+      "permutations"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +134,12 @@
     "note": "一区二区·难度待定；B层：Polymath12后持续活跃；2024 McGuinness高密度拟阵正面结果、BLS'n/2个彩虹基'中间结果、SAT/SMS小情形验证——存在清晰的渐近逼近路径。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意秩 n 拟阵的任意 n 个基都能排成各行、各列均为基的 n×n 阵列，或给出一个排不成的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

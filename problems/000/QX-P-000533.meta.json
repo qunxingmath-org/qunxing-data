@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000533",
-  "revision": 1,
-  "card_rev": "91dd697f154f5110",
+  "revision": 2,
+  "card_rev": "8449c077287ae4a4",
   "title": "20.15 剩余有限群嵌入 Sym(κ) ⇒ 嵌入 κ 个有限群直积？",
-  "title_en": null,
+  "title_en": "Residually finite groups in Sym(kappa): embedding into a direct product of kappa finite groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20B35",
+      "20E07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "剩余有限群",
+      "全置换群",
+      "直积嵌入",
+      "基数 κ",
+      "有限群积"
+    ],
+    "en": [
+      "residually finite groups",
+      "full symmetric group",
+      "direct product embeddings",
+      "cardinal kappa",
+      "products of finite groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Bergman）κ 无限基数。剩余有限群 G 可嵌入全置换群 Sym(κ) 时，是否可嵌入 κ 个有限群的直积？（逆向…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个可嵌入 Sym(κ) 的剩余有限群都能嵌入 κ 个有限群的直积，或构造一个能嵌入 Sym(κ) 却不能如此嵌入的反例群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

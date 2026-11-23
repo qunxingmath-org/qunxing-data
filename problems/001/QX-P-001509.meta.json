@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001509",
-  "revision": 1,
-  "card_rev": "3698c71987839218",
+  "revision": 2,
+  "card_rev": "1c0b95c06a9c9558",
   "title": "互素系数限制的 Frobenius 问题：最大不可表整数的闭式/渐近",
-  "title_en": null,
+  "title_en": "The Frobenius problem with relatively prime multipliers: closed form for the largest non-representable integer",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,7 +95,9 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 译述与 formal 自相矛盾：按字面会出现无穷集合；暂按“不可由互素正系数对表示的最大整数”理解。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -103,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D07",
+    "secondary": [
+      "11B75",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论/数值半群",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Frobenius 问题",
+      "不可表整数",
+      "互素系数",
+      "Stern 序列",
+      "Farey 序列"
+    ],
+    "en": [
+      "Frobenius problem",
+      "non-representable integers",
+      "relatively prime multipliers",
+      "Stern sequence",
+      "Farey sequence"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +140,12 @@
     "note": "三四区·小问题；Jaffe 2026-10 新建问题（互素系数限制下 Frobenius 型最大值），已证存在性+探索数值性质，闭式/渐近开放；与 Stern–Brocot/Farey 分母序列结构性连接，计算可及。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 g′(a,b) 的闭式公式，或确定它随 a、b 增长的渐近行为。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -129,5 +159,6 @@
     "status_raw": "OPEN-WEAK",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

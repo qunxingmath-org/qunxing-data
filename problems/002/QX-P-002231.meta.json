@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002231",
-  "revision": 1,
-  "card_rev": "8c6ba7b6a860647f",
+  "revision": 2,
+  "card_rev": "7991df4d5a8c5b8f",
   "title": "(K_X+Δ)-非负映射体积下界 ε（P35）",
-  "title_en": null,
+  "title_en": "Lower bound epsilon for volumes of (K_X + Delta)-nonnegative maps (P35)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14E30",
+    "secondary": [
+      "14B05",
+      "14D06"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "体积下界",
+      "非负 Kodaira 维数",
+      "纤维化",
+      "极小模型纲领"
+    ],
+    "en": [
+      "volume lower bounds",
+      "nonnegative Kodaira dimension",
+      "fibrations",
+      "minimal model program"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出只依赖维数的 ε > 0,证明所有 (K_X+Δ) 非负的映射体积都不小于 ε。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

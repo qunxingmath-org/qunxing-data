@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000596",
-  "revision": 1,
-  "card_rev": "f9478afb0de57861",
+  "revision": 2,
+  "card_rev": "7535790823a7ea4b",
   "title": "（来源 C-003）递推 x_{n+1}=x_n−1/x_n, x_0=2 的序列是否无界？",
-  "title_en": null,
+  "title_en": "Is the sequence x_{n+1} = x_n - 1/x_n with x_0 = 2 unbounded?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "39A22",
+    "secondary": [
+      "37E05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "递推/动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "非线性递推",
+      "无界性",
+      "混沌振荡",
+      "动力系统"
+    ],
+    "en": [
+      "nonlinear recurrences",
+      "unboundedness",
+      "chaotic oscillation",
+      "dynamical systems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +124,12 @@
     "note": "三四区·小问题；孤立小问题：MSE 唯一回答（Bruno Andrades 2025-06-09）明言 not an answer，仅考证该问题出自 Chamberland-Martelli 论文且无后续文献引用、无解决。原始论文早于 2000 年，ResearchGate 无引用。可做三四区小论文：如证明序列访问无穷多个 |x|>N 的点、或研究不变测度/逃逸概率。方法路线（一维非自治迭代、鞅/遍历启发式）明确但无现成解。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该序列无界，或证明它其实有界并给出上界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

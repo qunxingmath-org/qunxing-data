@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002116",
-  "revision": 1,
-  "card_rev": "4e77eef9169e8f70",
+  "revision": 2,
+  "card_rev": "06a08133a46f07b9",
   "title": "o-minimal 结构的可定义选择扩张",
-  "title_en": null,
+  "title_en": "Can every o-minimal structure be expanded to one with definable choice?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C64",
+    "secondary": [
+      "03C60",
+      "03C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "模型论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "o-minimal 结构",
+      "可定义选择",
+      "Skolem 函数",
+      "模型论",
+      "序域"
+    ],
+    "en": [
+      "o-minimal structures",
+      "definable choice",
+      "Skolem functions",
+      "model theory",
+      "ordered fields"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 o-minimal 结构构造出保持 o-minimal 性、且带可定义 Skolem 函数的扩张，或给出一个不存在这种扩张的反例（含序群、序域两种特殊情形）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

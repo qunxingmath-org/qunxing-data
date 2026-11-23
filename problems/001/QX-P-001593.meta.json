@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001593",
-  "revision": 1,
-  "card_rev": "d9d82b923d900a51",
+  "revision": 2,
+  "card_rev": "a1b2f0141dc7d124",
   "title": "21.109 派生长 ≤ |Cod(G)|−1 猜想",
-  "title_en": null,
+  "title_en": "Is the derived length of a finite soluble group at most |Cod(G)| - 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20C15",
+      "20D30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "派生长",
+      "码次数集",
+      "有限可解群",
+      "Fitting 长",
+      "Qian 猜想"
+    ],
+    "en": [
+      "derived length",
+      "codegrees",
+      "finite soluble groups",
+      "Fitting height"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Qian 猜想）有限可解群派生长 ≤ |Cod(G)|−1。Fitting 长已证 ≤min{|Cod(G)|−1, …（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有限可解群 G 都满足 dl(G) ≤ |Cod(G)|−1；或给出一个反例群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

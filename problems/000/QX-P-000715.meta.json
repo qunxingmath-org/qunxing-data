@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000715",
-  "revision": 1,
-  "card_rev": "0eecb4ffa6d93cfc",
+  "revision": 2,
+  "card_rev": "50dfeee29b12aa00",
   "title": "14.31 有限可解群生成的 Fitting 类子类格有限？",
-  "title_en": null,
+  "title_en": "Kourovka 14.31: is the lattice of Fitting subclasses of <finite soluble group> finite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F17",
+    "secondary": [
+      "06B15",
+      "20D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Fitting 类",
+      "子类格",
+      "有限可解群",
+      "生成",
+      "Vorob'ëv 问题"
+    ],
+    "en": [
+      "Fitting classes",
+      "lattice of subclasses",
+      "finite soluble groups",
+      "generation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明由任何有限可解群生成的 Fitting 类只有有限多个 Fitting 子类，或构造出一个拥有无穷多个 Fitting 子类的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

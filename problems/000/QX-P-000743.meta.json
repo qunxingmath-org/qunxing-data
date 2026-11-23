@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000743",
-  "revision": 1,
-  "card_rev": "c1731a328b79b060",
+  "revision": 2,
+  "card_rev": "7f4eb104f8cb96b8",
   "title": "Erdős #551：R(C_k,K_n)=(k−1)(n−1)+1",
-  "title_en": null,
+  "title_en": "Erdos #551: the exact value R(C_k,K_n) = (k-1)(n-1)+1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -115,11 +117,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C55",
+    "secondary": [
+      "05C38",
+      "05C69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Ramsey理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Ramsey 数",
+      "圈",
+      "完全图",
+      "精确公式",
+      "Erdős 问题"
+    ],
+    "en": [
+      "Ramsey numbers",
+      "cycles",
+      "complete graphs",
+      "exact formulas"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -127,7 +148,12 @@
     "note": "三四区·小问题；孤立、具体的小命题（多为有限验证/显式目标），工作量对应 SCI 三/四区短文。 n=k=3 例外；标准构造已给匹配下界，等式待证"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对一切 k≥n≥3（n=k=3 除外）确定 R(C_k,K_n) 的确切值并给出完整证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

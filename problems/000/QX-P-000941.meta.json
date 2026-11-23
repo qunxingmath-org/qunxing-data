@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000941",
-  "revision": 1,
-  "card_rev": "208f17b9d802fae0",
+  "revision": 2,
+  "card_rev": "13a1ae5e688559ea",
   "title": "Kourovka 19.97：m-生成群 G 的初等理论等于秩 r≥2 衍长 n≥3 自由可解群 F 的初等理论，则 G≅F 吗",
-  "title_en": null,
+  "title_en": "Kourovka 19.97: elementary equivalence with a free soluble group of derived length at least 3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F16",
+    "secondary": [
+      "20A15",
+      "03C60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "初等理论",
+      "自由可解群",
+      "初等等价",
+      "派生长",
+      "生成元个数"
+    ],
+    "en": [
+      "elementary theory",
+      "free soluble groups",
+      "elementary equivalence",
+      "derived length",
+      "number of generators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明与这类自由可解群初等等价的 m 生成群必同构于它，或给出一个初等等价但不同构的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

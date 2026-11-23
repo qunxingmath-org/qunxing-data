@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001822",
-  "revision": 1,
-  "card_rev": "6d4eb842a39c98e4",
+  "revision": 2,
+  "card_rev": "73b79dbfd5533121",
   "title": "a⁴+b⁴+c⁴=d⁴+kabcd 本原解",
-  "title_en": null,
+  "title_en": "Primitive solutions of a^4+b^4+c^4 = d^4 + kabcd",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D41",
+    "secondary": [
+      "11D72",
+      "11P05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "四次方程",
+      "本原解",
+      "丢番图方程",
+      "交叉项"
+    ],
+    "en": [
+      "quartic equations",
+      "primitive solutions",
+      "Diophantine equations",
+      "cross term"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定参数 k 给出一个本原整数解，或证明该方程不存在本原解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

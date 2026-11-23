@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001554",
-  "revision": 1,
-  "card_rev": "e1e9cb7234d1cf30",
+  "revision": 2,
+  "card_rev": "ba447484bfd7aa80",
   "title": "20.55 派生长 2 与 4、特征标表相同的可解群对存在？",
-  "title_en": null,
+  "title_en": "Soluble groups of derived lengths 2 and 4 with identical character tables",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "特征标表",
+      "派生长",
+      "可解群",
+      "非同构群",
+      "构造"
+    ],
+    "en": [
+      "character tables",
+      "derived length",
+      "soluble groups",
+      "nonisomorphic groups",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在派生长分别为 2 与 4、特征标表完全相同的非同构有限可解群对？（派生长 n 与 n+1 的对已构造，Matta…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一对有限可解群 G、H，派生长分别为 2 与 4 且特征标表完全相同、彼此不同构，或证明这样的群对不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

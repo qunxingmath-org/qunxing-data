@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001490",
-  "revision": 1,
-  "card_rev": "bdc57790bd4a70a0",
+  "revision": 2,
+  "card_rev": "243444a1ee9f4c10",
   "title": "batch_I I-154：Question 1：f:X→E（E 完备局部凸）且每个商范数像 π_α f Bochner 可积，f",
-  "title_en": null,
+  "title_en": "Vector-valued Bochner integrability via quotient seminorms, and completeness of L^1(X,mu,E)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46G10",
+    "secondary": [
+      "46A04",
+      "28B05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析 / 向量值积分",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Bochner 积分",
+      "局部凸空间",
+      "半范数",
+      "向量值函数",
+      "完备性"
+    ],
+    "en": [
+      "Bochner integrals",
+      "locally convex spaces",
+      "seminorms",
+      "vector-valued functions",
+      "completeness"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Sam 2024 引 Piotr Mikusiński《Integrals with values in Banach spaces and locally convex spaces》(2014) 第7节两问；0 回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "分别回答：证明 π_α∘f 全可积蕴含 f 可积（并回答 L¹ 的完备性），或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

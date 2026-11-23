@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000522",
-  "revision": 1,
-  "card_rev": "ee77a13afe5b9d3e",
+  "revision": 2,
+  "card_rev": "e1ba4181b67c35b0",
   "title": "固定特征 p 与次数 n 的有限单群上同调维数有界性（Question II）",
-  "title_en": null,
+  "title_en": "Bounded cohomology dimensions for finite simple groups in a fixed characteristic p",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20J06",
+    "secondary": [
+      "20C20",
+      "20D06"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群表示/上同调",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群上同调",
+      "有限单群",
+      "绝对不可约模",
+      "一致有界性",
+      "特征 p"
+    ],
+    "en": [
+      "group cohomology",
+      "finite simple groups",
+      "absolutely irreducible modules",
+      "uniform bounds",
+      "characteristic p"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +137,12 @@
     "note": "一区二区·难度待定；Guralnick 绝对有界猜想 2026-11 被两次独立否定后（2611.11677 与 annular webs 文），2611.11677 结论节明确提出固定特征版本 Question II——新出精确定量目标，模块化现象（p-canonical 基）提示难度高但方向新开。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对固定的 p 与 n 证明存在统一上界 C_{n,p}（并给出估计），或构造一列有限单群与不可约模使 dim H^n(G,V) 无界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

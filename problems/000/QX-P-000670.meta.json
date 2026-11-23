@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000670",
-  "revision": 1,
-  "card_rev": "18ea05a2d880d9ab",
+  "revision": 2,
+  "card_rev": "995a6dadbb79af8f",
   "title": "18.97 周期 Zassenhaus 群的局部有限核是 2-群？",
-  "title_en": null,
+  "title_en": "Must the locally finite kernel of a periodic Zassenhaus group be a 2-group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B22",
+    "secondary": [
+      "20E25",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Zassenhaus 群",
+      "Frobenius 群",
+      "局部有限核",
+      "2-群",
+      "二重传递"
+    ],
+    "en": [
+      "Zassenhaus groups",
+      "Frobenius groups",
+      "locally finite kernels",
+      "2-groups",
+      "two-transitive groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的核 U 必为 2-群，或构造一个核中含有奇阶元素的周期 Zassenhaus 群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

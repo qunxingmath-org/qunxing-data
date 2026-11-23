@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000505",
-  "revision": 1,
-  "card_rev": "4572e3ba60d8a4bc",
+  "revision": 2,
+  "card_rev": "8fdd2ee47e0dd323",
   "title": "Aanderaa–Karp–Rosenberg 逃避性猜想",
-  "title_en": null,
+  "title_en": "The Aanderaa-Karp-Rosenberg evasiveness conjecture for graph properties",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q17",
+    "secondary": [
+      "05C99",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "查询复杂度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "逃避性猜想",
+      "决策树复杂度",
+      "图性质",
+      "查询复杂度",
+      "AKR 猜想"
+    ],
+    "en": [
+      "evasiveness conjecture",
+      "decision tree complexity",
+      "graph properties",
+      "query complexity",
+      "AKR conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；图性质诱导查询复杂度 Ω(n²)——固定度数版 Kahn–Sains 等，一般版开（顶点查询/边查询变体族），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有非平凡的单调图性质证明需要 Ω(n²) 次查询，或给出一个只需 o(n²) 次查询就能判定的非平凡单调图性质。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001523",
-  "revision": 1,
-  "card_rev": "3aa6e75282fd9c64",
+  "revision": 2,
+  "card_rev": "6644edecf5d3d46d",
   "title": "19.11 共轭类数下界 k(G) ≥ c·log₂|G| 是否成立",
-  "title_en": null,
+  "title_en": "Is the number of conjugacy classes at least c log_2 |G| with an absolute constant c?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E45",
+    "secondary": [
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共轭类数",
+      "有限群",
+      "对数下界",
+      "绝对常数",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "number of conjugacy classes",
+      "finite groups",
+      "logarithmic lower bounds",
+      "absolute constants",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在绝对常数 c>0，使任意有限群 G 的共轭类数 k(G) ≥ c·log₂|G|？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在绝对常数 c>0 使所有有限群满足 k(G) ≥ c log₂|G|，或构造一列有限群说明这样的 c 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

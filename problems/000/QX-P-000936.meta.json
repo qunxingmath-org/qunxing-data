@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000936",
-  "revision": 1,
-  "card_rev": "7245c7d5fd453894",
+  "revision": 2,
+  "card_rev": "77f763bdbfd9d887",
   "title": "Kourovka 19.79：设群 G 对每个 n>0 恰有唯一（同构意义下）n 维不可约复表示（SL(2,Q) 由 Borel 定理具此性质）",
-  "title_en": null,
+  "title_en": "Kourovka 19.79: Springer's question on groups with a unique irreducible representation in each dimension",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20G05",
+      "20E32"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不可约表示",
+      "唯一性",
+      "SL(2,Q)",
+      "商群",
+      "Borel–Tits 定理"
+    ],
+    "en": [
+      "irreducible representations",
+      "uniqueness",
+      "SL(2,Q)",
+      "quotients",
+      "Borel-Tits theorem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的 G 总有正规子群 N 使 G/N ≅ SL(2,Q)，或给出一个不满足该结论的反例群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

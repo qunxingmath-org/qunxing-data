@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000336",
-  "revision": 1,
-  "card_rev": "2f458e1bd1feae2c",
+  "revision": 2,
+  "card_rev": "21849899efb574d4",
   "title": "Erdos P142: asymptotic formula for r_k(N) (k-term AP-free sets)",
-  "title_en": null,
+  "title_en": "Asymptotic formula for r_k(N), the largest size of a k-term-AP-free subset of [N]",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B25",
+    "secondary": [
+      "11B30",
+      "05D10"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "等差数列",
+      "无 k 项 AP 集",
+      "渐近公式",
+      "Roth 型问题",
+      "加性组合"
+    ],
+    "en": [
+      "arithmetic progressions",
+      "k-AP-free sets",
+      "asymptotic formula",
+      "Roth-type problems",
+      "additive combinatorics"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·难度待定；B层理由: $10000悬赏、9人标记difficult(含Tao/Sawhney); 2023-2024纪录连破但渐近公式仍远; 上界方法(量子多项式逆定理)刚成熟, 观察期。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 r_k(N) 对某组 k（或全部 k）成立的渐近公式，或证明这样的公式不可能存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

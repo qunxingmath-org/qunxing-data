@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000414",
-  "revision": 1,
-  "card_rev": "0e6a881d2a9e0c2b",
+  "revision": 2,
+  "card_rev": "7f2f7afea5fa703d",
   "title": "受限和集与 A 不交的大子集（Green 问题 2）",
-  "title_en": null,
+  "title_en": "A large subset of n integers whose restricted sumset avoids the set itself",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "11B30",
+      "11B75"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "受限和集",
+      "加性组合",
+      "子集",
+      "整数集",
+      "Ramsey 型问题"
+    ],
+    "en": [
+      "restricted sumsets",
+      "additive combinatorics",
+      "subsets",
+      "integer sets",
+      "Ramsey-type problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；和集结构+对数幂子集抽取，涉及 Bogolyubov–Ruzsa 引理定量化的极限，未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个由 n 个整数组成的 A 都存在这样的 S，或构造一个 A 使任何 |S|=(log n)^100 的子集都有 S∔S 与 A 相交。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

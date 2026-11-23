@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000431",
-  "revision": 1,
-  "card_rev": "67b86d5cab2dfe4d",
+  "revision": 2,
+  "card_rev": "0838ce344e101c4f",
   "title": "两平方数之和的间隙（Green 问题 66）",
-  "title_en": null,
+  "title_en": "Is there always a sum of two squares in (X - X^{1/4}/10, X)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N25",
+    "secondary": [
+      "11P99",
+      "11N69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "两平方数之和",
+      "间隙",
+      "短区间",
+      "素因子条件",
+      "解析数论"
+    ],
+    "en": [
+      "sums of two squares",
+      "gaps",
+      "short intervals",
+      "prime factor conditions",
+      "analytic number theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；短区间中两平方和分布——解析数论短区间问题，X^{1/4} 窗口边界明确，方法（指数和+圆法）可延续但未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有充分大的 X 该短区间内必有两平方数之和，或给出无穷多 X 使该区间内没有这样的数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

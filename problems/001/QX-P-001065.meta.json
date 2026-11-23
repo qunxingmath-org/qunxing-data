@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001065",
-  "revision": 1,
-  "card_rev": "a037b8f516b396a7",
+  "revision": 2,
+  "card_rev": "2d853ef4a969373d",
   "title": "Kourovka 3.55：二元可解且交换子群有限秩⇒局部可解？",
-  "title_en": null,
+  "title_en": "Binary soluble groups with finite-rank abelian subgroups: locally soluble?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F19",
+    "secondary": [
+      "20E15",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "二元可解",
+      "有限秩",
+      "交换子群",
+      "局部可解",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "binary soluble groups",
+      "finite rank",
+      "abelian subgroups",
+      "local solubility",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足这两个条件的群必局部可解，或构造一个二元可解、交换子群有限秩却不局部可解的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

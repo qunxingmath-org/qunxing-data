@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001586",
-  "revision": 1,
-  "card_rev": "6565b5e21330682a",
+  "revision": 2,
+  "card_rev": "38ccf4145947ff18",
   "title": "21.73 CT(Z) 的共轭问题可判定？",
-  "title_en": null,
+  "title_en": "Is the conjugacy problem in CT(Z) algorithmically decidable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "20B07",
+      "03D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "类换位子群",
+      "共轭问题",
+      "可判定性",
+      "算法",
+      "CT(ℤ)"
+    ],
+    "en": [
+      "class transposition groups",
+      "conjugacy problem",
+      "decidability",
+      "algorithms",
+      "CT(Z)"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；类换位子群 CT(Z)（见 17.57）中元素的共轭问题是否算法可判定？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出判定 CT(ℤ) 中任意两个元素是否共轭的算法并证明其停机与正确，或证明该问题不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

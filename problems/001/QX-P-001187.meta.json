@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001187",
-  "revision": 1,
-  "card_rev": "9ebfad2c383230d6",
+  "revision": 2,
+  "card_rev": "44d14c8857c3ef44",
   "title": "BMO Problem 6 'Space Needle'：f^n(6) 是否永不触及 2 的幂",
-  "title_en": null,
+  "title_en": "Space Needle: does the orbit of 6 under f ever reach a power of two?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D10",
+    "secondary": [
+      "11B99",
+      "37P99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "可计算性/动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "迭代映射",
+      "2 的幂",
+      "不停机",
+      "图灵机",
+      "轨道"
+    ],
+    "en": [
+      "iterated maps",
+      "powers of two",
+      "non-halting",
+      "Turing machines",
+      "orbits"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -104,7 +126,12 @@
     "note": "三四区·小问题；初等函数迭代问题（f(b)=b+k+3a, b=(2a+1)2^k），表面完全初等、可长程计算推进；实质对应特定图灵机不停机——'小问题大纵深'，计算侧成果（更多 f^n(6) 数据）即可成短文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对一切 n≥0 都有 f^n(6) 不是 2 的幂（等价于相应图灵机不停机），或给出一个 n 使 f^n(6) 为 2 的幂（等价于该机停机）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

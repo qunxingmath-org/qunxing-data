@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000507",
-  "revision": 1,
-  "card_rev": "958afb7f06b0da9b",
+  "revision": 2,
+  "card_rev": "37cf6081e6aebec8",
   "title": "无重复平方化的可验证延时密码学原语",
-  "title_en": null,
+  "title_en": "Verifiable delay primitives not based on repeated squaring",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "94A60",
+    "secondary": [
+      "68P25",
+      "94A62"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "密码学",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可验证延时函数",
+      "时间锁谜题",
+      "重复平方",
+      "顺序计算假设",
+      "密码原语"
+    ],
+    "en": [
+      "verifiable delay functions",
+      "time-lock puzzles",
+      "repeated squaring",
+      "sequentiality assumptions",
+      "cryptographic primitives"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；能否构造不依赖重复平方化的 VDF/time-lock——[表述偏工程] 可按具体构造目标分解，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个不依赖重复平方的可验证延时原语，并在明确的安全模型下证明其顺序性与可验证性，或证明这样的构造不可能存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000433",
-  "revision": 1,
-  "card_rev": "2f24abc2d85a6d5e",
+  "revision": 2,
+  "card_rev": "5abca55188019ccf",
   "title": "Curling Number 猜想（Chaffin–Sloane Conjecture 1）",
-  "title_en": null,
+  "title_en": "The curling number conjecture: repeatedly appending the curling number ends at 1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B83",
+    "secondary": [
+      "05A99",
+      "68R15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合序列",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "curling number",
+      "序列迭代",
+      "终止性",
+      "组合序列",
+      "Chaffin–Sloane"
+    ],
+    "en": [
+      "curling number",
+      "sequence iteration",
+      "termination",
+      "combinatorial sequences",
+      "Chaffin–Sloane"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；反复追加 curling number 终止于 1——计算机验证极长仍无反例，但一般证明无路线；OEIS/Sloane 谱系著名开放题，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明从任意非空有限整数序列出发，反复追加 curling number 的迭代最终都会得到 curling number 为 1 的序列；或给出一个永不终止的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

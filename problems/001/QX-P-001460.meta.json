@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001460",
-  "revision": 1,
-  "card_rev": "83c905fa312da0af",
+  "revision": 2,
+  "card_rev": "bbe5dc19a0272491",
   "title": "batch_I I-083：双素数常数 C₂=∏_{p>2}(1−1/(p−1)²)≈0.66016 的无理性是否有证明/参考？（如",
-  "title_en": null,
+  "title_en": "Is the twin prime constant known to be irrational?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J72",
+    "secondary": [
+      "11N05",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 常数无理性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双素数常数",
+      "无理性",
+      "无穷乘积",
+      "素数",
+      "孪生素数"
+    ],
+    "en": [
+      "twin prime constant",
+      "irrationality",
+      "infinite products",
+      "prime numbers",
+      "twin primes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；Alex 2020 求参考；Greg Martin 评论：\"I'm pretty sure that the irrationality of this constant is an open problem\"；0 回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 C₂ 无理性的证明，或指出一个明确陈述该问题仍未解决的文献出处。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

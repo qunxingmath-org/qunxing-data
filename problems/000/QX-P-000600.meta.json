@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000600",
-  "revision": 1,
-  "card_rev": "d268ec6ac7058bbd",
+  "revision": 2,
+  "card_rev": "ae00fcbe7d56f129",
   "title": "（来源 C-007）分数部分序列 {(k+1/2)^n} 在 [0,1] 中是否稠密？",
-  "title_en": null,
+  "title_en": "Is the fractional part sequence {(k+1/2)^n} dense in [0,1]?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J71",
+    "secondary": [
+      "11K06"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "均匀分布/丢番图逼近",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "分数部分",
+      "稠密性",
+      "分布模 1",
+      "Mahler 问题"
+    ],
+    "en": [
+      "fractional parts",
+      "density",
+      "distribution modulo one",
+      "Mahler's problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +124,12 @@
     "note": "三四区·小问题；问题2已有完整证明（问题解决），问题1与 Mahler 的 Z-数问题（3/2)^n 的分数部分分布）同族、著名开放。可做三四区级：对特定 k 证明子序列稠密或非稠密（如偶数指标子序列 {2^{-2m}+mt2^{-m+1}} 结构分析）、或证明对几乎所有的 k 稠密（度量理论结果）。abacaba 的证明技巧（取 n=2m、k=2^{m-1}t 使高阶项整数化）是明确可延续的方法。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对固定 k 的稠密性问题给出证明（稠密或不稠密，并给出理由），或给出一个 k 使该序列不稠密。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

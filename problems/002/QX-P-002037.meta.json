@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002037",
-  "revision": 1,
-  "card_rev": "c5582aeb8a4584b6",
+  "revision": 2,
+  "card_rev": "af85cbd66422c19f",
   "title": "完全二叉树到超立方体单调嵌入",
-  "title_en": null,
+  "title_en": "Monotone embeddings of complete binary trees into hypercubes",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C60",
+    "secondary": [
+      "05C05",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "完全二叉树",
+      "超立方体",
+      "单调嵌入",
+      "图嵌入",
+      "层宽"
+    ],
+    "en": [
+      "complete binary trees",
+      "hypercubes",
+      "monotone embeddings",
+      "graph embeddings",
+      "level width"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n 定出可单调嵌入 Q_n 的完全二叉树的最大深度（或给出相差常数的界）并构造出嵌入，或证明某深度起不再可能。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

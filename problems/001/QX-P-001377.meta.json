@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001377",
-  "revision": 1,
-  "card_rev": "71729c7f5f2cd2cc",
+  "revision": 2,
+  "card_rev": "4fa62a6b2fec87dc",
   "title": "行和 r 列和 c 的 0-1 矩阵精确计数公式（AMM E2794）",
-  "title_en": null,
+  "title_en": "Exact enumeration of 0-1 matrices with all row sums r and column sums c",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A15",
+    "secondary": [
+      "05C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合计数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "0-1 矩阵",
+      "行和与列和",
+      "精确计数",
+      "生成函数",
+      "二分图"
+    ],
+    "en": [
+      "0-1 matrices",
+      "row and column sums",
+      "exact enumeration",
+      "generating functions",
+      "bipartite graphs"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +125,12 @@
     "note": "三四区·小问题；组合计数，从小情形找模式——典型可执行小问题；渐近已知、精确闭式开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出对所有满足 rm=cn 的 (m,n,r,c) 都成立的精确计数公式，或给出能精确计算它的算法并证明正确。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001749",
-  "revision": 1,
-  "card_rev": "b9bccd1aaf0b88a1",
+  "revision": 2,
+  "card_rev": "bb29cc4ba80da71b",
   "title": "pq 进制自守数数字分布",
-  "title_en": null,
+  "title_en": "Digit distribution of automorphic numbers in base pq",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify",
+    "compute"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A63",
+    "secondary": [
+      "11A07",
+      "11B37"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自守数",
+      "pq 进制",
+      "中国剩余定理",
+      "幂等元",
+      "数字分布"
+    ],
+    "en": [
+      "automorphic numbers",
+      "base pq",
+      "Chinese remainder theorem",
+      "idempotents",
+      "digit distribution"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "刻画 p、q 变化时 pq 进制自守数的数字分布（各数位取值的规律或计数），并给出证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

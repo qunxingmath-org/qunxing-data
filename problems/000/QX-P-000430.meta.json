@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000430",
-  "revision": 1,
-  "card_rev": "1bd4d5445e35a82d",
+  "revision": 2,
+  "card_rev": "d72b1521fd34f45e",
   "title": "平方差稠密（Green 问题 65）",
-  "title_en": null,
+  "title_en": "Is a positive density of squared differences guaranteed in large subsets of [N]?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -102,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11B13",
+      "05D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平方差",
+      "稠密集",
+      "Roth 型问题",
+      "密度上界",
+      "加性数论"
+    ],
+    "en": [
+      "squared differences",
+      "dense sets",
+      "Roth-type problems",
+      "density bounds",
+      "additive number theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -114,7 +137,12 @@
     "note": "一区二区·难度待定；Sárközy 定理的定量极限（是否存在多项式小上界）：已知最好上界为 log 型（Bloom 2022 等），多项式目标远超现有方法，B层（著名方向、近年活跃）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在 c>0，使任何 |A|≥N^{1−c} 的子集都含两个相差非零平方的元素；或证明不存在这样的 c，即构造任意稠的平方差自由集。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

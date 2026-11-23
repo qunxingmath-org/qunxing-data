@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002058",
-  "revision": 1,
-  "card_rev": "19266915915a2b72",
+  "revision": 2,
+  "card_rev": "f3cd8053e7b5b8be",
   "title": "∏(pᵢ²+i)=n²−27² 仅两解？",
-  "title_en": null,
+  "title_en": "Is prod_{i=1}^m (p_i^2 + i) = n^2 - 27^2 solvable only for m = 2 and m = 5?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "disprove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D09",
+    "secondary": [
+      "11A41",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数",
+      "平方差",
+      "丢番图方程",
+      "因式分解",
+      "计算检验"
+    ],
+    "en": [
+      "primes",
+      "difference of squares",
+      "Diophantine equations",
+      "factorization",
+      "computational search"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 m>5 时方程 ∏(p_i²+i)=n²−27² 没有正整数解 n，或给出一个新的解 (m,n)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

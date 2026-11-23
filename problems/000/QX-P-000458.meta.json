@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000458",
-  "revision": 1,
-  "card_rev": "876b58f5efe39773",
+  "revision": 2,
+  "card_rev": "d57ec8b35c259ecd",
   "title": "Tao 优化常数 7b：Γ(1/4) 的无理数测度界",
-  "title_en": null,
+  "title_en": "Improving the bounds for the irrationality measure of Gamma(1/4)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J82",
+    "secondary": [
+      "33B15",
+      "11J72"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（超越数论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Gamma 函数",
+      "无理数测度",
+      "超越数论",
+      "上下界",
+      "常数改进"
+    ],
+    "en": [
+      "Gamma function",
+      "irrationality measure",
+      "transcendence theory",
+      "bounds",
+      "constant improvements"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；Γ(1/4) 无理数测度上下界改进——超越数论（线性型下界方法）具体目标，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 Γ(1/4) 无理数测度的严格更好的上界或下界并证明之。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

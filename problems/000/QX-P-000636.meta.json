@@ -2,19 +2,23 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000636",
-  "revision": 1,
-  "card_rev": "7feb4ead5af35a2c",
+  "revision": 2,
+  "card_rev": "2c16e64b4e01c6e4",
   "title": "Between proper and strong edge-colorings of graphs with maximum degree at most four",
-  "title_en": null,
+  "title_en": "Packing edge-colouring parameters for graphs of maximum degree at most four",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "value",
+    "special_case"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +103,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C70",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图染色（packing边染色）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "packing 边染色",
+      "最大度 4",
+      "图染色",
+      "上界改进"
+    ],
+    "en": [
+      "packing edge-colouring",
+      "maximum degree four",
+      "graph colouring",
+      "improved bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +133,12 @@
     "note": "三四区·小问题；中等——Δ≤4方向刚起步，界收紧路线明确（Henderson–Kennedy–Santanu 19→原文17），概率/构造方法可延续；亚三次图大量猜想向Δ≥4的推广逐个检验，单个猜想工作量约三四区论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 Δ≤4 的图给出 (1,2^k) 与 (1²,2^k) 中更小的可行 k（或匹配的反例说明不能更小），并确定相应图类的精确值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

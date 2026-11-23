@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001345",
-  "revision": 1,
-  "card_rev": "f402e7939621b188",
+  "revision": 2,
+  "card_rev": "ddd8ecbfb168169b",
   "title": "Ulam 序列删项完全性（Zeitlin 猜想）",
-  "title_en": null,
+  "title_en": "Zeitlin's conjecture: is the Ulam sequence U(1,2) complete after deleting one or two terms?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B83",
+    "secondary": [
+      "11B13",
+      "05A17"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加法数论/组合序列",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Ulam 序列",
+      "完全序列",
+      "子集和",
+      "删项",
+      "Zeitlin 猜想"
+    ],
+    "en": [
+      "Ulam sequences",
+      "complete sequences",
+      "subset sums",
+      "term deletion",
+      "Zeitlin's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +137,12 @@
     "note": "三四区·小问题；陈述初等、可大量计算实验；U(1,2) 准周期结构无一般定理，删项鲁棒性证明缺失。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意删去 1 项或 2 项的 Ulam 序列 U(1,2) 证明其余项仍是完全序列，或给出一种删法使其不完全。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001577",
-  "revision": 1,
-  "card_rev": "d5ca13154d16a639",
+  "revision": 2,
+  "card_rev": "dd69dfd07836009a",
   "title": "21.42 存在不自相似的 T(3,3)-群吗",
-  "title_en": null,
+  "title_en": "Are there T(3,3)-groups that are not self-similar?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F18",
+    "secondary": [
+      "20E08",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自相似群",
+      "幂零群",
+      "无挠",
+      "生成元个数",
+      "幂零类"
+    ],
+    "en": [
+      "self-similar groups",
+      "nilpotent groups",
+      "torsion-free",
+      "number of generators",
+      "nilpotency class"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；T_{d,c}=d 生成、无挠幂零类 c 的群类。已知 T_{d,2} 全自相似、T(2,3) 自相似、存在不自相似的 …（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个三生成、无挠、幂零类为 3 且不自相似的群，或证明所有 T(3,3)-群都自相似。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

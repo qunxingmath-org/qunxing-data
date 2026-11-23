@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001417",
-  "revision": 1,
-  "card_rev": "72ddd7a314a121ef",
+  "revision": 2,
+  "card_rev": "542c6d94568ecffd",
   "title": "Arnaudiès：逐点连续因子直线选取的空间刻画（AMM 6181）",
-  "title_en": null,
+  "title_en": "Arnaudiès: which spaces admit continuous choice of factor lines for real forms?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "54C65",
+    "secondary": [
+      "14P25",
+      "55Mxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑/实代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "实代数几何",
+      "连续选取",
+      "因式分解",
+      "Hausdorff 空间"
+    ],
+    "en": [
+      "real algebraic geometry",
+      "continuous selections",
+      "factorizations",
+      "Hausdorff spaces"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +123,12 @@
     "note": "三四区·小问题；与向量丛/线丛截面（拓扑障碍）相关；Alekseevsky–Feit–Fuksa–Kolar–Vosmansky 1997\"光滑选根\"路线相邻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出空间 T 具有上述性质的充要条件，并证明充分性与必要性。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

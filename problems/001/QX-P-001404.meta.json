@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001404",
-  "revision": 1,
-  "card_rev": "24a272fa6ef2a7f7",
+  "revision": 2,
+  "card_rev": "5a118302470f830e",
   "title": "Erdős：密度零但含全部几何级数的集合（PME 389）",
-  "title_en": null,
+  "title_en": "Erdos: a zero-density integer set meeting almost all of every geometric progression",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B05",
+    "secondary": [
+      "11B75",
+      "05D05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "零密度",
+      "几何级数",
+      "等差数列",
+      "构造",
+      "Erdős 问题"
+    ],
+    "en": [
+      "zero density",
+      "geometric progressions",
+      "arithmetic progressions",
+      "constructions",
+      "Erdos problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +125,12 @@
     "note": "三四区·小问题；极值集合构造，构造性尝试可行；Erdős 风格密度/AP 问题群（erdosproblems.com）相邻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出满足全部要求的显式整数序列与实数集合并证明其性质，或证明这样的构造不可能存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

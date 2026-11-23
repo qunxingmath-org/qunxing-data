@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000520",
-  "revision": 1,
-  "card_rev": "c80dcd5f4caa12b0",
+  "revision": 2,
+  "card_rev": "04f4e5f5b53020e6",
   "title": "Lau 不动点猜想（一般 amenable 群）",
-  "title_en": null,
+  "title_en": "Lau's fixed point conjecture for amenable groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "43A07",
+    "secondary": [
+      "46B22",
+      "47H10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析/群作用（Banach 空间几何）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lau 不动点猜想",
+      "amenable 群",
+      "弱* 紧凸集",
+      "非扩张仿射作用",
+      "L¹ 空间"
+    ],
+    "en": [
+      "Lau's fixed point conjecture",
+      "amenable groups",
+      "weak*-compact convex sets",
+      "nonexpansive affine actions",
+      "L1 spaces"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +137,12 @@
     "note": "一区二区·难度待定；Lau 猜想（L¹ 空间仿射作用不动点）对 elementary amenable 群 2026-11 已证（arXiv:2611.19666），一般 amenable 群开放；出现在 Monod 公开问题清单，社区权威背书；Pachl B-amenable 线提供工具。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 amenable 群证明该不动点性质成立（在题述作用类下），或给出一个群与一个没有不动点的具体作用。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

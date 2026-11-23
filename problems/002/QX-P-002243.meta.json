@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002243",
-  "revision": 1,
-  "card_rev": "dce6585c13961212",
+  "revision": 2,
+  "card_rev": "c959fda054438487",
   "title": "tetromino 铺砌总可 4-染色？",
-  "title_en": null,
+  "title_en": "Can every tetromino tiling be 4-coloured?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B50",
+    "secondary": [
+      "05C15",
+      "05B45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合/铺砌",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "四格骨牌",
+      "tetromino",
+      "铺砌",
+      "染色",
+      "平铺"
+    ],
+    "en": [
+      "tetrominoes",
+      "tilings",
+      "colouring",
+      "polyominoes",
+      "polyominoes tiling"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何四格骨牌铺砌对应的邻接图都 4-可染,或给出一张不能 4-染色的铺砌。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

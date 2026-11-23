@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001220",
-  "revision": 1,
-  "card_rev": "99235e0ea67e320d",
+  "revision": 2,
+  "card_rev": "77508e75083b05e4",
   "title": "Kobon三角形问题",
-  "title_en": null,
+  "title_en": "Kobon triangle problem: the maximum number of triangular cells",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C30",
+    "secondary": [
+      "52C10",
+      "05A15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Kobon 三角形",
+      "直线排列",
+      "三角形区域",
+      "精确最大值",
+      "构造"
+    ],
+    "en": [
+      "Kobon triangles",
+      "line arrangements",
+      "triangular regions",
+      "exact maximum",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体函数问题（n条直线排列中不重叠三角形最大数K(n)）；已知下界构造与上界公式不匹配；逐n值确定是标准目标（K(17)等）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 K(n) 的精确值：对给定 n 给出达到该值的直线构形，并证明任何构形都不能产生更多三角形；或把某个 n 已有的上下界改到相等。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

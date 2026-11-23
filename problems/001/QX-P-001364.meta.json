@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001364",
-  "revision": 1,
-  "card_rev": "89538ea262b287a5",
+  "revision": 2,
+  "card_rev": "7b1fd9b9cfdc3a3f",
   "title": "n! 十进制首位数字的表达与求和（CRUX 266）",
-  "title_en": null,
+  "title_en": "The leading decimal digit of n! and the distribution of log_10(n!) modulo 1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +95,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11K06",
+    "secondary": [
+      "11B65",
+      "60F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（等分布）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "首位数字",
+      "Benford 分布",
+      "等分布",
+      "阶乘",
+      "小数部分"
+    ],
+    "en": [
+      "leading digits",
+      "Benford's law",
+      "equidistribution",
+      "factorials",
+      "fractional parts"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -104,7 +127,12 @@
     "note": "三四区·小问题；涉及 log(n!) 小数部分等分布——工具现成但关键等分布未证；可做条件性结果小论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 {log₁₀(n!) mod 1} 是否等分布（从而定出 d_n 的分布与部分和），或给出 d_n 的有效计算公式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

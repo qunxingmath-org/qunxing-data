@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000420",
-  "revision": 1,
-  "card_rev": "337e1308cc11a858",
+  "revision": 2,
+  "card_rev": "a20f6544df955fb0",
   "title": "L^p Fourier 限制常数 c(p) 下界（Green 问题 35）",
-  "title_en": null,
+  "title_en": "Improving lower bounds for the L^p Fourier restriction constant c(p)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "42B10",
+    "secondary": [
+      "42B99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "调和分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Fourier 限制",
+      "最佳常数",
+      "L^p 估计",
+      "调和分析",
+      "下界"
+    ],
+    "en": [
+      "Fourier restriction",
+      "optimal constants",
+      "L^p estimates",
+      "harmonic analysis",
+      "lower bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +127,12 @@
     "note": "一区二区·难度待定；球面限制常数具体数值改进——可数值优化+分析构造，中等，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对某些 p∈(1,∞] 给出严格更大的 c(p) 下界并证明（例如改进 p=2 的 √(4/7) 或 p=∞ 的 0.64）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

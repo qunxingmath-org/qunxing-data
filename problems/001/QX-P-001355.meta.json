@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001355",
-  "revision": 1,
-  "card_rev": "28d49025643188b0",
+  "revision": 2,
+  "card_rev": "07e78cf6b0780e9d",
   "title": "可避免词的 μ(U) 精确分类与增长分界",
-  "title_en": null,
+  "title_en": "Exact classification of avoidability exponents mu(U) and the growth threshold for U-avoiding words",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68R15",
+    "secondary": [
+      "05A05",
+      "68Q45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合词论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可避免词",
+      "可避免性指数",
+      "Thue–Morse 问题",
+      "增长分界",
+      "模式回避"
+    ],
+    "en": [
+      "avoidable words",
+      "avoidability exponent",
+      "Thue-Morse problems",
+      "growth thresholds",
+      "pattern avoidance"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -113,7 +135,12 @@
     "note": "三四区·小问题；词语组合规则简单、可编程验证小词；μ(U)=3 vs 4 的精确分类（哪些词）未完全解决，门槛低但工作量可控。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 μ(U) 取 3、4、∞ 的完整判据，并确定 μ(U)=4 的词上避免词计数为多项式增长的精确分界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

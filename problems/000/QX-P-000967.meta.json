@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000967",
-  "revision": 1,
-  "card_rev": "1acd19ea056585fd",
+  "revision": 2,
+  "card_rev": "782e984054c35bc0",
   "title": "Kourovka 21.16：存在作为群有限宽、但作为幺半群无限宽的群吗",
-  "title_en": null,
+  "title_en": "Kourovka 21.16: groups of finite width as groups but infinite width as monoids",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F69",
+    "secondary": [
+      "20M05",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "宽度",
+      "生成集",
+      "幺半群字",
+      "群字",
+      "有限宽"
+    ],
+    "en": [
+      "width",
+      "generating sets",
+      "monoid words",
+      "group words",
+      "finite width"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个作为群有限宽、作为幺半群无限宽的群并证明这两点，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

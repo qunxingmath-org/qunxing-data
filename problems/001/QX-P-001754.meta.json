@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001754",
-  "revision": 1,
-  "card_rev": "c00fab68cb42c76c",
+  "revision": 2,
+  "card_rev": "40f6b3f28eecc0ca",
   "title": "Σ n!/n^n 无理性",
-  "title_en": null,
+  "title_en": "Is the sum of n!/n^n over n >= 1 irrational?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J72",
+    "secondary": [
+      "40A05",
+      "11B65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/级数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无理性",
+      "阶乘级数",
+      "Stirling 公式",
+      "有理逼近"
+    ],
+    "en": [
+      "irrationality",
+      "factorial series",
+      "Stirling's formula",
+      "rational approximation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该级数的和是无理数，或证明它是有理数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

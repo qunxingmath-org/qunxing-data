@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002069",
-  "revision": 1,
-  "card_rev": "32b23dcf15314835",
+  "revision": 2,
+  "card_rev": "6a5eff6f971e5db0",
   "title": "格点跳转面积 2S 错失值集合（OP 论文部分解决姊妹初值）",
-  "title_en": null,
+  "title_en": "Flea-jump square moves: which values does the doubled area 2S miss?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "prove"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D09",
+    "secondary": [
+      "52C05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "跳蚤问题",
+      "格点",
+      "正方形跳法",
+      "面积不变量",
+      "不共线"
+    ],
+    "en": [
+      "flea problem",
+      "lattice points",
+      "square moves",
+      "area invariants",
+      "collinearity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明给定初值下三只跳蚤永不共线，并确定 2S 在所有可达构型中错过的全部整数值集合（或对这些值给出完整的刻画）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

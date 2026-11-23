@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001004",
-  "revision": 1,
-  "card_rev": "1b7536d51318317c",
+  "revision": 2,
+  "card_rev": "78d8868e40b767ca",
   "title": "How iterated sumsets grow under the assumption of small doubling",
-  "title_en": null,
+  "title_en": "The optimal growth function for iterated sumsets under small doubling",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11P70",
+      "05E15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "迭代和集",
+      "小倍增",
+      "增长函数",
+      "加性组合",
+      "最优常数"
+    ],
+    "en": [
+      "iterated sumsets",
+      "small doubling",
+      "growth function",
+      "additive combinatorics",
+      "optimal constants"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +134,12 @@
     "note": "三四区·小问题；中等——Tao 2004 问题大n情形已解（主线已闭）；剩余小n与紧常数是自然的定量收尾，Plünnecke型工具成熟；价值中等。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出对所有 n、K 都成立的精确最优函数 f(n,K)，或至少确定小 n 情形的精确值与紧常数，并证明其最优性。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

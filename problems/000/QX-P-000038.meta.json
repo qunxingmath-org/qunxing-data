@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000038",
-  "revision": 1,
-  "card_rev": "654d057811e57691",
+  "revision": 2,
+  "card_rev": "b684aaee7eb7157e",
   "title": "Agoh–Giuga猜想：满足求和同余的合成数不存在性",
-  "title_en": null,
+  "title_en": "Agoh-Giuga conjecture: no composite n satisfies the power-sum congruence",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "disprove",
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -102,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A41",
+    "secondary": [
+      "11A07",
+      "11B68"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（Bernoulli数/素性判定）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Agoh–Giuga 猜想",
+      "Giuga 数",
+      "Carmichael 数",
+      "幂和同余",
+      "素性判定"
+    ],
+    "en": [
+      "Agoh-Giuga conjecture",
+      "Giuga numbers",
+      "Carmichael numbers",
+      "power sum congruences",
+      "primality criteria"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -114,7 +137,12 @@
     "note": "一区二区·易证明；A层（初等有限验证）：反例必须同时是Giuga数与Carmichael数；已知13个合成Giuga数可逐一按Carmichael条件程序化排除，或用Borwein et al.方法对固定素因子个数/固定p1模式扩展排除界——纯模幂+CRT计算。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明不存在合数 n 满足该同余；或给出一个满足该同余的具体合数 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

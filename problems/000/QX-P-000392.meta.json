@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000392",
-  "revision": 1,
-  "card_rev": "2745e7670a87951d",
+  "revision": 2,
+  "card_rev": "e8b83b4fe2f50761",
   "title": "batch_I I-036：是否存在常数 c>0，使平面上每个面积大于 c 的（可测）子集都包含一个面积为 1 的三角形的三个顶",
-  "title_en": null,
+  "title_en": "Must a planar set of sufficiently large area contain the vertices of a unit-area triangle?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "28A75"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何 / 测度型 Erdős 问题",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单位面积三角形",
+      "可测集",
+      "Erdős 问题",
+      "平面点集",
+      "面积阈值"
+    ],
+    "en": [
+      "unit-area triangle",
+      "measurable set",
+      "Erdős problems",
+      "planar point sets",
+      "area threshold"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Erdős 原始问题（面积型）；回答给出与 Heilbronn 问题的方法关联（Roth 论证 sketch）；Xiaoyu He 评论修正等价论证。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出常数 c>0 并证明任何面积大于 c 的可测平面集都含有单位面积三角形的三个顶点；或证明不存在这样的常数 c。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

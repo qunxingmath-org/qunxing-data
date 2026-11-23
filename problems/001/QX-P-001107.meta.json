@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001107",
-  "revision": 1,
-  "card_rev": "b4287abf94fcf9e8",
+  "revision": 2,
+  "card_rev": "a8a4f144619978ce",
   "title": "Kourovka 10.78：两个 Chernikov 子群之积的非 Chernikov 群存在？",
-  "title_en": null,
+  "title_en": "Does there exist a non-Chernikov group that is a product of two Chernikov subgroups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F22",
+    "secondary": [
+      "20E34",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Chernikov 群",
+      "子群乘积",
+      "极小条件",
+      "周期群"
+    ],
+    "en": [
+      "Chernikov groups",
+      "products of subgroups",
+      "minimum condition",
+      "periodic groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个不是 Chernikov 群、却能写成两个 Chernikov 子群之积的群，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

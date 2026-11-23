@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000639",
-  "revision": 1,
-  "card_rev": "b4acd4b9c3048cf9",
+  "revision": 2,
+  "card_rev": "1f88c80706357cb0",
   "title": "18.2 两个 Chernikov 子群之积（各含指标≤2交换子群）可解？",
-  "title_en": null,
+  "title_en": "Is the product of two nearly abelian Chernikov subgroups soluble?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E15",
+    "secondary": [
+      "20F16",
+      "20F19"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Chernikov 群",
+      "两个子群之积",
+      "可解性",
+      "交换子群"
+    ],
+    "en": [
+      "Chernikov groups",
+      "products of subgroups",
+      "solubility",
+      "abelian subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的 G 必可解，或构造一个由两个近乎交换的 Chernikov 子群相乘得到但不可解的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

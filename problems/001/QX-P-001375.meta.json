@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001375",
-  "revision": 1,
-  "card_rev": "fe5cf4fe30089b9c",
+  "revision": 2,
+  "card_rev": "2d50a27b7321698d",
   "title": "凸多面体四面各取一顶点的正方形（AMM E2740）",
-  "title_en": null,
+  "title_en": "A square whose four vertices lie on four different faces of a convex polyhedron",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B10",
+    "secondary": [
+      "52A15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "凸几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸多面体",
+      "正方形",
+      "面的顶点",
+      "存在性",
+      "凸几何"
+    ],
+    "en": [
+      "convex polyhedra",
+      "squares",
+      "vertices on faces",
+      "existence",
+      "convex geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +116,12 @@
     "note": "三四区·小问题；三维几何构造问题，直观可试；与已知的\"多面体内接矩形\"定理（Pak 讲义引 Emch 型结果）相邻——四不同面条件是剩余内容。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有凸多面体证明存在这样的正方形，或构造一个不含这种正方形的凸多面体。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

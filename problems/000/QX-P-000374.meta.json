@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000374",
-  "revision": 1,
-  "card_rev": "a4db81f526f8d32b",
+  "revision": 2,
+  "card_rev": "77e095292b18a895",
   "title": "batch_I I-004：覆盖凸体 K 的 plank 族，其\"相对宽度\"（plank 宽度除以 K 在该方向宽度）之和是否必",
-  "title_en": null,
+  "title_en": "Bang's plank problem: must relative widths of planks covering a convex body sum to at least 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -115,11 +118,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "52A40",
+      "52A10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "凸几何 / 离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Tarski 板问题",
+      "Bang 定理",
+      "plank 覆盖",
+      "相对宽度",
+      "凸体"
+    ],
+    "en": [
+      "Tarski's plank problem",
+      "Bang's theorem",
+      "plank coverings",
+      "relative widths",
+      "convex bodies"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -127,7 +150,12 @@
     "note": "一区二区·难度待定；Bang 1951 论文末段遗留问题；Fedor Petrov 与 arXiv 2201.08823（2022）双双确认一般情形开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何覆盖凸体 K 的 plank 族，其相对宽度之和必不小于 1，或给出一个总和小于 1 的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

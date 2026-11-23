@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001996",
-  "revision": 1,
-  "card_rev": "e440a850cf98bb11",
+  "revision": 2,
+  "card_rev": "f6522ddcae432abb",
   "title": "离散化群上同调的集合论依赖",
-  "title_en": null,
+  "title_en": "Set-theoretic dependence of cohomology of discretised groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "55N10",
+    "secondary": [
+      "03E75",
+      "20J06"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑/逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群上同调",
+      "集合论独立性",
+      "离散化",
+      "公理依赖",
+      "拓扑群"
+    ],
+    "en": [
+      "group cohomology",
+      "set-theoretic independence",
+      "discretisation",
+      "axiom dependence",
+      "topological groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "明确指出所讨论的群与上同调群，给出两个都满足 ZFC 的集合论模型使其答案相反（或用一致性强度证明这种独立性），或证明该上同调群与公理选择无关。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

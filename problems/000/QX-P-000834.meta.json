@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000834",
-  "revision": 1,
-  "card_rev": "9307f23d9ee03049",
+  "revision": 2,
+  "card_rev": "affd911779b143bd",
   "title": "Green 问题 39：随机 √p 集的 100√p 个平移能否几乎必然覆盖 Z/pZ",
-  "title_en": null,
+  "title_en": "Green problem 39: covering Z/pZ by few translates of a random sqrt(p)-set",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "60C05",
+    "secondary": [
+      "11B13",
+      "05D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "概率组合/加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "随机子集",
+      "平移覆盖",
+      "覆盖数",
+      "Z/pZ",
+      "概率方法"
+    ],
+    "en": [
+      "random subset",
+      "translate covering",
+      "covering number",
+      "Z/pZ",
+      "probabilistic method"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；Green 2010 Barbados 提出，\"即使 100 换 1.01 也不会做\"（原注）；覆盖常数与随机集加性基理论衔接；模拟门槛低、理论缺口大。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明当 p→∞ 时存在 100√p 个 A 的平移覆盖 Z/pZ 的概率趋于 1，或证明这个概率不趋于 1。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

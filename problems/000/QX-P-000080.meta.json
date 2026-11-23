@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000080",
-  "revision": 1,
-  "card_rev": "06f6455c86debc28",
+  "revision": 2,
+  "card_rev": "eeebc303af83fb36",
   "title": "Kourovka 4.65：Feit–Thompson 猜想 (p^q−1)/(p−1)∤(q^p−1)/(q−1)",
-  "title_en": null,
+  "title_en": "Kourovka 4.65 (Thompson): (p^q-1)/(p-1) never divides (q^p-1)/(q-1)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A07",
+    "secondary": [
+      "20D20",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Feit–Thompson 猜想",
+      "整除性",
+      "奇阶群",
+      "素数幂",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "Feit-Thompson conjecture",
+      "divisibility",
+      "odd order groups",
+      "prime powers",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +159,12 @@
     "note": "一区二区·易证明；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。A层画像：可计算/数表/构造验证型。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意两个不同的素数 p、q，都有 (p^q−1)/(p−1) ∤ (q^p−1)/(q−1)；或给出一对素数使该整除成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

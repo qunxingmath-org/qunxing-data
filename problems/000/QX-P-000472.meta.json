@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000472",
-  "revision": 1,
-  "card_rev": "1072dc932baf9cba",
+  "revision": 2,
+  "card_rev": "b1884c3e61793ab9",
   "title": "Bugeaud 问题 10.6：极快增长且对一切无理 ξ 稠密的整数列",
-  "title_en": null,
+  "title_en": "A fast-growing integer sequence whose multiples are dense mod 1 for every irrational",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11K06",
+    "secondary": [
+      "11J71",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "均匀分布",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "稠密性",
+      "模 1 分布",
+      "整数列",
+      "无理性",
+      "构造"
+    ],
+    "en": [
+      "density modulo one",
+      "fractional parts",
+      "integer sequences",
+      "irrationality",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；Furstenberg 型普遍序列构造问题，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式构造出这样一条增长极快的整数列 (mₙ) 并证明对每个无理 ξ，{ξmₙ} 在 [0,1) 中稠密；或证明这样的列不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

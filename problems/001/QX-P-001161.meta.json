@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001161",
-  "revision": 1,
-  "card_rev": "840f31a38e3338a2",
+  "revision": 2,
+  "card_rev": "c7320795b2691a3c",
   "title": "Kourovka 20.20：E(l,m,n)=⟨a,b|a^l,(ab)^m=b^n⟩ 何时 shortlex 自动",
-  "title_en": null,
+  "title_en": "For which (l,m,n) is the group E(l,m,n) = <a,b | a^l, (ab)^m = b^n> shortlex automatic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -125,11 +128,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F65",
+    "secondary": [
+      "20F05",
+      "20F10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "shortlex 自动群",
+      "群表现",
+      "三角群型",
+      "自动结构",
+      "双曲性"
+    ],
+    "en": [
+      "shortlex automatic groups",
+      "group presentations",
+      "triangle-type groups",
+      "automatic structures",
+      "hyperbolicity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +160,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出满足 1/l+1/m+1/n<1 且使 E(l,m,n) 为 shortlex 自动的一组 (l,m,n) 并证明，或证明这样的三元组不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

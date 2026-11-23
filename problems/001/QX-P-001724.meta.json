@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001724",
-  "revision": 1,
-  "card_rev": "614aaa8f423f3ddd",
+  "revision": 2,
+  "card_rev": "fa9430743f00cf11",
   "title": "⌊n·sin n⌋ 是否满射 N→Z",
-  "title_en": null,
+  "title_en": "Is the map n -> floor(n sin n) from N to Z surjective?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J72",
+    "secondary": [
+      "11K60",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "下取整",
+      "sin n",
+      "满射",
+      "丢番图逼近",
+      "整数值序列"
+    ],
+    "en": [
+      "floor function",
+      "sin n",
+      "surjectivity",
+      "Diophantine approximation",
+      "integer sequences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个整数 m 都存在 n 使 ⌊n·sin n⌋=m，或给出一个取不到的整数 m。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001990",
-  "revision": 1,
-  "card_rev": "895bc57235c6441f",
+  "revision": 2,
+  "card_rev": "c7cf8dcdf573c830",
   "title": "任意 3 维凸体能否被四面体笼困住",
-  "title_en": null,
+  "title_en": "Can every three-dimensional convex body be caged by a tetrahedron?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B10",
+    "secondary": [
+      "52A20"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸体",
+      "四面体",
+      "笼",
+      "内接多面体",
+      "三维凸几何"
+    ],
+    "en": [
+      "convex bodies",
+      "tetrahedra",
+      "cages",
+      "inscribed polytopes",
+      "three-dimensional convex geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个三维凸体都存在一个四面体笼，或构造一个三维凸体并证明它没有四面体笼。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

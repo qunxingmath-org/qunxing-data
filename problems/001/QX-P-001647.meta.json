@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001647",
-  "revision": 1,
-  "card_rev": "2257f980a41902cd",
+  "revision": 2,
+  "card_rev": "6ec70534f7d25aae",
   "title": "Heilbronn 三角形问题（CPZ 两连跳；AlphaEvolve 变体 SOTA）",
-  "title_en": null,
+  "title_en": "Heilbronn's triangle problem: maximizing the smallest triangle area",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "52A40",
+      "68U05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Heilbronn 三角形问题",
+      "最小三角形面积",
+      "单位正方形",
+      "极限",
+      "最优构型"
+    ],
+    "en": [
+      "Heilbronn triangle problem",
+      "smallest triangle area",
+      "unit square",
+      "optimal configurations"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -73,7 +95,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 Δ(n)·n² 的精确增长阶与常数（给出匹配的上下界），或显著改进现有界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

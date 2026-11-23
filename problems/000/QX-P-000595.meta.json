@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000595",
-  "revision": 1,
-  "card_rev": "89efc217382d5252",
+  "revision": 2,
+  "card_rev": "35059f145bff8712",
   "title": "（来源 C-002）n≥3 时是否恒有 ⌊7^n/2^n⌋ mod 2^n ≠ 0？",
-  "title_en": null,
+  "title_en": "Is floor(7^n/2^n) mod 2^n always nonzero for n >= 3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A07",
+    "secondary": [
+      "11B65",
+      "11A63"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（2-adic 分析/模幂）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "模幂",
+      "2-adic 展开",
+      "取整",
+      "同余"
+    ],
+    "en": [
+      "modular exponentiation",
+      "2-adic expansion",
+      "floor function",
+      "congruences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +125,12 @@
     "note": "三四区·小问题；孤立小问题：4 个回答均只给部分思路（二项式展开、进制重述、到 n=2^17 的搜索），无证明。可做三四区级结果：如用 2-adic 对数/指数逼近证明对充分大 n 成立、或刻画 r_n 的循环结构。Gottfried Helms 的残数分类（仅需检验 r≡1,7 mod 16）是明确可延续的方法路线。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对一切 n≥3 该余数都不为零，或给出一个使余数为零的具体 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000201",
-  "revision": 1,
-  "card_rev": "93f568b8d7f1467c",
+  "revision": 2,
+  "card_rev": "5ecc6bc496782cec",
   "title": "平面图的障碍数（原批次 A-062）",
-  "title_en": null,
+  "title_en": "Is there a planar graph with obstacle number greater than 1, or a uniform bound?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -108,11 +111,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C62",
+    "secondary": [
+      "52C99",
+      "05C10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散几何/图绘制（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "障碍数",
+      "平面图",
+      "图绘制",
+      "无障碍绘制",
+      "上界"
+    ],
+    "en": [
+      "obstacle number",
+      "planar graphs",
+      "graph drawing",
+      "obstacle representations",
+      "upper bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -120,7 +143,12 @@
     "note": "一区二区·难度待定；15 年无任何平面图被证障碍数 >1；一般图障碍数计数/界工具重（Balko 等 SIAM JDM 2024）；非易证明。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个障碍数至少为 2 的平面图（或证明每个平面图的障碍数都不超过某个常数），并相应回答统一上界是否存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000814",
-  "revision": 1,
-  "card_rev": "260968fe7f2e0215",
+  "revision": 2,
+  "card_rev": "5b1b7d39d0ec0a8c",
   "title": "TPTP GRA 开放族：七个小 Ramsey 数下界任务 R(s,t) > 256（THF 有限图编码）",
-  "title_en": null,
+  "title_en": "Seven Ramsey lower bounds R(s,t) > 256 in finite-graph form",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -151,11 +154,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C55",
+    "secondary": [
+      "05D10",
+      "68T15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Ramsey理论/自动定理证明",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Ramsey 数",
+      "下界构造",
+      "二染色",
+      "有限图编码",
+      "自动定理证明"
+    ],
+    "en": [
+      "Ramsey numbers",
+      "lower bound construction",
+      "two-colouring",
+      "finite graph encoding",
+      "automated theorem proving"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -163,7 +186,12 @@
     "note": "三四区·小问题；有限存在性目标： 显式构造/半染色/循环群构造可攻，SAT 化编码规模约 256×255/2 可分片；若 256 已低于文献已知下界则任务已被数学解决（见风险注记）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对七组 (s,t) 各给出 256 个顶点上的显式二染色，使红色无 K_s 且蓝色无 K_t（从而 R(s,t)≥257）；或说明其中某一组无法做到。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

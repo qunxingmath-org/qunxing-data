@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000886",
-  "revision": 1,
-  "card_rev": "5ceb275de1e52417",
+  "revision": 2,
+  "card_rev": "e43d2cbd5bfbc441",
   "title": "最小度 ≥3 图中 girth−diameter 能否任意大（OWR 2020/1）",
-  "title_en": null,
+  "title_en": "Can girth minus diameter be arbitrarily large in graphs of minimum degree at least 3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -90,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C12",
+      "05C38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（极值图/度量）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "围长",
+      "直径",
+      "最小度",
+      "度量图论"
+    ],
+    "en": [
+      "girth",
+      "diameter",
+      "minimum degree",
+      "metric graph theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +123,12 @@
     "note": "三四区·小问题；简洁的极值问题；高围长正则图构造不直接给出 girth−diam 平衡；Linial–Simkin 2020 高围长正则图为相邻；构造/否定双轨。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个整数 N 构造出最小度 ≥3、且 girth(G)−diam(G) ≥ N 的图；或证明这样的差值有一致的上界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

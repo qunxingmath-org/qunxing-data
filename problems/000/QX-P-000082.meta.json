@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000082",
-  "revision": 1,
-  "card_rev": "6d10896ff9a1f3c3",
+  "revision": 2,
+  "card_rev": "87a0e54d36cd6740",
   "title": "Kourovka 12.23：Sₙ 的可置换指数（Gutsan）",
-  "title_en": null,
+  "title_en": "Kourovka 12.23 (Gutsan): determining the index of permutability of the symmetric group S_n",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -125,11 +128,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B30",
+    "secondary": [
+      "20F99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可置换指数",
+      "对称群",
+      "乘积重排",
+      "最小整数",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "index of permutability",
+      "symmetric groups",
+      "rearranged products",
+      "minimal integer",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +159,12 @@
     "note": "一区二区·易证明；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。A层画像：可计算/数表/构造验证型。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n 确定 S_n 的可置换指数（给出关于 n 的显式公式或完整判定）；或给出使该指数存在/不存在的判定依据。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

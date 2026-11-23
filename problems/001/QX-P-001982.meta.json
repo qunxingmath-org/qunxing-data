@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001982",
-  "revision": 1,
-  "card_rev": "162f110603e191b3",
+  "revision": 2,
+  "card_rev": "f12fd273e7250f4a",
   "title": "S² 去 n≥3 点完备洛伦兹度量",
-  "title_en": null,
+  "title_en": "Complete Lorentzian metrics on the sphere minus n >= 3 points",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C50",
+    "secondary": [
+      "53B30",
+      "53C23"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "洛伦兹度量",
+      "测地完备性",
+      "球面",
+      "穿孔曲面",
+      "因果结构"
+    ],
+    "en": [
+      "Lorentzian metrics",
+      "geodesic completeness",
+      "the sphere",
+      "punctured surfaces",
+      "causality"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n≥3 在 S² 去掉 n 个点的曲面上显式构造一个测地完备的洛伦兹度量并验证完备性，或证明这样的度量不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

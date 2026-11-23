@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000899",
-  "revision": 1,
-  "card_rev": "5f277d8f0d657a4b",
+  "revision": 2,
+  "card_rev": "3a79ed9d38a25a31",
   "title": "OWR 2022/50：联立丢番图逼近（独立分母）的零一律",
-  "title_en": null,
+  "title_en": "A zero-one law for simultaneous Diophantine approximation with independent denominators",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -90,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J83",
+    "secondary": [
+      "28A78",
+      "11J13"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "丢番图逼近（度量理论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "联立丢番图逼近",
+      "零一律",
+      "上极限集",
+      "测度论",
+      "独立分母"
+    ],
+    "en": [
+      "simultaneous Diophantine approximation",
+      "zero-one law",
+      "limsup sets",
+      "measure theory",
+      "independent denominators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +124,12 @@
     "note": "三四区·小问题；Khintchine 型零一律在\"独立分母 q_j\"联立设置的推广；非退化 f 的测度论等价；Khintchine–Groshev 工具链成熟但本设置奇异。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该上极限集 A* 在 Σh^{n−1}ψ(h) 收敛时测度为零、发散时具有满测度，从而建立所要求的零一律。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

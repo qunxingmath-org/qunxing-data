@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001933",
-  "revision": 1,
-  "card_rev": "c296dc0ec8257c95",
+  "revision": 2,
+  "card_rev": "13a2152d05d4dce3",
   "title": "连乘比数整数数组分类",
-  "title_en": null,
+  "title_en": "Classifying integer-valued products (prod a_i - 1)/(prod (a_i - 1))",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D72",
+    "secondary": [
+      "11D68"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "丢番图方程",
+      "整数分类",
+      "连乘比",
+      "埃及分数"
+    ],
+    "en": [
+      "Diophantine equations",
+      "integer classification",
+      "product ratios",
+      "Egyptian fractions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +98,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n≥2 给出满足条件的递增整数组 (a₁,…,a_n) 的完整清单，并证明没有遗漏。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

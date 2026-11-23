@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000063",
-  "revision": 1,
-  "card_rev": "2158f7bce6c076ff",
+  "revision": 2,
+  "card_rev": "b935fce7e86f0284",
   "title": "15.29 除 D₈ 外还有 G≅Aut(G) 的 p-群吗",
-  "title_en": null,
+  "title_en": "Kourovka 15.29 (Mann): are there p-groups other than D_8 isomorphic to their own automorphism group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20D15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自同构群",
+      "p-群",
+      "完全群",
+      "二面体群 D8",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "automorphism groups",
+      "p-groups",
+      "complete groups",
+      "dihedral group D8",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·易证明；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个不同于 D₈ 的非平凡有限 p-群 G 并证明 G ≅ Aut(G)；或证明 D₈ 是唯一的这种群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

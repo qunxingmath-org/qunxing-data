@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000883",
-  "revision": 1,
-  "card_rev": "7050186b5c14f5cc",
+  "revision": 2,
+  "card_rev": "fd26265d49c7416c",
   "title": "R³ 中\"几乎不交\"几何三角形最大数是否 o(n²)（OWR 2024/3）",
-  "title_en": null,
+  "title_en": "Is the maximum number of almost-disjoint geometric triangles in R^3 equal to o(n^2)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -90,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C45",
+    "secondary": [
+      "05D05",
+      "52C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何（极值几何）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "几何三角形",
+      "几乎不交",
+      "极值几何",
+      "渐近上界"
+    ],
+    "en": [
+      "geometric triangles",
+      "almost disjoint",
+      "extremal geometry",
+      "asymptotic upper bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +123,12 @@
     "note": "三四区·小问题；Károlyi–Solymosi 2002 构造仅 n^{3/2}；证明 o(n²) 或给超线性构造双开放；与池内 C-426 halving-lines、B-1xx 单位距离族不同命题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 t(n)=o(n²)；或给出构造说明 t(n) 至少是 c·n²（推翻了这一断言）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

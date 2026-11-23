@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000021",
-  "revision": 1,
-  "card_rev": "98f6e03be1569c40",
+  "revision": 2,
+  "card_rev": "4b12bd25575ccd2c",
   "title": "Erdos P156: maximal Sidon set of size O(N^{1/3})",
-  "title_en": null,
+  "title_en": "Erdos P156: a maximal Sidon set in [1,N] of size O(N^(1/3))?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11B13"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / Sidon集",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "极大 Sidon 集",
+      "构造",
+      "量级上界",
+      "加性组合",
+      "Erdős 问题"
+    ],
+    "en": [
+      "maximal Sidon sets",
+      "construction",
+      "size bounds",
+      "additive combinatorics",
+      "Erdos problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·易证明；A层理由: 纯构造问题, 目标=对数因子消除(log因子); 贪心结构可控、Ruzsa构造为明确起点; 数值实验可搜索小N候选; 无需处理大参数族。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出绝对常数 C 和对每个 N 都成立的构造，使所得极大 Sidon 集大小不超过 C·N^(1/3)；或证明这样的 C 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000362",
-  "revision": 1,
-  "card_rev": "33844eeba8abd61d",
+  "revision": 2,
+  "card_rev": "238ec17d795635ee",
   "title": "Woodall猜想（dicut/dijoin-pack对偶）",
-  "title_en": null,
+  "title_en": "Woodall's conjecture: is the minimum dicut size equal to the maximum number of disjoint dijoins?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C70",
+      "90B10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有向图组合优化",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "dicut",
+      "dijoin",
+      "有向图",
+      "组合对偶",
+      "最小最大定理"
+    ],
+    "en": [
+      "dicut",
+      "dijoin",
+      "digraphs",
+      "combinatorial duality",
+      "min-max theorem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +135,12 @@
     "note": "一区二区·难度待定；B层：Lucchesi–Younger对偶的失败方向；2023-2025有'Approximately Packing Dijoins'（Cornuéjols–Karlin–Klein–Shapira等，IPCO 2024/Combinatorica 2025）逼近突破；特殊类（无环、Euler）已证。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有向图的最小 dicut 大小等于最大不相交 dijoin 个数，或给出一个使两者不等的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

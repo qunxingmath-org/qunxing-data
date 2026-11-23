@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001972",
-  "revision": 1,
-  "card_rev": "63d2c015a482788f",
+  "revision": 2,
+  "card_rev": "ec3d3d58b1843410",
   "title": "偶 b 的 b⁴+1 基2伪素数",
-  "title_en": null,
+  "title_en": "Is b^4 + 1 a base-2 pseudoprime for every even b?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A51",
+    "secondary": [
+      "11A07",
+      "11Y11"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "伪素数",
+      "基 2",
+      "b⁴+1",
+      "合数",
+      "费马小定理"
+    ],
+    "en": [
+      "pseudoprimes",
+      "base 2",
+      "b^4+1",
+      "compositeness",
+      "Fermat's little theorem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有符合条件的偶数 b 证明 b⁴+1 是合数且满足 2^{b⁴}≡1 (mod b⁴+1)，或给出一个使结论失败的偶数 b。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

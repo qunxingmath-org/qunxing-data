@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001763",
-  "revision": 1,
-  "card_rev": "0030384b8add143d",
+  "revision": 2,
+  "card_rev": "9e42194aeff91e64",
   "title": "PSL(3,R) 酉对偶分类",
-  "title_en": null,
+  "title_en": "The unitary dual of PSL(3,R): a complete classification",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22E46",
+    "secondary": [
+      "22D10",
+      "22E45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "表示论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "酉对偶",
+      "不可约酉表示",
+      "半单李群",
+      "PSL(3,R)"
+    ],
+    "en": [
+      "unitary dual",
+      "irreducible unitary representations",
+      "semisimple Lie groups",
+      "PSL(3,R)"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 PSL(3,R) 酉对偶的完整清单（每个不可约酉表示的参数化描述），并证明清单既无重复也无遗漏。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

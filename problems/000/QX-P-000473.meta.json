@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000473",
-  "revision": 1,
-  "card_rev": "51d4aa04e3556ef2",
+  "revision": 2,
+  "card_rev": "eb267278cf157c91",
   "title": "Bugeaud 问题 10.61/10.7：Pisot 数与 Cantor 集、非 Pisot 限制幂（2条合一）",
-  "title_en": null,
+  "title_en": "Pisot numbers and Cantor sets C(alpha): uniform distribution and non-Pisot alpha in a fixed interval",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11R06",
+    "secondary": [
+      "11J71",
+      "37A45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Pisot 数",
+      "C(α) Cantor 集",
+      "均匀分布",
+      "小数部分",
+      "动力系统"
+    ],
+    "en": [
+      "Pisot numbers",
+      "Cantor sets",
+      "uniform distribution",
+      "fractional parts",
+      "dynamical systems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；Pisot 谱系（C(α) 集上不均匀分布）与非 Pisot α 的区间限制幂，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "第 (1) 问对每个 α>2 的 Pisot 数与每个 ξ∈C(α) 给出不匀分布的证明；第 (2) 问构造出任意大的非 Pisot 实数 α 使 {α^n} 恒落在固定 ε-区间内，或证明不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

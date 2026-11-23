@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000526",
-  "revision": 1,
-  "card_rev": "dc18c6fbc8a4de08",
+  "revision": 2,
+  "card_rev": "d6ada9bd4f9a437e",
   "title": "双调制三线性 Hilbert 变换 HTHT^a 的完整 L^p 有界区域（端点）",
-  "title_en": null,
+  "title_en": "The complete L^p bounded range of the doubly modulated trilinear Hilbert transform HTHT^a",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "value"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "42B20",
+    "secondary": [
+      "42B25",
+      "47G10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "调和分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三线性 Hilbert 变换",
+      "双调制",
+      "L^p 有界性",
+      "奇异积分",
+      "端点情形"
+    ],
+    "en": [
+      "trilinear Hilbert transform",
+      "double modulation",
+      "L^p bounds",
+      "singular integrals",
+      "endpoint cases"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +138,12 @@
     "note": "一区二区·难度待定；Benea–Bernicot–Lie 2026-11 给出宽范围 L^p 界但精确端点未闭；调制不变三线性算子（trilinear HT 本体开放、oscillatory biest 2024-12 活跃）为领域核心前沿，具体单算子目标可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出算子 HTHT^a 在指数空间 (1/p,1/q,1/r,1/s) 中的精确有界区域（证明区域内所有点有界、区域外无界），或至少解决剩余的端点情形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

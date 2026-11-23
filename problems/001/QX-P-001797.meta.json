@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001797",
-  "revision": 1,
-  "card_rev": "4a8234cae2e264c4",
+  "revision": 2,
+  "card_rev": "4ea1002e57588340",
   "title": "\"每有界算子达范数\"的无穷维 Banach 空间",
-  "title_en": null,
+  "title_en": "Does an infinite-dimensional Banach space exist on which every bounded operator attains its norm?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46B04",
+    "secondary": [
+      "46B20",
+      "47A30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有界算子",
+      "达到范数",
+      "Banach 空间",
+      "紧性"
+    ],
+    "en": [
+      "bounded operators",
+      "norm attainment",
+      "Banach spaces",
+      "compactness"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个无穷维 Banach 空间并证明其上每个有界线性算子都达到范数，或证明这样的空间不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

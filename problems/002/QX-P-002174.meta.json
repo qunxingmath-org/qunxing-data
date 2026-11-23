@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002174",
-  "revision": 1,
-  "card_rev": "eac70cdadf56190a",
+  "revision": 2,
+  "card_rev": "b138d2f5924be48c",
   "title": "Ωˣ ≥_T 0″ 存在性（2005 著名未决）",
-  "title_en": null,
+  "title_en": "Is there a real X with Omega^X >=_T 0''?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D32",
+    "secondary": [
+      "03D30",
+      "68Q30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法随机性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Chaitin Omega 数",
+      "图灵归约",
+      "停机问题",
+      "算法随机性",
+      "度数结构"
+    ],
+    "en": [
+      "Chaitin's Omega",
+      "Turing reducibility",
+      "halting problem",
+      "algorithmic randomness",
+      "degree structure"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在写明对 X 的附加限制后，构造一个 X 使 Ω^X ≥_T 0″（或证明该问题按标准相对化即自动成立，并说明原题所指的限制），否则证明这样的 X 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

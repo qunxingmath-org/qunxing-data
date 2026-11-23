@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002246",
-  "revision": 1,
-  "card_rev": "4f66265bafe655fb",
+  "revision": 2,
+  "card_rev": "8a821b8ab9366f63",
   "title": "n+1 与 nφ(n)+1 均平方 ⇔ 孪生素数积？",
-  "title_en": null,
+  "title_en": "Are n+1 and n*phi(n)+1 both squares exactly when n is a product of twin primes?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11D09",
+      "11N32"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "欧拉函数",
+      "平方数",
+      "孪生素数",
+      "丢番图条件"
+    ],
+    "en": [
+      "Euler phi function",
+      "perfect squares",
+      "twin primes",
+      "Diophantine conditions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 n+1 与 nφ(n)+1 同时为平方数当且仅当 n 是孪生素数之积,或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

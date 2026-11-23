@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002159",
-  "revision": 1,
-  "card_rev": "90c7b1d902e2f498",
+  "revision": 2,
+  "card_rev": "2cbc908ca0a56088",
   "title": "Z^d 最优填充密度无理性（d=1 有理；d≥2 开放）",
-  "title_en": null,
+  "title_en": "Irrationality of the optimal packing density in Z^d",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "value"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "05B40",
+      "11H31"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "填充密度",
+      "格填充",
+      "超球",
+      "无理性",
+      "离散几何"
+    ],
+    "en": [
+      "packing density",
+      "lattice packings",
+      "hyperspheres",
+      "irrationality",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定的维数 d 确定最优填充密度，并判定它是有理数还是无理数；或对某一族 d 给出无理性的证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

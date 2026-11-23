@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000044",
-  "revision": 1,
-  "card_rev": "57411ad9f4f60ebd",
+  "revision": 2,
+  "card_rev": "d53abe7d79fad14c",
   "title": "Riesel数509203的最小性",
-  "title_en": null,
+  "title_en": "Is 509203 the smallest Riesel number?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A51",
+    "secondary": [
+      "11N25",
+      "11Y11"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（素数/覆盖集）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Riesel 数",
+      "覆盖集",
+      "Sierpinski 问题",
+      "素数搜索",
+      "计算数论"
+    ],
+    "en": [
+      "Riesel numbers",
+      "covering systems",
+      "Sierpinski problem",
+      "prime search",
+      "computational number theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +135,12 @@
     "note": "一区二区·易证明；A层（初等有限验证）：509203是已知最小Riesel数（有覆盖集证明全部n为合数）；最小性归结为对剩余41个候选k（2024-08状态）逐一找到n使k·2^n−1为素数——Proth定理+PrimeGrid流水线现成，纯粹分布式计算目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 1 < k < 509203 的奇数 k 给出一个 n ≥ 1 使 k·2^n − 1 为素数；或给出一个更小的 Riesel 数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

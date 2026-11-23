@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001592",
-  "revision": 1,
-  "card_rev": "1ee7b42ca421277c",
+  "revision": 2,
+  "card_rev": "32be26af90ef1453",
   "title": "21.108 常数 k 能否取 4：|π(G)|≤k·σ(G)",
-  "title_en": null,
+  "title_en": "Can the constant k in |pi(G)| <= k * sigma(G) be taken as 4?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "decide"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D60",
+      "20C20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不可约特征标",
+      "码次数",
+      "素因子集合",
+      "有限群",
+      "常数估计"
+    ],
+    "en": [
+      "irreducible characters",
+      "codegrees",
+      "prime divisors",
+      "finite groups",
+      "constant bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；σ(G)=max{|π(m)|: m∈Cod(G)}。已知 |π(G)|≤k·σ(G)（Yang–Qian 2017）但…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有有限群 G 都有 |π(G)| ≤ 4σ(G)；或给出一个使 |π(G)| > 4σ(G) 的有限群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000446",
-  "revision": 1,
-  "card_rev": "0a543758e1ef9269",
+  "revision": 2,
+  "card_rev": "711c9e26cdfa2d65",
   "title": "Maxwell 猜想（三点电荷势的临界点数 ≤4）",
-  "title_en": null,
+  "title_en": "Maxwell's conjecture: at most four critical points for three point charges",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "31B15",
+    "secondary": [
+      "14P25",
+      "58E05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "势理论/实代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Maxwell 猜想",
+      "点电荷",
+      "静电势",
+      "临界点",
+      "实代数几何"
+    ],
+    "en": [
+      "Maxwell's conjecture",
+      "point charges",
+      "electrostatic potential",
+      "critical points",
+      "real algebraic geometry"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；James Clerk Maxwell 经典猜想（1873），实代数几何/势论工具已有部分推进（平面/特殊构型）。【2026-11-21 修正】一般 (n−1)² 形式（Gabrielov–Novikov–Shapiro 表述）已被 Arathoon–Ball–Kvalheim 反例否定（arXiv:2607.27197，2026-07：5 点电荷 Morse 势含 ≥24>(5−1)²=16 个非退化临界点；FC 逐文件核录 maxwell_conjecture = research solved（反例型））；本条目的精确命题（三点电荷 ≤4）在 FC 中仍标 research open（variants.three_charges）——三点情形开放不变，但'一般情形著名开放'表述已失实。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明三个任意强度点电荷的势在所有临界点非退化时至多只有 4 个临界点，或给出一个含 5 个以上非退化临界点的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

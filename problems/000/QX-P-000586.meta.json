@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000586",
-  "revision": 1,
-  "card_rev": "8d31fd4563768b0d",
+  "revision": 2,
+  "card_rev": "40026886f5f2b7e4",
   "title": "Berge 强路分划猜想（k-范数正交染色）",
-  "title_en": null,
+  "title_en": "Berge's strong path partition conjecture: orthogonal partial k-colorings for minimum k-norm path partitions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C15",
+      "05C38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有向图/染色",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "路分划",
+      "k-范数",
+      "正交染色",
+      "有向图",
+      "稳定集"
+    ],
+    "en": [
+      "path partitions",
+      "k-norm",
+      "orthogonal colorings",
+      "digraphs",
+      "stable sets"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +141,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 EGRES 开放题；Gallai–Milgram/Berge 路分划族"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有有限无环有向图和所有正整数 k 证明该猜想，或给出一个最小 k-范数路分划不存在正交部分 k-染色的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

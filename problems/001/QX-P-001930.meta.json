@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001930",
-  "revision": 1,
-  "card_rev": "71eb2a8c895bae28",
+  "revision": 2,
+  "card_rev": "26649dfcef65c65c",
   "title": "n²∥σ(n)^{σ(n)}−1",
-  "title_en": null,
+  "title_en": "Does n^2 divide sigma(n)^(sigma(n)) - 1 for some n > 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11A07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "除数和函数",
+      "同余",
+      "平方整除",
+      "存在性"
+    ],
+    "en": [
+      "divisor sum function",
+      "congruences",
+      "square divisibility",
+      "existence"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +98,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "找到一个 n>1 使 n² 整除 σ(n)^{σ(n)}−1，或证明对任何 n>1 都不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

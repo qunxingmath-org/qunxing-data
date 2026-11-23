@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000832",
-  "revision": 1,
-  "card_rev": "51b15a413b157f2b",
+  "revision": 2,
+  "card_rev": "de5a5730205fc575",
   "title": "Green 问题 88：[N]^3 中\"两向可比\"三元组集的上界（Gowers–Long 问题）",
-  "title_en": null,
+  "title_en": "Green problem 88: bounding comparable sets in [N]^3 (Gowers-Long)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D99",
+    "secondary": [
+      "06A07",
+      "11B30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "极组合/偏序（Gowers–Long）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可比集",
+      "坐标偏序",
+      "上界",
+      "Gowers–Long",
+      "极组合"
+    ],
+    "en": [
+      "comparable set",
+      "coordinate order",
+      "upper bound",
+      "Gowers-Long",
+      "extremal combinatorics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Po-Shen Loh 引发的 Gowers–Long 问题族最基本成员；注意\"可比\"定义为差向量含两个严格正或两个严格负分量（Green 原文，HF 数据集转写有误已修正）；Delsarte 谱方法阈值以下的结构是攻坚点。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在 δ>0 使任何满足该可比条件的 S⊂[N]³ 都有 |S| ≤ N^{2−δ}，或构造出大小为 N² 量级的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

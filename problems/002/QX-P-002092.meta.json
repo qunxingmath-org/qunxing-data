@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002092",
-  "revision": 1,
-  "card_rev": "34f113d9f7f15146",
+  "revision": 2,
+  "card_rev": "ce27962c90e17ce4",
   "title": "s_n 素数项分布猜想（题面修正）",
-  "title_en": null,
+  "title_en": "How often is the partial sum of the first n primes prime?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41",
+      "11P32"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数和",
+      "部分和",
+      "素数分布",
+      "计数函数",
+      "稀疏数列"
+    ],
+    "en": [
+      "sums of primes",
+      "partial sums",
+      "distribution of primes",
+      "counting function",
+      "sparse sequences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 s_n 中素数的出现情况（是否无穷多个，以及计数函数的渐近式或上下界），并给出证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001729",
-  "revision": 1,
-  "card_rev": "b34c07c20b05a00c",
+  "revision": 2,
+  "card_rev": "3933eaae239f9a40",
   "title": "两种凸多边形共铺边数上界",
-  "title_en": null,
+  "title_en": "How many sides can a convex polygon have if two convex polygons tile the plane?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C20",
+    "secondary": [
+      "05B45",
+      "52A10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平面铺砌",
+      "凸多边形",
+      "边数",
+      "tiling",
+      "组合几何"
+    ],
+    "en": [
+      "tilings",
+      "convex polygons",
+      "number of sides",
+      "tessellations",
+      "combinatorial geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定这样一对凸多边形中某一块的边数上界（并给出达到该上界的铺砌实例），或给出更强的上界证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

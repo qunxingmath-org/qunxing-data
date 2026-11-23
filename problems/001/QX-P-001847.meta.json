@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001847",
-  "revision": 1,
-  "card_rev": "0fe28d1ced4b4aa7",
+  "revision": 2,
+  "card_rev": "e1a8d883ca701c38",
   "title": "{σ(n)/φ(n)} 是否恰为 {r∈Q: r≥1}",
-  "title_en": null,
+  "title_en": "Is the set of ratios sigma(n)/phi(n) exactly the rationals at least 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11N37",
+      "11B75"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "除数和函数",
+      "欧拉函数",
+      "比值取值",
+      "有理数集"
+    ],
+    "en": [
+      "sum of divisors",
+      "Euler totient",
+      "values of arithmetic functions",
+      "rationals"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有理数 r≥1 都等于某个 σ(n)/φ(n)，或给出一个取不到的有理数 r≥1 并证明之。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

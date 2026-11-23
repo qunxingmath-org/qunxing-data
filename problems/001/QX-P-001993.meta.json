@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001993",
-  "revision": 1,
-  "card_rev": "6610a5444d00723b",
+  "revision": 2,
+  "card_rev": "0fe22ad1e8389c7b",
   "title": "无有理点光滑真 Z-概形维数上限",
-  "title_en": null,
+  "title_en": "How large can the dimension be for smooth proper Z-schemes with no rational point?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "existence"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14G05",
+    "secondary": [
+      "11G35",
+      "14F20"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Z-概形",
+      "有理点",
+      "光滑真态射",
+      "维数上界",
+      "局部-整体原则"
+    ],
+    "en": [
+      "Z-schemes",
+      "rational points",
+      "smooth proper morphisms",
+      "dimension bounds",
+      "local-global principles"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "定出这类无有理点的光滑真 Z-概形的最大维数（或给出其确切上界），并构造达到该维数的例子，或证明界可以任意大。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

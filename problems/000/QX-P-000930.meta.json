@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000930",
-  "revision": 1,
-  "card_rev": "7b02e88a74a38329",
+  "revision": 2,
+  "card_rev": "5952f901b49c28cc",
   "title": "Kourovka 19.51：单项群可解(Taketa)",
-  "title_en": null,
+  "title_en": "Kourovka 19.51: normally and subnormally monomial groups with unbounded lengths",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20C15",
+      "20F18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单项群",
+      "正规单项",
+      "次正规单项",
+      "派生长",
+      "幂零长"
+    ],
+    "en": [
+      "monomial groups",
+      "normally monomial",
+      "subnormally monomial",
+      "derived length",
+      "nilpotency class"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (a) 对给定素数 p 造出派生长任意大的正规单项有限 p-群（或证明不可能）；对 (b) 造出幂零长任意大的次正规单项群（或证明不可能）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

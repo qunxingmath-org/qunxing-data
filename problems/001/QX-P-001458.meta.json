@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001458",
-  "revision": 1,
-  "card_rev": "054b65dd655b471a",
+  "revision": 2,
+  "card_rev": "89fce388e2e96e19",
   "title": "batch_I I-078：是否存在 n>1 使 gnu(n)=n（群完全数 group-perfect number：n 阶群的同",
-  "title_en": null,
+  "title_en": "Is there an integer n>1 with gnu(n)=n (a group-perfect number)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "20F99",
+      "11A25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论 / 计数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群的计数",
+      "gnu(n)",
+      "群完全数",
+      "阶为 n 的群",
+      "同构类"
+    ],
+    "en": [
+      "counting groups",
+      "gnu(n)",
+      "group-perfect numbers",
+      "groups of order n",
+      "isomorphism classes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Glen M Wilson 2010 引 Conway 等《Counting: Gnus, Moas, and other Exotica》；0 回答；Faisal/ Putman 评论确认开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "找到 n>1 使阶为 n 的群恰有 n 个同构类（并验证计数），或证明不存在这样的 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

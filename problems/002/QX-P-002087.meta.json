@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002087",
-  "revision": 1,
-  "card_rev": "41d97625dff82fb6",
+  "revision": 2,
+  "card_rev": "306df343c479c3ec",
   "title": "模 p 同构 ⇒ 微分同胚？",
-  "title_en": null,
+  "title_en": "Does isomorphism modulo p imply diffeomorphism?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14G20",
+    "secondary": [
+      "57R55",
+      "14F30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论几何/微分拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "模 p 约化",
+      "微分同胚",
+      "整模型",
+      "光滑流形",
+      "数论几何"
+    ],
+    "en": [
+      "reduction mod p",
+      "diffeomorphism",
+      "integral models",
+      "smooth manifolds",
+      "arithmetic geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在明确对象类别与附加假设后，证明模 p 同构蕴含相应的光滑流形微分同胚，或构造一对模 p 同构却彼此不微分同胚的对象。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

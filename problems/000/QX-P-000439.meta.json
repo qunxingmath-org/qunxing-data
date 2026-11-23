@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000439",
-  "revision": 1,
-  "card_rev": "47b86055f72d2418",
+  "revision": 2,
+  "card_rev": "a333d194a294b3ab",
   "title": "Barker 序列偶长情形：不存在长度 >4 的偶长 Barker 序列",
-  "title_en": null,
+  "title_en": "Even-length Barker sequences: none exist beyond length 4",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "94A55",
+    "secondary": [
+      "05B10",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合/信号处理",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Barker 序列",
+      "自相关",
+      "±1 序列",
+      "信号设计",
+      "长度限制"
+    ],
+    "en": [
+      "Barker sequences",
+      "autocorrelation",
+      "binary sequences",
+      "signal design",
+      "length constraints"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +134,12 @@
     "note": "一区二区·难度待定；【表述修正】采集条目称'偶长已解决、奇长仍开'——查新确认实为相反：奇长≤13 已由 Turyn–Storer (1961) 解决（Schmidt 2015 重证），偶长>4 为开放情形；经典难题（>60年），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有偶数 n>4 都不存在长度为 n 的 Barker 序列，或给出一个长度大于 4 的偶长 Barker 序列。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

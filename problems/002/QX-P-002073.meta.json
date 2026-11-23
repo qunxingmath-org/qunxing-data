@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002073",
-  "revision": 1,
-  "card_rev": "4d2b50f2fb442c4b",
+  "revision": 2,
+  "card_rev": "204e03bb2dccafe5",
   "title": "紧齐性底 U(1)-主丛全空间齐性？",
-  "title_en": null,
+  "title_en": "Is the total space of a U(1)-bundle over a compact homogeneous base homogeneous?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57S25",
+    "secondary": [
+      "55R15",
+      "57T15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "主丛",
+      "齐性空间",
+      "U(1)-丛",
+      "透镜空间",
+      "欧拉类"
+    ],
+    "en": [
+      "principal bundles",
+      "homogeneous spaces",
+      "U(1)-bundles",
+      "lens spaces",
+      "Euler class"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明紧齐性底空间上每个 U(1)-主丛的全空间都齐性，或给出一个全空间不齐性的具体主丛。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

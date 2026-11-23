@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000661",
-  "revision": 1,
-  "card_rev": "923c7becf1e30791",
+  "revision": 2,
+  "card_rev": "d61a5e000e79b7c6",
   "title": "18.61 有限子群皆类≤3 的 2-群是否幂零",
-  "title_en": null,
+  "title_en": "Is a 2-group nilpotent if all its finite subgroups are nilpotent of class at most 3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F19",
+    "secondary": [
+      "20D15",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "2-群",
+      "幂零类",
+      "有限子群",
+      "局部幂零"
+    ],
+    "en": [
+      "2-groups",
+      "nilpotency class",
+      "finite subgroups",
+      "local nilpotency"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的 2-群必幂零，或构造一个所有有限子群幂零类都不超过 3 却整体非幂零的 2-群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

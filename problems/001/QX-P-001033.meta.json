@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001033",
-  "revision": 1,
-  "card_rev": "905450fe0f25672c",
+  "revision": 2,
+  "card_rev": "183d4a190803c480",
   "title": "Kourovka 16.44：ZFC 中存在可数非离散拓扑群不含单聚点离散子集吗",
-  "title_en": null,
+  "title_en": "A ZFC example of a countable non-discrete topological group without discrete sets with one accumulation point?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22A05",
+    "secondary": [
+      "54H11",
+      "03E50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拓扑群",
+      "离散子集",
+      "聚点",
+      "Martin 公理",
+      "ZFC"
+    ],
+    "en": [
+      "topological groups",
+      "discrete subsets",
+      "accumulation points",
+      "Martin's Axiom",
+      "ZFC"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 ZFC 中构造一个可数非离散拓扑群，证明它不含只有一个聚点的离散子集；或证明在 ZFC 中这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

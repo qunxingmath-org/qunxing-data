@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000064",
-  "revision": 1,
-  "card_rev": "a00e929106263712",
+  "revision": 2,
+  "card_rev": "3ba921d99525ba2c",
   "title": "Rule 115 可逆二阶元胞自动机偶周期公式",
-  "title_en": null,
+  "title_en": "Rule 115 reversible second-order cellular automaton: the conjectured period of the configurations 1(01)^k",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -109,11 +112,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37B15",
+    "secondary": [
+      "68Q80",
+      "11B37"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "细胞自动机/离散动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "元胞自动机",
+      "规则 115",
+      "周期",
+      "二阶可逆",
+      "显式公式"
+    ],
+    "en": [
+      "cellular automata",
+      "rule 115",
+      "periods",
+      "second-order reversibility",
+      "explicit formulas"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -121,7 +144,12 @@
     "note": "一区二区·易证明；有限验证目标（CB 反例目标 finite）：小参数空间/有限组合搜索或显式公式判定，反例可机器核验；已有大范围计算验证作支撑。 有限验证目标（对给定 i 验证周期公式），CB 反例目标为单点数值验证；源 arXiv:2606.13159"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个自然数 i，构型 1(01)^{2i} 在规则 115 下的周期都等于 P(2i) = (2·4^{2i+2} − 7·4^{i+1} + 5)/3；或给出一个 i 使实际周期与公式不符。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

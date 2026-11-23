@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002185",
-  "revision": 1,
-  "card_rev": "5d2879db0942baa9",
+  "revision": 2,
+  "card_rev": "a3b0724f8b14f64f",
   "title": "oligomorphic 群拓扑同构是否光滑",
-  "title_en": null,
+  "title_en": "Is topological isomorphism of oligomorphic groups a smooth equivalence relation?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E15",
+    "secondary": [
+      "20B27",
+      "03C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Borel 归约",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "oligomorphic 群",
+      "拓扑同构",
+      "光滑等价关系",
+      "Borel 归约",
+      "自同构群"
+    ],
+    "en": [
+      "oligomorphic groups",
+      "topological isomorphism",
+      "smooth equivalence relations",
+      "Borel reducibility"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 oligomorphic 群的拓扑同构关系是光滑的（给出到某个标准 Borel 空间的完全不变量的 Borel 构造），或证明它不光滑（例如把某个不光滑的等价关系 Borel 归约到它）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

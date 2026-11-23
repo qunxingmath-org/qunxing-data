@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000851",
-  "revision": 1,
-  "card_rev": "136ce4d71d878b11",
+  "revision": 2,
+  "card_rev": "80abfa6ab2d24c31",
   "title": "桥少三次图的两完美匹配交不含奇割（OPG-543）",
-  "title_en": null,
+  "title_en": "Two perfect matchings whose intersection avoids odd edge cuts in bridgeless cubic graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "prove"
+  ],
+  "answer_type": "object",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C21",
+      "05C40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（匹配/流理论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "完美匹配",
+      "三次图",
+      "奇边割",
+      "无桥图",
+      "流理论"
+    ],
+    "en": [
+      "perfect matchings",
+      "cubic graphs",
+      "odd edge cuts",
+      "bridgeless graphs",
+      "flow theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Fan–Raspaud（三匹配空交）与 Berge–Fulkerson 覆盖谱系的交版本；Kaiser 2010 限制交研究为直接工具；Petersen 图/桥少三次图枚举可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个无桥三次图构造出两个完美匹配 M1、M2，使 M1∩M2 不含任何奇边割；或给出一个无法做到的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

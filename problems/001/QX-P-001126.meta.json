@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001126",
-  "revision": 1,
-  "card_rev": "fe7deaabb5f90def",
+  "revision": 2,
+  "card_rev": "c93e29d50d908273",
   "title": "Kourovka 13.1：U(ZG)→U(Z_pG) 模 p 约化同态的核与像",
-  "title_en": null,
+  "title_en": "Kernel and image of the reduction map from U(ZG) to U(Z_p G)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16U60",
+    "secondary": [
+      "20C05",
+      "16S34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单位群",
+      "整群环",
+      "模 p 约化",
+      "核与像",
+      "横截"
+    ],
+    "en": [
+      "unit groups",
+      "integral group rings",
+      "mod p reduction",
+      "kernel and image",
+      "transversal"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出该约化同态的核、像以及一个显式横截（像中每个元素的具体整数提升）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

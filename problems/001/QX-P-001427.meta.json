@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001427",
-  "revision": 1,
-  "card_rev": "502431ad91455f81",
+  "revision": 2,
+  "card_rev": "26727ee0d9f416eb",
   "title": "batch_I I-030：对平面二次多项式向量场（P(0,0)=Q(0,0)=0），在其相空间正则部分（去掉奇点）上是否存在黎",
-  "title_en": null,
+  "title_en": "Is every quadratic planar vector field the geodesic flow of some Riemannian metric off its singularities?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -87,7 +90,9 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 来源错配：卡片问“能否找到黎曼度量使轨道为测地线”，原文讲的是 Hilbert 第 16 问题与极限环。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -98,11 +103,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37C10",
+    "secondary": [
+      "53C22",
+      "34Cxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "动力系统 / 黎曼几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "多项式向量场",
+      "测地线",
+      "黎曼度量",
+      "极限环"
+    ],
+    "en": [
+      "polynomial vector fields",
+      "geodesics",
+      "Riemannian metrics",
+      "limit cycles"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Ali Taghavi 2017 提出（Hilbert 16 几何化方案）；0 回答；任意次情形已有否定例，二次情形开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有二次平面向量场构造出这样的黎曼度量，或给出一个无法成为任何度量测地线流的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -124,5 +152,6 @@
     "status_raw": "OPEN-WEAK",
     "imported_at": "2026-11-23",
     "possible_duplicates": []
-  }
+  },
+  "statement_disputed": true
 }

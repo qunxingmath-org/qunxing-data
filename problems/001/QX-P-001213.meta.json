@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001213",
-  "revision": 1,
-  "card_rev": "32c3999f9814ca0b",
+  "revision": 2,
+  "card_rev": "a50198da438a4096",
   "title": "Erdős–Oler猜想（三角形内装圆）",
-  "title_en": null,
+  "title_en": "The Erdos-Oler conjecture: packing unit circles into triangles at triangular numbers",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "05B40",
+      "52C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/填装",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "圆填装",
+      "三角形",
+      "Oler 不等式",
+      "三角形数",
+      "阶梯函数"
+    ],
+    "en": [
+      "circle packing",
+      "triangles",
+      "Oler's inequality",
+      "triangular numbers",
+      "step functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +117,12 @@
     "note": "三四区·小问题；C层：n为三角形数时的精确装圆断言——Oler不等式已证一般情形、等号情形（三角形数）为本条；计算+凸几何方法可及。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有三角形数 n 证明 A(n)=A(n−1)（给出达到 Oler 界的显式排布并证明最优），或给出一个使猜想失败的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000506",
-  "revision": 1,
-  "card_rev": "9740be5e05e64350",
+  "revision": 2,
+  "card_rev": "4276637914e88d87",
   "title": "ℤ^d 的 packing chromatic 数（d≥3 有限性）",
-  "title_en": null,
+  "title_en": "The packing chromatic number of Z^d for d >= 3: finiteness and exact value",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "decide"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -93,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C12",
+      "05C63"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图染色",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "packing 染色数",
+      "整数格",
+      "距离约束染色",
+      "无限图",
+      "有限性"
+    ],
+    "en": [
+      "packing chromatic number",
+      "integer lattice",
+      "distance colouring",
+      "infinite graphs",
+      "finiteness"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -105,7 +128,12 @@
     "note": "一区二区·难度待定；【表述修正】χρ(ℤ²)=15 已被 SAT cube-and-conquer 关闭（Subercaseaux–Heule 2022）——开放部分为 d≥3 的 ℤ^d packing chromatic 数有限性/取值；EXCLUDED-CHECK 裁决：与 B04 Hadwiger–Nelson 单位距离染色不同族，保留。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 d≥3 判定 χρ(ℤ^d) 是否有限，并给出确切值（至少要对某个 d≥3 给出确定结果），或证明对某个 d 该染色数无穷。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

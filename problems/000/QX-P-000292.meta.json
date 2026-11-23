@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000292",
-  "revision": 1,
-  "card_rev": "8a1373523ee2131a",
+  "revision": 2,
+  "card_rev": "d81194da33c6f9b0",
   "title": "度量 TSP 4/3 整性间隙猜想",
-  "title_en": null,
+  "title_en": "The 4/3 conjecture for the integrality gap of the metric TSP subtour LP",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -85,11 +88,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "90C27",
+    "secondary": [
+      "68W25",
+      "05C85"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合优化",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "旅行商问题",
+      "整性间隙",
+      "子回路消除 LP",
+      "度量 TSP"
+    ],
+    "en": [
+      "traveling salesman problem",
+      "integrality gap",
+      "subtour elimination LP",
+      "metric TSP"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -97,7 +118,12 @@
     "note": "一区二区·难度待定；subtour LP 整性间隙 ≤4/3：当前上界 ~1.5−ε 线（Karlin–Klein–Oveis Gharan 2021 突破后），4/3 是终极目标；近似算法社区最热目标之一，中间改进即顶会。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明所有度量 TSP 实例的 LP 最优值与最优路线长度之比不超过 4/3，或构造出比值更大的实例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

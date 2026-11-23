@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001624",
-  "revision": 1,
-  "card_rev": "071071dcd72b2eed",
+  "revision": 2,
+  "card_rev": "ef7eb0c285d94a76",
   "title": "Gilbreath 猜想",
-  "title_en": null,
+  "title_en": "Gilbreath's conjecture: every row of iterated prime gaps starts with 1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -109,11 +111,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Gilbreath 猜想",
+      "相邻素数差",
+      "迭代差分",
+      "素数序列",
+      "差分表"
+    ],
+    "en": [
+      "Gilbreath's conjecture",
+      "prime gaps",
+      "iterated differences",
+      "primes",
+      "difference tables"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -121,7 +143,12 @@
     "note": "A 层：一区二区、预期较易证明"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明迭代差分表中每一行的首项都为 1，或找出某一行首项不是 1 的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

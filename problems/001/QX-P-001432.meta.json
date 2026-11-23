@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001432",
-  "revision": 1,
-  "card_rev": "544d3fbb0a35f1f3",
+  "revision": 2,
+  "card_rev": "400829dd51169bed",
   "title": "batch_I I-039：二可数局部紧 Hausdorff 空间的商中，是否存在 Fréchet–Urysohn、Tychon",
-  "title_en": null,
+  "title_en": "A quotient of a second countable locally compact space: Frechet-Urysohn and Tychonoff but nowhere first countable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "54B15",
+    "secondary": [
+      "54D55",
+      "54D10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "一般拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "商映射",
+      "Fréchet–Urysohn 空间",
+      "Tychonoff 空间",
+      "第一可数性"
+    ],
+    "en": [
+      "quotient maps",
+      "Frechet-Urysohn spaces",
+      "Tychonoff spaces",
+      "first countability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +130,12 @@
     "note": "三四区·小问题；Douglas Somerset 2020 引 Arhangel'skii 2010（CMUC）Problems 5.14/5.15 问是否仍开放；0 回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出满足全部条件的商空间 Y，或证明这样的商空间不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

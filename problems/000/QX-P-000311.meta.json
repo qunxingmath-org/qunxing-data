@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000311",
-  "revision": 1,
-  "card_rev": "12e5e75e91f36683",
+  "revision": 2,
+  "card_rev": "1f13b3bb3abca88b",
   "title": "三维通用刚性组合刻画（3D Maxwell–Laman 类比）",
-  "title_en": null,
+  "title_en": "A combinatorial characterization of generic rigidity in R^3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify",
+    "special_case"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C25",
+    "secondary": [
+      "05C10",
+      "70B15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/刚性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "通用刚性",
+      "Laman 条件",
+      "Maxwell 计数",
+      "刚性图"
+    ],
+    "en": [
+      "generic rigidity",
+      "Laman condition",
+      "Maxwell counting",
+      "rigid graphs"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +116,12 @@
     "note": "一区二区·难度待定；2D Laman 定理 50 年无 3D 类比；著名未冻结（新压强/体应变工具近年活跃）；其任何结构性进展（必要条件族/特殊类刻画）皆可成文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个只依赖图的组合条件，并证明它恰好等价于该图在 R³ 中的通用刚性，或证明这样的组合判据不可能存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

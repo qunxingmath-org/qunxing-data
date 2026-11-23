@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000919",
-  "revision": 1,
-  "card_rev": "65736640620aeb00",
+  "revision": 2,
+  "card_rev": "73427a912910b04a",
   "title": "Kourovka 19.5：G 为无限多个有限生成交换群以 H 融合的自由积时，ψ(G) 是否等于 H 的挠子群",
-  "title_en": null,
+  "title_en": "Kourovka 19.5: psi of an amalgamated free product versus the torsion subgroup of H",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E06",
+    "secondary": [
+      "20K10",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "融合自由积",
+      "挠子群",
+      "Frattini 子群",
+      "交换群",
+      "无限自由积"
+    ],
+    "en": [
+      "amalgamated free products",
+      "torsion subgroup",
+      "Frattini subgroup",
+      "abelian groups",
+      "infinite free products"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在这类融合自由积中 ψ(G) 恒等于 H 的挠子群，或给出一个使二者不相等的具体构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001718",
-  "revision": 1,
-  "card_rev": "993d65d1cd62f19c",
+  "revision": 2,
+  "card_rev": "2a3035729e32fa1d",
   "title": "中心三角形周围占位博弈必胜策略",
-  "title_en": null,
+  "title_en": "Which player wins when equilateral triangles are packed around an initial one?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "91A46",
+    "secondary": [
+      "52C15",
+      "91A05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "博弈论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "占位博弈",
+      "等边三角形",
+      "必胜策略",
+      "不重叠",
+      "组合博弈"
+    ],
+    "en": [
+      "placement game",
+      "equilateral triangles",
+      "winning strategy",
+      "non-overlapping",
+      "combinatorial games"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "指出哪一方拥有必胜策略，并给出完整策略及其必胜性证明（说明对手任何应对都会输），或证明游戏可无限进行、双方均无必胜策略。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

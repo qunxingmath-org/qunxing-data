@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000863",
-  "revision": 1,
-  "card_rev": "4b9e594ac741657a",
+  "revision": 2,
+  "card_rev": "06de7c82740a5a5e",
   "title": "幸运素数是否无穷多（Gardiner–Lazarus–Metropolis–Ulam 筛）",
-  "title_en": null,
+  "title_en": "Are there infinitely many lucky primes?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N35",
+    "secondary": [
+      "11A41",
+      "11N05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（筛序列）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幸运数筛",
+      "幸运素数",
+      "筛法",
+      "素数无穷性"
+    ],
+    "en": [
+      "lucky numbers sieve",
+      "lucky primes",
+      "sieve methods",
+      "infinitude of primes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +136,12 @@
     "note": "三四区·小问题；1956 年引入的\"按位置筛\"序列；幸运数与素数的统计相似性（孪生幸运数存在）强烈暗示无穷；无解析工具可用，纯计算+统计外推；2026 lucky number 界的新 arXiv 工作活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明幸运素数有无穷多个；或证明幸运素数只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

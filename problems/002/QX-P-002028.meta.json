@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002028",
-  "revision": 1,
-  "card_rev": "99c9f5738d9bd1fe",
+  "revision": 2,
+  "card_rev": "b82759e79ebcc55e",
   "title": "良好力迫使 GCH 在 ℵ_ω 失败",
-  "title_en": null,
+  "title_en": "Forcing GCH to fail at aleph_omega",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "decide"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E35",
+    "secondary": [
+      "03E04",
+      "03E55"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "广义连续统假设",
+      "力迫",
+      "奇异基数",
+      "aleph_ω",
+      "基数算术"
+    ],
+    "en": [
+      "generalized continuum hypothesis",
+      "forcing",
+      "singular cardinals",
+      "aleph_omega",
+      "cardinal arithmetic"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个力迫扩张的模型，其中 2^{ℵ_ω}>ℵ_{ω+1}，其余位置按所要求的方式保持，并证明所有基数与共尾性都被保持。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

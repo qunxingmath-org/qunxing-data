@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000415",
-  "revision": 1,
-  "card_rev": "a9a9e11c1ae89e38",
+  "revision": 2,
+  "card_rev": "603864ccc43d1492",
   "title": "x+y 与 xy 同色的 N₀(r) 界（Green 问题 22）",
-  "title_en": null,
+  "title_en": "Bounds for the threshold N_0(r) forcing x+y and xy to share a color",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "11B30",
+      "11B75"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Ramsey 理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Ramsey 理论",
+      "染色",
+      "和与积",
+      "阈值",
+      "上下界"
+    ],
+    "en": [
+      "Ramsey theory",
+      "colorings",
+      "sums and products",
+      "thresholds",
+      "bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；小 r（r=2,3）可 SAT 机械化求精确 N₀(r)——有限验证侧面明确；渐近界改进中等，B层（介于计算与结构证明）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 N₀(r) 的更好上界或更好下界（形式如 N₀(r)≤F(r) 或 N₀(r)>G(r)），并证明之。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

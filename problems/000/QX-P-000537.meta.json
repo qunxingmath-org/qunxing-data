@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000537",
-  "revision": 1,
-  "card_rev": "12599d5041428e5c",
+  "revision": 2,
+  "card_rev": "f955169e498a0047",
   "title": "20.104 直积群初等理论可判定的传导（双向）",
-  "title_en": null,
+  "title_en": "Does decidability of elementary and universal theories pass to and from direct products?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03B25",
+    "secondary": [
+      "20A15",
+      "03C60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "初等理论",
+      "全称理论",
+      "可判定性",
+      "直积",
+      "一阶逻辑"
+    ],
+    "en": [
+      "elementary theory",
+      "universal theory",
+      "decidability",
+      "direct products",
+      "first-order logic"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（广为人知）G=G₁×G₂ 有限生成。a) Th(G) 可判定 ⇔ Th(G_i) 可判定（两向）？b) 同问用于全称理…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 a)、b) 各自证明两个方向（直积可判定 ⟹ 因子可判定，以及因子可判定 ⟹ 直积可判定），或给出使其中某个方向失败的具体群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

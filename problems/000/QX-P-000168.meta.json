@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000168",
-  "revision": 1,
-  "card_rev": "202aa84017e6d788",
+  "revision": 2,
+  "card_rev": "09a3a38a3058c5d0",
   "title": "Kourovka 14.74：k(G)≤k(P₁)⋯k(P_s)（阶因子分解对应 Sylow）",
-  "title_en": null,
+  "title_en": "Is k(G) at most the product of the class numbers of its Sylow subgroups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E45",
+    "secondary": [
+      "20D20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共轭类数",
+      "Sylow 子群",
+      "有限群",
+      "阶的因子分解"
+    ],
+    "en": [
+      "number of conjugacy classes",
+      "Sylow subgroups",
+      "finite groups",
+      "factorization of group order"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +156,12 @@
     "note": "一区二区·难度待定；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意有限群 G 及满足 |G|=|P₁|⋯|P_s| 的 Sylow 子群族都有 k(G) ≤ k(P₁)⋯k(P_s)，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

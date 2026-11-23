@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001203",
-  "revision": 1,
-  "card_rev": "698384715d8683eb",
+  "revision": 2,
+  "card_rev": "6ba8c149dcda0d72",
   "title": "Leinster群是否有无穷多个",
-  "title_en": null,
+  "title_en": "Are there infinitely many Leinster groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "20D30",
+      "20D15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "有限群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Leinster 群",
+      "子群计数",
+      "有限群",
+      "真子群",
+      "阶的等式"
+    ],
+    "en": [
+      "Leinster groups",
+      "subgroup counts",
+      "finite groups",
+      "proper subgroups",
+      "order identities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +117,12 @@
     "note": "三四区·小问题；C层：有限多个已知例（阶=真子群阶之和）；GAP可枚举小阶——搜索更大例或证明无更多是标准计算群论论文模式。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出无穷多个（或无穷多个不同阶的）Leinster 群并证明其性质，或证明这样的群只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

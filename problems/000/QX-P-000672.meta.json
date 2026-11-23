@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000672",
-  "revision": 1,
-  "card_rev": "5a59e4f61e81c46e",
+  "revision": 2,
+  "card_rev": "822afd8a035fa947",
   "title": "18.106 Flavell 定理 p>3 的对应版",
-  "title_en": null,
+  "title_en": "Does Flavell's characteristic-subgroup theorem extend to the primes 2 and 3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20E36",
+      "20D45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "互素作用",
+      "特征子群",
+      "p-子群",
+      "Flavell 定理",
+      "正规子群"
+    ],
+    "en": [
+      "coprime action",
+      "characteristic subgroups",
+      "p-subgroups",
+      "Flavell's theorem",
+      "normal subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 p=2 与 p=3 时结论同样成立，或给出其中一个素数的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

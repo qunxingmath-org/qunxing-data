@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001193",
-  "revision": 1,
-  "card_rev": "27b47dcaa9b3e6f9",
+  "revision": 2,
+  "card_rev": "9caa8baa4cc4a66e",
   "title": "Baker 图算术亏格（divisorial gonality）线性上界猜想",
-  "title_en": null,
+  "title_en": "Is the divisorial gonality of a graph bounded linearly in its first Betti number?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "prove"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -88,11 +91,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14T15",
+    "secondary": [
+      "05C99",
+      "14H51"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图算术几何（chip-firing）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "图算术几何",
+      "divisorial gonality",
+      "chip-firing",
+      "第一 Betti 数",
+      "线性上界"
+    ],
+    "en": [
+      "graph arithmetic geometry",
+      "divisorial gonality",
+      "chip firing",
+      "first Betti number",
+      "linear upper bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -100,7 +123,12 @@
     "note": "三四区·小问题；divisorial gonality 有第一 Betti 数型上界（Baker 猜想方向）：gonality 计算复杂度与上界文献活跃（DMR 线）；具体上界改进即可成文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出绝对常数 c 与 c₀，证明所有连通图都满足 gon(D_G) ≤ c·β₁(G)+c₀；或构造一族图说明线性上界不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

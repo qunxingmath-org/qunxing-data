@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000896",
-  "revision": 1,
-  "card_rev": "60f2f3706e21f895",
+  "revision": 2,
+  "card_rev": "98c1923ec736a453",
   "title": "乘法表极限画像 f_Mult 的非常数性（OWR 2025/51；Green–Sawhney 2025 后余留）",
-  "title_en": null,
+  "title_en": "Proving that the limiting profile f_Mult of the multiplication table problem is non-constant",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -100,11 +102,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N25",
+    "secondary": [
+      "11N56",
+      "05A99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "解析数论（乘法表问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "乘法表问题",
+      "极限画像",
+      "非常数性",
+      "除数函数"
+    ],
+    "en": [
+      "multiplication table problem",
+      "limiting profile",
+      "non-constancy",
+      "divisor function"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +132,12 @@
     "note": "三四区·小问题；Green–Sawhney 2025（Oberwolfach 宣布）给出渐近 p(k)=(1+o(1))f({log₂k})k^{-(log k)^{3/2}} 型画像并证 max/min ≤1+2×10⁻⁷ 上界；\"画像非常数\"（max f − min f > 0）仍未证（Green PDF Update 2025 原文：\"presumably not constant, though we cannot prove\"）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明极限画像 f_Mult 不是常数，即存在 x、y 使 f_Mult(x)≠f_Mult(y)（等价地 max/min>1）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

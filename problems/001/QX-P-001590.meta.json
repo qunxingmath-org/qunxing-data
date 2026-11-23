@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001590",
-  "revision": 1,
-  "card_rev": "82ea9b947229c41a",
+  "revision": 2,
+  "card_rev": "0b1d23f7db1412fe",
   "title": "21.95 存在按 GK 图同构型可识别的非单几乎单群？",
-  "title_en": null,
+  "title_en": "Is there an almost simple but non-simple group recognizable by its GK graph type?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "20D05",
+      "05C25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "几乎单群",
+      "Gruenberg–Kegel 图",
+      "可识别性",
+      "有限群",
+      "素图"
+    ],
+    "en": [
+      "almost simple groups",
+      "Gruenberg-Kegel graph",
+      "recognizability",
+      "finite groups",
+      "prime graphs"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在几乎单但非单的群，按其 GK 图同构型可识别？（可识别⇒几乎单已知。）…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个几乎单但非单、且由其 GK 图同构型识别的有限群，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

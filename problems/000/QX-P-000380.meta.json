@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000380",
-  "revision": 1,
-  "card_rev": "534f26e0fb9e4e8e",
+  "revision": 2,
+  "card_rev": "5539d66424421536",
   "title": "batch_I I-015：是否存在整系数三元多项式 f(x,y,n)，使得 n∈N ⟺ ∃x,y∈Z, f(x,y,n)=0？",
-  "title_en": null,
+  "title_en": "Is N Diophantine over Z with two existential variables: is there f(x,y,n) with n in N iff f(x,y,n)=0?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D25",
+    "secondary": [
+      "11D99",
+      "03C40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数理逻辑 / 丢番图表示",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "丢番图表示",
+      "自然数集",
+      "存在量词",
+      "Hilbert 第十问题",
+      "可定义性"
+    ],
+    "en": [
+      "Diophantine representations",
+      "the set of natural numbers",
+      "existential quantifiers",
+      "Hilbert's tenth problem",
+      "definability"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；Pace Nielsen 2025 提出；Zhi-Wei Sun 评论确认其为\"known open problem\"（少未知数 H10 方向）；Prunescu 论文 Open Question A 即此题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出这样的 f(x,y,n) 并证明等价性，或证明不存在只有两个存在量词的多项式表示。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

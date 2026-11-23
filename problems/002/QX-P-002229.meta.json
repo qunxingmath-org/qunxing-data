@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002229",
-  "revision": 1,
-  "card_rev": "37026ac13416ba42",
+  "revision": 2,
+  "card_rev": "c11ceb0b54931779",
   "title": "短星积存在性（P31）",
-  "title_en": null,
+  "title_en": "Existence of short star products (Xu-Zhuang P31)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53D55",
+    "secondary": [
+      "14B05",
+      "17B63"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "星积",
+      "锥形辛奇点",
+      "形变量子化",
+      "结合代数"
+    ],
+    "en": [
+      "star products",
+      "conical symplectic singularities",
+      "deformation quantization",
+      "associative algebras"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在给定的锥形辛奇点上构造出短星积并验证结合性,或证明这样的星积不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001768",
-  "revision": 1,
-  "card_rev": "150d2eba49527bc8",
+  "revision": 2,
+  "card_rev": "d1e7ef93ead8f1c1",
   "title": "(N^κ,≤) 共尾度（不可数 κ）",
-  "title_en": null,
+  "title_en": "The cofinality of (N^kappa, <=) for uncountable kappa",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E04",
+    "secondary": [
+      "03E17",
+      "03E35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "序/逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "共尾度",
+      "支配序",
+      "基数不变量",
+      "不可数 κ"
+    ],
+    "en": [
+      "cofinality",
+      "dominating order",
+      "cardinal invariants",
+      "uncountable kappa"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 cf(N^κ,≤) 在 ZFC 下的值（或证明它与哪些基数不变量相等、独立于哪些公理），对不可数 κ 给出完整结论。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

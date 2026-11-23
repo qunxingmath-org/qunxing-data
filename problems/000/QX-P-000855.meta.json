@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000855",
-  "revision": 1,
-  "card_rev": "805a480570841fd4",
+  "revision": 2,
+  "card_rev": "a842c9c296d19918",
   "title": "Cayley 图核心猜想：立方型图（Z_2^n 上）的核心仍是立方型图（OPG-125）",
-  "title_en": null,
+  "title_en": "Is the core of a Cayley graph on a power of Z_p again a Cayley graph on such a group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -104,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C25",
+    "secondary": [
+      "05C60",
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数图论（同态/核心）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Cayley 图",
+      "图核",
+      "同态",
+      "初等阿贝尔 2-群",
+      "立方型图"
+    ],
+    "en": [
+      "Cayley graphs",
+      "graph cores",
+      "homomorphisms",
+      "elementary abelian 2-groups",
+      "cubelike graphs"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -116,7 +139,12 @@
     "note": "三四区·小问题；Mančinska–Pivotto–Roberson–Royle 2018 提出正式 Cubelike Core Conjecture；2025 arXiv:2501.18297 证明度<5 全部核心完全图、≤16 点核心分类；谱整数性为关键不变量，方法路线明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个素数 p，任何 (Z_p)^k 上 Cayley 图的核都同构于某个 (Z_p)^m 上的 Cayley 图；或给出一个核不再是这种形式的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

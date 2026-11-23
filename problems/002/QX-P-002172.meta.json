@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002172",
-  "revision": 1,
-  "card_rev": "da2873bf66eefbf1",
+  "revision": 2,
+  "card_rev": "1c80d9da900b18be",
   "title": "Even Number Game k≥4 必胜策略",
-  "title_en": null,
+  "title_en": "Winning strategies for the Even Number Game with k >= 4",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "91A46",
+    "secondary": [
+      "91A05",
+      "05C57"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "[arXiv:2507.03972](https://arxiv.org/abs/2507.03972) P4",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "偶数博弈",
+      "必胜策略",
+      "组合博弈",
+      "策略构造"
+    ],
+    "en": [
+      "Even Number Game",
+      "winning strategies",
+      "combinatorial games",
+      "strategy construction"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在明确该博弈的完整规则后，给出 k≥4 时先行方（或后行方）必胜的证明与显式策略，或证明该博弈在所给规则下为平局。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

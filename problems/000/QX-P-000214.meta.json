@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000214",
-  "revision": 1,
-  "card_rev": "ef94644cc1a5ef43",
+  "revision": 2,
+  "card_rev": "3f45a7048c0c85a3",
   "title": "Erdos P132: two distances occurring at most n times",
-  "title_en": null,
+  "title_en": "Erdos P132: are there always two distances that occur at most n times?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何 / 距离",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "距离重数",
+      "点集",
+      "出现次数",
+      "相异距离",
+      "下界"
+    ],
+    "en": [
+      "distance multiplicities",
+      "point sets",
+      "occurrence counts",
+      "distinct distances",
+      "lower bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·难度待定；B层理由: 连第二个罕见距离的存在性都未知(初始状态); 2025年有相关新文献(CDL25凸情形/Acta Hungarica重数研究、rich distances对偶问题), 方向活跃但基础情形未破。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意 n 点集都至少有两个出现次数不超过 n 的距离（并证明这类距离的个数随 n 趋于无穷），或给出一个反例点集。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

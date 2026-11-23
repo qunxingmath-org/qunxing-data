@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000778",
-  "revision": 1,
-  "card_rev": "8c3973f3dd4e49c8",
+  "revision": 2,
+  "card_rev": "1d1df1bda6f95be9",
   "title": "Proving the Komlós conjecture slowly",
-  "title_en": null,
+  "title_en": "Open problems left by an elementary proof of the Komlos conjecture",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify",
+    "value"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -99,11 +102,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11K38",
+    "secondary": [
+      "90C27"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散差异论（向量平衡）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "向量平衡",
+      "差异论",
+      "排列无关性",
+      "反例边界",
+      "遗留问题"
+    ],
+    "en": [
+      "vector balancing",
+      "discrepancy",
+      "permutation independence",
+      "counterexample boundary",
+      "open problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +133,12 @@
     "note": "三四区·小问题；中等——Komlós主线已闭（Karingula–Lovett初等证明，AI助攻；另有独立初等证明文献），strong版有Kintali反例；原文结尾所留问题为具体向量集族精确discrepancy，逐族解决工作量三四区。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定原文结尾所列各具体向量族的最小差异值，并给出 strong Komlós 性质仍成立的集族的充要刻画，或至少完整解决其中一项。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000974",
-  "revision": 1,
-  "card_rev": "18d8d80b62d6f851",
+  "revision": 2,
+  "card_rev": "1e649b142ca57a44",
   "title": "Kourovka 21.63：char p>0 域 F，Γ=Aut(F[x1..xn]) 的主同余子群（residually-p）",
-  "title_en": null,
+  "title_en": "Kourovka 21.63: does the principal congruence subgroup of Aut(F[x1..xn]) satisfy a pro-p identity?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "14L27",
+      "20F40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "pro-p 恒等式",
+      "主同余子群",
+      "多项式自同构群",
+      "residually-p",
+      "Zelmanov 问题"
+    ],
+    "en": [
+      "pro-p identities",
+      "principal congruence subgroups",
+      "automorphism groups of polynomial rings",
+      "residually-p groups",
+      "Zelmanov's question"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 Γ 满足某个非平凡 pro-p 恒等式，或证明它不满足任何这样的恒等式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

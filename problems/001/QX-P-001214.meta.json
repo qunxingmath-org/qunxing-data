@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001214",
-  "revision": 1,
-  "card_rev": "786485135710b8ef",
+  "revision": 2,
+  "card_rev": "9ffc9dbaea9a6a07",
   "title": "圆盘覆盖问题r(n)",
-  "title_en": null,
+  "title_en": "Covering the unit disc with n equal discs: determining r(n)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "52C17",
+      "05B40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "圆盘覆盖",
+      "覆盖半径",
+      "单位圆盘",
+      "最优构形",
+      "r(n)"
+    ],
+    "en": [
+      "disc covering",
+      "covering radius",
+      "unit discs",
+      "optimal configurations",
+      "r(n)"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：n个圆盘覆盖单位圆的最小半径r(n)——n≤10多为已知、更大n未知；Packomania类数值优化+下界证明模式成熟。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定的 n 确定 r(n) 的精确值（给出达到它的覆盖构形，并证明任何更小的半径都盖不住），至少对所有 n 给出近似的上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

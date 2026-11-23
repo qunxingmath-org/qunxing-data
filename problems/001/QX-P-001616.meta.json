@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001616",
-  "revision": 1,
-  "card_rev": "0a64c66759737dd3",
+  "revision": 2,
+  "card_rev": "0f27db565e233471",
   "title": "17.13 全非本原 finitary p-群含极小非 FC-子群？",
-  "title_en": null,
+  "title_en": "Must a totally imprimitive finitary p-group contain a minimal non-FC-subgroup?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B07",
+    "secondary": [
+      "20F24",
+      "20B10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "finitary 置换",
+      "全非本原",
+      "p-群",
+      "极小非 FC-子群",
+      "块"
+    ],
+    "en": [
+      "finitary permutations",
+      "total imprimitivity",
+      "p-groups",
+      "minimal non-FC subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足条件的 G 一定含有极小非 FC-子群，或构造一个不含这种子群的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

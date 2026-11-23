@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001903",
-  "revision": 1,
-  "card_rev": "7b8e82535b938484",
+  "revision": 2,
+  "card_rev": "a7f2b5147259e808",
   "title": "SL_2(Z) 参数化最少变量数",
-  "title_en": null,
+  "title_en": "Minimum number of integer variables needed to parametrize SL_2(Z)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20H05",
+    "secondary": [
+      "20F05",
+      "20G30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "SL_2(Z)",
+      "参数化",
+      "变量个数",
+      "生成"
+    ],
+    "en": [
+      "SL_2(Z)",
+      "parametrization",
+      "number of variables",
+      "generation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定参数化 SL_2(Z) 所需的最少整数变元个数，给出对应的参数化公式，并证明更少的变元不可能。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000972",
-  "revision": 1,
-  "card_rev": "15a92b1a43cbea8b",
+  "revision": 2,
+  "card_rev": "76b6da5449060afd",
   "title": "Kourovka 21.54：有限可解带三重性群（S₃ 自同构群作用，m·m^ρ·m^{ρ²}=1）",
-  "title_en": null,
+  "title_en": "Kourovka 21.54: Fitting height bounds for finite soluble groups with triality",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20D45",
+      "17B60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三重性",
+      "Fitting 高",
+      "可解群",
+      "自同构群",
+      "M(G) 生成"
+    ],
+    "en": [
+      "triality",
+      "Fitting height",
+      "soluble groups",
+      "automorphism groups",
+      "generators from M(G)"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在只依赖 d 与 n 的函数 f 使 fh(G)≤f(d,n)，或构造反例说明 Fitting 高可以任意大。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

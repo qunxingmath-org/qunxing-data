@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000563",
-  "revision": 1,
-  "card_rev": "95efac5c9732d208",
+  "revision": 2,
+  "card_rev": "927c70614345cf07",
   "title": "18.40 scl 在双曲群 [G,G] 上取有理值？",
-  "title_en": null,
+  "title_en": "Does stable commutator length take rational values on [G,G] for hyperbolic groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F67",
+    "secondary": [
+      "20J05",
+      "20F12"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "稳定交换子长度",
+      "双曲群",
+      "导群",
+      "有理值"
+    ],
+    "en": [
+      "stable commutator length",
+      "hyperbolic groups",
+      "derived subgroup",
+      "rational values"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个双曲群 G 和每个 g∈[G,G]，scl(g) 都是有理数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

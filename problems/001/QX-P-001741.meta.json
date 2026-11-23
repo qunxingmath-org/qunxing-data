@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001741",
-  "revision": 1,
-  "card_rev": "7995e6a1c2d854b3",
+  "revision": 2,
+  "card_rev": "4314bacd79248bf0",
   "title": "可测集与 λ-平移最小重叠最优常数（TSTST 加强版）",
-  "title_en": null,
+  "title_en": "Optimal constant for the minimal overlap of a unit-area measurable set with its lambda-translate",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "28A75",
+    "secondary": [
+      "52A40",
+      "26D15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "测度论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可测集",
+      "平移重叠",
+      "最优常数",
+      "面积估计",
+      "变分问题"
+    ],
+    "en": [
+      "measurable sets",
+      "translational overlap",
+      "optimal constant",
+      "area estimates",
+      "variational problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 λ>0 确定最优常数 c(λ) 的确切值，并证明对任何面积为 1 的可测集都能取到，且常数不能再小。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

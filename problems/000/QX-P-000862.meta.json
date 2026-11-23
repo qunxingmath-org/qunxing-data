@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000862",
-  "revision": 1,
-  "card_rev": "2f62bcb3a09a442c",
+  "revision": 2,
+  "card_rev": "d50f1c7479c8fd10",
   "title": "超立方体交叉数极限常数（表述修正条目：5/32 已被否定）",
-  "title_en": null,
+  "title_en": "The limiting constant for the crossing number of the hypercube",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C10",
+    "secondary": [
+      "05C62"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（交叉数）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超立方体",
+      "交叉数",
+      "极限常数",
+      "Erdős–Guy 猜想"
+    ],
+    "en": [
+      "hypercube",
+      "crossing number",
+      "limiting constant",
+      "Erdos-Guy conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +135,12 @@
     "note": "三四区·小问题；Erdős–Guy 猜 lim cr(Q_d)/4^d=5/32——2021-22 已被更好的画法否定；修正后的开放问题为确定该极限（存在性+值，已知 ∈[1/20, 5/32) 下方）；cr(Q_4)=8 精确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 lim_{d→∞} cr(Q_d)/4^d 的值（并证明该极限存在）；或证明该极限不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

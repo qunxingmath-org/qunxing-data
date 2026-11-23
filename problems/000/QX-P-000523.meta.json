@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000523",
-  "revision": 1,
-  "card_rev": "56d5616bf246d6da",
+  "revision": 2,
+  "card_rev": "5b179b1fb9832dc6",
   "title": "Bell–Skandera 主问题：实根多项式是否必为单纯复形 f-多项式",
-  "title_en": null,
+  "title_en": "The Bell-Skandera question: are real-rooted polynomials always f-polynomials of simplicial complexes?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E45",
+    "secondary": [
+      "05A15",
+      "52B05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合多胞形/单纯复形/代数组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "f-多项式",
+      "单纯复形",
+      "实根多项式",
+      "组合多胞形",
+      "代数组合"
+    ],
+    "en": [
+      "f-polynomials",
+      "simplicial complexes",
+      "real-rooted polynomials",
+      "combinatorial polytopes",
+      "algebraic combinatorics"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Bell–Skandera 2007（Discrete Math 307）提出，20年未闭；Mu–Welker 递归分解路线 2026 被逐度反例否定（C-123 为其子问题/族条目）；主线仍开放且近年有构造类正面进展论文，活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有（次数不限的）系数为正整数、常数项 1、只有实根的多项式构造出以它为 f-多项式的单纯复形，或给出一个这样的多项式并证明它不是任何单纯复形的 f-多项式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

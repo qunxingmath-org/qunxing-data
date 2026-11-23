@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000384",
-  "revision": 1,
-  "card_rev": "4da2cc4b44d206e0",
+  "revision": 2,
+  "card_rev": "667734627b71df63",
   "title": "batch_I I-021：当 n 变化，M_n=2^n−1 是否必被任意大的素数 p 恰好一次幂整除（p|M_n 且 p²∤M",
-  "title_en": null,
+  "title_en": "Must Mersenne numbers 2^n - 1 be divisible by arbitrarily large primes to exactly the first power?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -106,11 +109,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A51",
+    "secondary": [
+      "11D61",
+      "11N32"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 整除性与 Wieferich 素数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Mersenne 数",
+      "Wieferich 素数",
+      "素因子指数",
+      "指数丢番图方程",
+      "abc 猜想"
+    ],
+    "en": [
+      "Mersenne numbers",
+      "Wieferich primes",
+      "prime exponents",
+      "exponential Diophantine equations",
+      "abc conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -118,7 +141,12 @@
     "note": "一区二区·难度待定；joro 2021 提出；Kalmynin 高票回答给出与著名开放问题（非 Wieferich 素数无穷性）的归约；GH from MO 介入核查论证。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 N 都存在素数 p>N 与 n>1 使 v_p(2^n−1)=1，或构造反例说明这样的素数存在有界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

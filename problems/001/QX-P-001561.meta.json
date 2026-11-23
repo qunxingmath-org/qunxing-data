@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001561",
-  "revision": 1,
-  "card_rev": "8ba281061e708a2d",
+  "revision": 2,
+  "card_rev": "cad6a3b194c9ac91",
   "title": "20.103 派生长 n≥3 的部分可交换可解群是否无挠",
-  "title_en": null,
+  "title_en": "Are partially commutative soluble groups of derived length at least 3 torsion-free?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F16",
+    "secondary": [
+      "20E99",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "部分可交换群",
+      "无挠",
+      "派生长",
+      "定义图",
+      "可解群"
+    ],
+    "en": [
+      "partially commutative groups",
+      "torsion-free",
+      "derived length",
+      "defining graph",
+      "soluble groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；G_Γ 为派生长 n≥3 的部分可交换可解群（定义类比 n=2, 见 17.104）。G_Γ 是否无挠？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明派生长 n≥3 的每个部分可交换可解群都无挠，或给出一个定义图与相应的群，说明其中存在非平凡的有限阶元素。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

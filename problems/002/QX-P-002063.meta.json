@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002063",
-  "revision": 1,
-  "card_rev": "3a15a835a66494d7",
+  "revision": 2,
+  "card_rev": "21d6e2a383f335f1",
   "title": "迭代超积的\"无害性\"条件",
-  "title_en": null,
+  "title_en": "When is the iterated ultraproduct isomorphic to the original ultraproduct?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C20",
+    "secondary": [
+      "03E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "模型论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超积",
+      "迭代超积",
+      "超滤子",
+      "κ-完备",
+      "同构"
+    ],
+    "en": [
+      "ultraproducts",
+      "iterated ultraproducts",
+      "ultrafilters",
+      "kappa-completeness",
+      "isomorphism"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出超滤子 U 使迭代超积与单次超积同构的充要条件（并证明），或指出该同构并非由 U 的完备性单独决定并给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

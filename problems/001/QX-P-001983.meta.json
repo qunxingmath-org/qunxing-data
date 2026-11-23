@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001983",
-  "revision": 1,
-  "card_rev": "ff3d75d6ce11c08a",
+  "revision": 2,
+  "card_rev": "5d0c4db9915176b8",
   "title": "多米诺唯一可铺判定算法",
-  "title_en": null,
+  "title_en": "Deciding whether a domino region has a unique tiling",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "construct"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B45",
+    "secondary": [
+      "68Q25",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合/算法",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "多米诺铺砌",
+      "唯一性",
+      "判定算法",
+      "完美匹配",
+      "计算复杂度"
+    ],
+    "en": [
+      "domino tilings",
+      "uniqueness",
+      "decision algorithms",
+      "perfect matchings",
+      "computational complexity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个判定算法并证明它对所有输入区域都正确（说明区域的编码与复杂度），或证明该判定问题在所设编码下不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

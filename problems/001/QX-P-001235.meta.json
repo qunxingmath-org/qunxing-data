@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001235",
-  "revision": 1,
-  "card_rev": "ff05fd53736b0bab",
+  "revision": 2,
+  "card_rev": "91f6058f2f6c3679",
   "title": "线性森林分解猜想（Akiyama–Harary线性荫度）",
-  "title_en": null,
+  "title_en": "Linear arboricity conjecture: decomposing a graph into few linear forests",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C15",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图分解",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "线性荫度",
+      "线性森林",
+      "边分解",
+      "最大度",
+      "Akiyama-Harary 猜想"
+    ],
+    "en": [
+      "linear arboricity",
+      "linear forest",
+      "edge decomposition",
+      "maximum degree",
+      "Akiyama-Harary conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体染色常数猜想——la(G)=⌈(Δ+1)/2⌉；逐Δ/图类证明为成熟三四区模式（近年文献活跃）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有图 G 都有 la(G)=⌈(Δ+1)/2⌉（或给出确切例外情形下的完整取值）；或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

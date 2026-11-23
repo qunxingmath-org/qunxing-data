@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000419",
-  "revision": 1,
-  "card_rev": "b98f608e6160ed2e",
+  "revision": 2,
+  "card_rev": "a8e1cf353e4ee67a",
   "title": "平方根尺寸差异集（Green 问题 33）",
-  "title_en": null,
+  "title_en": "Additive bases of Z/qZ of size (sqrt 2 + o(1)) sqrt(q)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "11P70",
+      "11B30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论/有限域",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "加性基",
+      "循环群",
+      "和集",
+      "计数下界",
+      "无穷多"
+    ],
+    "en": [
+      "additive bases",
+      "cyclic groups",
+      "sumsets",
+      "counting bounds",
+      "infinitely many moduli"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；差基（difference basis）最优常数问题，√2 端点为已知障碍型，构造/计数双难，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在无穷多个 q 与相应的 A⊂Z/qZ 满足 |A|=(√2+o(1))√q 且 A+A=Z/qZ，或证明这样的 q 只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

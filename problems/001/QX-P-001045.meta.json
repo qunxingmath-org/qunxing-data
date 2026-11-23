@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001045",
-  "revision": 1,
-  "card_rev": "b8696f8b94152a63",
+  "revision": 2,
+  "card_rev": "e74047e01ab2487c",
   "title": "Kourovka 17.114：两个非平凡群的带融合广义自由积必有极大子群吗",
-  "title_en": null,
+  "title_en": "Do amalgamated free products of two nontrivial groups always have maximal subgroups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E06",
+    "secondary": [
+      "20E28",
+      "20E15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "广义自由积",
+      "融合积",
+      "极大子群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "generalized free products",
+      "amalgamated products",
+      "maximal subgroups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何两个非平凡群的带融合自由积都有极大子群，或构造一个没有极大真子群的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

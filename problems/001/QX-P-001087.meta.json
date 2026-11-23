@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001087",
-  "revision": 1,
-  "card_rev": "9a1704a5f9957a31",
+  "revision": 2,
+  "card_rev": "419b04deb1b39087",
   "title": "Kourovka 7.55：两几乎交换子群之积是否几乎可解",
-  "title_en": null,
+  "title_en": "Is a product of two almost abelian subgroups almost soluble?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E34",
+    "secondary": [
+      "20F16",
+      "20F19"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "几乎交换",
+      "几乎可解",
+      "子群乘积",
+      "因子化群"
+    ],
+    "en": [
+      "almost abelian",
+      "almost soluble",
+      "products of subgroups",
+      "factorized groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明两个几乎交换子群之积必几乎可解，或给出一个几乎交换因子但整体不几乎可解的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001408",
-  "revision": 1,
-  "card_rev": "0cee652b90cfdc3e",
+  "revision": 2,
+  "card_rev": "24715f5451a79935",
   "title": "Glasser 双曲级数单调性（SIAM 77-5）",
-  "title_en": null,
+  "title_en": "Glasser: monotonicity of a hyperbolic cosecant series between log 2 and 1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +83,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "40A05",
+    "secondary": [
+      "26D15",
+      "33Bxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "分析（级数）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双曲级数",
+      "单调性",
+      "交错级数",
+      "端点值"
+    ],
+    "en": [
+      "hyperbolic series",
+      "monotonicity",
+      "alternating series",
+      "endpoint values"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +113,12 @@
     "note": "三四区·小问题；单变量级数分析、数值先行、证明可攻——很合适的入门题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 S 在 (1,∞) 上严格单调，或给出两个点 r₁<r₂ 使 S(r₁)≥S(r₂)（即破坏单调）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000065",
-  "revision": 1,
-  "card_rev": "e284ca78eab5bf24",
+  "revision": 2,
+  "card_rev": "4cf5c150aa4bf492",
   "title": "完全主元高斯消元第五主元增长常数",
-  "title_en": null,
+  "title_en": "The largest fifth pivot growth factor under Gaussian elimination with complete pivoting",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -113,11 +116,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "65F05",
+    "secondary": [
+      "15A06",
+      "65G50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数值线性代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "高斯消元",
+      "完全主元",
+      "增长因子",
+      "主元",
+      "多项式根"
+    ],
+    "en": [
+      "Gaussian elimination",
+      "complete pivoting",
+      "growth factor",
+      "pivots",
+      "polynomial roots"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -125,7 +148,12 @@
     "note": "一区二区·易证明；有限验证目标（CB 反例目标 finite）：小参数空间/有限组合搜索或显式公式判定，反例可机器核验；已有大范围计算验证作支撑。 5x5 有理矩阵上确界的代数数判定；度61多项式根 P5 猜想为 2026 年论文显式提出（2602.20390）"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在完全主元消元下，所有 5×5 有理矩阵的第五个主元增长因子上确界恰为 P₅ 在 [4,5] 的唯一实根；或给出与之不符的数值或反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

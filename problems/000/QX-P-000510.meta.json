@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000510",
-  "revision": 1,
-  "card_rev": "e09b30e7ba272c2e",
+  "revision": 2,
+  "card_rev": "9ad6643fafe1d299",
   "title": "Borel 猜想（aspherical 紧流形同胚刚性）",
-  "title_en": null,
+  "title_en": "The Borel conjecture: homotopy equivalences between compact aspherical manifolds are homotopic to homeomorphisms",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57R67",
+    "secondary": [
+      "57N15",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Borel 猜想",
+      "aspherical 流形",
+      "刚性",
+      "同伦等价",
+      "手术理论"
+    ],
+    "en": [
+      "Borel conjecture",
+      "aspherical manifolds",
+      "rigidity",
+      "homotopy equivalence",
+      "surgery theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -103,7 +125,12 @@
     "note": "一区二区·难度待定；【范围修正】采集条目双条：(a) 强测度零集 Borel 猜想已被集合论独立性解决（Laver 1976 一致性 + Sierpiński 模型反例——不入池，见排除注记）；(b) aspherical 紧流形的 Borel 猜想（同胚刚性）仍开，本条目按 (b) 登记。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有紧 aspherical 流形证明任何同伦等价都同伦于同胚（或给出满足该性质的流形类并证明其封闭性），或给出一个同伦等价却不同胚的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

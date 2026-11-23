@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000891",
-  "revision": 1,
-  "card_rev": "78c89eb0c9a3a4ed",
+  "revision": 2,
+  "card_rev": "d4e66c2b50357237",
   "title": "OWR 2024/3：超立方体图是否存在绝对常数 c 的\"无 c 个两两相交边\"画法",
-  "title_en": null,
+  "title_en": "Does every hypercube have a drawing with no c pairwise crossing edges?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -90,11 +93,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C10",
+    "secondary": [
+      "05C62"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（画法/准平面图）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超立方体",
+      "拓扑画法",
+      "两两相交边",
+      "准平面图"
+    ],
+    "en": [
+      "hypercube",
+      "topological drawings",
+      "pairwise crossing edges",
+      "quasi-planar graphs"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +122,12 @@
     "note": "三四区·小问题；k-quasi-planar 边界定理为工具池；超立方体的对称性使构造与排除双可行；与池内 C-1216（交叉数极限）互邻不同命题（局部 vs 全局）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在绝对常数 c，使每个超立方体 Q_d 都有无 c 条两两相交边的平面画法；或证明这样的常数不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

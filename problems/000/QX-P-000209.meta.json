@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000209",
-  "revision": 1,
-  "card_rev": "8c125e7c60bdfc74",
+  "revision": 2,
+  "card_rev": "899bda7d6ca087c9",
   "title": "Erdos P94: convex polygon, sum f(u_i)^2 << n^3",
-  "title_en": null,
+  "title_en": "Erdos P94: for a convex n-gon, must the sum of squared distance multiplicities be O(n^3)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "51K05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何 / 距离",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸多边形",
+      "距离重数",
+      "平方和",
+      "相异距离",
+      "上界"
+    ],
+    "en": [
+      "convex polygons",
+      "distance multiplicities",
+      "sum of squares",
+      "distinct distances",
+      "upper bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·难度待定；B层理由: Erdős称Fishburn已解但无出处(状态存疑); Lefmann–Thiele在无3共线情形证过更强版本; 现状不确定导致难度冻结; 几何组合方法未收敛。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意凸 n 点集都有 Σ_d mult(d)² = O(n³)，或给出一个使该和的增长阶超过 n³ 的凸多边形族。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001761",
-  "revision": 1,
-  "card_rev": "6cb9ca43f51d8e1f",
+  "revision": 2,
+  "card_rev": "807ce079b2e8ae82",
   "title": "gcd{ord_p(q)} 偏大现象",
-  "title_en": null,
+  "title_en": "Why is gcd{ord_p(q)} unexpectedly large?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A07",
+    "secondary": [
+      "11N37",
+      "11R18"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "乘法阶",
+      "最大公因数",
+      "素数",
+      "分圆域",
+      "偏差现象"
+    ],
+    "en": [
+      "multiplicative order",
+      "greatest common divisor",
+      "primes",
+      "cyclotomic fields",
+      "bias phenomenon"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 gcd{ord_p(q)} 系统性偏大的结构性解释（明确的素数子集与证明），说明偏差的大小与来源。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

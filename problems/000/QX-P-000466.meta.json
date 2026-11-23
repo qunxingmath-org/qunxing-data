@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000466",
-  "revision": 1,
-  "card_rev": "60fcdec3c2b18fc2",
+  "revision": 2,
+  "card_rev": "10633bd3eff2b0aa",
   "title": "Kourovka 8.8：每元共轭于某 a 幂的非循环有限表现群存在性",
-  "title_en": null,
+  "title_en": "Non-cyclic finitely presented group with all elements conjugate to powers of a",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F05",
+    "secondary": [
+      "20E45",
+      "20F06"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限表现群",
+      "共轭",
+      "非循环群",
+      "元素的幂",
+      "Kourovka 问题 8.8"
+    ],
+    "en": [
+      "finitely presented groups",
+      "conjugacy",
+      "non-cyclic groups",
+      "powers of an element",
+      "Kourovka Notebook 8.8"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；存在性构造问题（与 Tarski 怪兽/OSIN 群构造技术相邻——池内 B-708 为相邻怪兽构造），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个明确写出生成元与关系的非循环有限表现群，并证明每个元素都与 a 的某次幂共轭；或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

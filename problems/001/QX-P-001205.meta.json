@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001205",
-  "revision": 1,
-  "card_rev": "5dcd0266d8c6c7be",
+  "revision": 2,
+  "card_rev": "48d86b6d5eb6fe04",
   "title": "Mean value problem（Mignotte）",
-  "title_en": null,
+  "title_en": "The mean value problem for complex polynomials: is there a critical point with the mean-value inequality?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -85,11 +87,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "30C15",
+    "secondary": [
+      "30C10",
+      "65H05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "复分析/数值分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "中值问题",
+      "临界点",
+      "复多项式",
+      "Smale 猜想",
+      "不等式常数"
+    ],
+    "en": [
+      "mean value problem",
+      "critical points",
+      "complex polynomials",
+      "Smale's conjecture",
+      "inequality constants"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -97,7 +119,12 @@
     "note": "三四区·小问题；C层：具体存在性问题（多项式临界点上的中值不等式）；已证平面上一般不成立/部分情形成立的结构性结果可延续。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意次数 d≥2 的复多项式与任意复数 z 都存在这样的临界点 c，或给出一个多项式与一点 z 使所有临界点都不满足该不等式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

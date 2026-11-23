@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002238",
-  "revision": 1,
-  "card_rev": "755861f46bfbfac9",
+  "revision": 2,
+  "card_rev": "9e6d58f4d9487ef1",
   "title": "Fvol 代数性？",
-  "title_en": null,
+  "title_en": "Is Fvol algebraic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14E30",
+    "secondary": [
+      "14G17",
+      "14B05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Fvol",
+      "代数性",
+      "正特征",
+      "不变量",
+      "奇点"
+    ],
+    "en": [
+      "Fvol",
+      "algebraicity",
+      "positive characteristic",
+      "invariants",
+      "singularities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 Fvol 是代数的(可被有限多个多项式条件刻画),或给出它不是代数的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

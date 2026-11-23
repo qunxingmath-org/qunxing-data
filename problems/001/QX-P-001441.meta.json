@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001441",
-  "revision": 1,
-  "card_rev": "66ea669db9b7c9b6",
+  "revision": 2,
+  "card_rev": "35d5a4f987d138f8",
   "title": "batch_I I-128(提取2)：平面上是否存在 8 个点，无三点共线、无四点共圆，且两两距离皆为整数？",
-  "title_en": null,
+  "title_en": "Eight planar points with integer distances, no three collinear and no four concyclic",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "11D09",
+      "51K05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何 / 整距离点集",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整距离点集",
+      "无三点共线",
+      "无四点共圆",
+      "Erdős 问题",
+      "组合几何"
+    ],
+    "en": [
+      "integral point sets",
+      "no three collinear",
+      "no four concyclic",
+      "Erdős problems",
+      "combinatorial geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Erdős 问 7 点、Kreisel–Kurz 2008 正答并随后问 8 点；MO 53797 答案 a202871（票15）转载。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 8 个点的显式坐标，验证两两距离皆为整数且无三点共线、无四点共圆；或证明这样的 8 点集不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000609",
-  "revision": 1,
-  "card_rev": "09ba0182626124f3",
+  "revision": 2,
+  "card_rev": "a78153bad3a71627",
   "title": "（来源 C-016）2色2状态 turmite 中，变为可预测（wedge/highway 等）前的最长混沌运行是多少步？",
-  "title_en": null,
+  "title_en": "Which 2-color 2-state turmite runs longest before becoming predictable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "compute",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q80",
+    "secondary": [
+      "03D10",
+      "37B15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "元胞自动机/可计算性（ recreational）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "turmite",
+      "图灵机",
+      "混沌期长度",
+      "busy beaver 型问题"
+    ],
+    "en": [
+      "turmites",
+      "Turing machines",
+      "chaotic transient length",
+      "busy-beaver problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +124,12 @@
     "note": "三四区·小问题；有限状态搜索问题：状态空间 2色×2态×2方向×转向组合 = 有限（4096 机），可穷举模拟——但混沌期长度可能超出现实模拟能力。可做三四区级：系统化穷举 4096 台机器、改进纪录、或证明上界结构（不可能无限混沌的机制分析）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定两色两状态 turmite 在进入可预测行为前的最长混沌运行步数，或给出更长的纪录并证明其正确。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

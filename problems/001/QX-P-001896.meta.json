@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001896",
-  "revision": 1,
-  "card_rev": "20639d44f5c03e80",
+  "revision": 2,
+  "card_rev": "c5bfe463f595d4b7",
   "title": "SL_3(Z) 有界生成量化",
-  "title_en": null,
+  "title_en": "Quantifying the bounded generation degree of SL_3(Z)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20H05",
+    "secondary": [
+      "20F05",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有界生成",
+      "SL_3(Z)",
+      "初等矩阵",
+      "生成元"
+    ],
+    "en": [
+      "bounded generation",
+      "SL_3(Z)",
+      "elementary matrices",
+      "generators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 SL_3(Z) 有界生成所需的最少循环子群个数，同时给出达到该数的覆盖构造与匹配的下界证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

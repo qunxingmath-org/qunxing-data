@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000208",
-  "revision": 1,
-  "card_rev": "334b72fa67afaa39",
+  "revision": 2,
+  "card_rev": "e45d55b85d2773c7",
   "title": "Erdos P86: max C4-free subgraph of hypercube Q_n",
-  "title_en": null,
+  "title_en": "Erdos P86: how many edges can a C4-free subgraph of the hypercube Q_n have?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C30",
+      "05C38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论 / 极图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超立方体",
+      "C4",
+      "极值边数",
+      "子图",
+      "极图"
+    ],
+    "en": [
+      "hypercube",
+      "C4",
+      "extremal edge counts",
+      "subgraphs",
+      "extremal graphs"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·难度待定；B层理由: 极值常数问题, 上下界差距明显(0.5 vs 0.60318), 谱/计数方法局部有效但全局难; 活跃度中等。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 f(n)≤(1/2+o(1))·n·2^{n−1}，或构造一个边数更接近 n·2^{n−1} 的 C4-自由子图来推翻该猜想。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

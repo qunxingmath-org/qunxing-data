@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000875",
-  "revision": 1,
-  "card_rev": "0b1344c31dd9b7d6",
+  "revision": 2,
+  "card_rev": "5fcc2d827fb6de6f",
   "title": "Kirby 3.71：Θ³_Z→Θ³_{Z/2} 核的非平凡元（光滑范畴）",
-  "title_en": null,
+  "title_en": "Is the kernel of Theta^3_Z -> Theta^3_{Z/2} nontrivial? (Kirby 3.71)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57R90",
+    "secondary": [
+      "57M27",
+      "57N10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "低维拓扑（同调配边）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整同调球",
+      "Z/2 同调球",
+      "同调配边群",
+      "光滑范畴",
+      "核"
+    ],
+    "en": [
+      "homology 3-spheres",
+      "Z/2 homology balls",
+      "homology cobordism groups",
+      "smooth category",
+      "kernel"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；整同调球若同时是 Z/2-同调球填充边界则入核——光滑范畴内是否存在非平凡例；检索提示的 Poincaré 球经典例属拓扑范畴/不同精细化，光滑情形按现代 Kirby 清单保持开放；Floer 工具（ involutive/Floer 谱）可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个整同调 3-球面，它不界定光滑整同调 4-球但界定光滑 Z/2 同调 4-球；或证明该映射是单射（核为零）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

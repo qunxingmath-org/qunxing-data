@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001568",
-  "revision": 1,
-  "card_rev": "378d90ff1929a5ac",
+  "revision": 2,
+  "card_rev": "ba1698de8ec16ab8",
   "title": "20.126 加法群有限生成的 brace：(G,◦) 可非可解/含自由子群？",
-  "title_en": null,
+  "title_en": "Can a brace with finitely generated additive group be non-soluble or contain a free subgroup?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16T25",
+    "secondary": [
+      "20F16",
+      "20E05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "brace",
+      "Yang–Baxter 方程",
+      "有限生成",
+      "非可解",
+      "自由子群"
+    ],
+    "en": [
+      "braces",
+      "Yang-Baxter equation",
+      "finite generation",
+      "non-solubility",
+      "free subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在 brace (G;+,◦)，(G,+) 有限生成，且 a) (G,◦) 非可解？ b) (G,◦) 含非交换自…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 a) 与 b) 分别构造出加法群有限生成的 brace（使乘法群不可解 / 含非交换自由子群），或证明两者都不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000210",
-  "revision": 1,
-  "card_rev": "c16c487b20e5194f",
+  "revision": 2,
+  "card_rev": "b5265f07582fa67a",
   "title": "Erdos P99: minimum-diameter packing must contain unit equilateral triangle",
-  "title_en": null,
+  "title_en": "Erdos P99: do minimum-diameter n-point packings contain a unit equilateral triangle?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "52C10",
+      "05B40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何 / 离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最小直径",
+      "点集装填",
+      "单位正三角形",
+      "离散几何",
+      "最优构型"
+    ],
+    "en": [
+      "minimum diameter",
+      "point packings",
+      "unit equilateral triangles",
+      "discrete geometry",
+      "optimal configurations"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·难度待定；B层理由: Thue渐近最优(三角格), 但'必含正三角形'结构断言远难; Erdős猜想与三角格深度重叠(可能(1-o(1))n点在格上); 未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有充分大的 n，任一最小直径的单位最小距离 n 点集都含边长 1 的正三角形，或对某个充分大的 n 给出不含它的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

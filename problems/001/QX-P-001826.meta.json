@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001826",
-  "revision": 1,
-  "card_rev": "7b0ae64c0c9bb8f4",
+  "revision": 2,
+  "card_rev": "e8431c9a0a673afc",
   "title": "凸性半径连续性",
-  "title_en": null,
+  "title_en": "Continuity of the convexity radius on Riemannian manifolds",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C20",
+    "secondary": [
+      "53C22",
+      "58C05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "黎曼几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸性半径",
+      "黎曼流形",
+      "连续性",
+      "测地凸"
+    ],
+    "en": [
+      "convexity radius",
+      "Riemannian manifolds",
+      "continuity",
+      "geodesic convexity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明凸性半径函数在流形上处处连续（或给出成立所需的额外假设并证明），或构造一个不连续的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

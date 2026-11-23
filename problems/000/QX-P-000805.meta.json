@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000805",
-  "revision": 1,
-  "card_rev": "c0dbd0a4e18b1c63",
+  "revision": 2,
+  "card_rev": "11cdee759043b003",
   "title": "OEIS A056777：φ(n+12)=φ(n)+12 且 σ(n+12)=σ(n)+12 的合数 n=p(p+8)（素数四连组）",
-  "title_en": null,
+  "title_en": "Composite solutions of phi and sigma shifts force prime quadruplets",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -117,11 +120,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11N36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Euler φ 函数",
+      "约数和 σ",
+      "平移等式",
+      "素数四连组",
+      "合数结构"
+    ],
+    "en": [
+      "Euler phi",
+      "sum of divisors sigma",
+      "shift equation",
+      "prime quadruplet",
+      "composite structure"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -129,7 +151,12 @@
     "note": "三四区·小问题；孤立、具体的小命题（多为有限验证/显式目标），工作量对应 SCI 三/四区短文。 素数四连组 p,p+2,p+6,p+8 特征化；计算可攻（CB finite=true）"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个满足两式的合数 n 都有 n=p(p+8) 且 p,p+2,p+6,p+8 全为素数，或给出不满足此形状的解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

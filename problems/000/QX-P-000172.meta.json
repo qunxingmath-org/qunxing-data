@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000172",
-  "revision": 1,
-  "card_rev": "87a7028c9cd6adaa",
+  "revision": 2,
+  "card_rev": "1818ca4c681b5e29",
   "title": "Kourovka 19.21：可均+紧生成+拓扑单+非紧 tdlc 群存在？",
-  "title_en": null,
+  "title_en": "Amenable, compactly generated, topologically simple, non-compact locally compact group",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22D05",
+    "secondary": [
+      "43A07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可均群",
+      "紧生成",
+      "拓扑单群",
+      "局部紧群",
+      "完全不连通"
+    ],
+    "en": [
+      "amenable groups",
+      "compactly generated groups",
+      "topologically simple groups",
+      "locally compact groups",
+      "totally disconnected"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +158,12 @@
     "note": "一区二区·难度待定；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出同时满足非离散、紧生成、拓扑单、可均、非紧这五条的局部紧群，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

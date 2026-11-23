@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000249",
-  "revision": 1,
-  "card_rev": "86efb1b6efa89407",
+  "revision": 2,
+  "card_rev": "8ccfa4c8bf9e6b82",
   "title": "Green 问题 4：A_n 中最大 product-free 集精确值",
-  "title_en": null,
+  "title_en": "Green's problem 4: the exact maximum product-free subset of A_n",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +95,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "11B75",
+      "05E15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论/加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "交错群",
+      "乘积自由集",
+      "最大子集",
+      "精确值"
+    ],
+    "en": [
+      "alternating group",
+      "product-free set",
+      "maximum subset",
+      "exact value"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +125,12 @@
     "note": "一区二区·难度待定；渐近已解（EG 2022, arXiv:2205.15191）但精确值开放：剩余空间集中在有限情形与二阶项，方法（超 kontorovich 级谱图）可延续；一/二区论文潜力在精确常数与中等 n 结构。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 A_n 中最大乘积自由子集大小的精确公式并证明，或给出两个不同的极值构造说明答案不唯一从而需要修正表述。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

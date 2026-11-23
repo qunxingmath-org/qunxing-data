@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001429",
-  "revision": 1,
-  "card_rev": "71b60aa2a4e8ca3c",
+  "revision": 2,
+  "card_rev": "7eba4dd478c56de9",
   "title": "batch_I I-034：（域上 Artin–Schreier 定理的环版本）约化交换环 L 的全积分闭包 K 若为有限 L-",
-  "title_en": null,
+  "title_en": "A ring version of the Artin-Schreier theorem: does finite integral closure force a real base ring?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +99,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "13J25",
+    "secondary": [
+      "12D15",
+      "03C60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "交换代数 / 实代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Artin–Schreier 定理",
+      "整闭包",
+      "实闭域",
+      "约化环"
+    ],
+    "en": [
+      "Artin-Schreier theorem",
+      "integral closure",
+      "real closed fields",
+      "reduced rings"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +129,12 @@
     "note": "三四区·小问题；Jose Capco 2010 提出；Hailong Dao 互动并称\"Interesting question\"；0 回答。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对满足 1<[K:L]<∞ 的约化环 L 证明其特征为 0 且 L 为实环，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

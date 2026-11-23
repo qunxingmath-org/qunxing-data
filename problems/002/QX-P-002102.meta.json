@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002102",
-  "revision": 1,
-  "card_rev": "b136f6e01ee17242",
+  "revision": 2,
+  "card_rev": "492d49920d2a4e70",
   "title": "整矩阵幂矩阵集合可计算性（题面修正）",
-  "title_en": null,
+  "title_en": "Is the set of power matrices over Z computable for every n?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D78",
+    "secondary": [
+      "15A16",
+      "03D25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法/代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "矩阵幂",
+      "可计算性",
+      "整数矩阵",
+      "矩阵根",
+      "判定问题"
+    ],
+    "en": [
+      "matrix powers",
+      "computability",
+      "integer matrices",
+      "matrix roots",
+      "decision problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个正整数 n 给出判定整数矩阵是否为幂矩阵的算法，或证明对某个 n 该判定问题不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

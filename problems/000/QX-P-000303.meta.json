@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000303",
-  "revision": 1,
-  "card_rev": "746c3c8437905827",
+  "revision": 2,
+  "card_rev": "423eb6703c9ceea8",
   "title": "第二 Hardy–Littlewood 猜想：π(x+y) ≤ π(x)+π(y)",
-  "title_en": null,
+  "title_en": "The second Hardy-Littlewood conjecture: pi(x+y) is at most pi(x) plus pi(y)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +94,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41",
+      "11P32"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "解析数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数计数函数",
+      "次可加性",
+      "Hardy–Littlewood 猜想",
+      "素数分布"
+    ],
+    "en": [
+      "prime counting function",
+      "subadditivity",
+      "Hardy-Littlewood conjecture",
+      "distribution of primes"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +124,12 @@
     "note": "一区二区·难度待定；1923 经典猜想；与第一猜想（k-tuple）相容性为著名难题（Maier 现象）；条件结果（在 k-tuple 假设下讨论不相容性）文献活跃——作为'反常但有据'型猜想登记价值高。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对一切 x,y≥2 证明 π(x+y)≤π(x)+π(y)，或给出使不等式失效的一对 x,y。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

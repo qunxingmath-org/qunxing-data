@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001305",
-  "revision": 1,
-  "card_rev": "411ccad97c1e4153",
+  "revision": 2,
+  "card_rev": "4f667f26fdd209d4",
   "title": "Does the coefficient condition imply finite oscillation for all non-trivial solutions of the linear DE?",
-  "title_en": null,
+  "title_en": "Does the coefficient condition force finite oscillation for every non-trivial solution?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "34M10",
+    "secondary": [
+      "30D35",
+      "34M05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "复分析（复振荡理论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "复振荡理论",
+      "线性微分方程",
+      "零点",
+      "系数增长",
+      "亚纯函数"
+    ],
+    "en": [
+      "complex oscillation theory",
+      "linear differential equations",
+      "zeros",
+      "coefficient growth",
+      "meromorphic functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +132,12 @@
     "note": "三四区·小问题；中等——复振荡理论具体判定；Gröhn-Rättyä发表版（JGA 2017）及后续（Chyzhykov等2023）工具成熟；需二轮核对发表版是否已解决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该系数条件确实蕴含所有非平凡解有限振荡，或构造一个满足条件却有无穷多零点的解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

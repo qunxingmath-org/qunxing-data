@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001257",
-  "revision": 1,
-  "card_rev": "333c1f711717a7e5",
+  "revision": 2,
+  "card_rev": "4471f81c9b300ee5",
   "title": "相邻块乘积不重复序列（A402124）存在性",
-  "title_en": null,
+  "title_en": "Does the sequence A402124 with distinct adjacent block products go on?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B99",
+    "secondary": [
+      "68R15",
+      "05A99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合字/序列",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "贪心序列",
+      "相邻块乘积",
+      "无重复",
+      "无限性",
+      "OEIS"
+    ],
+    "en": [
+      "greedy sequence",
+      "adjacent block products",
+      "distinct blocks",
+      "infiniteness",
+      "OEIS"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -101,7 +124,12 @@
     "note": "三四区·小问题；C层：新OEIS序列具体问题——字典序最早的'相邻块乘积不重复'整数序列是否对所有n可定义（无死端）；可计算验证+结构分析。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该贪心序列可以无限延伸、永不出现死端；或找出它终止的那一项并验证。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

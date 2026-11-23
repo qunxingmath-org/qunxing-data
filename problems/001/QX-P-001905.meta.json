@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001905",
-  "revision": 1,
-  "card_rev": "44b9b75351eeed48",
+  "revision": 2,
+  "card_rev": "058e40e3d311c0b2",
   "title": "Σ{n!x} 收敛域",
-  "title_en": null,
+  "title_en": "Are all irrationals for which sum {n!x} converges transcendental?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J81",
+    "secondary": [
+      "40A05",
+      "11J72"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "分析/数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "阶乘",
+      "小数部分",
+      "收敛性",
+      "超越数"
+    ],
+    "en": [
+      "factorials",
+      "fractional parts",
+      "convergence",
+      "transcendental numbers"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个使 Σ{n!x} 收敛的无理数 x 都是超越数，或给出一个使级数收敛的代数无理数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

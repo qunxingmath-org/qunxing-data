@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002227",
-  "revision": 1,
-  "card_rev": "8fe3b777841bc90f",
+  "revision": 2,
+  "card_rev": "6678e2fbcf0a9b60",
   "title": "反线性泊松共轭 ρ 存在性",
-  "title_en": null,
+  "title_en": "Existence of an antilinear Poisson conjugation rho",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53D17",
+    "secondary": [
+      "14L24",
+      "17B63"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "反线性映射",
+      "泊松结构",
+      "共轭",
+      "辛几何",
+      "实结构"
+    ],
+    "en": [
+      "antilinear maps",
+      "Poisson structures",
+      "conjugation",
+      "symplectic geometry",
+      "real structures"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出与泊松结构相容的反线性共轭 ρ,或证明某些情形下这样的 ρ 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

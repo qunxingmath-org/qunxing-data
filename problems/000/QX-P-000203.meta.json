@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000203",
-  "revision": 1,
-  "card_rev": "f307174df45c8f6f",
+  "revision": 2,
+  "card_rev": "f69fc3be95d28c7d",
   "title": "van der Waerden 数的凹性（原批次 A-050）",
-  "title_en": null,
+  "title_en": "Is the van der Waerden number W(k,r) concave in k for fixed r?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "05C55",
+      "11B25"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "Ramsey理论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "van der Waerden 数",
+      "凹性",
+      "二阶差分",
+      "Ramsey 理论",
+      "等差数列"
+    ],
+    "en": [
+      "van der Waerden numbers",
+      "concavity",
+      "second differences",
+      "Ramsey theory",
+      "arithmetic progressions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +131,12 @@
     "note": "一区二区·难度待定；单一性质问题（W(k,r) 关于 k 的凹/凸性）；已知数值极少、计算数据可入手；近年文献稀少 → 证据强度中等，标 OPEN-WEAK。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个固定的 r，数列 W(k,r) 关于 k 满足题面所定义的凹性（或凸性）不等式，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

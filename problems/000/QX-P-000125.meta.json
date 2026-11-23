@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000125",
-  "revision": 1,
-  "card_rev": "45cf27cbabc9f788",
+  "revision": 2,
+  "card_rev": "56338bce8436e7c2",
   "title": "Chern 仿射流形猜想（紧仿射流形欧拉示性数为零）",
-  "title_en": null,
+  "title_en": "Does the Euler characteristic of a compact affine manifold vanish?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "disprove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53A15",
+    "secondary": [
+      "53C05",
+      "57R19"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "微分几何（仿射几何）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "仿射流形",
+      "欧拉示性数",
+      "Chern 猜想",
+      "平坦联络",
+      "紧流形"
+    ],
+    "en": [
+      "affine manifold",
+      "Euler characteristic",
+      "Chern's conjecture",
+      "flat connection",
+      "compact manifold"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；1955 年提出；Klingler 2017（Annals）证明特殊仿射情形为大突破；一般情形（非特殊、不完备）开放；arXiv:1504.04852 有未获公认的声称证明（记 DISPUTED 参考）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个紧仿射流形都有 χ(M)=0，或构造一个欧拉示性数不为零的紧仿射流形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

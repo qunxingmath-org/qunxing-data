@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000189",
-  "revision": 1,
-  "card_rev": "9726fa1d49797f23",
+  "revision": 2,
+  "card_rev": "971feed5a1205e96",
   "title": "稀疏\"素数+基\"集合（EP#32；原批次 A-004）",
-  "title_en": null,
+  "title_en": "A sparse base A such that every large integer is a prime plus an element of A",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "bound"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -110,11 +113,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "11P32",
+      "11N25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "加性基",
+      "素数",
+      "稀疏集合",
+      "计数函数",
+      "Goldbach 型问题"
+    ],
+    "en": [
+      "additive bases",
+      "primes",
+      "sparse sets",
+      "counting function",
+      "Goldbach-type problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -122,7 +145,12 @@
     "note": "一区二区·难度待定；子问题部分解决（Ruzsa 肯定 liminf≥1 情形，常数 e^γ）；主目标（o((log N)^2) 乃至 O(log N) 的构造）未决；构造型问题有明确目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造 A⊂N 使每个充分大整数都能写成素数加 A 中元素，并证明 |A∩[1,N]|=o((log N)²)（或更强的 O(log N)）；或证明这样的 A 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

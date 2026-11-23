@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001843",
-  "revision": 1,
-  "card_rev": "7968741a725e05a9",
+  "revision": 2,
+  "card_rev": "a425c47f97f8bda2",
   "title": "Paley 2-定位子图 ϑ",
-  "title_en": null,
+  "title_en": "Lovasz theta of the 2-localizer subgraph of the Paley graph at most (2/3)sqrt(p)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C25",
+    "secondary": [
+      "05C69",
+      "90C22"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合/SDP",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Paley 图",
+      "Lovász theta",
+      "上界",
+      "定位子图"
+    ],
+    "en": [
+      "Paley graphs",
+      "Lovasz theta",
+      "upper bounds",
+      "localizer subgraphs"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 2-定位子图的 ϑ 不超过 (2/3)√p，或给出达到更大值的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

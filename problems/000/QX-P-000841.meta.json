@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000841",
-  "revision": 1,
-  "card_rev": "3873e0e541ee5e20",
+  "revision": 2,
+  "card_rev": "493b2d19c759e4df",
   "title": "Schrijver–Seymour \"多权值基\"猜想（拟阵基权和集合的下界）",
-  "title_en": null,
+  "title_en": "Schrijver-Seymour multiweight basis conjecture: a lower bound for the set of base weights",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B35",
+    "secondary": [
+      "05E99",
+      "11P70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拟阵论/加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟阵基",
+      "基权集合",
+      "稳定子群",
+      "阿贝尔群值权",
+      "秩函数"
+    ],
+    "en": [
+      "matroid bases",
+      "set of base weights",
+      "stabilizer subgroup",
+      "abelian group weights",
+      "rank function"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +137,12 @@
     "note": "三四区·小问题；OPG 注\"看似技术性实则自然且重要\"；与拟阵基权值分布、零和理论衔接；Hörsch 2024 群标记拟阵基活跃；r(M) 小情形可枚举验证。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意阿贝尔群 G、任意拟阵 M、任意权函数 w，证明基权集合 S 满足 |S| ≥ |H|(1−rk(M)+Σ_{Q∈G/H} rk(w⁻¹(Q)))。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

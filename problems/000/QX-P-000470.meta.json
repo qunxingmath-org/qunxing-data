@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000470",
-  "revision": 1,
-  "card_rev": "50fbcf7622316a78",
+  "revision": 2,
+  "card_rev": "59cd469aacd5d7a9",
   "title": "(3/2)^n mod 1 均匀分布",
-  "title_en": null,
+  "title_en": "Uniform distribution modulo one of the sequence (3/2)^n",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "asymptotic"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11K06",
+    "secondary": [
+      "11J71",
+      "37A45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "均匀分布",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "均匀分布",
+      "模 1 分布",
+      "Weyl 判据",
+      "3/2 的幂",
+      "指数序列"
+    ],
+    "en": [
+      "uniform distribution",
+      "distribution modulo one",
+      "Weyl criterion",
+      "powers of 3/2",
+      "exponential sequences"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；经典均匀分布问题（Mahler Z-数否定方向的加强），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明序列 ((3/2)^n) 模 1 均匀分布（例如验证 Weyl 判据对所有非零整数 h 成立），或证明它不均匀分布。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

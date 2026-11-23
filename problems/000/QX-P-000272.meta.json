@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000272",
-  "revision": 1,
-  "card_rev": "250060d5eed2d24a",
+  "revision": 2,
+  "card_rev": "ee2f2fed36905baa",
   "title": "Wegner 猜想 Δ=4 情形：Δ≤4 平面图平方图 9-可染",
-  "title_en": null,
+  "title_en": "Wegner's conjecture, the case Delta = 4: squares of planar graphs are 9-colourable",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C10",
+      "05C62"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图染色",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平面图",
+      "平方图",
+      "边染色",
+      "Wegner 猜想",
+      "距离 2 染色"
+    ],
+    "en": [
+      "planar graphs",
+      "square of a graph",
+      "colouring",
+      "Wegner's conjecture",
+      "distance-2 colouring"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -110,7 +133,12 @@
     "note": "一区二区·难度待定；Wegner (1977) 平面图平方染色的一般猜想 Δ=3 已证（2023, 2308.01824），Δ=4 是下一关；2026-02/04 有'介于正常染色与平方染色之间'系列论文（2602.13037, 2604.01126）——活跃且方法（放电+平衡超图）明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个最大度不超过 4 的平面图 G 都满足 χ(G²)≤9，或给出一个这样的图其平方图需要 10 种颜色。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

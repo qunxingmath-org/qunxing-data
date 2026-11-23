@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001349",
-  "revision": 1,
-  "card_rev": "8cf112fc94d91540",
+  "revision": 2,
+  "card_rev": "f90f5a06294bea88",
   "title": "Velleman：ZF 中\"双射+单射之和\"命题的集合论地位",
-  "title_en": null,
+  "title_en": "Sum of a bijection and an injection: is it a sum of two bijections in ZF?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E25",
+    "secondary": [
+      "03E15",
+      "26A21"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "集合论/函数分解",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "选择公理",
+      "双射之和",
+      "单射",
+      "ZF 集合论",
+      "函数分解"
+    ],
+    "en": [
+      "axiom of choice",
+      "sums of bijections",
+      "injections",
+      "ZF set theory",
+      "decompositions of functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +134,12 @@
     "note": "三四区·小问题；ZFC 中经典（超限递归）；ZF 中命题强度未定——逻辑/集合论背景即可入手，命题陈述短小。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 ZF 中证明该命题（或证明它与某条选择原则等价），或构造 ZF 模型使命题失败。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001151",
-  "revision": 1,
-  "card_rev": "8358224ba07ae954",
+  "revision": 2,
+  "card_rev": "67fa91e908bad13d",
   "title": "Kourovka 17.72：GA 亦 Frobenius 时 G 指数被 |B|,exp C_G(B) 界",
-  "title_en": null,
+  "title_en": "Bounding the exponent when GA is also a Frobenius group",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20D10",
+      "20D15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Frobenius 群",
+      "群作用",
+      "指数",
+      "中心化子",
+      "有界性"
+    ],
+    "en": [
+      "Frobenius groups",
+      "group actions",
+      "exponent",
+      "centralizers",
+      "boundedness"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出只依赖于 |B| 与 exp C_G(B) 的函数 f，并证明 exp G ≤ f 对所有这样的 (G,A,B) 成立；或构造一族反例说明不存在这样的界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

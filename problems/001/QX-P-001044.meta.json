@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001044",
-  "revision": 1,
-  "card_rev": "82e5c2a20ff75b06",
+  "revision": 2,
+  "card_rev": "4d1cfd0e67cb4788",
   "title": "Kourovka 17.90：抛物自由群（剩余幂零+与自由群同下商）：有限生成抛物自由群 H2(G)=0 吗",
-  "title_en": null,
+  "title_en": "Is H_2(G) = 0 for finitely generated parafree groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20J05",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "抛物自由群",
+      "Schur 乘子",
+      "剩余幂零",
+      "下中心商",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "parafree groups",
+      "Schur multipliers",
+      "residually nilpotent groups",
+      "lower central quotients",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明所有有限生成抛物自由群都有 H_2(G)=0，或构造一个 H_2(G)≠0 的有限生成抛物自由群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

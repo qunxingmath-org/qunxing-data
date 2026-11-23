@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000402",
-  "revision": 1,
-  "card_rev": "86e5a790c14ad8e3",
+  "revision": 2,
+  "card_rev": "a8df886ebf6786f6",
   "title": "batch_I I-062：每个无穷维可分 Banach 空间是否都有 Markushevich–Auerbach 基（双正交系 {",
-  "title_en": null,
+  "title_en": "Does every infinite-dimensional separable Banach space have a Markushevich–Auerbach basis?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -106,11 +109,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46B15",
+    "secondary": [
+      "46B03",
+      "46B20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析 / Banach空间",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Banach 空间",
+      "Markushevich 基",
+      "Auerbach 基",
+      "双正交系",
+      "弱*稠密"
+    ],
+    "en": [
+      "Banach spaces",
+      "Markushevich bases",
+      "Auerbach bases",
+      "biorthogonal systems",
+      "weak* density"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -118,7 +141,12 @@
     "note": "一区二区·难度待定；经典 Banach 空间问题；Bill Johnson 与 Tomasz Kania 两位专家评论确认开放，并指出 arXiv 1604.03547 声称的解法有误（\"The proof in the linked paper is not a proof\"）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个无穷维可分 Banach 空间都存在这样的双正交系，或构造一个不存在这种基的可分 Banach 空间。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

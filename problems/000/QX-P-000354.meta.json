@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000354",
-  "revision": 1,
-  "card_rev": "cc5c01694af64ef7",
+  "revision": 2,
+  "card_rev": "13443badc755a475",
   "title": "Köthe猜想",
-  "title_en": null,
+  "title_en": "Köthe's conjecture: does a ring with no nonzero nil ideal have no nonzero nil one-sided ideal?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16N40",
+    "secondary": [
+      "16D25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "环论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Köthe 猜想",
+      "幂零理想",
+      "单侧理想",
+      "环论",
+      "幂零元"
+    ],
+    "en": [
+      "Köthe conjecture",
+      "nil ideals",
+      "one-sided ideals",
+      "ring theory",
+      "nilpotent elements"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -103,7 +124,12 @@
     "note": "一区二区·难度待定；B层：1930年经典环论核心问题；等价形式多（幂零传递、sum of nil left ideals nil）；Smoktunowicz构造给出部分反方向约束；2024-2025仍有特殊情形文献。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明不含非零幂零双边理想的环也不含非零幂零单侧理想，或给出一个反例环。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000169",
-  "revision": 1,
-  "card_rev": "3a97bf8cd8441b29",
+  "revision": 2,
+  "card_rev": "b136e89cb238b232",
   "title": "Kourovka 18.102：幂零长≤线性(ℓ(C))？（Dade 指数界改进）",
-  "title_en": null,
+  "title_en": "Linear or polynomial bound on nilpotent length via the Carter subgroup",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "decide"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20D30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Carter 子群",
+      "幂零长",
+      "有限可解群",
+      "素数重数",
+      "Dade 定理"
+    ],
+    "en": [
+      "Carter subgroups",
+      "nilpotent length",
+      "finite solvable groups",
+      "prime multiplicities",
+      "Dade's theorem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +159,12 @@
     "note": "一区二区·难度待定；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在线性函数（或至少多项式函数）f，使所有有限可解群的幂零长不超过 f(ℓ(C))，或证明这样的 f 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

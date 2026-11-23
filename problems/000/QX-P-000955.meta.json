@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000955",
-  "revision": 1,
-  "card_rev": "4149bf939177140a",
+  "revision": 2,
+  "card_rev": "1e53265e40cbf2bd",
   "title": "Kourovka 20.69：带挠单关系群的子幺半群隶属问题都可判定吗",
-  "title_en": null,
+  "title_en": "Kourovka 20.69: is submonoid membership decidable in every one-relator group with torsion?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "20F05",
+      "03D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "子幺半群隶属问题",
+      "单关系群",
+      "带挠群",
+      "可判定性",
+      "算法问题"
+    ],
+    "en": [
+      "submonoid membership problem",
+      "one-relator groups",
+      "torsion",
+      "decidability",
+      "algorithmic problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有带挠的单关系群子幺半群隶属问题都可判定，或给出一个不可判定的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

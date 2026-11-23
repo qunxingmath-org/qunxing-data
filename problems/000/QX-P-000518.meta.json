@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000518",
-  "revision": 1,
-  "card_rev": "378cc5702c287b4c",
+  "revision": 2,
+  "card_rev": "18c9d1af791096c4",
   "title": "Schur 指数猜想在有限 p-群的剩余情形（表述已修正）",
-  "title_en": null,
+  "title_en": "The Schur exponent conjecture for finite p-groups: does exp(M(G)) divide exp(G)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20J05",
+      "20D45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论/上同调（Schur 乘子）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Schur 乘子",
+      "指数",
+      "有限 p-群",
+      "幂零类",
+      "上同调"
+    ],
+    "en": [
+      "Schur multiplier",
+      "exponent",
+      "finite p-groups",
+      "nilpotency class",
+      "cohomology"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +137,12 @@
     "note": "一区二区·难度待定；**采集表述修正**：全群版 exp(M(G))|exp(G) 已知存在反例（Moravec 2007 等），并非\"一般情形开放\"；真正开放的是有限 p-群情形（任意幂零类）。2026-11 已推至 class ≤2p-2（奇 p），逐类推进活跃、目标明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有有限 p-群证明 exp(M(G)) 整除 exp(G)，或给出一个使该整除关系失败的 p-群及其 Schur 乘子指数计算。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001132",
-  "revision": 1,
-  "card_rev": "0f5defcc8c9a8d4b",
+  "revision": 2,
+  "card_rev": "1b0737d8f0ca77dc",
   "title": "Kourovka 14.70：非幂等 fg n-Engel 群存在？（n≥5）",
-  "title_en": null,
+  "title_en": "Do non-nilpotent finitely generated n-Engel groups exist for n >= 5?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F45",
+    "secondary": [
+      "20F05",
+      "20E10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Engel 群",
+      "幂零性",
+      "有限生成",
+      "恒等式"
+    ],
+    "en": [
+      "Engel groups",
+      "nilpotency",
+      "finite generation",
+      "identities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对某个 n≥5 显式构造一个有限生成、n-Engel 但不幂零的群，并验证这两条性质；或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

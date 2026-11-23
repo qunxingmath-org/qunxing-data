@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000339",
-  "revision": 1,
-  "card_rev": "5620672b5df0f998",
+  "revision": 2,
+  "card_rev": "3589143c83de601d",
   "title": "Does every hyperbolic 3-manifold admit a tight contact structure?",
-  "title_en": null,
+  "title_en": "Does every closed hyperbolic 3-manifold admit a tight contact structure?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -117,11 +119,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K33",
+    "secondary": [
+      "57K32",
+      "57R17"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "低维拓扑（接触拓扑）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "紧接触结构",
+      "双曲 3-流形",
+      "过度扭转",
+      "接触拓扑",
+      "叶状结构"
+    ],
+    "en": [
+      "tight contact structures",
+      "hyperbolic 3-manifolds",
+      "overtwisted",
+      "contact topology",
+      "foliations"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -129,7 +151,12 @@
     "note": "一区二区·难度待定；中等偏难但未冻结——著名中心问题（Etnyre问题清单/Colin-Honda纲领的收官情形）；toroidal不可约情形已由Colin-Honda解决，问题完全聚焦双曲情形；近年在双曲同调球面等族上有持续新构造（2024），方法（Dehn手术、分层叶状结构、laminar构造）活跃，难度随具体族可拆解。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个闭双曲 3-流形都存在紧接触结构，或给出一个不存在紧接触结构的闭双曲 3-流形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

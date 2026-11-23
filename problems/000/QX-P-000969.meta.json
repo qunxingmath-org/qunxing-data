@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000969",
-  "revision": 1,
-  "card_rev": "32dbb5dbe273a505",
+  "revision": 2,
+  "card_rev": "838bf70809a135c0",
   "title": "Kourovka 21.33：tdlc 群的 Dunwoody 定理类似：有理离散上同调维数≤1 的 tdlc 群必拓扑同构于某(有限图 of g…",
-  "title_en": null,
+  "title_en": "Kourovka 21.33: a Dunwoody-type theorem for tdlc groups of rational discrete cohomological dimension at most 1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22D05",
+    "secondary": [
+      "20J05",
+      "20E08"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "tdlc 群",
+      "有理离散上同调维数",
+      "profinite 群图",
+      "Dunwoody 定理",
+      "基本群"
+    ],
+    "en": [
+      "tdlc groups",
+      "rational discrete cohomological dimension",
+      "graphs of profinite groups",
+      "Dunwoody's theorem",
+      "fundamental groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的 tdlc 群必拓扑同构于 profinite 群图的基本群，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

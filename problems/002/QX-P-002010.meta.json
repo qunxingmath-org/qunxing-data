@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002010",
-  "revision": 1,
-  "card_rev": "e4982c4e5ed7a789",
+  "revision": 2,
+  "card_rev": "776d798016fd3637",
   "title": "多项式环有限平坦子环消去",
-  "title_en": null,
+  "title_en": "Cancellation for finite flat subrings of a polynomial ring",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "13B02",
+    "secondary": [
+      "13C10",
+      "13F20"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "交换代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "多项式环",
+      "有限平坦",
+      "消去问题",
+      "子环",
+      "交换代数"
+    ],
+    "en": [
+      "polynomial rings",
+      "finite flat extensions",
+      "cancellation",
+      "subrings",
+      "commutative algebra"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该类子环之间的消去性质总成立，或构造一对 A、B 与变量 y，使 A[y]≅B[y] 但 A 与 B 不同构。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

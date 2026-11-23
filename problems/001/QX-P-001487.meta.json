@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001487",
-  "revision": 1,
-  "card_rev": "9f82454ae23288d7",
+  "revision": 2,
+  "card_rev": "7058ff26d18d54a0",
   "title": "batch_I I-149：Araujo 四问：(1) 非线性双分离映射 T:Aⁿ(Ω:E)→A^m(Ω′,F) 是否蕴含支集映射为",
-  "title_en": null,
+  "title_en": "Araujo's four open questions on biseparating maps between spaces of differentiable functions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46E10",
+    "secondary": [
+      "46H40",
+      "54C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析 / 双分离映射",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双分离映射",
+      "函数空间",
+      "微分同胚",
+      "支集映射",
+      "向量值函数"
+    ],
+    "en": [
+      "biseparating maps",
+      "function spaces",
+      "diffeomorphisms",
+      "support maps",
+      "vector-valued functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Idonknow 2018 引 Araujo 论文 p.518-519 的四个开放问题；0 回答；现状未知。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 Araujo 的四个问题逐一给出解答或明确的反例（例如给出支集映射不必是 n 阶微分同胚的显式反例）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
