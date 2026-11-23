@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001738",
-  "revision": 1,
-  "card_rev": "90b80ae7a3f86252",
+  "revision": 2,
+  "card_rev": "5a3ea203e12f8eda",
   "title": "非自由群作用提升判据",
-  "title_en": null,
+  "title_en": "Does the lifting criterion for free group actions extend to non-free actions?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "55R10",
+    "secondary": [
+      "57M10",
+      "54H15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "覆叠空间",
+      "群作用",
+      "提升",
+      "商空间",
+      "同伦"
+    ],
+    "en": [
+      "covering spaces",
+      "group actions",
+      "lifting",
+      "quotient spaces",
+      "homotopy"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出非自由作用下的提升判据（并证明其充分必要性），或给出一个反例说明原判据在非自由情形下失效且无法简单修补。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

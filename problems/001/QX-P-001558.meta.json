@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001558",
-  "revision": 1,
-  "card_rev": "1f3fa0d628f97a7f",
+  "revision": 2,
+  "card_rev": "cbefd74c1acba7e4",
   "title": "20.94 饱和于有限 Frobenius 群的无限周期单群存在？",
-  "title_en": null,
+  "title_en": "An infinite periodic simple group saturated with finite Frobenius groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E32",
+      "20D99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "周期群",
+      "单群",
+      "Frobenius 群",
+      "饱和性",
+      "模型论群论"
+    ],
+    "en": [
+      "periodic groups",
+      "simple groups",
+      "Frobenius groups",
+      "saturation",
+      "model-theoretic group theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在无限周期单群，其\"饱和于有限 Frobenius 群\"（定义见 14.101）？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个无限周期单群并证明它饱和于有限 Frobenius 群类，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

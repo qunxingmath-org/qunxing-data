@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002239",
-  "revision": 1,
-  "card_rev": "1cb20ed5c3c2086e",
+  "revision": 2,
+  "card_rev": "3aca4b44619e5347",
   "title": "K-模构造推广到正特征/Z",
-  "title_en": null,
+  "title_en": "Extending the K-moduli construction to positive characteristic and over Z",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "special_case"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14D20",
+    "secondary": [
+      "14G17",
+      "14J45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "K-模空间",
+      "正特征",
+      "整模型",
+      "基变换",
+      "K-稳定性"
+    ],
+    "en": [
+      "K-moduli",
+      "positive characteristic",
+      "integral models",
+      "base change",
+      "K-stability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出正特征(及 Z 上)的 K-模空间,并证明它在各纤维上给出正确的稳定性模空间。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

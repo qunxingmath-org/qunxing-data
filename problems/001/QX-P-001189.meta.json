@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001189",
-  "revision": 1,
-  "card_rev": "11f619e2146c6a1a",
+  "revision": 2,
+  "card_rev": "ee98a409c8e996e3",
   "title": "Dubner 孪生素数和猜想（>4208 偶数=两孪生素数对元素之和）",
-  "title_en": null,
+  "title_en": "Dubner's conjecture: every even number above 4208 is a sum of two twin-prime members",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -85,11 +87,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11P32",
+    "secondary": [
+      "11N05",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "孪生素数",
+      "Goldbach 型猜想",
+      "偶数的表示",
+      "素数对",
+      "加性数论"
+    ],
+    "en": [
+      "twin primes",
+      "Goldbach-type conjectures",
+      "representations of even numbers",
+      "prime pairs",
+      "additive number theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -97,7 +119,12 @@
     "note": "三四区·小问题；计算先行型（Dubner 1990s 构造）；依赖孪生素数分布启发但独立于孪生素数猜想本身；扩展计算核验+启发式密度论文为三四区工作量。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明所有大于 4208 的偶数都能这样表示，或给出一个大于 4208 却不能如此表示的偶数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

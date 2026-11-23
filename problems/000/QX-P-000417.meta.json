@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000417",
-  "revision": 1,
-  "card_rev": "e081a5cd3d2288bb",
+  "revision": 2,
+  "card_rev": "6dbf51e86d7b9ab0",
   "title": "和的均匀性传递问题（Green 问题 28）",
-  "title_en": null,
+  "title_en": "If X + Y is uniform on its range, must X and Y themselves be uniform?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "60B15",
+    "secondary": [
+      "11J99",
+      "11B13"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "概率/加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "均匀分布",
+      "卷积",
+      "整值随机变量",
+      "Mahler Z 数",
+      "独立性"
+    ],
+    "en": [
+      "uniform distributions",
+      "convolution",
+      "integer-valued random variables",
+      "Mahler's Z-numbers",
+      "independence"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；与 Mahler Z-数（池内 B-860）关联的著名难点族，特征 p/数论映射深水区，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 X+Y 均匀必然推出 X、Y 各自均匀，或构造一对独立整值随机变量作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

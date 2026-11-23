@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000018",
-  "revision": 1,
-  "card_rev": "3ce7921f7753a313",
+  "revision": 2,
+  "card_rev": "a844cb99d88525ae",
   "title": "Erdos P173: monochromatic congruent copy of every triangle (all but one)",
-  "title_en": null,
+  "title_en": "Every triangle shape but at most one has a monochromatic congruent copy in any 2-colouring of the plane",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "52C10",
+      "05C55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何 / Ramsey理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "欧氏 Ramsey 理论",
+      "平面二染色",
+      "全等副本",
+      "三角形形状",
+      "单色构型"
+    ],
+    "en": [
+      "Euclidean Ramsey theory",
+      "two-colouring of the plane",
+      "congruent copy",
+      "triangle shapes",
+      "monochromatic configuration"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·易证明；A层理由: 目标=逐形状验证(每个具体三角形独立成题, 有限目标); Shader 1976已证直角三角形情形(方法=初等代数+染色结构), 可推广; Euclidean Ramsey近年活跃(2024-2026多篇); 数值/对称性分析可先筛查候选例外形状。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对 R² 的任意二染色，至多一种三角形形状没有单色全等副本；或给出一种二染色使至少两种形状同时缺席。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

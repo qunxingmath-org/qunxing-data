@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000373",
-  "revision": 1,
-  "card_rev": "fde2914dc644869a",
+  "revision": 2,
+  "card_rev": "2cb52c5dc32fe5a4",
   "title": "batch_I I-003：设 K⊂R² 凸体，直径 d。若存在 K 上测度 μ，使某固定宽度 0<h<d 的所有\"正当相交\"p",
-  "title_en": null,
+  "title_en": "Is a planar convex body a disk if all properly intersecting planks of fixed width have equal measure?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52A40",
+    "secondary": [
+      "52A10",
+      "52A38"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "凸几何 / 几何测度论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸体",
+      "plank",
+      "带域测度",
+      "圆盘刻画",
+      "几何测度论"
+    ],
+    "en": [
+      "convex bodies",
+      "planks",
+      "measure of slabs",
+      "characterization of disks",
+      "geometric measure theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；Mohammad Ghomi（凸几何专家）2017 提出；0 回答；与 MO 6964 egalitarian measures 及\"球体 Archimedean 性质之逆\"研究线关联。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在所述测度条件下 K 必为圆盘，或构造出一个非圆盘却满足该条件的凸体。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

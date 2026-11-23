@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001986",
-  "revision": 1,
-  "card_rev": "6ed14e1c02330251",
+  "revision": 2,
+  "card_rev": "9cf5e5e1035f899d",
   "title": "稠密代数点⇒Q̄ 定义（=C402 同题；MO#428384 Sawin 已答）",
-  "title_en": null,
+  "title_en": "Do Zariski-dense algebraic points force a variety to be defined over the algebraic closure?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14G05",
+    "secondary": [
+      "14A15",
+      "14G99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "代数点",
+      "Zariski 稠密",
+      "Q̄ 定义",
+      "模型论几何",
+      "代数簇"
+    ],
+    "en": [
+      "algebraic points",
+      "Zariski density",
+      "defining field",
+      "algebraic geometry over Q-bar",
+      "varieties"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 Zariski 稠密的代数点确实强制簇可定义在 Q̄ 上，或给出一个定义在更大域上、却仍有 Zariski 稠密代数点的簇。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

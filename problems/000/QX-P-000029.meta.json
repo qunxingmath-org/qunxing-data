@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000029",
-  "revision": 1,
-  "card_rev": "d2a98e9c258677cb",
+  "revision": 2,
+  "card_rev": "f45054ef9e68ce8b",
   "title": "WOWII 猜想 133：诱导树最大阶 ≥ ⌊girth/2⌋−1+max α(G[N(v)])",
-  "title_en": null,
+  "title_en": "WOWII 133: an induced tree of order at least floor(g/2)-1+max alpha(G[N(v)])",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C05",
+    "secondary": [
+      "05C69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（机器生成猜想）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "诱导树",
+      "围长",
+      "邻域独立数",
+      "机器生成猜想",
+      "图论"
+    ],
+    "en": [
+      "induced trees",
+      "girth",
+      "neighbourhood independence number",
+      "machine-generated conjectures",
+      "graph theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·易证明；Graffiti.pc 机器猜想，陈述为两量不等式；验证型：可用 n≤12 全图穷举（nauty）复核，反例搜索空间有限；同类 WOWII 猜想多为可 disenage 的局部结构论证。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个连通图 G 都有 f(G) ≥ ⌊g(G)/2⌋ − 1 + max α(G[N(v)])；或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

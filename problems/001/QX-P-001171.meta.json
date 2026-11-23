@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001171",
-  "revision": 1,
-  "card_rev": "61f0188d20c0ec17",
+  "revision": 2,
+  "card_rev": "45ef99a91b916f80",
   "title": "Lehmer totient 猜想：φ(n)|n−1 ⇒ n 素数",
-  "title_en": null,
+  "title_en": "Lehmer's totient problem: does phi(n) dividing n-1 force n to be prime?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11A41",
+      "11N25"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "欧拉函数",
+      "Lehmer 猜想",
+      "素数判别",
+      "整除条件",
+      "合数"
+    ],
+    "en": [
+      "Euler totient function",
+      "Lehmer's conjecture",
+      "primality criteria",
+      "divisibility conditions",
+      "composite numbers"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +125,12 @@
     "note": "三四区·小问题；单条件合数搜索型问题：核验范围已巨大且无反例；等价刻画（合数必 >10^30 且有 ≥? 素因子）已知——扩大核验范围或理论排奇为三四区标准工作量。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n>1 证明 φ(n)|(n−1) 蕴含 n 为素数，或给出一个满足该整除条件的合数 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

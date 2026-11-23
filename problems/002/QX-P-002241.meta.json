@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002241",
-  "revision": 1,
-  "card_rev": "092c175c366fc4cb",
+  "revision": 2,
+  "card_rev": "1b7de7d4038deb94",
   "title": "LeBrun 接触 Fano 齐性猜想（三路解决链=OAI+HLW+Fu；漏检第 14 例）",
-  "title_en": null,
+  "title_en": "LeBrun's homogeneous contact Fano conjecture",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -61,11 +64,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C30",
+    "secondary": [
+      "53D10",
+      "14M17"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "复几何/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "LeBrun 猜想",
+      "接触 Fano",
+      "齐性空间",
+      "Kähler–Einstein",
+      "分类"
+    ],
+    "en": [
+      "LeBrun conjecture",
+      "contact Fano",
+      "homogeneous spaces",
+      "Kahler-Einstein",
+      "classification"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -73,7 +96,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明齐性接触 Fano 流形必属于给定的有限清单,或给出清单之外的一个例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

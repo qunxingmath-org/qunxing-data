@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000524",
-  "revision": 1,
-  "card_rev": "48c1f66b8eb9670b",
+  "revision": 2,
+  "card_rev": "13a85f180c02bedc",
   "title": "两个均匀附着树最大公共子树规模的精确增长阶",
-  "title_en": null,
+  "title_en": "Growth exponent of the largest common subtree of two uniform attachment trees",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "60C05",
+    "secondary": [
+      "05C05",
+      "05C80"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "概率组合/随机图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "均匀附着树",
+      "最大公共子树",
+      "增长阶",
+      "随机树",
+      "高概率估计"
+    ],
+    "en": [
+      "uniform attachment trees",
+      "largest common subtree",
+      "growth exponent",
+      "random trees",
+      "high-probability bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +138,12 @@
     "note": "一区二区·难度待定；2026-09 论文证下界 n^{0.83}（高概率）+ 上界严格小于 n 且非平凡，精确阶为作者明示 \"intriguing open question\"；随机树 LCS 为 2025-2026 新热（Angel 2025、Bienaymé 树跟进），方法活跃可延续。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定指数 α 使得 L_n = n^{α+o(1)} 在高概率下成立，并给出上下界的匹配证明（或至少把已知指数区间缩小到单点）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

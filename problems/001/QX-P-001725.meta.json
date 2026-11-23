@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001725",
-  "revision": 1,
-  "card_rev": "759a3ea5ec8315cb",
+  "revision": 2,
+  "card_rev": "545573b02cdf2402",
   "title": "单位圆为三角形的平面度量",
-  "title_en": null,
+  "title_en": "Is there a metric on the plane whose unit circles are triangles?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "54E35",
+    "secondary": [
+      "51K05",
+      "52A10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "度量几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "度量",
+      "单位圆",
+      "三角形",
+      "拓扑等价",
+      "最短路径距离"
+    ],
+    "en": [
+      "metrics",
+      "unit circles",
+      "triangles",
+      "topological equivalence",
+      "shortest path metric"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出 ℝ² 上一个诱导通常拓扑的度量，使其单位圆（或所有圆）为三角形，或证明这样的度量不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

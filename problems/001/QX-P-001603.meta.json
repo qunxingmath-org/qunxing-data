@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001603",
-  "revision": 1,
-  "card_rev": "936beafc32acf0e6",
+  "revision": 2,
+  "card_rev": "f0706f0b4f24159b",
   "title": "21.132 每个素数 p 构造带非平凡有限中心的 fg 剩余有限 p-群",
-  "title_en": null,
+  "title_en": "For every prime p, a finitely generated residually finite p-group with a finite nontrivial centre",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20F05",
+      "20E18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "剩余有限 p-群",
+      "有限中心",
+      "Golod 构造",
+      "有限生成",
+      "素数"
+    ],
+    "en": [
+      "residually finite p-groups",
+      "finite centre",
+      "Golod construction",
+      "finitely generated"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Timofeenko）基于 Golod 构造的发展（Discrete Math. Appl. 23 (2013)），对…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个素数 p 显式构造出有限生成的剩余有限 p-群，并证明它的中心有限且非平凡。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

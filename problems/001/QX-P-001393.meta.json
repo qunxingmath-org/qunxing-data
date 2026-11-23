@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001393",
-  "revision": 1,
-  "card_rev": "8cb3dbad417169af",
+  "revision": 2,
+  "card_rev": "c985b527344277da",
   "title": "Daykin–Kleitman 除数格极值集比例（AMM 6190）",
-  "title_en": null,
+  "title_en": "Daykin-Kleitman: the largest divisor-set family avoiding products and quotients",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "value"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -91,11 +94,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D05",
+    "secondary": [
+      "06A07",
+      "11A25"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合（格上极值）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "除数格",
+      "极值集族",
+      "比例上界",
+      "因子集"
+    ],
+    "en": [
+      "divisor lattices",
+      "extremal families",
+      "ratio bounds",
+      "divisor sets"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +124,12 @@
     "note": "三四区·小问题；有限格极值组合，小 n 可算、结构可猜可证——很适合入门。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每一类 n 确定 |F|/τ(n) 的最大值并给出达到它的极值族，或证明该最大值的确切形式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

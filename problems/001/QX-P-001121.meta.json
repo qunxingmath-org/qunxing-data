@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001121",
-  "revision": 1,
-  "card_rev": "9228818f8f46bd24",
+  "revision": 2,
+  "card_rev": "5c411fe3d2f6c065",
   "title": "Kourovka 12.34：Σχ(1)³≤|G|·log₂|G| 的有限群刻画",
-  "title_en": null,
+  "title_en": "Classifying finite groups with sum of cubed irreducible character degrees at most |G| log2|G|",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D99",
+      "20E45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不可约特征标",
+      "特征标次数",
+      "立方和",
+      "有限群刻画"
+    ],
+    "en": [
+      "irreducible characters",
+      "character degrees",
+      "sum of cubes",
+      "classification of finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "完整刻画所有满足 Σχ(1)³ ≤ |G|·log₂|G|（χ 跑遍复不可约特征标）的有限群 G。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

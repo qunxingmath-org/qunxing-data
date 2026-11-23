@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000188",
-  "revision": 1,
-  "card_rev": "ed929e2610415440",
+  "revision": 2,
+  "card_rev": "fdd378b48835a346",
   "title": "锚定距离问题（EP#604；原批次 A-026）",
-  "title_en": null,
+  "title_en": "The anchored distance problem: one point must see many distinct distances",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -110,11 +113,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "51K05",
+      "05D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何/离散几何（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "锚定距离",
+      "相异距离",
+      "点集",
+      "组合几何",
+      "下界"
+    ],
+    "en": [
+      "anchored distances",
+      "distinct distances",
+      "point sets",
+      "combinatorial geometry",
+      "lower bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -122,7 +145,12 @@
     "note": "一区二区·难度待定；相异距离问题的\"锚定\"变体；已知全局相异距离下界技术（Guth–Katz）不直接迁移到 pinned 版；活跃但非易证明。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明平面上任意 n 点集都存在一点 x，使从 x 出发的不同距离数至少是 c·n/√(log n)（或 c·n^{1−o(1)}），或给出一个反例点集。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

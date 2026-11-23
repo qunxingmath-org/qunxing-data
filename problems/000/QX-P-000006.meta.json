@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000006",
-  "revision": 1,
-  "card_rev": "6c3833026b80bc8b",
+  "revision": 2,
+  "card_rev": "91059a619eb81334",
   "title": "处处收敛幂级数在 R 上有界的系数判据（Rüdinger）",
-  "title_en": null,
+  "title_en": "A coefficient criterion for power series bounded on the real line",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -117,11 +119,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "30B10",
+    "secondary": [
+      "40A05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "分析（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幂级数",
+      "有界性",
+      "系数判据",
+      "整函数",
+      "实轴"
+    ],
+    "en": [
+      "power series",
+      "boundedness",
+      "coefficient criterion",
+      "entire function",
+      "real line"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -129,7 +150,12 @@
     "note": "一区二区·易证明；OPG 原页标注 Importance Low 且\"Recomm. for undergrads: yes\"；目标为刻画型命题，部分刻画即可构成成果；子空间结构（线性+代数+含 g(x²) 型）给出明确可检验子目标。风险：表述开放性强（判据未具体化），非单一 crisp 猜想，故 A 层取\"低门槛、可分步产出\"定位。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出系数序列使幂级数在整条实轴上有界的充要条件，并判定该子空间是否只有 g(x²) 与常数两类。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

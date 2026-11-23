@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002235",
-  "revision": 1,
-  "card_rev": "6a7196387a2546c4",
+  "revision": 2,
+  "card_rev": "d66a9c2e9f39e1ac",
   "title": "正特征 Fvol 归一化体积极限？（P46；存疑项核清注销）",
-  "title_en": null,
+  "title_en": "Fvol in positive characteristic: does a normalized volume limit exist? (P46)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14E30",
+    "secondary": [
+      "14G17",
+      "13A35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/算术几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正特征",
+      "Fvol",
+      "归一化体积",
+      "极限",
+      "Frobenius"
+    ],
+    "en": [
+      "positive characteristic",
+      "Fvol",
+      "normalized volume",
+      "limits",
+      "Frobenius"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明正特征下 Fvol 的归一化体积总存在极限,或给出一个不收敛的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

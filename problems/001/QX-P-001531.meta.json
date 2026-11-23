@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001531",
-  "revision": 1,
-  "card_rev": "f983d2cf14abee48",
+  "revision": 2,
+  "card_rev": "8ac1ab1e3043ce9e",
   "title": "19.54 每个2-极大子群都不是m-极大(m≥3)的有限群的主因子刻画",
-  "title_en": null,
+  "title_en": "Which chief factors occur when no 2-maximal subgroup is m-maximal for any m >= 3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D30",
+    "secondary": [
+      "20D10",
+      "20D25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "极大子群",
+      "主因子",
+      "子群链",
+      "有限群",
+      "结构刻画"
+    ],
+    "en": [
+      "maximal subgroups",
+      "chief factors",
+      "subgroup chains",
+      "finite groups",
+      "structural description"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；刻画有限群 G 的主因子，使得 G 的每个 2-极大子群都不是任何 m≥3-极大子群。…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出这类有限群主因子的完整刻画（充要条件），并证明所列主因子恰好刻画「每个 2-极大子群都不是任何 m≥3-极大子群」的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

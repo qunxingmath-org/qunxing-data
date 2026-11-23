@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000054",
-  "revision": 1,
-  "card_rev": "2a96cda88d9d6389",
+  "revision": 2,
+  "card_rev": "33bad0ead550c3af",
   "title": "Shunia 整数根公式（mathlib4 PR #42050 审查对象）",
-  "title_en": null,
+  "title_en": "Shunia's integer n-th root formula: a fixed-length modular expression for floor(a^(1/n))",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11Y16",
+    "secondary": [
+      "11A25",
+      "68W30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论/算法",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整数开方",
+      "模表达式",
+      "固定长度算法",
+      "算法数论",
+      "猜想"
+    ],
+    "en": [
+      "integer roots",
+      "modular expressions",
+      "fixed-length algorithms",
+      "algorithmic number theory",
+      "conjectures"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·易证明；目标是\"验证\"而非\"攻克\"——原公式 ((x+1)^{k+1} mod m)/((x+1)^k mod m)−1 可用精确整数算术在大量 (a,n,m) 上直接测试；mathlib4 PR #42050 为 LLM 生成、open draft、5 条评论待审，审计其 Lean 证明或找出缺口即成完整成果，A层（有限验证+审查目标明确）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有适用的 (a,n) 该固定长度模表达式都给出 ⌊a^{1/n}⌋；或给出使该表达式算错的 (a,n)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001416",
-  "revision": 1,
-  "card_rev": "44d79afdc7885dc1",
+  "revision": 2,
+  "card_rev": "70f10ab581cd329c",
   "title": "McAvaney 矩阵族极大化（SIAM 79-4）",
-  "title_en": null,
+  "title_en": "McAvaney: how many mutually almost-disjoint latin-like matrices can there be?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +84,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B15",
+    "secondary": [
+      "05Bxx",
+      "05D05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合设计",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "组合设计",
+      "矩阵族",
+      "元素对共现",
+      "极大个数"
+    ],
+    "en": [
+      "combinatorial designs",
+      "families of matrices",
+      "co-occurrence of pairs",
+      "maximum size"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +114,12 @@
     "note": "三四区·小问题；设计理论（packing 设计）直接对应，小 n 可算。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 m 的确切值并给出达到它的矩阵族，或给出与构造匹配的上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

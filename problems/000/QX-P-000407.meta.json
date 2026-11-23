@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000407",
-  "revision": 1,
-  "card_rev": "329ac3ec8627d1aa",
+  "revision": 2,
+  "card_rev": "74b3d1e98dd8888e",
   "title": "batch_I I-140：是否存在 N≥4 使不存在 N 元正整数组 (a₁,…,a_N) 满足所有 |a_i²−a_j²| 均为",
-  "title_en": null,
+  "title_en": "Is there an absolute bound on sets whose pairwise squared differences are all squares?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D09",
+    "secondary": [
+      "11D72",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 丢番图（Guy UPNT D18）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "丢番图方程",
+      "平方差",
+      "完全平方数",
+      "Guy 问题集",
+      "上界"
+    ],
+    "en": [
+      "Diophantine equations",
+      "differences of squares",
+      "perfect squares",
+      "Guy's problem collection",
+      "upper bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Guy《Unsolved Problems in Number Theory》D18 子问题（2004 版 p.278）；Thomas Bloom 评论给出条件性结果（Bombieri–Lang ⇒ 存在上界，源自 Elkies 2011 MO 回答）；无人们期待的反例亦无同余障碍。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在绝对常数 N，使任何正整数集合若两两平方差为平方数则元素个数小于 N；或对每个 N 构造出 N 个这样的整数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

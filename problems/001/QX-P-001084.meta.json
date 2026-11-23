@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001084",
-  "revision": 1,
-  "card_rev": "046599f2114613bb",
+  "revision": 2,
+  "card_rev": "80057dfb2501fa15",
   "title": "Kourovka 6.60/6.61：族条目（6.60+6.61，定义见6.59）：fg 单周期共轭二元有限群兼含对合与奇阶元？无对合者必非单？",
-  "title_en": null,
+  "title_en": "Simple periodic biprimitively finite groups: involutions together with odd-order elements",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -134,11 +137,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E32",
+      "20E25"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "二元有限群",
+      "周期群",
+      "单群",
+      "对合",
+      "Shunkov 群"
+    ],
+    "en": [
+      "biprimitively finite groups",
+      "periodic groups",
+      "simple groups",
+      "involutions",
+      "Shunkov groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -146,7 +169,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 6.60 构造或排除「无限有限生成单周期共轭二元有限、兼含对合与奇阶元」的群；对 6.61 证明或反驳「无对合者必非单」。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

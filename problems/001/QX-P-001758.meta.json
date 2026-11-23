@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001758",
-  "revision": 1,
-  "card_rev": "08d807bd9b22b6c5",
+  "revision": 2,
+  "card_rev": "4e3af82f7cb76dc1",
   "title": "L²(G) 含于 C_c(G) 的标准正交基",
-  "title_en": null,
+  "title_en": "Does L^2(G) admit an orthonormal basis contained in C_c(G)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -80,11 +82,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "43A15",
+    "secondary": [
+      "46C05",
+      "46B15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "调和分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "标准正交基",
+      "紧支撑连续函数",
+      "L² 空间",
+      "局部紧群"
+    ],
+    "en": [
+      "orthonormal bases",
+      "compactly supported functions",
+      "L2 spaces",
+      "locally compact groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -92,7 +112,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对一般的局部紧群证明这样的标准正交基存在，或给出一个群说明不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

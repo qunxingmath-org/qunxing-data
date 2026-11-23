@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000020",
-  "revision": 1,
-  "card_rev": "7a14317b8cc1a9f5",
+  "revision": 2,
+  "card_rev": "abb3ed34a0d08ad7",
   "title": "Erdos P155: F(N+k) <= F(N)+1 for large Sidon maxima",
-  "title_en": null,
+  "title_en": "Erdos P155: is F(N+k) at most F(N)+1 for all large N?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11B13"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Sidon 集",
+      "最大值函数",
+      "单调性",
+      "加性组合",
+      "Erdős 问题"
+    ],
+    "en": [
+      "Sidon sets",
+      "maximal size function",
+      "monotonicity",
+      "additive combinatorics",
+      "Erdos problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +134,12 @@
     "note": "一区二区·易证明；A层理由: 单调型离散命题, F(N)序列(OEIS A143824)数值可枚举验证到相当大N; 反例搜索空间有限; 极值组合标准方法(交换/压缩论证)适用。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出证明：对每个固定 k 存在 N₀，使得所有 N ≥ N₀ 都满足 F(N+k) ≤ F(N)+1；或给出一个 k 使该不等式对无穷多个 N 不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001581",
-  "revision": 1,
-  "card_rev": "7c4a74f4ff2271f1",
+  "revision": 2,
+  "card_rev": "b93f9f7554970bfb",
   "title": "21.55 GL(n,q) 的 p-可解子群最大 p-长极限是否为1",
-  "title_en": null,
+  "title_en": "Is lim m_n(q)/log_2 n equal to 1 for maximal p-length in GL(n,q)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20G15",
+      "20D20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-长",
+      "p-可解子群",
+      "线性群",
+      "渐近",
+      "最大长度"
+    ],
+    "en": [
+      "p-length",
+      "p-solvable subgroups",
+      "linear groups",
+      "asymptotics",
+      "maximal length"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；m_n(q) 为 GL(n,q) 中 p-可解子群的最大 p-长。是否 lim_{n→∞} m_n(q)/log₂n =…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 lim_{n→∞} m_n(q)/log₂n = 1 对每个素数幂 q 成立，或证明该极限不等于 1（给出不同值或说明极限不存在）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

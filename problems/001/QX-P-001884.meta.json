@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001884",
-  "revision": 1,
-  "card_rev": "2bb5b92150e77d3b",
+  "revision": 2,
+  "card_rev": "740888223dd0f3a2",
   "title": "两 0/1 串同特征多项式判定",
-  "title_en": null,
+  "title_en": "Deciding whether two 0-1 string matrices have the same characteristic polynomial",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "decidable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A18",
+    "secondary": [
+      "05C50",
+      "68Q25"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合/线性代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "0/1 矩阵",
+      "特征多项式",
+      "同谱",
+      "判定算法"
+    ],
+    "en": [
+      "0-1 matrices",
+      "characteristic polynomial",
+      "cospectrality",
+      "decision algorithm"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出可判定两串矩阵特征多项式是否相同的算法及其正确性证明（并给出复杂度或说明其适用范围）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

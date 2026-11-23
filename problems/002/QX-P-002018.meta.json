@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002018",
-  "revision": 1,
-  "card_rev": "bae4e6b77d71f061",
+  "revision": 2,
+  "card_rev": "278fad47ff89d2f0",
   "title": "vN 同构的无扭双曲群对",
-  "title_en": null,
+  "title_en": "Torsion-free hyperbolic groups with isomorphic von Neumann algebras",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46L36",
+    "secondary": [
+      "20F67",
+      "46L10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论/算子代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "冯诺依曼代数",
+      "双曲群",
+      "无扭群",
+      "同构分类",
+      "群代数"
+    ],
+    "en": [
+      "von Neumann algebras",
+      "hyperbolic groups",
+      "torsion-free groups",
+      "isomorphism classification",
+      "group algebras"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一对不同构的无扭双曲群并证明它们的群冯诺依曼代数同构，或证明这类群的代数总能唯一决定群（在同构意义下）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

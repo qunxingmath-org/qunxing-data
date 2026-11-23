@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001241",
-  "revision": 1,
-  "card_rev": "4595d7f94e577e1d",
+  "revision": 2,
+  "card_rev": "bedd5156390b766b",
   "title": "Ulam数列正密度猜想",
-  "title_en": null,
+  "title_en": "Does the Ulam sequence U(1,2) have positive density?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B05",
+    "secondary": [
+      "11B75",
+      "11P70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论/序列",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Ulam 序列",
+      "正密度",
+      "唯一表示",
+      "加性组合",
+      "3 项等差数列"
+    ],
+    "en": [
+      "Ulam sequence",
+      "positive density",
+      "unique representation",
+      "additive combinatorics",
+      "3-term arithmetic progressions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +135,12 @@
     "note": "三四区·小问题；C层：具体密度问题——U(1,2)实验密度≈0.074；2025-01小间隙结果（arXiv:2501.16285）给出新路径；Roth定理联系（Steinerberger观察）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 U(1,2) 具有正自然密度（liminf 大于 0），或证明它的密度为 0。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

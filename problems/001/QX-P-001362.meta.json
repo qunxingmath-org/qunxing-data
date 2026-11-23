@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001362",
-  "revision": 1,
-  "card_rev": "fef03a0a0ee9a58b",
+  "revision": 2,
+  "card_rev": "2af65cd2f0a18114",
   "title": "孤立数（solitary numbers）的密度是否为零",
-  "title_en": null,
+  "title_en": "Do the solitary numbers have natural density zero?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11N25",
+      "11K65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（乘性函数）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "孤立数",
+      "abundancy index",
+      "朋友",
+      "自然密度",
+      "乘性函数"
+    ],
+    "en": [
+      "solitary numbers",
+      "abundancy index",
+      "friends",
+      "natural density",
+      "multiplicative functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +135,12 @@
     "note": "三四区·小问题；依赖 σ(n)/n 的精细分布，筛法可给部分结果；与 friendly/solitary 现代文献直接相连（2024–2025 仍活跃）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明孤立数集合的自然密度为 0，或证明其密度为正（或不存在）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

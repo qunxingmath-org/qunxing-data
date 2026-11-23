@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001751",
-  "revision": 1,
-  "card_rev": "bfaf36c02708aec8",
+  "revision": 2,
+  "card_rev": "480449c5f4a51002",
   "title": "正二十面体每面可含有理点？",
-  "title_en": null,
+  "title_en": "Can every face of a regular icosahedron contain a rational point?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "construct"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14G05",
+    "secondary": [
+      "52B10",
+      "11D99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正二十面体",
+      "有理点",
+      "刚体运动",
+      "有理坐标",
+      "多面体"
+    ],
+    "en": [
+      "regular icosahedron",
+      "rational points",
+      "rigid motions",
+      "rational coordinates",
+      "polyhedra"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出使 20 个面各含一个有理点的显式摆放（顶点坐标或刚体运动），或证明不存在这样的摆放。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

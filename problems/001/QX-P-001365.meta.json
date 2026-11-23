@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001365",
-  "revision": 1,
-  "card_rev": "f7be8b4f2bfe9fef",
+  "revision": 2,
+  "card_rev": "eb252abf1c6013c8",
   "title": "3^m 与 2^n 之间的素数（CRUX 250）",
-  "title_en": null,
+  "title_en": "Must a prime lie between 3^m and 2^n whenever they are not adjacent?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41",
+      "11J86"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（素数间隔/Pillai）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数间隔",
+      "指数数列",
+      "Pillai 型问题",
+      "Bertrand 假设",
+      "2 的幂"
+    ],
+    "en": [
+      "prime gaps",
+      "exponential sequences",
+      "Pillai-type problems",
+      "Bertrand's postulate",
+      "powers of two"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +126,12 @@
     "note": "三四区·小问题；陈述初等；与 Pillai 猜想纠缠；Baker 线型下界+BHP 素数间隔给出\"充分大情形可证\"的路径——整体开放但有望被一篇论文实质推进。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有满足 |3^m−2^n|≥2 的 m、n，两数之间必有素数，或给出一个不含素数的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

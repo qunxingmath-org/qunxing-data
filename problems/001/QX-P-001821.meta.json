@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001821",
-  "revision": 1,
-  "card_rev": "06a95574afba2d62",
+  "revision": 2,
+  "card_rev": "7962f4b738dd249b",
   "title": "Steiner 系统 S(6,9,45) 存在性",
-  "title_en": null,
+  "title_en": "Existence of a Steiner system S(6,9,45)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B05",
+    "secondary": [
+      "51E10",
+      "05B15"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "组合设计",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Steiner 系统",
+      "t-设计",
+      "区组设计",
+      "可除性条件"
+    ],
+    "en": [
+      "Steiner systems",
+      "t-designs",
+      "block designs",
+      "divisibility conditions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 S(6,9,45) 的全部区组（可逐一核验），或证明这样的 Steiner 系统不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

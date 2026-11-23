@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001868",
-  "revision": 1,
-  "card_rev": "4b19a1e404a9a609",
+  "revision": 2,
+  "card_rev": "2c3de686b3f952d8",
   "title": "极薄圆环覆盖密度（含显式猜想值）",
-  "title_en": null,
+  "title_en": "Covering density of extremely thin annuli, with an explicit conjectured value",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -80,11 +83,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "52A40",
+      "60D05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "覆盖密度",
+      "圆环",
+      "薄区域",
+      "显式猜想值"
+    ],
+    "en": [
+      "covering density",
+      "annuli",
+      "thin regions",
+      "explicit conjectured value"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -92,7 +113,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明极薄圆环的覆盖密度等于所猜的显式值（给出匹配的上界构造与下界论证），或给出反例数值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

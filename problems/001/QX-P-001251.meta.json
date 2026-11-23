@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001251",
-  "revision": 1,
-  "card_rev": "eef019a7b5506c0c",
+  "revision": 2,
+  "card_rev": "696de1a748d38ecc",
   "title": "Wall–Sun–Sun素数存在性",
-  "title_en": null,
+  "title_en": "Do Wall-Sun-Sun primes exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B39",
+    "secondary": [
+      "11A41",
+      "11A07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（素数/Fibonacci）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Wall-Sun-Sun 素数",
+      "Fibonacci 数",
+      "Wieferich 型",
+      "平方整除",
+      "Fermat 大定理"
+    ],
+    "en": [
+      "Wall-Sun-Sun primes",
+      "Fibonacci numbers",
+      "Wieferich type",
+      "square divisibility",
+      "Fermat Last Theorem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体搜索问题——p²|F_{p−(p/5)}；已搜至2^64+（McIntosh 2021级）；模p²的Lucas序列计算流水线现成（分布式可行）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "找到一个素数 p 使 p² 整除 F_{p−(p/5)}；或证明这样的素数不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002232",
-  "revision": 1,
-  "card_rev": "448e45b4691546c3",
+  "revision": 2,
+  "card_rev": "91cdb5c2d300db73",
   "title": "complement 特殊赋值集结构（P41；双向活跃）",
-  "title_en": null,
+  "title_en": "Structure of the set of complement-special valuations (P41)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "prove"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14E30",
+    "secondary": [
+      "13A18",
+      "14B05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "特殊赋值",
+      "补除子",
+      "LCP",
+      "结构定理",
+      "极小模型纲领"
+    ],
+    "en": [
+      "special valuations",
+      "complementary divisors",
+      "LCP",
+      "structure theorems",
+      "minimal model program"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "刻画出与补除子相关的特殊赋值集合 LCP^S 的结构(例如其有限性与分层方式)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

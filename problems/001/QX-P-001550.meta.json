@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001550",
-  "revision": 1,
-  "card_rev": "2227773aa8540f06",
+  "revision": 2,
+  "card_rev": "5236258a0caf4441",
   "title": "20.45 GL(n,Z) 子群增长计数极限 ln e_b / ln b 存在？",
-  "title_en": null,
+  "title_en": "Does the growth limit lim log(e_b)/log(b) always exist for subgroups of GL(n,Z)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F69",
+    "secondary": [
+      "20G20",
+      "20E26"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "增长函数",
+      "矩阵群",
+      "极限存在性",
+      "有限生成",
+      "整系数矩阵"
+    ],
+    "en": [
+      "growth functions",
+      "matrix groups",
+      "existence of limits",
+      "finite generation",
+      "integral matrices"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；G≤GL(n,Z) 有限生成，e_b=|{g∈G: 各矩阵元绝对值≤b}|。极限 lim_{b→∞} ln e_b / …（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个有限生成子群 G≤GL(n,ℤ) 该极限都存在，或给出一个极限不存在的具体子群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

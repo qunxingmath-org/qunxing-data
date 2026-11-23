@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001253",
-  "revision": 1,
-  "card_rev": "35efa78ac050d4d2",
+  "revision": 2,
+  "card_rev": "df53d08159f74066",
   "title": "野结的四割线无穷性",
-  "title_en": null,
+  "title_en": "Do wild knots have infinitely many quadrisecants?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K10",
+    "secondary": [
+      "57K45",
+      "53A04"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "纽结理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "野结",
+      "quadrisecant",
+      "四割线",
+      "驯顺结",
+      "空间曲线"
+    ],
+    "en": [
+      "wild knots",
+      "quadrisecants",
+      "tame knots",
+      "space curves",
+      "knot theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体几何问题——野结是否有无穷多quadrisecants；驯顺结的quadrisecant理论（Pannwitz 1933起）可推广；具体构造/排除目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个野结都有无穷多条 quadrisecants；或构造一个只有有限多条 quadrisecants 的野结。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

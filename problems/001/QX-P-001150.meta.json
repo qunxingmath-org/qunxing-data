@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001150",
-  "revision": 1,
-  "card_rev": "dc4ce62e2bd8c55c",
+  "revision": 2,
+  "card_rev": "194f2365d9f82223",
   "title": "Kourovka 17.8：右 Engel 元非左 Engel 元存在？",
-  "title_en": null,
+  "title_en": "Is there a right Engel element that is not a left Engel element?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -125,11 +127,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F45",
+    "secondary": [
+      "20F19"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "右 Engel 元",
+      "左 Engel 元",
+      "有界 Engel",
+      "反例群",
+      "交换子"
+    ],
+    "en": [
+      "right Engel elements",
+      "left Engel elements",
+      "bounded Engel elements",
+      "counterexample groups",
+      "commutators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +158,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个群与其中的右 Engel 元（或 b) 中的有界右 Engel 元）并证明它不是左 Engel 元，或证明这样的元素不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

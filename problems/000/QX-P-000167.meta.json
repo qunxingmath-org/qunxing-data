@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000167",
-  "revision": 1,
-  "card_rev": "4390c63222ecf8f5",
+  "revision": 2,
+  "card_rev": "9d0e18f2d7463d91",
   "title": "Kourovka 12.87：顶点传递图三择一（稳定子有限 or 因子图稳定子有限 or 距离-n 幂含 3 价正则树）【2026-11-21 标题修正留痕：原标题\"顶点传递局部有限图二择一（稳定子有限 or 亚指数增长）\"两处失准——原文",
-  "title_en": null,
+  "title_en": "Trofimov's trichotomy for vertex-transitive connected graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C25",
+    "secondary": [
+      "20B27",
+      "05C63"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "顶点传递图",
+      "顶点稳定子",
+      "非本原系",
+      "因子图",
+      "三价正则树"
+    ],
+    "en": [
+      "vertex-transitive graphs",
+      "vertex stabilizers",
+      "imprimitivity systems",
+      "factor graphs",
+      "cubic trees"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +159,12 @@
     "note": "一区二区·难度待定；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这三条断言对每个连通顶点传递图至少一条成立，或构造一个三条都不成立的连通、无重边无自环的顶点传递图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

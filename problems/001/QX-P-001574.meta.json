@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001574",
-  "revision": 1,
-  "card_rev": "0a4833834dd644f8",
+  "revision": 2,
+  "card_rev": "1ec70bd32ed287ae",
   "title": "21.31 Byott 猜想：Hol(N) 中正则子群皆可解",
-  "title_en": null,
+  "title_en": "Byott's conjecture: every regular subgroup of Hol(N) is soluble for soluble N",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20B35",
+      "16T25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "全形",
+      "正则子群",
+      "可解群",
+      "Hopf–Galois 结构",
+      "skew brace"
+    ],
+    "en": [
+      "holomorphs",
+      "regular subgroups",
+      "soluble groups",
+      "Hopf-Galois structures",
+      "skew braces"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Byott 猜想）N 有限可解群，则 Hol(N) 中任意正则子群也可解。（Hopf–Galois 结构与 skew …（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有有限可解群 N 证明 Hol(N) 的每个正则子群都可解，或给出一个可解 N 与不可解正则子群的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

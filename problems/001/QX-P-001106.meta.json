@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001106",
-  "revision": 1,
-  "card_rev": "5f02b4f75db15aa7",
+  "revision": 2,
+  "card_rev": "bc33db144babe517",
   "title": "Kourovka 10.60：交换群正则自同构周期群有非平凡中心？（p≥5）",
-  "title_en": null,
+  "title_en": "Does a periodic group of regular automorphisms of an abelian group have non-trivial centre?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E36",
+    "secondary": [
+      "20F50",
+      "20K10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正则自同构",
+      "周期群",
+      "中心",
+      "交换群",
+      "固定点自由"
+    ],
+    "en": [
+      "regular automorphisms",
+      "periodic groups",
+      "centre",
+      "abelian groups",
+      "fixed-point-free"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何交换群的正则自同构周期群都有非平凡中心，或给出一个中心平凡的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

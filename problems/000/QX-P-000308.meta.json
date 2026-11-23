@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000308",
-  "revision": 1,
-  "card_rev": "5bcbfffe5222e449",
+  "revision": 2,
+  "card_rev": "fedcc8281833a4cd",
   "title": "Rota 不交基猜想（拟阵并分解，EGRES egres-0474）",
-  "title_en": null,
+  "title_en": "Rota's conjecture on decomposing a union of matroid bases into disjoint bases",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B35",
+    "secondary": [
+      "05C70",
+      "05D15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拟阵",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟阵基",
+      "不交基分解",
+      "Rota 猜想",
+      "多重集"
+    ],
+    "en": [
+      "matroid bases",
+      "disjoint bases",
+      "Rota's conjecture",
+      "multisets"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +115,12 @@
     "note": "一区二区·难度待定；与 B-249（Rota's basis）不同命题：拟阵并中基族可分解为不交基（EGRES 编目）；拟阵并/交换方法（Cunninghame-Green 线）可续接。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有拟阵和所有基族 B₁,…,B_k 证明这堆元素可分解为 r 个两两不交的基，或给出一个无法这样分解的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

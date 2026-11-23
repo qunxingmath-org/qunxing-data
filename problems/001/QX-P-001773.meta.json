@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001773",
-  "revision": 1,
-  "card_rev": "2216afe8d57aa86c",
+  "revision": 2,
+  "card_rev": "e0f378b3652c578f",
   "title": "直线构型扩张使有界腔全为三角形",
-  "title_en": null,
+  "title_en": "Extending a line arrangement so that all bounded cells are triangles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C30",
+    "secondary": [
+      "05B99",
+      "51M20"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "直线构型",
+      "有界腔",
+      "三角形",
+      "平面分割",
+      "扩张"
+    ],
+    "en": [
+      "line arrangements",
+      "bounded cells",
+      "triangles",
+      "planar subdivisions",
+      "extensions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出（或证明存在）一个扩张程序，对任意起始直线构型添线后所有有界腔都是三角形，并说明所需添线数与一般位置假设。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002181",
-  "revision": 1,
-  "card_rev": "44ed77061c81e36e",
+  "revision": 2,
+  "card_rev": "2e948346577219b8",
   "title": "无非平凡开连通子集的连通空间（Γ-空间，双向结果）",
-  "title_en": null,
+  "title_en": "Connected spaces with no nontrivial open connected subset (Gamma-spaces)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "existence"
+  ],
+  "answer_type": "classification",
+  "checkability": "verifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -80,11 +83,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "54D05",
+    "secondary": [
+      "54G15",
+      "54A25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Brouwer 1976（MC ZW 83/76）+MSE#5121714/MO#507958",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Γ-空间",
+      "连通空间",
+      "开连通子集",
+      "可分性",
+      "拓扑反例"
+    ],
+    "en": [
+      "Gamma-spaces",
+      "connected spaces",
+      "open connected subsets",
+      "separability",
+      "topological counterexamples"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -92,7 +115,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 Γ-空间（连通且无平凡以外的开连通子集）的完整刻画：说明哪些空间类中有例子、哪些没有，并证明该二分。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001511",
-  "revision": 1,
-  "card_rev": "954e9cacb372dbd5",
+  "revision": 2,
+  "card_rev": "7343a109931860f2",
   "title": "弦图 k≥2 拐点 EPG 图的刻画（Cameron–Chaplick–Hoàng 开放问题）",
-  "title_en": null,
+  "title_en": "Characterizing chordal graphs that are EPG with at least two bends per path",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C62",
+    "secondary": [
+      "05C75",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "EPG 图",
+      "弦图",
+      "拐点限制",
+      "边交图",
+      "格点路径"
+    ],
+    "en": [
+      "EPG graphs",
+      "chordal graphs",
+      "bend restrictions",
+      "edge intersection graphs",
+      "grid paths"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +137,12 @@
     "note": "三四区·小问题；弦 ⟂-EPG（单拐）刻画 2026-10 已解决（Cameron–Chaplick–Hoàng 问题），k≥2 弦 EPG 刻画为该方向公认遗留；邻接方法（容许团树定向）刚建立可推广；2023-2025 有 B_k-EPG 活跃文献。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出弦图属于 B_k-EPG（k≥2）的完整刻画，并据此得到识别算法。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

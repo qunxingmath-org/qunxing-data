@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000620",
-  "revision": 1,
-  "card_rev": "38d5b22afd9a09b1",
+  "revision": 2,
+  "card_rev": "24c2550d0262b7c7",
   "title": "17.61 P 有限时 CTP(Z) 是否有限表现",
-  "title_en": null,
+  "title_en": "For finite P, is the group CTP(Z) always finitely presented?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F05",
+    "secondary": [
+      "20E32",
+      "20B07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限表现",
+      "有限生成",
+      "类换位子群",
+      "Higman–Thompson 群"
+    ],
+    "en": [
+      "finite presentability",
+      "finite generation",
+      "class transpositions",
+      "Higman-Thompson group"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有限集 P 给出的 CTP(Z) 都有限表现，或找出一个有限 P 使 CTP(Z) 不是有限表现。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

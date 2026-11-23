@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000517",
-  "revision": 1,
-  "card_rev": "508f0113a82db466",
+  "revision": 2,
+  "card_rev": "6b531ad76ce643d1",
   "title": "Herzog–Schönheim 猜想（非可解群情形）",
-  "title_en": null,
+  "title_en": "The Herzog-Schonheim conjecture for non-solvable groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +105,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "20E07",
+      "05E16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论/加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Herzog–Schönheim 猜想",
+      "陪集划分",
+      "子群指标",
+      "可解群",
+      "组合群论"
+    ],
+    "en": [
+      "Herzog-Schonheim conjecture",
+      "coset partitions",
+      "subgroup indices",
+      "solvable groups",
+      "combinatorial group theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -115,7 +137,12 @@
     "note": "一区二区·难度待定；猜想1974年提出，可解群（含无限）情形2026-11已证（arXiv:2611.11002），非可解情形为剩余核心；2025 首批非可解进展（Garonzi 等单群/对称群、A_5 直积），方向明确活跃，具体可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有有限非可解群（或一般群）证明任何有限陪集划分中必有两个指标相同，或给出一个指标两两不同的具体划分。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

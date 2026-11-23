@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000453",
-  "revision": 1,
-  "card_rev": "e010fdd4fa4e45fe",
+  "revision": 2,
+  "card_rev": "847215a40f51dd96",
   "title": "Smarandache 连接素数序列中无穷多素数",
-  "title_en": null,
+  "title_en": "Are there infinitely many primes in the Smarandache concatenation prime sequence?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A41",
+    "secondary": [
+      "11A63",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "素数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Smarandache 序列",
+      "素数序列",
+      "连接",
+      "无穷性",
+      "数位"
+    ],
+    "en": [
+      "Smarandache sequences",
+      "prime sequences",
+      "concatenation",
+      "infinitude",
+      "digits"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -103,7 +125,12 @@
     "note": "一区二区·难度待定；拼接型素数（Smarandache–Wellin 族）无穷性问题——与 B-603 回文素数（池内）同为'显式整数序列中素数无穷'型，B层。EXCLUDED-CHECK 裁决：排除清单无 Smarandache 条目，保留。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该连接序列中有无穷多个素数项，或证明只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

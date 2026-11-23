@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000876",
-  "revision": 1,
-  "card_rev": "be384030ba9c609a",
+  "revision": 2,
+  "card_rev": "ae28a3befae06107",
   "title": "Kirby 4.64：寻找 Bauer–Furuta 不变量非平凡而 Seiberg–Witten 不变量平凡的既约 4-流形",
-  "title_en": null,
+  "title_en": "A 4-manifold with nontrivial Bauer-Furuta but trivial Seiberg-Witten invariant",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -97,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57R57",
+    "secondary": [
+      "57K41",
+      "55N34"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "规范理论（稳定上同调精细不变量）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Bauer–Furuta 不变量",
+      "Seiberg–Witten 不变量",
+      "稳定上同调",
+      "既约四维流形"
+    ],
+    "en": [
+      "Bauer-Furuta invariant",
+      "Seiberg-Witten invariant",
+      "stable cohomotopy",
+      "irreducible 4-manifolds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +130,12 @@
     "note": "三四区·小问题；Bauer–Furuta 精细不变量强于经典 SW；\"经典不变量看不见、精细看得见\"的闭既约例是当前规范理论前沿（Iida 2025 邻接不等式、Qiu 2025 签号 16 mod 32 约束等新工具）；具体目标物可构造搜索。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个闭光滑既约 4-流形，并证明其 Bauer–Furuta 不变量非平凡、而相应系数的 Seiberg–Witten 不变量平凡。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

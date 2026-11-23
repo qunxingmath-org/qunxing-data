@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000004",
-  "revision": 1,
-  "card_rev": "04c1928f607c5dac",
+  "revision": 2,
+  "card_rev": "188489c59299acfc",
   "title": "连通图中任三条最长路必有公共顶点（Gallai）",
-  "title_en": null,
+  "title_en": "Do any three longest paths in a connected graph share a vertex?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -123,11 +125,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C38",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（主）；组合数学（辅）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最长路",
+      "Gallai 问题",
+      "连通图",
+      "公共顶点",
+      "图论"
+    ],
+    "en": [
+      "longest paths",
+      "Gallai's problem",
+      "connected graph",
+      "common vertex",
+      "graph theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -135,7 +156,12 @@
     "note": "一区二区·易证明；命题极简、表述初等、无需重型工具；两条最长路情形平凡；OPG 原页与社区均视其为\"基本未决图论问题\"。风险提示：长期开放、至少一次正式投稿被作者撤稿（2024），说明并不显然；4/5/6 条情形均未决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意连通图中任意三条最长路径都有公共顶点，或构造一个连通图使其三条最长路径没有公共顶点。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

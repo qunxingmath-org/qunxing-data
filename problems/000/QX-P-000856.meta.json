@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000856",
-  "revision": 1,
-  "card_rev": "702feec0da1d9156",
+  "revision": 2,
+  "card_rev": "7f70eec931e2ed33",
   "title": "DeVos 三个 4-流猜想（删三组边后各 4-流）",
-  "title_en": null,
+  "title_en": "DeVos' three 4-flows conjecture: deleting any one of three edge classes leaves a 4-flow",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "construct"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C21",
+    "secondary": [
+      "05C40",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（流理论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无处为零 4-流",
+      "无桥图",
+      "边集分划",
+      "流理论"
+    ],
+    "en": [
+      "nowhere-zero 4-flows",
+      "bridgeless graphs",
+      "edge partition",
+      "flow theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +136,12 @@
     "note": "三四区·小问题；蕴含可定向圈四覆盖与圈双覆盖（CDC）——CDC 链条的中游命题；与 Jaeger Petersen 染色猜想衔接（2026 有声称反例 arXiv:2608.10028 待核）；4-边连通情形平凡满足。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个无桥图的边集都可分成三份，使删去任一份后剩余图有 nowhere-zero 4-流；或给出一个做不到的无桥图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

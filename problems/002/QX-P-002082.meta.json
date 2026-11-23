@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002082",
-  "revision": 1,
-  "card_rev": "5b6a8b32f897cf98",
+  "revision": 2,
+  "card_rev": "4538c04eb4e1b6ff",
   "title": "GL(n) 的 Siegel–Landau 零点缺失",
-  "title_en": null,
+  "title_en": "Siegel-Landau zero-free regions for GL(n) L-functions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11M26",
+    "secondary": [
+      "11F70",
+      "11M41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Siegel 零点",
+      "零点自由区域",
+      "GL(n) L 函数",
+      "自守表示",
+      "实零点"
+    ],
+    "en": [
+      "Siegel zeros",
+      "zero-free regions",
+      "GL(n) L-functions",
+      "automorphic representations",
+      "real zeros"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 GL(n) 的 L 函数给出 Siegel–Landau 型零点自由区域（显式界）并证明，或指出该结论在高维失效并给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

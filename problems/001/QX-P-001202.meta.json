@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001202",
-  "revision": 1,
-  "card_rev": "52cdbdd728cfe616",
+  "revision": 2,
+  "card_rev": "022bebbb9234f4c2",
   "title": "Hadamard最大行列式问题d(n)",
-  "title_en": null,
+  "title_en": "Hadamard's maximal determinant problem: determining d(n) for plus-minus-one matrices",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "decidable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B20",
+    "secondary": [
+      "15A15",
+      "15B34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合矩阵论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最大行列式问题",
+      "±1 矩阵",
+      "Hadamard 界",
+      "Gram 矩阵",
+      "d(n)"
+    ],
+    "en": [
+      "maximal determinant problem",
+      "plus-minus-one matrices",
+      "Hadamard bound",
+      "Gram matrices",
+      "d(n)"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：n=1..N逐值确定的具体问题（奇数n尤其困难）；存在专门的 Online MaxDet问题库与Ehlich界理论；小n实验+构造即产出。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n 确定 d(n) 的精确值（至少要能给出对所有 n 有效的算法与可证的最优界），并给出 d(n) 随 n 增长的渐近描述。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

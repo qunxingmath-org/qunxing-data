@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001837",
-  "revision": 1,
-  "card_rev": "e352a4f71fe95bd9",
+  "revision": 2,
+  "card_rev": "c9ecc8653150a62e",
   "title": "随机循环图 Lovász 数期望",
-  "title_en": null,
+  "title_en": "Expected Lovasz theta of random circulant graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C80",
+    "secondary": [
+      "05C50",
+      "90C22"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "随机图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "循环图",
+      "随机图",
+      "Lovász theta",
+      "期望"
+    ],
+    "en": [
+      "circulant graphs",
+      "random graphs",
+      "Lovasz theta",
+      "expectation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定该随机循环图族上 E ϑ 的精确渐近表达式，并证明上下界吻合。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

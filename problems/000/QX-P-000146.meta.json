@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000146",
-  "revision": 1,
-  "card_rev": "4d4438086ab158eb",
+  "revision": 2,
+  "card_rev": "37020585ab85c488",
   "title": "Kourovka 21.4：G 有限群平凡可解根，H1..H5 可解子群",
-  "title_en": null,
+  "title_en": "Products of five conjugates of solvable subgroups in a finite group with trivial solvable radical",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20E32",
+      "20D05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可解子群",
+      "共轭",
+      "可解根",
+      "有限群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "solvable subgroup",
+      "conjugates",
+      "solvable radical",
+      "finite group",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：同族 21.3 有 2026 部分进展(Rizzoli、arXiv:2611.00042)；与池内 B-953(17.41) 同族"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明总能选到 x_i 使乘积为 {1}，或给出一个使任何选择都做不到的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001598",
-  "revision": 1,
-  "card_rev": "175a1d6f1ebe286f",
+  "revision": 2,
+  "card_rev": "7c256c97941d7acc",
   "title": "21.123 Smoktunowicz 前 Lie 环扩构造产生群？",
-  "title_en": null,
+  "title_en": "Does the extended Agrachev-Gamkrelidze construction still yield groups from pre-Lie rings?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16T25",
+    "secondary": [
+      "17D25",
+      "20N99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "前 Lie 环",
+      "brace",
+      "Yang–Baxter 方程",
+      "Agrachev–Gamkrelidze 构造",
+      "集论解"
+    ],
+    "en": [
+      "pre-Lie rings",
+      "braces",
+      "Yang-Baxter equation",
+      "Agrachev-Gamkrelidze construction",
+      "set-theoretic solutions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；Agrachev–Gamkrelidze 构造的 Smoktunowicz 扩展（JPAA 229 (2025) Def…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明推广后的构造对每个前 Lie 环都良定义地给出群，或给出一个使该构造不产生群的显式前 Lie 环。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

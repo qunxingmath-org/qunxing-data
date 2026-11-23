@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002150",
-  "revision": 1,
-  "card_rev": "dca0dcb760b41d1f",
+  "revision": 2,
+  "card_rev": "b6e5e4380b47fba7",
   "title": "ZF：每无穷集可对半分 ⇒ 每无穷 κ 有 2κ=κ？（全称；题面修正）",
-  "title_en": null,
+  "title_en": "Does splitting every infinite set in half force 2^kappa = kappa for every infinite kappa?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E05",
+    "secondary": [
+      "03E25",
+      "03E35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "ZF 集合论",
+      "对半分",
+      "基数算术",
+      "选择公理",
+      "无穷基数"
+    ],
+    "en": [
+      "ZF set theory",
+      "splitting into halves",
+      "cardinal arithmetic",
+      "axiom of choice",
+      "infinite cardinals"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 ZF 中从「每个无穷集可对半分」推出对所有无穷基数 κ 有 2κ=κ；或在 ZF 中构造一个满足对半分、却使某个无穷基数 κ 满足 2κ>κ 的模型。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

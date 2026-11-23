@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000343",
-  "revision": 1,
-  "card_rev": "3bbf405a51b43d0e",
+  "revision": 2,
+  "card_rev": "b0e418b04d836710",
   "title": "Is every Scott set the standard system of a model of PA (uncountable case)?",
-  "title_en": null,
+  "title_en": "Is every Scott set the standard system of a model of Peano arithmetic (uncountable case)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -116,11 +118,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03H15",
+    "secondary": [
+      "03C62",
+      "03E50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数理逻辑（PA模型/标准系统）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Scott 集",
+      "标准系统",
+      "算术模型",
+      "弱 König 引理",
+      "力迫公理"
+    ],
+    "en": [
+      "Scott sets",
+      "standard systems",
+      "models of arithmetic",
+      "weak König's lemma",
+      "forcing axioms"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -128,7 +150,12 @@
     "note": "一区二区·难度待定；中等偏难——Scott问题（1962起）是PA模型论著名开放问题；可数情形已由Scott定理解决，未数对情形开放；Gitman PFA突破（ℵ₁ proper情形）给出强力部分结果，力迫法/编码方法路线清晰。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 Scott set（任意基数）都是某模型 M⊨PA 的标准系统，或构造一个不可数的反例 Scott set。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

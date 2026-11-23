@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001922",
-  "revision": 1,
-  "card_rev": "35cccd62d0f3c39c",
+  "revision": 2,
+  "card_rev": "4263c6f022c5bdd3",
   "title": "{xₙ} 与 {xₙxₙ₊₁} 同均匀分布",
-  "title_en": null,
+  "title_en": "Constructing a sequence whose terms and consecutive products are both equidistributed",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11K06",
+    "secondary": [
+      "11J71"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "一致分布",
+      "小数部分",
+      "序列构造",
+      "乘积"
+    ],
+    "en": [
+      "equidistribution",
+      "fractional parts",
+      "sequence construction",
+      "products"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +98,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个有界正实数列的显式构造，并证明 {x_n} 与 {x_n x_{n+1}} 都在 [0,1] 中一致分布。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

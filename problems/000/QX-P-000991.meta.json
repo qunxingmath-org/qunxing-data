@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000991",
-  "revision": 1,
-  "card_rev": "72c0dad722ff4282",
+  "revision": 2,
+  "card_rev": "2277edf47858e2b0",
   "title": "Kourovka 13.6：局部有限群含某元素其中心化子为 Chernikov 群，则几乎可解吗",
-  "title_en": null,
+  "title_en": "Locally finite groups with a Chernikov centralizer: almost soluble?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20F16",
+      "20E34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "局部有限群",
+      "Chernikov 群",
+      "中心化子",
+      "几乎可解",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "locally finite groups",
+      "Chernikov groups",
+      "centralizers",
+      "almost soluble groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意局部有限群 G 与任意 g∈G，若 C_G(g) 是 Chernikov 群则 G 几乎可解；或构造出满足该条件而 G 不几乎可解的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

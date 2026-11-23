@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001832",
-  "revision": 1,
-  "card_rev": "be0093749b025d93",
+  "revision": 2,
+  "card_rev": "acc1cc8455cc6e30",
   "title": "Penrose 铺砌与 Fibonacci 词分形",
-  "title_en": null,
+  "title_en": "Penrose tilings and fractals built from the Fibonacci word",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "construct"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C23",
+    "secondary": [
+      "37B10",
+      "28A80"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "铺砌/分形",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Penrose 铺砌",
+      "Fibonacci 词",
+      "替换系统",
+      "分形"
+    ],
+    "en": [
+      "Penrose tilings",
+      "Fibonacci word",
+      "substitution systems",
+      "fractals"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 Penrose 铺砌与 Fibonacci 词分形之间精确的对应关系并证明它成立，或证明两者不能这样对应。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

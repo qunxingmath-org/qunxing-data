@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001394",
-  "revision": 1,
-  "card_rev": "51ef055f72585fb1",
+  "revision": 2,
+  "card_rev": "56515cd8c8cabf2b",
   "title": "Scarowsky：ax+by=p 最小解求和的渐近（AMM 6197）",
-  "title_en": null,
+  "title_en": "Scarowsky: asymptotics for the sum of minimal solutions of ax + by = p",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +84,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N37",
+    "secondary": [
+      "11P21",
+      "11D04"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "解析数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "一次丢番图方程",
+      "最小正解",
+      "素数",
+      "渐近估计"
+    ],
+    "en": [
+      "linear Diophantine equations",
+      "minimal solutions",
+      "primes",
+      "asymptotic estimates"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +114,12 @@
     "note": "三四区·小问题；与 Farey 分数结构直接相关，数论研究生工具即可试。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 S(p) 的渐近主项（包括常数 C 与指数 α、β），并证明误差项确实更小。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

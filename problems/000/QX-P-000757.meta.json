@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000757",
-  "revision": 1,
-  "card_rev": "99df78fd8932bd6c",
+  "revision": 2,
+  "card_rev": "4bd7daf23c72b8ca",
   "title": "Sun 1680 四平方和猜想",
-  "title_en": null,
+  "title_en": "Sun's 1680 four-squares conjecture",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -113,11 +115,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11E25",
+    "secondary": [
+      "11P05",
+      "11D85"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "四平方和",
+      "平方条件",
+      "加性表示",
+      "Sun 猜想",
+      "二次型"
+    ],
+    "en": [
+      "four squares",
+      "square conditions",
+      "additive representations",
+      "Sun's conjectures"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -125,7 +146,12 @@
     "note": "三四区·小问题；孤立、具体的小命题（多为有限验证/显式目标），工作量对应 SCI 三/四区短文。 Sun 四平方系列；拉格朗日四平方定理为底座"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个非负整数 n 证明存在非负整数 x、y、z、w 使 n=x²+y²+z²+w² 且 x⁴+1680y³z 为完全平方，或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

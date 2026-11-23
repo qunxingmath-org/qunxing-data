@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001750",
-  "revision": 1,
-  "card_rev": "196661c3c3b7bf1f",
+  "revision": 2,
+  "card_rev": "8b067a81605f34c8",
   "title": "无3项AP的首个序列（Stanley 序列）",
-  "title_en": null,
+  "title_en": "Structure of Stanley sequences: the greedy sequence avoiding 3-term progressions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B25",
+    "secondary": [
+      "05D10",
+      "11B05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Stanley 序列",
+      "三项等差数列",
+      "贪心构造",
+      "进制刻画",
+      "密度"
+    ],
+    "en": [
+      "Stanley sequences",
+      "3-term arithmetic progressions",
+      "greedy construction",
+      "base representations",
+      "density"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对一般的初始集给出贪心序列的结构刻画（例如判定它是否为某进制下的数字受限集），或给出无法这样刻画的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

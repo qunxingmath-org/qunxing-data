@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001075",
-  "revision": 1,
-  "card_rev": "097ef0ec854c8bad",
+  "revision": 2,
+  "card_rev": "6d3ab8021ae5c320",
   "title": "Kourovka 5.54：Aₙ 由满足 ξp=ηq=ζr=ξηζ·u(ξ,η,ζ)=1 的三元生成",
-  "title_en": null,
+  "title_en": "Generating alternating groups by three elements with prescribed prime orders and a commutator relation",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D06",
+    "secondary": [
+      "20F05",
+      "20B30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "交错群",
+      "三元生成",
+      "换位子词",
+      "素数阶",
+      "生成元组"
+    ],
+    "en": [
+      "alternating groups",
+      "three generators",
+      "commutator word",
+      "prime orders",
+      "generating tuples"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +160,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意互异素数 p,q,r 与任意三元换位子词 u，证明存在无穷多个 n 使 Aₙ 有满足上述全部关系且生成 Aₙ 的三元组。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

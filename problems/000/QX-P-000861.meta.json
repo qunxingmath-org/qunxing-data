@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000861",
-  "revision": 1,
-  "card_rev": "4d39f720ad2ec5aa",
+  "revision": 2,
+  "card_rev": "502da288f6c5badb",
   "title": "嵌入图的 5-局部张力：edge-width ≥c 的显式常数（Tutte/Bouchet，DeVos 问）",
-  "title_en": null,
+  "title_en": "Five local tensions in embedded graphs of large edge-width",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "existence"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C10",
+    "secondary": [
+      "05C21",
+      "05C15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图论（曲面嵌入/流-染色对偶）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "局部张力",
+      "edge-width",
+      "曲面嵌入",
+      "无处为零流",
+      "对偶"
+    ],
+    "en": [
+      "local tensions",
+      "edge-width",
+      "surface embeddings",
+      "nowhere-zero flows",
+      "duality"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Seymour 已证存在某 edge-width 阈值（非显式）；求显式常数 c（猜测 c=4）；可定向/不可定向两个版本（Tutte/Bouchet）；与池内 B-987 流族对偶关联。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定这样的常数 c（证明 c=4 或给出正确的临界值），即证明 edge-width ≥ c 的无环嵌入图必有 5-local-tension；或证明不存在这样的常数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

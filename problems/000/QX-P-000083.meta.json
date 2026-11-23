@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000083",
-  "revision": 1,
-  "card_rev": "03321b48519424c1",
+  "revision": 2,
+  "card_rev": "dd47016fadb10236",
   "title": "Kourovka 12.55：f(n,p)（pⁿ 阶群数）关于 p 递增？",
-  "title_en": null,
+  "title_en": "Kourovka 12.55 (Mann): is f(n,p), the number of groups of order p^n, increasing in p for fixed n >= 5?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-群计数",
+      "单调性",
+      "素数依赖",
+      "有限群",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "counting p-groups",
+      "monotonicity",
+      "dependence on the prime",
+      "finite groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +158,12 @@
     "note": "一区二区·易证明；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。A层画像：可计算/数表/构造验证型。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个固定的 n ≥ 5，f(n,p) 都随素数 p 单调递增；或给出某个 n ≥ 5 与一对素数 p₁ < p₂ 使 f(n,p₁) > f(n,p₂)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

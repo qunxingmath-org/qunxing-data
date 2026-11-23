@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001706",
-  "revision": 1,
-  "card_rev": "87dfba9e84842477",
+  "revision": 2,
+  "card_rev": "c5fd26a8ba9e6b40",
   "title": "Mersenne 素数无穷",
-  "title_en": null,
+  "title_en": "Mersenne primes: infinitely many of the form 2^p - 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A41",
+    "secondary": [
+      "11A51"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Mersenne 数",
+      "素数无穷",
+      "偶完全数",
+      "素性检验",
+      "未解问题"
+    ],
+    "en": [
+      "Mersenne numbers",
+      "infinite primes",
+      "even perfect numbers",
+      "primality tests",
+      "open problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -73,7 +95,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明有无穷多个素数 p 使 2^p−1 为素数，或证明这样的 p 只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -86,6 +113,8 @@
     "tier_hint": "C 层",
     "status_raw": "OPEN_SUPPORTED",
     "imported_at": "2026-11-23",
-    "possible_duplicates": []
+    "possible_duplicates": [
+      "QX-P-001705"
+    ]
   }
 }

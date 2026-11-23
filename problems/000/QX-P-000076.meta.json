@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000076",
-  "revision": 1,
-  "card_rev": "0c8de2bc3aa55255",
+  "revision": 2,
+  "card_rev": "55e3b2877987c1b2",
   "title": "Kourovka 13.13：G,H 有限 p-群 Burnside 环同构，H 的幂零类由 G 的类的函数有界吗",
-  "title_en": null,
+  "title_en": "Kourovka 13.13 (Brandl): are nilpotency classes of p-groups bounded by the class under Burnside ring isomorphism?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "19A22"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Burnside 环",
+      "幂零类",
+      "p-群",
+      "不变量",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "Burnside rings",
+      "nilpotency class",
+      "p-groups",
+      "isomorphism invariants",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +138,12 @@
     "note": "一区二区·易证明；A层理由：p-群枚举+Burnside 环不变量可计算；Thévenaz 一般反例存在但 p-群类界开放"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在函数 f 使任何 Burnside 环同构的有限 p-群 G、H 都满足 class(H) ≤ f(class(G))；或构造一族反例说明这样的界不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

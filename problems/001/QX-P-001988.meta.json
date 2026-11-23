@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001988",
-  "revision": 1,
-  "card_rev": "1c6aeed8f1947a9a",
+  "revision": 2,
+  "card_rev": "73ad094ed464c74c",
   "title": "总长 2 的树的半圆盘覆盖",
-  "title_en": null,
+  "title_en": "Covering a tree of total length 2 by a semicircle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "05C05",
+      "52A40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何覆盖",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "半圆盘覆盖",
+      "树",
+      "总长",
+      "覆盖半径",
+      "极值几何"
+    ],
+    "en": [
+      "semicircle coverings",
+      "trees",
+      "total length",
+      "covering radius",
+      "extremal geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "定出最小的 R，使任何总长为 2 的树都能被某个半径 R 的半圆盘覆盖，并证明该 R 可取且不能再小（给出达到下界的树形）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002039",
-  "revision": 1,
-  "card_rev": "599a51e23a5ecc3f",
+  "revision": 2,
+  "card_rev": "918e26cbb13a315a",
   "title": "乘法分拆函数 Dirichlet 级数解析延拓",
-  "title_en": null,
+  "title_en": "Analytic continuation of the Dirichlet series of the multiplicative partition function",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "asymptotic"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11M41",
+    "secondary": [
+      "11N37",
+      "11P82"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "乘法分拆函数",
+      "Dirichlet 级数",
+      "解析延拓",
+      "极点",
+      "平均阶"
+    ],
+    "en": [
+      "multiplicative partitions",
+      "Dirichlet series",
+      "analytic continuation",
+      "poles",
+      "average order"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "把该 Dirichlet 级数解析延拓到指定区域并确定极点位置与留数（或说明遇上自然边界无法越过），同时给出所需的 g(n) 平均阶估计。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

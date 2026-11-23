@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001019",
-  "revision": 1,
-  "card_rev": "dcf6c0ffb9d7482f",
+  "revision": 2,
+  "card_rev": "0f6a185a002e0df0",
   "title": "Kourovka 14.91：对固定素数 p，任意 a≥0 都存在丰富度为 a 的有限 p-群吗",
-  "title_en": null,
+  "title_en": "Do finite p-groups of every abundance a exist for a fixed prime p?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D25",
+      "20E99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-群",
+      "丰富度",
+      "有限群",
+      "存在性",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "p-groups",
+      "abundance",
+      "finite groups",
+      "existence",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对固定素数 p 与任意 a≥0 构造出丰富度为 a 的有限 p-群，或证明某个 a 值不可能出现。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

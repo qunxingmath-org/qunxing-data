@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000158",
-  "revision": 1,
-  "card_rev": "ef74995dac4b7a3f",
+  "revision": 2,
+  "card_rev": "fbc5823cbd1892f3",
   "title": "Kourovka 18.99：Huppert 猜想：cd(G)=cd(H)（H 非交换单）⇒ G≅H×A（A 交换）",
-  "title_en": null,
+  "title_en": "Huppert's conjecture: does cd(G)=cd(H) force G to be H times an abelian group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "prove"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D05",
+      "20C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "特征标次数",
+      "不可约特征标",
+      "Huppert 猜想",
+      "非交换单群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "character degrees",
+      "irreducible characters",
+      "Huppert conjecture",
+      "non-abelian simple group",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：Tong-Viet J.Algebra 665(2025)/arXiv:2405.07422 例外型完成；经典 Lie 型族 outstanding"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有非交换单群 H 证明 cd(G)=cd(H) 蕴含 G≅H×A，或给出一个使该结论失败的 (G,H) 对。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

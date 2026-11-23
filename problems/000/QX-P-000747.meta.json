@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000747",
-  "revision": 1,
-  "card_rev": "48fca30f1f8053dc",
+  "revision": 2,
+  "card_rev": "0e32ca80eb19e730",
   "title": "Kelly 正则竞赛图 Hamilton 圈分解猜想",
-  "title_en": null,
+  "title_en": "Kelly's conjecture: regular tournaments decompose into directed Hamilton cycles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "construct"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -113,11 +116,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C45",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "竞赛图",
+      "正则竞赛图",
+      "Hamilton 圈",
+      "圈分解",
+      "Kelly 猜想"
+    ],
+    "en": [
+      "tournaments",
+      "regular tournaments",
+      "Hamilton cycles",
+      "cycle decompositions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -125,7 +147,12 @@
     "note": "三四区·小问题；孤立、具体的小命题（多为有限验证/显式目标），工作量对应 SCI 三/四区短文。 Kelly 1966；Tillson 定理（完全对称有向图 K_4/K_6 例外）为对照"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个正则竞赛图显式给出弧不交的有向 Hamilton 圈分解，并证明分解覆盖全部弧。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

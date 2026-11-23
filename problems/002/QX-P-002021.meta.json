@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002021",
-  "revision": 1,
-  "card_rev": "41842076ffbeebf9",
+  "revision": 2,
+  "card_rev": "e5553fce2c9b2e09",
   "title": "正 n 边形对角线剖分最大胞面积",
-  "title_en": null,
+  "title_en": "The largest cell in a diagonal dissection of a regular n-gon",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B45",
+    "secondary": [
+      "05B45",
+      "51M04"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正多边形",
+      "对角线剖分",
+      "最大胞",
+      "极值面积",
+      "组合几何"
+    ],
+    "en": [
+      "regular polygons",
+      "diagonal dissections",
+      "largest cell",
+      "extremal area",
+      "combinatorial geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "定出该最小（或最大）值的精确表达式并给出达到它的剖分，同时证明任何对角线剖分都不能做得更好。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

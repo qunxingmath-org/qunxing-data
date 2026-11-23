@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000913",
-  "revision": 1,
-  "card_rev": "9b0dffdcd18d4d62",
+  "revision": 2,
+  "card_rev": "628ec49ae3bce2ab",
   "title": "二维离散 Markus–Yamabe/LaSalle 问题：谱半径处处 <1 是否蕴含全局渐近稳定",
-  "title_en": null,
+  "title_en": "A planar discrete Markus-Yamabe problem: spectral radius below 1 and global stability",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37C75",
+    "secondary": [
+      "39A30",
+      "37E30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统（稳定性）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "离散动力系统",
+      "Markus–Yamabe 问题",
+      "谱半径",
+      "全局渐近稳定",
+      "Jacobian"
+    ],
+    "en": [
+      "discrete dynamical systems",
+      "Markus-Yamabe problem",
+      "spectral radius",
+      "global asymptotic stability",
+      "Jacobian"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；连续版 2D 真（Gutierrez/Fessler 1995）、≥3D 假；离散版 ≥3D 假（Chamberland–Meester 1997）、2D 开放——精确的维度补位问题；多项式/光滑双轨。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在 ρ(DF(x))<1 处处成立时该不动点全局渐近稳定；或构造一个满足条件但存在不收敛轨道的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

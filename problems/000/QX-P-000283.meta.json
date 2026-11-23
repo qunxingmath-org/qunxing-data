@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000283",
-  "revision": 1,
-  "card_rev": "e14ebc57313c35df",
+  "revision": 2,
+  "card_rev": "06281976a3b9b2ff",
   "title": "Stanley 树染色对称函数单射性：不同树有不同的 X_G",
-  "title_en": null,
+  "title_en": "Stanley's question: do non-isomorphic trees have distinct chromatic symmetric functions?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +91,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E05",
+    "secondary": [
+      "05C15",
+      "05C05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "染色对称函数",
+      "树",
+      "同构判定",
+      "Stanley 问题"
+    ],
+    "en": [
+      "chromatic symmetric function",
+      "trees",
+      "isomorphism",
+      "Stanley's question"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +121,12 @@
     "note": "一区二区·难度待定；X_G 决定树？——染色对称函数纲领核心开放题；对一般图已知非单射、对树开放；已有计算推进（阶≤?全核验）与不变量细分方法（幂和基、e-系数）活跃，可延续。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意两棵不同构的树都有不同的染色对称函数，或给出一对不同构却具有相同染色对称函数的树。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

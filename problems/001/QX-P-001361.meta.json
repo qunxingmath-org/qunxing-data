@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001361",
-  "revision": 1,
-  "card_rev": "3212b81c84f180b8",
+  "revision": 2,
+  "card_rev": "5a1d1ef050347629",
   "title": "和谐数（harmonic divisor numbers）的平方完全性与无穷性",
-  "title_en": null,
+  "title_en": "Are there perfect-square harmonic divisor numbers, and are there infinitely many of them?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A25",
+    "secondary": [
+      "11N25",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（乘性函数）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "和谐数",
+      "Ore 数",
+      "调和均值",
+      "完全平方",
+      "无穷性"
+    ],
+    "en": [
+      "harmonic divisor numbers",
+      "Ore numbers",
+      "harmonic mean",
+      "perfect squares",
+      "infinitude"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -113,7 +136,12 @@
     "note": "三四区·小问题；初等定义、计算易；无穷性证明难（与完全数问题同级难度观感），平方情形更少人做——2024 年 MSE 仍在直接提问。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "判定是否存在大于 1 的平方和谐数，并判定和谐数集合是否无穷。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002170",
-  "revision": 1,
-  "card_rev": "349cf011e8a4abce",
+  "revision": 2,
+  "card_rev": "d7c89d0f5306ad88",
   "title": "K-复杂度 liminf 刻画可数上锥",
-  "title_en": null,
+  "title_en": "A liminf characterisation of K-complexity and countable upper cones",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q30",
+    "secondary": [
+      "03D32",
+      "03D80"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法信息论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Kolmogorov 复杂度",
+      "上锥",
+      "liminf",
+      "算法随机性",
+      "可计算性"
+    ],
+    "en": [
+      "Kolmogorov complexity",
+      "upper cones",
+      "liminf",
+      "algorithmic randomness",
+      "computability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 K-复杂度 liminf 条件与可数上锥之间的完整对应（哪些条件刻画哪类锥），并证明该刻画。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

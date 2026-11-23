@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000644",
-  "revision": 1,
-  "card_rev": "320574f12947f20d",
+  "revision": 2,
+  "card_rev": "0b1dbe4e33c02329",
   "title": "18.10 Fitting 形成的 Wielandt 剩余性质",
-  "title_en": null,
+  "title_en": "Do all Fitting formations have the Wielandt property for residuals?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F17",
+    "secondary": [
+      "20D10",
+      "20D35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "形成",
+      "Fitting 形成",
+      "剩余",
+      "Wielandt 性质",
+      "次正规子群"
+    ],
+    "en": [
+      "formations",
+      "Fitting formations",
+      "residuals",
+      "Wielandt property",
+      "subnormal subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 Fitting 形成都满足该 Wielandt 剩余性质，或给出一个不满足的 Fitting 形成。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

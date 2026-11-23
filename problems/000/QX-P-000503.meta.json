@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000503",
-  "revision": 1,
-  "card_rev": "5e1b32fc0e25cffe",
+  "revision": 2,
+  "card_rev": "9f6079f0c2f5c5af",
   "title": "Berman–Hartmanis 同构猜想",
-  "title_en": null,
+  "title_en": "The Berman-Hartmanis conjecture: are all NP-complete languages polynomial-time isomorphic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q15",
+    "secondary": [
+      "03D15",
+      "68Q17"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "复杂度理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Berman–Hartmanis 猜想",
+      "NP 完全",
+      "多项式同构",
+      "计算同构",
+      "归约"
+    ],
+    "en": [
+      "Berman-Hartmanis conjecture",
+      "NP-completeness",
+      "polynomial-time isomorphism",
+      "computational isomorphism",
+      "reductions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；NP 完全语言全部多项式时间同构——与单向函数存在性纠缠（Jorgensen、Arvinda–Rao 等部分结果），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意两个 NP 完全语言之间存在多项式时间可逆的双射（或给出这样的统一构造），或给出两个不满足同构关系的 NP 完全语言。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

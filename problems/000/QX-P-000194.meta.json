@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000194",
-  "revision": 1,
-  "card_rev": "fd7fff590e086ae8",
+  "revision": 2,
+  "card_rev": "e936950443e87b54",
   "title": "三角形剖分为 n 个全等三角形（EP#634；原批次 A-028）",
-  "title_en": null,
+  "title_en": "Which n allow a triangle to be dissected into n congruent triangles?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C20",
+    "secondary": [
+      "05B45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三角形剖分",
+      "全等三角形",
+      "自相似剖分",
+      "可行性集合",
+      "组合几何"
+    ],
+    "en": [
+      "triangle dissections",
+      "congruent triangles",
+      "self-similar dissections",
+      "feasible sets",
+      "combinatorial geometry"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +140,12 @@
     "note": "一区二区·难度待定；确定所有可行的 n；小 n 情形初等几何+计算可推进（采集页标注\"中等\"）；相关分类问题 EP#633 已于 2026 年解决（页面/采集记录）→ 本题是自然后继，工具链已热身。保留 B 层（n=19 等具体情形难度未知）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出集合 S={n∈N: 存在三角形可剖分为 n 个两两全等的三角形} 的完整刻画并证明，或至少判定 n=19 是否属于 S。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

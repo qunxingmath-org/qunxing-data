@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001662",
-  "revision": 1,
-  "card_rev": "694a21307705b981",
+  "revision": 2,
+  "card_rev": "1cadf40942ce54f5",
   "title": "Two-convexity ⇒ Lefschetz？（Petrunin 比较几何，题面校准）",
-  "title_en": null,
+  "title_en": "Does two-convexity imply the Lefschetz property? (a comparison-geometry question)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -72,11 +74,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C23",
+    "secondary": [
+      "53C45",
+      "53C21"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "度量几何/比较几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双凸性",
+      "Lefschetz 性质",
+      "比较几何",
+      "凸集",
+      "欧氏空间"
+    ],
+    "en": [
+      "two-convexity",
+      "Lefschetz property",
+      "comparison geometry",
+      "convex sets"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -84,7 +105,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明双凸集必具有 Lefschetz 性质，或构造一个双凸却不满足该性质的集合。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

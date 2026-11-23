@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001236",
-  "revision": 1,
-  "card_rev": "305ddeb88619fe45",
+  "revision": 2,
+  "card_rev": "49f9088a42fbfa71",
   "title": "三次图的pathwidth精确常数",
-  "title_en": null,
+  "title_en": "Exact pathwidth constant for cubic graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C75",
+    "secondary": [
+      "68R10",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图算法/结构图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "pathwidth",
+      "三次图",
+      "渐近常数",
+      "图宽度",
+      "上下界"
+    ],
+    "en": [
+      "pathwidth",
+      "cubic graphs",
+      "asymptotic constant",
+      "graph width",
+      "upper and lower bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +126,12 @@
     "note": "三四区·小问题；C层：具体极值常数——已知0.082n≤pw_max≤n/6（Fomin等）；上界(1/6+ε)n已证、下界0.082n（构造）——收窄常数是明确的开放目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 lim pw_max(n)/n 的精确值（给出匹配的上下界证明）；或把 0.082 与 1/6 之间的差距显著缩小。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

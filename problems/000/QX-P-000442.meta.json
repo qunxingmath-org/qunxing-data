@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000442",
-  "revision": 1,
-  "card_rev": "32e9b0f5207fbb72",
+  "revision": 2,
+  "card_rev": "c002a39f6a5fcc14",
   "title": "Furstenberg ×p,×q 不变测度猜想（一般形式）",
-  "title_en": null,
+  "title_en": "Furstenberg's xp, xq conjecture: invariant measures are Lebesgue",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37A45",
+    "secondary": [
+      "37A05",
+      "11K55"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统/分形",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Furstenberg 猜想",
+      "不变测度",
+      "环面",
+      "乘法映射",
+      "分形"
+    ],
+    "en": [
+      "Furstenberg conjecture",
+      "invariant measures",
+      "torus",
+      "multiplication maps",
+      "fractals"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -103,7 +126,12 @@
     "note": "一区二区·难度待定；Rudolph–Johnson 已解决正熵情形，零熵（一般）情形为著名深水区（fractal rigidity），B层。EXCLUDED-CHECK 裁决：排除清单无 ×2×3 原始问题（B层无对应条目），保留。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明环面上任何同时 T_p、T_q 不变的无原子 Borel 概率测度都是 Lebesgue 测度，或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

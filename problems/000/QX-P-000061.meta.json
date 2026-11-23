@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000061",
-  "revision": 1,
-  "card_rev": "5b838c00993c2444",
+  "revision": 2,
+  "card_rev": "0701bc261d7c305f",
   "title": "21.130 奇阶有限交换群：|A|=n>2 元素可排列使相邻和互异",
-  "title_en": null,
+  "title_en": "Kourovka 21.130 (Sun): can any n>2 elements of an odd-order abelian group be ordered with distinct adjacent sums?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20K01",
+    "secondary": [
+      "11B75",
+      "05B10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限交换群",
+      "奇阶",
+      "相邻和互异",
+      "排列",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "finite abelian groups",
+      "odd order",
+      "distinct adjacent sums",
+      "orderings",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·易证明；Kourovka 21版在列开放题；（Sun 猜想）|G| 为奇的有限加法交换群，|A|=n>2，则 A 可排列为 a₁,…,a_n 使 a₁+a₂, a₂…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个奇阶有限加法交换群 G 与每个 n > 2 的 n 元子集 A，都存在一种排列使所有的 a_i+a_{i+1}（含 a_n+a_1）互不相同；或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

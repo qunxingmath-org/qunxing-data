@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001871",
-  "revision": 1,
-  "card_rev": "4c8066bd22885a01",
+  "revision": 2,
+  "card_rev": "f8a3dcd2d0b279b9",
   "title": "Zarankiewicz 一般渐近 ex(n,K_{s,t})",
-  "title_en": null,
+  "title_en": "The general Zarankiewicz problem: asymptotics of ex(n,K_{s,t})",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C30",
+      "05C50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "极值图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Zarankiewicz 问题",
+      "Kővári–Sós–Turán 界",
+      "二部图",
+      "极值数"
+    ],
+    "en": [
+      "Zarankiewicz problem",
+      "Kovari-Sos-Turan bound",
+      "bipartite graphs",
+      "extremal numbers"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 s≥3 时 ex(n,K_{s,t}) 的渐近阶（指数与对数因子都要夹准），并给出匹配的构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

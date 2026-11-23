@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002180",
-  "revision": 1,
-  "card_rev": "682d722443b31337",
+  "revision": 2,
+  "card_rev": "55ac3352213a0b8b",
   "title": "双 Lipschitz 嵌入消去 R？",
-  "title_en": null,
+  "title_en": "Can a bi-Lipschitz embedding have the factor R cancelled?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "special_case"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46B85",
+    "secondary": [
+      "54E40",
+      "46T99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双 Lipschitz 嵌入",
+      "消去律",
+      "度量空间",
+      "Banach 空间",
+      "粗嵌入"
+    ],
+    "en": [
+      "bi-Lipschitz embeddings",
+      "cancellation",
+      "metric spaces",
+      "Banach spaces"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该消去律对给定的度量空间类成立，或构造一对 X、Y 使 X×ℝ 双 Lipschitz 嵌入 Y×ℝ 但 X 不能嵌入 Y。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

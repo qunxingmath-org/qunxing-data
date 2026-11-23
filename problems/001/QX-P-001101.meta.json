@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001101",
-  "revision": 1,
-  "card_rev": "f3533a77b59d8724",
+  "revision": 2,
+  "card_rev": "9365ec1994a39536",
   "title": "Kourovka 9.68：Sylow p-子群属于簇 V 的有限 p-可解群 p-长有界？",
-  "title_en": null,
+  "title_en": "Bounding the p-length of finite p-soluble groups whose Sylow p-subgroups lie in a variety",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20E10",
+      "20D20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-长",
+      "p-可解群",
+      "Sylow 子群",
+      "簇",
+      "有界性"
+    ],
+    "en": [
+      "p-length",
+      "p-soluble groups",
+      "Sylow subgroups",
+      "varieties",
+      "boundedness"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在只依赖于 V 与 p 的常数 C 使所有这类群的 p-长不超过 C，或构造一列 p-长无界的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

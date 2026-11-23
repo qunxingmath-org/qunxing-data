@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000500",
-  "revision": 1,
-  "card_rev": "58ec3a8dae08b34d",
+  "revision": 2,
+  "card_rev": "74e1daf9df322dcc",
   "title": "3SUM 是否有 O(n^{2−ε}) 型实质改进（atlas: 3SUM 复杂度）",
-  "title_en": null,
+  "title_en": "Is 3SUM solvable in strongly subquadratic time, i.e. O(n^{2-eps})?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q17",
+    "secondary": [
+      "68Q25",
+      "68W40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法复杂度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "3SUM",
+      "细粒度复杂度",
+      "二次时间下界",
+      "算法改进",
+      "条件性下界"
+    ],
+    "en": [
+      "3SUM",
+      "fine-grained complexity",
+      "quadratic time lower bounds",
+      "algorithmic improvements",
+      "conditional lower bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；3SUM 最优复杂度——条件下界文化（APSP/OMv 网络互连）中的核心基准；真实突破将震动条件下界生态，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 ε>0 与一个 O(n^{2−ε}) 的确定性或随机化算法（并证明其正确性与时间界），或证明在标准计算模型下这样的算法不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

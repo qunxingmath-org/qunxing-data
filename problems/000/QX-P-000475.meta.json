@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000475",
-  "revision": 1,
-  "card_rev": "818adfaecbc51a5e",
+  "revision": 2,
+  "card_rev": "d6918d7f0a3adec2",
   "title": "Open Quantum Problem 23：SIC-POVM 存在性（13 条基准维度子问题）",
-  "title_en": null,
+  "title_en": "Does every finite dimension admit a SIC-POVM? Benchmark dimensions from 56 to 75",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "81P15",
+    "secondary": [
+      "05B30",
+      "81P45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "量子信息",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "SIC-POVM",
+      "信息完备测量",
+      "等角线",
+      "量子态层析",
+      "存在性"
+    ],
+    "en": [
+      "SIC-POVM",
+      "informationally complete measurements",
+      "equiangular lines",
+      "quantum tomography",
+      "existence"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；Zauner 猜想族基准维度（56/58/…/75 等）——数值验证+群论结构方法，深水区，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个维数 d 给出 SIC-POVM 的显式构造（或统一构造），或证明某个维数（如 56）不存在 SIC-POVM。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

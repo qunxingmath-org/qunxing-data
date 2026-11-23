@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000971",
-  "revision": 1,
-  "card_rev": "210104a3a510a092",
+  "revision": 2,
+  "card_rev": "84653d615ee9e73e",
   "title": "Kourovka 21.37：可构造 tdlc 群（从平凡群经有限 profinite 扩张与上升 HNN 扩张得到）",
-  "title_en": null,
+  "title_en": "Kourovka 21.37: are soluble tdlc groups of type FP-infinity constructible?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22D05",
+    "secondary": [
+      "20J05",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可构造 tdlc 群",
+      "FP∞ 型",
+      "profinite 扩张",
+      "上升 HNN 扩张",
+      "可解群"
+    ],
+    "en": [
+      "constructible tdlc groups",
+      "type FP-infinity",
+      "profinite extensions",
+      "ascending HNN-extensions",
+      "soluble groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明所有具 FP∞ 型的可解 tdlc 群都可构造，或给出一个不可构造的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

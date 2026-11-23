@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000866",
-  "revision": 1,
-  "card_rev": "c73393cbba802639",
+  "revision": 2,
+  "card_rev": "f9e42f12f779481a",
   "title": "Curtis–Fort 问题：R^3 的子集的基本群能否有挠（有限阶元）",
-  "title_en": null,
+  "title_en": "Curtis-Fort problem: can a subset of R^3 have torsion in its fundamental group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -103,11 +106,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57M05",
+    "secondary": [
+      "54F15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何拓扑（平面集/3 空间子集）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "基本群",
+      "挠元",
+      "三空间子集",
+      "有限阶元素"
+    ],
+    "en": [
+      "fundamental group",
+      "torsion element",
+      "subsets of R^3",
+      "finite order elements"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +135,12 @@
     "note": "三四区·小问题；开子集 π1 无挠（经典），任意子集 H1 无挠（已知），但 π1 挠子集存在性开放（MO#4478 老题持续）；构造反例或推广无挠定理双轨。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个 R³ 的子集 X 及其基本群中一个有限阶元素（阶大于 1）；或证明 R³ 任何子集的基本群都无挠。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

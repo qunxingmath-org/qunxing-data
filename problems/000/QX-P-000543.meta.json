@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000543",
-  "revision": 1,
-  "card_rev": "87da479ff14f70a9",
+  "revision": 2,
+  "card_rev": "8878d2cc020b0ddb",
   "title": "21.105 每个字在剩余有限群类中简洁？",
-  "title_en": null,
+  "title_en": "Is every word concise in the class of residually finite groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20F45",
+      "20E10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "简洁字",
+      "verbal 子群",
+      "剩余有限群",
+      "字的值集",
+      "字宽"
+    ],
+    "en": [
+      "concise words",
+      "verbal subgroups",
+      "residually finite groups",
+      "word values"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +138,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Petschick/D. Segal）w 在类 C 中简洁：G∈C 且 G_w 有限 ⇒ w(G) 有限。是否每个字在…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个字在剩余有限群类中都简洁，或给出一个字和一个剩余有限群，使其取值集有限而 verbal 子群无限。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

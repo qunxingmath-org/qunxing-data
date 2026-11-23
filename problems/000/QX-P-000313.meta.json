@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000313",
-  "revision": 1,
-  "card_rev": "97bbf888e95e2c74",
+  "revision": 2,
+  "card_rev": "533fb0343c5f3ab1",
   "title": "Jaeger：线性映射中的非零点（原批次 A-053）",
-  "title_en": null,
+  "title_en": "Jaeger's problem on nowhere-zero points of linear maps over large finite fields",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C21",
+    "secondary": [
+      "05B35",
+      "11T30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合代数/流理论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "nowhere-zero 流",
+      "线性映射",
+      "有限域",
+      "Jaeger 猜想"
+    ],
+    "en": [
+      "nowhere-zero flows",
+      "linear maps",
+      "finite fields",
+      "Jaeger's conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +130,12 @@
     "note": "一区二区·难度待定；有限域上线性映射 nowhere-zero 点命题（与 nowhere-zero flow 传统相连）；小众。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "按原页精确陈述，证明在至少 4 元的有限域上总存在这样的 nowhere-zero 点，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

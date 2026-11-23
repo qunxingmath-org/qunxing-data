@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000306",
-  "revision": 1,
-  "card_rev": "12c175eefe889ae2",
+  "revision": 2,
+  "card_rev": "a48ff6a9c585dfe1",
   "title": "Kriesell Steiner 树打包猜想",
-  "title_en": null,
+  "title_en": "Kriesell's conjecture: high edge-connectivity forces edge-disjoint Steiner trees",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +95,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C40",
+    "secondary": [
+      "05C05",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（连通性）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Steiner 树",
+      "边连通度",
+      "边不交",
+      "Kriesell 猜想"
+    ],
+    "en": [
+      "Steiner trees",
+      "edge-connectivity",
+      "edge-disjoint",
+      "Kriesell's conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +125,12 @@
     "note": "一区二区·难度待定；2001 提出：边连通度 ≥2k ⇒ k 棵边不交 S-Steiner 树；已知 2k→k 之半界在大规模类成立（Jain 式迭代+Mader 定理）；结构归纳活跃，二区图论谱系。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明当 S 的边连通度至少 2k 时总存在 k 棵边不交的 S-Steiner 树，或给出一个不成立的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

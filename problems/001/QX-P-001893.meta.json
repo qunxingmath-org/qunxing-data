@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001893",
-  "revision": 1,
-  "card_rev": "38aa65315623070f",
+  "revision": 2,
+  "card_rev": "eafa6403defb3aa5",
   "title": "Hodge 猜想逻辑复杂度",
-  "title_en": null,
+  "title_en": "Where does the Hodge conjecture sit in the arithmetical hierarchy?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D55",
+    "secondary": [
+      "14C30",
+      "03C62"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数理逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hodge 猜想",
+      "算术层级",
+      "可定义性",
+      "代数闭链"
+    ],
+    "en": [
+      "Hodge conjecture",
+      "arithmetical hierarchy",
+      "definability",
+      "algebraic cycles"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 Hodge 猜想在算术层级中的确切位置：证明它等价于某个 Σ⁰_n 或 Π⁰_n 陈述，并用一个反向结论排除更低的层级。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

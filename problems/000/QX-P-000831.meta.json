@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000831",
-  "revision": 1,
-  "card_rev": "382e61afd6c79f2c",
+  "revision": 2,
+  "card_rev": "bc3eb59f71c8379e",
   "title": "Green 问题 85 = Carbery 矩形问题：稠密开集中大面积极小轴平行矩形",
-  "title_en": null,
+  "title_en": "Green problem 85 = Carbery's rectangle problem for open sets",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "42B99",
+    "secondary": [
+      "28A75",
+      "11B30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "分析/离散几何（加性组合交叉）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "轴平行矩形",
+      "开集测度",
+      "Carbery 问题",
+      "加性四元组",
+      "连续版"
+    ],
+    "en": [
+      "axis-parallel rectangle",
+      "measure of open sets",
+      "Carbery's problem",
+      "additive quadruple",
+      "continuous version"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Carbery–Christ–Wright 命题；Cauchy–Schwarz 给 α²/log(1/α) 上界，对角条带例子说明 α² 不可达；目标 c·α² 常数——Keleti 等有相关构造研究；离散加性四元组版本（Green 注）亦可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在绝对常数 c>0 使每个测度为 α 的开集都含有面积至少 cα² 的轴平行矩形，或构造反例说明这样的 c 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

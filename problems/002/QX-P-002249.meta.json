@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002249",
-  "revision": 1,
-  "card_rev": "c248efd6bae13fd0",
+  "revision": 2,
+  "card_rev": "094a651c53e24728",
   "title": "全纯函数整数→{0,1,2,3}",
-  "title_en": null,
+  "title_en": "A holomorphic function mapping integers, and only integers, into {0,1,2,3}",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "decide"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "30D15",
+    "secondary": [
+      "30E05",
+      "30H05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "复分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整函数",
+      "插值",
+      "整数集",
+      "取值限制",
+      "复分析"
+    ],
+    "en": [
+      "entire functions",
+      "interpolation",
+      "integers",
+      "value constraints",
+      "complex analysis"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出满足这两个取值条件的整函数并证明其性质,或证明这样的整函数不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

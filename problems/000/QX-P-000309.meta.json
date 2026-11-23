@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000309",
-  "revision": 1,
-  "card_rev": "5ad95d7c85c5eb66",
+  "revision": 2,
+  "card_rev": "0f05da13638b8902",
   "title": "Seymour 自子式（self-minor）猜想",
-  "title_en": null,
+  "title_en": "Seymour's self-minor conjecture",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C83",
+    "secondary": [
+      "05C75",
+      "05C40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（子式）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自子式",
+      "图子式",
+      "有限图",
+      "例外清单"
+    ],
+    "en": [
+      "self-minor",
+      "graph minors",
+      "finite graphs",
+      "exceptional list"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +115,12 @@
     "note": "一区二区·难度待定；'图是否为其真子式'型问题（Seymour 1980s）；已知例外类（环/小图）；结构归纳+代数表示（缠绕矩阵）可续接；EGRES 编目。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个不在这份例外清单中的有限图构造出它的一个真子式并证明同构，或给出一个新的反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

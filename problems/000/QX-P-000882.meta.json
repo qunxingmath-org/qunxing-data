@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000882",
-  "revision": 1,
-  "card_rev": "687ab9b36cea703d",
+  "revision": 2,
+  "card_rev": "25c691774337ff15",
   "title": "α_{4,2}(n)：[n]^4 中无 4 点共面的最大子集渐近阶（OWR 2024/3）",
-  "title_en": null,
+  "title_en": "The asymptotic order of alpha_{4,2}(n): subsets of [n]^4 with no 4 coplanar points",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "asymptotic"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -90,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "05D99",
+      "11B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何（一般位置）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "一般位置",
+      "仿射子空间",
+      "网格点集",
+      "渐近阶",
+      "离散几何"
+    ],
+    "en": [
+      "general position",
+      "affine subspaces",
+      "grid point sets",
+      "asymptotic order",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +124,12 @@
     "note": "三四区·小问题；一般位置点集谱系（Bárány 等）；d=4,k=2 的渐近阶未知（上下界缺口）；与池内 C-1114（EP#982 凸顶点距离）等 Erdős 几何项互邻不同命题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 α_{4,2}(n)（以及一般 α_{d,k}(n)）的渐近阶，即给出同阶的上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001125",
-  "revision": 1,
-  "card_rev": "5e165f95193b5d77",
+  "revision": 2,
+  "card_rev": "30cc66d38ee60a4a",
   "title": "Kourovka 12.95：pro-p 群陪集恒等式⇒群恒等式",
-  "title_en": null,
+  "title_en": "Coset identities in finitely generated pro-p groups and ordinary identities",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "20E10",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "pro-p 群",
+      "陪集恒等式",
+      "群恒等式",
+      "Tits 二择一"
+    ],
+    "en": [
+      "pro-p groups",
+      "coset identities",
+      "group identities",
+      "Tits alternative"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明有限生成 pro-p 群上的陪集恒等式必推出全群的非平凡恒等式，或给出一个满足陪集恒等式却不满足任何恒等式的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

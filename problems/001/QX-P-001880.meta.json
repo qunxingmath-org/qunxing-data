@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001880",
-  "revision": 1,
-  "card_rev": "ba70d2c6c7897f05",
+  "revision": 2,
+  "card_rev": "84c973e161cf9a73",
   "title": "r-一致超图 Zarankiewicz",
-  "title_en": null,
+  "title_en": "Tight asymptotics for the Zarankiewicz problem in r-uniform hypergraphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C65",
+    "secondary": [
+      "05C35",
+      "05C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "极值超图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "r-一致超图",
+      "Zarankiewicz 问题",
+      "紧渐近",
+      "完全 r-部子超图"
+    ],
+    "en": [
+      "r-uniform hypergraphs",
+      "Zarankiewicz problem",
+      "tight asymptotics",
+      "complete r-partite subhypergraphs"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 r-一致超图版 Zarankiewicz 数的紧渐近阶，并给出匹配的构造与上界证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

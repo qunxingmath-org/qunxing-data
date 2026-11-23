@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000498",
-  "revision": 1,
-  "card_rev": "05384c314cfa7e85",
+  "revision": 2,
+  "card_rev": "2f6bdef89b1b9d5c",
   "title": "Kalai 布尔函数噪声敏感性猜想",
-  "title_en": null,
+  "title_en": "Kalai's conjecture on noise sensitivity of threshold-type Boolean functions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "06E30",
+    "secondary": [
+      "68Q87",
+      "91B12"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散概率/社会选择",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "噪声敏感性",
+      "布尔函数",
+      "阈值函数",
+      "影响度",
+      "社会选择"
+    ],
+    "en": [
+      "noise sensitivity",
+      "Boolean functions",
+      "threshold functions",
+      "influences",
+      "social choice"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；阈值型布尔函数噪声敏感性定量刻画——与 Friedgut–Kalai、Bourgain 谱系相邻，分析工具（超收缩/谱）可延续，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有阈值型布尔函数证明该定量刻画（给出噪声敏感性与影响度等量之间的等价条件），或给出一个不满足该刻画的阈值函数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

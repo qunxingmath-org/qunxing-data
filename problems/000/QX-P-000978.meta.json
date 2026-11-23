@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000978",
-  "revision": 1,
-  "card_rev": "556d7b677d1dcfe0",
+  "revision": 2,
+  "card_rev": "5c3a62fb5161af1f",
   "title": "Kourovka 21.80：存在有限生成左序群恰有一个非平凡共轭类吗",
-  "title_en": null,
+  "title_en": "Kourovka 21.80: finitely generated left-orderable groups with one nontrivial conjugacy class",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F60",
+    "secondary": [
+      "06F15",
+      "20E45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "左序群",
+      "共轭类",
+      "有限生成",
+      "无挠群",
+      "Osin 构造"
+    ],
+    "en": [
+      "left-orderable groups",
+      "conjugacy classes",
+      "finite generation",
+      "torsion-free groups",
+      "Osin's construction"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出有限生成、左可序且恰有一个非平凡共轭类的群，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001952",
-  "revision": 1,
-  "card_rev": "b59ce4d097bb8d0e",
+  "revision": 2,
+  "card_rev": "60c080e9fdd3ad76",
   "title": "an+b 与 bn+a 同素",
-  "title_en": null,
+  "title_en": "Can an+b and bn+a be prime simultaneously?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N32",
+    "secondary": [
+      "11A41",
+      "11D79"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "线性型",
+      "同时为素数",
+      "Dirichlet 定理",
+      "数论猜想"
+    ],
+    "en": [
+      "linear forms",
+      "simultaneous primality",
+      "Dirichlet's theorem",
+      "number theory conjectures"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定的 a、b 给出一个使 an+b 与 bn+a 同时为素数的 n，或证明这样的 n 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

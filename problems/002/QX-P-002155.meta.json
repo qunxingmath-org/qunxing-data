@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002155",
-  "revision": 1,
-  "card_rev": "33a2bb6f754f52b3",
+  "revision": 2,
+  "card_rev": "48f538de9a8e58a9",
   "title": "SL_n(Z) 同调稳定性未决范围",
-  "title_en": null,
+  "title_en": "The open range of homology stability for SL_n(Z)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "decide"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20J06",
+    "secondary": [
+      "19D50",
+      "20G30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "同调稳定性",
+      "SL_n(Z)",
+      "同调群",
+      "稳定范围",
+      "算术群"
+    ],
+    "en": [
+      "homology stability",
+      "SL_n(Z)",
+      "homology groups",
+      "stable range",
+      "arithmetic groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个同调次数 i 确定使 H_i(SL_n(Z)) 稳定的最小 n（给出匹配的上下界），或把现有未决区间缩小到确定的边界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

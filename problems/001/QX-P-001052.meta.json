@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001052",
-  "revision": 1,
-  "card_rev": "05a5cb09c770cd87",
+  "revision": 2,
+  "card_rev": "afbcf4cf154d8d38",
   "title": "Kourovka 18.109：满足 Kazhdan 性质 (T) 的群不能同态满映到无穷多个秩 1 Lie 型单群（如 PSL2(q)）吗",
-  "title_en": null,
+  "title_en": "Can a group with Kazhdan's property (T) surject onto infinitely many rank-1 simple groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "22D55",
+      "20G40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Kazhdan 性质 (T)",
+      "秩 1 Lie 型群",
+      "PSL2(q)",
+      "满同态",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "Kazhdan's property (T)",
+      "rank 1 Lie type groups",
+      "PSL_2(q)",
+      "surjective homomorphisms",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明有性质 (T) 的群至多只有有限多个秩 1 Lie 型单商，或构造一个有 (T) 却满映到无穷多个这类群的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

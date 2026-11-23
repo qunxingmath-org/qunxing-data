@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000701",
-  "revision": 1,
-  "card_rev": "9216c3408075bef7",
+  "revision": 2,
+  "card_rev": "0cdf3747b81846e8",
   "title": "15.51 周期群满足 [x,y]⁵=1 ⇒ 导群是 5-群？",
-  "title_en": null,
+  "title_en": "Kourovka 15.51: is [G,G] a 5-group when [x,y]^5 = 1 in a periodic group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20F45",
+      "20F12"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "周期群",
+      "交换子恒等式",
+      "导群",
+      "5-群",
+      "Mazurov 问题"
+    ],
+    "en": [
+      "periodic groups",
+      "commutator identities",
+      "derived subgroup",
+      "5-groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个满足恒等式 [x,y]^5=1 的周期群其导群都是 5-群，或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000241",
-  "revision": 1,
-  "card_rev": "794356a8ff91b611",
+  "revision": 2,
+  "card_rev": "b40f84a21cf2a103",
   "title": "Lovász 路删除猜想（原批次 A-066）",
-  "title_en": null,
+  "title_en": "Lovasz path-removal conjecture: induced paths keeping f(k)-connectivity",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C40",
+    "secondary": [
+      "05C38",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/连通性（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "诱导路",
+      "连通度",
+      "路删除猜想",
+      "k-连通图",
+      "顶点割"
+    ],
+    "en": [
+      "induced path",
+      "connectivity",
+      "path removal conjecture",
+      "k-connected graph",
+      "vertex cut"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +131,12 @@
     "note": "一区二区·难度待定；k=3（Tutte）、k=4（Chen–Gould–Yu 2003；Kriesell 2001）已证；弱化版本（Kawarabayashi–Lee–Reed–Wollan 2008）已证；一般 f(k) 未决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在只依赖 k 的整值函数 f(k) 使结论对一切 k-连通图成立，或给出反例说明这样的 f 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

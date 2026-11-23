@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001742",
-  "revision": 1,
-  "card_rev": "dd7d1045453db7fe",
+  "revision": 2,
+  "card_rev": "8f7878e18b8d6e51",
   "title": "可分 Banach 空间间闭图映射有连续点？（唯一回答不实质）",
-  "title_en": null,
+  "title_en": "Must a closed-graph map between separable Banach spaces have a point of continuity?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46A30",
+    "secondary": [
+      "46B20",
+      "54C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "闭图像定理",
+      "非线性映射",
+      "连续点",
+      "Banach 空间",
+      "可分性"
+    ],
+    "en": [
+      "closed graph theorem",
+      "nonlinear maps",
+      "point of continuity",
+      "Banach spaces",
+      "separability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明可分 Banach 空间之间任何图像闭的非线性映射都有连续点，或构造一个图像闭却处处不连续的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

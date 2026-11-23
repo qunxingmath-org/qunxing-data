@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001123",
-  "revision": 1,
-  "card_rev": "cfe47ea1a987ec7a",
+  "revision": 2,
+  "card_rev": "c21e1b7b3e6298aa",
   "title": "Kourovka 12.64：(x₁⋯x_N)ⁿ=1 ∀xᵢ∈A∪{1} ⇒ 群指数≤n？",
-  "title_en": null,
+  "title_en": "A uniform N(k,n) forcing finite groups with generators A to have exponent at most n",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E10",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Burnside 群",
+      "指数",
+      "生成集",
+      "一致界",
+      "有限群"
+    ],
+    "en": [
+      "Burnside groups",
+      "exponent",
+      "generating sets",
+      "uniform bounds",
+      "finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 k≥2 与 n 存在满足要求的 N(k,n)，或对某组 (k,n) 证明这样的 N 不存在（从而得出相应推论）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

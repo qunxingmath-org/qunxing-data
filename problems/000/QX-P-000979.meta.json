@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000979",
-  "revision": 1,
-  "card_rev": "0b3b55580efd115c",
+  "revision": 2,
+  "card_rev": "67e1ab0f7ee29673",
   "title": "Kourovka 21.85：柔性置换稳定群必置换稳定吗",
-  "title_en": null,
+  "title_en": "Kourovka 21.85: does flexible permutation stability imply permutation stability?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20B30",
+      "20F69"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "置换稳定",
+      "柔性稳定",
+      "几乎同态",
+      "对称群",
+      "Lubotzky 问题"
+    ],
+    "en": [
+      "permutation stability",
+      "flexible stability",
+      "almost homomorphisms",
+      "symmetric groups",
+      "Lubotzky's problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明柔性置换稳定一定能推出置换稳定，或给出一个柔性置换稳定但非置换稳定的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

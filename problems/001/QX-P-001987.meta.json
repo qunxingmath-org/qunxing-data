@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001987",
-  "revision": 1,
-  "card_rev": "6db3d00805105fdb",
+  "revision": 2,
+  "card_rev": "f176de52dbadaab2",
   "title": "Trappist-1（无限象棋变体）mate-in-n 可判定性",
-  "title_en": null,
+  "title_en": "Is mate-in-n decidable in the infinite-chess variant Trappist-1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "91A46",
+    "secondary": [
+      "03D05",
+      "68Q60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "博弈/逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无限象棋",
+      "mate-in-n",
+      "可判定性",
+      "象棋变体",
+      "博弈逻辑"
+    ],
+    "en": [
+      "infinite chess",
+      "mate-in-n",
+      "decidability",
+      "chess variants",
+      "game logic"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个判定该变体 mate-in-n 的算法并证明其正确性与终止性，或证明该问题不可判定（例如把停机问题归约到它）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

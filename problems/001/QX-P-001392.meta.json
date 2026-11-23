@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001392",
-  "revision": 1,
-  "card_rev": "906f8d6c575ab471",
+  "revision": 2,
+  "card_rev": "ad10b44ae6c43372",
   "title": "Chen–Daykin：度约束三色三角形参数（AMM 6157）",
-  "title_en": null,
+  "title_en": "Chen-Daykin: the degree-bounded three-coloring threshold for a rainbow triangle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C55",
+    "secondary": [
+      "05C15",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图 Ramsey 理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三色三角形",
+      "边染色",
+      "度约束",
+      "Ramsey 型问题"
+    ],
+    "en": [
+      "rainbow triangles",
+      "edge colorings",
+      "degree bounds",
+      "Ramsey-type problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +123,12 @@
     "note": "三四区·小问题；小参数 Ramsey 变体，K_p 小值可计算；与 Gyárfás local coloring / degree Ramsey 活跃领域相邻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定这类 (Δ,p) 中的最小值并证明：p 达到它时三色三角形必然出现，而小于它时存在反例染色。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

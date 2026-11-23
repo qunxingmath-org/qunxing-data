@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001071",
-  "revision": 1,
-  "card_rev": "68ca04e0be80f2c7",
+  "revision": 2,
+  "card_rev": "96805a6aa24d74d2",
   "title": "Kourovka 4.66：完美+平凡乘子有限群 def(Gⁿ)→−∞",
-  "title_en": null,
+  "title_en": "Deficiency of direct powers of a perfect finite group with trivial multiplicator",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "asymptotic"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F05",
+    "secondary": [
+      "20J05",
+      "20D99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "亏格",
+      "有限表现",
+      "直幂",
+      "Schur 乘子",
+      "完美群"
+    ],
+    "en": [
+      "deficiency",
+      "finite presentations",
+      "direct powers",
+      "Schur multiplicator",
+      "perfect groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +160,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意非平凡完美且 Schur 乘子平凡的有限群 G，证明 def(Gⁿ) → −∞（n → ∞）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

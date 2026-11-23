@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001011",
-  "revision": 1,
-  "card_rev": "4ce3cfb6050b9b06",
+  "revision": 2,
+  "card_rev": "701861d89157c17c",
   "title": "Kourovka 14.17：IMA(G)=Aut G 中在 G/G″ 上平凡作用者",
-  "title_en": null,
+  "title_en": "Presenting IMA(F_n) for n >= 3: generators and defining relations",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "compute",
+    "classify"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E36",
+    "secondary": [
+      "20F28",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自同构群",
+      "自由群",
+      "生成元与关系",
+      "IA-自同构",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "automorphism groups",
+      "free groups",
+      "generators and relations",
+      "IA-automorphisms",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 IMA(F_n)（n≥3）的生成元集合与定义关系，并证明它确实呈现该群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

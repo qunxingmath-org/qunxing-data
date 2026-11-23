@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001457",
-  "revision": 1,
-  "card_rev": "7d5e9908f097c2df",
+  "revision": 2,
+  "card_rev": "0168f2d2ff49f4b4",
   "title": "batch_I I-077：无穷 8-连通格（Z² 加对角邻接）上，诱导子图最大度 ≤4 的顶点子集的最大密度 δ(4) 是多少？（",
-  "title_en": null,
+  "title_en": "Maximal density of a vertex set in the 8-connected lattice inducing maximum degree at most 4",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C07",
+      "05C42"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论 / 格上极值",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "8-连通格",
+      "最大度限制",
+      "最大密度",
+      "晶格图",
+      "极值问题"
+    ],
+    "en": [
+      "8-connected lattice",
+      "maximum degree bound",
+      "maximal density",
+      "lattice graphs",
+      "extremal problems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；nom-de-mo 2011 引论文给出 3/5 ≤ δ(4) < 5/8 的界；0 回答；MSE 有同题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 δ(4) 的准确数值（给出密度达到该值的构造并证明任何集合都无法超过），或至少把这个 3/5 到 5/8 的区间显著缩小。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

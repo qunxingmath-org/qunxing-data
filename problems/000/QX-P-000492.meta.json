@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000492",
-  "revision": 1,
-  "card_rev": "7165bf398f62fc48",
+  "revision": 2,
+  "card_rev": "6ed95223858ef94d",
   "title": "Freyd 生成假设",
-  "title_en": null,
+  "title_en": "Freyd's generating hypothesis for finite spectra",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "55P42",
+    "secondary": [
+      "55Q10",
+      "18G80"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "稳定同伦论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "稳定同伦范畴",
+      "有限谱",
+      "球谱",
+      "Freyd 生成假设",
+      "同伦群"
+    ],
+    "en": [
+      "stable homotopy category",
+      "finite spectra",
+      "sphere spectrum",
+      "Freyd's generating hypothesis",
+      "homotopy groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；稳定同伦范畴中有限生成谱由球谱生成——代数拓扑深水区（1966 提出），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明有限谱之间的映射只要在同伦群上诱导零就必同伦于零，或给出一对有限谱与一个在同伦群上诱导零却非同伦于零的映射。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

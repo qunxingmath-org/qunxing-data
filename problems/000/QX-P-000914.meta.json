@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000914",
-  "revision": 1,
-  "card_rev": "bcf526cc55a5b443",
+  "revision": 2,
+  "card_rev": "f6a8be5f75146a1c",
   "title": "Dragović–Radnović：双同心半圆台球（固定同心圆 caustic）的周期性判据",
-  "title_en": null,
+  "title_en": "Periodicity in a two-semicircle billiard with a concentric circle caustic",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37J35",
+    "secondary": [
+      "37D50",
+      "70H99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统（台球/伪可积系统）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "台球",
+      "caustic",
+      "旋转数",
+      "周期性",
+      "伪可积系统"
+    ],
+    "en": [
+      "billiards",
+      "caustics",
+      "rotation numbers",
+      "periodicity",
+      "pseudo-integrable systems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；伪可积台球（反射角边界→亏格>1 平移面）样板系统；2015 论文建立框架并留周期判据开放；Richens–Berry 1981 传统；平移面/Veech 工具可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出由 ρ1、ρ2 判定轨迹是否周期的充要条件，并确定给定旋转数下所有可能的周期值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

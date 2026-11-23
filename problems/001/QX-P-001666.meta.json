@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001666",
-  "revision": 1,
-  "card_rev": "8d056ce71a0e3022",
+  "revision": 2,
+  "card_rev": "1d0212451ca1270b",
   "title": "光滑真 Z-概形局部点/整体点",
-  "title_en": null,
+  "title_en": "A smooth proper Z-scheme with local points everywhere but no global point?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14G05",
+    "secondary": [
+      "14G20",
+      "14F20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数几何/算术",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "算术概形",
+      "局部点",
+      "整体点",
+      "Hasse 原理",
+      "p-进点"
+    ],
+    "en": [
+      "arithmetic schemes",
+      "local points",
+      "global points",
+      "Hasse principle",
+      "p-adic points"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -79,7 +102,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个光滑真 Z-概形 X，使 X 在各处都有局部点而 X(Z)=∅；或证明这样的概形不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

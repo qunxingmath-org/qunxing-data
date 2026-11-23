@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000571",
-  "revision": 1,
-  "card_rev": "1a06b0edb73d6d9b",
+  "revision": 2,
+  "card_rev": "f8c81af17a8b9263",
   "title": "15.21 无挠 barely transitive 群存在？",
-  "title_en": null,
+  "title_en": "Do torsion-free barely transitive groups exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B07",
+    "secondary": [
+      "20E99",
+      "20F99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "barely transitive 群",
+      "无挠群",
+      "置换群",
+      "有限轨道"
+    ],
+    "en": [
+      "barely transitive groups",
+      "torsion-free groups",
+      "permutation groups",
+      "finite orbits"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个既是 barely transitive 又无挠的群，或证明这类群必然含有非平凡有限阶元素因而不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

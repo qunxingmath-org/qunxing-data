@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002226",
-  "revision": 1,
-  "card_rev": "4e361b86a0efaf26",
+  "revision": 2,
+  "card_rev": "b6d7d4418545e5ab",
   "title": "特征标维数对称 dim R_(d,χ)=dim R_(d,−χ)",
-  "title_en": null,
+  "title_en": "Symmetry of character dimensions: dim R_(d,chi) = dim R_(d,-chi)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14L30",
+    "secondary": [
+      "14L24",
+      "20G05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "特征标",
+      "表示维数",
+      "对称性",
+      "不变量环",
+      "群作用"
+    ],
+    "en": [
+      "characters",
+      "representation dimensions",
+      "symmetry",
+      "invariant rings",
+      "group actions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有次数 d 与特征标 χ 都有 dim R_(d,χ) = dim R_(d,−χ),或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

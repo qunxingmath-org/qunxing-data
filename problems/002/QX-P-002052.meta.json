@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002052",
-  "revision": 1,
-  "card_rev": "e1a140f5232c95e6",
+  "revision": 2,
+  "card_rev": "5c95832b8d844eda",
   "title": "P³ 上零相关丛与 Tango 丛",
-  "title_en": null,
+  "title_en": "Null-correlation bundles and Tango bundles on P^3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14J60",
+    "secondary": [
+      "14F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "零相关丛",
+      "Tango 丛",
+      "秩 2 向量丛",
+      "辛形式",
+      "正合列"
+    ],
+    "en": [
+      "null-correlation bundle",
+      "Tango bundle",
+      "rank 2 vector bundles",
+      "symplectic form",
+      "exact sequence"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出这两个秩 2 丛之间的确切关系（同构、互为变形，或可由某个不变量区分），并对一般情形给出证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

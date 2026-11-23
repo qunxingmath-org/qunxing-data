@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000356",
-  "revision": 1,
-  "card_rev": "8cec826e2dd57ac0",
+  "revision": 2,
+  "card_rev": "c26ee6ffa5d7b40d",
   "title": "Serre重数正性猜想（混合特征）",
-  "title_en": null,
+  "title_en": "Serre's positivity conjecture for intersection multiplicities in mixed characteristic",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "13H15",
+    "secondary": [
+      "13D22",
+      "14C17"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "交换代数/相交理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Serre 重数猜想",
+      "相交重数",
+      "正则局部环",
+      "混合特征",
+      "Tor"
+    ],
+    "en": [
+      "Serre multiplicity conjecture",
+      "intersection multiplicity",
+      "regular local rings",
+      "mixed characteristic",
+      "Tor functors"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +134,12 @@
     "note": "一区二区·难度待定；B层：等特征情形经典已证；混合特征非负性已证（Gabber–de Jong）、正性开放；有2026声称完全证明的预印本待核；Hochster 2024综述维持开放框架。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在等维数相交的正则局部环中相交重数恒为正，或给出一个使它为零的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

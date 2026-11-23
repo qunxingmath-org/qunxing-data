@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000585",
-  "revision": 1,
-  "card_rev": "9cec30b96b601e48",
+  "revision": 2,
+  "card_rev": "fd63065b7132a6f6",
   "title": "Conforti–Cornuéjols 复制猜想（clutter packing→MFMC）",
-  "title_en": null,
+  "title_en": "Conforti-Cornuejols replication conjecture: packing property implies max-flow min-cut for clutters",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -117,11 +119,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "90C27",
+    "secondary": [
+      "05B35",
+      "05C21"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合优化",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "clutter",
+      "packing 性质",
+      "max-flow min-cut",
+      "复制猜想",
+      "理想性"
+    ],
+    "en": [
+      "clutters",
+      "packing property",
+      "max-flow min-cut",
+      "replication conjecture",
+      "idealness"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -129,7 +151,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。  packing property ⇒ MFMC 反方向；Conforti–Cornuéjols 1993/2000"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明凡具有 packing 性质的 clutter 都具有 max-flow min-cut 性质，或给出一个满足 packing 性质却不满足 MFMC 性质的 clutter。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

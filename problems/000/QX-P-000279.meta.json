@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000279",
-  "revision": 1,
-  "card_rev": "61e101238dcd56c5",
+  "revision": 2,
+  "card_rev": "239189ff08d62368",
   "title": "Saxl 楼梯张量平方猜想",
-  "title_en": null,
+  "title_en": "Saxl's staircase conjecture: the tensor square contains every irreducible representation",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C30",
+    "secondary": [
+      "05E10",
+      "20G05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "表示论（对称群）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "对称群",
+      "张量平方",
+      "楼梯分拆",
+      "不可约表示"
+    ],
+    "en": [
+      "symmetric groups",
+      "tensor square",
+      "staircase partition",
+      "irreducible representations"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +139,12 @@
     "note": "一区二区·难度待定；2025-12 有声称证明（2512.15035）但已撤稿（作者承认 gaps，专家评审发现缺陷）——目前仍开放且证据链明确（撤稿记录）；Kronecker 系数计算线（2511.03484 等）活跃；撤稿后的修复尝试为现实可攻关点。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 k 证明 ρ_k 的张量平方分解包含 S_N 的全部不可约表示，或给出某个 k 和某个重数为零的 λ。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

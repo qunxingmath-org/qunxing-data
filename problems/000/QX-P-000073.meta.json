@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000073",
-  "revision": 1,
-  "card_rev": "c26ffc8d2ad13c71",
+  "revision": 2,
+  "card_rev": "5c28a046669a56b3",
   "title": "Kourovka 20.54：Shilla 图（直径3、θ1=a3）",
-  "title_en": null,
+  "title_en": "Kourovka 20.54: does a Shilla graph with b=3 and intersection array {15,12,6;1,2,10} exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E30",
+    "secondary": [
+      "05C25",
+      "05C50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Shilla 图",
+      "距离正则图",
+      "交数组",
+      "直径 3",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "Shilla graphs",
+      "distance-regular graphs",
+      "intersection arrays",
+      "diameter three",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·易证明；A层理由：单一交数组存在性，谱/组合可行性可机器排查；Makhnev-Belousov 枚举、Koolen-Sumalroj 2022 方法"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个交数组为 {15,12,6;1,2,10} 的 Shilla 图并验证其距离正则性；或证明这样的图不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002196",
-  "revision": 1,
-  "card_rev": "aecc7906ef37ab74",
+  "revision": 2,
+  "card_rev": "43f8bf720a8bff82",
   "title": "非标准模型可定义选择函数",
-  "title_en": null,
+  "title_en": "Definable choice functions in nonstandard models",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03H15",
+    "secondary": [
+      "03F35",
+      "03E25"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "反推数学",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "非标准模型",
+      "选择函数",
+      "可定义性",
+      "反推数学",
+      "选择公理"
+    ],
+    "en": [
+      "nonstandard models",
+      "choice functions",
+      "definability",
+      "reverse mathematics",
+      "axiom of choice"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在给定的非标准模型理论中证明可定义的选择函数存在,或证明这样的可定义函数不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

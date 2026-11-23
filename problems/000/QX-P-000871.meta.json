@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000871",
-  "revision": 1,
-  "card_rev": "83ad5a38d381ed25",
+  "revision": 2,
+  "card_rev": "833b23e65da6f7d9",
   "title": "Kirby 1.73（十五颗珍珠猜想）：三叶结珍珠数 =15？",
-  "title_en": null,
+  "title_en": "The fifteen pearls conjecture: is the pearl number of the trefoil equal to 15?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "decide"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -97,11 +100,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K10",
+    "secondary": [
+      "52C25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何纽结理论（厚度/珍珠链）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "珍珠数",
+      "三叶结",
+      "单位球链",
+      "纽结厚度",
+      "几何纽结"
+    ],
+    "en": [
+      "pearl number",
+      "trefoil knot",
+      "unit sphere chains",
+      "knot thickness",
+      "geometric knot theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；珍珠数=互不重叠单位球串成的结的最小球数；三叶结上界构造 15 颗（cosh 型曲线），下界开放；K3 新清单（Baykur 等）收录同名问题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明三叶结的珍珠数恰为 15（给出 15 球的显式构造，并证明 14 球或更少不可能）；或给出一个用少于 15 颗球串出三叶结的构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

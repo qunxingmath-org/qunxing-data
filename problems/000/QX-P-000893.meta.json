@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000893",
-  "revision": 1,
-  "card_rev": "59c2c06646ec01de",
+  "revision": 2,
+  "card_rev": "ecdc9a1d4bbd794c",
   "title": "OWR 2026/1：mon-cr(G) ≤ C·cr(G) 有绝对常数 C 吗",
-  "title_en": null,
+  "title_en": "Is mon-cr(G) bounded by a constant multiple of cr(G)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -90,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C10",
+    "secondary": [
+      "05C62",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（交叉数变体）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单调交叉数",
+      "交叉数",
+      "画法复杂度",
+      "绝对常数"
+    ],
+    "en": [
+      "monotone crossing number",
+      "crossing number",
+      "drawing complexity",
+      "absolute constant"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +123,12 @@
     "note": "三四区·小问题；Pach–Tóth 单调交叉数概念；已知二次型上界，线性常数开放；2026 年 1 月报告新鲜；小图族（K_{1,n}、交叉网格）可数值探索。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在绝对常数 C 使 mon-cr(G) ≤ C·cr(G) 对一切图成立；或构造一列图使 mon-cr(G)/cr(G) 趋于无穷。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

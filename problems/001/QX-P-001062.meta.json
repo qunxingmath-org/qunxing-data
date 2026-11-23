@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001062",
-  "revision": 1,
-  "card_rev": "6ff9b01d8d3234d0",
+  "revision": 2,
+  "card_rev": "6499cb1b28f05579",
   "title": "Kourovka 2.80：满足正规化子条件的群是否必有非平凡交换正规子群",
-  "title_en": null,
+  "title_en": "Do groups with the normalizer condition always have a nontrivial abelian normal subgroup?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E15",
+    "secondary": [
+      "20F19",
+      "20D35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正规化子条件",
+      "交换正规子群",
+      "非平凡群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "normalizer condition",
+      "abelian normal subgroups",
+      "nontrivial groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足正规化子条件的非平凡群必含非平凡交换正规子群，或构造一个不含这类子群的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

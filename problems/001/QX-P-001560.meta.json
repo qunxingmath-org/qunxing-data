@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001560",
-  "revision": 1,
-  "card_rev": "73049190fe529fe9",
+  "revision": 2,
+  "card_rev": "849efea88a9d52c0",
   "title": "20.100 无 2..n+1 阶元的群中 n 元集的排列邻项幂互异",
-  "title_en": null,
+  "title_en": "Sun's conjecture: permuting an n-element set so that a_i^i are pairwise distinct",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "05A05",
+      "20F99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "元素阶",
+      "排列",
+      "幂次互异",
+      "组合群论",
+      "Sun 猜想"
+    ],
+    "en": [
+      "element orders",
+      "permutations",
+      "distinct powers",
+      "combinatorial group theory",
+      "Sun's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Sun）G 不含阶在 {2,…,n+1} 中的元素，则任意 |A|=n 的子集可排列为 a₁,…,a_n 使 a₁²,…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意 n、任意满足阶条件的群 G 与任意 n 元子集 A，证明存在使 a₁,a₂²,…,aₙⁿ 两两互异的排列；或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

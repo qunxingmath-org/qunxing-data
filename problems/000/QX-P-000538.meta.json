@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000538",
-  "revision": 1,
-  "card_rev": "b71ba66e2edd0c57",
+  "revision": 2,
+  "card_rev": "80e6cd1e92c98c9b",
   "title": "20.110 剩余有限遗传恰无限群的可算/中增长例存在？",
-  "title_en": null,
+  "title_en": "Existence of amenable or intermediate-growth residually finite hereditarily just infinite groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20F69",
+      "20E07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "遗传恰无限群",
+      "剩余有限",
+      "可均群",
+      "中间增长",
+      "子群增长"
+    ],
+    "en": [
+      "hereditarily just infinite groups",
+      "residually finite",
+      "amenable groups",
+      "intermediate growth",
+      "subgroup growth"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Vannacci）是否存在剩余有限遗传恰无限（hereditarily just infinite）群：a) 可算非可…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 a)–d) 每个问题分别构造出满足条件的剩余有限遗传恰无限群（并验证其性质），或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

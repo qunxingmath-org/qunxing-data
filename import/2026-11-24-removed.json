@@ -1,0 +1,348 @@
+{
+  "date": "2026-11-24",
+  "decision": "用户决定：删除题面有异议的题卡（statement_disputed = true），包括 8 张原包占位条目",
+  "note": "这些编号作废，不再复用；下一次导入从 QX-P-002263 开始编号。",
+  "count": 34,
+  "removed": [
+    {
+      "id": "QX-P-000030",
+      "title": "WOWII 猜想 189：max distEven ≤ 1+σ(G) 蕴含 Hamilton 路",
+      "reasons": [
+        "[2026-11-24] 题面自相矛盾：statement/source 写 σ(G)，formal 写 δ(G)，无法确认是否同一参数。"
+      ],
+      "package": "pool-b",
+      "package_id": "A-303",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000045",
+      "title": "batch_I I-129(提取)：确定 van der Waerden 数 W(3,5)：使得任意 3-染色 {1,…,N} 必含长为",
+      "reasons": [
+        "[2026-11-24] 参数顺序冲突：statement/formal 用 W(3,5)，source_text 用 W(L,K)（先长度后颜色数），两种读法互斥。"
+      ],
+      "package": "pool-b",
+      "package_id": "A-701",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000110",
+      "title": "对称 Mahler 体积积猜想（中心对称体 vol(K)vol(K°)≥4^n）",
+      "reasons": [
+        "[2026-11-24] 题面自相矛盾：statement/formal 写 vol(K)vol(K°)≥4^n，source_text 写 ≥4^d/d!，差一个 d!。"
+      ],
+      "package": "pool-b",
+      "package_id": "B-1023",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000112",
+      "title": "Beurling–Ahlfors 变换乘子范数猜想（L^p 精确范数）",
+      "reasons": [
+        "[2026-11-24] 题面自相矛盾：statement 写 (p*−1)/2，source_text 写 p*−1，差一倍。"
+      ],
+      "package": "pool-b",
+      "package_id": "B-1025",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000242",
+      "title": "大直线或大团（原批次 A-079）",
+      "reasons": [
+        "[2026-11-24] 表述冲突：formal 写“一般位置点集”却要求“含 l 个共线点”，一般位置通常排除三点共线。"
+      ],
+      "package": "pool-b",
+      "package_id": "B-194",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000400",
+      "title": "batch_I I-128(提取)：K⊂Rⁿ 中心对称凸体，K° 极体；e(K)=E[(x·y)²]（x~U(K), y~U(K°) 独",
+      "reasons": [
+        "[2026-11-24] 数值反例：按字面代入正四面体，右侧不等式不成立；输入称“正四面体取等”，右端系数或求和范围可能有误。"
+      ],
+      "package": "pool-b",
+      "package_id": "B-730",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000460",
+      "title": "MO#34145：1/(n+1)×1/(n+2) 矩形能否装满单位方形",
+      "reasons": [
+        "[2026-11-24] 题面自相矛盾：写 n≥1 且总面积恰为 1，但 Σ1/((n+1)(n+2))=1/2。"
+      ],
+      "package": "pool-b",
+      "package_id": "B-851",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000546",
+      "title": "21.138 双曲+虚拟紧特殊+有界第二Betti ⇒ 虚拟自由/曲面？",
+      "reasons": [
+        "[2026-11-24] 题面与原文不符：statement 讲“双曲+虚拟紧特殊+第二 Betti 数有界⇒虚拟自由/曲面”，原文是“每个无限指数子群都自由⇒自由群或曲面群”。"
+      ],
+      "package": "pool-b",
+      "package_id": "B-949",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000607",
+      "title": "（来源 C-014）Snark 定理（每个 snark 以 Petersen 图为 minor，Robertson–Sanders–Seymour–Thomas 1999 宣布证明）现状如何？",
+      "reasons": [
+        "[2026-11-24] 非数学命题：题目是文献状态核实，不是数学命题；两套口径并存。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-014",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000785",
+      "title": "Erdős P1041：多项式亚水平集内根间短路径（长度<2）",
+      "reasons": [
+        "[2026-11-24] 两种读法并存：“两根之间路径长<2”与“0 到单位圆”，标注为 CB 陈述版。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-1156",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000932",
+      "title": "Kourovka 19.68：bG(K) 为 K 中同构于 G 的正规子群共轭类数",
+      "reasons": [
+        "[2026-11-24] 术语误译：中文写“正规子群”，英文原文是 regular subgroups（正则子群），二者不同。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-1313",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000947",
+      "title": "Kourovka 20.46：局部紧群 G 在其 Furstenberg 边界 ∂spG 上的作用是否拓扑自由（平凡稳定子点稠密）",
+      "reasons": [
+        "[2026-11-24] 卡面比原文宽：卡面问法与原文实际问句不一致。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-1327",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-000951",
+      "title": "Kourovka 20.65：k-有理群：每个不可约特征标值域 Q(χ) 满足 |Q(χ):Q| | k",
+      "reasons": [
+        "[2026-11-24] 卡面比原文宽：卡面问法与原文实际问句不一致。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-1330",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001141",
+      "title": "Kourovka 15.83/15.84：族条目（15.83+15.84）：小绝对值有理数 SL₂ 矩阵生成自由群",
+      "reasons": [
+        "[2026-11-24] LaTeX 转义损坏：原文矩阵只剩“1 α”，第二个生成元无法确定。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-1513",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001221",
+      "title": "Kusner猜想（R^d中等距点数上限d+2）",
+      "reasons": [
+        "[2026-11-24] 命题版本存疑：题面称 R^d 中两两等距点集至多 d+2 个，欧氏空间实际最多 d+1 个，d+2 是弱界。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-422",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001255",
+      "title": "二叉树旋转距离复杂度",
+      "reasons": [
+        "[2026-11-24] 数值存疑：输入“已改进至约 6n?”带问号。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-456",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001262",
+      "title": "Is the 4-move an unknotting operation?",
+      "reasons": [
+        "[2026-11-24] 表述互相冲突：两句对 4-move 与 Alexander 多项式关系的描述相反。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-505",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001400",
+      "title": "Ciach 四面体重心连线倒数和不等式（Crux 2049）",
+      "reasons": [
+        "[2026-11-24] 数值反例：正四面体代入后右侧不等式不成立，“取等”说法疑有误。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-656",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001427",
+      "title": "batch_I I-030：对平面二次多项式向量场（P(0,0)=Q(0,0)=0），在其相空间正则部分（去掉奇点）上是否存在黎",
+      "reasons": [
+        "[2026-11-24] 来源错配：卡片问“能否找到黎曼度量使轨道为测地线”，原文讲的是 Hilbert 第 16 问题与极限环。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-708",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001509",
+      "title": "互素系数限制的 Frobenius 问题：最大不可表整数的闭式/渐近",
+      "reasons": [
+        "[2026-11-24] 译述与 formal 自相矛盾：按字面会出现无穷集合；暂按“不可由互素正系数对表示的最大整数”理解。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-791",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001572",
+      "title": "21.23 增强幂图为 cograph 的非交换群按 n 分类",
+      "reasons": [
+        "[2026-11-24] 摘要与原文不一致：中文写“按 n 分类/cograph”，原文是“E(G) 不含 n 顶点诱导圈”。"
+      ],
+      "package": "pool-b",
+      "package_id": "C-949",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-001947",
+      "title": "（（来源存疑区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源存疑区块）：标题是占位符，原包注明 MO 编号不存在。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C340",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-001948",
+      "title": "（（来源存疑区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源存疑区块）：标题是占位符，原包注明 MO 编号不存在。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C341",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-001949",
+      "title": "（（来源存疑区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源存疑区块）：标题是占位符，原包注明 MO 编号不存在。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C342",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-001950",
+      "title": "（（来源存疑区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源存疑区块）：标题是占位符，原包注明 MO 编号不存在。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C343",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-002002",
+      "title": "（（来源错配区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源错配区块）：标题是占位符，题面只有一句，无法核对。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C390",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-002003",
+      "title": "（（来源错配区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源错配区块）：标题是占位符，题面只有一句，无法核对。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C391",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-002004",
+      "title": "（（来源错配区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源错配区块）：标题是占位符，题面只有一句，无法核对。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C392",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-002005",
+      "title": "（（来源错配区块））",
+      "reasons": [
+        "[2026-11-24] 原包占位条目（来源错配区块）：标题是占位符，题面只有一句，无法核对。待用户决定保留还是删除。"
+      ],
+      "package": "pool-a",
+      "package_id": "C393",
+      "was_unlisted": true
+    },
+    {
+      "id": "QX-P-002024",
+      "title": "铺满球面最少不同三角形数",
+      "reasons": [
+        "[2026-11-24] 题目可能退化：不加额外约束时，正八面体八块全等球面三角形即可用 1 类铺满，原题必有隐含限制。"
+      ],
+      "package": "pool-a",
+      "package_id": "C410",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-002040",
+      "title": "单位立方体装单位球最大数",
+      "reasons": [
+        "[2026-11-24] 字面矛盾：“半径 1 的单位球装进棱长 1 的单位立方体”一个都放不下，单位约定另有含义。"
+      ],
+      "package": "pool-a",
+      "package_id": "C425",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-002048",
+      "title": "三维整距离点集小构型",
+      "reasons": [
+        "[2026-11-24] 题面重建存疑：原文在关键处截断、最终问句丢失，按标题重建。"
+      ],
+      "package": "pool-a",
+      "package_id": "C432",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-002109",
+      "title": "平面随机点集棋盘三角剖分",
+      "reasons": [
+        "[2026-11-24] 题面重建存疑：原文在关键处截断、最终问句丢失，按标题重建。"
+      ],
+      "package": "pool-a",
+      "package_id": "C489",
+      "was_unlisted": false
+    },
+    {
+      "id": "QX-P-002110",
+      "title": "自对偶多面体夹层存在性",
+      "reasons": [
+        "[2026-11-24] 题面重建存疑：原文在关键处截断、最终问句丢失，按标题重建。"
+      ],
+      "package": "pool-a",
+      "package_id": "C490",
+      "was_unlisted": false
+    }
+  ]
+}

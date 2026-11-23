@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000202",
-  "revision": 1,
-  "card_rev": "1263bac1ff66a7f1",
+  "revision": 2,
+  "card_rev": "14f8d5e1a98b124c",
   "title": "匹配割与大围长（原批次 A-063）",
-  "title_en": null,
+  "title_en": "Matching-cuts in sparse graphs of large girth: does large girth help?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C35",
+      "05C38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "匹配割",
+      "围长",
+      "平均度",
+      "边割",
+      "稀疏图"
+    ],
+    "en": [
+      "matching-cuts",
+      "girth",
+      "average degree",
+      "edge cuts",
+      "sparse graphs"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；命题形式简单（∃g(k)），2022 有高围长/H-free 复杂度类进展；具体 g(k) 存在性未决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 k 都存在 g，使所有平均度小于 k 且围长至少 g 的图都含匹配割；或对某个 k 给出任意大围长的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001704",
-  "revision": 1,
-  "card_rev": "8d258000bbfacd73",
+  "revision": 2,
+  "card_rev": "0172afb4fd9f772b",
   "title": "Fibonacci 素数无穷",
-  "title_en": null,
+  "title_en": "Are there infinitely many Fibonacci primes?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A41",
+    "secondary": [
+      "11B39",
+      "11N05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Fibonacci 素数",
+      "递推数列",
+      "素数无穷",
+      "整除性",
+      "素数判定"
+    ],
+    "en": [
+      "Fibonacci primes",
+      "recurrence sequences",
+      "infinitely many primes",
+      "divisibility",
+      "primality testing"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 Fibonacci 数列中包含无穷多个素数项，或证明这样的素数项只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

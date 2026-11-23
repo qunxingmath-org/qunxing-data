@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000302",
-  "revision": 1,
-  "card_rev": "293116b572cdbc46",
+  "revision": 2,
+  "card_rev": "b0cf67a80423eba0",
   "title": "Singer L²-上同调猜想（中间维集中）",
-  "title_en": null,
+  "title_en": "Singer's conjecture: reduced L2 cohomology concentrates in the middle dimension",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +91,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "58J22",
+    "secondary": [
+      "55N35",
+      "57R19"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "几何拓扑/L² 不变量",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "L² 上同调",
+      "非球面流形",
+      "万有覆盖",
+      "中间维数"
+    ],
+    "en": [
+      "L2 cohomology",
+      "aspherical manifolds",
+      "universal cover",
+      "middle dimension"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +121,12 @@
     "note": "一区二区·难度待定；Hopf 猜想的强形式（非球面万有覆盖）；L² 指标理论与 atiyah 猜想工具链部分可用；极难但注册价值高（著名、活跃、未冻结）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个闭非球面 n-流形和每个 k≠n/2，约化 L² 上同调 H̄_(2)^k(M̃) 都为零，或给出一个反例流形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000509",
-  "revision": 1,
-  "card_rev": "31e6c3eac07e1eba",
+  "revision": 2,
+  "card_rev": "77600165c3f42e26",
   "title": "Albertson 猜想：cr(G) ≥ cr(K_k)",
-  "title_en": null,
+  "title_en": "Albertson's conjecture: the crossing number of a k-chromatic graph is at least that of K_k",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C10",
+    "secondary": [
+      "05C15",
+      "05C62"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/拓扑图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "交叉数",
+      "色数",
+      "完全图",
+      "拓扑图论",
+      "Albertson 猜想"
+    ],
+    "en": [
+      "crossing number",
+      "chromatic number",
+      "complete graphs",
+      "topological graph theory",
+      "Albertson's conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +133,12 @@
     "note": "一区二区·难度待定；【表述修正】采集条目描述含糊——查新确认 Albertson 猜想为：k-色图的交叉数 ≥ K_k 的交叉数（k=5 即四色定理推论）；已证 r≤12（早期）与 r≤29（arXiv:2609.04771, 2025/2026）；EXCLUDED-CHECK 裁决：与 B28（MO#37923 Δ≤6 三角形无关图 5-可染）不同问题，保留。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 k 与所有 χ(G)=k 的图证明 cr(G) ≥ cr(K_k)，或给出一个色数为 k 而交叉数小于 cr(K_k) 的具体图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

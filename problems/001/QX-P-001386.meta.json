@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001386",
-  "revision": 1,
-  "card_rev": "a7d256ff250dddd5",
+  "revision": 2,
+  "card_rev": "b5bc18145592e4a0",
   "title": "Murphy 乘性 Fibonacci 部分和子列的素数无穷性（FQ H-300）",
-  "title_en": null,
+  "title_en": "Are there infinitely many primes among partial sums of a multiplicative Fibonacci-type recurrence?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +92,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B39",
+    "secondary": [
+      "11N13",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论（素数分布）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数无穷",
+      "递推序列",
+      "部分和",
+      "稀疏子列"
+    ],
+    "en": [
+      "infinitely many primes",
+      "recurrence sequences",
+      "partial sums",
+      "sparse subsequences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -101,7 +122,12 @@
     "note": "三四区·小问题；稀疏子列素数分布公认难；FQ 官方索引 ***** 标记\"从未解决\"；条件性/启发式论文可行。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该子列中素数有无穷多个，或证明只有有限多个素数（并说明理由）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

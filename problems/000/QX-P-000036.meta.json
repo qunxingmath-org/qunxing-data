@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000036",
-  "revision": 1,
-  "card_rev": "2f2131a70cbab9bc",
+  "revision": 2,
+  "card_rev": "a043fb3bd4db4213",
   "title": "Conway 99-图问题：存在强正则参数 (99,14,1,2) 的图吗",
-  "title_en": null,
+  "title_en": "Conway's prize problem: does a strongly regular graph with parameters (99,14,1,2) exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E30",
+    "secondary": [
+      "05C50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（强正则图/计算+理论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "强正则图",
+      "参数组",
+      "Conway 悬赏",
+      "存在性",
+      "谱条件"
+    ],
+    "en": [
+      "strongly regular graphs",
+      "parameter sets",
+      "Conway's prize problem",
+      "existence",
+      "spectral conditions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +141,12 @@
     "note": "一区二区·易证明；单个强正则图存在性问题，参数已定：v=99,k=14,λ=1,μ=2；可用 vblinker/nauty+SAT 剪枝；2026 年已有两条降低搜索空间的 arXiv 论文，方法路线（强制结构归约+可验证界）活跃且可延续。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个 99 个顶点、每点度 14、相邻点恰有 1 个公共邻点、不相邻点恰有 2 个公共邻点的图；或证明这样的图不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

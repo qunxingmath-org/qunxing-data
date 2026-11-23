@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001186",
-  "revision": 1,
-  "card_rev": "4bdff425431a34fb",
+  "revision": 2,
+  "card_rev": "d343673c3c0422d9",
   "title": "偏反馈在线学习：随机 vs 确定性学习者的候选分离（ω₁ 标签空间）",
-  "title_en": null,
+  "title_en": "Separating randomized from deterministic online learners under partial feedback",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q32",
+    "secondary": [
+      "62L12",
+      "03E15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "学习理论/测度论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "在线学习",
+      "部分反馈",
+      "随机学习器",
+      "确定性学习器",
+      "标签空间 ω₁"
+    ],
+    "en": [
+      "online learning",
+      "partial feedback",
+      "randomized learners",
+      "deterministic learners",
+      "label space omega_1"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；arXiv:2601.21462 §5.3 末开放问题：构造可数余可数 σ-代数上随机严格强于确定性的学习者分离；测度论结构清晰（tower property 论证未完整形式化）——可形式化+可证明的中小型目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 ω₁ 配可数余可数 σ-代数的设定下给出显式的实例与两类学习器，并证明随机最优值严格小于确定性最优值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

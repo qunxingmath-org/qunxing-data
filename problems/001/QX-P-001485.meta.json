@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001485",
-  "revision": 1,
-  "card_rev": "5d2f70efc16110c9",
+  "revision": 2,
+  "card_rev": "6eea4fc422f9b416",
   "title": "batch_I I-146：对 L^p (1<p<∞) 函数，Lebesgue 微分定理对哪些方向集合的矩形族成立？是否存在已知的极",
-  "title_en": null,
+  "title_en": "For which direction sets does the Lebesgue differentiation theorem hold for rectangle families in R^3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "42B25",
+    "secondary": [
+      "28A15",
+      "42B20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "实分析 / 调和分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lebesgue 微分定理",
+      "极大函数",
+      "矩形族",
+      "方向集",
+      "调和分析"
+    ],
+    "en": [
+      "Lebesgue differentiation theorem",
+      "maximal functions",
+      "rectangle families",
+      "direction sets",
+      "harmonic analysis"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Keshav Srinivasan 2018；0 回答；Hajłasz 评论链接其相关帖（MO 315661，同主题）；与管型（tubes）文献 conjecture 相邻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定方向集 Θ 的完整刻画，使对应的矩形族满足 Lebesgue 微分定理（等价地，使相应极大算子在 L^p 上有界），或给出分离两个方向集的显式判据。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

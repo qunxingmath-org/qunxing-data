@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000970",
-  "revision": 1,
-  "card_rev": "1c17291880e6f5e8",
+  "revision": 2,
+  "card_rev": "5bfe46dd6d82f9da",
   "title": "Kourovka 21.34：唯一乘积群（任意非空有限 A,B 有唯一表示 ab）必局部不变可序吗",
-  "title_en": null,
+  "title_en": "Kourovka 21.34: must unique product groups be locally invariant orderable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F60",
+    "secondary": [
+      "06F15",
+      "20F19"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "唯一乘积群",
+      "局部不变可序",
+      "偏序",
+      "群序",
+      "Kaplansky 猜想"
+    ],
+    "en": [
+      "unique product groups",
+      "local invariant orderability",
+      "partial orders",
+      "orderable groups",
+      "Kaplansky's conjectures"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个唯一乘积但非局部不变可序的群，或证明唯一乘积群必局部不变可序。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

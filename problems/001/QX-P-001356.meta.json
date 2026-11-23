@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001356",
-  "revision": 1,
-  "card_rev": "a8cb86302da16193",
+  "revision": 2,
+  "card_rev": "56080bfc36f7358c",
   "title": "Molnar 行列式问题的系统分类（元素平方后行列式不变的整数矩阵）",
-  "title_en": null,
+  "title_en": "Classifying integer matrices whose determinant is unchanged after squaring every entry",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +83,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A15",
+    "secondary": [
+      "11C20",
+      "15B36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "线性代数/数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "行列式",
+      "逐元素平方",
+      "整数矩阵",
+      "完全分类",
+      "无穷族"
+    ],
+    "en": [
+      "determinants",
+      "entrywise squaring",
+      "integer matrices",
+      "complete classification",
+      "infinite families"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +115,12 @@
     "note": "三四区·小问题；线性代数小问题，可从 3×3 完全分类入手——潜在可解的论文题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出所有满足 det(A∘A)=det(A) 且 det(A)∉{0,1} 的整数矩阵的完整分类，或证明不存在有限描述。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

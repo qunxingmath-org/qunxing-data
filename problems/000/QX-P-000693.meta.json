@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000693",
-  "revision": 1,
-  "card_rev": "11110236194c3783",
+  "revision": 2,
+  "card_rev": "615ddd6e2f5bf342",
   "title": "16.96 局部有限 n-Engel p-群（p>n）是 Fitting 群？",
-  "title_en": null,
+  "title_en": "Kourovka 16.96: are locally finite n-Engel p-groups with p>n Fitting groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F45",
+    "secondary": [
+      "20F50",
+      "20F19"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "n-Engel 群",
+      "局部有限 p-群",
+      "Fitting 群",
+      "幂零正规子群",
+      "Gupta–Levin 例子"
+    ],
+    "en": [
+      "n-Engel groups",
+      "locally finite p-groups",
+      "Fitting groups",
+      "nilpotent normal subgroups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明当 p>n 时每个局部有限的 n-Engel p-群都是 Fitting 群，或构造出满足条件却不是 Fitting 群的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000376",
-  "revision": 1,
-  "card_rev": "1eafb1e63a40cc51",
+  "revision": 2,
+  "card_rev": "a4c2f1ccf828904e",
   "title": "batch_I I-006：若 Ω 同时为 W^{1,p} 与 W^{1,q}（1≤p<q≤∞）延拓域（存在有界延拓算子 E:W",
-  "title_en": null,
+  "title_en": "Is a domain that is both a W^{1,p} and a W^{1,q} extension domain also a W^{1,r} extension domain for p<r<q?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46E35",
+    "secondary": [
+      "42B35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "分析 / Sobolev空间",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Sobolev 空间",
+      "延拓算子",
+      "延拓域",
+      "插值",
+      "区域正则性"
+    ],
+    "en": [
+      "Sobolev spaces",
+      "extension operators",
+      "extension domains",
+      "interpolation",
+      "domain regularity"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Piotr Hajłasz（Sobolev 空间专家）2018 提出\"looks like a simple interpolation exercise, but it is not\"；0 回答；2026 年仍有相关 arXiv 论文活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的 Ω 对一切 p<r<q 都是 W^{1,r} 延拓域，或构造出只在一头一尾能延拓、中间某个指数不能延拓的区域。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

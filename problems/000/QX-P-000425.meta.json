@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000425",
-  "revision": 1,
-  "card_rev": "e59fc30196f72ef7",
+  "revision": 2,
+  "card_rev": "ad3e0fb72d1c2b90",
   "title": "对角方向逆定理（Green 问题 55 / GTZ12 Conjecture 1.2）",
-  "title_en": null,
+  "title_en": "Diagonal inverse theorem for the bicubic Gowers norm",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "42A99",
+      "05D99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "高阶傅里叶分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Gowers 范数",
+      "逆定理",
+      "双线性相位",
+      "有限域",
+      "相关函数"
+    ],
+    "en": [
+      "Gowers norms",
+      "inverse theorems",
+      "bilinear phases",
+      "finite fields",
+      "correlation"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；Green–Tao–Ziegler 逆定理谱系的最后缺口之一，深水区但路线（nilsequence 分类）明确，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在只依赖 δ 的常数 c>0，使 f 与某个上述双线性相位型函数的相关至少为 c；或构造反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

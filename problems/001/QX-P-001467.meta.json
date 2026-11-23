@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001467",
-  "revision": 1,
-  "card_rev": "c23fceb2a19e0358",
+  "revision": 2,
+  "card_rev": "e9ec518df095c5d4",
   "title": "batch_I I-103：求所有 m 使 m! 等于若干个（>1个）大于 m 的连续正整数之积，即 m! = j!/k!（j>k>",
-  "title_en": null,
+  "title_en": "Which m satisfy m! = j!/k! for some j>k>1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "existence"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B65",
+    "secondary": [
+      "11D72",
+      "11A51"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 阶乘方程",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "阶乘方程",
+      "连续整数乘积",
+      "丢番图方程",
+      "解的分类"
+    ],
+    "en": [
+      "factorial equations",
+      "products of consecutive integers",
+      "Diophantine equations",
+      "classification of solutions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +131,12 @@
     "note": "三四区·小问题；user3460322 2017 提出（帖被关闭 Needs details）；OEIS A109095 联系（回答3）；与 A!B!=C! 文献相邻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定满足 m!=j!/k!（j>k>1）的全部整数 m，并证明没有遗漏。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

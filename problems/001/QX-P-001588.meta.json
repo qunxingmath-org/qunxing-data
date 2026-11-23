@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001588",
-  "revision": 1,
-  "card_rev": "ab23bc882c1edfb0",
+  "revision": 2,
+  "card_rev": "9503d3748c3af314",
   "title": "21.81 Wiegold：Aut(F_n) 在 N_n(Γ) 上传递（n≥3）？",
-  "title_en": null,
+  "title_en": "Does Aut(F_n) act transitively on normal subgroups with quotient a fixed simple group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E05",
+    "secondary": [
+      "20E36",
+      "20F28"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由群自同构",
+      "正规子群",
+      "传递作用",
+      "有限单群",
+      "Wiegold 猜想"
+    ],
+    "en": [
+      "automorphisms of free groups",
+      "normal subgroups",
+      "transitive actions",
+      "finite simple groups",
+      "Wiegold's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；Γ 有限单群，N_n(Γ)=F_n 的商≅Γ 的正规子群集。Aut(F_n) 是否在 N_n(Γ) 上传递（n≥3）？n…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 n≥3 时 Aut(F_n) 在 N_n(Γ) 上传递，或给出一个有限单群 Γ 与两个不自同构等价的 N、M。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

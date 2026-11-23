@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001198",
-  "revision": 1,
-  "card_rev": "10529e95fdebba86",
+  "revision": 2,
+  "card_rev": "cbd4ec5dc355ac6c",
   "title": "Nash-Williams 定向猜想（分支定向刻画）",
-  "title_en": null,
+  "title_en": "Nash-Williams' conjecture on orientations and directed decompositions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -79,11 +82,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C70",
+      "05C40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Nash-Williams 猜想",
+      "定向",
+      "有向分解",
+      "分支",
+      "连通度"
+    ],
+    "en": [
+      "Nash-Williams conjecture",
+      "orientations",
+      "directed decompositions",
+      "branchings",
+      "connectivity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -91,7 +114,12 @@
     "note": "三四区·小问题；有向分解/树定向遗留猜想（EGRES egres-0467）；Nash-Williams 分解理论框架成熟，收尾型问题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出分支定向与有向分解成立的充要条件（连通度型刻画）并证明其充分性与必要性，或给出反例说明某方向不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

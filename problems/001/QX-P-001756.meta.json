@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001756",
-  "revision": 1,
-  "card_rev": "6ee40115021b1c2a",
+  "revision": 2,
+  "card_rev": "471a0a2e927ca7da",
   "title": "每个正整数为某数域上椭圆曲线秩？",
-  "title_en": null,
+  "title_en": "Is every positive integer the rank of an elliptic curve over some number field?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11G05",
+    "secondary": [
+      "11G40",
+      "11R21"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "椭圆曲线",
+      "Mordell–Weil 秩",
+      "数域",
+      "算术几何"
+    ],
+    "en": [
+      "elliptic curves",
+      "Mordell-Weil rank",
+      "number fields",
+      "arithmetic geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个正整数 r 显式构造一条某数域上的椭圆曲线并证明其秩恰为 r，或证明存在某个正整数无法成为任何椭圆曲线的秩。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

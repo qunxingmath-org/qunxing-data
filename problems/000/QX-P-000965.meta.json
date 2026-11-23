@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000965",
-  "revision": 1,
-  "card_rev": "5f7e9d2ffa829c72",
+  "revision": 2,
+  "card_rev": "04857835d5e79ef0",
   "title": "Kourovka 21.11：哪些群可写为可数族群的非主超积的同态像",
-  "title_en": null,
+  "title_en": "Kourovka 21.11: groups as images of nonprincipal ultraproducts of countable families",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E10",
+    "secondary": [
+      "03C20",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超积",
+      "同态像",
+      "有限指数群",
+      "有限支撑置换群",
+      "非主超滤子"
+    ],
+    "en": [
+      "ultraproducts",
+      "homomorphic images",
+      "finite exponent groups",
+      "finitary symmetric groups",
+      "nonprincipal ultrafilters"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (a) 和 (b) 分别判定：构造出相应的超积与满同态，或证明不可能。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

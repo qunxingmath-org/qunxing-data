@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001961",
-  "revision": 1,
-  "card_rev": "52c0ccd20ef550c7",
+  "revision": 2,
+  "card_rev": "91808efb844b4838",
   "title": "a²+b²+3ᶜ+5ᵈ 表示",
-  "title_en": null,
+  "title_en": "Is every integer of the form a^2 + b^2 + 3^c + 5^d?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11E25",
+    "secondary": [
+      "11P05",
+      "11B13"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平方和",
+      "指数项",
+      "万有表示",
+      "加性数论"
+    ],
+    "en": [
+      "sums of squares",
+      "exponential terms",
+      "universal representation",
+      "additive number theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个非负整数 n 都能写成 a²+b²+3^c+5^d，或给出一个不能这样表示的 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

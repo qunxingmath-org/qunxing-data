@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000815",
-  "revision": 1,
-  "card_rev": "717a4ac6bf11f6c2",
+  "revision": 2,
+  "card_rev": "4d781182e63e1b6d",
   "title": "TPTP COL087-1：组合子基 {B,M} 的强不动点性质",
-  "title_en": null,
+  "title_en": "Strong fixed points for the combinator basis {B, M}",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03B40",
+    "secondary": [
+      "68T15",
+      "03B35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合子逻辑/等式演算",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "组合子逻辑",
+      "不动点组合子",
+      "等式演算",
+      "基 B,M",
+      "自动定理证明"
+    ],
+    "en": [
+      "combinatory logic",
+      "fixed point combinator",
+      "equational reasoning",
+      "basis B and M",
+      "automated theorem proving"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；单点等式存在性目标： 项重写/重规约搜索空间有限；完整演绎可通过 Prover9/Maude 重写或 SAT 化有限深度项空间攻；Wos 系挑战题谱系方法明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 {B,M} 的等式演算中显式给出这样的 Y 并推出该等式，或证明不存在（通常用一个满足两条公理却无强不动点的代数作反例）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

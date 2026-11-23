@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001227",
-  "revision": 1,
-  "card_rev": "05e4a65b02af8a8c",
+  "revision": 2,
+  "card_rev": "36c48f9d8cb014a2",
   "title": "Graham pebbling猜想（笛卡尔积）",
-  "title_en": null,
+  "title_en": "Graham pebbling conjecture for Cartesian products",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C57",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图博弈/pebbling",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "pebbling 数",
+      "笛卡尔积",
+      "图论游戏",
+      "Graham 猜想",
+      "上界"
+    ],
+    "en": [
+      "pebbling number",
+      "Cartesian product",
+      "graph pebbling",
+      "Graham conjecture",
+      "upper bound"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +124,12 @@
     "note": "三四区·小问题；C层：具体乘积不等式——逐图族验证（2024-2025有C₅积、大完全图积等新文献）；'证明新族'是标准模式。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有图 G 与 H 证明 π(G□H) ≤ π(G)·π(H)；或给出一对图作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

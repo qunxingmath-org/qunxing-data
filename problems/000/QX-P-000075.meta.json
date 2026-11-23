@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000075",
-  "revision": 1,
-  "card_rev": "c42c1e386633f9bd",
+  "revision": 2,
+  "card_rev": "9ac11c8ca62acc2f",
   "title": "Kourovka 13.4：G/N≅GLn(2) 自然模作用于 N/Φ(N)",
-  "title_en": null,
+  "title_en": "Kourovka 13.4 (Baumann): determining G with GL_3(2) acting naturally on N/Phi(N) and N as large as possible",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D25",
+      "20E18"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Frattini 子群",
+      "自然模",
+      "GL_n(2)",
+      "正规 2-子群",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "Frattini subgroup",
+      "natural module",
+      "GL_n(2)",
+      "normal 2-subgroups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·易证明；A层理由：n=3 有限情形（GL3(2)≅PSL(2,7)），可计算枚举/上同调攻坚；Baumann 引理背景成熟"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 n = 3 完整确定所有使 N 达到最大可能阶的群 G（给出其结构与 N 的描述）；或证明这样的最大 N 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

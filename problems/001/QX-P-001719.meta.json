@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001719",
-  "revision": 1,
-  "card_rev": "63becb9bc57b43a4",
+  "revision": 2,
+  "card_rev": "71b0333f65164c09",
   "title": "有限生成群收缩核至多有限多？",
-  "title_en": null,
+  "title_en": "Does a finitely generated group have only finitely many retracts?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E36",
+    "secondary": [
+      "20F05",
+      "20E07"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "收缩核",
+      "retract",
+      "有限生成群",
+      "子群",
+      "同态"
+    ],
+    "en": [
+      "retracts",
+      "retraction",
+      "finitely generated groups",
+      "subgroups",
+      "homomorphisms"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个有限生成群，判定它究竟有有限多个还是无穷多个收缩核并给出证明；或给出一个可判定的判别准则。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

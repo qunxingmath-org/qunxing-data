@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002161",
-  "revision": 1,
-  "card_rev": "7d75c10f0750c2fa",
+  "revision": 2,
+  "card_rev": "9837748a83f49317",
   "title": "同特征标表异 Brauer 表的群对（⚠️AI 摘要污染风险）",
-  "title_en": null,
+  "title_en": "Pairs of groups with the same character table but different Brauer tables",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "classify"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C20",
+    "secondary": [
+      "20C15",
+      "20C40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "特征标表",
+      "Brauer 表",
+      "模表示",
+      "有限群",
+      "同特征标表群对"
+    ],
+    "en": [
+      "character tables",
+      "Brauer tables",
+      "modular representations",
+      "finite groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一对有限群 G、H，证明它们的普通特征标表相同，同时证明对某个素数 p 二者的 Brauer 表不同；或证明这样的情况不可能出现。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

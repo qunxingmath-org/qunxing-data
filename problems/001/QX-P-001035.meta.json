@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001035",
-  "revision": 1,
-  "card_rev": "7362bd57e7f9df57",
+  "revision": 2,
+  "card_rev": "b59f519f98e46b77",
   "title": "Kourovka 16.80：G 由无挠群 A1..An 的自由积添加 m<n 个关系得到",
-  "title_en": null,
+  "title_en": "Free factors surviving m < n relations imposed on a free product of torsion-free groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E06",
+    "secondary": [
+      "20F05",
+      "20E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由积",
+      "附加关系",
+      "嵌入",
+      "无挠群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "free products",
+      "added relations",
+      "embeddings",
+      "torsion-free groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明总存在 n−m 个因子其自由积嵌入 G，或构造一个反例（m<n 但任何 n−m 个因子的自由积都不嵌入）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

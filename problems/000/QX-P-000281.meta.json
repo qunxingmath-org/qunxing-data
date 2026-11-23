@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000281",
-  "revision": 1,
-  "card_rev": "5ba6ec087fe21e1e",
+  "revision": 2,
+  "card_rev": "89be9a5661e092a6",
   "title": "Hilbert–Smith 猜想（p-adic 群对流形的有效作用）",
-  "title_en": null,
+  "title_en": "The Hilbert-Smith conjecture: p-adic groups acting effectively on manifolds",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57S10",
+    "secondary": [
+      "22C05",
+      "57N60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拓扑群作用",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群作用",
+      "p-adic 群",
+      "拓扑流形",
+      "Hilbert–Smith 猜想"
+    ],
+    "en": [
+      "group actions",
+      "p-adic groups",
+      "topological manifolds",
+      "Hilbert-Smith conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +115,12 @@
     "note": "一区二区·难度待定；n≥3 情形：Pardon 2013 证 n=3；n≥4 开放；Moulis/Yang–Mills 路线部分可行——'已知一个维度+一般开放'结构，难度未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个维数 n≥4，Z_p 都不能有效连续地作用于 n 维流形，或构造出一个反例作用。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

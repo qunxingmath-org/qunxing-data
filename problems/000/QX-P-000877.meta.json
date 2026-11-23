@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000877",
-  "revision": 1,
-  "card_rev": "f33ae9c397d345a6",
+  "revision": 2,
+  "card_rev": "9c07aca1d2917e96",
   "title": "Kirby 5.14：n≥5 维是否存在 1-尖双曲流形",
-  "title_en": null,
+  "title_en": "Does a 1-cusped finite-volume hyperbolic n-manifold exist for n >= 5?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -103,11 +106,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57M50",
+    "secondary": [
+      "53C20",
+      "57N16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "双曲几何（尖流形构造）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双曲流形",
+      "尖点",
+      "有限体积",
+      "高维构造"
+    ],
+    "en": [
+      "hyperbolic manifolds",
+      "cusps",
+      "finite volume",
+      "higher-dimensional constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +136,12 @@
     "note": "三四区·小问题；n≤4 已知（n=4 为近年新结果），n≥5 完全开放；Rizzi 2025 明文\"we do not know whether there exists a 1-cusped hyperbolic n-manifold\"；单尖点计数与算术/非算术构造衔接。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对某个 n≥5 构造出一个体积有限、恰有一个尖点的双曲 n-流形；或证明 n≥5 时这样的流形不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

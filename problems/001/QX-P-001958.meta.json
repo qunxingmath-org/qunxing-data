@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001958",
-  "revision": 1,
-  "card_rev": "3efabd729c4b7d61",
+  "revision": 2,
+  "card_rev": "d18d61a5bae6a7e1",
   "title": "q=x²+py²（p<q）",
-  "title_en": null,
+  "title_en": "Representing odd primes q as x^2 + p y^2 with prime p < q",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11E25",
+    "secondary": [
+      "11E16",
+      "11R11"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "二次型表示",
+      "素数",
+      "类群",
+      "亏格理论"
+    ],
+    "en": [
+      "quadratic form representations",
+      "primes",
+      "class groups",
+      "genus theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个奇素数 q 都存在素数 p<q 与整数 x、y 使 q=x²+py²，或给出无法这样表示的 q。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

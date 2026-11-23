@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001095",
-  "revision": 1,
-  "card_rev": "d410f934ec4a0910",
+  "revision": 2,
+  "card_rev": "aaf9ccdce1db3699",
   "title": "Kourovka 8.85：构造 Hughes 子群 H_p(G) 指数 p³ 的有限 p-群",
-  "title_en": null,
+  "title_en": "A finite p-group whose Hughes subgroup has index p^3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D25",
+      "20E99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hughes 子群",
+      "有限 p-群",
+      "指数 p³",
+      "构造"
+    ],
+    "en": [
+      "Hughes subgroup",
+      "finite p-groups",
+      "index p cubed",
+      "explicit construction"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式给出有限 p-群 G，验证其 Hughes 子群 Hp(G) 非平凡且 |G:Hp(G)|=p³。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

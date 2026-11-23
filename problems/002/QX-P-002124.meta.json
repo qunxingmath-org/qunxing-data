@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002124",
-  "revision": 1,
-  "card_rev": "065c50b2f8272a79",
+  "revision": 2,
+  "card_rev": "300bf2a8c57e6c31",
   "title": "前 p 个素数幂和为平方？",
-  "title_en": null,
+  "title_en": "Can the sum of the u-th powers of all primes up to p be a perfect square?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D61",
+    "secondary": [
+      "11A41",
+      "11P32"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数幂和",
+      "完全平方",
+      "指数丢番图方程",
+      "模算术",
+      "计算搜索"
+    ],
+    "en": [
+      "sums of prime powers",
+      "perfect squares",
+      "exponential Diophantine equations",
+      "modular arithmetic"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明当 p>2 且 u>1 时 S(p,u) 恒不是完全平方数，或给出满足 p>2、u>1 的一对取值使 S(p,u) 是平方数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

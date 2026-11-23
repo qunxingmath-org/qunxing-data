@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002215",
-  "revision": 1,
-  "card_rev": "01ab49b6bbf71280",
+  "revision": 2,
+  "card_rev": "175e89ed5878cdce",
   "title": "曲线上半稳定向量丛模 K-稳定+边界模解释",
-  "title_en": null,
+  "title_en": "Semistable vector bundles on curves: K-stability and boundary moduli interpretation",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "special_case"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14D20",
+    "secondary": [
+      "14H60",
+      "14J45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "半稳定向量丛",
+      "曲线",
+      "K-稳定性",
+      "模空间",
+      "边界"
+    ],
+    "en": [
+      "semistable vector bundles",
+      "curves",
+      "K-stability",
+      "moduli spaces",
+      "boundary"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "建立曲线半稳定向量丛模空间与其边界同 K-稳定框架之间的对应,并说明边界对象的含义。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000270",
-  "revision": 1,
-  "card_rev": "470c5e96aac60fc4",
+  "revision": 2,
+  "card_rev": "87fb420c5192e566",
   "title": "Zarankiewicz 完全二部图交叉数猜想",
-  "title_en": null,
+  "title_en": "The Zarankiewicz crossing number conjecture for complete bipartite graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C10",
+    "secondary": [
+      "05C62",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图交叉数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "交叉数",
+      "完全二部图",
+      "Zarankiewicz 猜想",
+      "画法",
+      "下界"
+    ],
+    "en": [
+      "crossing number",
+      "complete bipartite graphs",
+      "Zarankiewicz conjecture",
+      "drawings",
+      "lower bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·难度待定；K_{m,n} 交叉数公式自 1950s 未决（与 Harary–Hill 并列两大交叉数猜想）；2026-10/11 有多篇文献活动（2610.25204 完全二部交叉数、2611.19437 z_{2M}(21,4) 构形归约）——活跃；Harary–Hill 已被 OpenAI 2026 攻克的背景下此条优先级与查新价值双高。【2026-11-21 主控核验·表述限定: 上句\"Harary–Hill 已被 OpenAI 2026 攻克\"不可作已定事实引用——准确状态为 SOLVED-PENDING（OpenAI 2026-09 声称证明 cr(K_n)=Z(n)，MathWorld 更新记载；Balko–Pálvölgyi 解读 arXiv:2610.34444/2611.03515；未期刊评审未完全公认，与 batch_J J-079 排除记录一致）。本条主题 Zarankiewicz（二部）仍开放: 2026-10 Balogh et al. arXiv:2610.25204 渐近改进 cr(K_{n,n})>0.987·n⁴/16+o(n⁴)，无解决声称"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对一切 m,n 证明 cr(K_{m,n}) 等于上述公式值（即补全下界证明），或给出一个交叉数更小的画法使其不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

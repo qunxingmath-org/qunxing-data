@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000817",
-  "revision": 1,
-  "card_rev": "001ce6a0612f3d64",
+  "revision": 2,
+  "card_rev": "a692da319c82b0ac",
   "title": "TPTP LAT067 族：唯一补格加弱律 94-x 是否必为布尔格",
-  "title_en": null,
+  "title_en": "Do uniquely complemented lattices with weak law 94-x have to be Boolean?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -115,11 +118,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "06C15",
+    "secondary": [
+      "03B35",
+      "06B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "格论/自动定理证明",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "唯一补格",
+      "弱律",
+      "布尔格",
+      "格等式",
+      "自动定理证明"
+    ],
+    "en": [
+      "uniquely complemented lattice",
+      "weak law",
+      "Boolean lattice",
+      "lattice identity",
+      "automated theorem proving"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -127,7 +150,12 @@
     "note": "三四区·小问题；等式证明/无限反例双目标： 正方向 Prover9 可攻（Padmanabhan–McCune 演绎谱系已关闭多个 94-x）；负方向无限模型构造（已有同类经典负例：Dilworth 格）。方法与谱系明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该弱律与唯一补性一起能推出布尔格的恒等式组，或构造一个满足这些条件却不是布尔格的（无限）唯一补格。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002177",
-  "revision": 1,
-  "card_rev": "b3c44eac24b04709",
+  "revision": 2,
+  "card_rev": "9e5ac86641f81c6a",
   "title": "正树原理的 Hausdorff 维度版",
-  "title_en": null,
+  "title_en": "A Hausdorff-dimension version of the positive tree principle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "special_case",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03B30",
+    "secondary": [
+      "28A78",
+      "03F35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "反推数学",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正树原理",
+      "Hausdorff 维数",
+      "反推数学",
+      "分形维数",
+      "二阶算术"
+    ],
+    "en": [
+      "positive tree principle",
+      "Hausdorff dimension",
+      "reverse mathematics",
+      "fractal dimension"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出维数版正树原理的确切陈述并证明它（或证明它在相应基础理论中与原版不等价），或给出反例说明维数版的类比不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

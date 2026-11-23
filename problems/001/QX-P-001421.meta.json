@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001421",
-  "revision": 1,
-  "card_rev": "06639b9ab53e6c2b",
+  "revision": 2,
+  "card_rev": "790d8f371f04a78d",
   "title": "batch_I I-012：X=ΣXᵢ, Y=ΣYᵢ（Xᵢ~Bern(pᵢ), Yᵢ~Bern(qᵢ), pᵢ≥qᵢ, n 偶）",
-  "title_en": null,
+  "title_en": "A sharp tail-difference bound for sums of independent Bernoulli variables",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "60E15",
+    "secondary": [
+      "60F10",
+      "62E17"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "概率论 / 组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Bernoulli 和",
+      "尾概率",
+      "单侧偏差",
+      "二项分布",
+      "集中不等式"
+    ],
+    "en": [
+      "sums of Bernoulli variables",
+      "tail probabilities",
+      "one-sided deviation",
+      "binomial distribution",
+      "concentration inequalities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Aryeh Kontorovich 2024 提出（其系列 TV 最小化猜想之强化）；Steinke/Sawin 两个部分结果；提问者对常数因子版本表示满意但均匀化障碍未破。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有满足 p_i≥q_i 的偶 n 与参数组证明该不等式，或给出使之失效的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

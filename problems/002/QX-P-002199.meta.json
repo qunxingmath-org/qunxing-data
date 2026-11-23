@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002199",
-  "revision": 1,
-  "card_rev": "27eb66cee0024438",
+  "revision": 2,
+  "card_rev": "a74cd2545d02a0e7",
   "title": "hf/hf（超有限叠超有限）等价关系是否超有限",
-  "title_en": null,
+  "title_en": "Is the composition of two hyperfinite equivalence relations hyperfinite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E15",
+    "secondary": [
+      "37A20",
+      "03E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Borel 等价关系",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超有限等价关系",
+      "复合",
+      "hf/hf",
+      "Borel 等价关系"
+    ],
+    "en": [
+      "hyperfinite equivalence relations",
+      "composition",
+      "hf/hf",
+      "Borel equivalence relations"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意两个超有限 Borel 等价关系的复合仍然超有限,或给出一个复合后不再超有限的实例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

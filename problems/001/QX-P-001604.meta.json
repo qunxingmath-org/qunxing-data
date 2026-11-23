@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001604",
-  "revision": 1,
-  "card_rev": "b4ba2318a3d6981a",
+  "revision": 2,
+  "card_rev": "042351d83f5e2a0f",
   "title": "21.133 可数子群皆有次正规交换列 ⇒ 群本身？",
-  "title_en": null,
+  "title_en": "If every countable subgroup has a subnormal abelian series, must the whole group have one?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E15",
+    "secondary": [
+      "20F19",
+      "20D35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "次正规交换列",
+      "可数子群",
+      "可解群",
+      "子群链",
+      "局部性质"
+    ],
+    "en": [
+      "subnormal abelian series",
+      "countable subgroups",
+      "soluble groups",
+      "subgroup chains"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Trombetti）群 G 的每个可数子群都有次正规交换列，G 是否必有？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明只要每个可数子群都有次正规交换列，G 本身也有；或构造一个每个可数子群可解、但 G 不可解的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

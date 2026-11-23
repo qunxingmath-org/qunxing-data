@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000269",
-  "revision": 1,
-  "card_rev": "580a058804e3a7eb",
+  "revision": 2,
+  "card_rev": "746fecc9cf432a4a",
   "title": "Fan–Raspaud 猜想：无桥立方图有 3 个交为空的完美匹配",
-  "title_en": null,
+  "title_en": "The Fan-Raspaud conjecture: three perfect matchings with empty intersection",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +109,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C21",
+      "05C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（流/匹配）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "完美匹配",
+      "立方图",
+      "无桥",
+      "交为空",
+      "Fan–Raspaud 猜想"
+    ],
+    "en": [
+      "perfect matchings",
+      "cubic graphs",
+      "bridgeless",
+      "empty intersection",
+      "Fan-Raspaud conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +141,12 @@
     "note": "一区二区·难度待定；Fulkerson/5-flow 等价链成员；2026-07 无限图情形与 claw-free 情形有新文献（2607.29511, 2609.28118）——活跃未冻结；可证特殊类或等价改写。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个无桥立方图都有三个共同交集为空的完美匹配，或给出一个使任何三个完美匹配都有公共边的反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

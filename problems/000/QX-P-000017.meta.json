@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000017",
-  "revision": 1,
-  "card_rev": "8d1f70d12e946916",
+  "revision": 2,
+  "card_rev": "b00697de85155f37",
   "title": "Erdos P149: strong chromatic index <= 5/4 Delta^2",
-  "title_en": null,
+  "title_en": "Erdos-Nesetril conjecture: strong chromatic index at most (5/4) Delta^2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论 / 染色",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "强色指数",
+      "平方图",
+      "最大度",
+      "边染色",
+      "Erdős–Nešetřil 猜想"
+    ],
+    "en": [
+      "strong chromatic index",
+      "square of a graph",
+      "maximum degree",
+      "edge colouring",
+      "Erdos-Nesetril conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +134,12 @@
     "note": "一区二区·易证明；A层理由: 单一常数目标1.25; 上界纪录持续被压缩(1.93→1.835→1.772), 方法(LP对偶/概率压缩)活跃且可延续; Δ固定时目标有限; 三角形自由情形的clique版本已证(1.25Δ²)。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个图 G 都有 sq(G) ≤ (5/4)Δ(G)²；或给出一个反例图使该不等式不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

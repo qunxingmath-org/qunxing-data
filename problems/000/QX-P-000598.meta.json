@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000598",
-  "revision": 1,
-  "card_rev": "ffb34cfe333f64d4",
+  "revision": 2,
+  "card_rev": "5cb6e11b7e936764",
   "title": "（来源 C-005）形如 p+q+1（p,q 素数，可相同）的素数有无穷多个吗？",
-  "title_en": null,
+  "title_en": "Are there infinitely many primes of the form p + q + 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11P32",
+    "secondary": [
+      "11N36",
+      "11N05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（加性素数/筛法）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "加性素数问题",
+      "Goldbach 猜想",
+      "筛法",
+      "素数元组"
+    ],
+    "en": [
+      "additive prime problems",
+      "Goldbach's conjecture",
+      "sieve methods",
+      "prime tuples"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +125,12 @@
     "note": "三四区·小问题；孤立小问题：完全无回答。可做三四区级部分结果：用 Chen 定理/筛法证明 {p+q+1} 中素数具有正下界密度（GPY/Chen 型几乎素数结果），或证明无界个素数 r 使 r−1 有至多 2 个素因子分解。原始表述依赖 Goldbach，但 P+P+1 集合的几乎素数结果是现代筛法可达的。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明形如 p+q+1 的素数有无穷多个，或证明只能得到有限个这样的素数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

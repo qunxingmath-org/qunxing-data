@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000271",
-  "revision": 1,
-  "card_rev": "5490eb377b2c5008",
+  "revision": 2,
+  "card_rev": "f72480ddc8fe4f6d",
   "title": "Hadwiger 图猜想：χ≥t ⇒ K_t 子式",
-  "title_en": null,
+  "title_en": "Hadwiger's conjecture: chromatic number at least t forces a K_t minor",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C83",
+    "secondary": [
+      "05C15",
+      "05C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（子式/染色）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hadwiger 猜想",
+      "顶点子式",
+      "色数",
+      "图子式"
+    ],
+    "en": [
+      "Hadwiger's conjecture",
+      "graph minors",
+      "chromatic number",
+      "tree-width"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +133,12 @@
     "note": "一区二区·难度待定；1943 年核心猜想：k=5,6 已证（Seymour 等），一般开放；2026-10 Linear Hadwiger 猜想有新证明（2610.05291 及其精简 2610.01946）——线性版本进展活跃，原版未冻结；t=7 情形为可达中间目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 t≥1 证明 χ(G)≥t 的图都含有 K_t 子式，或给出某个 t 和一个不含 K_t 子式却 χ≥t 的图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000502",
-  "revision": 1,
-  "card_rev": "5a0d0543dc1e68ff",
+  "revision": 2,
+  "card_rev": "f222628fdedddfcb",
   "title": "VP vs VNP（代数化 P vs NP）",
-  "title_en": null,
+  "title_en": "VP versus VNP: Valiant's algebraic analogue of P versus NP",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q15",
+    "secondary": [
+      "68Q17",
+      "14Q99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数复杂度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "VP 与 VNP",
+      "算术电路",
+      "Valiant 猜想",
+      "行列式与积和式",
+      "代数复杂度"
+    ],
+    "en": [
+      "VP versus VNP",
+      "arithmetic circuits",
+      "Valiant's conjecture",
+      "determinant and permanent",
+      "algebraic complexity"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；Valiant 类分离——几何复杂性理论（GCT）路线虽受挫仍为唯一系统路线，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 VP≠VNP（例如证明积和式不属于 VP），或证明两者相等并给出相应的电路构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

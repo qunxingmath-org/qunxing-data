@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001478",
-  "revision": 1,
-  "card_rev": "8a245910f6094878",
+  "revision": 2,
+  "card_rev": "3b09e851ae885127",
   "title": "batch_I I-134：给定 [n] 上的区间集 I，选 k 个区间使覆盖的点数最大（Max-K Interval Select",
-  "title_en": null,
+  "title_en": "Complexity of selecting k intervals from a set to maximize the number of covered points",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q25",
+    "secondary": [
+      "68W25",
+      "05C85"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法 / 复杂性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "区间选择",
+      "覆盖最大化",
+      "计算复杂性",
+      "NP-难",
+      "近似算法"
+    ],
+    "en": [
+      "interval selection",
+      "coverage maximization",
+      "computational complexity",
+      "NP-hardness",
+      "approximation algorithms"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；fanqi 2016 自提问题；0 回答；未找到已有命名/研究。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出该问题的多项式时间算法（含 k 为输入的判定版本），或证明它是 NP-难的（最好给出常数 k 也 NP-难或其他精确的复杂性刻画）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

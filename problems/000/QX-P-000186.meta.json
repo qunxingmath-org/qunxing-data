@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000186",
-  "revision": 1,
-  "card_rev": "aa05c0d2ebd37da6",
+  "revision": 2,
+  "card_rev": "218d127febb6c307",
   "title": "对角 Ramsey 数的指数增长率（EP#77；原批次 A-010）",
-  "title_en": null,
+  "title_en": "The exponential growth rate of diagonal Ramsey numbers R(k)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -109,11 +112,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C55",
+    "secondary": [
+      "05D10",
+      "05C80"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/Ramsey理论（主）；组合（辅）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "对角 Ramsey 数",
+      "指数增长",
+      "上下界",
+      "概率方法",
+      "极限"
+    ],
+    "en": [
+      "diagonal Ramsey numbers",
+      "exponential growth",
+      "upper and lower bounds",
+      "probabilistic method",
+      "limits"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -121,7 +144,12 @@
     "note": "一区二区·难度待定；著名问题、活跃（2023 年 Campos 等首次突破指数 4），极限存在性与值均未决；非易证明候选。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明极限 lim_{k→∞}R(k)^{1/k} 存在并确定其值，或把上下界改进到足以夹出该值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

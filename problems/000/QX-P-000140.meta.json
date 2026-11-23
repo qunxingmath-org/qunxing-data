@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000140",
-  "revision": 1,
-  "card_rev": "2ead01e05499121b",
+  "revision": 2,
+  "card_rev": "c32fcc421a97562c",
   "title": "Kourovka 19.44：profinite 群 G 每元素 g 有有限秩闭子群 Eg（与 g 相关）[按原文题面：由此推出 G 的结构（有限…",
-  "title_en": null,
+  "title_en": "Finite-rank Engel closures in profinite groups: is the quotient locally nilpotent?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "20F45",
+      "20E26"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限秩",
+      "profinite 群",
+      "Engel 换位子",
+      "局部幂零",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "finite rank",
+      "profinite group",
+      "Engel commutator",
+      "locally nilpotent",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：Khukhro-Shumyatsky arXiv:1512.06097、2017 综述有限秩正规子群存在定理"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的有限秩正规子群 N 必定存在（使 G/N 局部幂零），或给出一个满足假设却不存在这种 N 的 profinite 群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

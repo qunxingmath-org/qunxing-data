@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000443",
-  "revision": 1,
-  "card_rev": "e8bfea839579e352",
+  "revision": 2,
+  "card_rev": "c8cfbcf36835e8a8",
   "title": "Margulis 对角群轨道闭性猜想",
-  "title_en": null,
+  "title_en": "Margulis conjecture: relatively compact diagonal orbits are closed",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37A17",
+    "secondary": [
+      "22E40",
+      "22D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "齐性动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "对角群",
+      "齐性动力系统",
+      "轨道闭性",
+      "格",
+      "SL_n"
+    ],
+    "en": [
+      "diagonal groups",
+      "homogeneous dynamics",
+      "orbit closures",
+      "lattices",
+      "SL_n"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；SL_n(ℝ) 齐空间对角流闭轨道判据——与 Margulis–Tomanov/Ratner 类理论相邻但缺口真实存在，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 n≥3 证明每个相对紧的 D-轨道在 SL_n(R)/SL_n(Z) 中都是闭的，或给出一个相对紧但不闭的轨道作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

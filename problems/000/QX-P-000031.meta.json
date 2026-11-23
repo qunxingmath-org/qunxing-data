@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000031",
-  "revision": 1,
-  "card_rev": "9743de35e82795af",
+  "revision": 2,
+  "card_rev": "c146391180929112",
   "title": "WOWII 猜想 40：f(G) ≥ ⌈(p(G)+b(G)+1)/2⌉",
-  "title_en": null,
+  "title_en": "WOWII 40: induced forest order versus path cover plus induced bipartite subgraph",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C05",
+    "secondary": [
+      "05C38",
+      "05C69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（机器生成猜想）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "诱导森林",
+      "路覆盖",
+      "二部诱导子图",
+      "机器生成猜想"
+    ],
+    "en": [
+      "induced forests",
+      "path cover number",
+      "induced bipartite subgraphs",
+      "machine-generated conjectures"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +134,12 @@
     "note": "一区二区·易证明；三图参数组合不等式；p(G)（路覆盖数）与 b(G)（最大二部诱导子图阶）均有成熟算法；小图穷举+结构归纳路线明确；conjecture-bench 同源条目 cb-0272 可交叉对照。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个顶点数至少 2 的连通图 G 都有 f(G) ≥ ⌈(p(G)+b(G)+1)/2⌉；或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

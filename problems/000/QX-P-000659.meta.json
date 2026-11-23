@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000659",
-  "revision": 1,
-  "card_rev": "0fd6d2d52535f074",
+  "revision": 2,
+  "card_rev": "b0e3db3924ae0726",
   "title": "18.55 局部有限 p-群为交换真子群共轭之并？",
-  "title_en": null,
+  "title_en": "Can a locally finite p-group be the union of conjugates of an abelian proper subgroup?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E45",
+      "20D15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "局部有限 p-群",
+      "共轭类之并",
+      "交换子群",
+      "有限指数"
+    ],
+    "en": [
+      "locally finite p-groups",
+      "union of conjugates",
+      "abelian subgroups",
+      "finite exponent"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "分别对 a)、b) 构造这样的群与交换真子群，或证明这两种情形都不可能。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

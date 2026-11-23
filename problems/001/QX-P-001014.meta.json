@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001014",
-  "revision": 1,
-  "card_rev": "101d96d7b2504449",
+  "revision": 2,
+  "card_rev": "ac02c51ec36b1262",
   "title": "Kourovka 14.59：三重传递群：两点稳定子无对合、三点稳定子平凡",
-  "title_en": null,
+  "title_en": "Triply transitive groups with involution-free two-point stabilizers: PGL_2(P)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B20",
+    "secondary": [
+      "20B22",
+      "20G15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "三重传递群",
+      "稳定子",
+      "对合",
+      "射影直线",
+      "PGL2"
+    ],
+    "en": [
+      "triply transitive groups",
+      "stabilizers",
+      "involutions",
+      "projective line",
+      "PGL_2"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足条件的三重传递群必相似于某特征 2 域上 PGL₂(P) 在射影线上的自然作用，或构造反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

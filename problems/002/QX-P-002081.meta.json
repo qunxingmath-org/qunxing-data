@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002081",
-  "revision": 1,
-  "card_rev": "86d7c1ebf586d422",
+  "revision": 2,
+  "card_rev": "74410dee53fdf253",
   "title": "无有限完备重写系统的双曲群",
-  "title_en": null,
+  "title_en": "Are there hyperbolic groups with no finite complete rewriting system?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F67",
+    "secondary": [
+      "20F10",
+      "68Q42"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论/计算",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "双曲群",
+      "完备重写系统",
+      "字问题",
+      "有限表示",
+      "Dehn 算法"
+    ],
+    "en": [
+      "hyperbolic groups",
+      "complete rewriting systems",
+      "word problem",
+      "finite presentations",
+      "Dehn algorithm"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个不存在有限完备重写系统的双曲群并证明其不存在，或证明每个双曲群都容许这样的重写系统。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

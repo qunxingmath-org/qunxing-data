@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001737",
-  "revision": 1,
-  "card_rev": "8633f8ea47d2150c",
+  "revision": 2,
+  "card_rev": "855c1042704d7a2b",
   "title": "ZFC 内非刚性超幂",
-  "title_en": null,
+  "title_en": "Can ZFC prove every countable structure has a rigid-looking ultrapower with a nontrivial automorphism?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C20",
+    "secondary": [
+      "03E35",
+      "03C50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "逻辑/泛函",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超幂",
+      "超滤子",
+      "自同构",
+      "ZFC",
+      "可数饱和"
+    ],
+    "en": [
+      "ultrapowers",
+      "ultrafilters",
+      "automorphisms",
+      "ZFC",
+      "countable saturation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个 ZFC 证明（不依赖一阶模型论或 CH 等额外假设），说明每个可数结构都有某个超滤子使其超幂含非平凡自同构；或构造一个反例结构，说明这在 ZFC 下不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

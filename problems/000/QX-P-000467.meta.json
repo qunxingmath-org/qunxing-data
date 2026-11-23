@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000467",
-  "revision": 1,
-  "card_rev": "6247ec8ede7f5f31",
+  "revision": 2,
+  "card_rev": "5dc0995471a66e8b",
   "title": "Lam–Litt 猜想（幂级数系数的整性/代数性刻画，2条合一）",
-  "title_en": null,
+  "title_en": "The Lam-Litt conjecture: coefficient integrality of power series versus algebraicity",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "13F25",
+    "secondary": [
+      "11J81",
+      "12E05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论/算术几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幂级数",
+      "系数整性",
+      "代数性",
+      "超越性",
+      "Lam–Litt 猜想"
+    ],
+    "en": [
+      "power series",
+      "coefficient integrality",
+      "algebraicity",
+      "transcendence",
+      "Lam-Litt conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；2024 年 Litt 提出记录的新猜想族——superlinear ω-整性 ⇒ 系数落入 ℤ[1/N] 及反向代数性；Christol 型定理数字化推广，新而深，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对两个方向分别给出证明（说明所指条件确实推出相应结论），或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

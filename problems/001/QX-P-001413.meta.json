@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001413",
-  "revision": 1,
-  "card_rev": "56a4ee3eda8639d2",
+  "revision": 2,
+  "card_rev": "0a01c311add35e73",
   "title": "Klebanov 卷积矩方程的正态特征化（SIAM 79-6）",
-  "title_en": null,
+  "title_en": "Klebanov: characterizing the normal density by a convolution moment identity",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "62E10",
+    "secondary": [
+      "60E05",
+      "60Fxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "概率（分布特征化）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "分布特征化",
+      "正态分布",
+      "卷积矩方程",
+      "统计量"
+    ],
+    "en": [
+      "characterizations of distributions",
+      "normal distribution",
+      "convolution moment equations",
+      "statistics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +116,12 @@
     "note": "三四区·小问题；特征函数方法可攻；Klebanov 自有\"intensively monotone operators\"方法论——可能可解。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足该卷积矩条件的所有密度 f 都是正态密度（给出条件对应的 μ、σ 或退化为 δ 的情形）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

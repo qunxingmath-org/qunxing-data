@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001434",
-  "revision": 1,
-  "card_rev": "c0904115e6696220",
+  "revision": 2,
+  "card_rev": "a87ca6e68ef4cfcb",
   "title": "batch_I I-042：解析 Zariski 结构（Zilber–Peatfield 推广 Noetherian Zaris",
-  "title_en": null,
+  "title_en": "Under what conditions is an analytic Zariski structure stable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C45",
+    "secondary": [
+      "03C98",
+      "32Cxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "模型论 / 复几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Zariski 结构",
+      "稳定性",
+      "模型论",
+      "解析几何"
+    ],
+    "en": [
+      "Zariski structures",
+      "stability",
+      "model theory",
+      "analytic geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +129,12 @@
     "note": "三四区·小问题；Mostafa Mirabi 2013 提出；0 回答；Zilber–Peatfield 框架。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出解析 Zariski 结构稳定的充要条件（或一组充分且必要的刻画），并对 Noetherian 情形验证它退化为已知结论。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

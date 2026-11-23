@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000821",
-  "revision": 1,
-  "card_rev": "1f666eb7e034e93f",
+  "revision": 2,
+  "card_rev": "a29b69f8dcf7f9f7",
   "title": "TPTP NUM006 族：Goldbach 猜想在 Robinson 算术中的（形式）可证性",
-  "title_en": null,
+  "title_en": "Is Goldbach provable in Robinson arithmetic Q?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -115,11 +117,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03F30",
+    "secondary": [
+      "11P32",
+      "03B35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数理逻辑/数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Robinson 算术",
+      "Goldbach 猜想",
+      "形式可证性",
+      "一阶算术",
+      "自动定理证明"
+    ],
+    "en": [
+      "Robinson arithmetic",
+      "Goldbach conjecture",
+      "formal provability",
+      "first-order arithmetic",
+      "automated theorem proving"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -127,7 +149,12 @@
     "note": "三四区·小问题；目标单一且明确（一条 FOF 语句）；小规模公理组（19 公式）可全部喂给 ATP；若 Goldbach 被独立解决本条自动闭合——作为 Goldbach 的形式化镜像任务登记。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 Q 的公理化下给出 Goldbach 形式语句的完整形式证明，或证明它不由 Q 推出（例如构造一个满足 Q 却使其为假的模型）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

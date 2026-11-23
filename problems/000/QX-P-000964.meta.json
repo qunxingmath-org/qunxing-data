@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000964",
-  "revision": 1,
-  "card_rev": "b0756febe056b45d",
+  "revision": 2,
+  "card_rev": "82d1935cf69f7d64",
   "title": "Kourovka 21.7：IYB-群：同构于有限对合非退化集合论 YBE 解的置换群（等价：同构于某有限brace的乘法群",
-  "title_en": null,
+  "title_en": "Kourovka 21.7: are groups with IYB Sylow subgroups themselves IYB-groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D20",
+    "secondary": [
+      "16T25",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "IYB-群",
+      "Yang–Baxter 方程",
+      "brace",
+      "Sylow 子群",
+      "可解群"
+    ],
+    "en": [
+      "IYB-groups",
+      "Yang-Baxter equation",
+      "braces",
+      "Sylow subgroups",
+      "soluble groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的有限可解群必是 IYB-群，或给出一个 Sylow 子群都是 IYB-群而自身不是的有限可解群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

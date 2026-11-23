@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000002",
-  "revision": 1,
-  "card_rev": "bff5e13199c9171e",
+  "revision": 2,
+  "card_rev": "52f2a5c217dd5cb1",
   "title": "（来源 A-002）证明 m! = 100x² + 20x 在 m≥20 时无解（已知解仅 (m,x)=(5,1),(7,7)）",
-  "title_en": null,
+  "title_en": "Prove m! = 100x^2 + 20x has no integer solutions for m >= 20",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B65",
+    "secondary": [
+      "11D72",
+      "11A25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（阶乘/丢番图方程）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "阶乘方程",
+      "Brocard 问题",
+      "Brown 数",
+      "平方数",
+      "模算术"
+    ],
+    "en": [
+      "factorial equation",
+      "Brocard's problem",
+      "Brown numbers",
+      "perfect squares",
+      "modular arithmetic"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -105,7 +128,12 @@
     "note": "一区二区·易证明；方程可化为 m!+1 = (10x+1)²，即 Brocard 问题的特例（n!+1=m² 中平方根被限制为 10k+1 形）。目标空间有限（m≥6 的阶乘末位结构 + Wilson 定理/模分析），评论与回答均未给出证明；可先用模 10^k 末位分析给出部分排除，再推进一般情形。难度低、证明路线明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出对所有 m≥20 都成立的证明（说明不存在相应的整数 x），或给出一个 m≥20 的解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

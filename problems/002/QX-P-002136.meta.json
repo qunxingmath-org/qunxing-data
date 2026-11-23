@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002136",
-  "revision": 1,
-  "card_rev": "8147f493b9da98d0",
+  "revision": 2,
+  "card_rev": "ae56a586a2f10b44",
   "title": "圆上混沌游戏径向密度双峰",
-  "title_en": null,
+  "title_en": "Two peaks in the radial density of the chaos game played on a circle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "special_case"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +70,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "28A80",
+    "secondary": [
+      "60F05",
+      "37A50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "概率/分形",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "混沌游戏",
+      "迭代函数系统",
+      "径向密度",
+      "平稳分布",
+      "随机游走"
+    ],
+    "en": [
+      "chaos game",
+      "iterated function systems",
+      "radial density",
+      "stationary distribution"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出径向密度 ρ(r) 的解析表达式并据此定出两处峰的确切位置，或证明峰位置的某个解析判据（含其数值验证）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001446",
-  "revision": 1,
-  "card_rev": "a59acd80405f6fdc",
+  "revision": 2,
+  "card_rev": "8fef7f30447e9b2f",
   "title": "batch_I I-060：猜想：若 a³+b³+c³=N 有整数解，则 x³+y³+z³+t³=N 有无穷多组整数解。OP 给出恒",
-  "title_en": null,
+  "title_en": "If a^3+b^3+c^3=N is solvable, must x^3+y^3+z^3+t^3=N be solvable infinitely often?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D25",
+    "secondary": [
+      "11P05",
+      "11D72"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 丢番图方程",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "立方和",
+      "丢番图方程",
+      "Pell 方程",
+      "无穷多解",
+      "Waring 问题"
+    ],
+    "en": [
+      "sums of cubes",
+      "Diophantine equations",
+      "Pell equations",
+      "infinitely many solutions",
+      "Waring's problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Tito Piezas III 2017 提出；0 回答；基于恒等式+Pell 方程的具体路线。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该蕴含对一切整数 N 成立（给出由三立方解造出无穷多四立方解的显式机制），或给出一个使蕴含失败的 N。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

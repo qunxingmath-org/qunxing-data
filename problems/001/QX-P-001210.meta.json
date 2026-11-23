@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001210",
-  "revision": 1,
-  "card_rev": "65144dec3e364abe",
+  "revision": 2,
+  "card_rev": "91007a30c0370276",
   "title": "n^d井字棋获胜维度",
-  "title_en": null,
+  "title_en": "Tic-tac-toe on [n]^d: determining the minimal winning dimension d(n)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "91A46",
+    "secondary": [
+      "05D10",
+      "91A05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合博弈论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "井字棋",
+      "多维棋盘",
+      "Hales–Jewett 数",
+      "先手必胜",
+      "维数函数 d(n)"
+    ],
+    "en": [
+      "tic-tac-toe",
+      "multidimensional boards",
+      "Hales-Jewett numbers",
+      "first-player win",
+      "dimension function d(n)"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体函数问题（板宽n下保证先手胜的最小维数）；与Hales–Jewett数的关系给出理论框架；小n计算+策略构造可行。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定 n 确定 d(n) 的精确值，或给出足够接近的上下界（并对无穷多个 n 给出结论）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000486",
-  "revision": 1,
-  "card_rev": "22d2c384c2cab426",
+  "revision": 2,
+  "card_rev": "f640c14f418c4d52",
   "title": "Kaplansky 单位猜想的特征 0 域变体",
-  "title_en": null,
+  "title_en": "Kaplansky's unit conjecture in characteristic zero after the characteristic two refutation",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "16S34",
+    "secondary": [
+      "16U60",
+      "20C07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群环",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Kaplansky 单位猜想",
+      "群环",
+      "单位群",
+      "无挠群",
+      "特征零"
+    ],
+    "en": [
+      "Kaplansky's unit conjecture",
+      "group rings",
+      "unit groups",
+      "torsion-free groups",
+      "characteristic zero"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +133,12 @@
     "note": "一区二区·难度待定；【表述修正】原猜想一般形式已被 Gardam 2021 否定（𝔽₂ 上无挠群反例，arXiv:2102.11818）——本条按采集条目实际保留部分（'域情形仍开'）登记为特征 0/奇特征域变体；EXCLUDED-CHECK 裁决：与 C25/C33 不同问题，保留。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对特征 0（或特征 ≠2）的任意域 K 与无挠群 G 证明 K[G] 的单位都平凡，或给出一个非平凡单位的具体反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

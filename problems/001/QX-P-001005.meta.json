@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001005",
-  "revision": 1,
-  "card_rev": "31cf8dd8fe4ead3d",
+  "revision": 2,
+  "card_rev": "75e0a0fee82d6310",
   "title": "Kourovka 13.59：Zd.SLd(Z) 型扩张除 d=3,5 外均剩余有限",
-  "title_en": null,
+  "title_en": "Extensions of shape Z^5.SL(5,Z): are they all residually finite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20H05",
+      "20E22"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "剩余有限",
+      "群扩张",
+      "SL_d(Z)",
+      "算术子群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "residually finite groups",
+      "group extensions",
+      "SL_d(Z)",
+      "arithmetic subgroups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 d=5 时构造一个非剩余有限的 Z⁵.SL₅(Z) 型扩张，或证明 d=5 时所有这类扩张都剩余有限。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

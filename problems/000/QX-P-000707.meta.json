@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000707",
-  "revision": 1,
-  "card_rev": "713d57cc613bc32f",
+  "revision": 2,
+  "card_rev": "1bebeb1569bc9b0c",
   "title": "15.74 类 p 的 p-群其正规子群格不可嵌入交换群格（p≥5）",
-  "title_en": null,
+  "title_en": "Kourovka 15.74: p-groups of class p whose normal subgroup lattice is not embeddable",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "06B15",
+      "20E15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-群",
+      "幂零类",
+      "正规子群格",
+      "格嵌入",
+      "交换群"
+    ],
+    "en": [
+      "p-groups",
+      "nilpotency class",
+      "normal subgroup lattice",
+      "lattice embedding"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个素数 p≥5 显式构造一个幂零类为 p 的有限 p-群，并证明其正规子群格不能嵌入任何交换群的子群格。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000457",
-  "revision": 1,
-  "card_rev": "9ef0309d626c0a56",
+  "revision": 2,
+  "card_rev": "eabf2f554e15b780",
   "title": "Tao 优化常数 6a：Frankl 并封闭集猜想的密度常数（3条合一）",
-  "title_en": null,
+  "title_en": "The quantitative union-closed sets constant: improving the 0.38271 bound",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D05",
+    "secondary": [
+      "06A07",
+      "05A99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "并封闭族",
+      "元素频率",
+      "Frankl 猜想",
+      "最佳常数",
+      "极值组合"
+    ],
+    "en": [
+      "union-closed families",
+      "element frequencies",
+      "Frankl's conjecture",
+      "optimal constants",
+      "extremal set theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；Frankl 猜想定量常数 C_{6a}=1/2（已知下界 0.38271）——定性猜想著名（池内 B-108 同族参考），定量常数构造型推进活跃（Gilmer 2022 谱系），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出比 0.38271 更大的、对一切并封闭族成立的频率下界并证明，或证明 c=1/2 就是最优常数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

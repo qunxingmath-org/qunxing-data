@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002131",
-  "revision": 1,
-  "card_rev": "dbd3fd56926e36bf",
+  "revision": 2,
+  "card_rev": "c8d7464663ce6bed",
   "title": "红黑牌最优停止游戏渐近值（=Shepp urn）",
-  "title_en": null,
+  "title_en": "Asymptotics of the value of the red-and-black card stopping game",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "60G40",
+    "secondary": [
+      "60C05",
+      "91A60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "概率",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最优停止",
+      "红黑牌博弈",
+      "Shepp 瓮模型",
+      "值函数",
+      "渐近展开"
+    ],
+    "en": [
+      "optimal stopping",
+      "red-and-black game",
+      "Shepp's urn",
+      "value function",
+      "asymptotic expansions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 f(n,n) 与（固定 Δ 时）f(n+Δ,n) 的完整渐近展开（主项与首几个修正项），或给出与之匹配的上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

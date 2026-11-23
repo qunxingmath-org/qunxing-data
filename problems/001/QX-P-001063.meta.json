@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001063",
-  "revision": 1,
-  "card_rev": "24cbe2ccfcc16d55",
+  "revision": 2,
+  "card_rev": "547806f5b47a5e90",
   "title": "Kourovka 2.82：n-Engel 簇可否由无负幂正词恒等式定义",
-  "title_en": null,
+  "title_en": "Can the class of n-Engel groups be defined by positive word identities?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E10",
+    "secondary": [
+      "20F45",
+      "08B05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "n-Engel 条件",
+      "正词恒等式",
+      "簇",
+      "局部梯度群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "n-Engel condition",
+      "positive word identities",
+      "varieties",
+      "locally graded groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 n，n-Engel 群类都能由无负幂的正词恒等式定义（给出显式恒等式组），或证明某个 n 不行。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

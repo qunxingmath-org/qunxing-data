@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000980",
-  "revision": 1,
-  "card_rev": "9ea4cef80ba86b65",
+  "revision": 2,
+  "card_rev": "7ac75893df6a9eba",
   "title": "Kourovka 21.90：直径 3 的 Q-多项式距离正则图",
-  "title_en": null,
+  "title_en": "Kourovka 21.90: Q-polynomial distance-regular graphs of diameter 3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E30",
+    "secondary": [
+      "05C50",
+      "20B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "距离正则图",
+      "Q-多项式",
+      "强正则图",
+      "直径 3",
+      "本原幂等元"
+    ],
+    "en": [
+      "distance-regular graphs",
+      "Q-polynomial",
+      "strongly regular graphs",
+      "diameter 3",
+      "primitive idempotents"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个直径 3 且 Γ₂、Γ₃ 都强正则的 Q-多项式距离正则图，或证明这样的图不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

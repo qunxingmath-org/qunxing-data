@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001583",
-  "revision": 1,
-  "card_rev": "50fbf795febb45d8",
+  "revision": 2,
+  "card_rev": "cbf96d1466d43fa9",
   "title": "21.62 F_n⋊Z 的一致子群隶属问题可判定？",
-  "title_en": null,
+  "title_en": "Is the uniform subgroup membership problem decidable for free-by-cyclic groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "20F05",
+      "03D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "子群隶属问题",
+      "一致可判定",
+      "自由-循环群",
+      "算法",
+      "字问题"
+    ],
+    "en": [
+      "subgroup membership problem",
+      "uniform decidability",
+      "free-by-cyclic groups",
+      "algorithms",
+      "word problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；对固定 G=F_n⋊Z，是否存在算法：给定 w,h₁..h_k∈G，判定 w∈⟨h_i⟩？（一致=算法对全类统一。）…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个对 G=F_n⋊Z 中任意 w 与 h₁,…,h_k 都能判定隶属关系并停机的算法，或证明该问题不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000894",
-  "revision": 1,
-  "card_rev": "255ecc3c6c44381d",
+  "revision": 2,
+  "card_rev": "7d956a3ae8baca47",
   "title": "OWR 2026/1 = Matthews–Sumner 猜想谱系：f(k)-连通无诱导 K_{1,k} 图 Hamilton",
-  "title_en": null,
+  "title_en": "Matthews-Sumner: does high vertex-connectivity plus no induced K_{1,k} force Hamiltonicity?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -90,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C45",
+    "secondary": [
+      "05C40",
+      "05C75"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "图论（Hamilton 性/结构）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Matthews–Sumner 猜想",
+      "无爪图",
+      "点连通度",
+      "Hamilton 圈"
+    ],
+    "en": [
+      "Matthews-Sumner conjecture",
+      "claw-free graphs",
+      "vertex connectivity",
+      "Hamilton cycles"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +123,12 @@
     "note": "三四区·小问题；k=3 即 4-连通无爪图 Hamilton（Matthews–Sumner，著名开放）；f(k) 版本统一化；Carraher 等 2021 禁子图-Hamilton 研究为工具。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在函数 f 使每个 f(k)-点连通且无诱导 K_{1,k} 的图都是 Hamilton 图；或对某个 k 证明这样的 f(k) 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

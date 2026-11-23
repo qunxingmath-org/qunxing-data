@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000077",
-  "revision": 1,
-  "card_rev": "7e68a5299ce47554",
+  "revision": 2,
+  "card_rev": "7ec980d8503d67dd",
   "title": "Kourovka 13.53：无限群 G=⟨a,b⟩，a,b 有限阶",
-  "title_en": null,
+  "title_en": "Kourovka 13.53 (Sozutov): infinitely many conjugates giving an infinite subgroup",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F05",
+    "secondary": [
+      "20E45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无限群",
+      "有限阶元素",
+      "共轭",
+      "生成子群",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "infinite groups",
+      "finite order elements",
+      "conjugates",
+      "generated subgroups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +138,12 @@
     "note": "一区二区·易证明；A层理由：初等陈述、可从循环子群计数与共轭类分析入手；Sozutov 学派方法可延续"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意这样的 G = ⟨a,b⟩（a、b 有限阶、G 无限），都有无穷多个 g 使 ⟨a, b^g⟩ 无限；或构造一个反例，使只有有限多个这样的 g。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

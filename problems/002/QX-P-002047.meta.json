@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002047",
-  "revision": 1,
-  "card_rev": "68a0ed460c2cf41d",
+  "revision": 2,
+  "card_rev": "e6c5e5c198ef23c8",
   "title": "无限单群的 CFSG 型分类",
-  "title_en": null,
+  "title_en": "Is there a classification, or a beginning of one, for infinite simple groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E32",
+    "secondary": [
+      "20E34"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无限单群",
+      "有限单群分类",
+      "分类问题",
+      "代数闭域",
+      "同构类"
+    ],
+    "en": [
+      "infinite simple groups",
+      "finite simple groups classification",
+      "classification",
+      "algebraically closed fields",
+      "isomorphism classes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出无限单群的一个可检验的分类框架（或明确指出哪一类无限单群已能按同构分类），并对一般情形给出肯定或否定性的论证。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

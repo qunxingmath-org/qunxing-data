@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001788",
-  "revision": 1,
-  "card_rev": "94b1573dc9034da3",
+  "revision": 2,
+  "card_rev": "c016fff2f8c33cf7",
   "title": "移动沙发\"涂漆\"变体",
-  "title_en": null,
+  "title_en": "A wet-paint variant of the moving sofa problem: maximizing corridor coverage",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52A40",
+    "secondary": [
+      "49Q10",
+      "52C99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "移动沙发问题",
+      "走廊",
+      "覆盖",
+      "最优形状"
+    ],
+    "en": [
+      "moving sofa problem",
+      "corridors",
+      "coverage",
+      "optimal shapes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定使扫过区域面积最大的图形及其面积的确切值（或严格上界），并证明最优性。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

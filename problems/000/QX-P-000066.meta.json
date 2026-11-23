@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000066",
-  "revision": 1,
-  "card_rev": "ee5e90e1e387dd3d",
+  "revision": 2,
+  "card_rev": "d9c8a3e79a4b29d5",
   "title": "8维超立方体 Q8 的 C4-free 极值 ex(Q8,C4)=680",
-  "title_en": null,
+  "title_en": "Is ex(Q_8, C_4) equal to 680?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "decidable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -109,11 +112,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C38",
+      "05C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "极值组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超立方体",
+      "四元环",
+      "极值边数",
+      "C4-free",
+      "有限搜索"
+    ],
+    "en": [
+      "hypercubes",
+      "four-cycles",
+      "extremal edge counts",
+      "C4-free graphs",
+      "finite search"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -121,7 +144,12 @@
     "note": "一区二区·易证明；有限验证目标（CB 反例目标 finite）：小参数空间/有限组合搜索或显式公式判定，反例可机器核验；已有大范围计算验证作支撑。 有限组合搜索目标（SAT 可及）；与池内 B-152（EP#86 Q_n 渐近版）同族不同命题，已注记族关联"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 Q₈ 的任何不含 C₄ 的子图至多有 680 条边，并给出一个恰好 680 条边的不含 C₄ 子图；或给出与 680 不同的正确极值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

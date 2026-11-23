@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000413",
-  "revision": 1,
-  "card_rev": "6d35aedf1db4106e",
+  "revision": 2,
+  "card_rev": "bea6f8f57395de09",
   "title": "有限群 G×G 中稠密集的三点构型（Green 问题 18 / Austin Q2）",
-  "title_en": null,
+  "title_en": "Dense subsets of G x G must contain many three-point configurations",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "20D60",
+      "05D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合/群",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限群",
+      "稠密集",
+      "角配置",
+      "密度正则性",
+      "计数下界"
+    ],
+    "en": [
+      "finite groups",
+      "dense subsets",
+      "corner configurations",
+      "density regularity",
+      "counting bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；quasirandom 群方法+Austin 型对应（对应 Austin 2016 关于 3 项构型的多项 Szemerédi 对应），方法链存在但未闭合，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在只依赖 α 的 c(α)>0，使每个这样的 A 都含至少 c(α)|G|³ 组三元组；或构造一个有限群与集合 A 作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

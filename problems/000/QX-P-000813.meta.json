@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000813",
-  "revision": 1,
-  "card_rev": "5b664048411bf99d",
+  "revision": 2,
+  "card_rev": "d6205c91d4875262",
   "title": "TPTP BOO 开放族：Sheffer 竖线单公理候选 C1/C2/C7/C16 等能否推出 Meredith 2-基",
-  "title_en": null,
+  "title_en": "Are the short Sheffer-stroke formulas single axioms for Boolean algebra?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -210,11 +213,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03B35",
+    "secondary": [
+      "06E30",
+      "03C05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛代数/自动定理证明",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Sheffer 竖线",
+      "单公理",
+      "布尔代数",
+      "等式演算",
+      "Meredith 基"
+    ],
+    "en": [
+      "Sheffer stroke",
+      "single axiom",
+      "Boolean algebra",
+      "equational logic",
+      "Meredith basis"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -222,7 +245,12 @@
     "note": "三四区·小问题；有限等式证明目标： 单条等式公理+代换闭包，Prover9/SAT 可攻；部分候选已由 Veroff 2000 类技巧（fixed-point hints）关闭，剩余候选路径明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个候选 C_k 判定它能否推出 Meredith 两公理基：能则给出完整推导，不能则给出一个满足 C_k 却非布尔代数的（有限）代数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

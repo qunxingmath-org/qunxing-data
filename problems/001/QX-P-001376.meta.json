@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001376",
-  "revision": 1,
-  "card_rev": "6850aac362e8b751",
+  "revision": 2,
+  "card_rev": "b7d351bbdfa0f1ca",
   "title": "Propp：六个平移放入三倍放大图形（AMM E2774）",
-  "title_en": null,
+  "title_en": "Propp: can six translates of any planar convex body always fit inside 3K?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "construct"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +84,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "52A10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "凸几何/覆盖",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸体",
+      "平移拷贝",
+      "放大图形",
+      "装填",
+      "Propp"
+    ],
+    "en": [
+      "convex bodies",
+      "translate copies",
+      "homothetic expansion",
+      "packing",
+      "Propp"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +115,12 @@
     "note": "三四区·小问题；凸体组合几何，已有 Januszewski 类结果可对照；与 Hadwiger 覆盖（B20，排除项）不同参数变体。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意平面凸体 K 给出六个互不重叠且都在 3K 内的平移拷贝，或构造一个凸体使这种摆放不可能。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

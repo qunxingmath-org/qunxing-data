@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001576",
-  "revision": 1,
-  "card_rev": "31c3dd2f21999e85",
+  "revision": 2,
+  "card_rev": "cedd3f837e2a3d0d",
   "title": "21.41 无挠 fp 亚交换自相似群含 Z≀Z？",
-  "title_en": null,
+  "title_en": "Can a torsion-free finitely presented metabelian self-similar group contain Z wr Z?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E22",
+    "secondary": [
+      "20F16",
+      "20E08"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自相似群",
+      "亚交换群",
+      "圈积",
+      "无挠",
+      "有限表现"
+    ],
+    "en": [
+      "self-similar groups",
+      "metabelian groups",
+      "wreath products",
+      "torsion-free",
+      "finite presentability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；自相似群 = 可由正则单根 m-树自同构忠实态闭表示。无挠有限表现亚交换自相似群能否含 Z≀Z 子群？（Z≀Z 本身自相…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个无挠有限表现亚交换的自相似群并显式给出其中同构于 Z≀Z 的子群，或证明这样的群不含 Z≀Z。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

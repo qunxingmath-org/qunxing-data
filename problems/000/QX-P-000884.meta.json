@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000884",
-  "revision": 1,
-  "card_rev": "d1f4d91915979006",
+  "revision": 2,
+  "card_rev": "417547723b5967d5",
   "title": "r-免覆盖族的最大规模（OWR 2025/42）",
-  "title_en": null,
+  "title_en": "The maximum size of an r-cover-free family",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -90,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D05",
+    "secondary": [
+      "05B05",
+      "94B99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "极组合（免覆盖族/组测试）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "免覆盖族",
+      "组测试",
+      "极值组合",
+      "集合族"
+    ],
+    "en": [
+      "cover-free families",
+      "group testing",
+      "extremal set theory",
+      "set systems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +123,12 @@
     "note": "三四区·小问题；一般 r 的精确最大值开放；有限向量空间特例 2025 新解决（JCTA 106131）；组测试/密码应用背景使方法多元。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 r-免覆盖族在给定参数下的最大规模精确值（或给出相互匹配的上界与下界）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000274",
-  "revision": 1,
-  "card_rev": "3940808211153962",
+  "revision": 2,
+  "card_rev": "0f7b340a075abadb",
   "title": "线性森林分解（Linear Arboricity）猜想",
-  "title_en": null,
+  "title_en": "The linear arboricity conjecture: edges covered by ceil((Delta+1)/2) linear forests",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C15",
+      "05C05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（边分解）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "线性森林",
+      "边分解",
+      "最大度",
+      "线性荫度"
+    ],
+    "en": [
+      "linear forests",
+      "edge partition",
+      "maximum degree",
+      "linear arboricity"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +134,12 @@
     "note": "一区二区·难度待定；Akiyama–Exoo–Harary (1980) 猜想：Δ≡0,4 (mod ?) 情形已证，Δ≡其他剩若干 mod 类；2025-12 大围长情形、2026-07 随机图、2026-10 无限图版本——活跃度高，有限 mod 类收尾为典型一/二区目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个最大度为 Δ 的图的边都能划分成 ⌈(Δ+1)/2⌉ 个线性森林，或给出一个需要更多线性森林的图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

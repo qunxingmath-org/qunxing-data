@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001857",
-  "revision": 1,
-  "card_rev": "4ea4b4c71ad3d332",
+  "revision": 2,
+  "card_rev": "6a2d682335df937c",
   "title": "Ore 型横贯 Hamilton",
-  "title_en": null,
+  "title_en": "An Ore-type condition for transversal Hamilton cycles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C45",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Ore 条件",
+      "横贯 Hamilton 圈",
+      "度和条件",
+      "图系统"
+    ],
+    "en": [
+      "Ore condition",
+      "transversal Hamilton cycles",
+      "degree-sum conditions",
+      "graph systems"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出图系统上的 Ore 型度和条件并证明它蕴含横贯 Hamilton 圈，同时证明该条件不能再削弱。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

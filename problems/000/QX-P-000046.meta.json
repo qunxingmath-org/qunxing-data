@@ -2,24 +2,27 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000046",
-  "revision": 1,
-  "card_rev": "7a80ae5c49fe3857",
+  "revision": 2,
+  "card_rev": "f149216a611d7ded",
   "title": "θ₃ 算术和 S(k) 正性系列猜想",
-  "title_en": null,
+  "title_en": "A chain of positivity conjectures for the arithmetic sum S(k) built from theta_3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
-  "statement_fidelity": "unaudited",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
+  "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
     "date": "2026-11-21",
-    "verdict": "fail"
+    "verdict": "pass_with_fixes"
   },
   "source_quote_lang": "zh",
   "formal": [],
@@ -91,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11F27",
+    "secondary": [
+      "11L05",
+      "11A07"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论/模形式",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "theta 函数",
+      "算术和",
+      "正性",
+      "下界链",
+      "模形式"
+    ],
+    "en": [
+      "theta functions",
+      "arithmetic sums",
+      "positivity",
+      "lower bound chain",
+      "modular forms"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -103,7 +126,12 @@
     "note": "一区二区·易证明；数值验证目标有限且可程序化（对给定奇素数 k 直接数值求和验证符号）；猜想为逐点不等式族 S(k)>0、S(k)>k、S(k)>2k、S(k)>3k 及 nk<S(k) 最终成立，参数空间一维、已有整条猜想链的部分层次，模形式/线性型对数方法路线明确，A层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这五条断言（S(k)>0；k>5 时 S(k)>k；k>233 时 S(k)>2k；k>3119 时 S(k)>3k；对每个 n 最终有 S(k)>nk）；或对其中某条给出反例素数 k。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000300",
-  "revision": 1,
-  "card_rev": "3d2aa1231ae8e1dc",
+  "revision": 2,
+  "card_rev": "d4c132af005071d0",
   "title": "Alperin 权猜想",
-  "title_en": null,
+  "title_en": "Alperin's weight conjecture",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C20",
+    "secondary": [
+      "20C33",
+      "20D20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有限群表示论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Alperin 权猜想",
+      "Brauer 特征",
+      "p-权",
+      "块论"
+    ],
+    "en": [
+      "Alperin weight conjecture",
+      "Brauer characters",
+      "p-weights",
+      "block theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +116,12 @@
     "note": "一区二区·难度待定；模表示论全局基石之一；p-可解与诸多类已证，一般开放；Brauer–? 结构归纳与融合系方法活跃；切块验证型成果可出论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有有限群 G 和素数 p 证明 |IBr(G)| 等于 p-权的 G-共轭类个数，或给出一个不成立的 (G,p)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

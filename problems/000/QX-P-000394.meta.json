@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000394",
-  "revision": 1,
-  "card_rev": "91e0761f38992f18",
+  "revision": 2,
+  "card_rev": "e14e2d54943b2979",
   "title": "batch_I I-051：带状算子（∃r: (Te_n,e_m)≠0⇒|n−m|≤r）是否都满足不变子空间问题结论，即每个带状",
-  "title_en": null,
+  "title_en": "Does every banded operator on Hilbert space have a nontrivial invariant subspace?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "47A15",
+    "secondary": [
+      "47B37"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算子理论 / 不变子空间问题",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不变子空间问题",
+      "带状算子",
+      "Hilbert 空间",
+      "有界算子",
+      "正交基"
+    ],
+    "en": [
+      "invariant subspace problem",
+      "banded operators",
+      "Hilbert space",
+      "bounded operators",
+      "orthonormal basis"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +138,12 @@
     "note": "一区二区·难度待定；Sebastien Palcoux 2013 提出；Bill Johnson 评论指出连加权双边移位（带状算子特例）的非平凡不变子空间性都未知 ⇒ 问题至少同样难；Ozawa 在评论解决备注问题（uniform Roe algebra）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个带状有界算子都有非平凡闭不变子空间，或构造一个没有非平凡闭不变子空间的带状算子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

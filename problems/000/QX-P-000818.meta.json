@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000818",
-  "revision": 1,
-  "card_rev": "f9e583a11a344c17",
+  "revision": 2,
+  "card_rev": "a83f16e2400b0799",
   "title": "TPTP LAT071-1：OML 单公理候选 OML-21C 能否推出结合性（Sheffer 竖线）",
-  "title_en": null,
+  "title_en": "Does the orthomodular lattice single-axiom candidate OML-21C imply associativity?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "06C15",
+    "secondary": [
+      "03B35",
+      "68T15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "格论（正交模格）/自动定理证明",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正交模格",
+      "单公理",
+      "Sheffer 竖线",
+      "结合律",
+      "自动定理证明"
+    ],
+    "en": [
+      "orthomodular lattice",
+      "single axiom",
+      "Sheffer stroke",
+      "associativity",
+      "automated theorem proving"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；单公理等式推导目标： Prover9 + 固定点提示（Veroff 技巧）路径明确；等式深度 6-7 项空间有限。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "从 OML-21C 推出该结合律恒等式（从而确认单公理身份），或给出一个满足 OML-21C 但使该恒等式失败的代数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

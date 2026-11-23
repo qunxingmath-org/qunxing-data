@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001137",
-  "revision": 1,
-  "card_rev": "73bd42cadb647f3c",
+  "revision": 2,
+  "card_rev": "8fa375939189c498",
   "title": "Kourovka 14.101：一致有界秩 Lie 型单群饱和⇒本身有限秩 Lie 型单群？",
-  "title_en": null,
+  "title_en": "Is a periodic group saturated with bounded-rank finite simple groups of Lie type itself of Lie type?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E32",
+    "secondary": [
+      "20G15",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "饱和性",
+      "Lie 型单群",
+      "有限秩",
+      "周期群"
+    ],
+    "en": [
+      "saturation",
+      "simple groups of Lie type",
+      "finite rank",
+      "periodic groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明被一致有界秩的有限 Lie 型单群饱和的周期群本身是有限秩 Lie 型单群，或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

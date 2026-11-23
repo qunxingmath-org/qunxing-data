@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000493",
-  "revision": 1,
-  "card_rev": "efa551d2b7f99415",
+  "revision": 2,
+  "card_rev": "972afb0bb798c405",
   "title": "Hot Spots 猜想",
-  "title_en": null,
+  "title_en": "The hot spots conjecture: the second Neumann eigenfunction peaks on the boundary",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "35P15",
+    "secondary": [
+      "35J25",
+      "58J50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "PDE/谱理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hot Spots 猜想",
+      "Neumann 特征函数",
+      "谱理论",
+      "热方程",
+      "边界极值"
+    ],
+    "en": [
+      "hot spots conjecture",
+      "Neumann eigenfunctions",
+      "spectral theory",
+      "heat equation",
+      "boundary extrema"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；第二 Neumann 特征函数最大值在边界取得——一般平面区域开（特定类已证/已反例），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有平面有界区域证明第二 Neumann 特征函数的最大值在边界上取得，或给出一个最大值只在内部取得的区域反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

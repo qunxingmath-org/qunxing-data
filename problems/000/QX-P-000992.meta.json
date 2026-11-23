@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000992",
-  "revision": 1,
-  "card_rev": "6337ee3ebca4061a",
+  "revision": 2,
+  "card_rev": "d9c3f8bd655cd9ca",
   "title": "Kourovka 13.7：局部有限单群含有限子群其中心化子有限，则线性吗",
-  "title_en": null,
+  "title_en": "Simple locally finite groups with a finite subgroup of finite centralizer: linear?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E32",
+      "20H20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "局部有限单群",
+      "线性群",
+      "中心化子",
+      "有限子群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "locally finite simple groups",
+      "linear groups",
+      "centralizers",
+      "finite subgroups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足条件的局部有限单群必线性（给出忠实的有限维矩阵表示），或构造一个满足条件却非线性的局部有限单群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

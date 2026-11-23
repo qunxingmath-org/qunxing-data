@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000217",
-  "revision": 1,
-  "card_rev": "78b73208a11818c6",
+  "revision": 2,
+  "card_rev": "b0815f2ca0e26153",
   "title": "Associahedra are 8-colourable",
-  "title_en": null,
+  "title_en": "Associahedra are 8-colourable: narrowing the gap for the chromatic number",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -118,11 +121,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "52B05",
+      "06B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何/图染色（associahedra）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "associahedron",
+      "图染色",
+      "1-骨架",
+      "色数",
+      "上界改进"
+    ],
+    "en": [
+      "associahedra",
+      "graph colouring",
+      "1-skeleta",
+      "chromatic number",
+      "upper bound improvements"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -130,7 +153,12 @@
     "note": "一区二区·难度待定；著名长期问题，上界近三个月被连续压低（Tan 12色→Wood 8色，2026-11；此前O(log log n)），活跃且未冻结难度——精确值或\"能否<8色\"工作量可能一区也可能二三区，归B层待定。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 χ(A_n)≤7（或更好的上界），或把 χ(A_n) 的下界提高到超过某个具体常数，从而缩小与 8 的差距。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001023",
-  "revision": 1,
-  "card_rev": "67e14d170e359cd7",
+  "revision": 2,
+  "card_rev": "b3bad78ca0c777bd",
   "title": "Kourovka 15.64：r(G;X)=G 在 X 上不等价作用的个数（→Aut X 同态的共轭类数）",
-  "title_en": null,
+  "title_en": "Bounding r_G(n), the number of inequivalent actions, in terms of Omega(n)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20B05",
+    "secondary": [
+      "20D60",
+      "20E99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群作用计数",
+      "不等价作用",
+      "共轭类",
+      "素因子个数",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "group action counting",
+      "inequivalent actions",
+      "conjugacy classes",
+      "number of prime factors",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在函数 f 使 r_G(n) ≤ f(λ(n)) 对所有 n 成立，或构造一列 n 使 r_G(n) 相对 λ(n) 无界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

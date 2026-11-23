@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001422",
-  "revision": 1,
-  "card_rev": "9633835616a53116",
+  "revision": 2,
+  "card_rev": "e6f0a05c54de39aa",
   "title": "batch_I I-014：A_n={x: 存在 n 阶连通简单图恰有 x 棵生成树}。研究 |A_n| 增长率；猜想 |A_n|=ω(kⁿ) 对一切 k∈N",
-  "title_en": null,
+  "title_en": "How fast does the set of attainable spanning-tree counts grow?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C30",
+    "secondary": [
+      "05C05",
+      "05A16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论 / 极值计数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "生成树数目",
+      "可达整数集",
+      "增长率",
+      "连通图"
+    ],
+    "en": [
+      "number of spanning trees",
+      "attainable integers",
+      "growth rates",
+      "connected graphs"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +131,12 @@
     "note": "三四区·小问题；Jernej 2012 引 Sedláček 1969；0 完整回答；Sage+nauty 计算表 n≤12。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个固定整数 k 都有 |A_n| = ω(kⁿ)，或给出反例说明某个 k 不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

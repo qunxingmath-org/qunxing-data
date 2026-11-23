@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001730",
-  "revision": 1,
-  "card_rev": "26dec712b3d22b3b",
+  "revision": 2,
+  "card_rev": "aee1953f4d778902",
   "title": "正态 CDF 在有理点取有理值",
-  "title_en": null,
+  "title_en": "If the normal CDF takes a rational value at a rational point, must the point be 0?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "33B20",
+    "secondary": [
+      "11J81",
+      "60E99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "概率/超越",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正态分布",
+      "累积分布函数",
+      "误差函数",
+      "有理值",
+      "超越性"
+    ],
+    "en": [
+      "normal distribution",
+      "cumulative distribution function",
+      "error function",
+      "rational values",
+      "transcendence"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明方程 F(q₁)=q₂ 在有理数 q₁,q₂ 下只有 q₁=0、q₂=1/2 一组解，或给出一组不同的有理解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

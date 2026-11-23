@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002078",
-  "revision": 1,
-  "card_rev": "4274bb99e5bd308e",
+  "revision": 2,
+  "card_rev": "fda0db94f67f15ed",
   "title": "大量整同调 3-球面？",
-  "title_en": null,
+  "title_en": "How many integral homology 3-spheres are there?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K30",
+    "secondary": [
+      "57M27",
+      "57N10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "3维拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整同调 3-球面",
+      "3-流形",
+      "同调群",
+      "Dehn 手术",
+      "构造"
+    ],
+    "en": [
+      "integral homology 3-spheres",
+      "3-manifolds",
+      "homology groups",
+      "Dehn surgery",
+      "construction"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "先把「大量」明确成可判定的量（如显式的无穷族、基数、或某参数下的分类），再给出构造与证明，或证明其稀少。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

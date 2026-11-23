@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000553",
-  "revision": 1,
-  "card_rev": "38216f1f70e211b3",
+  "revision": 2,
+  "card_rev": "37d6a1aa6a10db5f",
   "title": "17.66 dim H¹(G,V) 一致有界？",
-  "title_en": null,
+  "title_en": "Is dim H^1(G,V) uniformly bounded for faithful absolutely irreducible modules?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20J06",
+    "secondary": [
+      "20C20",
+      "20D05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "一阶上同调",
+      "绝对不可约模",
+      "忠实模",
+      "有限群表示"
+    ],
+    "en": [
+      "first cohomology",
+      "absolutely irreducible modules",
+      "faithful modules",
+      "representations of finite groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在这样的统一常数 d 并给出上界，或构造一列有限群与忠实绝对不可约模使 dim H¹(G,V) 无界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000447",
-  "revision": 1,
-  "card_rev": "6f536d03fe6037d6",
+  "revision": 2,
+  "card_rev": "be3b1729ee62a850",
   "title": "Banach–Mazur 旋转问题",
-  "title_en": null,
+  "title_en": "The Banach–Mazur rotation problem: transitive isometry groups force Hilbert space",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46B04",
+    "secondary": [
+      "46B20",
+      "46C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "泛函分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Banach–Mazur 问题",
+      "等距群",
+      "传递作用",
+      "单位球面",
+      "Hilbert 空间"
+    ],
+    "en": [
+      "Banach–Mazur problem",
+      "isometry groups",
+      "transitivity",
+      "unit spheres",
+      "Hilbert spaces"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；可分 Banach 空间传递等距群 ⇒ Hilbert 空间？经典开放（1932），相关传递性/齐性 Banach 空间文献持续但未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个具有球面传递等距群的可分 Banach 空间都同构于 Hilbert 空间，或构造一个非 Hilbert 的可分 Banach 空间具有该性质。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

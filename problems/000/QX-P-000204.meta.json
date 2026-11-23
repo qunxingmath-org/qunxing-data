@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000204",
-  "revision": 1,
-  "card_rev": "9d57aea560d2e2f4",
+  "revision": 2,
+  "card_rev": "2382cd65d06a245d",
   "title": "Laborde–Payan–Xuong 猜想：稳定集与所有最长有向路（原批次 A-065）",
-  "title_en": null,
+  "title_en": "Laborde-Payan-Xuong conjecture: a stable set meeting every longest directed path",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C38",
+      "05C69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有向图（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有向图",
+      "最长有向路",
+      "独立集",
+      "稳定集",
+      "横截"
+    ],
+    "en": [
+      "digraphs",
+      "longest directed paths",
+      "independent sets",
+      "stable sets",
+      "transversals"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；命题初等；Havet 已证稳定数 ≤2 情形；一般情形未决且近年文献稀少 → OPEN-WEAK。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个有向图都存在与所有最长有向路都相交的独立集，或构造一个反例有向图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

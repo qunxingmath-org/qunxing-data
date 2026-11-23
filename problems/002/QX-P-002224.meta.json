@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002224",
-  "revision": 1,
-  "card_rev": "38303ea9f88fe608",
+  "revision": 2,
+  "card_rev": "c0bda5a36b6a022b",
   "title": "Hamiltonian 约化极小化子下降",
-  "title_en": null,
+  "title_en": "Descending minimizers through Hamiltonian reduction",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53D20",
+    "secondary": [
+      "14L24",
+      "53C55"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "K-稳定性/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hamiltonian 约化",
+      "极小化子",
+      "矩映射",
+      "稳定性",
+      "下降"
+    ],
+    "en": [
+      "Hamiltonian reduction",
+      "minimizers",
+      "moment maps",
+      "stability",
+      "descent"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明极小化子在 Hamiltonian 约化下仍下降为约化空间的极小化子,或给出一个下降失败的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

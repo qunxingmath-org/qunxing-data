@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001597",
-  "revision": 1,
-  "card_rev": "2aa1edb3a73c1c6f",
+  "revision": 2,
+  "card_rev": "31cfc66c68376c1e",
   "title": "21.122 剩余有限群 w-值集有限或至少连续统？",
-  "title_en": null,
+  "title_en": "Is the set of w-values in a profinite group finite or at least of cardinality continuum?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "20F10",
+      "20E26"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "w-值集",
+      "群字",
+      "profinite 群",
+      "连续统基数",
+      "剩余有限"
+    ],
+    "en": [
+      "w-values",
+      "group words",
+      "profinite groups",
+      "continuum cardinality",
+      "residually finite"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Shumyatsky）群字 w，剩余有限群 G：w-值集基数是否要么有限要么≥连续统？重要字类已证（Detomi–Kl…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意群字 w 与任意 profinite 群 G，w-值集的基数要么有限，要么至少为 2^ℵ₀；或给出一个基数为可数无穷的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

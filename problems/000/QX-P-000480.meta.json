@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000480",
-  "revision": 1,
-  "card_rev": "ba855d89731c1ecb",
+  "revision": 2,
+  "card_rev": "cf8d7d6bb2fc2d7f",
   "title": "Caccetta–Häggkvist 猜想",
-  "title_en": null,
+  "title_en": "The Caccetta-Haggkvist conjecture on short directed cycles and minimum outdegree",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C35",
+      "05C38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有向图",
+      "最小出度",
+      "有向圈",
+      "极值问题",
+      "短圈"
+    ],
+    "en": [
+      "digraphs",
+      "minimum outdegree",
+      "directed cycles",
+      "extremal problems",
+      "short cycles"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；有向图最短圈猜想（1978），r=3 等情形深水区、近年 Polymath 式推进不断，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n、r 与所有 n 点最小出度 ≥r 的有向图证明存在长度 ≤⌈n/r⌉ 的有向圈，或给出一个反例有向图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

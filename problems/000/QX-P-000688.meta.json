@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000688",
-  "revision": 1,
-  "card_rev": "ead3a3502b623bb9",
+  "revision": 2,
+  "card_rev": "1e994d8d72996080",
   "title": "16.47 无挠交换群的 Archimedean 格序",
-  "title_en": null,
+  "title_en": "Does every torsion-free abelian group admit an Archimedean lattice ordering?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20K99",
+    "secondary": [
+      "06F20",
+      "20F60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无挠交换群",
+      "格序",
+      "Archimedean 序",
+      "序群"
+    ],
+    "en": [
+      "torsion-free abelian groups",
+      "lattice orderings",
+      "Archimedean orders",
+      "ordered groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个无挠交换群都能 Archimedean 格序化，或给出一个无法这样排序的无挠交换群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000900",
-  "revision": 1,
-  "card_rev": "d20b4d14f04bed11",
+  "revision": 2,
+  "card_rev": "63139abf5e71a7ed",
   "title": "OWR 2021/34：非分裂 Cartan 模曲线 X(Γ_ns^+(p)) 的有理点（一般素数 p）",
-  "title_en": null,
+  "title_en": "Rational points on the modular curve of the normalizer of a non-split Cartan subgroup",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "classify"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11G18",
+    "secondary": [
+      "11F03",
+      "14G05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算术几何（模曲线）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "模曲线",
+      "非分裂 Cartan 子群",
+      "有理点",
+      "尖点",
+      "CM 点"
+    ],
+    "en": [
+      "modular curves",
+      "non-split Cartan subgroups",
+      "rational points",
+      "cusps",
+      "CM points"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Serre 一致性问题核心对象；Rouse–Sutherland–Zureick-Brown 2022 分类处理多数子群情形；二次 Chabauty 为现役工具；2026 level-49 genus-9 补全注记显示进展节奏。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对一般素数 p 确定 X(Γ_ns^+(p))(Q) 的完整集合：证明它恰好由尖点和 CM 点组成，或给出额外的有理点。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

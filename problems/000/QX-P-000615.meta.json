@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000615",
-  "revision": 1,
-  "card_rev": "89b8a64b3801686b",
+  "revision": 2,
+  "card_rev": "28fa165bc25563d1",
   "title": "（来源 C-022）57-cell（Perkel 图构型）能否在 vZome（特定杆件方向集合）中无杆件交叉地实现？",
-  "title_en": null,
+  "title_en": "Can the 57-cell be realised in vZome without strut crossings?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B99",
+    "secondary": [
+      "05C10",
+      "00A09"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何/构型（娱乐数学）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "57-cell",
+      "Perkel 图",
+      "vZome",
+      "杆件方向",
+      "无交叉实现"
+    ],
+    "en": [
+      "57-cell",
+      "Perkel graph",
+      "vZome",
+      "strut directions",
+      "crossing-free realisation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +126,12 @@
     "note": "三四区·小问题；具体构造问题：57-cell 是 4 维多胞体（Coxeter 的 57-cell），3 维投影必然复杂。可尝试计算搜索（vZome 方向约束下的图实现 = 约束满足）。三四区级：给出构造或证明该方向集下交叉不可避免。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 57-cell 在 vZome 允许方向下的无交叉杆件实现（可附坐标），或证明在限定方向集合内不可能做到无交叉。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

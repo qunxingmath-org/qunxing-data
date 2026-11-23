@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000830",
-  "revision": 1,
-  "card_rev": "463ebe352a6882f6",
+  "revision": 2,
+  "card_rev": "0c960e3ea76577be",
   "title": "Green 问题 76（Nets Katz）：轴平行矩形的稀疏打点集（n/2 点命中所有大矩形）",
-  "title_en": null,
+  "title_en": "Green problem 76: a half-size subset hitting every large axis-parallel rectangle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C45",
+    "secondary": [
+      "05D99",
+      "68Q25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/组合（ε-网/打点集）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "打点集",
+      "轴平行矩形",
+      "ε-网",
+      "命中集",
+      "离散几何"
+    ],
+    "en": [
+      "hitting set",
+      "axis-parallel rectangle",
+      "epsilon-net",
+      "point set",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；与弱 ε-网 O(1/ε) 存在性直接关联（Green 注：已知 C·log log n 点版本的答案为是）；常数 1000 的精确版本未解；计算几何工具链成熟。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个平面点集都能选出这样的 A′（|A′|=n/2），或给出一个点集说明无论怎样挑都做不到。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

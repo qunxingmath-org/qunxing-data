@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001591",
-  "revision": 1,
-  "card_rev": "5b464b8574f2e2be",
+  "revision": 2,
+  "card_rev": "543a66ffa4bed7ae",
   "title": "21.104 分支群满足 Engel 型迭代恒等式猜想",
-  "title_en": null,
+  "title_en": "Must a finitely generated branch group satisfying an Engel-type iterated identity be torsion?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E08",
+    "secondary": [
+      "20F50",
+      "20E18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "分支群",
+      "Engel 型迭代恒等式",
+      "群字",
+      "挠群",
+      "有限生成群"
+    ],
+    "en": [
+      "branch groups",
+      "Engel-type iterated identity",
+      "group words",
+      "torsion groups",
+      "finitely generated groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；e_{k+1}=w(e_k(x,…),…) 迭代。猜想：每个满足某迭代恒等式的有限生成分支群（见 15.12）……（21…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个非平凡群字 w，满足 Engel 型迭代恒等式 w 的有限生成分支群都是挠群；或给出一个满足恒等式却含无限阶元素的有限生成分支群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

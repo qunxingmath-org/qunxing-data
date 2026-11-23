@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001492",
-  "revision": 1,
-  "card_rev": "d7a893e1bca239b1",
+  "revision": 2,
+  "card_rev": "8d843ef225408997",
   "title": "batch_I I-157：C(X) 中两个强 z-理想 I,J 的和 I+J 是否仍为强 z-理想或全环？",
-  "title_en": null,
+  "title_en": "Is the sum of two strongly z-ideals in C(X) again strongly z or all of C(X)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "54C40",
+    "secondary": [
+      "13A15",
+      "46J10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "交换代数 / 函数环",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "C(X) 环",
+      "强 z-理想",
+      "极大理想",
+      "理想之和",
+      "函数环"
+    ],
+    "en": [
+      "rings of continuous functions",
+      "strongly z-ideals",
+      "maximal ideals",
+      "sums of ideals",
+      "function rings"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Ali Reza 2012；0 回答；与 Asaf Karagila 的讨论（其答案后被删除）澄清了问题表述。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意两个强 z-理想之和仍是强 z-理想或等于 C(X)，或给出一个使两者都不成立的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

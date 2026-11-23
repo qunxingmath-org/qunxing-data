@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000917",
-  "revision": 1,
-  "card_rev": "c05923a334b3574d",
+  "revision": 2,
+  "card_rev": "e6c84772d41f6edb",
   "title": "On two problems concerning the geodesic transversal number of graphs",
-  "title_en": null,
+  "title_en": "Exact geodesic transversal number of hypercubes and Hamming graphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C12",
+    "secondary": [
+      "05C38",
+      "05C65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图凸性（测地横截数）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "测地横截数",
+      "超立方体",
+      "Hamming 图",
+      "最短路",
+      "图凸性"
+    ],
+    "en": [
+      "geodesic transversal number",
+      "hypercube",
+      "Hamming graph",
+      "shortest paths",
+      "graph convexity"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +134,12 @@
     "note": "三四区·小问题；易证明~中等——原两问题已被原文否定回答（主线已闭），剩余为超立方体/Hamming图测地横截数的精确值；n较小时可计算验证+构造匹配，工作量三四区。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 τ_g(Q_n) 对每个 n 的精确值并证明，或把 Hamming 图的精确值（或匹配的上下界）确定下来。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

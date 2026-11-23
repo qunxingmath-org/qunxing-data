@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000238",
-  "revision": 1,
-  "card_rev": "e9beb1b753696c79",
+  "revision": 2,
+  "card_rev": "1f8ade60fae31dac",
   "title": "细分图的簿厚统一上界（原批次 A-055）",
-  "title_en": null,
+  "title_en": "Is the book thickness of 1-subdivisions of graphs uniformly bounded?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "existence"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C10",
+    "secondary": [
+      "05C62",
+      "68R10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/拓扑图论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "簿厚",
+      "边细分",
+      "拓扑图论",
+      "页数",
+      "统一上界"
+    ],
+    "en": [
+      "book thickness",
+      "edge subdivision",
+      "topological graph theory",
+      "page numbers",
+      "uniform bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；Blankenship–Oporowski 猜想（每边细分一次后簿厚有界）；与 stack/queue number 传统交织，2020-2026 邻域活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在常数 C 使每个图的 1-细分图都有簿厚 ≤ C，或构造一族图使其 1-细分图的簿厚无界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

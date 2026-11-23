@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001479",
-  "revision": 1,
-  "card_rev": "0d07744b3ae3a74f",
+  "revision": 2,
+  "card_rev": "f791b622f5dd8048",
   "title": "batch_I I-138：是否存在 Mirimanoff 素数 p（3^{p−1}≡1 mod p²）满足更强的 3^{p−1}≡",
-  "title_en": null,
+  "title_en": "Are there primes p with 3^{p-1} = 1 mod p^3 (a stronger Mirimanoff prime)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A07",
+    "secondary": [
+      "11A15",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / Wieferich 型素数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Mirimanoff 素数",
+      "Wieferich 型同余",
+      "模 p³",
+      "高阶同余",
+      "p 进赋值"
+    ],
+    "en": [
+      "Mirimanoff primes",
+      "Wieferich-type congruences",
+      "mod p cubed",
+      "higher congruences",
+      "p-adic valuations"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Marco Ripà 2026（新题）；0 回答；与 tetration 同余速度的自建等价联结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "找到满足 3^{p−1}≡1 (mod p³) 的素数 p，或证明这样的素数不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

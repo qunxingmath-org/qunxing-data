@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000175",
-  "revision": 1,
-  "card_rev": "e86af248cd1aef1f",
+  "revision": 2,
+  "card_rev": "ad063c865ba58067",
   "title": "Is R^omega normal in the box topology?",
-  "title_en": null,
+  "title_en": "Is the countable box product of the real line normal?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +91,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "54B10",
+    "secondary": [
+      "54D15",
+      "54A35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "一般拓扑/集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "箱拓扑",
+      "正规空间",
+      "可数乘积",
+      "分离公理",
+      "独立性"
+    ],
+    "en": [
+      "box topology",
+      "normal spaces",
+      "countable products",
+      "separation axioms",
+      "independence"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +123,12 @@
     "note": "一区二区·难度待定；难度高：1972 Rudin（CH 下正规）至今；2015 Roitman-Williams 综述确认开放；2021 Will Brian 转录确认仍开放；可能独立于 ZFC。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 ZFC 中证明 R^ω 的箱拓扑空间正规，或证明它不正规（或证明该问题在 ZFC 中不可判定）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

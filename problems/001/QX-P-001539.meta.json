@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001539",
-  "revision": 1,
-  "card_rev": "6cbd8202f9edfab7",
+  "revision": 2,
+  "card_rev": "e15eaf1cf5c52b65",
   "title": "19.111 真子群皆 p 阶循环的无恒等式无限群存在？",
-  "title_en": null,
+  "title_en": "Infinite groups with all proper subgroups cyclic of order p and no extra identities",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20E10",
+      "20E34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "周期群",
+      "真子群",
+      "群恒等式",
+      "Tarski 型群",
+      "指数 p"
+    ],
+    "en": [
+      "periodic groups",
+      "proper subgroups",
+      "group identities",
+      "Tarski-type groups",
+      "exponent p"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；是否存在无限群，其所有真子群都是 p 阶循环群，且不满足 x^p=1 及其推论之外的任何非平凡群恒等式？（真子群皆无限循…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个无限群，其所有真子群都是 p 阶循环群，且除 x^p=1 及其推论外不满足任何非平凡群恒等式；或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000386",
-  "revision": 1,
-  "card_rev": "6300222e558bbc41",
+  "revision": 2,
+  "card_rev": "98c87e209aea7b3a",
   "title": "batch_I I-026：超积 ∏_{d∈𝓓} HOD^{L[d]}/μ（μ 为 Turing 度锥上的 Martin 测度，",
-  "title_en": null,
+  "title_en": "What is the ultraproduct of HOD^{L[d]} over the Martin cone measure, in the light of modern inner models?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E45",
+    "secondary": [
+      "03E15",
+      "03E60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "集合论 / 内模型与决定性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "内模型",
+      "HOD",
+      "Martin 测度",
+      "超积",
+      "描述集合论"
+    ],
+    "en": [
+      "inner models",
+      "HOD",
+      "Martin measure",
+      "ultraproducts",
+      "descriptive set theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；Jayde SM 2025 提出；0 回答；高度专门的描述性内模型论问题（Cabal/KMS + FSIT 语境）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "把该超积在同构意义下确定为某个已知内模型（或给出其精确刻画），并证明它与这些候选内模型的关系。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000540",
-  "revision": 1,
-  "card_rev": "30b85a6ef8256baa",
+  "revision": 2,
+  "card_rev": "c8ef5a88f19681b9",
   "title": "21.48 有无界齐次拟特征标的群含非交换自由子群？",
-  "title_en": null,
+  "title_en": "Does an unbounded homogeneous quasimorphism force a non-abelian free subgroup?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F65",
+    "secondary": [
+      "20F67",
+      "20J05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟特征标",
+      "齐次拟特征标",
+      "非交换自由子群",
+      "有界上闭链",
+      "几何群论"
+    ],
+    "en": [
+      "quasimorphisms",
+      "homogeneous quasimorphisms",
+      "non-abelian free subgroups",
+      "bounded cohomology",
+      "geometric group theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Fournier-Facio）G 有无界且非同态的齐次拟特征标 G→R，则 G 必含非交换自由子群？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个带无界非平凡齐次拟特征标的群都含非交换自由子群，或给出一个反例群——它有这种拟特征标却不含非交换自由子群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

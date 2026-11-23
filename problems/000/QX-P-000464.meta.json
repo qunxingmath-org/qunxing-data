@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000464",
-  "revision": 1,
-  "card_rev": "2ed3f684b93a25a5",
+  "revision": 2,
+  "card_rev": "cf387ad388325dd1",
   "title": "Kourovka 1.40：两个正规幂零子群之积是否幂零群",
-  "title_en": null,
+  "title_en": "Is the product of two normal nilpotent subgroups a nil group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F18",
+    "secondary": [
+      "20E15",
+      "20D35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幂零群",
+      "正规子群",
+      "乘积",
+      "nil 群",
+      "Kourovka 问题集"
+    ],
+    "en": [
+      "nilpotent groups",
+      "normal subgroups",
+      "products of subgroups",
+      "nil groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；有限群乘积结构经典问题，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明两个正规幂零子群之积必为 nil 群（每个元素幂零），或给出一个乘积中存在非幂零元素的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

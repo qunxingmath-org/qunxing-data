@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001383",
-  "revision": 1,
-  "card_rev": "84f67f2cae190380",
+  "revision": 2,
+  "card_rev": "19963195257770b0",
   "title": "Zowe 次线性映射的线性控制问题（AMM 6051）",
-  "title_en": null,
+  "title_en": "Is every sublinear map dominated pointwise by a linear map?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -91,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "46A22",
+    "secondary": [
+      "46A40",
+      "46Bxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "泛函分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "次线性映射",
+      "线性控制",
+      "有序向量空间",
+      "Hahn–Banach"
+    ],
+    "en": [
+      "sublinear maps",
+      "linear domination",
+      "ordered vector spaces",
+      "Hahn-Banach"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +123,12 @@
     "note": "三四区·小问题；命题清晰，反例或证明均可系统尝试；与 Zowe 自己的三明治定理（需条件）相邻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意 X、Y 与次线性 p 都存在这样的线性 T，或给出一个具体的反例，其中不存在任何满足 Tx≤p(x) 的线性映射。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

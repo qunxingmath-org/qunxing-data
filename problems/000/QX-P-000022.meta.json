@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000022",
-  "revision": 1,
-  "card_rev": "538cb5ccfb8322f5",
+  "revision": 2,
+  "card_rev": "a28a332b1f716c79",
   "title": "Erdos P158: B_2[2] sequences must have liminf |A∩[1,N]|/sqrt(N) = 0",
-  "title_en": null,
+  "title_en": "Erdos P158: must infinite B_2[2] sequences have liminf |A cap [1,N]|/sqrt(N) equal to 0?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11B50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / Sidon集",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "B_2[2] 序列",
+      "表示函数",
+      "下极限",
+      "Sidon 型条件",
+      "Erdős 问题"
+    ],
+    "en": [
+      "B_2[2] sequences",
+      "representation function",
+      "limit inferior",
+      "Sidon-type conditions",
+      "Erdos problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +134,12 @@
     "note": "一区二区·易证明；A层理由: 与Erdős已证明的Sidon(B_2)情形仅差表示数1→2一步; 上界构造只需密度1/2量级, 数值搜索有限; 判别工具(表示函数计数)初等。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个无穷 B_2[2] 集都满足 liminf |A∩[1,N]|/√N = 0；或构造一个无穷 B_2[2] 集使该下极限为正。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

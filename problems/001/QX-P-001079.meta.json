@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001079",
-  "revision": 1,
-  "card_rev": "1c1bf0330f7d764e",
+  "revision": 2,
+  "card_rev": "42e97ca0631290d9",
   "title": "Kourovka 6.10：GLn(C) 中两个 p-元素生成的无限子群结构",
-  "title_en": null,
+  "title_en": "Two p-elements generating an infinite subgroup of GL(n,C) when p > 2n+1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20H20",
+    "secondary": [
+      "20F50",
+      "20G20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-元素",
+      "一般线性群",
+      "无限子群",
+      "结构刻画"
+    ],
+    "en": [
+      "p-elements",
+      "general linear groups",
+      "infinite subgroups",
+      "structure theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 p>2n+1 且 x,y 为 GLₙ(C) 中 p-元素、⟨x,y⟩ 无限的前提下，给出 ⟨x,y⟩ 的结构描述或完整分类。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

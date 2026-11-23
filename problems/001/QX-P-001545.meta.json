@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001545",
-  "revision": 1,
-  "card_rev": "91bc62a487526476",
+  "revision": 2,
+  "card_rev": "9a87520df5cd1ee1",
   "title": "20.29 类尺寸集同于 S^n（中心化）⇒ G≅S^n？",
-  "title_en": null,
+  "title_en": "Does the class size set of S^n determine the direct power among centreless groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E45",
+    "secondary": [
+      "20C15",
+      "20D05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "类尺寸集",
+      "直幂",
+      "中心化",
+      "单群",
+      "特征标次数"
+    ],
+    "en": [
+      "class size sets",
+      "direct powers",
+      "centreless groups",
+      "simple groups",
+      "character degrees"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；S 非交换单群。若中心化有限群 G 的类尺寸集与直幂 S^n 相同，是否 G≅S^n？（S=A₅ 已证。）…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意非交换有限单群 S 与任意 n，cs(G)=cs(Sⁿ) 且 Z(G)=1 都迫使 G≅Sⁿ，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

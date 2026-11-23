@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002119",
-  "revision": 1,
-  "card_rev": "2bca2b4586cd00ea",
+  "revision": 2,
+  "card_rev": "14244c97024f6cdb",
   "title": "推广极限泛函的构造与分类（MO#345164 已定位）",
-  "title_en": null,
+  "title_en": "Generalized limit functionals on sequences: construction and classification",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "construct"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "40A05",
+    "secondary": [
+      "46A99",
+      "54A20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "分析/逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "广义极限",
+      "部分函数",
+      "序列空间",
+      "Cesàro 平均",
+      "移位不变"
+    ],
+    "en": [
+      "generalized limits",
+      "partial functions",
+      "sequence spaces",
+      "Cesaro means",
+      "shift invariance"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出与普通极限相容的广义极限的完整分类，刻画可被赋值的序列类与可保持的性质，并证明其中的存在与不可能结论。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

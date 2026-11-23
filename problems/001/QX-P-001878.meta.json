@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001878",
-  "revision": 1,
-  "card_rev": "5f15abc8038979af",
+  "revision": 2,
+  "card_rev": "bac38136efca6863",
   "title": "平面弦二部相交图紧渐近",
-  "title_en": null,
+  "title_en": "Tight asymptotics for bipartite intersection graphs of two planar chord families",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C10",
+      "05C30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "弦图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "弦图",
+      "二部相交图",
+      "平面弦",
+      "紧渐近"
+    ],
+    "en": [
+      "chord diagrams",
+      "bipartite intersection graphs",
+      "planar chords",
+      "tight asymptotics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定两族平面弦所成二部相交图的边数紧渐近，并给出达到该阶的构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

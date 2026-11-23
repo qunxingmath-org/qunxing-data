@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001212",
-  "revision": 1,
-  "card_rev": "99e9bb1660e71c27",
+  "revision": 2,
+  "card_rev": "aa1a35c51c8ad53e",
   "title": "Rado覆盖问题",
-  "title_en": null,
+  "title_en": "Rado's covering problem: the largest guaranteed disjoint subfamily of squares",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "05B40",
+      "90C27"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Rado 覆盖问题",
+      "轴平行正方形",
+      "不交子族",
+      "覆盖常数",
+      "离散几何"
+    ],
+    "en": [
+      "Rado's covering problem",
+      "axis-parallel squares",
+      "disjoint subfamilies",
+      "covering constants",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体常数问题（不交子方块最大覆盖面积比例）；上下界收窄是标准三四区模式。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 Rado 常数 c 的精确值（给出匹配的下界论证与达到该值的构造），或把现有上下界的差距显著缩小。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

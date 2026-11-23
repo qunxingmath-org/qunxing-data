@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001536",
-  "revision": 1,
-  "card_rev": "44ae9f41f8bbd579",
+  "revision": 2,
+  "card_rev": "47b9694e70e24024",
   "title": "19.96 自由亚交换群中本原元素/基集合是否一阶可定义",
-  "title_en": null,
+  "title_en": "Are primitive elements and bases of a free metabelian group first-order definable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C60",
+    "secondary": [
+      "20F16",
+      "20E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "一阶可定义",
+      "自由亚交换群",
+      "本原元素",
+      "基",
+      "模型论"
+    ],
+    "en": [
+      "first-order definability",
+      "free metabelian groups",
+      "primitive elements",
+      "bases",
+      "model theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；秩 r≥2 的自由亚交换群 M：a) 本原元素集 P 是否一阶可定义？b) 基的集合是否一阶可定义？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 a) 与 b) 分别判定是否一阶可定义，肯定时给出显式公式并证明其刻画正确，否定时证明不存在这样的公式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

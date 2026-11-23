@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000429",
-  "revision": 1,
-  "card_rev": "5a31ee95a1a3f09a",
+  "revision": 2,
+  "card_rev": "b9be8bc5bab80e65",
   "title": "p−2 的 Ω 奇偶（Green 问题 64）",
-  "title_en": null,
+  "title_en": "Are there infinitely many primes p with Omega(p-2) odd?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N37",
+    "secondary": [
+      "11N05",
+      "11P32"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "解析数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素因子计数",
+      "Liouville 函数",
+      "素数",
+      "奇偶性",
+      "解析数论"
+    ],
+    "en": [
+      "number of prime factors",
+      "Liouville function",
+      "primes",
+      "parity",
+      "analytic number theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；Ω(p−2) 奇偶型问题——位于筛法 parity 障碍边缘，Chen 定理型工具恰好够不到奇偶，难但目标单一，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在无穷多素数 p 使 Ω(p−2) 为奇数，或证明这样的素数只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000485",
-  "revision": 1,
-  "card_rev": "1216683293b6404e",
+  "revision": 2,
+  "card_rev": "0e22aea1d4f38825",
   "title": "不变子空间问题（无穷维 Hilbert 空间）",
-  "title_en": null,
+  "title_en": "The invariant subspace problem for bounded operators on separable Hilbert space",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "47A15",
+    "secondary": [
+      "46B03",
+      "47B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算子理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不变子空间",
+      "有界算子",
+      "Hilbert 空间",
+      "Banach 空间反例",
+      "算子理论"
+    ],
+    "en": [
+      "invariant subspaces",
+      "bounded operators",
+      "Hilbert spaces",
+      "Banach space counterexamples",
+      "operator theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -105,7 +127,12 @@
     "note": "一区二区·难度待定；Hilbert 空间 ISP——著名基准难题；Enflo 2023 声称证明未获公认（DISPUTED 记录）；Banach 空间反例（Read/Enflo）已明，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明可分无穷维复 Hilbert 空间上每个有界算子都有非平凡闭不变子空间，或构造出一个没有这种子空间的有界算子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

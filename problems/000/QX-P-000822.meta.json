@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000822",
-  "revision": 1,
-  "card_rev": "669a2fa70d84f7ee",
+  "revision": 2,
+  "card_rev": "7d709138c8c13324",
   "title": "Deck Reconstruction for Restricted Word Classes",
-  "title_en": null,
+  "title_en": "Deck reconstruction thresholds for restricted classes of binary words",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68R15",
+    "secondary": [
+      "05A05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合重构（k-deck）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "k-deck",
+      "重构问题",
+      "二元词",
+      "子序列",
+      "阈值"
+    ],
+    "en": [
+      "k-deck",
+      "reconstruction problem",
+      "binary words",
+      "subsequences",
+      "threshold"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -111,7 +133,12 @@
     "note": "三四区·小问题；中等——一般二元词 k-deck 重构阈值 k(n) 精确阶未定；原文处理 restricted 类并改进 weak 版上界，Dudík–Schulman 模板引理方法可延续；k-deck 文献线活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定一般二元词重构阈值 k(n) 的精确阶（上下界相差常数倍），或显著改进弱重构的现有上界并把受限类的结论推广到一般词。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

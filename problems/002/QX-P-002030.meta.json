@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002030",
-  "revision": 1,
-  "card_rev": "2043d90566b7c991",
+  "revision": 2,
+  "card_rev": "e16a8d41160d1cac",
   "title": "nilCoxeter 硬 Lefschetz（A 型已解）",
-  "title_en": null,
+  "title_en": "Hard Lefschetz for nilCoxeter algebras beyond type A",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E10",
+    "secondary": [
+      "16G99",
+      "20F55"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "代数组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "nilCoxeter 代数",
+      "硬 Lefschetz",
+      "Coxeter 群",
+      "分级维数",
+      "A 型"
+    ],
+    "en": [
+      "nilCoxeter algebras",
+      "hard Lefschetz",
+      "Coxeter groups",
+      "graded dimensions",
+      "type A"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有非 A 型的有限 Coxeter 群，给出合适的 Lefschetz 元并验证乘法为同构，从而证明硬 Lefschetz 性质；或指出某个型使它失效并给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000163",
-  "revision": 1,
-  "card_rev": "e639f39b869acce2",
+  "revision": 2,
+  "card_rev": "c2023fc6d8cfd613",
   "title": "Kourovka 9.52：fp 有限秩可解群共轭问题可解？",
-  "title_en": null,
+  "title_en": "Is the conjugacy problem solvable for finitely presented soluble groups of finite rank?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "20F16",
+      "20E99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可解群",
+      "有限秩",
+      "共轭问题",
+      "有限表现",
+      "可判定性"
+    ],
+    "en": [
+      "soluble group",
+      "finite rank",
+      "conjugacy problem",
+      "finitely presented",
+      "decidability"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +159,12 @@
     "note": "一区二区·难度待定；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在判定这类群中任意两元素是否共轭的算法，或证明不存在这样的算法（给出不可判定的例子）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

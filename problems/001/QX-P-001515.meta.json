@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001515",
-  "revision": 1,
-  "card_rev": "b258c82aafeed2fd",
+  "revision": 2,
+  "card_rev": "f8555b455f9e12b9",
   "title": "间隔博弈（Interval Game）在各凸性下的复杂性（表述已补全）",
-  "title_en": null,
+  "title_en": "Complexity of the interval game under geodesic, monophonic and l_k convexities",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q17",
+    "secondary": [
+      "05C57",
+      "91A43"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图凸性/组合博弈",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "图凸性",
+      "博弈复杂性",
+      "PSPACE-完全",
+      "interval game",
+      "hull game"
+    ],
+    "en": [
+      "graph convexities",
+      "game complexity",
+      "PSPACE-completeness",
+      "interval game",
+      "hull game"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Costa–Almeida–Sampaio 2026-09（v5）结论节明示：hull 博弈在 geodesic/monophonic/ℓ_k 凸性全部 PSPACE-完全，而 interval game CIG_C 的复杂性对每种所涉凸性均开放——精确单问、与方法（Sprague–Grundy、Kayles 归约）可延续；另有 nim_ℓ2(P_n) 与 Couples-are-Forever 的 99.97% 相合之谜。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 geodesic、monophonic、ℓ_k 分别确定区间博弈的判定复杂性（给出多项式算法或完全的困难性证明）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

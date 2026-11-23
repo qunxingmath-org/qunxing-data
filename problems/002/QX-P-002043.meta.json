@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002043",
-  "revision": 1,
-  "card_rev": "85ad58bf6bf51f44",
+  "revision": 2,
+  "card_rev": "ccd3b2f5ea5b5476",
   "title": "Cohen 扩张添 Kurepa 树？",
-  "title_en": null,
+  "title_en": "Does a Cohen extension add a Kurepa tree?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E35",
+    "secondary": [
+      "03E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Kurepa 树",
+      "Cohen 扩张",
+      "力迫法",
+      "独立性",
+      "组合集合论"
+    ],
+    "en": [
+      "Kurepa tree",
+      "Cohen forcing",
+      "forcing",
+      "independence",
+      "combinatorial set theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任一 Cohen 扩张中都存在 Kurepa 树，或证明存在一个 Cohen 扩张使其中没有 Kurepa 树。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

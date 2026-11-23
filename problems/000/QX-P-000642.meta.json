@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000642",
-  "revision": 1,
-  "card_rev": "501eebd30cb8bf0a",
+  "revision": 2,
+  "card_rev": "43493fd7d1b1b2ad",
   "title": "18.7 Out(B(m,n)) 完全性（n≥665 奇）",
-  "title_en": null,
+  "title_en": "Is the outer automorphism group of the free Burnside group B(m,n) complete?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F50",
+    "secondary": [
+      "20F28",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由 Burnside 群",
+      "外自同构群",
+      "完全群",
+      "内自同构"
+    ],
+    "en": [
+      "free Burnside groups",
+      "outer automorphism groups",
+      "complete groups",
+      "inner automorphisms"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +137,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对一切奇 n≥665 与 m>2，Out(B(m,n)) 的中心平凡且自同构全为内自同构；或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

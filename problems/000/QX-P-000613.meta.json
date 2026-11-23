@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000613",
-  "revision": 1,
-  "card_rev": "271ba4098b58bd23",
+  "revision": 2,
+  "card_rev": "47d0b169b09faa1f",
   "title": "（来源 C-020）多联骨牌剖分重构：f(P) ≤ A+3 猜想（P 的两份副本剖分后可重组为旋转 45°、放大 √2 的副本）",
-  "title_en": null,
+  "title_en": "Polyomino dissection: is f(P) <= A+3 for the 45-degree, sqrt(2)-scaled tiling conjecture?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C20",
+    "secondary": [
+      "05B45",
+      "52B45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "铺砌/剖分（组合几何）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "多联骨牌",
+      "剖分重排",
+      "最小块数",
+      "相似铺砌",
+      "45 度旋转"
+    ],
+    "en": [
+      "polyominoes",
+      "dissections",
+      "minimum piece count",
+      "similar tilings",
+      "45-degree rotation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +125,12 @@
     "note": "三四区·小问题；具体猜想、简单参数空间：可先攻特殊类（单洞、L 形、凸 polyomino）建立 f(P) 的上界，或否定猜想找反例。三四区级构造/反例问题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个无洞多联骨牌都有 f(P) ≤ A+3（并给出达到的剖分），或给出一个使该上界不成立的多联骨牌。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

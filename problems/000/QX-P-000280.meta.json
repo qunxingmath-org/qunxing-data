@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000280",
-  "revision": 1,
-  "card_rev": "9f1ffd2e9272d745",
+  "revision": 2,
+  "card_rev": "73e9aa4a073671a2",
   "title": "四指数猜想",
-  "title_en": null,
+  "title_en": "The four exponentials conjecture",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J81",
+    "secondary": [
+      "11J86",
+      "11J85"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（超越数论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超越数论",
+      "四指数猜想",
+      "Q-线性无关",
+      "指数函数"
+    ],
+    "en": [
+      "transcendental number theory",
+      "four exponentials conjecture",
+      "Q-linear independence",
+      "exponential function"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +115,12 @@
     "note": "一区二区·难度待定；Schneider/Lang 线核心开放；六指数已证，四指数开放；与 Gelfond–Schneider 工具箱的边界清晰，新工具（相干 sheaf/猜想算术几何）路径存在但未冻结。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在上述条件下至少有一个 exp(x_i y_j) 是超越数，或构造出使四个值全为代数的 (x₁,x₂,y₁,y₂)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

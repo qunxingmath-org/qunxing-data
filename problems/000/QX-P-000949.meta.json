@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000949",
-  "revision": 1,
-  "card_rev": "fd23e0cdd0ec75ba",
+  "revision": 2,
+  "card_rev": "7234eefa7f6c35f8",
   "title": "Kourovka 20.61：G 虚拟紧特殊，则任意元素的中心化子也虚拟紧特殊吗",
-  "title_en": null,
+  "title_en": "Kourovka 20.61: are centralizers in virtually compact special groups virtually compact special?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F65",
+    "secondary": [
+      "20E26",
+      "20F67"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "虚拟紧特殊群",
+      "中心化子",
+      "有限指标子群",
+      "特殊复形",
+      "子群封闭性"
+    ],
+    "en": [
+      "virtually compact special groups",
+      "centralizers",
+      "finite-index subgroups",
+      "special complexes",
+      "subgroup closure"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任意虚拟紧特殊群的任意元素中心化子都虚拟紧特殊，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

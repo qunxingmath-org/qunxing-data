@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001931",
-  "revision": 1,
-  "card_rev": "af16ae5bac20ac07",
+  "revision": 2,
+  "card_rev": "e1e9fd0240c78bbd",
   "title": "k⁴+1 型 3-伪素数",
-  "title_en": null,
+  "title_en": "Can k^4+1 be a base-3 Fermat pseudoprime?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A51",
+    "secondary": [
+      "11A07",
+      "11Y11"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "费马伪素数",
+      "k⁴+1",
+      "素性检验",
+      "同余"
+    ],
+    "en": [
+      "Fermat pseudoprimes",
+      "polynomials of degree four",
+      "primality testing",
+      "congruences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个使 N=k⁴+1 合并且 3^{N−1}≡1 (mod N) 的 k，或证明这样的 k 不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

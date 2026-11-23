@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001995",
-  "revision": 1,
-  "card_rev": "9075d1d953a4c47a",
+  "revision": 2,
+  "card_rev": "f8b27919f3a89293",
   "title": "Zudilin P_n(q) 系数非负性（题面修正）",
-  "title_en": null,
+  "title_en": "Nonnegativity of the coefficients of Zudilin's polynomials P_n(q)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05A30",
+    "secondary": [
+      "05A15",
+      "33D45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "多项式",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "系数非负性",
+      "q-多项式",
+      "Borwein 猜想",
+      "Zudilin 多项式",
+      "组合恒等式"
+    ],
+    "en": [
+      "coefficient nonnegativity",
+      "q-polynomials",
+      "Borwein's conjecture",
+      "Zudilin polynomials",
+      "combinatorial identities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n 证明 P_n(q) 的每个系数都非负（给出组合解释或明显非负的展开），或找出一个 n 与一个幂次使该系数为负。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

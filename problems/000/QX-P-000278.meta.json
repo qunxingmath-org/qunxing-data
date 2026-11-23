@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000278",
-  "revision": 1,
-  "card_rev": "157835d80a6392e6",
+  "revision": 2,
+  "card_rev": "1b93cb64f72197b4",
   "title": "Foulkes plethysm 猜想：h_b[h_a]−h_a[h_b] Schur-正",
-  "title_en": null,
+  "title_en": "Foulkes' plethysm conjecture: h_b[h_a] - h_a[h_b] is Schur-positive",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +94,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05E05",
+    "secondary": [
+      "05E10",
+      "20C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数组合（对称函数）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "对称函数",
+      "复合运算",
+      "Schur 正性",
+      "完全齐次对称函数"
+    ],
+    "en": [
+      "symmetric functions",
+      "plethysm",
+      "Schur positivity",
+      "complete homogeneous symmetric functions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +124,12 @@
     "note": "一区二区·难度待定；1950s 提出的 plethysm 正性猜想；orbit harmonics 方法（2026-02 2602.12623）与不可约个数线（2025-03）活跃；a≤b 一般开放、小 a 情形已证——方法路线明确可续接。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 1≤a≤b 证明 h_b[h_a]−h_a[h_b] 的每个 Schur 系数都非负，或给出系数为负的 (a,b)。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

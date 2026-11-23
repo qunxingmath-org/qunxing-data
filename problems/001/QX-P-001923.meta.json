@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001923",
-  "revision": 1,
-  "card_rev": "2014adada8cb755e",
+  "revision": 2,
+  "card_rev": "48e572ebdffd590c",
   "title": "4D 飞行器单推进器任意转动？",
-  "title_en": null,
+  "title_en": "Can a four-dimensional rigid body with one thruster reach any rotation?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "70Q05",
+    "secondary": [
+      "93B05",
+      "70E15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "力学/控制",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "四维刚体",
+      "单推进器",
+      "可控性",
+      "姿态控制"
+    ],
+    "en": [
+      "4D rigid body",
+      "single thruster",
+      "controllability",
+      "attitude control"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在明确的动力学模型下，证明单推进器可把四维刚体驱动到任意姿态，或给出不可达的姿态与证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001720",
-  "revision": 1,
-  "card_rev": "ef4d09232d4db918",
+  "revision": 2,
+  "card_rev": "cdc7f65f569f2093",
   "title": "青蛙游戏满二叉树根可解？",
-  "title_en": null,
+  "title_en": "Frog game: is the root of a perfect binary tree solvable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "compute"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -80,11 +83,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C57",
+    "secondary": [
+      "05C05",
+      "91A43"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "博弈图",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "青蛙游戏",
+      "树",
+      "跳跃规则",
+      "可解性",
+      "满二叉树"
+    ],
+    "en": [
+      "frog game",
+      "trees",
+      "jumping rule",
+      "solvability",
+      "perfect binary trees"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -92,7 +115,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满二叉树的根顶点可解（或指出哪些高度可解），或给出一个高度使根顶点不可解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000325",
-  "revision": 1,
-  "card_rev": "d198f1594181d140",
+  "revision": 2,
+  "card_rev": "6b4612ab785b2125",
   "title": "1-形式的\"Picard 型\"命题（Elsner；原批次 A-086）",
-  "title_en": null,
+  "title_en": "Something like Picard for 1-forms: behaviour near an essential singularity",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +99,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "30D35",
+    "secondary": [
+      "30D30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "分析/几何（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Picard 定理",
+      "本质奇点",
+      "1-形式",
+      "留数",
+      "值分布"
+    ],
+    "en": [
+      "Picard theorem",
+      "essential singularity",
+      "1-forms",
+      "residues",
+      "value distribution"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +130,12 @@
     "note": "一区二区·难度待定；Riemann 曲面上 1-形式积分与零点集的 Picard 型命题；小众。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 1-形式在本质奇点附近所猜的 Picard 型定理并证明，或给出一个反例说明类比不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

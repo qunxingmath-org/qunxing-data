@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001865",
-  "revision": 1,
-  "card_rev": "57e9aeaff041e65e",
+  "revision": 2,
+  "card_rev": "cd94c83ee4467767",
   "title": "横贯 d-度阈值一致性",
-  "title_en": null,
+  "title_en": "Consistency of d-degree thresholds for transversal tight Hamilton cycles",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C65",
+    "secondary": [
+      "05C45",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "超图 Hamilton",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "d-度",
+      "横贯",
+      "紧 Hamilton 圈",
+      "阈值一致性"
+    ],
+    "en": [
+      "d-degree",
+      "transversals",
+      "tight Hamilton cycles",
+      "threshold consistency"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明各 d-度下横贯紧 Hamilton 圈的阈值彼此相容（强条件蕴含弱条件），或指出存在冲突的 d 取值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

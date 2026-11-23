@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000097",
-  "revision": 1,
-  "card_rev": "84fdc764364dce32",
+  "revision": 2,
+  "card_rev": "59187f80aab9cea3",
   "title": "3-弧连通有向图根式入出树不交猜想（EGRES）",
-  "title_en": null,
+  "title_en": "Arc-disjoint spanning out- and in-arborescences in 3-arc-connected digraphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C20",
+    "secondary": [
+      "05C40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "有向图（连通性）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "弧连通度",
+      "生成树形",
+      "弧不交",
+      "有向图",
+      "出树与入树"
+    ],
+    "en": [
+      "arc connectivity",
+      "arborescence",
+      "arc-disjoint",
+      "digraph",
+      "in-tree and out-tree"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +141,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 3-弧连通 ⇒ 弧不交生成出树+入树同根；EGRES 开放题"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个弧连通度至少 3 的有限有向图中，任取根 r 都存在以 r 为根的弧不交生成出树与生成入树；或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

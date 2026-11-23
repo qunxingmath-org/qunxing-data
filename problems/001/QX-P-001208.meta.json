@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001208",
-  "revision": 1,
-  "card_rev": "2d3e0c814887215e",
+  "revision": 2,
+  "card_rev": "846775c1c8ced22d",
   "title": "Property B最小族大小m(n)",
-  "title_en": null,
+  "title_en": "Property B: the minimum number of edges m(n) in a non-2-colourable n-uniform hypergraph",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C65",
+    "secondary": [
+      "05C15",
+      "05D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "极值组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Property B",
+      "超图染色",
+      "n-一致超图",
+      "最小边数",
+      "非 2-可染"
+    ],
+    "en": [
+      "Property B",
+      "hypergraph colouring",
+      "n-uniform hypergraphs",
+      "minimum number of edges",
+      "non-2-colourable"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体数值问题（m(4)=23已知，m(5)=?起）；SAT/ILP搜索m(5)为经典可行目标（已有大量部分搜索）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 m(5)（或更多的 m(n)）的精确值，并对一般 n 给出 m(n) 的正确渐近阶；两侧都需要匹配的构造与下界证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

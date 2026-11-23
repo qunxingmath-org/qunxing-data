@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002160",
-  "revision": 1,
-  "card_rev": "5039c7d4287e3924",
+  "revision": 2,
+  "card_rev": "2fd83552167c5c64",
   "title": "Freiling 追加对称公理命运（联合相容性）",
-  "title_en": null,
+  "title_en": "Can Freiling's additional symmetry axioms hold jointly?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E50",
+    "secondary": [
+      "03E35",
+      "28A05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Freiling 对称公理",
+      "零测集",
+      "贫集",
+      "连续统假设",
+      "相容性"
+    ],
+    "en": [
+      "Freiling's axiom of symmetry",
+      "null sets",
+      "meager sets",
+      "continuum hypothesis",
+      "consistency"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个使 A-null 与 A-meagre 同时成立的 ZFC 模型（例如某个力迫扩张），或证明二者在 ZFC 中不相容。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

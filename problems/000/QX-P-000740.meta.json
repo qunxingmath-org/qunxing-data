@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000740",
-  "revision": 1,
-  "card_rev": "2e432362fe48d2e3",
+  "revision": 2,
+  "card_rev": "0d4a270b204b5872",
   "title": "Erdős #993：树/森林独立集序列单峰性",
-  "title_en": null,
+  "title_en": "Erdos #993: unimodality of the independence polynomial of trees",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -111,11 +113,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C31",
+    "secondary": [
+      "05C69",
+      "05C05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "独立集多项式",
+      "单峰性",
+      "树",
+      "森林",
+      "组合多项式"
+    ],
+    "en": [
+      "independence polynomial",
+      "unimodality",
+      "trees",
+      "forests"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -123,7 +144,12 @@
     "note": "三四区·小问题；孤立、具体的小命题（多为有限验证/显式目标），工作量对应 SCI 三/四区短文。 边独立序列版 Schwenk 已证单峰——注记区分"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个树（及森林）证明其独立集计数序列单峰，或给出一个不单峰的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

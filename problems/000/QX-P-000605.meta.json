@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000605",
-  "revision": 1,
-  "card_rev": "e3e2c5bc6ba59af0",
+  "revision": 2,
+  "card_rev": "6767d093265b3427",
   "title": "（来源 C-012）对每个 k 是否存在（素数）p 使 √p 的连分数周期恰为 k？",
-  "title_en": null,
+  "title_en": "For every k, is there a prime p whose sqrt(p) has continued fraction period exactly k?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -102,11 +104,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A55",
+    "secondary": [
+      "11D09",
+      "11N32"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（连分数/Pell 方程）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "连分数",
+      "周期长度",
+      "Pell 方程",
+      "二次无理数"
+    ],
+    "en": [
+      "continued fractions",
+      "period length",
+      "Pell equations",
+      "quadratic irrationals"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -114,7 +134,12 @@
     "note": "三四区·小问题；整数版已解决后，剩余素数版为孤立小问题：周期 k 的素数 p 存在性等价于特定 Pell 型多项式在素数上的取值（如 k=3 族 √(25k²+14k+2) 的素数值）。三四区级目标：对固定小 k（k=1 已依赖 Landau 问题，可从 k≥2 或特定族入手）证明无穷多素数或至少存在性；Bunyakovsky 型不可解但 Iwaniec 型半素数结果可达。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 k 都存在素数 p 使 √p 的连分数周期恰为 k，或找出某个 k 使这样的素数不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001471",
-  "revision": 1,
-  "card_rev": "f1830ff728e1b68a",
+  "revision": 2,
+  "card_rev": "7da4fe55ab788814",
   "title": "batch_I I-111：是否存在光滑射影复簇 X：对角线有上同调分解但无 Chow 理论分解？（Q 系数下由 Bloch 猜想两",
-  "title_en": null,
+  "title_en": "A cohomological but not Chow-theoretic decomposition of the diagonal",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14C25",
+    "secondary": [
+      "14F43",
+      "14C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数几何 / Chow群与分解",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "对角分解",
+      "Chow 群",
+      "Bloch 猜想",
+      "上同调",
+      "光滑射影簇"
+    ],
+    "en": [
+      "decomposition of the diagonal",
+      "Chow groups",
+      "Bloch's conjecture",
+      "cohomology",
+      "smooth projective varieties"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；Radagast 2025 提出；0 回答；提问者自述\"as far as I know this question is still open\"。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个光滑射影复簇 X，使其对角线有上同调分解但无 Chow 理论分解；或证明（在 Q 系数下）两者恒等价。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001201",
-  "revision": 1,
-  "card_rev": "9a1844cfd140329b",
+  "revision": 2,
+  "card_rev": "85b1c98f328b34cf",
   "title": "Ryser猜想（无大阶循环Hadamard矩阵）",
-  "title_en": null,
+  "title_en": "Ryser's conjecture: there is no circulant Hadamard matrix of order greater than 4",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B20",
+    "secondary": [
+      "15B34",
+      "05B10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合矩阵论/差集",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "循环 Hadamard 矩阵",
+      "Ryser 猜想",
+      "差集",
+      "Barker 序列",
+      "±1 矩阵"
+    ],
+    "en": [
+      "circulant Hadamard matrices",
+      "Ryser's conjecture",
+      "difference sets",
+      "Barker sequences",
+      "plus-minus-one matrices"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -112,7 +134,12 @@
     "note": "三四区·小问题；C层：仅阶1、4已知；阶必为4u²且素因子强限制（Leung–Schmidt）；2025-08 arXiv:2509.00619新限制——'加强阶的结构排除'与'Barker序列分类'双路径。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 n>4 证明不存在 n 阶循环 Hadamard 矩阵，或给出一个阶大于 4 的循环 Hadamard 矩阵。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

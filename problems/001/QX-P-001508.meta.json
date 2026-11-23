@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001508",
-  "revision": 1,
-  "card_rev": "e64f2e33094a94f4",
+  "revision": 2,
+  "card_rev": "3720c39c8264c8d3",
   "title": "C_p^6 与 C_p^7 是否为 DCI-群（Pálfy Problem 1）",
-  "title_en": null,
+  "title_en": "Are the elementary abelian groups C_p^6 and C_p^7 DCI-groups?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C25",
+    "secondary": [
+      "20D15",
+      "20B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数图论/群论（Cayley 同构）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "DCI-群",
+      "Cayley 有向图",
+      "同构问题",
+      "初等交换 p-群",
+      "rank"
+    ],
+    "en": [
+      "DCI-groups",
+      "Cayley digraphs",
+      "isomorphism problem",
+      "elementary abelian p-groups",
+      "rank"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -119,7 +142,12 @@
     "note": "三四区·小问题；Feng–Kovács 2018（JCTA 157）证 C_p^r DCI 对 r≤5；C_2^6 非 CI（Lewis–Nowitz）；C_3^8 非 CI（Spiga）；一般 p 的 r=6,7 情形明确开放且\"小而具体\"——单参数阶、可用计算+群论混合攻；Pálfy 2026 survey 明确列为 Problem 1。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "判定对哪些素数 p，C_p^6（以及 C_p^7）是 DCI-群，并说明使 C_p^r 为 DCI-群的最大 r 是否有界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

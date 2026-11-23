@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000574",
-  "revision": 1,
-  "card_rev": "5beefa3879e3ad8c",
+  "revision": 2,
+  "card_rev": "d8e0e4bb10273497",
   "title": "14.7 亏格 g≥2 曲面群增长率的下确界",
-  "title_en": null,
+  "title_en": "Computing the infimum of the growth rates of closed surface groups of genus g >= 2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F69",
+    "secondary": [
+      "20F65",
+      "57M07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "曲面群",
+      "生成元集",
+      "球计数",
+      "增长速率",
+      "下确界"
+    ],
+    "en": [
+      "surface groups",
+      "generating sets",
+      "ball counting",
+      "growth rate",
+      "infimum"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 g≥2 算出 ω(Γ_g) 的确切值，并证明该下确界确实取到（或不取到）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

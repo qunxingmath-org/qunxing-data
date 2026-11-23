@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000033",
-  "revision": 1,
-  "card_rev": "d2753d76928cc12e",
+  "revision": 2,
+  "card_rev": "9250ed9341d18c91",
   "title": "Green 问题 41：覆盖 R² 需多少个 P_ε 的旋转拷贝",
-  "title_en": null,
+  "title_en": "Green problem 41: how many rotations of the striped set P_eps cover the plane?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "05B40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/覆盖",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "覆盖问题",
+      "旋转拷贝",
+      "带状集",
+      "离散几何",
+      "量级估计"
+    ],
+    "en": [
+      "covering problems",
+      "rotated copies",
+      "striped sets",
+      "discrete geometry",
+      "growth rate"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·易证明；固定 ε 时的覆盖计数是有限型问题；P_ε 结构显式（到整数格距离 ≤ε 的并带）；已有部分覆盖构造可延续；难度直觉'中-小'。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明所需的旋转角度数有限并给出它随 ε 变化的确切量级；或证明对某个 ε 无论取多少个旋转角度都无法覆盖平面。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

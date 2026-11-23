@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001609",
-  "revision": 1,
-  "card_rev": "373d8f20baf69a65",
+  "revision": 2,
+  "card_rev": "94ba9f94e6528262",
   "title": "21.145 Thompson 群 F 拟等距于 F×Z / F×F？",
-  "title_en": null,
+  "title_en": "Is Thompson's group F quasi-isometric to F x Z or to F x F?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F65",
+    "secondary": [
+      "20F69",
+      "20F67"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Thompson 群 F",
+      "拟等距",
+      "Cayley 图",
+      "粗几何",
+      "直积"
+    ],
+    "en": [
+      "Thompson's group F",
+      "quasi-isometry",
+      "Cayley graphs",
+      "coarse geometry",
+      "direct products"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Bridson）Thompson 群 F 是否拟等距于 a) F×Z？ b) F×F？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "分别判定 F 是否拟等距于 F×Z 与 F×F（给出拟等距映射，或给出不可拟等距的不变量证明）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

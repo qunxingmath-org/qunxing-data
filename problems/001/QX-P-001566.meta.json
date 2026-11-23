@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001566",
-  "revision": 1,
-  "card_rev": "74c93b23c216d68d",
+  "revision": 2,
+  "card_rev": "2a0540a213242e8f",
   "title": "20.115 Wilde 猜想：χ(x)≠0 ⇒ o(x) | |G|/χ(1)",
-  "title_en": null,
+  "title_en": "Wilde's conjecture: does chi(x) nonzero force o(x) to divide |G|/chi(1)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Wilde 猜想",
+      "不可约特征标",
+      "元素阶",
+      "整除性",
+      "特征标零点"
+    ],
+    "en": [
+      "Wilde's conjecture",
+      "irreducible characters",
+      "element orders",
+      "divisibility",
+      "character zeros"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；G 有限群，χ 不可约复特征标，x∈G 且 χ(x)≠0。是否 o(x) 整除 |G|/χ(1)？可解群已证；(o(x)…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有有限群 G、不可约特征标 χ 与元素 x 证明 o(x) 整除 |G|/χ(1)，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

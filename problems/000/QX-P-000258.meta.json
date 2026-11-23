@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000258",
-  "revision": 1,
-  "card_rev": "4a5ee6745f42dcd5",
+  "revision": 2,
+  "card_rev": "690505ed738a00a7",
   "title": "Hartshorne 猜想：P^n (n≥7) 无秩 2 不可分解丛",
-  "title_en": null,
+  "title_en": "Hartshorne's conjecture: no indecomposable rank-2 bundles on P^n for n at least 7",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14F05",
+    "secondary": [
+      "14D20",
+      "14J60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "代数几何（向量丛）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "向量丛",
+      "射影空间",
+      "秩 2 丛",
+      "不可分解",
+      "直和分解"
+    ],
+    "en": [
+      "vector bundles",
+      "projective space",
+      "rank-2 bundles",
+      "indecomposable",
+      "direct sum decomposition"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -104,7 +126,12 @@
     "note": "一区二区·难度待定；1974 年提出、代数几何核心猜想；n=7,8 情形与二次丛分类相连有部分进展；若以 Horrocks–Mumford 类新构造反例或证明均为顶刊级——难度未冻结但活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对一切 n≥7，P^n 上每个秩 2 向量丛都可分解为两个线丛的直和，或在某个 n≥7 上造出一个不可分解的秩 2 丛。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,20 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001185",
-  "revision": 1,
-  "card_rev": "1f12c2c9f16c091c",
+  "revision": 2,
+  "card_rev": "f492deb64ab20eed",
   "title": "Kirby《Elementary Problems in Mathematics》开放小题组（4.127 等）",
-  "title_en": null,
+  "title_en": "Selected elementary open problems from Kirby's problem collection (e.g. 4.127)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "special_case"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
-  "statement_fidelity": "audited",
+  "statement_fidelity": "unknown",
   "statement_audit": {
     "by": "agent",
     "date": "2026-11-21",
@@ -72,7 +74,9 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 登记条目：只有清单编号，没有具体题面。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": {
@@ -83,11 +87,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "00A07",
+    "secondary": [
+      "00-XX"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "综合（初等问题集）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "问题集",
+      "初等开放问题",
+      "待拆分",
+      "题面缺",
+      "登记条目"
+    ],
+    "en": [
+      "problem collections",
+      "elementary open problems",
+      "to be split",
+      "incomplete statement",
+      "registry entry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；Kirby 清单中的具体小开放题（4.127/5.10/5.16/1.54 等）——多为初等可验证型，逐题需回 Kirby 原文核对表述后可拆条入池（本条为组登记，二轮拆分）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "先按出处原文逐条补齐各小题的准确表述（如 4.127），再把每条登记为独立的卡；就本条而言，需明确它包含哪些具体问题并各自给出答案。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

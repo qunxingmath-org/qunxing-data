@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002146",
-  "revision": 1,
-  "card_rev": "7109d09d2147b554",
+  "revision": 2,
+  "card_rev": "28e64cba9d9f5e4c",
   "title": "八字结 Dehn 填充表示刚性（除有限条斜率外已证）",
-  "title_en": null,
+  "title_en": "Rigidity of Dehn filling representations of the figure-eight knot exterior",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove",
+    "classify"
+  ],
+  "answer_type": "proof",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57M50",
+    "secondary": [
+      "57K31",
+      "57M05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "纽结理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "八字结",
+      "Dehn 填充",
+      "表示刚性",
+      "双曲结构",
+      "特征簇"
+    ],
+    "en": [
+      "figure-eight knot",
+      "Dehn filling",
+      "representation rigidity",
+      "hyperbolic structures",
+      "character varieties"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有但有限条填充斜率证明其表示（或双曲结构）由流形唯一决定，并对剩余有限条斜率逐一确定其确切情形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

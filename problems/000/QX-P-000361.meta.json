@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000361",
-  "revision": 1,
-  "card_rev": "cc9e632c35d54783",
+  "revision": 2,
+  "card_rev": "6ce81d2df311c7d8",
   "title": "Chvátal韧性猜想（t₀-韧图Hamilton性）",
-  "title_en": null,
+  "title_en": "Chvátal's toughness conjecture: does t-toughness force a Hamiltonian cycle for some fixed t?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C45",
+    "secondary": [
+      "05C42"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "韧性",
+      "Hamilton 圈",
+      "连通性",
+      "Chvátal 猜想",
+      "图论"
+    ],
+    "en": [
+      "toughness",
+      "Hamiltonian cycle",
+      "connectivity",
+      "Chvátal's conjecture",
+      "graph theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +133,12 @@
     "note": "一区二区·难度待定；B层：2-tough⇒Hamiltonian为最强已知；下界9/4（Thomassen构造）；特殊类持续证明（chordal、无 induced P4∪P1等）——'证明t-tough某具体t'是清晰的B层目标。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个常数 t₀ 并证明每个 t₀-韧图都含 Hamilton 圈，或证明不存在这样的常数 t₀。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

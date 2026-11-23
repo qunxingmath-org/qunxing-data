@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001811",
-  "revision": 1,
-  "card_rev": "4be14a6871537022",
+  "revision": 2,
+  "card_rev": "3ef1e2458d53d120",
   "title": "自幂和为完全平方？",
-  "title_en": null,
+  "title_en": "For which n is 1^1 + 2^2 + ... + n^n a perfect square?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "compute",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D09",
+    "secondary": [
+      "11A99",
+      "11B50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自幂和",
+      "完全平方",
+      "模算术",
+      "计算搜索"
+    ],
+    "en": [
+      "self-powers",
+      "perfect squares",
+      "modular arithmetic",
+      "computational search"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出使 1¹+2²+…+nⁿ 为完全平方的全部正整数 n 并证明没有其他解（可用模论证），或给出新的解。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000465",
-  "revision": 1,
-  "card_rev": "17f6b7aae1ab005c",
+  "revision": 2,
+  "card_rev": "a4ea83ff5f7d54eb",
   "title": "Kourovka 1.74：极小拓扑群分类",
-  "title_en": null,
+  "title_en": "Kourovka 1.74: classifying all minimal topological groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "22A05",
+    "secondary": [
+      "54H11",
+      "20E99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑群",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "极小拓扑群",
+      "拓扑群分类",
+      "Hausdorff",
+      "闭子群",
+      "Kourovka 问题集"
+    ],
+    "en": [
+      "minimal topological groups",
+      "classification of groups",
+      "Hausdorff",
+      "closed subgroups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；极小拓扑群（真闭子群皆离散）分类——拓扑群论活跃方向（2010s 后大量新例），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出极小拓扑群的完整分类（或可判定其是否极小的结构判据），并证明分类的完备性与互不重复性。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

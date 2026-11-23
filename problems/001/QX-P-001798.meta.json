@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001798",
-  "revision": 1,
-  "card_rev": "13903ba0579ff00a",
+  "revision": 2,
+  "card_rev": "fd9549d56ebf07ed",
   "title": "镜面凸体遮光问题",
-  "title_en": null,
+  "title_en": "Blocking light with mirrored convex objects",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52A40",
+    "secondary": [
+      "78A05",
+      "52C99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何光学/凸几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "凸体",
+      "镜面反射",
+      "遮光",
+      "几何光学"
+    ],
+    "en": [
+      "convex bodies",
+      "specular reflection",
+      "light blocking",
+      "geometric optics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出使指定区域完全无光的镜面凸体摆放，或证明无论怎样摆放总有光线到达该区域。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

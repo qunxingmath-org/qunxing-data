@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001177",
-  "revision": 1,
-  "card_rev": "a0b5750226e28c29",
+  "revision": 2,
+  "card_rev": "a3659579edb7d86a",
   "title": "X+Y 排序问题（Fredman 下界与上界差距）",
-  "title_en": null,
+  "title_en": "Sorting the n^2 pairwise sums X+Y: closing the gap below n^2 log n comparisons",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q25",
+    "secondary": [
+      "68P10",
+      "68W40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "算法",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "比较排序",
+      "两两和",
+      "X+Y 排序",
+      "下界",
+      "比较次数"
+    ],
+    "en": [
+      "comparison sorting",
+      "pairwise sums",
+      "X+Y sorting",
+      "lower bounds",
+      "number of comparisons"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；排序 {x_i+y_j} 的比较次数：Fredman 1976 下界 Ω(n²) 与平凡 O(n² log n) 间差距开放；TOPP 编目经典；改进任意 log 因子即为论文成果。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出只用 o(n² log n) 次比较的排序算法，或证明下界本质上是 Ω(n² log n)（即在量级上无法再省）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

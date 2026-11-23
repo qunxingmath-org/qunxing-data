@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001567",
-  "revision": 1,
-  "card_rev": "5d80a3ab3cfa06e6",
+  "revision": 2,
+  "card_rev": "94a4b5440ad8c5f7",
   "title": "20.124 自由群上像为导群的 Rota–Baxter 算子",
-  "title_en": null,
+  "title_en": "A Rota-Baxter operator on a free group whose image is the derived subgroup",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E05",
+    "secondary": [
+      "16T25",
+      "20F12"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Rota–Baxter 算子",
+      "自由群",
+      "导群",
+      "函数方程",
+      "构造"
+    ],
+    "en": [
+      "Rota-Baxter operators",
+      "free groups",
+      "derived subgroups",
+      "functional equations",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；非交换自由群 F 上是否存在 Rota–Baxter 算子 B（B(g)B(h)=B(gB(g)hB(g)⁻¹)）使其像…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在非交换自由群 F 上显式构造一个像恰为 [F,F] 的 Rota–Baxter 算子，或证明这样的算子不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

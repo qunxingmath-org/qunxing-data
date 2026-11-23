@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001589",
-  "revision": 1,
-  "card_rev": "b9811b448cb59b6a",
+  "revision": 2,
+  "card_rev": "12be10814ed7a33e",
   "title": "21.94 按 GK 图同构型可识别的有限群有无穷多？",
-  "title_en": null,
+  "title_en": "Are there infinitely many finite groups recognizable by the isomorphism type of their GK graph?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D60",
+    "secondary": [
+      "05C25",
+      "20D05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Gruenberg–Kegel 图",
+      "可识别性",
+      "素图",
+      "有限群",
+      "同构型"
+    ],
+    "en": [
+      "Gruenberg-Kegel graph",
+      "recognizability",
+      "prime graphs",
+      "finite groups",
+      "isomorphism types"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；G 可识别（按 Gruenberg–Kegel 图的同构型）：无 H≄G 使 GK(H)≅GK(G)。是否存在无穷多两两…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出无穷多个两两不同构、且都由其 GK 图同构型识别的有限群，或证明这样的群只有有限多个。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

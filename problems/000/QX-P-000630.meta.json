@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000630",
-  "revision": 1,
-  "card_rev": "15cc66ba81198781",
+  "revision": 2,
+  "card_rev": "ba40a94efe39793c",
   "title": "17.91 可解群与极大子群派生长之差的绝对常数界",
-  "title_en": null,
+  "title_en": "How far can the derived length drop from a finite soluble group to a maximal subgroup?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20F16",
+      "20D30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可解群",
+      "导列长度",
+      "极大子群",
+      "绝对常数"
+    ],
+    "en": [
+      "soluble groups",
+      "derived length",
+      "maximal subgroups",
+      "absolute constants"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "判定是否存在这样的绝对常数 k（存在则给出证明），并确定满足要求的最小 k。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

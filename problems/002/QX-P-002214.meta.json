@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002214",
-  "revision": 1,
-  "card_rev": "0e5b5f669ed44184",
+  "revision": 2,
+  "card_rev": "603973059ba1a946",
   "title": "a^b+b^a 表示唯一性",
-  "title_en": null,
+  "title_en": "Uniqueness of representations a^b + b^a",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "disprove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D99",
+    "secondary": [
+      "11A99",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幂和",
+      "表示唯一性",
+      "整数方程",
+      "丢番图方程"
+    ],
+    "en": [
+      "exponential sums",
+      "uniqueness of representation",
+      "integer equations",
+      "Diophantine equations"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明除 a 与 b 互换外 a^b + b^a 的取值互不相同,或给出两个不同无序对给出相同和的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

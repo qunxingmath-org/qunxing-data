@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001551",
-  "revision": 1,
-  "card_rev": "1b60562eeb4043df",
+  "revision": 2,
+  "card_rev": "5dbddb8c6e91e7e2",
   "title": "20.48 有非平凡划分且具素数阶无不动点自同构的 p-群是否指数 p",
-  "title_en": null,
+  "title_en": "Must a p-group with a nontrivial partition and a fixed-point-free automorphism have exponent p?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-群",
+      "划分",
+      "无不动点自同构",
+      "Hughes 子群",
+      "指数"
+    ],
+    "en": [
+      "p-groups",
+      "partitions",
+      "fixed-point-free automorphisms",
+      "Hughes subgroup",
+      "exponent"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；有限 p-群 P 有非平凡划分（等价 H_p(P)≠P）且容许素数阶无不动点自同构，是否必有指数 p？（Lewis 提出…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足这两条假设的 p-群必指数为 p，或给出一个反例 p-群与其无不动点自同构。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

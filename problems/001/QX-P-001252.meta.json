@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001252",
-  "revision": 1,
-  "card_rev": "2ba4fbe8de0f857f",
+  "revision": 2,
+  "card_rev": "9d3683f10d7f7c64",
   "title": "Euclid–Mullin序列缺失素数刻画",
-  "title_en": null,
+  "title_en": "Which primes never appear in the Euclid-Mullin sequence?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "compute"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A41",
+    "secondary": [
+      "11Y55",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "序列/素数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Euclid-Mullin 序列",
+      "最小素因子",
+      "素数出现",
+      "缺失素数",
+      "序列"
+    ],
+    "en": [
+      "Euclid-Mullin sequence",
+      "least prime factor",
+      "primes appearing",
+      "missing primes",
+      "sequences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +138,12 @@
     "note": "三四区·小问题；C层：具体序列问题——Euclid–Mullin序列是否含全部素数（G-275）与哪些素数永不出现（G-369, A216227）合并；序列生成+素因子分解计算可及。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "刻画永不出现在 Euclid-Mullin 序列中的素数集合（或判定该序列是否为全体素数的一个排列）；或给出一个新的永不出现的素数并证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

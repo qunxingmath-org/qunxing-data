@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001407",
-  "revision": 1,
-  "card_rev": "6077ddc53b5e47a4",
+  "revision": 2,
+  "card_rev": "db412bb71e39e81f",
   "title": "Spinetto 设施选址 LP 非 0-1 极点（SIAM 76-7）",
-  "title_en": null,
+  "title_en": "Spinetto: fractional optimal extreme points in the facility location LP",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value",
+    "classify"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -92,11 +95,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "90C27",
+    "secondary": [
+      "90B80",
+      "90C05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "组合优化",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "设施选址",
+      "线性规划松弛",
+      "极点",
+      "整数规划",
+      "0-1 解"
+    ],
+    "en": [
+      "facility location",
+      "LP relaxation",
+      "extreme points",
+      "integer programming",
+      "0-1 solutions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -104,7 +127,12 @@
     "note": "三四区·小问题；LP 极点结构可计算小情形；多面体组合（UFL polytope）现代文献丰富，本题具体 (a)(b) 未见专门解决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定存在分数最优极点的最小 (n,k) 并证明更小的规模都不行，同时给出非 0-1 极点的组合刻画。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

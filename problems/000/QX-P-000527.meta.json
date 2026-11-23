@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000527",
-  "revision": 1,
-  "card_rev": "6801a986197a2a97",
+  "revision": 2,
+  "card_rev": "dc13e2b55def6d21",
   "title": "19.27 广义 Baumslag–Solitar 群同构问题可判定？",
-  "title_en": null,
+  "title_en": "Is the isomorphism problem for generalized Baumslag-Solitar groups decidable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "20E08",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "广义 Baumslag–Solitar 群",
+      "同构问题",
+      "可判定性",
+      "Bass–Serre 理论",
+      "树作用"
+    ],
+    "en": [
+      "generalized Baumslag-Solitar groups",
+      "isomorphism problem",
+      "decidability",
+      "Bass-Serre theory",
+      "actions on trees"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Dudkin，广为人知）GBS 群（作用于树、顶点与边稳定子均无限循环）的同构问题是否可判定？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个算法，对任意两个广义 Baumslag–Solitar 群的有限展示判定它们是否同构（并证明算法终止且正确），或证明该问题不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

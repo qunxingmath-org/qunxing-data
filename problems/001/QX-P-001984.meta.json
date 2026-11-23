@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001984",
-  "revision": 1,
-  "card_rev": "e522234ed6e4e0a6",
+  "revision": 2,
+  "card_rev": "7a649099f803b1ca",
   "title": "Ruelle 算子谱单性通有性（题面修正）",
-  "title_en": null,
+  "title_en": "C1-generic spectral simplicity for Ruelle transfer operators",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37D35",
+    "secondary": [
+      "37A30",
+      "37E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Ruelle 算子",
+      "谱单性",
+      "通有性",
+      "热力学形式",
+      "转移算子"
+    ],
+    "en": [
+      "Ruelle operator",
+      "spectral simplicity",
+      "genericity",
+      "thermodynamic formalism",
+      "transfer operators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对 C¹ 稠密（或稠密 Gδ）的一族映射与势函数，Ruelle 算子的最大特征值都是单的，或给出一个开集使其中每个算子的谱都出现重根。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

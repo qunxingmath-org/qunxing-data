@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002044",
-  "revision": 1,
-  "card_rev": "d52b2a80b848b1fe",
+  "revision": 2,
+  "card_rev": "970e5c8222771ea3",
   "title": "R^{2n} 无穷远标准辛形式猜想",
-  "title_en": null,
+  "title_en": "Is a symplectic form on R^2n that is standard at infinity necessarily standard?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53D35",
+    "secondary": [
+      "53D05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "辛拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "辛形式",
+      "无穷远行为",
+      "辛同构",
+      "标准形式",
+      "辛拓扑"
+    ],
+    "en": [
+      "symplectic forms",
+      "behaviour at infinity",
+      "symplectomorphism",
+      "standard form",
+      "symplectic topology"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 R^{2n} 上任何在无穷远处等于标准形式的辛形式都与标准形式辛同构，或构造一个不能这样拉回的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

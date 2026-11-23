@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000504",
-  "revision": 1,
-  "card_rev": "9f61c419ef23facb",
+  "revision": 2,
+  "card_rev": "6704100e63618769",
   "title": "ACC⁰ 电路下界（Williams 2011 后的剩余推进）",
-  "title_en": null,
+  "title_en": "Sharper explicit lower bounds against ACC0 circuits after Williams' NEXP result",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q17",
+    "secondary": [
+      "68Q15",
+      "94C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "电路复杂度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "ACC⁰ 电路",
+      "电路下界",
+      "NEXP",
+      "显式函数",
+      "去随机化"
+    ],
+    "en": [
+      "ACC0 circuits",
+      "circuit lower bounds",
+      "NEXP",
+      "explicit functions",
+      "derandomization"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；ACC⁰ [m]-电路类对显式函数的下界精确刻画——Williams 2011 (NEXP⊄ACC⁰) 后进阶方向（NEXP⁺、E^NP 等），方法路线明确但技术重，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明比现有结果更强的显式下界（例如对更大的电路类或更强的规模函数证明 NEXP 不可计算），或给出反例说明所期望的下界不可能成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

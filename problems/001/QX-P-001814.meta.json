@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001814",
-  "revision": 1,
-  "card_rev": "f49131f7570a9b1c",
+  "revision": 2,
+  "card_rev": "46b224affa7b824b",
   "title": "2↑↑∞ + 3 是否被素数整除（2-adic 形式化）",
-  "title_en": null,
+  "title_en": "Is there a prime p with 2^^infinity = -3 (mod p)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A07",
+    "secondary": [
+      "11A41",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幂塔",
+      "Knuth 上箭头",
+      "模 p 极限",
+      "不动点"
+    ],
+    "en": [
+      "power towers",
+      "Knuth arrows",
+      "limits modulo p",
+      "fixed points"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "找出一个素数 p 使 2↑↑∞≡−3 (mod p)，或证明对所有素数 p 该同余都不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

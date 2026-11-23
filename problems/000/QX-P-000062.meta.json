@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000062",
-  "revision": 1,
-  "card_rev": "97f2b9177fb8af38",
+  "revision": 2,
+  "card_rev": "773387b66ac59ac7",
   "title": "18.56 |H/H_G|≤2 的 2-群有指标4交换子群？",
-  "title_en": null,
+  "title_en": "Kourovka 18.56 (Cutolo): must a 2-group with |H/H_G| <= 2 for all H have an abelian subgroup of index 4?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20D25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "2-群",
+      "正规核",
+      "交换子群",
+      "指数 4",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "2-groups",
+      "normal core",
+      "abelian subgroups",
+      "index four",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +138,12 @@
     "note": "一区二区·易证明；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个满足 |H/H_G| ≤ 2（对所有 H ≤ G）且 |G| > 2 的有限 2-群都有指数 4 的交换子群；或给出一个反例群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

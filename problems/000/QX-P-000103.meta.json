@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000103",
-  "revision": 1,
-  "card_rev": "8fe908405729655a",
+  "revision": 2,
+  "card_rev": "397b56ef0e362ef0",
   "title": "拟阵循环排序猜想（EGRES）",
-  "title_en": null,
+  "title_en": "Cyclic ordering of matroid elements: every block of rank consecutive elements is a basis",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B35",
+    "secondary": [
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拟阵论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟阵",
+      "基",
+      "秩",
+      "循环序",
+      "不交基划分"
+    ],
+    "en": [
+      "matroid",
+      "basis",
+      "rank",
+      "cyclic ordering",
+      "partition into bases"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +141,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 k 个不交基 ⇒ 存在循环序使每段 rank 长连续段均为基"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明只要 E 能分成 k 个不交基就存在这样的循环序，或给出一个无法这样排序的拟阵。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

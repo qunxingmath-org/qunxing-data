@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000295",
-  "revision": 1,
-  "card_rev": "ac15c088ea3f843e",
+  "revision": 2,
+  "card_rev": "c0ce7981477fe259",
   "title": "5 维与 6 维 kissing number（40 vs 44；72 vs 75）",
-  "title_en": null,
+  "title_en": "The kissing numbers in dimensions 5 and 6",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "value"
+  ],
+  "answer_type": "value",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -79,11 +81,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "94B75",
+      "52A40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何（球形码）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "kissing 数",
+      "球堆积",
+      "球形码",
+      "高维几何"
+    ],
+    "en": [
+      "kissing number",
+      "sphere packing",
+      "spherical codes",
+      "high-dimensional geometry"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -91,7 +111,12 @@
     "note": "一区二区·难度待定；d=4 已封（24, Musin 2003），d=5,6 是下一梯队；Delsarte/SDP 界与构造差距 4 和 3；SDP 方法（Cohn–Elkies 精化）可续接，中等规模优化目标明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 k(5) 与 k(6) 的精确值（给出匹配的构造与上界证明），或至少把现有区间收窄到只剩一个取值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

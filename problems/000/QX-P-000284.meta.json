@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000284",
-  "revision": 1,
-  "card_rev": "19f8470d827d0631",
+  "revision": 2,
+  "card_rev": "4c113f921766de2c",
   "title": "Ryser r-部超图覆盖猜想：τ ≤ (r−1)ν",
-  "title_en": null,
+  "title_en": "Ryser's conjecture: tau at most (r-1) nu for r-partite r-uniform hypergraphs",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -85,11 +88,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C65",
+    "secondary": [
+      "05D15",
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "超图/极值组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超图",
+      "点覆盖数",
+      "匹配数",
+      "Ryser 猜想"
+    ],
+    "en": [
+      "hypergraphs",
+      "vertex cover number",
+      "matching number",
+      "Ryser's conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -97,7 +118,12 @@
     "note": "一区二区·难度待定；r=3 已证（Abu-Khazneh 等 2018 线），一般 r 开放；τ/ν 比值改进（Aharoni–Haxell 型）方法活跃；每推进一个 r 或常数即成论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有 r≥3 和所有 r-部 r-一致超图证明 τ≤(r−1)ν，或给出一个 τ>(r−1)ν 的超图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

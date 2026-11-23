@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001608",
-  "revision": 1,
-  "card_rev": "1929ede90ef96b5d",
+  "revision": 2,
+  "card_rev": "fe442b7a58f9266f",
   "title": "21.141 多项式循环融合的自由 pro-p 积的 pro-p 相干性",
-  "title_en": null,
+  "title_en": "Coherence of free pro-p products of coherent pro-p groups with polycyclic amalgamation",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "20E06",
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "pro-p 群",
+      "相干性",
+      "自由积",
+      "多项式循环融合",
+      "有限表现"
+    ],
+    "en": [
+      "pro-p groups",
+      "coherence",
+      "free products",
+      "polycyclic amalgamation",
+      "finite presentability"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Zalesskii）G=G₁⨿_H G₂ 为相干 pro-p 群的自由 pro-p 积、融合 H 多项式循环。G 是否…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明这样的自由 pro-p 积一定相干，或给出一个不相干的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

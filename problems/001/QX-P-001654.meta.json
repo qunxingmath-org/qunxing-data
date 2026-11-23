@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001654",
-  "revision": 1,
-  "card_rev": "55e9c094cb938f04",
+  "revision": 2,
+  "card_rev": "0fe8fa984e605b5f",
   "title": "Landau n²+1 无穷素数（第四问题）",
-  "title_en": null,
+  "title_en": "Landau's fourth problem: are there infinitely many primes of the form n^2+1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N32",
+    "secondary": [
+      "11N05",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "n²+1 素数",
+      "Landau 问题",
+      "多项式素数",
+      "无穷性",
+      "筛法"
+    ],
+    "en": [
+      "primes of the form n^2+1",
+      "Landau's problems",
+      "polynomial primes",
+      "infinitude"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -73,7 +95,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明形如 n²+1 的素数有无穷多个，或证明只有有限多个（并说明其证明方式）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001664",
-  "revision": 1,
-  "card_rev": "358486c59d633db7",
+  "revision": 2,
+  "card_rev": "f41f2d7e6c8dd68d",
   "title": "素数间隔/log n 极限点集（EP#5；Me20 最强后冷冻）",
-  "title_en": null,
+  "title_en": "Erdos problem 5: limit points of normalized prime gaps",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "asymptotic"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41",
+      "11N36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数间隔",
+      "极限点集",
+      "归一化",
+      "Erdős 问题",
+      "素数分布"
+    ],
+    "en": [
+      "prime gaps",
+      "limit points",
+      "normalization",
+      "prime distribution",
+      "Erdos problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -79,7 +102,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定归一化素数间隔的极限点集 S（特别是证明 S=[0,∞]），或给出 S 的一个尚未被排除的点的构造。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

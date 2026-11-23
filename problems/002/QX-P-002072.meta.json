@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002072",
-  "revision": 1,
-  "card_rev": "8290bc13c0926199",
+  "revision": 2,
+  "card_rev": "639ee27cf032c8b3",
   "title": "sec 迭代正项比例 → 1/√(2π)",
-  "title_en": null,
+  "title_en": "Does the proportion of positive terms in the sec iteration tend to 1/sqrt(2 pi)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "26A18",
+    "secondary": [
+      "37A05",
+      "37E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正割迭代",
+      "正项比例",
+      "迭代分布",
+      "初值无关性",
+      "数值证据"
+    ],
+    "en": [
+      "secant iteration",
+      "proportion of positive terms",
+      "orbit distribution",
+      "independence of initial value",
+      "numerical evidence"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意整数 a₁，正项所占比例都收敛到 1/√(2π)，或给出一个初值使其极限不存在或取别的值。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000397",
-  "revision": 1,
-  "card_rev": "71bbdc18f6da1174",
+  "revision": 2,
+  "card_rev": "6a250dc4aae72dae",
   "title": "batch_I I-055：f(k)=max_{|S|=k} χ(平面, S)（S 为 k 个正数的禁距集）。Erdős：f(k",
-  "title_en": null,
+  "title_en": "Optimal growth bounds for the chromatic number of the plane with k forbidden distances",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "52C10",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何 / 染色（Erdős 多禁距变体）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hadwiger–Nelson 问题",
+      "平面染色",
+      "禁距集",
+      "色数",
+      "渐近界"
+    ],
+    "en": [
+      "Hadwiger–Nelson problem",
+      "chromatic number of the plane",
+      "forbidden distances",
+      "asymptotic bounds"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Matthew Kahle 2020 提出；回答（票4）引专文 Problems 节确认\"very much an open problem\"；Exoo–Ismailescu 近年结果。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 f(k) 的增长阶估计（如证明 f(k)/k→∞ 并配上匹配的上下界），或改进现有的上界 7^k 与相应下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

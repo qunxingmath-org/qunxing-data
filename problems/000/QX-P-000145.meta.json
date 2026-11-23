@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000145",
-  "revision": 1,
-  "card_rev": "2e8349b8481b652f",
+  "revision": 2,
+  "card_rev": "b4568c24e2132afa",
   "title": "Kourovka 21.1：cn = sup |X_{n,φ}(H)|/|H|（φⁿ=id，X≠H）",
-  "title_en": null,
+  "title_en": "Bounding c_n below 1 for the product-of-order-n-automorphism sets X_{n,phi}(H)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "decide"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20D60",
+      "20E34"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自同构",
+      "乘积映射",
+      "Hughes–Thompson 子群",
+      "上确界",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "automorphism",
+      "product map",
+      "Hughes-Thompson subgroup",
+      "supremum",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：2025-11 MO 专帖；Abdollahi-Male 新题"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在 (a) 或 (b) 的条件下确有 c_n<1，或给出反例使 c_n=1。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

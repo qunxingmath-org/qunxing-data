@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000816",
-  "revision": 1,
-  "card_rev": "f23a5a5f10f350e7",
+  "revision": 2,
+  "card_rev": "451445bb5ea18a61",
   "title": "TPTP GEO075-2：Tarski 几何中等距反射性公理的相依性",
-  "title_en": null,
+  "title_en": "Is reflexivity of equidistance derivable in Tarski's geometry?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03B30",
+    "secondary": [
+      "51M05",
+      "03B35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何基础/一阶逻辑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Tarski 几何",
+      "等距公理",
+      "公理相依性",
+      "一阶几何",
+      "无限模型"
+    ],
+    "en": [
+      "Tarski's geometry",
+      "equidistance axiom",
+      "axiom independence",
+      "first-order geometry",
+      "infinite model"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；公理相依性判定： 有限模型工具（Mace4/Infinox）已排除有限反例；正方向可用 Tarski 公理的重写/几何构造论证（Quaife 1989 已自动化大半个 Tarski 发展）——路径明确、目标单一。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明其余 Tarski 公理能推出 xy≡yx，或给出一个满足其余公理、却不满足该反射性的（无限）模型。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001475",
-  "revision": 1,
-  "card_rev": "8aa82cca46203a2f",
+  "revision": 2,
+  "card_rev": "be70e434ad93d98c",
   "title": "batch_I I-124：g_n 的记录（极大）间隔序列高度不规则：为何 g_{n+1}=g_n+2 型相邻关系稀少？能否初等证明",
-  "title_en": null,
+  "title_en": "Irregularity of the sequence of maximal prime gaps",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "asymptotic"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41",
+      "11Bxx"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 素数间隔",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数间隔",
+      "极大间隔",
+      "记录值",
+      "不规则性",
+      "上极限"
+    ],
+    "en": [
+      "prime gaps",
+      "maximal gaps",
+      "record values",
+      "irregularity",
+      "limit superior"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Adam Rubinson 2025 提出；1 回答（启发式）；与排除项 EP#4/6 相邻但对象不同（最大间隔序列内部结构）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 limsup(g_{n+1}−g_n)=∞（这里 g_n 为极大素数间隔序列），并说明为何不存在形如 g_{N+k}=g_N+2k 的无穷等差段。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

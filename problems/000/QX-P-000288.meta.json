@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000288",
-  "revision": 1,
-  "card_rev": "65125c37e8ab2a40",
+  "revision": 2,
+  "card_rev": "b3a7cf3d301dbb7b",
   "title": "Sidorenko 同态猜想",
-  "title_en": null,
+  "title_en": "Sidorenko's conjecture: homomorphism density is at least the edge density to the power e(H)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -88,11 +91,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C80",
+      "05D40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/graphon",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "同态密度",
+      "图极限",
+      "Sidorenko 猜想",
+      "二部图"
+    ],
+    "en": [
+      "homomorphism density",
+      "graphons",
+      "Sidorenko's conjecture",
+      "bipartite graphs"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -100,7 +121,12 @@
     "note": "一区二区·难度待定；二元图同态密度不等式，quasirandom 纲领核心；已知大量图族（树、偶圈、路径、双维矩形等），一般开放；batchJ 注记 evand 清单有'已被反驳'叙事与 CB 矛盾——Sidorenko 社区公认开放，取开放（[CHECK] 已释：叙事未获证实）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个二部图 H 和每个 graphon W 证明该不等式，或给出一个使其不成立的二部图 H 与 W。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001913",
-  "revision": 1,
-  "card_rev": "f5f9f1fbcb9989b6",
+  "revision": 2,
+  "card_rev": "e0a183a0a1f481d5",
   "title": "言语自同构=内幂自同构？",
-  "title_en": null,
+  "title_en": "Is every verbal automorphism of a group an inner (power) automorphism?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F28",
+    "secondary": [
+      "20D45",
+      "20E36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "语词自同构",
+      "内自同构",
+      "正规子群",
+      "换位子"
+    ],
+    "en": [
+      "verbal automorphisms",
+      "inner automorphisms",
+      "normal subgroups",
+      "commutators"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个群 G 都有 Va(G)=Inn(G)，或给出一个群使命题失败。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

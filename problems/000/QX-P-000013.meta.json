@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000013",
-  "revision": 1,
-  "card_rev": "7bc8d7c1a328c9aa",
+  "revision": 2,
+  "card_rev": "f0006e6d528dbb09",
   "title": "Erdos P68: irrationality of sum 1/(n!-1)",
-  "title_en": null,
+  "title_en": "Is the series sum of 1/(n! - 1) irrational?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J72",
+    "secondary": [
+      "11B65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 无理性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无理性",
+      "阶乘",
+      "级数",
+      "Erdős 问题"
+    ],
+    "en": [
+      "irrationality",
+      "factorials",
+      "series",
+      "Erdős problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +132,12 @@
     "note": "一区二区·易证明；A层理由: 表述完全初等; 收敛极快故小数位可任意扩展验证(OEIS A331373已列数值); 证明工具为标准无理性界(diophantine approximation of factorial-type series), Hančl学派对该级数族有系统性方法; 目标单一。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该和为无理数，或证明它是有理数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001928",
-  "revision": 1,
-  "card_rev": "171fc81f3864b913",
+  "revision": 2,
+  "card_rev": "9ef4cd42173f6de5",
   "title": "进制重解释保持超越性",
-  "title_en": null,
+  "title_en": "Does reinterpreting the base of a number preserve transcendence?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J81",
+    "secondary": [
+      "11A63",
+      "11J72"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论/超越",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超越数",
+      "进制展开",
+      "按位重解释",
+      "正规数"
+    ],
+    "en": [
+      "transcendental numbers",
+      "base expansions",
+      "digit reinterpretation"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +98,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意整数 a,b>1，x 超越当且仅当 R_{a,b}(x) 超越；或给出一个方向的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

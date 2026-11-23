@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001059",
-  "revision": 1,
-  "card_rev": "d3d6e3186ca95588",
+  "revision": 2,
+  "card_rev": "90bcc84ca712e9fb",
   "title": "Kourovka 1.31：RF+子群极大条件⇒几乎多循环？",
-  "title_en": null,
+  "title_en": "Residually finite groups with the maximal condition on subgroups: almost polycyclic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E15",
+    "secondary": [
+      "20F19",
+      "20E26"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "剩余有限",
+      "子群极大条件",
+      "几乎多循环",
+      "Noether 群",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "residual finiteness",
+      "maximal condition on subgroups",
+      "almost polycyclic groups",
+      "Noetherian groups",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足条件的群必几乎多循环，或构造一个子群满足极大条件、剩余有限但不几乎多循环的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

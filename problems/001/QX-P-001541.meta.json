@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001541",
-  "revision": 1,
-  "card_rev": "14e7672d3794c3e5",
+  "revision": 2,
+  "card_rev": "95a676fc4e5d088a",
   "title": "20.12 Bergman 唯一 n-重乘积性质传导",
-  "title_en": null,
+  "title_en": "Does the unique n-fold product property all reduce to the case n = 2?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C07",
+    "secondary": [
+      "20F05",
+      "16S34"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "唯一乘积性质",
+      "有限子集",
+      "群环",
+      "零因子猜想",
+      "等价性"
+    ],
+    "en": [
+      "unique product property",
+      "finite subsets",
+      "group rings",
+      "zero-divisor conjecture",
+      "equivalence"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；群 G 称具唯一 n-重乘积性质 u.-n-p.：任意非空有限子集 A₁..A_n 存在唯一表示 g=a₁···a_n …（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 u.-2-p. 已蕴含所有 u.-n-p.（n≥3），或给出一个满足 u.-2-p. 但不满足某个 u.-n-p. 的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001414",
-  "revision": 1,
-  "card_rev": "1f12bbb72b1b67c2",
+  "revision": 2,
+  "card_rev": "cb6f71e12a033171",
   "title": "Lux 输运方程 M_λ(P) 单调性（SIAM 79-1）",
-  "title_en": null,
+  "title_en": "Lux: is the transport functional M_lambda(P) increasing in lambda at lambda = 1?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -81,11 +83,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "45K05",
+    "secondary": [
+      "82C70",
+      "45A05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "积分方程/输运理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "输运方程",
+      "积分方程",
+      "参数导数",
+      "碰撞数"
+    ],
+    "en": [
+      "transport equations",
+      "integral equations",
+      "parameter derivatives",
+      "collision numbers"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +113,12 @@
     "note": "三四区·小问题；积分算子谱分析，中子输运文献相邻；极冷门。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在 λ=1 处 dM_λ(P)/dλ ≥ 0（在题设条件下），或给出使该导数取负值的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

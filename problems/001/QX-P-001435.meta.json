@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001435",
-  "revision": 1,
-  "card_rev": "62da90890d649889",
+  "revision": 2,
+  "card_rev": "eb14a328f3b4ad77",
   "title": "batch_I I-044：X=G/H 为连通线性代数 Q-群 G 的齐性空间（H 为 Q-子群，不必连通），X 有 Q-点。X",
-  "title_en": null,
+  "title_en": "Real approximation for homogeneous spaces of connected linear algebraic Q-groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +99,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11E72",
+    "secondary": [
+      "14Lxx",
+      "20Gxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "代数群 / 数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "齐性空间",
+      "实逼近",
+      "代数群",
+      "Galois 上同调"
+    ],
+    "en": [
+      "homogeneous spaces",
+      "real approximation",
+      "algebraic groups",
+      "Galois cohomology"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +129,12 @@
     "note": "三四区·小问题；Mikhail Borovoi 2010 提出（领域专家）；0 回答；连通稳定子情形已知，非连通开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意连通线性 Q-群 G 与 Q-子群 H 证明 X=G/H 具有实逼近性质，或给出一个 X(Q) 在 X(R) 中不稠密的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

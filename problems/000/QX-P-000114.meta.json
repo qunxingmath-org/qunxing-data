@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000114",
-  "revision": 1,
-  "card_rev": "96852361d92916ed",
+  "revision": 2,
+  "card_rev": "1060554a0b27ee1a",
   "title": "Aharoni–Berger 秩分划猜想（EGRES）",
-  "title_en": null,
+  "title_en": "The Aharoni-Berger rank-partition conjecture for matroids",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -111,11 +114,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B35",
+    "secondary": [
+      "05C70",
+      "05D15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拟阵论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟阵",
+      "秩函数",
+      "公共独立集",
+      "分划条件",
+      "Aharoni–Berger"
+    ],
+    "en": [
+      "matroid",
+      "rank function",
+      "common independent set",
+      "partition condition",
+      "Aharoni-Berger"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -123,7 +146,12 @@
     "note": "一区二区·难度待定；著名或活跃开放问题，难度未冻结；工作量对应一、二区论文，方法论路线多条（见部分结果）。 k=2 情形=拟阵交（已证）；与池内 B-1012（A–B rainbow matching）、B-1019（A–B common independent cover, cb-0286）同族不同命题"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在上述分划条件下总存在大小为 ℓ 的公共独立集，或给出一个不满足结论的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

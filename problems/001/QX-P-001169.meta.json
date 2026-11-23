@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001169",
-  "revision": 1,
-  "card_rev": "ebce761943a2ca86",
+  "revision": 2,
+  "card_rev": "45a18d1923757c4f",
   "title": "Andrica 猜想：相邻素数 √q−√p < 1",
-  "title_en": null,
+  "title_en": "Andrica's conjecture: the square-root gap between consecutive primes is less than 1",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41",
+      "11N36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（素数间隔）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "相邻素数",
+      "素数间隔",
+      "平方根差",
+      "Andrica 猜想",
+      "素数分布"
+    ],
+    "en": [
+      "consecutive primes",
+      "prime gaps",
+      "square-root gap",
+      "Andrica's conjecture",
+      "distribution of primes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +132,12 @@
     "note": "三四区·小问题；等价于素数间隔 g_n < 2√p_n+1 型界；与强间隔上界文献直接相连——条件结果（如 RH/Riemann 型界）可出论文；问题族注记：Andrica⇒Legendre（排除清单 C02 为主条目，本条为不同命题，非等价）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有相邻素数 p<q 都有 √q−√p<1，或给出一对相邻素数使该不等式不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

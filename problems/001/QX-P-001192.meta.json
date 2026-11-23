@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001192",
-  "revision": 1,
-  "card_rev": "65b017d36b1e8109",
+  "revision": 2,
+  "card_rev": "073661cddd172ed9",
   "title": "两拟阵列表染色猜想",
-  "title_en": null,
+  "title_en": "List colouring of two matroids",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -88,11 +91,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B35",
+    "secondary": [
+      "05C15",
+      "05C69"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拟阵/染色",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拟阵交",
+      "列表染色",
+      "双拟阵",
+      "列表大小",
+      "着色数"
+    ],
+    "en": [
+      "matroid intersection",
+      "list colouring",
+      "two matroids",
+      "list sizes",
+      "colouring numbers"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -100,7 +123,12 @@
     "note": "三四区·小问题；双拟阵 list-coloring 版本（EGRES 编目，Király 等）；拟阵交+列表染色方法可续接；三四区标准题。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出保证染色存在的清单大小下界及相应的界函数并证明，或构造一个清单足够大却仍不可染的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

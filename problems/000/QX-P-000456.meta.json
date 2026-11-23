@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000456",
-  "revision": 1,
-  "card_rev": "db15168d068371dd",
+  "revision": 2,
+  "card_rev": "b1746c3e8f1f863c",
   "title": "Tao 优化常数 14：BB(n) 不可判定的最小 n 上下界（Aaronson Conjecture 11）",
-  "title_en": null,
+  "title_en": "Improving bounds on the least n for which BB(n) is undecidable",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D10",
+    "secondary": [
+      "68Q30",
+      "03D25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "可计算性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "忙碌海狸",
+      "不可判定性",
+      "图灵机",
+      "上下界",
+      "可计算性"
+    ],
+    "en": [
+      "busy beaver",
+      "undecidability",
+      "Turing machines",
+      "bounds",
+      "computability"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；使 BB(n) 值不可判定的最小 n 的上下界改进——上界依赖 ZZᴺZ 大数、下界依赖具体机器不可判定性，工程+理论双路线，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出使 BB(n) 不可判定的最小 n 的更好上界或更好下界并证明之（缩小现有间隔）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

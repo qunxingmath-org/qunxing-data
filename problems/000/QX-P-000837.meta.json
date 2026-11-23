@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000837",
-  "revision": 1,
-  "card_rev": "9d210febba1b4a3f",
+  "revision": 2,
+  "card_rev": "237c77e0cb3c6c9d",
   "title": "Catalan–Mersenne 猜想：C_5=2^{2^127−1}−1 之后必出现合数",
-  "title_en": null,
+  "title_en": "The Catalan-Mersenne sequence: are all terms beyond C_4 composite?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "compute"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A51",
+    "secondary": [
+      "11Y11",
+      "11B83"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（递归素性）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Catalan–Mersenne 数",
+      "Mersenne 素数",
+      "递归序列",
+      "素性判定",
+      "合数因子"
+    ],
+    "en": [
+      "Catalan-Mersenne numbers",
+      "Mersenne primes",
+      "recursive sequence",
+      "primality testing",
+      "composite factor"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；c0=2,c1=3,c2=7,c3=127,c4=2^127−1 皆素（Catalan 1876）；C_5=双 Mersenne 数 MM127（约 10^51 位）素性完全未知——问题可具体化为\"MM127 有因子/非素\"的单点验证目标；Wikipedia double Mersenne 条目跟踪。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有 n>4 都有 C_n 为合数，或至少判定 C₅ 的素性并给出因子；或给出某个 n>4 使 C_n 为素数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

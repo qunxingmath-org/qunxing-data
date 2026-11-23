@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000266",
-  "revision": 1,
-  "card_rev": "ee9ee17724e0abcb",
+  "revision": 2,
+  "card_rev": "62c8ef922837d05f",
   "title": "Sheehan 猜想：无 4-正则图恰有一条 Hamilton 圈",
-  "title_en": null,
+  "title_en": "Sheehan's conjecture: no 4-regular graph has exactly one Hamiltonian cycle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +100,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C45",
+    "secondary": [
+      "05C70",
+      "05C38"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Hamilton 圈",
+      "4-正则图",
+      "Sheehan 猜想",
+      "圈计数"
+    ],
+    "en": [
+      "Hamiltonian cycles",
+      "4-regular graphs",
+      "Sheehan's conjecture",
+      "cycle counting"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -110,7 +130,12 @@
     "note": "一区二区·难度待定；1975 提出；4-正则图结构可控（Thomason 相关定理反推），偶/奇计数论证与 Thomassen 型方法可延续；近年有 1812.05650 线综述；一二区论文级。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 4-正则图的 Hamilton 圈数都不等于 1，或构造出一个恰有一个 Hamilton 圈的 4-正则图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

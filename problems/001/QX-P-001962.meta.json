@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001962",
-  "revision": 1,
-  "card_rev": "ea6fd623a88cce4b",
+  "revision": 2,
+  "card_rev": "98715069b48d5d9d",
   "title": "非 Tate 型上同调",
-  "title_en": null,
+  "title_en": "Smooth proper schemes over Z with non-Tate-type cohomology",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14C30",
+    "secondary": [
+      "14F40",
+      "11Gxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Tate 型 Hodge 结构",
+      "光滑真概型",
+      "Z 上概型",
+      "上同调"
+    ],
+    "en": [
+      "Tate-type Hodge structures",
+      "smooth proper schemes",
+      "schemes over Z",
+      "cohomology"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式给出一个 Z 上光滑真概型，并证明其某阶上同调的 Hodge 结构不是 Tate 型；或证明这样的概型不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001174",
-  "revision": 1,
-  "card_rev": "456a602db87c2431",
+  "revision": 2,
+  "card_rev": "9b17a8fe456d49f1",
   "title": "Selfridge PSW 素性判据猜想（测试无误报）",
-  "title_en": null,
+  "title_en": "Selfridge's PSW conjecture: the combined Fermat and Lucas test has no false positives",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -92,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A51",
+    "secondary": [
+      "11Y11",
+      "11B39"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "计算数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素性判别",
+      "Fermat 测试",
+      "Lucas 测试",
+      "伪素数",
+      "Selfridge 猜想"
+    ],
+    "en": [
+      "primality testing",
+      "Fermat test",
+      "Lucas test",
+      "pseudoprimes",
+      "Selfridge's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -104,7 +126,12 @@
     "note": "三四区·小问题；PSW 测试（2^{n−1}≡1 与 Fibonacci F_{n+1}≡0 mod n, n≡±2 mod 5）无误报：计算核验深+理论（Lucas 伪素数结构）可推进；与 C-207 同族相邻（Wieferich 型）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明所有满足 n≡±2 (mod 5) 且同余条件成立的 n 都是素数，或给出一个满足全部条件却是合数的 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

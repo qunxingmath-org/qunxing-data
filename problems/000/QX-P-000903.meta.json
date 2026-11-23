@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000903",
-  "revision": 1,
-  "card_rev": "c4b90667c50a0d72",
+  "revision": 2,
+  "card_rev": "73efb630509cafb3",
   "title": "OWR 2025/27：Z[G]-代数 2-复形的几何可实现性（Wall D(2) 问题族）",
-  "title_en": null,
+  "title_en": "Geometric realizability of algebraic 2-complexes over Z[G]",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -90,11 +93,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57M20",
+    "secondary": [
+      "18G99",
+      "20J05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "同调代数/拓扑（模块理论）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "代数 2-复形",
+      "Z[G]-模",
+      "CW 复形",
+      "几何实现",
+      "Wall D(2) 问题"
+    ],
+    "en": [
+      "algebraic 2-complexes",
+      "Z[G]-modules",
+      "CW complexes",
+      "geometric realization",
+      "Wall's D(2) problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +125,12 @@
     "note": "三四区·小问题；Wall 的 D(2) 问题谱系——哪些代数 2-复形是有限 CW-复形链复形；有限群特例与约化结果已知，一般 fp 群开放；Lück–? 稳定模方法。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出代数 2-复形可几何实现为 π1=G 的有限二维 CW 复形链复形的充要条件，并证明之。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

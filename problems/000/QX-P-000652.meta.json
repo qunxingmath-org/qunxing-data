@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000652",
-  "revision": 1,
-  "card_rev": "89c47fc052f9a9dc",
+  "revision": 2,
+  "card_rev": "d29c28d26709b0f2",
   "title": "18.43 GL(3,C)/SL(3,C) 迹相等但不共轭的 u,v 存在？",
-  "title_en": null,
+  "title_en": "Words with equal trace on all GL(3,C) representations but not conjugate",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20G20",
+    "secondary": [
+      "14L30",
+      "20F10"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "迹函数",
+      "自由群",
+      "GL(3,C)",
+      "共轭",
+      "字"
+    ],
+    "en": [
+      "trace functions",
+      "free groups",
+      "GL(3,C)",
+      "conjugacy",
+      "words"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题（batch_K 二波）；小而具体、可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在 GL(3,C)（以及 SL(3,C) 版本）中给出这样一对不共轭却迹函数相同的字，或证明这样的字对不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

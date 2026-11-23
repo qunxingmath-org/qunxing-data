@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000843",
-  "revision": 1,
-  "card_rev": "1e110ddf0da3a897",
+  "revision": 2,
+  "card_rev": "aeb5b9a2760b4d4e",
   "title": "凸一致 5-多胞形完全枚举",
-  "title_en": null,
+  "title_en": "Complete enumeration of convex uniform 5-polytopes",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "compute"
+  ],
+  "answer_type": "classification",
+  "checkability": "decidable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B15",
+    "secondary": [
+      "52B11",
+      "51M20"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "离散几何（多胞形分类）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "一致多胞形",
+      "五维多胞形",
+      "顶点传递",
+      "正多胞形",
+      "完全枚举"
+    ],
+    "en": [
+      "uniform polytopes",
+      "5-polytopes",
+      "vertex-transitive",
+      "regular polytopes",
+      "complete enumeration"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；d≤4 已完成（128+2 族），d=5 连\"已知列表是否完全\"都未知；Wythoffian 已分类，难点在非 Wythoffian（4 维 grand antiprism 型）；程序搜索（Johnson 算法延伸）可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出全部凸一致 5-多胞形的完整列表，并证明该列表在「一致」定义下确实完备。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

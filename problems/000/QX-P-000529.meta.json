@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000529",
-  "revision": 1,
-  "card_rev": "63056575f50cbf37",
+  "revision": 2,
+  "card_rev": "ce5e48606f0451c7",
   "title": "19.60 PID 上矩阵组自由生成自由群的可判定性",
-  "title_en": null,
+  "title_en": "Decidability of free generation by matrices over a principal ideal domain",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F10",
+    "secondary": [
+      "20G15",
+      "20E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由群",
+      "自由生成",
+      "主理想整环",
+      "可判定性",
+      "矩阵群"
+    ],
+    "en": [
+      "free groups",
+      "free generation",
+      "principal ideal domains",
+      "decidability",
+      "matrix groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（P.M. Neumann）R 为主理想整环，X₁..X_m∈SL(d,R)（或 GL(d,R)）。是否可判定这 m 个…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出判定 m 个矩阵是否自由生成自由群的算法（并证明其正确性与终止性），或证明该判定问题不可判定。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

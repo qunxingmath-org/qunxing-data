@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001066",
-  "revision": 1,
-  "card_rev": "d33840acb244fe6e",
+  "revision": 2,
+  "card_rev": "598b6e87eb9ece02",
   "title": "Kourovka 4.9：无挠fg幂零群自同构塔 αⁿG 是否只出现有限多同构型",
-  "title_en": null,
+  "title_en": "Finitely many isomorphism types in the automorphism tower of a torsion-free nilpotent group?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -134,11 +136,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F28",
+    "secondary": [
+      "20E36",
+      "20F18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自同构塔",
+      "无挠幂零群",
+      "有限生成群",
+      "同构型",
+      "Baumslag 问题"
+    ],
+    "en": [
+      "automorphism tower",
+      "torsion-free nilpotent groups",
+      "finitely generated groups",
+      "isomorphism types",
+      "Baumslag's problem"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -146,7 +168,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意有限生成无挠幂零群 G，序列 αG, α²G, … 中只有有限多个互不同构的群；或构造一个 G 使其自同构塔出现无穷多个互不同构的群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

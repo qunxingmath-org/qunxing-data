@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002250",
-  "revision": 1,
-  "card_rev": "8df541cedadf7381",
+  "revision": 2,
+  "card_rev": "0baf661ebf363e7e",
   "title": "r∈Q∖Z 使 r^{r^{r^r}}∈Q？",
-  "title_en": null,
+  "title_en": "Is there r in Q minus Z with r^(r^(r^r)) rational?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J81",
+    "secondary": [
+      "11A99",
+      "26A09"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论/幂塔",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幂塔",
+      "有理数",
+      "无理性",
+      "指数方程"
+    ],
+    "en": [
+      "power towers",
+      "rational numbers",
+      "irrationality",
+      "exponential equations"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个非整数有理数 r 使 r^(r^(r^r)) 为有理数,或证明不存在这样的 r。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

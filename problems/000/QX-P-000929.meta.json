@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000929",
-  "revision": 1,
-  "card_rev": "053f527082271f44",
+  "revision": 2,
+  "card_rev": "c93bd3a2537f7733",
   "title": "Kourovka 19.39：F 为可解遗传形成且所有 F-临界群或为素数阶群或为 U-临界群；刻画 F（是否局部/可分解等）",
-  "title_en": null,
+  "title_en": "Kourovka 19.39: must a hereditary soluble formation with restricted critical groups be saturated?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D10",
+    "secondary": [
+      "20F17"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "遗传形成",
+      "饱和形成",
+      "临界群",
+      "超可解群",
+      "有限可解群"
+    ],
+    "en": [
+      "hereditary formations",
+      "saturated formations",
+      "critical groups",
+      "supersoluble groups",
+      "finite soluble groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明满足这些条件的 F 一定饱和，或构造一个满足条件却不饱和的可解遗传形成作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

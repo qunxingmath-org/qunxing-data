@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000315",
-  "revision": 1,
-  "card_rev": "e89e20824e67eb52",
+  "revision": 2,
+  "card_rev": "0d7011b9542ed1dd",
   "title": "C_7 的 Shannon 容量（原批次 A-056）",
-  "title_en": null,
+  "title_en": "The Shannon capacity of the 7-cycle",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "asymptotic"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C69",
+    "secondary": [
+      "94A24",
+      "05C76"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/信息论（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Shannon 容量",
+      "7-圈",
+      "独立数",
+      "强乘积"
+    ],
+    "en": [
+      "Shannon capacity",
+      "7-cycle",
+      "independence number",
+      "strong product"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +132,12 @@
     "note": "一区二区·难度待定；奇圈 Shannon 容量除 C_5（Lovász √5）外全部未决；C_7 是最小未解情形；2026 有 Lovász 数谱/容量邻域活跃文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 Θ(C₇) 的精确值（给出上下界相等的证明），或实质改进现有的上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

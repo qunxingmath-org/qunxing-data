@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001580",
-  "revision": 1,
-  "card_rev": "4f1f6a490449b94d",
+  "revision": 2,
+  "card_rev": "97bbf148892fd839",
   "title": "21.52 单群对合类着色完全图的自同构群刻画",
-  "title_en": null,
+  "title_en": "Characterizing automorphisms of the order-coloured graph on a class of involutions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D05",
+    "secondary": [
+      "05C25",
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "单群",
+      "对合",
+      "着色图",
+      "自同构群",
+      "共轭类"
+    ],
+    "en": [
+      "simple groups",
+      "involutions",
+      "coloured graphs",
+      "automorphism groups",
+      "conjugacy classes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；L 有限单群，D 为对合共轭类，完全图 Γ 顶点集 D，边按 |ab| 等价着色。是否着色图自同构群 = Aut(L)∩…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该着色图的自同构群总包含于 Aut(L)（由共轭类稳定化子实现），或给出一个单群 L 与一个落在 Aut(L) 之外的反常自同构。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

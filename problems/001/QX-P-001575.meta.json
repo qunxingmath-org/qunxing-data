@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001575",
-  "revision": 1,
-  "card_rev": "efa125bda3df9ffe",
+  "revision": 2,
+  "card_rev": "0d40deb271876101",
   "title": "21.39 局部有限特征单群、自同构轨道有限多条 ⇒ 必剩余有限？",
-  "title_en": null,
+  "title_en": "A locally finite characteristically simple group with finitely many automorphism orbits?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E36",
+    "secondary": [
+      "20E26",
+      "20F50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "特征单群",
+      "局部有限",
+      "自同构轨道",
+      "剩余有限",
+      "构造"
+    ],
+    "en": [
+      "characteristically simple groups",
+      "local finiteness",
+      "automorphism orbits",
+      "residual finiteness",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；已知存在剩余有限、局部有限、特征单且自同构轨道仅有限多条的群（Apps 1983）。是否存在不剩余有限者？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个局部有限、特征单、自同构轨道有限但不剩余有限的群，或证明这类群必剩余有限。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

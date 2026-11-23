@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000405",
-  "revision": 1,
-  "card_rev": "f5dc1a9e36c2faa7",
+  "revision": 2,
+  "card_rev": "6f6aeb24fadaf03e",
   "title": "batch_I I-094：同胚（或同伦等价）于 RPⁿ 与 CPⁿ 的光滑/PL 流形的分类现状如何？",
-  "title_en": null,
+  "title_en": "Classifying smooth and PL manifolds homeomorphic to RP^n and CP^n",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57R55",
+    "secondary": [
+      "57N13",
+      "57R60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "微分拓扑 / 射影空间光滑结构",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "射影空间",
+      "光滑结构",
+      "PL 流形",
+      "同伦等价",
+      "分类"
+    ],
+    "en": [
+      "projective spaces",
+      "smooth structures",
+      "PL manifolds",
+      "homotopy equivalence",
+      "classification"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；2025 新题；CP² 情形与光滑 Poincaré/11-8 型障碍相关为著名开放方向；RPⁿ 情形已有 López de Medrano 分类文献（部分回答）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出同胚（或同伦等价）于 RP^n、CP^n 的光滑/PL 流形的完整分类，或至少解决 CP² 情形（同伦 CP² 是否必微分同胚于 CP²）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

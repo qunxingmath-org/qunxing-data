@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000924",
-  "revision": 1,
-  "card_rev": "3bcaf167343ae799",
+  "revision": 2,
+  "card_rev": "9f76cb17659eab45",
   "title": "Kourovka 19.28：（Fel'shtyn-Troit 猜想）有限生成剩余有限群的自同构 φ 是否总有 R(φ)=∞（无穷多 φ-共轭类）",
-  "title_en": null,
+  "title_en": "Fel'shtyn-Troitsky conjecture: finite R(phi) forces an almost soluble group",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E36",
+    "secondary": [
+      "20E26",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "φ-共轭类",
+      "自同构",
+      "剩余有限群",
+      "有限指标可解子群",
+      "Nielsen 数"
+    ],
+    "en": [
+      "phi-conjugacy classes",
+      "automorphisms",
+      "residually finite groups",
+      "finite-index soluble subgroups",
+      "Nielsen number"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意有限生成剩余有限群及其自同构 φ，证明 R(φ) 有限推出 G 有有限指标可解子群，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

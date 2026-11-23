@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001372",
-  "revision": 1,
-  "card_rev": "570acc528f40778a",
+  "revision": 2,
+  "card_rev": "1c595ef0983ec786",
   "title": "Borromean 环能否画在亏格 2 曲面上（AMM 6141）",
-  "title_en": null,
+  "title_en": "Can the Borromean rings be drawn on a closed surface of genus 2?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K10",
+    "secondary": [
+      "57N35",
+      "05C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "拓扑图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Borromean 环",
+      "亏格 2 曲面",
+      "链环",
+      "曲面嵌入"
+    ],
+    "en": [
+      "Borromean rings",
+      "genus 2 surface",
+      "links",
+      "surface embeddings"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -106,7 +126,12 @@
     "note": "三四区·小问题；亏格 2 曲面上链嵌入可按拓扑图论方法直接攻——可能是现成可解的\"被遗忘问题\"。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在亏格 2 闭曲面上给出三条互不相交简单闭曲线实现 Borromean 环，或证明这样的嵌入不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

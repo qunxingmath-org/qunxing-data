@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000432",
-  "revision": 1,
-  "card_rev": "8a38dc48cd19350a",
+  "revision": 2,
+  "card_rev": "e7faeeaf0a3add5e",
   "title": "Friedland 三阶张量 generic 秩公式与 maximal 秩",
-  "title_en": null,
+  "title_en": "Friedland's generic rank formula for tensors and the maximal rank of n x n x n tensors",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "classify"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -99,11 +102,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A69",
+    "secondary": [
+      "14N07",
+      "15A03"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "线性代数/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "张量秩",
+      "generic 秩",
+      "maximal 秩",
+      "临界范围",
+      "复张量"
+    ],
+    "en": [
+      "tensor rank",
+      "generic rank",
+      "maximal rank",
+      "critical range",
+      "complex tensors"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +134,12 @@
     "note": "一区二区·难度待定；generic 秩公式在临界范围待证/待反例；maximal 秩 n≥4 无公式为著名难点；WebSearch 未发现 2024-26 反例，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明临界范围内 generic 秩 = min(m₃,m₁m₂)，并给出复 n×n×n 张量（n≥4）maximal 秩的公式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

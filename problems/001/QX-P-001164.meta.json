@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001164",
-  "revision": 1,
-  "card_rev": "9a40412e14e79f47",
+  "revision": 2,
+  "card_rev": "76fb693295996df5",
   "title": "Kourovka 21.65/21.67：族条目（21.65+21.67）：自同构 φ 下指数有界指标的 Fitting 高有界子群；秩 r 界",
-  "title_en": null,
+  "title_en": "Bounding the Fitting height of a large subgroup under an automorphism of bounded order and fixed points",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -134,11 +136,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20D10",
+      "20D25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Fitting 高",
+      "有限可解群",
+      "自同构",
+      "不动点",
+      "指数界"
+    ],
+    "en": [
+      "Fitting height",
+      "finite soluble groups",
+      "automorphisms",
+      "fixed points",
+      "index bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -146,7 +168,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 (a)、(b) 分别给出只依赖所述参数的界并证明，或构造一族反例说明 Fitting 高无法这样被界住。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

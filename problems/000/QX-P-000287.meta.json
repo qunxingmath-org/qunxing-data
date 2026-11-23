@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000287",
-  "revision": 1,
-  "card_rev": "0f6331cc29dab6ff",
+  "revision": 2,
+  "card_rev": "082bf4527f75cdcd",
   "title": "Dürer–Shephard 凸多面体边展开猜想",
-  "title_en": null,
+  "title_en": "The Durer-Shephard conjecture: every convex polyhedron has a non-overlapping edge unfolding",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52B05",
+    "secondary": [
+      "52C45",
+      "68U05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/计算几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "边展开",
+      "凸多面体",
+      "剪切树",
+      "平面展开"
+    ],
+    "en": [
+      "edge unfolding",
+      "convex polyhedra",
+      "spanning tree cut",
+      "planar net"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +127,12 @@
     "note": "一区二区·难度待定；500 年经典（Dürer）；边展开（非切割）无重叠：一般开放，近年在特定族（正多胞体、zig-zag）有推进（2607.09606 线）；计算验证+族构造可出论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个凸多面体都存在沿棱剪开且展开互不重叠的剪切方式，或给出一个无论怎么沿棱剪都会重叠的凸多面体。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

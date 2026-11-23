@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002085",
-  "revision": 1,
-  "card_rev": "8ff3c0b056fea999",
+  "revision": 2,
+  "card_rev": "3967459a32520685",
   "title": "无限群内同调相同的有限子群",
-  "title_en": null,
+  "title_en": "Finite subgroups of infinite groups with isomorphic homology",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20J06",
+    "secondary": [
+      "20E07"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论/拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "群同调",
+      "有限子群",
+      "无限群",
+      "转移映射",
+      "同调等价"
+    ],
+    "en": [
+      "group homology",
+      "finite subgroups",
+      "infinite groups",
+      "transfer map",
+      "homological equivalence"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "先把问题形式化（明确要求同调群同构还是包含映射/转移映射为同构），再给出这样的有限子群对及其所在无限群，或证明不可能。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

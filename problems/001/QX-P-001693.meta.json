@@ -2,20 +2,23 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001693",
-  "revision": 1,
-  "card_rev": "761f626830ccc669",
+  "revision": 2,
+  "card_rev": "0c80d0d01e9d0c9e",
   "title": "Brandt 正则超图猜想",
-  "title_en": null,
+  "title_en": "Brandt's conjecture on maximal triangle-free graphs with minimum degree above n/3",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
-  "statement_fidelity": "unaudited",
+  "problem_type": [
+    "classify",
+    "prove"
+  ],
+  "answer_type": "classification",
+  "checkability": "falsifiable",
+  "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
   "formal": [],
@@ -54,18 +57,39 @@
     },
     "depth": "basic",
     "hits": [],
-    "statement_issues": [],
+    "statement_issues": [
+      "[2026-11-24] 题面栏为空或极简，只有名称；具体断言未知。"
+    ],
     "checker": {},
     "stale_after_days": 7,
     "compliance": null
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "极大无三角形图",
+      "最小度",
+      "Brandt 猜想",
+      "同态",
+      "正则超图"
+    ],
+    "en": [
+      "maximal triangle-free graphs",
+      "minimum degree",
+      "Brandt's conjecture",
+      "homomorphism",
+      "regular hypergraphs"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -73,7 +97,12 @@
     "note": "B 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "写出该猜想的精确陈述，并证明 δ≥n/3 的极大无三角形图都落在指定的那几类里（或与之同态），或给出一个反例图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

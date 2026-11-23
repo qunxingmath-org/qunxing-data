@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002009",
-  "revision": 1,
-  "card_rev": "1ea9aad2a9b4eded",
+  "revision": 2,
+  "card_rev": "293380d59b86db7a",
   "title": "虚拟 Morava K-理论 EM 谱序列",
-  "title_en": null,
+  "title_en": "The Eilenberg-Moore spectral sequence for virtual Morava K-theory",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "compute",
+    "prove"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "55T20",
+    "secondary": [
+      "55N20",
+      "55P60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Morava K-理论",
+      "Eilenberg–Moore 谱序列",
+      "虚拟",
+      "同伦论",
+      "chromatic 层次"
+    ],
+    "en": [
+      "Morava K-theory",
+      "Eilenberg-Moore spectral sequence",
+      "virtual",
+      "homotopy theory",
+      "chromatic hierarchy"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "在所给的虚拟 Morava K-理论设定下建立并证明该 Eilenberg–Moore 谱序列的收敛性，并算出所讨论空间的同调作为验证；或给出该谱序列失效的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

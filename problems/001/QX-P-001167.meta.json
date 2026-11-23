@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001167",
-  "revision": 1,
-  "card_rev": "9f2a28a94b2515ab",
+  "revision": 2,
+  "card_rev": "f0a6da04c3d47131",
   "title": "Kourovka 4.13：每个有限非交换 p-群有非内自同构的阶 p 自同构",
-  "title_en": null,
+  "title_en": "Every finite non-abelian p-group has a non-inner automorphism of order p",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D45",
+    "secondary": [
+      "20D15",
+      "20F28"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限 p-群",
+      "自同构群",
+      "内自同构",
+      "阶 p 自同构",
+      "非交换"
+    ],
+    "en": [
+      "finite p-groups",
+      "automorphism groups",
+      "inner automorphisms",
+      "automorphisms of order p",
+      "non-abelian"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有有限非交换 p-群给出阶 p 的非内自同构的存在性证明，或给出一个反例群。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

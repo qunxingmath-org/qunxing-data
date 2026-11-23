@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001314",
-  "revision": 1,
-  "card_rev": "367755b0adc7bfe1",
+  "revision": 2,
+  "card_rev": "ae163bbcd2fe991d",
   "title": "Does there exist a Hamiltonian disk map with zero topological entropy and (strong) mixing dynamics?",
-  "title_en": null,
+  "title_en": "Is there a Hamiltonian disk map with zero topological entropy and strong mixing?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37A25",
+    "secondary": [
+      "37E30",
+      "37J10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统（哈密顿动力学/热力学形式）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "拓扑熵",
+      "混合性",
+      "保面积映射",
+      "Hamiltonian 微分同胚",
+      "圆盘动力系统"
+    ],
+    "en": [
+      "topological entropy",
+      "mixing",
+      "area-preserving maps",
+      "Hamiltonian diffeomorphisms",
+      "disk dynamics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；中等——光滑遍历理论知名开放问题；Bramham伪旋转刚性（Liouville旋转数）为'否'方向证据；Fayad-Khanin混合例均正熵——两侧夹逼；构造/障碍路线明确。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个圆盘上的保面积光滑微分同胚，使拓扑熵为零且具有（强）混合性，或证明零熵排除了混合。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

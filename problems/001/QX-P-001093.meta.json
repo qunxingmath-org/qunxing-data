@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001093",
-  "revision": 1,
-  "card_rev": "1d096f40337c2df8",
+  "revision": 2,
+  "card_rev": "c86bf2d303f8687d",
   "title": "Kourovka 8.72：一切真子群自由的 fp 群（非自由/非素阶循环）存在？",
-  "title_en": null,
+  "title_en": "A finitely presented group, not free or cyclic of prime order, all of whose proper subgroups are free",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F05",
+    "secondary": [
+      "20E06",
+      "20F06"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限表现群",
+      "自由群",
+      "真子群",
+      "Tarski 型群"
+    ],
+    "en": [
+      "finitely presented groups",
+      "free groups",
+      "proper subgroups",
+      "Tarski-type groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式给出一个有限表现、非自由也非素数阶循环、且所有真子群都自由的群，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000003",
-  "revision": 1,
-  "card_rev": "33a929f6657e2030",
+  "revision": 2,
+  "card_rev": "84e2ffead181f5f8",
   "title": "（来源 A-003）边长 1..38 的 38 个正方形能否装入边长 138 的正方形？（A005842 的 a(38)=138 未证明）",
-  "title_en": null,
+  "title_en": "Can the 38 squares of sides 1..38 be packed into a square of side 138?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "decide"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -104,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "05B40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合几何/packing（计算枚举型）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正方形装填",
+      "OEIS A005842",
+      "组合几何",
+      "精确装填",
+      "计算搜索"
+    ],
+    "en": [
+      "square packing",
+      "OEIS A005842",
+      "combinatorial geometry",
+      "perfect packing",
+      "computational search"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -116,7 +138,12 @@
     "note": "一区二区·易证明；有限验证目标：单一实例判定，可用 SAT/CP-SAT/精确覆盖枚举求解；OEIS 明示 a(38) 至今仅 probable（Friedman 2010 注记），该注记已存在十余年，属计算机可及规模。注意：本实例面积极紧（利用率 99.9%，余量仅 25 格），非\"面积余量大\"的宽松实例——正是紧性使枚举难以剪枝。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出把边长 1 到 38 的 38 个正方形互不重叠装入 138×138 正方形的显式摆放，或证明这种摆放不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

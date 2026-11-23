@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001130",
-  "revision": 1,
-  "card_rev": "76f693c9e917db77",
+  "revision": 2,
+  "card_rev": "eeccdfe2b88608f1",
   "title": "Kourovka 14.53：profinite 群 xⁿ=1 解集正 Haar 测度⇒开子群+陪集阶整除 n",
-  "title_en": null,
+  "title_en": "Positive Haar measure of the solution set of x^n = 1 in a profinite group",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "22C05",
+      "20P05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "profinite 群",
+      "Haar 测度",
+      "方程解集",
+      "开子群",
+      "陪集"
+    ],
+    "en": [
+      "profinite groups",
+      "Haar measure",
+      "solution sets",
+      "open subgroups",
+      "cosets"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该猜想：解集 xⁿ=1 有正 Haar 测度时必存在开子群 H 与元素 t 使 tH 中所有元素阶整除 n。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002188",
-  "revision": 1,
-  "card_rev": "4f9c4f7bf8fa77d7",
+  "revision": 2,
+  "card_rev": "93139b17e7702f8b",
   "title": "1-generic ⇒ index guessable 可逆性",
-  "title_en": null,
+  "title_en": "Is 1-genericity preserved by index-guessability reversals?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D32",
+    "secondary": [
+      "03D25",
+      "68Q30"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "可计算性",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "1-generic",
+      "index guessable",
+      "可计算性",
+      "可逆性",
+      "构造性"
+    ],
+    "en": [
+      "1-generic",
+      "index guessability",
+      "computability",
+      "invertibility",
+      "generic reals"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明该可逆性成立（对 1-generic 实数的任意 index guessable 变换，逆变换后仍保持相应性质），或构造一个使可逆性失败的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

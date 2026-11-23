@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000614",
-  "revision": 1,
-  "card_rev": "0f5fbb4f65a73f66",
+  "revision": 2,
+  "card_rev": "ea1e41a4c6226bdb",
   "title": "（来源 C-021）用 1..n 的方形（各一块）拼出可铺满平面的 patch：n=10 及以上是否存在？",
-  "title_en": null,
+  "title_en": "Can squares of sides 1 to n be assembled into a patch that tiles the plane, for n >= 10?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B45",
+    "secondary": [
+      "52C20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "铺砌（组合几何/枚举）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "方形拼块",
+      "平面铺砌",
+      "按序平方",
+      "完美剖分"
+    ],
+    "en": [
+      "squared rectangles",
+      "plane tilings",
+      "sequential squares",
+      "perfect squarings"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -105,7 +124,12 @@
     "note": "三四区·小问题；有限枚举+构造问题：Anderson 2026-09-25 的新回答给出大规模枚举表（squared torus），提示 n=10、11 或已找到解（2 与 3 个 perfect∧W=H 实例）。三四区级：验证/解读这些枚举结果并给出 n=10 的显式构造或不存在性证明。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 n=10（以及更大 n）的可行拼块图形，或证明 n=10 时不存在这样的图形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

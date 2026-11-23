@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000501",
-  "revision": 1,
-  "card_rev": "a604427208c328ce",
+  "revision": 2,
+  "card_rev": "9174889bbb538b60",
   "title": "Log-Rank 猜想",
-  "title_en": null,
+  "title_en": "The log-rank conjecture: is deterministic communication complexity polynomial in log-rank?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +85,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "68Q11",
+    "secondary": [
+      "68Q17",
+      "05C50"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "通信复杂度",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "通信复杂度",
+      "秩方法",
+      "log-rank 猜想",
+      "确定性协议",
+      "矩阵秩"
+    ],
+    "en": [
+      "communication complexity",
+      "rank method",
+      "log-rank conjecture",
+      "deterministic protocols",
+      "matrix rank"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·难度待定；log-rank 与确定性通信复杂度多项式关系（Nisan–Wigderson 谱系），最好 polylog 幂改进记录持续，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在常数 c 使所有通信矩阵满足 D(f) ≤ (log rank M)^c，或给出一个函数族使 D(f) 相对 log rank(M) 超多项式地大。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000084",
-  "revision": 1,
-  "card_rev": "0e07e1920a0e6e91",
+  "revision": 2,
+  "card_rev": "2558a94c1e2fd7db",
   "title": "Kourovka 12.86：已知有限单群的最大 2-生成直幂",
-  "title_en": null,
+  "title_en": "Kourovka 12.86 (Syskin): maximal 2-generator direct powers of the known finite simple groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "compute",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D05",
+    "secondary": [
+      "20F05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有限单群",
+      "2-生成",
+      "直幂",
+      "生成元个数",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "finite simple groups",
+      "two-generation",
+      "direct powers",
+      "number of generators",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +159,12 @@
     "note": "一区二区·易证明；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。A层画像：可计算/数表/构造验证型。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个已知的有限单群 S 确定使 S^k 为 2-生成的最大 k，并给出达到该值的生成元构造与不可再增的论证。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

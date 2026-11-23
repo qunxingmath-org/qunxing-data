@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000845",
-  "revision": 1,
-  "card_rev": "91fb841c549923b3",
+  "revision": 2,
+  "card_rev": "0ef60288d4a9bf9f",
   "title": "Seidel 开关重构猜想（n≥5 图由开关 deck 重构）",
-  "title_en": null,
+  "title_en": "Seidel's switching-reconstruction conjecture for graphs on at least five vertices",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "special_case"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -103,11 +106,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C60",
+    "secondary": [
+      "05C50"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "图论（重构理论/双图）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Seidel 开关",
+      "重构猜想",
+      "双图",
+      "同构",
+      "开关 deck"
+    ],
+    "en": [
+      "Seidel switching",
+      "reconstruction conjecture",
+      "two-graphs",
+      "isomorphism",
+      "switching deck"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +137,12 @@
     "note": "三四区·小问题；经典重构猜想（池内 B-985 为边重构）的开关变体：单点开关（换邻居/非邻居）后的 deck 是否决定图；Seidel 双图理论（t_n=开关类数）给出代数切入；小 n 计算验证可行。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 n≥5 的简单图，其开关 deck 在同构意义下唯一决定该图；或给出两个 n≥5 的非同构图具有相同的开关 deck。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

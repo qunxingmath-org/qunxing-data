@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002210",
-  "revision": 1,
-  "card_rev": "bdea927b399f1616",
+  "revision": 2,
+  "card_rev": "e156471d9b51caf7",
   "title": "Π⁰₁ 极大最终不同族存在性",
-  "title_en": null,
+  "title_en": "Existence of a Pi-0-1 maximal eventually different family",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D80",
+    "secondary": [
+      "03E15",
+      "03E05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "有效描述集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "最终不同族",
+      "Π⁰₁ 集合",
+      "极大性",
+      "有效描述集合论",
+      "几乎不相交"
+    ],
+    "en": [
+      "eventually different families",
+      "Pi-0-1 sets",
+      "maximality",
+      "effective descriptive set theory",
+      "almost disjointness"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出 Π⁰₁ 的极大最终不同族,或证明这样的有效族不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

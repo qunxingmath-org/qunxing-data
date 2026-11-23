@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000828",
-  "revision": 1,
-  "card_rev": "70ac4b672af7559d",
+  "revision": 2,
+  "card_rev": "017a8afb15651f61",
   "title": "Green 问题 74：[N]^d 中无 5 点共 2-平面的最大子集",
-  "title_en": null,
+  "title_en": "Green problem 74: largest subset of [N]^d with no five points on a 2-plane",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C10",
+    "secondary": [
+      "05D99",
+      "11B30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何（高维 no-three-in-line）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "无五点共面",
+      "高维格点",
+      "仿射平面",
+      "极值大小",
+      "离散几何"
+    ],
+    "en": [
+      "no five points on a plane",
+      "high-dimensional grid",
+      "affine plane",
+      "extremal size",
+      "discrete geometry"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；经典 no-three-in-line（2N 猜想）的高维推广；d=3 时\"无 5 点共面\"网格问题具体可枚举；Green 注连 N^{d-100} 大小是否存在都不知道——上界极其开放。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "定出 [N]^d 中不含 5 点共 2-平面的子集的最大阶（含 d≥3 时关于 N 的增长阶），或给出匹配的上下界。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

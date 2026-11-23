@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000081",
-  "revision": 1,
-  "card_rev": "bb803f0847411cee",
+  "revision": 2,
+  "card_rev": "d1f0f9a5cb00c604",
   "title": "Kourovka 8.3：Pₙ(Z/pᵐ) 何时正则（mn<p 已知）",
-  "title_en": null,
+  "title_en": "Kourovka 8.3 (Wehrfritz): for which m and n is the unitriangular group P_n(Z/p^m) regular?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "decidable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20H25",
+      "20F40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正则 p-群",
+      "单位上三角群",
+      "模 p^m 矩阵",
+      "分类",
+      "Kourovka Notebook"
+    ],
+    "en": [
+      "regular p-groups",
+      "unitriangular groups",
+      "matrices mod p^m",
+      "classification",
+      "Kourovka Notebook"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -137,7 +159,12 @@
     "note": "一区二区·易证明；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。A层画像：可计算/数表/构造验证型。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有正整数 m、n 与素数 p 给出 P_n(Z_{p^m}) 为正则的充要条件（完整分类）；或给出该分类不成立的说明与反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

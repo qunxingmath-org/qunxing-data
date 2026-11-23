@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001571",
-  "revision": 1,
-  "card_rev": "020dac5288c09792",
+  "revision": 2,
+  "card_rev": "4994a82bf776b773",
   "title": "21.9 非交换有限秩自由 pro-p 群的开子群族交特征子群截断",
-  "title_en": null,
+  "title_en": "Cutting down characteristic subgroups of open subgroups in a free pro-p group",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "20E15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由 pro-p 群",
+      "开子群",
+      "特征子群",
+      "有限秩",
+      "构造"
+    ],
+    "en": [
+      "free pro-p groups",
+      "open subgroups",
+      "characteristic subgroups",
+      "finite rank",
+      "constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；F 为非交换有限秩自由 pro-p 群。能否找到含 F 的有限多个开子群 U₁,…,U_n，使得既含于某 U_i 又在 …（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出有限多个开子群 U₁,…,Uₙ（含 F 本身）使题述交截只剩平凡子群，或证明不存在这样的有限族。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

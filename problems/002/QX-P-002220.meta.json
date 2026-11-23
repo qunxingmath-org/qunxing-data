@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002220",
-  "revision": 1,
-  "card_rev": "21de670916c9e986",
+  "revision": 2,
+  "card_rev": "c7f6be441a1dfd4f",
   "title": "Berman 猜想：Gibbs 稳定性 ⟺ K-稳定",
-  "title_en": null,
+  "title_en": "Berman's conjecture: Gibbs stability is equivalent to K-stability",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "14J45",
+    "secondary": [
+      "14L24",
+      "32Q20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "K-稳定性/代数几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Berman 猜想",
+      "Gibbs 稳定性",
+      "K-稳定性",
+      "Fano 簇",
+      "平衡度量"
+    ],
+    "en": [
+      "Berman's conjecture",
+      "Gibbs stability",
+      "K-stability",
+      "Fano varieties",
+      "balanced metrics"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 Gibbs 稳定性与 K-稳定性对 Fano 簇等价,或给出一个使两者分离的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

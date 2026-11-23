@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001190",
-  "revision": 1,
-  "card_rev": "4daf0513c1d67e74",
+  "revision": 2,
+  "card_rev": "593abedb13fff8f7",
   "title": "Lebesgue–Nagell 方程 x²−2=y^p（奇素数 p）",
-  "title_en": null,
+  "title_en": "The Lebesgue-Nagell equation x^2 - 2 = y^p for odd prime p",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D61",
+    "secondary": [
+      "11D41",
+      "11R18"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "丢番图方程",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lebesgue–Nagell 方程",
+      "指数丢番图方程",
+      "唯一分解",
+      "奇素数指数",
+      "整数解"
+    ],
+    "en": [
+      "Lebesgue-Nagell equation",
+      "exponential Diophantine equations",
+      "unique factorization",
+      "odd prime exponents",
+      "integer solutions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -106,7 +128,12 @@
     "note": "三四区·小问题；特定 D 的 Lebesgue–Nagell 族；Cohn/Bugeaud 型方法（二次域单位+模曲线）成熟；2025 arXiv:2507.12397 为 CB 引用源——部分参数域结论可出论文；[CHECK] 全参数情形是否已被 Cohn 类结果覆盖待核。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个奇素数 p 证明 x²−2=y^p 的整数解只有 x=±1、y=−1，或给出一个 p 与额外的整数解来否定它。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

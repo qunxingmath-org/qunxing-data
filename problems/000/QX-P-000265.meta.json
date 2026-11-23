@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000265",
-  "revision": 1,
-  "card_rev": "572d416b5b9ed505",
+  "revision": 2,
+  "card_rev": "fe07cfe68dfdf024",
   "title": "顶点重构猜想（Ulam–Kelly）：图由其顶点删除卡决定",
-  "title_en": null,
+  "title_en": "The vertex reconstruction conjecture: a graph is determined by its deck",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -107,11 +110,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C60",
+    "secondary": [
+      "05C75",
+      "05C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（经典大猜想）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "重构猜想",
+      "顶点卡叠",
+      "顶点删除子图",
+      "同构"
+    ],
+    "en": [
+      "reconstruction conjecture",
+      "deck",
+      "vertex-deleted subgraphs",
+      "isomorphism"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -119,7 +140,12 @@
     "note": "一区二区·难度待定；1941 年起未决；2026 年仍有活跃进展（token graphs 几乎处处可重构 2608.22094；不变量理论线 2604.16567）——'活跃但未冻结'，若证 n≥7 或新不变量即二区成果。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明任何两个顶点数不少于 3 的图若 deck 相同则同构，或构造一对 deck 相同而不同构的图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

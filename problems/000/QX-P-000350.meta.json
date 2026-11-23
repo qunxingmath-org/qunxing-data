@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000350",
-  "revision": 1,
-  "card_rev": "5569174578b0c3b7",
+  "revision": 2,
+  "card_rev": "0af137350b55b459",
   "title": "回文素数是否无穷多（CRUX 490）",
-  "title_en": null,
+  "title_en": "Are there infinitely many palindromic primes in base 10 (or any fixed base)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -109,11 +111,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A63",
+    "secondary": [
+      "11N05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（素数分布）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "回文素数",
+      "素数分布",
+      "进制表示",
+      "无穷性",
+      "筛法"
+    ],
+    "en": [
+      "palindromic primes",
+      "prime distribution",
+      "radix representations",
+      "infinitude",
+      "sieve methods"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -121,7 +142,12 @@
     "note": "一区二区·难度待定；陈述极简、公认极难；需突破素数在稀疏集分布；2023–2024 有实质进展（几乎全部回文为合数、回文殆素数无穷多）但主问题未动。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在某个固定进制下回文素数有无穷多个，或证明其个数有限。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

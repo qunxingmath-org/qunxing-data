@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000404",
-  "revision": 1,
-  "card_rev": "973791194341ad2d",
+  "revision": 2,
+  "card_rev": "1e144a1a3d859549",
   "title": "batch_I I-072：每个闭可定向曲面（2维流形）是否都容许到 R⁴ 的光滑（C^∞）等距浸入？",
-  "title_en": null,
+  "title_en": "Does every closed orientable surface admit a smooth isometric immersion in R^4?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C42",
+    "secondary": [
+      "53A07",
+      "57R40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "微分拓扑 / 经典等距浸入",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "等距浸入",
+      "闭曲面",
+      "黎曼度量",
+      "Nash 嵌入定理",
+      "余维 2"
+    ],
+    "en": [
+      "isometric immersions",
+      "closed surfaces",
+      "Riemannian metrics",
+      "Nash embedding theorem",
+      "codimension two"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；O'Rourke 2011 提出的经典问题；评论（Robert Bryant/j.c.）澄清了 Poznyak 局部 R⁴ 结果与闭曲面整体浸入的区别，但核心问题（闭曲面到 R⁴ 的光滑等距浸入）在帖内无解答、无文献确认。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个闭可定向曲面连同其任意黎曼度量都能光滑等距浸入 R⁴，或给出一个不能这样浸入的曲面与度量。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

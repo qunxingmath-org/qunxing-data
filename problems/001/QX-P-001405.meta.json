@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001405",
-  "revision": 1,
-  "card_rev": "8fbc8b62e3cb5ed3",
+  "revision": 2,
+  "card_rev": "6daad6e2c661a681",
   "title": "Krall–Allwright：R(ix) 轨迹把平面分成有限多个区域（CMB P277）",
-  "title_en": null,
+  "title_en": "Krall-Allwright: the image of the imaginary axis under a rational function bounds finitely many regions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +83,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "30C15",
+    "secondary": [
+      "30D30",
+      "54D05"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "复分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "有理函数",
+      "像曲线",
+      "连通分支",
+      "复平面"
+    ],
+    "en": [
+      "rational functions",
+      "image curves",
+      "connected components",
+      "complex plane"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +113,12 @@
     "note": "三四区·小问题；陈述短；实代数曲线半代数集理论给出\"高概率可解决\"路径（极大概率已被标准理论覆盖——值得一篇小文确认）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意有理函数 R 证明曲线 R(ix) 的补集只有有限多个连通分支。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

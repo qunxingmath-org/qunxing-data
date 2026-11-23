@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000612",
-  "revision": 1,
-  "card_rev": "28e9cda8ab328dd0",
+  "revision": 2,
+  "card_rev": "f1c3392cb4453f04",
   "title": "（来源 C-019）Social Golfer 问题 quintets/sextets 情形的最优天数表（多个 (n,g,m) 实例开放）",
-  "title_en": null,
+  "title_en": "Social golfer problem: optimal day counts for quintets and sextets",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05B05",
+    "secondary": [
+      "05B40",
+      "90B35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合设计（RBIBD/Social Golfer）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Social Golfer 问题",
+      "可分解区组设计",
+      "RBIBD",
+      "排程"
+    ],
+    "en": [
+      "Social Golfer problem",
+      "resolvable block designs",
+      "RBIBD",
+      "scheduling"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -113,7 +134,12 @@
     "note": "三四区·小问题；问题群（多实例）：大实例依赖 RBIBD 存在性理论（Ray-Chaudhuri-Wilson 型渐进定理已覆盖大 n），剩余是有限小实例（44/4/14、48/4/15、50/5/8、55/5/11、60/5/12 等）可用 SAT/CP 求解器攻击——2026 年已有新文献（A Constructive Frontier for the Social Golfer Problem, OpenAlex 2026；Combinatorial Solutions ... Adjacent Group Sizes, 2026）。三四区级：对未决小实例给出构造或不可行证明。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对给定的一批 (n,g) 实例确定最长天数（给出达到该天数的具体赛程与不可再延长的证明）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

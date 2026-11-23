@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001209",
-  "revision": 1,
-  "card_rev": "81f4b37128be8fe9",
+  "revision": 2,
+  "card_rev": "b38adf4977b247aa",
   "title": "van der Waerden数具体值（W(2,6)等）",
-  "title_en": null,
+  "title_en": "Van der Waerden numbers: determining W(2,6) and further values",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "compute"
+  ],
+  "answer_type": "value",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "11B25",
+      "05A99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Ramsey理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "van der Waerden 数",
+      "等差数列",
+      "Ramsey 理论",
+      "二染色",
+      "W(2,6)"
+    ],
+    "en": [
+      "van der Waerden numbers",
+      "arithmetic progressions",
+      "Ramsey theory",
+      "two-colourings",
+      "W(2,6)"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -95,7 +118,12 @@
     "note": "三四区·小问题；C层：具体常数问题；W(2,6)∈[1132, ...]（大规模SAT对象）；分布式SAT/CSP是成熟方法论（W(2,5)=178先例）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 W(2,6) 的精确值（同时给出匹配的染色构造与穷尽性证明），并对更多 k（以至一般 k 的渐近行为）给出结论。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

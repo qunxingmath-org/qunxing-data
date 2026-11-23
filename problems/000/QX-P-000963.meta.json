@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000963",
-  "revision": 1,
-  "card_rev": "4a9444b9c0673362",
+  "revision": 2,
+  "card_rev": "42884b3c96f34a78",
   "title": "Kourovka 20.111：存在剩余有限遗传恰无限（HJI）群，具自相似根树作用且非线性吗",
-  "title_en": null,
+  "title_en": "Kourovka 20.111: residually finite hereditarily just infinite groups with self-similar actions",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E26",
+    "secondary": [
+      "20E18",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "遗传恰无限群",
+      "剩余有限",
+      "自相似作用",
+      "根树",
+      "非线性群"
+    ],
+    "en": [
+      "hereditarily just infinite groups",
+      "residual finiteness",
+      "self-similar actions",
+      "rooted trees",
+      "non-linear groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题，小而具体、可局部攻坚（三四区工作量参照）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出满足全部条件的群并证明它非线性，或证明这样的群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

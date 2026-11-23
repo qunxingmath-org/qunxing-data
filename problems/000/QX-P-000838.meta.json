@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000838",
-  "revision": 1,
-  "card_rev": "255461548426e808",
+  "revision": 2,
+  "card_rev": "39124bc2e171a9eb",
   "title": "Erdős–Selfridge 素数分类：每类是否含无穷多素数（Guy A18）",
-  "title_en": null,
+  "title_en": "Erdos-Selfridge prime classes: infinitely many primes in each class?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N05",
+    "secondary": [
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（素数递归分类）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数分类",
+      "Erdős–Selfridge",
+      "递归定义",
+      "p+1 的素因子",
+      "无穷性"
+    ],
+    "en": [
+      "prime classification",
+      "Erdos-Selfridge",
+      "recursive definition",
+      "prime factors of p+1",
+      "infinitude"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +131,12 @@
     "note": "三四区·小问题；类 1+（p+1 的素因子均在类 1）无穷已证（实质为 Pierce 型序列），类 ≥2 无一证明；可从特定小类（2+, 3−）的筛法/递归结构攻；Richard Guy《Unsolved Problems in Number Theory》A18 经典条目。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个类 r≥2（或每个有限层）都含无穷多个素数，或指出某一层只有有限多个素数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

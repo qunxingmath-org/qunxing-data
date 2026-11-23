@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001168",
-  "revision": 1,
-  "card_rev": "81ad8ea30db136f6",
+  "revision": 2,
+  "card_rev": "9089b854cc1d1098",
   "title": "Kurepa 猜想：奇素数 p 不整除左阶乘 !p",
-  "title_en": null,
+  "title_en": "Kurepa's conjecture: no odd prime divides the left factorial !p",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -119,11 +121,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11A07",
+    "secondary": [
+      "11B65",
+      "11A51"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "左阶乘",
+      "Kurepa 猜想",
+      "素数整除",
+      "阶乘和",
+      "同余"
+    ],
+    "en": [
+      "left factorial",
+      "Kurepa's conjecture",
+      "divisibility by primes",
+      "factorial sums",
+      "congruences"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -131,7 +153,12 @@
     "note": "三四区·小问题；计算机可推进（更大 p 范围核验）+ 理论缺位（Gertsch 商结构 2026 仍在研究）；2022 声称证明已自撤（作者注明 idea mistaken）——状态干净、三四区工作量型（部分结果/等价变体可发论文）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有奇素数 p 都有 p∤!p，或找出一个奇素数 p 使 p 整除 !p。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

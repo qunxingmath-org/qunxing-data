@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000290",
-  "revision": 1,
-  "card_rev": "7269826aba4b3d42",
+  "revision": 2,
+  "card_rev": "8eeb5a5ad203a87a",
   "title": "完美 1-因子化猜想（K_{2n}）",
-  "title_en": null,
+  "title_en": "The perfect 1-factorization conjecture for complete graphs of even order",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C51",
+      "05C45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（因子化）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "1-因子化",
+      "完美匹配",
+      "完全图",
+      "Hamilton 圈"
+    ],
+    "en": [
+      "1-factorization",
+      "perfect matchings",
+      "complete graphs",
+      "Hamiltonian cycles"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -110,7 +131,12 @@
     "note": "一区二区·难度待定；Kotzig 1963；2026-07 渐近结果（2607.09459：几乎所有匹配两两成 Hamilton 圈）明确'far from solved'——渐近到精确的收尾是典型一/二区目标，方法（设计+交换）活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n≥2 构造出 K_{2n} 的完美 1-因子化，或证明某个 n 上这样的分解不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

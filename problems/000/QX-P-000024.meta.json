@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000024",
-  "revision": 1,
-  "card_rev": "bf83cff947588c34",
+  "revision": 2,
+  "card_rev": "32461197298952c9",
   "title": "Erdos P167: Tuza edge version - k edge-disjoint triangles removable by 2k edges",
-  "title_en": null,
+  "title_en": "Tuza's edge conjecture: at most k edge-disjoint triangles can be destroyed by 2k edges",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C70"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Tuza 猜想",
+      "三角形",
+      "边不交",
+      "删边破坏",
+      "图论"
+    ],
+    "en": [
+      "Tuza conjecture",
+      "triangles",
+      "edge-disjoint",
+      "edge deletion",
+      "extremal graph theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +134,12 @@
     "note": "一区二区·易证明；A层理由: LP对偶框架明确(ν_e/τ_e比, 猜想比≤2, 平凡3, 已知2.869); 目标常数有限; Kahn–Park 2022随机图情形已突破, 2024稠密图情形推进(arXiv 2405.11409), 方法活跃可延续。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个图都有 τ_e ≤ 2ν_e；或给出一个图使 τ_e > 2ν_e。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

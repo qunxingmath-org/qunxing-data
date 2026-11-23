@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001882",
-  "revision": 1,
-  "card_rev": "efe4ff94344146cb",
+  "revision": 2,
+  "card_rev": "5b5ea33ab0a223cf",
   "title": "流形 pants 分解刻画",
-  "title_en": null,
+  "title_en": "Which 4-manifolds decompose into Mikhalkin pants?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify",
+    "decide"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57K40",
+    "secondary": [
+      "57R65",
+      "57N13"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Mikhalkin pants",
+      "4-流形分解",
+      "三洞块",
+      "拓扑分解"
+    ],
+    "en": [
+      "Mikhalkin pants",
+      "4-manifold decomposition",
+      "three-holed blocks",
+      "topological decomposition"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出可分解为 Mikhalkin pants 的 4-流形的完整刻画，并对不可分解的情形给出障碍。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

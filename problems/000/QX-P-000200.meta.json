@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000200",
-  "revision": 1,
-  "card_rev": "84a6863b18caaeff",
+  "revision": 2,
+  "card_rev": "7e94e20620c359dd",
   "title": "三次图的星色指数 ≤ 7/3（原批次 A-060）",
-  "title_en": null,
+  "title_en": "Is the star chromatic index of every subcubic graph at most 7/3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -102,11 +105,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论/边着色（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "星色指数",
+      "边着色",
+      "双色路",
+      "三次图",
+      "染色"
+    ],
+    "en": [
+      "star chromatic index",
+      "edge colouring",
+      "bicoloured paths",
+      "cubic graphs",
+      "graph colouring"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -114,7 +136,12 @@
     "note": "一区二区·难度待定；界紧（K_{3,3} 等取等）、作者已证 >7/3 的某上界；特殊类（Halin、Petersen 等）2020-2025 持续进展；一般三次图压到 7/3 未决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个最大度不超过 3 的图都有 χ'_s(G)≤7/3，或构造一个 χ'_s(G)>7/3 的（子）三次图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

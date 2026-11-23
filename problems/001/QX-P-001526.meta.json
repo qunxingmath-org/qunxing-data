@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001526",
-  "revision": 1,
-  "card_rev": "72ee313decf4bcf0",
+  "revision": 2,
+  "card_rev": "982f8f1657f4fbf0",
   "title": "19.33 χ(1)被p整除且χ_P有线性成分 ⇒ 至少p个线性成分？",
-  "title_en": null,
+  "title_en": "At least p linear constituents when p divides chi(1) and chi restricted to P has one",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20C15",
+    "secondary": [
+      "20D20"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不可约特征标",
+      "Sylow p-子群",
+      "线性成分",
+      "特征标限制",
+      "特征标次数"
+    ],
+    "en": [
+      "irreducible characters",
+      "Sylow p-subgroups",
+      "linear constituents",
+      "character restriction",
+      "character degrees"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +138,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；G 有限群，P 为 Sylow p-子群，χ∈Irr(G) 次数被 p 整除。若 χ|_P 含线性成分，则 χ|_P 至…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对任意有限群 G、素数 p、Sylow p-子群 P 与不可约 χ 证明该结论，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

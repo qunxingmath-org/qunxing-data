@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000481",
-  "revision": 1,
-  "card_rev": "9b38dcdd9c05a89d",
+  "revision": 2,
+  "card_rev": "efb89c9429989123",
   "title": "Cycle Double Cover 猜想",
-  "title_en": null,
+  "title_en": "The Cycle Double Cover conjecture: covering every edge of a bridgeless graph exactly twice",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "construct"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C38",
+      "05C10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "圈双覆盖",
+      "无桥图",
+      "圈族",
+      "边覆盖",
+      "图论猜想"
+    ],
+    "en": [
+      "cycle double cover",
+      "bridgeless graphs",
+      "families of cycles",
+      "edge covers",
+      "graph conjectures"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；Tutte–Seymour 圈双覆盖——图论统一猜想族核心（与池内 B-220/221/222 流/覆盖族相邻而独立），B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有无桥图证明存在这样的圈族（或给出统一的构造方法），或给出一个不存在圈双覆盖的无桥图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

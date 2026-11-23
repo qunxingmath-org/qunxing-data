@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000428",
-  "revision": 1,
-  "card_rev": "4b5cbd155ff870c0",
+  "revision": 2,
+  "card_rev": "012b622a1e8cbf3a",
   "title": "素数二乘积覆盖模 p（Green 问题 62）",
-  "title_en": null,
+  "title_en": "Do products of two small primes cover every nonzero residue mod p?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11N69",
+    "secondary": [
+      "11A07",
+      "11N36"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "解析数论/乘法群",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数",
+      "乘法群",
+      "乘积集",
+      "剩余类",
+      "解析数论"
+    ],
+    "en": [
+      "primes",
+      "multiplicative groups",
+      "product sets",
+      "residue classes",
+      "analytic number theory"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +128,12 @@
     "note": "一区二区·难度待定；乘法群覆盖问题（素数乘积 mod p），与原根/分布深水区相邻，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在 P₀，使所有 p>P₀ 都满足 A·A=(Z/pZ)*；或给出无穷多素数 p 使存在某个 x 不能写成两素数之积。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

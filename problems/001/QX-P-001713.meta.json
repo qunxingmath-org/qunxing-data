@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001713",
-  "revision": 1,
-  "card_rev": "d5e90a9d1bec6a37",
+  "revision": 2,
+  "card_rev": "6cab087d80c01dbc",
   "title": "素和图哈密顿遍历（[2m]）",
-  "title_en": null,
+  "title_en": "Hamiltonian paths in the prime-sum graph on {1,...,2m}",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -61,11 +64,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C45",
+    "secondary": [
+      "05C38",
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "图论/数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素和图",
+      "哈密顿路",
+      "顶点和",
+      "图论",
+      "素数"
+    ],
+    "en": [
+      "prime-sum graph",
+      "Hamiltonian path",
+      "sums of vertices",
+      "graph theory",
+      "primes"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -73,7 +96,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个 m，素和图 [2m] 都有经过所有顶点的哈密顿路，或给出某个 m 使这样的路不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

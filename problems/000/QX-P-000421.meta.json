@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000421",
-  "revision": 1,
-  "card_rev": "1d2ee6a470a32b3b",
+  "revision": 2,
+  "card_rev": "23cd11dc0d44995a",
   "title": "差异化双和集结构（Green 问题 36 / CKS05）",
-  "title_en": null,
+  "title_en": "Disjoint difference sumset structure in abelian groups of size n^{2+o(1)}",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "11B13",
+      "05B10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "加性组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "加性组合",
+      "和集",
+      "互不相交",
+      "交换群",
+      "直积尺寸"
+    ],
+    "en": [
+      "additive combinatorics",
+      "sumsets",
+      "pairwise disjoint",
+      "abelian groups",
+      "product-size sumsets"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；高维加性结构反问题，CKS05 谱系问题，难度高未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有足够大的 n 显式构造出满足尺寸条件且和集两两不相交的交换群 H 与集合对 {A_i,B_i}；或证明这样的构造不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

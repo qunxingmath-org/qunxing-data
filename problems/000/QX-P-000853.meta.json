@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000853",
-  "revision": 1,
-  "card_rev": "e449ed1729270d65",
+  "revision": 2,
+  "card_rev": "ef734e898e12b5e7",
   "title": "4-正则 4-色的任意大围长图是否存在（OPG-830）",
-  "title_en": null,
+  "title_en": "Do 4-regular 4-chromatic graphs of arbitrarily large girth exist?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C15",
+    "secondary": [
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "high"
+  },
   "domain_hint": "图论（染色/围长）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "4-正则图",
+      "色数",
+      "围长",
+      "高围长构造"
+    ],
+    "en": [
+      "4-regular graphs",
+      "chromatic number",
+      "girth",
+      "high-girth constructions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +128,12 @@
     "note": "三四区·小问题；Erdős 概率方法给高围长高色但无度控制；恰 4-正则恰 4-色且围长任意——已知例只到围长 5（21/25 点最小例 Brinkmann 等 2009）；Chvátal/Brinkmann/Grünbaum 图为围长 4 基线。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 g 构造出一个围长 ≥g、色数 ≥4 的 4-正则图；或证明这样的图在围长充分大时不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000450",
-  "revision": 1,
-  "card_rev": "d41425559f106770",
+  "revision": 2,
+  "card_rev": "03c08fd8bea1a47c",
   "title": "无挠群整数环上投影类群消失（Farrell–Jones 代数推论）",
-  "title_en": null,
+  "title_en": "Vanishing of the reduced projective class group of Z[G] for torsion-free groups",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -83,11 +86,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "19A99",
+    "secondary": [
+      "20C07",
+      "19D50"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "代数 K 理论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "代数 K 理论",
+      "投影模",
+      "群环",
+      "无挠群",
+      "约化类群"
+    ],
+    "en": [
+      "algebraic K-theory",
+      "projective modules",
+      "group rings",
+      "torsion-free groups",
+      "reduced class groups"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +118,12 @@
     "note": "一区二区·难度待定；K̃₀(ℤ[G]) 消失型猜想（无挠 G）——与幂等猜想/代数 K 论统一猜想族相邻，深水区，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个无挠群 G 都有 K̃₀(Z[G])=0（即每个有限生成投影 Z[G]-模都稳定自由），或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001074",
-  "revision": 1,
-  "card_rev": "1ac4e6aabbfc6893",
+  "revision": 2,
+  "card_rev": "74ee79bf2c952b63",
   "title": "Kourovka 5.42：F₂ 是否有每个由单元素作言语子群的无限升链",
-  "title_en": null,
+  "title_en": "An infinite ascending chain of one-element verbal subgroups in the free group of rank 2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +128,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E05",
+    "secondary": [
+      "20F05",
+      "20E10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自由群",
+      "言语子群",
+      "升链",
+      "秩 2",
+      "词"
+    ],
+    "en": [
+      "free groups",
+      "verbal subgroups",
+      "ascending chains",
+      "rank two",
+      "words"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +160,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造 F₂ 中一条无限严格上升的言语子群链且每项都可由单个词生成，或证明这样的链不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

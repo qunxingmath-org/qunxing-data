@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000127",
-  "revision": 1,
-  "card_rev": "749fc70cde9310aa",
+  "revision": 2,
+  "card_rev": "ddb5a10fa22517a3",
   "title": "Cohn–Elkies 线性规划方案能否证明圆堆积最优（d=2 情形，Green 问题 42）",
-  "title_en": null,
+  "title_en": "Can the Cohn-Elkies linear programming bound prove optimal circle packing in the plane?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "construct",
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C17",
+    "secondary": [
+      "42B10",
+      "11H31"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/调和分析（球堆积）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Cohn–Elkies 界",
+      "线性规划",
+      "魔法函数",
+      "圆堆积",
+      "六角堆积"
+    ],
+    "en": [
+      "Cohn-Elkies bound",
+      "linear programming",
+      "magic function",
+      "circle packing",
+      "hexagonal packing"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -109,7 +132,12 @@
     "note": "一区二区·难度待定；Viazovska 2016 用 Cohn–Elkies 框架解决 d=8,24；d=2 的圆堆积最优性（已定理）能否由该方案给出是一维函数构造问题，显式条件清晰；2025-26 两点 LP 界非最优性新结果（d=36）显示该方向整体活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一个显式的径向函数 f，验证上述三条条件，并算出其对应的密度上界恰为六角堆积密度。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

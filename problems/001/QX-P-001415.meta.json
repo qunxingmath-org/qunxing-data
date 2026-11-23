@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001415",
-  "revision": 1,
-  "card_rev": "15ef114c8563e589",
+  "revision": 2,
+  "card_rev": "9490dc98a966daac",
   "title": "Barrucand 多项式 p_n(x,m,γ) 的实零点（SIAM 76-21）",
-  "title_en": null,
+  "title_en": "Barrucand: real zeros of p_n(x,m,gamma) and the asymptotic of the smallest negative zero",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "asymptotic"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -81,11 +84,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "33C45",
+    "secondary": [
+      "30C15",
+      "41A60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "正交多项式",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正交多项式",
+      "实零点",
+      "生成函数",
+      "渐近公式"
+    ],
+    "en": [
+      "orthogonal polynomials",
+      "real zeros",
+      "generating functions",
+      "asymptotic formulas"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -93,7 +114,12 @@
     "note": "三四区·小问题；Laguerre 型推广，零点实性理论（密度/临界点方法）现成——可能可解。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 n 证明 p_n 的零点全为实数，并给出较小负零点的渐近公式。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

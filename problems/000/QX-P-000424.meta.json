@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000424",
-  "revision": 1,
-  "card_rev": "bb36173ed505fd66",
+  "revision": 2,
+  "card_rev": "38c0742c533011ea",
   "title": "F₂^n 中 2A 包含的余弦维数（Green 问题 51/52/53，3条合一）",
-  "title_en": null,
+  "title_en": "Cosine dimension guaranteed in 2A for subsets of F_2^n",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "decide"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -94,11 +97,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "05D99",
+      "11T99"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "加性组合/F₂向量空间",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "F₂ 向量空间",
+      "倍集",
+      "余弦子空间",
+      "加性补",
+      "密度"
+    ],
+    "en": [
+      "F_2 vector spaces",
+      "doubling sets",
+      "cosets",
+      "additive complements",
+      "density"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +129,12 @@
     "note": "一区二区·难度待定；余弦维数（cosine dimension）结构问题，与 Bogolyubov–Ruzsa 定理精细化直接相连，方法可延续但未冻结，B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 F(α,n) 的取值，并回答两个加强问题：加性补大小为 K 时 2A 是否必含余维 O_K(1) 的余弦子空间、K 块划分中是否必有一块的 2A 含之。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

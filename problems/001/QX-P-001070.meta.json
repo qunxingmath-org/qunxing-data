@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001070",
-  "revision": 1,
-  "card_rev": "9dc696c1bb830781",
+  "revision": 2,
+  "card_rev": "f3f28bf4ac82b5db",
   "title": "Kourovka 4.50：一切fg子群剩余有限的可解簇刻画",
-  "title_en": null,
+  "title_en": "Soluble varieties all of whose finitely generated subgroups are residually finite",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E10",
+    "secondary": [
+      "20E26",
+      "20F16"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "可解簇",
+      "剩余有限",
+      "有限生成子群",
+      "簇的刻画"
+    ],
+    "en": [
+      "soluble varieties",
+      "residual finiteness",
+      "finitely generated subgroups",
+      "varieties of groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "列出所有「每个有限生成子群都剩余有限」的可解簇，并给出这些簇恰好如此的证明。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

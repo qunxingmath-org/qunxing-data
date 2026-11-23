@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001450",
-  "revision": 1,
-  "card_rev": "cc9cc2da8de104d7",
+  "revision": 2,
+  "card_rev": "e4f3c3cc5d212939",
   "title": "batch_I I-067：S-矩阵猜想：若 A 为元素在 [0,1] 的非奇异 n×n 矩阵，则 ||A^{-1}||_F ≥ 2",
-  "title_en": null,
+  "title_en": "Is the S-matrix conjecture ||A^{-1}||_F >= 2n/(n+1) for [0,1]-matrices still open?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "15A45",
+    "secondary": [
+      "15A09",
+      "15B48"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "矩阵分析",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "S-矩阵",
+      "Frobenius 范数",
+      "矩阵求逆",
+      "非负矩阵",
+      "矩阵不等式"
+    ],
+    "en": [
+      "S-matrix",
+      "Frobenius norm",
+      "matrix inversion",
+      "nonnegative matrices",
+      "matrix inequalities"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +140,12 @@
     "note": "三四区·小问题；Felix Goldberg 2012 问现状；2 回答确认开放并给进展文献（Drnovšek 2017 再证奇数 n 情形）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对所有 n 和所有元素在 [0,1] 中的可逆 n×n 矩阵都有 ‖A⁻¹‖_F ≥ 2n/(n+1)，且等号情形恰为 S-矩阵；或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

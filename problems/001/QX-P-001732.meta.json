@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001732",
-  "revision": 1,
-  "card_rev": "5169bd101b8fbd8c",
+  "revision": 2,
+  "card_rev": "e7248a6313259fd4",
   "title": "(N,+,×,gcd,lcm) 有限公理化？",
-  "title_en": null,
+  "title_en": "Is the equational theory of (N, 0, 1, +, x, gcd, lcm) finitely axiomatizable?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "classify"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03C05",
+    "secondary": [
+      "08B05",
+      "06D99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "逻辑/泛代数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "等式理论",
+      "有限公理化",
+      "gcd 与 lcm",
+      "半环",
+      "格"
+    ],
+    "en": [
+      "equational theory",
+      "finite axiomatizability",
+      "gcd and lcm",
+      "semirings",
+      "lattices"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出有限条等式并证明它们恰好公理化 Φ，或证明 Φ 不是有限可公理化的。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

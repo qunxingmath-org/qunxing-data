@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000156",
-  "revision": 1,
-  "card_rev": "309817c53467bed1",
+  "revision": 2,
+  "card_rev": "b40cf1dc2f804dda",
   "title": "Kourovka 14.95：（Leedham-Green-Neumann-Wiegold 类-宽度问题）p-群类 c 与宽度 b：c ≤ b+1 吗",
-  "title_en": null,
+  "title_en": "The class-breadth problem: is c(P) at most b(P)+1 for odd p?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "bound"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20E45"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "p-群",
+      "幂零类",
+      "宽度",
+      "共轭类",
+      "Kourovka 问题"
+    ],
+    "en": [
+      "p-group",
+      "nilpotency class",
+      "breadth",
+      "conjugacy class",
+      "Kourovka problem"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；方向活跃或结构较深，难度待定（一二区工作量参照）。 同族注记：arXiv:2606.13423(2026) 专文；b≤p+1 等特殊情形已知；Mann 1999 综述"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 p≠2 时每个有限 p-群都满足 c(P) ≤ b(P)+1，或给出一个奇素数 p 和 p-群使不等式失败。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

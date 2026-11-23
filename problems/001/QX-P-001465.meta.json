@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001465",
-  "revision": 1,
-  "card_rev": "0154624aa56b0ca2",
+  "revision": 2,
+  "card_rev": "435a1a36345e5148",
   "title": "batch_I I-097：Coman 最后猜想：每个素数 q≥11 可写成 q=3(p₁−1)+p₂，其中 p₁,p₂ 为奇素数。",
-  "title_en": null,
+  "title_en": "Coman's last conjecture: q = 3(p1-1) + p2 for every prime q >= 11",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11P32",
+    "secondary": [
+      "11A41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 素数表示",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "素数表示",
+      "奇素数",
+      "哥德巴赫型",
+      "Coman 猜想"
+    ],
+    "en": [
+      "representations of primes",
+      "odd primes",
+      "Goldbach-type problems",
+      "Coman's conjecture"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +128,12 @@
     "note": "三四区·小问题；Marco Ripà 2022 引 Coman《Conjectures on Primes and Fermat Pseudoprimes》末条猜想；0 回答；Peter 验证 11≤q≤10¹⁰ 且 p≤797。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有素数 q>7 证明存在奇素数 p₁、p₂ 使 q=3(p₁−1)+p₂，或给出一个反例素数 q。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

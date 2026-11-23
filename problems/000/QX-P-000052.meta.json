@@ -2,24 +2,27 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000052",
-  "revision": 1,
-  "card_rev": "12e9c41468d9b840",
+  "revision": 2,
+  "card_rev": "fe34117b19849914",
   "title": "Tao 优化常数 1a：Sidon 集自相关常数的精确值",
-  "title_en": null,
+  "title_en": "Tao's optimisation constant 1a: determining the exact Sidon autocorrelation constant",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
-  "statement_fidelity": "unaudited",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
+  "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
     "date": "2026-11-21",
-    "verdict": "fail"
+    "verdict": "pass_with_fixes"
   },
   "source_quote_lang": "en",
   "formal": [],
@@ -83,11 +86,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B30",
+    "secondary": [
+      "42A85"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "调和分析/组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "自相关常数",
+      "Sidon 集",
+      "变分问题",
+      "上下界",
+      "调和分析"
+    ],
+    "en": [
+      "autocorrelation constant",
+      "Sidon sets",
+      "variational problem",
+      "upper and lower bounds",
+      "harmonic analysis"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -95,7 +117,12 @@
     "note": "一区二区·易证明；目标是改进一个具体常数（上界 1.5028628587…(T2026)，下界 1.292 (PBV2026)）——两侧界之间的窗口明确，数值优化/构造搜索均可能直接推进；Tao 优化常数项目本身即\"可计算可逼近\"型任务设计，A层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定 C₁a 的精确值，或把现有的 1.292 下界与 1.5028628587… 上界中任一侧真正改进。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

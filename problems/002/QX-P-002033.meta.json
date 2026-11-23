@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002033",
-  "revision": 1,
-  "card_rev": "f2336c86fea8b5db",
+  "revision": 2,
+  "card_rev": "d595500c52912497",
   "title": "球面空间形式嵌入 S⁴",
-  "title_en": null,
+  "title_en": "Which spherical space forms embed in the four-sphere?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "classify"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "57R40",
+    "secondary": [
+      "57N35",
+      "57M60"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "4维拓扑",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "球面空间形式",
+      "嵌入",
+      "四维球面",
+      "自由群作用",
+      "余维数二"
+    ],
+    "en": [
+      "spherical space forms",
+      "embeddings",
+      "four-sphere",
+      "free group actions",
+      "codimension two"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对某一族球面空间形式给出嵌入 S⁴ 的显式构造，或证明某个空间形式无法嵌入 S⁴（用不变量排除），从而推进完整清单。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001835",
-  "revision": 1,
-  "card_rev": "2ea2a7994d0223c1",
+  "revision": 2,
+  "card_rev": "3183bd8339b0f9ae",
   "title": "E ϑ(G(n,1/2))=√n",
-  "title_en": null,
+  "title_en": "Expected Lovasz theta of the random graph G(n,1/2) equals sqrt(n)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "asymptotic",
+    "value"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C80",
+    "secondary": [
+      "90C22",
+      "05C15"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "随机图/SDP",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lovász theta",
+      "随机图",
+      "半正定规划",
+      "期望值"
+    ],
+    "en": [
+      "Lovasz theta",
+      "random graphs",
+      "semidefinite programming",
+      "expected value"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明 E ϑ(G(n,1/2)) = (1+o(1))√n，或给出与该式矛盾的估计。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

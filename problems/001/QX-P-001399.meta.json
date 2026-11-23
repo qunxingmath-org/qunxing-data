@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001399",
-  "revision": 1,
-  "card_rev": "7e76e0381b840fb9",
+  "revision": 2,
+  "card_rev": "0621f0582eefbeb3",
   "title": "Conrad：666 是否唯一的多位重复数字二项式系数（Crux 339）",
-  "title_en": null,
+  "title_en": "Is 666 = C(37,2) the only repdigit binomial coefficient with at least three digits?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -91,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B65",
+    "secondary": [
+      "11A63",
+      "11D41"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论（数字表示）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "二项式系数",
+      "重复数字",
+      "十进制表示",
+      "丢番图方程"
+    ],
+    "en": [
+      "binomial coefficients",
+      "repdigits",
+      "decimal representation",
+      "Diophantine equations"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +123,12 @@
     "note": "三四区·小问题；初等数论+模运算排除法可大量缩小范围；repdigit 文献部分处理；完整排除需新想法。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明所有至少三位的 repdigit 二项式系数只有 666，或找出另一个这样的二项式系数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

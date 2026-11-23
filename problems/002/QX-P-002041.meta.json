@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002041",
-  "revision": 1,
-  "card_rev": "302125a8cac5445c",
+  "revision": 2,
+  "card_rev": "819316f41be91463",
   "title": "Tutte 多项式零点 C² 稠密性",
-  "title_en": null,
+  "title_en": "Are the zeros of the Tutte polynomial dense in C^2?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C31",
+    "secondary": [
+      "30C15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "代数组合",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Tutte 多项式",
+      "零点分布",
+      "稠密性",
+      "图多项式",
+      "复平面"
+    ],
+    "en": [
+      "Tutte polynomial",
+      "zeros",
+      "density",
+      "graph polynomial",
+      "complex plane"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明全体图的 Tutte 多项式的零点在 C² 中稠密，或构造一个非空开集使任何图的 Tutte 多项式在其中都没有零点。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000544",
-  "revision": 1,
-  "card_rev": "7cbce00155ec01c3",
+  "revision": 2,
+  "card_rev": "cb9d0bb64c69d363",
   "title": "21.116 分支群皆有界无环？",
-  "title_en": null,
+  "title_en": "Is every branch group boundedly acyclic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +107,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E08",
+    "secondary": [
+      "20J06",
+      "20F65"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "分支群",
+      "有界无环",
+      "有界上同调",
+      "有根树的自同构"
+    ],
+    "en": [
+      "branch groups",
+      "boundedly acyclic groups",
+      "bounded cohomology",
+      "automorphisms of rooted trees"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +137,12 @@
     "note": "一区二区·难度待定；Kourovka 21版在列开放题；（Schesler）有界无环 = 平凡实系数有界上同调全正次数消失。每个分支群（branch group）是否有界无环？…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个分支群的有界上同调在正次数上全为零，或给出一个分支群和某个正次数，使该处的有界上同调非零。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

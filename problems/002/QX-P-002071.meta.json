@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002071",
-  "revision": 1,
-  "card_rev": "229078e13aae21fc",
+  "revision": 2,
+  "card_rev": "1863624c7f4a5ff3",
   "title": "自然边与对角线的 midsquare（=四距离问题内点版本）",
-  "title_en": null,
+  "title_en": "Do natural numbers give a midsquare with integer sides and diagonal?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
+  "checkability": "verifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": "en",
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D09",
+    "secondary": [
+      "51M04",
+      "11D72"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正交等对角四边形",
+      "整边四边形",
+      "丢番图方程",
+      "计算搜索",
+      "四距离问题"
+    ],
+    "en": [
+      "midsquare",
+      "orthodiagonal quadrilateral",
+      "integral quadrilateral",
+      "Diophantine equations",
+      "computational search"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出具体的正整数 a,b,c,d,e 并验证上述判别方程成立，或证明这样的正整数组不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

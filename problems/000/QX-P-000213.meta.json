@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000213",
-  "revision": 1,
-  "card_rev": "17e8a8aba86f2eab",
+  "revision": 2,
+  "card_rev": "9832bd82ca2c6345",
   "title": "Erdos P120: Erdos similarity problem",
-  "title_en": null,
+  "title_en": "Erdos's similarity problem: can every infinite set be avoided by a positive-measure set?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "28A75",
+    "secondary": [
+      "28A78",
+      "11B99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "组合 / 测度论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "相似变换",
+      "正测度",
+      "位似复制",
+      "测度论",
+      "Erdős 问题"
+    ],
+    "en": [
+      "similarity transformations",
+      "positive measure",
+      "homothetic copies",
+      "measure theory",
+      "Erdos problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +136,12 @@
     "note": "一区二区·难度待定；B层理由: 著名活跃问题(Green列表#94的推广); 2023-2026连续有新进展(JLM24综述、topological版本、'in the large'、exceptional parameters、dyadic特殊情形AI形式化证明), 高速演化期不宜判难度。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个无限集 A⊂R 都存在正测度的 E 不含任何 aA+b（a≠0），或给出一个反例无限集 A。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

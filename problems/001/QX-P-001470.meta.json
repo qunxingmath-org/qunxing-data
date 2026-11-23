@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001470",
-  "revision": 1,
-  "card_rev": "164b9e22d0f79343",
+  "revision": 2,
+  "card_rev": "43119bd742c422e8",
   "title": "batch_I I-110：双向（ambidextrous）沙发问题（需同时能通过左转与右转走廊的沙发最大面积）是否存在非平凡上界？",
-  "title_en": null,
+  "title_en": "Is there a non-trivial upper bound for the ambidextrous sofa problem?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +99,28 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "49Q10",
+    "secondary": [
+      "52A40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "几何 / 移动沙发问题",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "移动沙发问题",
+      "双向沙发",
+      "面积上界",
+      "几何优化"
+    ],
+    "en": [
+      "moving sofa problem",
+      "ambidextrous sofa",
+      "area upper bounds",
+      "geometric optimization"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +128,12 @@
     "note": "三四区·小问题；user1747847 2026 提问；0 回答；Kallus–Romik 2018 时无显式上界；单向问题已被 Baek 解决（帖内表述为已解决事实）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出双向沙发最大面积的一个显式上界，且严格小于经典沙发问题的 2.2195。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

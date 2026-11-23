@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000398",
-  "revision": 1,
-  "card_rev": "c4ab6bc0cea5f943",
+  "revision": 2,
+  "card_rev": "027809f92f1791ce",
   "title": "batch_I I-082：双素数均值 x=(p+q)/2（p,q 孪生素数）。猜想：每个 x>6 都是两个更小双素数均值之和",
-  "title_en": null,
+  "title_en": "Every twin prime average above 6 is a sum of two smaller twin prime averages",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "existence"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11P32",
+    "secondary": [
+      "11A41",
+      "11N05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 素数（Goldbach 型）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "孪生素数",
+      "双素数均值",
+      "Goldbach 型猜想",
+      "加性表示",
+      "序列"
+    ],
+    "en": [
+      "twin primes",
+      "twin prime averages",
+      "Goldbach-type conjecture",
+      "additive representation"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +139,12 @@
     "note": "一区二区·难度待定；MSE 2023，0 回答 19 评论；Greg Martin 评论定位难度；Robert Israel/Keith Backman 给 OEIS 等价形式；Peter 计算至 10⁹。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有双素数均值 x>6 证明存在两个更小的双素数均值 x'、x'' 使 x=x'+x''，或给出一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

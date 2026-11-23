@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000304",
-  "revision": 1,
-  "card_rev": "6fe8f938a88fa95d",
+  "revision": 2,
+  "card_rev": "e15e6d7418da81c8",
   "title": "Cho–Choi–Park 独立支配猜想（偶最大度情形）",
-  "title_en": null,
+  "title_en": "The Cho-Choi-Park conjecture on independent domination for maximum even degree",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -98,11 +101,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C69",
+    "secondary": [
+      "05C07",
+      "05C35"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（支配）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "独立支配数",
+      "支配集",
+      "最大度",
+      "Cho–Choi–Park 猜想"
+    ],
+    "en": [
+      "independent domination number",
+      "dominating sets",
+      "maximum degree",
+      "Cho-Choi-Park conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -110,7 +131,12 @@
     "note": "一区二区·难度待定；2020 论文提出的 (D+2)²i(G)≤(D²+4)n 型不等式（奇情形 cb-0206 同组）；机器不等式风格+放电可验；与 FC 同文件形式化关联。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个最大偶度 D 和每个无孤立点的 n 点图证明该不等式，或给出一个违反它的图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

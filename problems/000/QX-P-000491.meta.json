@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000491",
-  "revision": 1,
-  "card_rev": "9eb49a9472e5f672",
+  "revision": 2,
+  "card_rev": "98bc2387392020ab",
   "title": "Erdős–Mollin–Walsh 猜想：无三个连续 powerful 数",
-  "title_en": null,
+  "title_en": "The Erdos-Mollin-Walsh conjecture: no three consecutive powerful integers",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +95,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B83",
+    "secondary": [
+      "11A51",
+      "11D61"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "powerful 数",
+      "连续整数",
+      "素因子指数",
+      "Erdős–Mollin–Walsh 猜想",
+      "丢番图条件"
+    ],
+    "en": [
+      "powerful numbers",
+      "consecutive integers",
+      "prime exponents",
+      "Erdos-Mollin-Walsh conjecture",
+      "Diophantine conditions"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -105,7 +127,12 @@
     "note": "一区二区·难度待定；【表述修正】采集条目误写为素数间隔型——查新确认 Erdős–Mollin–Walsh 猜想为'不存在三个连续 powerful 数'（每素因子次数≥2 的数），2025 年仍有活跃进展（arXiv:2507.16828）；与排除存证 EP#6（素数间隔 d_n<d_{n+1}<d_{n+2}，已解决）完全不同问题，EXCLUDED-CHECK 裁决：保留（修正表述）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明不存在三个连续的 powerful 整数，或给出三个具体的连续 powerful 整数作为反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

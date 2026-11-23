@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002086",
-  "revision": 1,
-  "card_rev": "59bf1e8a9881b16e",
+  "revision": 2,
+  "card_rev": "dc70b0c74533b649",
   "title": "素特征下约化李代数的定义缺失",
-  "title_en": null,
+  "title_en": "What definition of reduced Lie algebras survives in prime characteristic?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "classify"
+  ],
+  "answer_type": "classification",
   "checkability": "unknown",
   "statement_fidelity": "unknown",
   "statement_audit": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "17B50",
+    "secondary": [
+      "17B20",
+      "17B45"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "表示论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "约化李代数",
+      "素特征",
+      "定义分歧",
+      "半单李代数",
+      "结构理论"
+    ],
+    "en": [
+      "reduced Lie algebras",
+      "prime characteristic",
+      "competing definitions",
+      "semisimple Lie algebras",
+      "structure theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一套素特征下自洽、且保留特征 0 主要性质的「约化李代数」定义，并说明它与其它候选定义的异同；或证明任何自然推广都会必然丢失某条关键性质。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

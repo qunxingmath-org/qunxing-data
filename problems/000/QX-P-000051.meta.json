@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000051",
-  "revision": 1,
-  "card_rev": "f2bfb332ab248461",
+  "revision": 2,
+  "card_rev": "74b065867227723f",
   "title": "Beaver Math Olympiad 第 1 题：(a,b)→(a−b,4b+2)/(2a+1,b−a) 迭代是否相遇",
-  "title_en": null,
+  "title_en": "Beaver Math Olympiad problem 1: does the map (a,b) -> (a-b, 4b+2) / (2a+1, b-a) ever hit a = b?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "verifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -102,11 +104,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03D10",
+    "secondary": [
+      "11B37",
+      "68Q04"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "可计算性/数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "图灵机停机",
+      "迭代判定",
+      "整数递推",
+      "bbchallenge",
+      "可计算性"
+    ],
+    "en": [
+      "Turing machine halting",
+      "iteration decision problem",
+      "integer recurrences",
+      "bbchallenge",
+      "computability"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -114,7 +136,12 @@
     "note": "一区二区·易证明；初等二维迭代、可任意长程程序推进（\"计算可及\"）；等价于特定 6-态图灵机不停机，bbchallenge 社区活跃推进中；任何一段新数据/不变量/部分不变性都是成果，A层（小参数空间+数值可推进）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个具体的下标 i 并验证 a_i = b_i；或证明对所有 i ≥ 1 都有 a_i ≠ b_i（即给出该迭代永不相等的一般性论证）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000014",
-  "revision": 1,
-  "card_rev": "bd5c571f9cbf4b65",
+  "revision": 2,
+  "card_rev": "968a342344bdb035",
   "title": "Erdos P82: F(n)/log n -> infinity (regular induced subgraph)",
-  "title_en": null,
+  "title_en": "Regular induced subgraphs: proving F(n)/log n tends to infinity",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,27 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C07"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "正则诱导子图",
+      "极值函数",
+      "渐近增长",
+      "Erdős 问题"
+    ],
+    "en": [
+      "regular induced subgraphs",
+      "extremal function",
+      "asymptotic growth"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +132,12 @@
     "note": "一区二区·易证明；A层理由: 小情形完全枚举可验证(F(5)=3, F(7)=4已知, F(6)待定); 目标=超越log n的具体下界; Erdős–Fajtlowicz–Stanton结构分析+Ramsey型论证路线明确; DyMc26新上界n^{1/2}显示该方向2026年仍活跃。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对任意趋于无穷的函数 ω(n)，都有 F(n) ≥ ω(n)·log n 成立（n 充分大时）；或给出反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

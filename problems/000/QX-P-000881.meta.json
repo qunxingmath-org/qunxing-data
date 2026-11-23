@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000881",
-  "revision": 1,
-  "card_rev": "85f9d4a54a088cce",
+  "revision": 2,
+  "card_rev": "6d90c81a8e2dc78d",
   "title": "F_2^n∖{0} 二染色中单色线性子空间规模 f(n)=O(n)？（OWR 2023/1）",
-  "title_en": null,
+  "title_en": "Monochromatic linear subspaces in 2-colourings of F_2^n minus zero: is f(n) = O(n)?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "asymptotic"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -90,11 +93,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05D10",
+    "secondary": [
+      "05C55",
+      "11B25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Ramsey 理论（向量空间）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "向量空间 Ramsey",
+      "二染色",
+      "单色子空间",
+      "F_2^n"
+    ],
+    "en": [
+      "vector space Ramsey theory",
+      "two-colourings",
+      "monochromatic subspaces",
+      "F_2^n"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -102,7 +123,12 @@
     "note": "三四区·小问题；Graham–Leeb–Rothschild 型向量空间 Ramsey 的定量余留；已知仅对数因子上界（triage 引 Conlon–Fox–Pham–Yepremyan 2024 随机 Cayley 图）；与 Graham 数 g(n) 家族关联。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在绝对常数 C 使 f(n) ≤ Cn 对一切 n 成立；或证明 f(n)/n 无界（给出增长更快的一族染色）。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

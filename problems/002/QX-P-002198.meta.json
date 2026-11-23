@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002198",
-  "revision": 1,
-  "card_rev": "7694e3b6b61a5780",
+  "revision": 2,
+  "card_rev": "8aba1e7d08524804",
   "title": "超有限等价关系的 Union Problem",
-  "title_en": null,
+  "title_en": "The union problem for hyperfinite Borel equivalence relations",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E15",
+    "secondary": [
+      "37A20",
+      "03E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "Borel 等价关系",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "超有限等价关系",
+      "并问题",
+      "Borel 等价关系",
+      "有限类",
+      "描述集合论"
+    ],
+    "en": [
+      "hyperfinite equivalence relations",
+      "union problem",
+      "Borel equivalence relations",
+      "finite classes",
+      "descriptive set theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明递增的超有限 Borel 等价关系序列之并总是超有限,或给出一个并起来不再超有限的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001397",
-  "revision": 1,
-  "card_rev": "c3a7b97e129b3d28",
+  "revision": 2,
+  "card_rev": "180968b6bf25e178",
   "title": "Goodman 反函数闭形式/级数表示（Crux 283）",
-  "title_en": null,
+  "title_en": "Goodman's inverse: closed form or good series for the inverse of -2x log x/(1-x^2)",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "construct",
+    "value"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -91,11 +94,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "26A09",
+    "secondary": [
+      "33E20",
+      "41A58"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "分析/特殊函数",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "反函数",
+      "闭形式",
+      "级数表示",
+      "超越方程",
+      "特殊函数"
+    ],
+    "en": [
+      "inverse functions",
+      "closed forms",
+      "series representations",
+      "transcendental equations",
+      "special functions"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -103,7 +126,12 @@
     "note": "三四区·小问题；单个初等函数反函数——Lambert W 邻域特殊函数论可试，门槛低。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出 g 的闭形式（用已知特殊函数或初等函数写出），或给出一个收敛性好、能实际计算 g 的级数表示并说明其收敛范围。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

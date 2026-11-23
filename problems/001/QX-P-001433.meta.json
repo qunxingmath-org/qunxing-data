@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001433",
-  "revision": 1,
-  "card_rev": "5f013296858ab898",
+  "revision": 2,
+  "card_rev": "f124d0218fd6977c",
   "title": "batch_I I-041：g(x)=x^{−δ}(1+Σ_{i≥1}c_i x^{Δ_i})，c_i>0，0<Δ₁<Δ₂<…，",
-  "title_en": null,
+  "title_en": "The optimal upper bound for the first exponent gap of a symmetric power series with positive coefficients",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "bound",
+    "value"
+  ],
+  "answer_type": "bound",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -98,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "26A12",
+    "secondary": [
+      "41A58",
+      "81T40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "分析 / CFT 背景",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "幂级数",
+      "对称性",
+      "指数间隔",
+      "正系数",
+      "最优界"
+    ],
+    "en": [
+      "power series",
+      "symmetry",
+      "exponent gaps",
+      "positive coefficients",
+      "optimal bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -110,7 +133,12 @@
     "note": "三四区·小问题；Slava Rychkov（物理学家）2015 提出；0 回答；Reimundo Heluani 评论给 OPE 关联（dilog 恒等式 g(x)=g(1−x)）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对每个 δ>0 确定 Δ₁ 的精确上界，并给出达到（或逼近）该界的函数族。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

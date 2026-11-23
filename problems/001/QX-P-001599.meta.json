@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001599",
-  "revision": 1,
-  "card_rev": "d2fc346e9032fe06",
+  "revision": 2,
+  "card_rev": "5e18f68c52af4b23",
   "title": "21.126 RAAG 子群的 Dehn 函数能超指数/亚指数非多项式吗",
-  "title_en": null,
+  "title_en": "Can subgroups of right-angled Artin groups have super-exponential Dehn functions?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "construct"
+  ],
+  "answer_type": "object",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F65",
+    "secondary": [
+      "20F69",
+      "20F67"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Dehn 函数",
+      "右角 Artin 群",
+      "有限表现子群",
+      "CAT(0) 群",
+      "同伦不变量"
+    ],
+    "en": [
+      "Dehn functions",
+      "right-angled Artin groups",
+      "finitely presented subgroups",
+      "CAT(0) groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -117,7 +139,12 @@
     "note": "三四区·小问题；Kourovka 21版在列开放题；（Brady）右角 Artin 群的有限表现子群，其 Dehn 函数能否超指数，或亚指数但非多项式？（CAT(0) 群中…（小而具体、可局部攻坚）。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造一个有限表现的右角 Artin 群子群，其 Dehn 函数为超指数，或为亚指数但非多项式；或证明这样的子群不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

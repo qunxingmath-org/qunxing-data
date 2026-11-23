@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000010",
-  "revision": 1,
-  "card_rev": "1baf084e4ae28cf9",
+  "revision": 2,
+  "card_rev": "48a062adf8aa9f0a",
   "title": "Erdos P33: minimal additive complement of the squares",
-  "title_en": null,
+  "title_en": "Minimal additive complement of the squares: exact limsup and liminf bounds",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "bound"
+  ],
+  "answer_type": "value",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -101,11 +104,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11B13",
+    "secondary": [
+      "11P99"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 加性基",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "平方数",
+      "加性补集",
+      "上极限",
+      "下极限",
+      "Erdős 问题"
+    ],
+    "en": [
+      "squares",
+      "additive complements",
+      "limsup",
+      "liminf",
+      "Erdős problems"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -113,7 +135,12 @@
     "note": "一区二区·易证明；A层理由: 常数窗口已知(下界4/π≈1.273, 上界构造<6.66), 两侧均可推进; 构造与计数方法初等具体; 数值模拟可直接支撑构造设计。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "确定所有平方数加性补集中，limsup|A∩[1,N]|/√N 的最小值；并判定对任意补集是否有 liminf 大于 1。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

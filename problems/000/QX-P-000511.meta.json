@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000511",
-  "revision": 1,
-  "card_rev": "fee8117cec69c769",
+  "revision": 2,
+  "card_rev": "b1185058a7febfd1",
   "title": "Besse 猜想（正标量曲率紧 Einstein 流形全测地闭）",
-  "title_en": null,
+  "title_en": "The Besse conjecture: are compact positive-scalar-curvature Einstein manifolds Besse?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "decide"
+  ],
+  "answer_type": "proof",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -93,11 +96,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "53C25",
+    "secondary": [
+      "53C22",
+      "53C30"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "黎曼几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Besse 猜想",
+      "Einstein 流形",
+      "正标量曲率",
+      "全测地",
+      "闭测地线"
+    ],
+    "en": [
+      "Besse conjecture",
+      "Einstein manifolds",
+      "positive scalar curvature",
+      "totally geodesic",
+      "closed geodesics"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -105,7 +128,12 @@
     "note": "一区二区·难度待定；【范围修正】Besse 猜想=正标量曲率紧 Einstein 流形是否 Besse（测地线全闭）；dim 3 与齐性情形已证（2021-2023 文献、Killing 场/Fischer–Marsden 方法），n≥4 开（2025 文献确认 unable to establish）；B层。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对 n≥4 的所有紧 Einstein 正标量曲率流形证明其测地线全闭，或给出一个测地线不闭合的具体反例流形。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

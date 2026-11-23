@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-002090",
-  "revision": 1,
-  "card_rev": "07aa23f2447917fb",
+  "revision": 2,
+  "card_rev": "d6cf2ceab00fc1d7",
   "title": "不可达基数 κ→[κ]²₃ 与 κ→[κ]²₂ 等价？",
-  "title_en": null,
+  "title_en": "For inaccessible kappa, is kappa -> [kappa]^2_2 equivalent to kappa -> [kappa]^2_3?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "03E55",
+    "secondary": [
+      "03E02",
+      "03E05"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "集合论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "不可达基数",
+      "划分关系",
+      "大基数",
+      "负划分关系",
+      "组合集合论"
+    ],
+    "en": [
+      "inaccessible cardinals",
+      "partition relations",
+      "large cardinals",
+      "negative partition relations",
+      "combinatorial set theory"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +101,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对不可达基数 κ 有 κ→[κ]²_3 与 κ→[κ]²_2 等价（即由后者可推出前者），或给出一个不可达基数使后者成立而前者不成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001886",
-  "revision": 1,
-  "card_rev": "429b1b2c6c2074e1",
+  "revision": 2,
+  "card_rev": "a8002a0465ec8f7f",
   "title": "正偶数处取 π 幂的 Dirichlet 级数",
-  "title_en": null,
+  "title_en": "Dirichlet series taking values of powers of pi at positive even integers",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence",
+    "value"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
@@ -67,11 +70,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11M41",
+    "secondary": [
+      "11M06",
+      "11B68"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Dirichlet 级数",
+      "π 的幂",
+      "正偶数",
+      "系数构造"
+    ],
+    "en": [
+      "Dirichlet series",
+      "powers of pi",
+      "positive even integers",
+      "coefficient construction"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +100,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "显式构造出这样的 Dirichlet 级数并验证在每个正偶数处取值正确，或证明不存在这样的级数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

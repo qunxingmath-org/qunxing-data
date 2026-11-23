@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000401",
-  "revision": 1,
-  "card_rev": "96c1ad6f1cea4b71",
+  "revision": 2,
+  "card_rev": "460432dfeea0ce76",
   "title": "batch_I I-129(提取)：是否存在次数 ≥3 的实代数数，其连分数部分商有界（即 badly approximable）？",
-  "title_en": null,
+  "title_en": "Are there algebraic numbers of degree at least 3 with bounded partial quotients?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "existence",
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -105,11 +108,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J70",
+    "secondary": [
+      "11J04",
+      "11R04"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论 / 丢番图逼近",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "连分数",
+      "部分商",
+      "代数数",
+      "badly approximable",
+      "Diophantine 逼近"
+    ],
+    "en": [
+      "continued fractions",
+      "partial quotients",
+      "algebraic numbers",
+      "badly approximable numbers",
+      "Diophantine approximation"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -117,7 +140,12 @@
     "note": "一区二区·难度待定；MO 358385 答案（a358425）；Lang 问题清单收录；Beresnevich 讲义称\"major open problem\"；函数域情形 Baum–Sweet 1977 已解决。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出一个次数 ≥3 的实代数数并证明其连分数部分商有界，或证明不存在这样的代数数。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
@@ -131,7 +159,6 @@
     "status_raw": "OPEN-CONFIRMED",
     "imported_at": "2026-11-23",
     "possible_duplicates": [
-      "QX-P-000045",
       "QX-P-001443"
     ]
   }

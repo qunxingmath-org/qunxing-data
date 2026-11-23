@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001118",
-  "revision": 1,
-  "card_rev": "aa1eee03b6aa05f9",
+  "revision": 2,
+  "card_rev": "149c3f16c6645c07",
   "title": "Kourovka 12.4：[x,y]³=1 ∀x,y ⇒ G′ 有限指数？G 可解？",
-  "title_en": null,
+  "title_en": "If [x,y]^3 = 1 for all x,y, is G' of finite exponent and is G soluble?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20F12",
+    "secondary": [
+      "20F16",
+      "20E10"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "换位子恒等式",
+      "导群",
+      "指数",
+      "可解性",
+      "3-群"
+    ],
+    "en": [
+      "commutator identities",
+      "derived subgroup",
+      "exponent",
+      "solubility",
+      "3-groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "判定导群 G′ 是否有有限指数、以及 G 是否必可解；给出证明，或给出一个满足题设但导群指数无限（或群不可解）的反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

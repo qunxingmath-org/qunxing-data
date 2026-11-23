@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001110",
-  "revision": 1,
-  "card_rev": "b81deafd6bed10ff",
+  "revision": 2,
+  "card_rev": "b3eee401e061830e",
   "title": "Kourovka 11.44：p-群 P=AB 的截断秩被 r(A),r(B) 线性界",
-  "title_en": null,
+  "title_en": "Is the sectional rank of a product of two p-subgroups linearly bounded?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound"
+  ],
+  "answer_type": "bound",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20D15",
+    "secondary": [
+      "20E34",
+      "20D60"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "截断秩",
+      "p-群",
+      "子群乘积",
+      "线性界"
+    ],
+    "en": [
+      "sectional rank",
+      "p-groups",
+      "products of subgroups",
+      "linear bounds"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +157,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在绝对常数 C 使 r(AB) ≤ C·(r(A)+r(B))（或类似的线性函数），或给出秩远远超出线性界的反例族。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

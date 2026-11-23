@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000136",
-  "revision": 1,
-  "card_rev": "8008f37e88f44ce0",
+  "revision": 2,
+  "card_rev": "ef21901dbded90e0",
   "title": "Sensitivity of 2-colorings of Z^d (Aaronson)",
-  "title_en": null,
+  "title_en": "Sensitivity of 2-colourings of Z^d: lower bounds in terms of d",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "bound",
+    "asymptotic"
+  ],
+  "answer_type": "bound",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -89,11 +92,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "06E30",
+    "secondary": [
+      "05C15",
+      "68Q15"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "离散几何/理论计算机",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "敏感度",
+      "二染色",
+      "格点",
+      "布尔函数",
+      "组合复杂性"
+    ],
+    "en": [
+      "sensitivity",
+      "two-colouring",
+      "integer lattice",
+      "Boolean function",
+      "combinatorial complexity"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -101,7 +124,12 @@
     "note": "一区二区·难度待定；难度高：Huang 2019 只解决了超立方体（布尔函数）敏感性猜想，domotorp 在评论中明确指出格点版本仍开放；一般 d 的下界未知。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明存在常数 c>0（或给出明确的增长阶）使得所有满足条件的染法都有 s(C) ≥ c·f(d)（如 √d 或 d 的某个固定分数），或给出一个染法说明这类下界不可能成立。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

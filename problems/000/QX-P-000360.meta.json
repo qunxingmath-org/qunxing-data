@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000360",
-  "revision": 1,
-  "card_rev": "4a66a586c0a91c18",
+  "revision": 2,
+  "card_rev": "07c1acdce2d46c74",
   "title": "Reinhardt猜想（最差填装形状）",
-  "title_en": null,
+  "title_en": "Reinhardt's conjecture: is the smoothed octagon the worst packing shape?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "value",
+    "classify"
+  ],
+  "answer_type": "object",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -100,11 +103,30 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "52C15",
+    "secondary": [
+      "52A40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "离散几何/凸几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Reinhardt 猜想",
+      "最密填装",
+      "中心对称凸盘",
+      "平滑八边形",
+      "填装密度"
+    ],
+    "en": [
+      "Reinhardt conjecture",
+      "densest packing",
+      "centrally symmetric convex disks",
+      "smoothed octagon",
+      "packing density"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -112,7 +134,12 @@
     "note": "一区二区·难度待定；B层：Hales 2024以最优控制论证明'最差形状必为平滑多边形'（结构半步），剩下平滑八边形唯一性——已归结为有限维变分问题+Lean 4形式化进行中；与池内B-109（Lebesgue万能覆盖）对偶。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明平滑八边形在所有中心对称凸盘中给出最小的最密填装密度，并证明该最优形状唯一。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

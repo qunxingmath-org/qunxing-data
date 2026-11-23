@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001769",
-  "revision": 1,
-  "card_rev": "a17f85c0232028bb",
+  "revision": 2,
+  "card_rev": "75b4c68937716cb7",
   "title": "不可约整值多项式倒数和有理性",
-  "title_en": null,
+  "title_en": "Is the sum of reciprocals of an irreducible integer-valued polynomial rational?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "unknown",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +69,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11J72",
+    "secondary": [
+      "11C08",
+      "11B65"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "整值多项式",
+      "倒数和",
+      "无理性",
+      "不可约性"
+    ],
+    "en": [
+      "integer-valued polynomials",
+      "reciprocal sums",
+      "irrationality",
+      "irreducibility"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +99,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明对每个不可约整值多项式该倒数和都是无理数，或给出一个使和为有理数的例子。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

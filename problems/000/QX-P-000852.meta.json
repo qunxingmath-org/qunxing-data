@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000852",
-  "revision": 1,
-  "card_rev": "6192e2d376a78006",
+  "revision": 2,
+  "card_rev": "014a6b777e7b63f3",
   "title": "3-连通三次图（3k 点）能否分划为 k 条长 2 路（P2-因子）",
-  "title_en": null,
+  "title_en": "Partitioning 3-connected cubic graphs on 3k vertices into k paths of length 2",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide",
+    "existence"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": {
     "by": "agent",
@@ -97,11 +100,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C70",
+    "secondary": [
+      "05C45",
+      "05C40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论（因子分解）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "P2-因子",
+      "三次图",
+      "3-连通",
+      "顶点分划",
+      "路分解"
+    ],
+    "en": [
+      "P2-factor",
+      "cubic graphs",
+      "3-connected",
+      "vertex partition",
+      "path decomposition"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +132,12 @@
     "note": "三四区·小问题；与 Katerinis 型 P_2-因子猜想族衔接；三次图匹配/Petersen 定理工具齐备；小图枚举+因子算法（Zhang 2010 路因子理论）可攻。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 3k 个顶点的 3-连通三次图都可顶点分划成 k 条长度 2 的路；或给出一个做不到的 3-连通三次图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

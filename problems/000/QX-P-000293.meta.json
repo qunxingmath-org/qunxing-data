@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000293",
-  "revision": 1,
-  "card_rev": "d16a4f6af0958be1",
+  "revision": 2,
+  "card_rev": "181ccc475aba76a7",
   "title": "燃烧数猜想：b(G) ≤ ⌈√n⌉",
-  "title_en": null,
+  "title_en": "The burning number conjecture: b(G) is at most ceil(sqrt(n))",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "bound"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -94,11 +97,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "05C35",
+    "secondary": [
+      "05C85",
+      "05C40"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "图论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "燃烧数",
+      "图过程",
+      "连通图",
+      "Bonato 猜想"
+    ],
+    "en": [
+      "burning number",
+      "graph process",
+      "connected graphs",
+      "Bonato's conjecture"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -106,7 +127,12 @@
     "note": "一区二区·难度待定；2009 提出；2026 年多篇进展（结构方法 2606.02、分支树乘积 2602.27、博弈变体等——见第一轮检索记录）；从 1.372√n 型上界压到 √n 是清晰目标链，活跃可续接。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明每个 n 点连通图的燃烧数不超过 ⌈√n⌉，或给出一个燃烧数更大的连通图。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

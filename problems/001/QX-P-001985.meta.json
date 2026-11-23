@@ -2,19 +2,22 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001985",
-  "revision": 1,
-  "card_rev": "a6e8daeed633370f",
+  "revision": 2,
+  "card_rev": "98925a4214518f14",
   "title": "xz=2y 型方程组（恒空解，排除）",
-  "title_en": null,
+  "title_en": "D(1) systems of the type xz = 2y: empties trivially",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "verify",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "prove",
+    "special_case"
+  ],
+  "answer_type": "proof",
+  "checkability": "falsifiable",
   "statement_fidelity": "unaudited",
   "statement_audit": null,
   "source_quote_lang": null,
@@ -67,11 +70,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "11D09",
+    "secondary": [
+      "11D72",
+      "11A25"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "数论",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "D(1) 组",
+      "丢番图方程",
+      "积加一为平方",
+      "空解",
+      "整除性"
+    ],
+    "en": [
+      "D(1) sets",
+      "Diophantine equations",
+      "product plus one a square",
+      "empty solution set",
+      "divisibility"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -79,7 +102,12 @@
     "note": "C 层"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "给出该方程组的完整解集为空集的初等证明（说明每一步的整除与奇偶理由），从而确认它不构成开放的 D(1) 问题。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001423",
-  "revision": 1,
-  "card_rev": "4c6dfdf461ff7157",
+  "revision": 2,
+  "card_rev": "544e36d78c5678e4",
   "title": "batch_I I-017：对流形 M 与（不必可积）分布 D，定义子复形 Ω*(M,D)={α: α|_D=dα|_D=0}，",
-  "title_en": null,
+  "title_en": "Does the dynamical Lefschetz trace formula hold for flows preserving a non-integrable distribution?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -97,11 +99,29 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "58J20",
+    "secondary": [
+      "37Cxx",
+      "55Nxx"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "动力系统 / 微分几何",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lefschetz 迹公式",
+      "分布（叶层）",
+      "de Rham 复形",
+      "叶状上同调"
+    ],
+    "en": [
+      "Lefschetz trace formula",
+      "distributions",
+      "de Rham complexes",
+      "foliated cohomology"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -109,7 +129,12 @@
     "note": "三四区·小问题；Ali Taghavi 2019 提出；0 回答；依赖其自定义\"沿分布上同调\"构造与所引论文。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明在该框架下迹公式仍成立，或构造一个反例说明它失效。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

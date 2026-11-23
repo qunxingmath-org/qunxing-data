@@ -2,18 +2,20 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000192",
-  "revision": 1,
-  "card_rev": "700bf42953b52adc",
+  "revision": 2,
+  "card_rev": "ba90ee438315f810",
   "title": "Lagrange 插值收敛反常现象（EP#671；原批次 A-015）",
-  "title_en": null,
+  "title_en": "Can Lagrange interpolation converge while the Lebesgue sum diverges?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "existence"
+  ],
+  "answer_type": "object",
   "checkability": "unknown",
   "statement_fidelity": "audited",
   "statement_audit": {
@@ -99,11 +101,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "41A05",
+    "secondary": [
+      "41A10",
+      "41A25"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "逼近论/分析（主）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "Lagrange 插值",
+      "节点组",
+      "Lebesgue 函数",
+      "发散",
+      "收敛"
+    ],
+    "en": [
+      "Lagrange interpolation",
+      "node arrays",
+      "Lebesgue functions",
+      "divergence",
+      "convergence"
+    ]
   },
   "difficulty": {
     "level": 3,
@@ -111,7 +133,12 @@
     "note": "一区二区·难度待定；Erdős–Vértesi 传统的精细反例问题；构造型但高技巧；非易证明。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "构造出一列节点，使其 Lebesgue 和在某点发散、而对应的插值多项式序列在该点仍收敛到目标函数；或证明这样的节点选取不存在。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

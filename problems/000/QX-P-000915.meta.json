@@ -2,18 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-000915",
-  "revision": 1,
-  "card_rev": "7a12cc3a39fbba2f",
+  "revision": 2,
+  "card_rev": "3aecb60f93fe4cb1",
   "title": "Calegari 问（AMR 2025 Q3.17）：曲面群的解析 R² 作用是否满足 Milnor–Wood 不等式",
-  "title_en": null,
+  "title_en": "Do analytic actions of surface groups on R^2 satisfy the Milnor-Wood inequality?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
+  "problem_type": [
+    "decide",
+    "prove"
+  ],
+  "answer_type": "yes_no",
   "checkability": "unknown",
   "statement_fidelity": "unaudited",
   "statement_audit": {
@@ -103,11 +106,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "37C85",
+    "secondary": [
+      "57R30",
+      "20F34"
+    ],
+    "source": "agent",
+    "confidence": "medium"
+  },
   "domain_hint": "动力系统/叶状结构（平面作用）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "曲面群",
+      "平面作用",
+      "Milnor–Wood 不等式",
+      "Euler 类",
+      "叶状结构"
+    ],
+    "en": [
+      "surface groups",
+      "actions on the plane",
+      "Milnor-Wood inequality",
+      "Euler class",
+      "foliations"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -115,7 +138,12 @@
     "note": "三四区·小问题；光滑度阶梯上 Milnor–Wood 的成立域刻画（Calegari 专文）；C² 群作用已知满足，解析情形开放；2025 问题清单新鲜；Panina 2024 新证明为工具背景。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "证明曲面群到 R² 的实解析作用总满足 Milnor–Wood 不等式 |e|≤|χ|；或构造一个违反该不等式的实解析作用。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",

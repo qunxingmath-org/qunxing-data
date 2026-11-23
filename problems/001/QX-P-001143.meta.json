@@ -2,19 +2,21 @@
   "schema": "qunxing.problem/2",
   "format_version": "2.2",
   "id": "QX-P-001143",
-  "revision": 1,
-  "card_rev": "8621a540f306b0af",
+  "revision": 2,
+  "card_rev": "da787d1f73c79fcb",
   "title": "Kourovka 15.93：2阶自同构+交换不动点子群⇒pro-p 恒等式？",
-  "title_en": null,
+  "title_en": "Must a pro-p group with an order-2 automorphism of abelian centralizer satisfy a pro-p identity?",
   "aliases": [],
   "family": null,
   "parent": null,
   "language": "zh",
   "card_status": "draft",
   "track": "open",
-  "problem_type": [],
-  "answer_type": null,
-  "checkability": "unknown",
+  "problem_type": [
+    "decide"
+  ],
+  "answer_type": "yes_no",
+  "checkability": "neither",
   "statement_fidelity": "audited",
   "statement_audit": {
     "by": "agent",
@@ -125,11 +127,31 @@
   },
   "appears_in": [],
   "ai_claims": [],
-  "msc2020": null,
+  "msc2020": {
+    "primary": "20E18",
+    "secondary": [
+      "20E10",
+      "20F40"
+    ],
+    "source": "agent",
+    "confidence": "low"
+  },
   "domain_hint": "群论（Kourovka Notebook 开放问题）",
   "keywords": {
-    "zh": [],
-    "en": []
+    "zh": [
+      "pro-p 群",
+      "二阶自同构",
+      "中心化子",
+      "pro-p 恒等式",
+      "自由 pro-p 群"
+    ],
+    "en": [
+      "pro-p groups",
+      "order-2 automorphisms",
+      "centralizers",
+      "pro-p identities",
+      "free pro-p groups"
+    ]
   },
   "difficulty": {
     "level": 2,
@@ -137,7 +159,12 @@
     "note": "三四区·小问题；Kourovka 21版（v50, 2026-11-02）在列开放题、无 ♯/∗/解题评论标注 → 编目级开放；题面小而具体（batch_K四波），可局部攻坚。"
   },
   "ai_suitability": null,
-  "acceptance": null,
+  "acceptance": {
+    "criteria": "对所有素数 p>2 和所有满足条件的 (G,φ) 证明 G 满足某个非平凡的 pro-p 恒等式；或构造一个反例。",
+    "partial": null,
+    "checks": [],
+    "verification": null
+  },
   "attachments": [],
   "visibility": "public",
   "license": "CC-BY-SA-4.0",
