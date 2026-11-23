@@ -1,0 +1,135 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000395",
+  "revision": 1,
+  "card_rev": "b879085e6d3d2a5d",
+  "title": "batch_I I-052：Euclid 数 E_n=p₁p₂…p_n+1（等价 p#+1）中素数是否有无穷多个？",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Oleksandr Bondarenko",
+  "first_published": "2010-11-11；最后活动: 2010-11-11",
+  "sources": [
+    {
+      "cite": "MathOverflow",
+      "url": "https://mathoverflow.net/questions/45742",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "MathOverflow API 全文核验",
+      "url": "https://mathoverflow.net/questions/45742",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "MO 45742 全文核验",
+      "url": "https://mathoverflow.net/questions/45742",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "mo",
+      "id": "45742",
+      "url": "https://mathoverflow.net/questions/45742"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://mathoverflow.net/questions/45742",
+      "https://mathoverflow.net/questions/45742"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "b879085e6d3d2a5d",
+    "scope": {
+      "sources": [
+        "mathoverflow API",
+        "池内查重"
+      ],
+      "search_terms": [],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "数论 / 素数序列",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；Oleksandr Bondarenko 2010 提出；Caldwell–Gallot 2002 专文+Ribenboim 专著确认开放。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-725",
+    "package_path": "02_一区二区_难度待定/B-725_I-052_prime_euclid_numbers",
+    "tier_hint": "B",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

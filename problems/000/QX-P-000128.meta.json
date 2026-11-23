@@ -1,0 +1,128 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000128",
+  "revision": 1,
+  "card_rev": "79f74c2bc7a07e96",
+  "title": "pivot-minor 封闭类的多项式 χ-有界（Bouchet 猜想的定量强化）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "OWR 2022/1 Graph Theory 报告（Bouchet 1994 猜想的定量强化线）",
+  "first_published": null,
+  "sources": [
+    {
+      "cite": "OWR DOI 10.4171/OWR/2022/1；HF id=30004962",
+      "url": "https://doi.org/10.4171/OWR/2022/1",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "HF triage",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-08-22"
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "综述",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "confirmed",
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "79f74c2bc7a07e96",
+    "scope": {
+      "sources": [
+        "HF triage",
+        "WebSearch"
+      ],
+      "search_terms": [
+        "pivot-minor chi-bounded polynomial \"Bouchet\" 2024 2025 bipartite"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "图论（结构图论/染色）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；pivot-minor 封闭类的 χ-有界性（Geelen vertex-minor 类比）已证，但多项式界强化（OWR 2022/1 报告提出）开放；Kim–Oum 2024 综述、2025 二元拟阵度有界工作活跃。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-1054",
+    "package_path": "02_一区二区_难度待定/B-1054_pivot-minor-polynomial-chi",
+    "tier_hint": "B(一二区待定)",
+    "status_raw": "OPEN-CONFIRMED",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

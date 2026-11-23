@@ -1,0 +1,26 @@
+# 题卡检查：每张题卡符合 schema/qunxing.problem-2.schema.json，文件名与 id 一致，有正文和"## 题面"。
+# 只读权限；不用第三方 Action；jsonschema 固定版本。
+name: cards
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: 安装 jsonschema
+        run: python3 -m pip install --user --quiet "jsonschema==4.26.0"
+
+      - name: 检查题卡
+        run: python3 .github/scripts/validate_cards.py schema/qunxing.problem-2.schema.json problems --summary

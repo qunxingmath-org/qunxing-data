@@ -1,0 +1,128 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-001452",
+  "revision": 1,
+  "card_rev": "bc945aaa88d82a0b",
+  "title": "batch_I I-070：Hardy–Littlewood：h^p (0<p≤1) 中调和函数的共轭 v 满足 M_p(r,v)=",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "an_ordinary_mathematician",
+  "first_published": "2023-07-13；最后活动: 2023-07-13",
+  "sources": [
+    {
+      "cite": "MathOverflow",
+      "url": "https://mathoverflow.net/questions/450700",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "MathOverflow API 全文核验",
+      "url": "https://mathoverflow.net/questions/450700",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "MO 450700 全文核验",
+      "url": "https://mathoverflow.net/questions/450700",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "mo",
+      "id": "450700",
+      "url": "https://mathoverflow.net/questions/450700"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "weak",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://mathoverflow.net/questions/450700",
+      "https://mathoverflow.net/questions/450700"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "bc945aaa88d82a0b",
+    "scope": {
+      "sources": [
+        "SOL验证波3（WebFetch）",
+        "mathoverflow API",
+        "池内查重"
+      ],
+      "search_terms": [],
+      "as_of": "2026-11-21"
+    },
+    "depth": "basic",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "复分析 / 调和分析",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 2,
+    "basis": "package",
+    "note": "三四区·小问题；an_ordinary_mathematician 2023 引 Duren《Theory of H^p spaces》第4节后注记；0 回答。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "C-733",
+    "package_path": "03_三四区_小问题/C-733_I-070_hardy_littlewood_p_means",
+    "tier_hint": "C",
+    "status_raw": "OPEN-WEAK",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

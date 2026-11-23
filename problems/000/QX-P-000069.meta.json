@@ -1,0 +1,135 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000069",
+  "revision": 1,
+  "card_rev": "4e7f4821f113e43f",
+  "title": "分拆生成函数\"变号\"后系数是否有界（OPG）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Open Problem Garden 条目 \"Dividing up the unrestricted partitions\"（OPG 页面第一人称 conjecture，署名需回 OPG 页核对）",
+  "first_published": null,
+  "sources": [
+    {
+      "cite": "OPG；HF id=3047（OPG-37222）",
+      "url": "http://www.openproblemgarden.org/op/dividing_up_the_unrestricted_partitions",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "HF 记录",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "WebSearch",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    },
+    {
+      "cite": "文献",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-21"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "opg",
+      "id": "dividing_up_the_unrestricted_partitions",
+      "url": "https://www.openproblemgarden.org/op/dividing_up_the_unrestricted_partitions"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "weak",
+    "as_of": "2026-11-21",
+    "evidence": []
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "4e7f4821f113e43f",
+    "scope": {
+      "sources": [
+        "WebSearch"
+      ],
+      "search_terms": [
+        "partition generating function signs minus congruent mod 2 coefficients open problem"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "数论（分拆/幂级数）",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·易证明；构造性问题——对无穷乘积每因子选 ± 号使系数只取 {-1,0,1} 且 mod 2 与分拆函数一致；前 N 项可 SAT/回溯搜索，实验门槛低；与 Parkin–Shanks 奇偶密度等活跃领域相邻。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "A-844",
+    "package_path": "01_一区二区_易证明/A-844_partition-gf-sign-choice-bounded",
+    "tier_hint": "A(易证明一二区)",
+    "status_raw": "OPEN-WEAK",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": [
+      "QX-P-000005"
+    ]
+  }
+}

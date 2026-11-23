@@ -1,0 +1,119 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000115",
+  "revision": 1,
+  "card_rev": "d4d7a44141718125",
+  "title": "Polynomial representing all nonnegative integers (Poonen)",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "见对应 MO 提问者（batch_B 采集条目 B-002）",
+  "first_published": "见 batch_B 采集文件（各条目 2009-2023 年不等）",
+  "sources": [
+    {
+      "cite": "MathOverflow #9731",
+      "url": "https://mathoverflow.net/questions/9731",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "SE API answers",
+      "url": "https://api.stackexchange.com/2.3/questions/9731/answers",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "mo",
+      "id": "9731",
+      "url": "https://mathoverflow.net/questions/9731"
+    }
+  ],
+  "informal_status": {
+    "value": "partially_solved",
+    "strength": null,
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://api.stackexchange.com/2.3/questions/9731/answers"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "partial_result",
+    "card_rev": "d4d7a44141718125",
+    "scope": {
+      "sources": [
+        "arXiv"
+      ],
+      "search_terms": [
+        "polynomial representing nonnegative integers Poonen"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "数论",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；难度极高：Poonen 本人提出，Tao 最高票回答表示无从下手；2024 年仅有 Vojta 猜想条件性否定（Rawson）。需超越 Faltings/Vojta 级工具或构造性突破。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-102",
+    "package_path": "02_一区二区_难度待定/B-102_poly-representing-nonneg-integers",
+    "tier_hint": "B（一二区难度待定）",
+    "status_raw": "PARTIAL",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

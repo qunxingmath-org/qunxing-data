@@ -1,0 +1,130 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000400",
+  "revision": 1,
+  "card_rev": "6a2d2e151552f9ea",
+  "title": "batch_I I-128(提取)：K⊂Rⁿ 中心对称凸体，K° 极体；e(K)=E[(x·y)²]（x~U(K), y~U(K°) 独",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "zh",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Qfwfq",
+  "first_published": "2011-01-30；最后活动: 2021-07-31",
+  "sources": [
+    {
+      "cite": "MathOverflow",
+      "url": "https://mathoverflow.net/questions/53797",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "MathOverflow API 全文核验",
+      "url": "https://mathoverflow.net/questions/53797",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "MO 53797 全文核验",
+      "url": "https://mathoverflow.net/questions/53797",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [
+    {
+      "source": "mo",
+      "id": "53797",
+      "url": "https://mathoverflow.net/questions/53797"
+    }
+  ],
+  "informal_status": {
+    "value": "open",
+    "strength": "weak",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://mathoverflow.net/questions/53797",
+      "https://mathoverflow.net/questions/53797"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "6a2d2e151552f9ea",
+    "scope": {
+      "sources": [
+        "mathoverflow API",
+        "池内查重"
+      ],
+      "search_terms": [],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "凸几何 / 泛函分析",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；Keith Ball 提出、Greg Kuperberg 在 MO 53797 转述（票19 答案）；专家问答确认二维已开放。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-730",
+    "package_path": "02_一区二区_难度待定/B-730_I-128_ball_eK_ellipsoid",
+    "tier_hint": "B",
+    "status_raw": "OPEN-WEAK",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": [
+      "QX-P-001441",
+      "QX-P-001442"
+    ]
+  }
+}

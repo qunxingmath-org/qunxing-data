@@ -1,0 +1,121 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000048",
+  "revision": 1,
+  "card_rev": "6b8d7c38500b41bb",
+  "title": "tan(arctan 1 + … + arctan n) 对 n≥5 非整数",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass_with_fixes"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Amdeberhan–Medina–Moll (2008)",
+  "first_published": "2008",
+  "sources": [
+    {
+      "cite": "论文（2008）；formal-conjectures Arxiv 家族收录",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "formal-conjectures 快照",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "本Agent未深查独立文献",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "weak",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://github.com/google-deepmind/formal-conjectures"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "6b8d7c38500b41bb",
+    "scope": {
+      "sources": [
+        "formal-conjectures(HF镜像快照)"
+      ],
+      "search_terms": [
+        "arctan sum tangent integer"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "fail"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "数论",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·易证明；命题完全初等可表述（递推 x_{n+1}=(x_n+n+1)/(1−n x_n) 型）；数值已验证大量 n；Amdeberhan–Medina–Moll (2008) 已给部分整除性结果，p-adic/模算术路线明确；\"证明不整除\"型目标适合 A层。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "A-803",
+    "package_path": "01_一区二区_易证明/A-803_arctan-sum-tan-noninteger",
+    "tier_hint": "A(易证明一二区)",
+    "status_raw": "OPEN-WEAK",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}

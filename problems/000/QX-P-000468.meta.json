@@ -1,0 +1,121 @@
+{
+  "schema": "qunxing.problem/2",
+  "format_version": "2.2",
+  "id": "QX-P-000468",
+  "revision": 1,
+  "card_rev": "7d328d3e793890bf",
+  "title": "p-adic Littlewood 猜想（Bugeaud 书问题 10.8）",
+  "title_en": null,
+  "aliases": [],
+  "family": null,
+  "parent": null,
+  "language": "zh",
+  "card_status": "draft",
+  "track": "open",
+  "problem_type": [],
+  "answer_type": null,
+  "checkability": "unknown",
+  "statement_fidelity": "audited",
+  "statement_audit": {
+    "by": "agent",
+    "date": "2026-11-21",
+    "verdict": "pass"
+  },
+  "source_quote_lang": "en",
+  "formal": [],
+  "formal_challenge": null,
+  "proposer": "Yann Bugeaud 书中收录（p-adic Littlewood）",
+  "first_published": "谱系（2000s）",
+  "sources": [
+    {
+      "cite": "formal-conjectures Books 家族（Bugeaud, Collection of Conjectures and Open Questions, Problem 10.8）",
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures",
+      "doi": null,
+      "role": "original",
+      "license": null,
+      "accessed": null
+    },
+    {
+      "cite": "formal-conjectures 快照(commit b576d52)",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    },
+    {
+      "cite": "EXCLUDED-CHECK 裁决",
+      "url": null,
+      "doi": null,
+      "role": "novelty",
+      "license": null,
+      "accessed": "2026-11-20"
+    }
+  ],
+  "external_refs": [],
+  "informal_status": {
+    "value": "open",
+    "strength": "weak",
+    "as_of": "2026-11-21",
+    "evidence": [
+      "https://github.com/google-deepmind/formal-conjectures"
+    ]
+  },
+  "formal_status": {
+    "value": "none",
+    "as_of": "2026-11-21"
+  },
+  "novelty": {
+    "last_checked_at": "2026-11-21",
+    "result": "not_found_in_scope",
+    "card_rev": "7d328d3e793890bf",
+    "scope": {
+      "sources": [
+        "formal-conjectures(HF镜像快照)+领域共识"
+      ],
+      "search_terms": [
+        "见 venue"
+      ],
+      "as_of": "2026-11-21"
+    },
+    "depth": "deep",
+    "hits": [],
+    "statement_issues": [],
+    "checker": {},
+    "stale_after_days": 7,
+    "compliance": {
+      "by": "agent",
+      "date": "2026-11-21",
+      "verdict": "pass"
+    }
+  },
+  "appears_in": [],
+  "ai_claims": [],
+  "msc2020": null,
+  "domain_hint": "Diophantine 逼近",
+  "keywords": {
+    "zh": [],
+    "en": []
+  },
+  "difficulty": {
+    "level": 3,
+    "basis": "package",
+    "note": "一区二区·难度待定；经典 Littlewood 猜想的 p-adic 版本，深水区（经典版亦开——排除清单 B09 Zaremba 为不同条目，EXCLUDED-CHECK 裁决保留）。"
+  },
+  "ai_suitability": null,
+  "acceptance": null,
+  "attachments": [],
+  "visibility": "public",
+  "license": "CC-BY-SA-4.0",
+  "contributors": [],
+  "redirect_from": [],
+  "provenance": {
+    "package": "pool-b",
+    "package_id": "B-859",
+    "package_path": "02_一区二区_难度待定/B-859_p-adic-littlewood",
+    "tier_hint": "B(一二区难度待定)",
+    "status_raw": "OPEN-WEAK",
+    "imported_at": "2026-11-23",
+    "possible_duplicates": []
+  }
+}
