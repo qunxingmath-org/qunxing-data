@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000807",
   "revision": 2,
-  "card_rev": "d895959cfa962c1b",
+  "card_rev": "ad701df491cca2df",
   "title": "OEIS A063880 原始项唯一性：σ(n)=2·usigma(n) 的非真因子解仅 n=108",
   "title_en": "The primitive solution of sigma(n) = 2 usigma(n) is n = 108",
   "aliases": [],

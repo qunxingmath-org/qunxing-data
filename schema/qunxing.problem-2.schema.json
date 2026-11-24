@@ -207,6 +207,41 @@
       "type": "boolean",
       "description": "题面有异议：发现带定位的题面问题（自相矛盾、与原文不符等），问题写在 novelty.statement_issues；修正前不进抽题（规格 v2.1 第 4 条）/ statement disputed"
     },
+    "conventions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "description": "记号约定，计入 card_rev / notation conventions (part of card_rev)"
+    },
+    "ambiguity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "point",
+          "reading"
+        ],
+        "properties": {
+          "point": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500,
+            "description": "歧义点 / the ambiguous point"
+          },
+          "reading": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500,
+            "description": "本卡采用的解释 / reading adopted by this card"
+          }
+        }
+      },
+      "description": "已知的歧义点和本卡采用的解释，计入 card_rev / known ambiguities and adopted readings (part of card_rev)"
+    },
     "source_quote_lang": {
       "type": [
         "string",
@@ -702,7 +737,8 @@
           "problem_type",
           "answer_type",
           "msc2020",
-          "acceptance"
+          "acceptance",
+          "checkability"
         ],
         "properties": {
           "problem_type": {
@@ -721,6 +757,12 @@
             "required": [
               "criteria"
             ]
+          },
+          "checkability": {
+            "not": {
+              "const": "unknown"
+            },
+            "description": "已整理的题卡要写明可检验性；unknown 只允许出现在草稿 / curated cards must state checkability"
           }
         }
       }

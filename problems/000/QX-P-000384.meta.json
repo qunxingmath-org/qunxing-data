@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000384",
   "revision": 2,
-  "card_rev": "667734627b71df63",
+  "card_rev": "c2be89df41136416",
   "title": "batch_I I-021：当 n 变化，M_n=2^n−1 是否必被任意大的素数 p 恰好一次幂整除（p|M_n 且 p²∤M",
   "title_en": "Must Mersenne numbers 2^n - 1 be divisible by arbitrarily large primes to exactly the first power?",
   "aliases": [],

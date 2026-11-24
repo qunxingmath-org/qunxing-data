@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001048",
   "revision": 2,
-  "card_rev": "d80f13b37dac4621",
+  "card_rev": "11db54972dd45b7e",
   "title": "Kourovka 18.42：F2=⟨a,b⟩，R(w,r,s) 为 a,b 旋转数分别为 r,s 的表示下 w 旋转数最大值",
   "title_en": "Rotation numbers of words in F_2: is R(w,r,s) rational when r,s are rational?",
   "aliases": [],

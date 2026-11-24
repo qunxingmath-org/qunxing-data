@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000860",
   "revision": 2,
-  "card_rev": "e53e981716cbf8b6",
+  "card_rev": "ef5232e6c5482d84",
   "title": "Thomassen 猜想：k-正则无重弧有向图含 (k+1 choose 2) 条弧不交有向圈",
   "title_en": "Thomassen's conjecture: arc-disjoint directed cycles in k-regular digraphs",
   "aliases": [],

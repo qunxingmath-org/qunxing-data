@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001482",
   "revision": 2,
-  "card_rev": "e6cd07f60063efba",
+  "card_rev": "ac6e2fd08c3fbaa5",
   "title": "batch_I I-143：n=pq² 型整数是否可用椭圆曲线法（ECM）更易分解？对一般整数的 stage-2（基于 birthd",
   "title_en": "Can ECM factor integers of the form n=pq^2 more easily, and can stage 2 be improved?",
   "aliases": [],

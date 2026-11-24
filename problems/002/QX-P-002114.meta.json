@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002114",
   "revision": 2,
-  "card_rev": "8dafc11f24bff0bd",
+  "card_rev": "d2454bc372957ff7",
   "title": "#E(F_p) 接近⟹同源（FPSR 已证；题面修正）",
   "title_en": "Does |N_E(p) - N_E'(p)| <= 1.4 sqrt(p) for almost all p force equal point counts?",
   "aliases": [],

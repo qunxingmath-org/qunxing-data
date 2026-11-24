@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000041",
   "revision": 2,
-  "card_rev": "fa9ee45cfed6ddea",
+  "card_rev": "4e298d20a8406ce9",
   "title": "Wolstenholme逆命题：满足同余的合成数存在性",
   "title_en": "The converse of Wolstenholme's theorem: is there a composite n with C(2n-1,n-1) congruent to 1 mod n^3?",
   "aliases": [],

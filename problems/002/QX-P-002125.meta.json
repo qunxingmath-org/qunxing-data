@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002125",
   "revision": 2,
-  "card_rev": "320d4181da021cb2",
+  "card_rev": "a47d9260405d919c",
   "title": "x²+1 迭代（x₀=12）中的素数",
   "title_en": "Does the iterated sequence x_{n+1} = x_n^2 + 1 starting at 12 contain a prime?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001825",
   "revision": 2,
-  "card_rev": "29afba4dcf996465",
+  "card_rev": "f673d7c0be388917",
   "title": "正整数递推 c_{n+1}=c_n(c_n+n+d)/n 存在性",
   "title_en": "Positive integer sequences satisfying c_{n+1} = c_n(c_n+n+d)/n",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001467",
   "revision": 2,
-  "card_rev": "e9ec518df095c5d4",
+  "card_rev": "767346bf3d37a347",
   "title": "batch_I I-103：求所有 m 使 m! 等于若干个（>1个）大于 m 的连续正整数之积，即 m! = j!/k!（j>k>",
   "title_en": "Which m satisfy m! = j!/k! for some j>k>1?",
   "aliases": [],

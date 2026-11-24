@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001581",
   "revision": 2,
-  "card_rev": "b93f9f7554970bfb",
+  "card_rev": "c2ce927fcfa24e28",
   "title": "21.55 GL(n,q) 的 p-可解子群最大 p-长极限是否为1",
   "title_en": "Is lim m_n(q)/log_2 n equal to 1 for maximal p-length in GL(n,q)?",
   "aliases": [],

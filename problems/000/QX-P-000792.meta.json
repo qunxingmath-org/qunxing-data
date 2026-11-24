@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000792",
   "revision": 2,
-  "card_rev": "761933080c22a767",
+  "card_rev": "37fa459d6ac88b00",
   "title": "Erdős P835：[2k] 的 k-子集 (k+1)-染色使每个 (k+1)-集见全色（k>2 不存在）",
   "title_en": "Erdos problem 835: colouring k-subsets of [2k] so that every (k+1)-set is rainbow",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000999",
   "revision": 2,
-  "card_rev": "c30c0cbb207de78e",
+  "card_rev": "3ee4ac933c71d615",
   "title": "Kourovka 13.31：贪心基算法（每步取稳定子最大轨道点）对置换群基尺寸的保证",
   "title_en": "Is the greedy base algorithm within a constant factor of the minimal base?",
   "aliases": [],

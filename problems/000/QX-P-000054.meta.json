@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000054",
   "revision": 2,
-  "card_rev": "33bad0ead550c3af",
+  "card_rev": "bdac15adb024043c",
   "title": "Shunia 整数根公式（mathlib4 PR #42050 审查对象）",
   "title_en": "Shunia's integer n-th root formula: a fixed-length modular expression for floor(a^(1/n))",
   "aliases": [],

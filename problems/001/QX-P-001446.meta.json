@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001446",
   "revision": 2,
-  "card_rev": "8fef7f30447e9b2f",
+  "card_rev": "274df41b895cb16b",
   "title": "batch_I I-060：猜想：若 a³+b³+c³=N 有整数解，则 x³+y³+z³+t³=N 有无穷多组整数解。OP 给出恒",
   "title_en": "If a^3+b^3+c^3=N is solvable, must x^3+y^3+z^3+t^3=N be solvable infinitely often?",
   "aliases": [],

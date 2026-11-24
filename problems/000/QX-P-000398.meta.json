@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000398",
   "revision": 2,
-  "card_rev": "027809f92f1791ce",
+  "card_rev": "d4c3457c8b48f9e3",
   "title": "batch_I I-082：双素数均值 x=(p+q)/2（p,q 孪生素数）。猜想：每个 x>6 都是两个更小双素数均值之和",
   "title_en": "Every twin prime average above 6 is a sum of two smaller twin prime averages",
   "aliases": [],

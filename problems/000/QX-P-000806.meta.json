@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000806",
   "revision": 2,
-  "card_rev": "ef30412034564cd0",
+  "card_rev": "950c54641c2ca3c0",
   "title": "OEIS A063880：σ(n)=2·usigma(n) ⇒ n≡108 (mod 216)",
   "title_en": "Sigma versus unitary sigma: solutions are 108 modulo 216",
   "aliases": [],

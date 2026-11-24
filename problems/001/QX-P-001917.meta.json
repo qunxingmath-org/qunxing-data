@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001917",
   "revision": 2,
-  "card_rev": "c46aba0a8c2ff419",
+  "card_rev": "57382372e5c20cf2",
   "title": "补连通非凸集闭凸包线段面",
   "title_en": "Must the closed convex hull of a non-convex set with connected complement have a segment on its boundary?",
   "aliases": [],

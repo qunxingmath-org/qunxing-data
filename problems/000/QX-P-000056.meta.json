@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000056",
   "revision": 2,
-  "card_rev": "df9b2d5bdba12838",
+  "card_rev": "719f560baccd4b17",
   "title": "Erdős P580：半数顶点度≥n/2 蕴含含所有 ≤n/2 阶树（Loebl 猜想顶点数版）",
   "title_en": "Erdos P580 (Loebl, vertex version): half the vertices of degree at least n/2 force every small tree",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000149",
   "revision": 2,
-  "card_rev": "d0dd7bd35ae9ecb8",
+  "card_rev": "7b709a161d20ec42",
   "title": "A function whose fixed points are the primes (Pérez)",
   "title_en": "Iterating n to n + (largest proper divisor of n) - 1: does every orbit reach a prime?",
   "aliases": [],

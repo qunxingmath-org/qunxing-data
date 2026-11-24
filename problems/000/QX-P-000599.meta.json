@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000599",
   "revision": 2,
-  "card_rev": "a48bd234faddf8da",
+  "card_rev": "bf6ca8d805a797bf",
   "title": "（来源 C-006）对每个非完全平方数 a，是否存在 b 使 a³ − b² 为（正）素数？",
   "title_en": "For every non-square a, is there b with a^3 - b^2 prime?",
   "aliases": [],

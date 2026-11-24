@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001520",
   "revision": 2,
-  "card_rev": "6d29a87b7738e9b2",
+  "card_rev": "e79915ff98e0b76a",
   "title": "程序证明的自动断言补全（TAOCP v1 1.2.1 ex.14）",
   "title_en": "Filling in the assertions needed to prove a program correct",
   "aliases": [],

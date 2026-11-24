@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000611",
   "revision": 2,
-  "card_rev": "ffa448c77fbd42cc",
+  "card_rev": "1f99b7956e66a902",
   "title": "（来源 C-018）n 个平面点两两距离 ≤1 时，最大化最小点间距（max-min 装填），求参考与一般 n 的精确值/界",
   "title_en": "Maximising the shortest distance among n planar points with all pairwise distances at most 1",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000610",
   "revision": 2,
-  "card_rev": "2f54128d33dd141c",
+  "card_rev": "8f0aeb985b28130b",
   "title": "（来源 C-017）光束进入整点坐标多边形房间（一面墙开口），最大反射次数/边数比是多少？（坐标∈[0,50]）",
   "title_en": "Maximal reflection count per side for a beam entering a lattice-polygon room",
   "aliases": [],

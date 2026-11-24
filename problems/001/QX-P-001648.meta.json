@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001648",
   "revision": 2,
-  "card_rev": "e56e4f6caca9b902",
+  "card_rev": "28153cb3ee26990b",
   "title": "Moser 蠕虫覆盖问题（Keller 区间 [0.239,0.24633]+Lean 全形式化）",
   "title_en": "Moser's worm problem: the smallest universal cover for every unit-length worm",
   "aliases": [],

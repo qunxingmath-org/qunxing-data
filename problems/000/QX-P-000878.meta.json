@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000878",
   "revision": 2,
-  "card_rev": "c166c9848bea5c62",
+  "card_rev": "8dd97d20442461cf",
   "title": "三元词中最长\"孪生子序列\"是否达 n/2−o(n)（随机与最坏情形）",
   "title_en": "Longest twin subsequences in ternary words: is the maximum n/2 - o(n)?",
   "aliases": [],

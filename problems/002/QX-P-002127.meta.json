@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002127",
   "revision": 2,
-  "card_rev": "0e5efde47c63aef7",
+  "card_rev": "37d62199fb794d2b",
   "title": "素数 q 使 q−α 整除 α^l−α（l=2 已自证；l≥3 条件性有反例）",
   "title_en": "For which alpha is there no prime q with q - alpha dividing alpha^l - alpha?",
   "aliases": [],

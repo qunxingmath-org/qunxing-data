@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001187",
   "revision": 2,
-  "card_rev": "44d14c8857c3ef44",
+  "card_rev": "8ecc2808534ccc4b",
   "title": "BMO Problem 6 'Space Needle'：f^n(6) 是否永不触及 2 的幂",
   "title_en": "Space Needle: does the orbit of 6 under f ever reach a power of two?",
   "aliases": [],

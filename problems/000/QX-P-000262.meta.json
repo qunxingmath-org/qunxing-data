@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000262",
   "revision": 2,
-  "card_rev": "ade26f33b361b62a",
+  "card_rev": "87521d2f422b4a06",
   "title": "Zagier 猜想：MZV 权空间维数递推 d_n=d_{n-2}+d_{n-3}",
   "title_en": "Zagier's conjecture: the dimension of the space of weight-n multiple zeta values follows d_n = d_(n-2) + d_(n-3)",
   "aliases": [],

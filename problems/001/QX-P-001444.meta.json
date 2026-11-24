@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001444",
   "revision": 2,
-  "card_rev": "cbff7449456acfe5",
+  "card_rev": "4b7ebc43088dd6ad",
   "title": "batch_I I-058：k 维格点集 H(n,k)={0,…,n−1}^k 上，连接全部 n^k 个点的最少线段数 h(n,k)",
   "title_en": "Minimum number of segments covering every point of the k-dimensional grid H(n,k)",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000613",
   "revision": 2,
-  "card_rev": "47d0b169b09faa1f",
+  "card_rev": "cc65722fb7738a81",
   "title": "（来源 C-020）多联骨牌剖分重构：f(P) ≤ A+3 猜想（P 的两份副本剖分后可重组为旋转 45°、放大 √2 的副本）",
   "title_en": "Polyomino dissection: is f(P) <= A+3 for the 45-degree, sqrt(2)-scaled tiling conjecture?",
   "aliases": [],

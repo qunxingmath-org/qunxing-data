@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001755",
   "revision": 2,
-  "card_rev": "938495ac00f2abaa",
+  "card_rev": "5945fac53f92d4f5",
   "title": "连续 3+ 进制同为回文数",
   "title_en": "Is there an integer that is a palindrome in four consecutive bases?",
   "aliases": [],

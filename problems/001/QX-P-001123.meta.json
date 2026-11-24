@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001123",
   "revision": 2,
-  "card_rev": "c21e1b7b3e6298aa",
+  "card_rev": "d680f9271b912fac",
   "title": "Kourovka 12.64：(x₁⋯x_N)ⁿ=1 ∀xᵢ∈A∪{1} ⇒ 群指数≤n？",
   "title_en": "A uniform N(k,n) forcing finite groups with generators A to have exponent at most n",
   "aliases": [],

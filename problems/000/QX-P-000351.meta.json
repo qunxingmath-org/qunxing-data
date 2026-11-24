@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000351",
   "revision": 2,
-  "card_rev": "46882632444a44ff",
+  "card_rev": "18d0cb80900ba0b2",
   "title": "Frame–Stewart 猜想（多柱 Hanoi 最优性，≥5 柱）",
   "title_en": "Frame–Stewart conjecture: is the recursive formula optimal for the Tower of Hanoi with y >= 5 pegs?",
   "aliases": [],

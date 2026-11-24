@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001617",
   "revision": 2,
-  "card_rev": "a3d5b5cad56aeaa1",
+  "card_rev": "c3619ed37b6b29b1",
   "title": "17.15 求保持多项式不动的最大自同构子群的算法",
   "title_en": "An algorithm producing generators of the maximal automorphism subgroup fixing a given polynomial",
   "aliases": [],

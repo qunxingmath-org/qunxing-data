@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000372",
   "revision": 2,
-  "card_rev": "2228b35d2bf4af33",
+  "card_rev": "af948e4709058509",
   "title": "batch_I I-002：两个周期（由有理系数多项式不等式组给出）的相等是否有算法判定？其可判定性本身是否已知？",
   "title_en": "Is equality of two periods given by rational polynomial inequalities algorithmically decidable?",
   "aliases": [],

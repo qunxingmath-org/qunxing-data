@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001384",
   "revision": 2,
-  "card_rev": "b1f8bd932615ec59",
+  "card_rev": "f9759bb489f21bbe",
   "title": "Williams 素数生成算法的正确性（CRUX 154）",
   "title_en": "Does Williams's recursive prime-generating rule always produce the next prime?",
   "aliases": [],

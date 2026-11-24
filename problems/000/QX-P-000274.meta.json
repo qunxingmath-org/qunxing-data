@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000274",
   "revision": 2,
-  "card_rev": "0f7b340a075abadb",
+  "card_rev": "7b1a6a260f1d9763",
   "title": "线性森林分解（Linear Arboricity）猜想",
   "title_en": "The linear arboricity conjecture: edges covered by ceil((Delta+1)/2) linear forests",
   "aliases": [],

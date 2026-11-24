@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000192",
   "revision": 2,
-  "card_rev": "ba90ee438315f810",
+  "card_rev": "56202774a80820c9",
   "title": "Lagrange 插值收敛反常现象（EP#671；原批次 A-015）",
   "title_en": "Can Lagrange interpolation converge while the Lebesgue sum diverges?",
   "aliases": [],

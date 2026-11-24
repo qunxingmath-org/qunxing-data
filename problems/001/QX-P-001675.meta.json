@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001675",
   "revision": 2,
-  "card_rev": "93e05ff6b405f1e0",
+  "card_rev": "f66c058f0937f37c",
   "title": "Gallai 路径分解猜想（583.lean sorry）",
   "title_en": "Gallai's conjecture: decomposing a connected graph into ceil(n/2) paths",
   "aliases": [],

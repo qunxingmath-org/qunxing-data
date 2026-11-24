@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000412",
   "revision": 2,
-  "card_rev": "b7f381893e0612ff",
+  "card_rev": "de0cfc8f1a4b273a",
   "title": "[N] 中避免 x+3y=2z+2w 的最大子集（Green 问题 16 + Zhao 变体）",
   "title_en": "How large is a subset of [N] avoiding distinct solutions of x + 3y = 2z + 2w?",
   "aliases": [],

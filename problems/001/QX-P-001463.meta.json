@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001463",
   "revision": 2,
-  "card_rev": "52f98e46d5317d25",
+  "card_rev": "00fd0b510f2802e7",
   "title": "batch_I I-091：u_{n+1}=e^{u_n}/(n+1) 的分岔阈值 δ（初值 x<δ 收敛到 0、x>δ 发散）的界",
   "title_en": "The bifurcation threshold delta for u_{n+1}=e^{u_n}/(n+1)",
   "aliases": [],

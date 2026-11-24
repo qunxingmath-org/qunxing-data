@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000802",
   "revision": 2,
-  "card_rev": "1faaceeb6082fdef",
+  "card_rev": "f3e07473d50a4c76",
   "title": "Erdős P167：≤k 个边不交三角形 ⇒ 删 ≤2k 边变三角形-free",
   "title_en": "Erdos problem 167: deleting at most 2k edges kills all triangles",
   "aliases": [],

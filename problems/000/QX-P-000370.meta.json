@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000370",
   "revision": 2,
-  "card_rev": "a081fbfa88bdaa21",
+  "card_rev": "ab4ff90731286178",
   "title": "Cereceda猜想（退化图重染色直径）",
   "title_en": "Cereceda's conjecture: the diameter of the k-colouring reconfiguration graph of a d-degenerate graph is O(n^2)",
   "aliases": [],

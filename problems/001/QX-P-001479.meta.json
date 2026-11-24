@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001479",
   "revision": 2,
-  "card_rev": "f791b622f5dd8048",
+  "card_rev": "303bdffd05aa2886",
   "title": "batch_I I-138：是否存在 Mirimanoff 素数 p（3^{p−1}≡1 mod p²）满足更强的 3^{p−1}≡",
   "title_en": "Are there primes p with 3^{p-1} = 1 mod p^3 (a stronger Mirimanoff prime)?",
   "aliases": [],

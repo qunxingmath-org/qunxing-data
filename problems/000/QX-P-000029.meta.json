@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000029",
   "revision": 2,
-  "card_rev": "f45054ef9e68ce8b",
+  "card_rev": "104c69cd363f64be",
   "title": "WOWII 猜想 133：诱导树最大阶 ≥ ⌊girth/2⌋−1+max α(G[N(v)])",
   "title_en": "WOWII 133: an induced tree of order at least floor(g/2)-1+max alpha(G[N(v)])",
   "aliases": [],

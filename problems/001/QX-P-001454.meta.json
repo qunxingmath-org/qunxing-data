@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001454",
   "revision": 2,
-  "card_rev": "b6b3d967bae0632d",
+  "card_rev": "1a00f432636eb450",
   "title": "batch_I I-074：已知分布 F 的 n 个 i.i.d. 样本中 m 个最小值之和：期望是什么？其 PDF/CDF？",
   "title_en": "Sum of the m smallest order statistics: expectation, PDF and CDF for a general F",
   "aliases": [],

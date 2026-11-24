@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001461",
   "revision": 2,
-  "card_rev": "4e621b365df824db",
+  "card_rev": "859e368a0279c7c1",
   "title": "batch_I I-084：边带权图上求完美匹配 M 使 (max_{e∈M}w_e − min_{e∈M}w_e) 最小（bala",
   "title_en": "Balanced weight perfect matching: minimizing the weight spread over a perfect matching",
   "aliases": [],

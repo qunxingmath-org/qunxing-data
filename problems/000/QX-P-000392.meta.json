@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000392",
   "revision": 2,
-  "card_rev": "e8b83b4fe2f50761",
+  "card_rev": "0ceaf186bf6c74c7",
   "title": "batch_I I-036：是否存在常数 c>0，使平面上每个面积大于 c 的（可测）子集都包含一个面积为 1 的三角形的三个顶",
   "title_en": "Must a planar set of sufficiently large area contain the vertices of a unit-area triangle?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001441",
   "revision": 2,
-  "card_rev": "35d5a4f987d138f8",
+  "card_rev": "a2b67eef7336546e",
   "title": "batch_I I-128(提取2)：平面上是否存在 8 个点，无三点共线、无四点共圆，且两两距离皆为整数？",
   "title_en": "Eight planar points with integer distances, no three collinear and no four concyclic",
   "aliases": [],

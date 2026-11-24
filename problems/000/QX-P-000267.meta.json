@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000267",
   "revision": 2,
-  "card_rev": "a2c3d8302ccd88f2",
+  "card_rev": "39d70e440a8504f6",
   "title": "Kotzig P_k-图猜想：不存在每对顶点间恰一条 k-长路的图",
   "title_en": "Kotzig's conjecture: no finite graph has a unique simple path of length k between every pair",
   "aliases": [],

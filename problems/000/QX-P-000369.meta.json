@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000369",
   "revision": 2,
-  "card_rev": "b82e84a08e756f76",
+  "card_rev": "f497964c9bc2b6ef",
   "title": "Brouwer猜想（Laplacian前k大特征值和）",
   "title_en": "Brouwer's conjecture: bounding the sum of the k largest Laplacian eigenvalues by m + k(k+1)/2",
   "aliases": [],

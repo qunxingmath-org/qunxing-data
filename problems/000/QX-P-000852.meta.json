@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000852",
   "revision": 2,
-  "card_rev": "014a6b777e7b63f3",
+  "card_rev": "fd12fd843a9774d5",
   "title": "3-连通三次图（3k 点）能否分划为 k 条长 2 路（P2-因子）",
   "title_en": "Partitioning 3-connected cubic graphs on 3k vertices into k paths of length 2",
   "aliases": [],

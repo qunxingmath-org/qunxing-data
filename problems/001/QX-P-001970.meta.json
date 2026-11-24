@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001970",
   "revision": 2,
-  "card_rev": "c618451f067dda99",
+  "card_rev": "2d627a5e030f9ea5",
   "title": "√(U+X) 随机迭代极限分布",
   "title_en": "Limit distribution of the random iteration X_(n+1) = sqrt(U_n + X_n)",
   "aliases": [],

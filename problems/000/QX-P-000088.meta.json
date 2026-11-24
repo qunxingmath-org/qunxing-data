@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000088",
   "revision": 2,
-  "card_rev": "da5b0db1f8cbde2e",
+  "card_rev": "af16cefc88b5d19e",
   "title": "Erdős #583：Gallai 路分解猜想（⌈n/2⌉ 条边不交路）",
   "title_en": "Erdos problem 583 (Gallai): the edges of every connected n-vertex graph split into at most ceil(n/2) paths",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000462",
   "revision": 2,
-  "card_rev": "8c4f922ac339f34d",
+  "card_rev": "7bf368b1bf3680c1",
   "title": "整数复杂度：‖2^n‖=2n 是否对所有 n 成立",
   "title_en": "Integer complexity: is the complexity of 2^n exactly 2n for every n?",
   "aliases": [],

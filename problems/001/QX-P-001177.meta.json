@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001177",
   "revision": 2,
-  "card_rev": "a3659579edb7d86a",
+  "card_rev": "585de00134c27cd7",
   "title": "X+Y 排序问题（Fredman 下界与上界差距）",
   "title_en": "Sorting the n^2 pairwise sums X+Y: closing the gap below n^2 log n comparisons",
   "aliases": [],

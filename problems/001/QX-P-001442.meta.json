@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001442",
   "revision": 2,
-  "card_rev": "7bb630cfed8c614d",
+  "card_rev": "9f90a2664b758a96",
   "title": "batch_I I-128(提取3)：最大整数 k*：平面上任意 k≤k* 个点总可用两两内部不交的单位圆盘覆盖？",
   "title_en": "Largest k such that any k planar points can be covered by pairwise disjoint unit disks",
   "aliases": [],

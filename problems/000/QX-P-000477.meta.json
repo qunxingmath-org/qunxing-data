@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000477",
   "revision": 2,
-  "card_rev": "82610491891a74b6",
+  "card_rev": "83705da9bb47444d",
   "title": "模立方根提取是否等价于因数分解（TAOCP v2 4.5.4 ex.33, M50）",
   "title_en": "Is extracting cube roots modulo N = pq as hard as factoring when p = q = 2 mod 3?",
   "aliases": [],

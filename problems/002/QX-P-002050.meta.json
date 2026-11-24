@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002050",
   "revision": 2,
-  "card_rev": "282f59a09c98e812",
+  "card_rev": "c1c771901dbafb6b",
   "title": "方格网覆盖平面选点问题",
   "title_en": "One point per unit grid square hitting every eps by (C/eps)log(1/eps) rectangle",
   "aliases": [],

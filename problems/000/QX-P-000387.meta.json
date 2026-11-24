@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000387",
   "revision": 2,
-  "card_rev": "ba568bcf3e5583b3",
+  "card_rev": "c840cbba76fd294d",
   "title": "batch_I I-027：n≥3 个交换压缩算子组 (T₁,…,T_n)，是否存在常数 C_n≥1 使 ||p(T₁,…,T_",
   "title_en": "Is there a constant C_n bounding ||p(T_1,...,T_n)|| by sup over the polydisc for commuting contractions, n >= 3?",
   "aliases": [],

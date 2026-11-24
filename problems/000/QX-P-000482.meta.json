@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000482",
   "revision": 2,
-  "card_rev": "fbe9b8ecfc33936e",
+  "card_rev": "a6275c7dd7360689",
   "title": "Černý 猜想",
   "title_en": "The Cerny conjecture: a synchronizing automaton on n states has a reset word of length at most (n-1)^2",
   "aliases": [],

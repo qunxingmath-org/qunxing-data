@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001449",
   "revision": 2,
-  "card_rev": "69805e6b61195646",
+  "card_rev": "3b78b2e11987398a",
   "title": "batch_I I-066：给定 2-生成 4-符号 7-关系群 G（帖内显式表现），判定 G 是否有挠；并评估\"由零因子构造反例\"",
   "title_en": "Is the given seven-relator group torsion free, and does its zero-divisor route work?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002130",
   "revision": 2,
-  "card_rev": "0086508d8a4baf67",
+  "card_rev": "8cc5f5fea0fbd7b2",
   "title": "已知发散轨迹的 Collatz 型映射存在性（题面修正）",
   "title_en": "Is there an odd a whose ax+1 Collatz-type map has a provably divergent trajectory?",
   "aliases": [],

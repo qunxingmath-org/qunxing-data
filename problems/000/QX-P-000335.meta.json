@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000335",
   "revision": 2,
-  "card_rev": "bc2720d7dfdbd4c0",
+  "card_rev": "6abdc4762c625603",
   "title": "Erdos P128: every induced subgraph on n/2 vertices has > n^2/50 edges => triangle",
   "title_en": "Erdős–Rousseau problem: if every half-sized induced subgraph has more than n^2/50 edges, must G contain a triangle?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001425",
   "revision": 2,
-  "card_rev": "b9d5c897683d1d77",
+  "card_rev": "6d121c2a1a903cb9",
   "title": "batch_I I-025：P₁=(p,1−p)，P_{n+1}=pL(P_n)+(1−p)R(P_n)（L,R 为左/右嵌入至",
   "title_en": "Is the entropy of a Bernoulli-recursively embedded probability vector concave in p?",
   "aliases": [],

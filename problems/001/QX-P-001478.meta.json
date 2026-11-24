@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001478",
   "revision": 2,
-  "card_rev": "3b09e851ae885127",
+  "card_rev": "3304a0640ebd01a6",
   "title": "batch_I I-134：给定 [n] 上的区间集 I，选 k 个区间使覆盖的点数最大（Max-K Interval Select",
   "title_en": "Complexity of selecting k intervals from a set to maximize the number of covered points",
   "aliases": [],

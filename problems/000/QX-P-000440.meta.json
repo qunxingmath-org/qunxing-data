@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000440",
   "revision": 2,
-  "card_rev": "e3d2c054fc584685",
+  "card_rev": "aff91514958bd3af",
   "title": "2^n 的三进制表示对 n>8 必含数字 2",
   "title_en": "For n > 8 the ternary expansion of 2^n must contain the digit 2",
   "aliases": [],

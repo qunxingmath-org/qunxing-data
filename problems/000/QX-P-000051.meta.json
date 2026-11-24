@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000051",
   "revision": 2,
-  "card_rev": "74b065867227723f",
+  "card_rev": "6d87a81eef104126",
   "title": "Beaver Math Olympiad 第 1 题：(a,b)→(a−b,4b+2)/(2a+1,b−a) 迭代是否相遇",
   "title_en": "Beaver Math Olympiad problem 1: does the map (a,b) -> (a-b, 4b+2) / (2a+1, b-a) ever hit a = b?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000859",
   "revision": 2,
-  "card_rev": "31175205c22114fb",
+  "card_rev": "3f63b9091fe1d139",
   "title": "Sullivan 猜想：最小出度 k 的定向图含长 2k 有向路",
   "title_en": "Sullivan's conjecture: minimum outdegree k forces a directed path of length 2k",
   "aliases": [],

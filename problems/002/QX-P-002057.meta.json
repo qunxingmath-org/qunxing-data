@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002057",
   "revision": 2,
-  "card_rev": "e78baa79d4ef5cd0",
+  "card_rev": "f1fd554dc2389239",
   "title": "3×3 均匀随机矩阵全实特征值概率",
   "title_en": "Probability that a random 3x3 matrix with iid uniform [0,1] entries has real eigenvalues",
   "aliases": [],
