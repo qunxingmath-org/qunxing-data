@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001469",
   "revision": 2,
-  "card_rev": "d98beab4e1872b67",
+  "card_rev": "772cfab02d631b92",
   "title": "batch_I I-105：为什么 9k±4 型整数看似不能写成四个立方和？——实际计算表明可以；底层问题：是否每个整数都是四个立方",
   "title_en": "Is every integer a sum of four cubes of integers (negative cubes allowed)?",
   "aliases": [],

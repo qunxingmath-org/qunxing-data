@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000001",
   "revision": 2,
-  "card_rev": "787040d625cc5943",
+  "card_rev": "029ec4084d2cfba0",
   "title": "（来源 A-001）3^{n+1} mod 2^n > 2^n - 1.5^n 的解是否只有 n=1,2,5,10？",
   "title_en": "Are 1, 2, 5, 10 the only solutions of 3^(n+1) mod 2^n > 2^n - 1.5^n?",
   "aliases": [],

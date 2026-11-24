@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001440",
   "revision": 2,
-  "card_rev": "de587b1c2bb957bc",
+  "card_rev": "2f27668ed071600f",
   "title": "batch_I I-057：A(n,k)=min{ #{S⊂[n]: |S|=k, Σ_{i∈S}x_i≥0} : Σx_i≥0",
   "title_en": "The MMS conjecture on the minimum number of nonnegative-sum k-subsets",
   "aliases": [],

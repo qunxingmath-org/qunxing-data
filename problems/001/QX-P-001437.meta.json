@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001437",
   "revision": 2,
-  "card_rev": "b6da7dcf9a60a312",
+  "card_rev": "3b3d6b633fae4301",
   "title": "batch_I I-046：给定一个广义 de Bruijn 环面（周期矩形符号阵列及其 k×l 子阵多重集结构），共享同一子阵",
   "title_en": "How many generalized de Bruijn tori share the same multiset of subarrays?",
   "aliases": [],

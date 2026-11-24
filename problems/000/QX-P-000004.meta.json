@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000004",
   "revision": 2,
-  "card_rev": "188489c59299acfc",
+  "card_rev": "80b48f660aae4c1f",
   "title": "连通图中任三条最长路必有公共顶点（Gallai）",
   "title_en": "Do any three longest paths in a connected graph share a vertex?",
   "aliases": [],

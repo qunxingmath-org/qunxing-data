@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001809",
   "revision": 2,
-  "card_rev": "185fd0399f182de5",
+  "card_rev": "edbe73dad6de3ee0",
   "title": "exp(π√n) 小数部分稠密",
   "title_en": "Are the fractional parts of exp(pi sqrt(n)) dense?",
   "aliases": [],

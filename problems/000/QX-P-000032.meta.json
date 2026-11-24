@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000032",
   "revision": 2,
-  "card_rev": "985c897d8b5ef985",
+  "card_rev": "3ccd8c5bc6f9f889",
   "title": "WOWII 猜想 96：α(G) ≤ 1 + min distEven(v)·(max λ(v) − 1)",
   "title_en": "WOWII 96: bounding the independence number by even-distance counts and neighbourhood independence",
   "aliases": [],

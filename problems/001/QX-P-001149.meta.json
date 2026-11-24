@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001149",
   "revision": 2,
-  "card_rev": "12846f022ead0952",
+  "card_rev": "47e8b76c0fc36f8a",
   "title": "Kourovka 16.110：判定∀φ 循环长 φ(u)=φ(v) 的算法（F_n）",
   "title_en": "Is there an algorithm deciding cyclic-length equality under all automorphisms of F_n?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001171",
   "revision": 2,
-  "card_rev": "45ef99a91b916f80",
+  "card_rev": "59958edc0f6f3130",
   "title": "Lehmer totient 猜想：φ(n)|n−1 ⇒ n 素数",
   "title_en": "Lehmer's totient problem: does phi(n) dividing n-1 force n to be prime?",
   "aliases": [],

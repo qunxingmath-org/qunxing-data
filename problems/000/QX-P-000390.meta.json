@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000390",
   "revision": 2,
-  "card_rev": "9454c3aa39ccfc09",
+  "card_rev": "3100580946f848cb",
   "title": "batch_I I-033：是否存在子列 n_k 使 n_k²|sin n_k|→0？等价地 lim_{n→∞} n²|sin",
   "title_en": "Is there a subsequence with n_k^2 |sin n_k| -> 0?",
   "aliases": [],

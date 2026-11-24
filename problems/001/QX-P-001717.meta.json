@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001717",
   "revision": 2,
-  "card_rev": "1e259fb463638898",
+  "card_rev": "06d8672f26c10d85",
   "title": "No-three-in-line 最大点数（题面校准：主流猜想≈1.814n）",
   "title_en": "No-three-in-line: can more than about 1.814n points be placed on an n x n grid?",
   "aliases": [],

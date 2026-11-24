@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001548",
   "revision": 2,
-  "card_rev": "fcee9b744e6819c8",
+  "card_rev": "896ce8dd2f9a0c18",
   "title": "20.37 每个因数分解 |G|=ab 都有 G=AB, |A|=a, |B|=b ？",
   "title_en": "For every factorization |G| = ab, do subsets A, B of those sizes always cover G?",
   "aliases": [],

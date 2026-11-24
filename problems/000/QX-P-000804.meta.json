@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000804",
   "revision": 2,
-  "card_rev": "9ac39d63e4707e92",
+  "card_rev": "abe1a60959614c95",
   "title": "OEIS A034693 强化：存在 k<1+n^{3/4} 使 nk+1 为素数",
   "title_en": "A prime of the form nk+1 with k below 1+n^(3/4)",
   "aliases": [],

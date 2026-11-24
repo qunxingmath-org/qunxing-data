@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000805",
   "revision": 2,
-  "card_rev": "11cdee759043b003",
+  "card_rev": "3715f2966a650959",
   "title": "OEIS A056777：φ(n+12)=φ(n)+12 且 σ(n+12)=σ(n)+12 的合数 n=p(p+8)（素数四连组）",
   "title_en": "Composite solutions of phi and sigma shifts force prime quadruplets",
   "aliases": [],

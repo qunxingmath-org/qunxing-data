@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000742",
   "revision": 2,
-  "card_rev": "fe86dc4cd0b829bb",
+  "card_rev": "c853d2d77c0ce7d7",
   "title": "Erdős #547：树 Ramsey 数 R(T)≤2n−2（Burr 精确形式）",
   "title_en": "Erdos #547: Burr's bound R(T,T) <= 2n-2 for n-vertex trees",
   "aliases": [],

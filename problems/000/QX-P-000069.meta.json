@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000069",
   "revision": 2,
-  "card_rev": "e71cd8511316591c",
+  "card_rev": "d3dc7e634a536175",
   "title": "分拆生成函数\"变号\"后系数是否有界（OPG）",
   "title_en": "Open problem: can the signs in the partition generating function be chosen so all coefficients are in {-1,0,1}?",
   "aliases": [],

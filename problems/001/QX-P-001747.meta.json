@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001747",
   "revision": 2,
-  "card_rev": "780d25aa719b1bd5",
+  "card_rev": "a2ee3de54c9bdffe",
   "title": "Erdős 型多项式不可约性",
   "title_en": "Irreducibility of the multiplication-table polynomial f_n(x) = sum_{i,j} x^(ij)",
   "aliases": [],

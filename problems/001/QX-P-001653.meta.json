@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001653",
   "revision": 2,
-  "card_rev": "149d87b42c3f11f8",
+  "card_rev": "36d25ba25fdaa01f",
   "title": "Collatz 猜想（验证至 2.36×10^21）",
   "title_en": "The Collatz conjecture: does every trajectory reach 1?",
   "aliases": [],

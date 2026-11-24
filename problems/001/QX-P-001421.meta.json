@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001421",
   "revision": 2,
-  "card_rev": "790d8f371f04a78d",
+  "card_rev": "37d2fc70e5c98c43",
   "title": "batch_I I-012：X=ΣXᵢ, Y=ΣYᵢ（Xᵢ~Bern(pᵢ), Yᵢ~Bern(qᵢ), pᵢ≥qᵢ, n 偶）",
   "title_en": "A sharp tail-difference bound for sums of independent Bernoulli variables",
   "aliases": [],

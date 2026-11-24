@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001517",
   "revision": 2,
-  "card_rev": "34a7cd96319eb003",
+  "card_rev": "c78e7840f7960032",
   "title": "Erdos P102 (subgoal): h_c(n) >= 5 for fixed c>0",
   "title_en": "Erdos-Purdy subgoal: cn^2 rich lines should force a line with five points",
   "aliases": [],

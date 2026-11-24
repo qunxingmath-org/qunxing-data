@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002079",
   "revision": 2,
-  "card_rev": "5f7556c4d304e967",
+  "card_rev": "558f18b4f6ca0792",
   "title": "熵多项式下界不等式（三元 SOLVED_CLAIMED=Lean 4；n 元开放）",
   "title_en": "An entropy polynomial lower bound in three variables and its n-variable extension",
   "aliases": [],

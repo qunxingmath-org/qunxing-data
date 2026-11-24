@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000276",
   "revision": 2,
-  "card_rev": "72a68abaa11f6794",
+  "card_rev": "2413cdd9bc4e9958",
   "title": "Beal 猜想：A^x+B^y=C^z (x,y,z>2) 则 A,B,C 有公共素因子",
   "title_en": "The Beal conjecture: A^x + B^y = C^z with all exponents at least 3 forces a common prime factor",
   "aliases": [],

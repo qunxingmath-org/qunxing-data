@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001488",
   "revision": 2,
-  "card_rev": "c11997a731322bfe",
+  "card_rev": "225dfb0d3313af1d",
   "title": "batch_I I-151：自由群 FG(A) 的有限生成子群 H 的 pro-W 闭包（W=G_p*G_q，p,q 素数）是否可计",
   "title_en": "Is the pro-(G_p * G_q) closure of a finitely generated subgroup of a free group computable?",
   "aliases": [],

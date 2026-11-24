@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000048",
   "revision": 2,
-  "card_rev": "1be366acaf95be49",
+  "card_rev": "c73d20c1c30890c7",
   "title": "tan(arctan 1 + … + arctan n) 对 n≥5 非整数",
   "title_en": "x_n = tan(arctan 1 + ... + arctan n) is not an integer for n >= 5",
   "aliases": [],

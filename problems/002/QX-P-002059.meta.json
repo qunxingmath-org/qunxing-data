@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002059",
   "revision": 2,
-  "card_rev": "fa478a7edf6a412d",
+  "card_rev": "e8190e8a3852f8e2",
   "title": "x↦P mod x 迭代步数 O(log P) 界",
   "title_en": "Iterating x -> P mod x: is the number of steps always O(log P)?",
   "aliases": [],

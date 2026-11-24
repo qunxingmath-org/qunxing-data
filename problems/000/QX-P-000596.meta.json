@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000596",
   "revision": 2,
-  "card_rev": "7535790823a7ea4b",
+  "card_rev": "498bf02f8b5185da",
   "title": "（来源 C-003）递推 x_{n+1}=x_n−1/x_n, x_0=2 的序列是否无界？",
   "title_en": "Is the sequence x_{n+1} = x_n - 1/x_n with x_0 = 2 unbounded?",
   "aliases": [],

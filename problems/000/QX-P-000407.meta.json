@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000407",
   "revision": 2,
-  "card_rev": "74b3d1e98dd8888e",
+  "card_rev": "a698dc1fd94e1b61",
   "title": "batch_I I-140：是否存在 N≥4 使不存在 N 元正整数组 (a₁,…,a_N) 满足所有 |a_i²−a_j²| 均为",
   "title_en": "Is there an absolute bound on sets whose pairwise squared differences are all squares?",
   "aliases": [],

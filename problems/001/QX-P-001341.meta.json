@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001341",
   "revision": 2,
-  "card_rev": "cfa90ffa13a4b1c3",
+  "card_rev": "660ad4a5fb3c0214",
   "title": "Must a closed amenable subalgebra of B(H) be similar to an amenable C*-algebra (even singly-generated)?",
   "title_en": "Must a closed amenable subalgebra of B(H) be similar to an amenable C*-algebra?",
   "aliases": [],
@@ -77,7 +77,7 @@
   "novelty": {
     "last_checked_at": "2026-11-21",
     "result": "partial_result",
-    "card_rev": "82b546f202b81487",
+    "card_rev": "fff9a7f55bf849a8",
     "scope": {
       "sources": [
         "WebSearch"

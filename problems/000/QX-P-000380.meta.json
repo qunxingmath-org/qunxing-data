@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000380",
   "revision": 2,
-  "card_rev": "5539d66424421536",
+  "card_rev": "79f1730c6d0c2ee5",
   "title": "batch_I I-015：是否存在整系数三元多项式 f(x,y,n)，使得 n∈N ⟺ ∃x,y∈Z, f(x,y,n)=0？",
   "title_en": "Is N Diophantine over Z with two existential variables: is there f(x,y,n) with n in N iff f(x,y,n)=0?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001450",
   "revision": 2,
-  "card_rev": "e4f3c3cc5d212939",
+  "card_rev": "81e74065a8fcec54",
   "title": "batch_I I-067：S-矩阵猜想：若 A 为元素在 [0,1] 的非奇异 n×n 矩阵，则 ||A^{-1}||_F ≥ 2",
   "title_en": "Is the S-matrix conjecture ||A^{-1}||_F >= 2n/(n+1) for [0,1]-matrices still open?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000626",
   "revision": 2,
-  "card_rev": "b17b811dbb267f27",
+  "card_rev": "0609a7f7367c4ed7",
   "title": "17.80 Mn=⟨x,y | x=[x,_n y], y=[y,_n x]⟩ 对 n>2 是否无限",
   "title_en": "Is the group M_n = <x,y : x=[x,_n y], y=[y,_n x]> infinite for every n > 2?",
   "aliases": [],

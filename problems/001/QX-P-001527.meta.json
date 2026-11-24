@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001527",
   "revision": 2,
-  "card_rev": "33ce4685c2337fe0",
+  "card_rev": "e08a37db9929cd0c",
   "title": "19.34 集合 {[x,g] | x∈G} 为子群 ⇒ G 剩余幂零？",
   "title_en": "If every set of commutators {[x,g]} is a subgroup, is the group residually nilpotent?",
   "aliases": [],

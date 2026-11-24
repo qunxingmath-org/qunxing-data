@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001186",
   "revision": 2,
-  "card_rev": "d343673c3c0422d9",
+  "card_rev": "3032a1c2c8069652",
   "title": "偏反馈在线学习：随机 vs 确定性学习者的候选分离（ω₁ 标签空间）",
   "title_en": "Separating randomized from deterministic online learners under partial feedback",
   "aliases": [],

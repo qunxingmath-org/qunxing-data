@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001299",
   "revision": 2,
-  "card_rev": "6d8d4ed11a71248e",
+  "card_rev": "53847b465cc5cc4f",
   "title": "Is there an online learning algorithm making sublinear mistakes on every sequence whenever such an algorithm can exist?",
   "title_en": "Is there one online algorithm with sublinear mistakes whenever some algorithm can succeed?",
   "aliases": [],

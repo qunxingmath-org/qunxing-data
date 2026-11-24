@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000423",
   "revision": 2,
-  "card_rev": "8d11ac9344c451f9",
+  "card_rev": "f42d144ddcdce3ee",
   "title": "素数剩余类覆盖每个整数至少 10 次（Green 问题 45 / Erdős 689 变体）",
   "title_en": "Can each prime below N be assigned a residue class covering every integer ten times?",
   "aliases": [],

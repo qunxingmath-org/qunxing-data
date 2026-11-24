@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000338",
   "revision": 2,
-  "card_rev": "48dce4add485fa81",
+  "card_rev": "52b75c2a98a4d128",
   "title": "Erdos P165: asymptotic formula for R(3,k)",
   "title_en": "Determining the constant c in the asymptotic formula R(3,k) = (c + o(1)) k^2 / log k",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000451",
   "revision": 2,
-  "card_rev": "186345d257c5be40",
+  "card_rev": "b1a155d202ee6109",
   "title": "Gerstenhaber 问题（三个两两交换矩阵）",
   "title_en": "Gerstenhaber's problem: do three pairwise commuting matrices generate an algebra of dimension at most n?",
   "aliases": [],

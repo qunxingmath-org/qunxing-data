@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001925",
   "revision": 2,
-  "card_rev": "ea015a8c457d437d",
+  "card_rev": "d7547e44bf815a5e",
   "title": "类 Collatz 素数阶乘迭代",
   "title_en": "A Collatz-like primorial recurrence: does it always return to 1?",
   "aliases": [],

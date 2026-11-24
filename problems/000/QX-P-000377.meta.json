@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000377",
   "revision": 2,
-  "card_rev": "a83088cdcdcfb845",
+  "card_rev": "17e16d8bd6c0df8e",
   "title": "batch_I I-007：将 d 维单位长方体以 min-corner 均匀分布于 [0,n]^d、严格不许重叠、随机顺序放置",
   "title_en": "Random sequential saturation of unit cubes in [0,n]^d: what is the limiting density?",
   "aliases": [],

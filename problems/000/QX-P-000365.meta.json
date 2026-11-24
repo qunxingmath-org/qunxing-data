@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000365",
   "revision": 2,
-  "card_rev": "8c5dba8de5f54480",
+  "card_rev": "81b089b0f2d1cf42",
   "title": "Skolem问题（线性递归零点可判定性）",
   "title_en": "The Skolem problem: is it decidable whether a linear recurrence has a zero term?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001210",
   "revision": 2,
-  "card_rev": "91007a30c0370276",
+  "card_rev": "47d570486a2bc68a",
   "title": "n^d井字棋获胜维度",
   "title_en": "Tic-tac-toe on [n]^d: determining the minimal winning dimension d(n)",
   "aliases": [],

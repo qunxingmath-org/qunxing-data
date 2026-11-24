@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001438",
   "revision": 2,
-  "card_rev": "03963f82d9c17abf",
+  "card_rev": "dcffde4dc1ced06f",
   "title": "batch_I I-048：Jacobi 特征值算法在 Brent–Luk 并行排序（固定循环模式，如 4×4 的 1a)12",
   "title_en": "Convergence of Jacobi's eigenvalue algorithm under Brent-Luk parallel ordering",
   "aliases": [],

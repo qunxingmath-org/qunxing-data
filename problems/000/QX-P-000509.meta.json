@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000509",
   "revision": 2,
-  "card_rev": "77600165c3f42e26",
+  "card_rev": "a16130b7cd2444e5",
   "title": "Albertson 猜想：cr(G) ≥ cr(K_k)",
   "title_en": "Albertson's conjecture: the crossing number of a k-chromatic graph is at least that of K_k",
   "aliases": [],

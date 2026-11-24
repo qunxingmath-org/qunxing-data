@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000091",
   "revision": 2,
-  "card_rev": "fea848cc42ca0e66",
+  "card_rev": "f9a22ac8a12af9d7",
   "title": "三维 flip 图连通性（TOPP p28）",
   "title_en": "Is the flip graph of triangulations of any general-position point set in R^3 connected?",
   "aliases": [],

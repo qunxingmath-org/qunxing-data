@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001670",
   "revision": 2,
-  "card_rev": "028a337efb3178e5",
+  "card_rev": "b1b50747e789f2e6",
   "title": "Reed 色数上界",
   "title_en": "Reed's conjecture: chi(G) <= ceil((Delta + 1 + omega)/2)",
   "aliases": [],

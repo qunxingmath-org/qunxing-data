@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000209",
   "revision": 2,
-  "card_rev": "899bda7d6ca087c9",
+  "card_rev": "464cf001d72c6523",
   "title": "Erdos P94: convex polygon, sum f(u_i)^2 << n^3",
   "title_en": "Erdos P94: for a convex n-gon, must the sum of squared distance multiplicities be O(n^3)?",
   "aliases": [],

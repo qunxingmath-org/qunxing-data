@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000748",
   "revision": 2,
-  "card_rev": "b9483b0da1c5081f",
+  "card_rev": "d81104bed69a15ac",
   "title": "Hajós 圈分解猜想（Eulerian 图 ≤⌊(n−1)/2⌋ 圈）",
   "title_en": "The Hajos cycle decomposition conjecture for simple Eulerian graphs",
   "aliases": [],

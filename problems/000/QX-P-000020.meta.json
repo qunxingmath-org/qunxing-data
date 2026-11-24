@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000020",
   "revision": 2,
-  "card_rev": "abb3ed34a0d08ad7",
+  "card_rev": "27c12d848c9819d6",
   "title": "Erdos P155: F(N+k) <= F(N)+1 for large Sidon maxima",
   "title_en": "Erdos P155: is F(N+k) at most F(N)+1 for all large N?",
   "aliases": [],

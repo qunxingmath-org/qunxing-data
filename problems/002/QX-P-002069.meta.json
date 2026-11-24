@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-002069",
   "revision": 2,
-  "card_rev": "6a5eff6f971e5db0",
+  "card_rev": "fae21783f4c3f827",
   "title": "格点跳转面积 2S 错失值集合（OP 论文部分解决姊妹初值）",
   "title_en": "Flea-jump square moves: which values does the doubled area 2S miss?",
   "aliases": [],

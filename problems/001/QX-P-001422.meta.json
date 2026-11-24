@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001422",
   "revision": 2,
-  "card_rev": "e6f0a05c54de39aa",
+  "card_rev": "c22446559b74067b",
   "title": "batch_I I-014：A_n={x: 存在 n 阶连通简单图恰有 x 棵生成树}。研究 |A_n| 增长率；猜想 |A_n|=ω(kⁿ) 对一切 k∈N",
   "title_en": "How fast does the set of attainable spanning-tree counts grow?",
   "aliases": [],

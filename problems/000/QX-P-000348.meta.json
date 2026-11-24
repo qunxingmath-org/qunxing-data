@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000348",
   "revision": 2,
-  "card_rev": "7ac73ca971a72498",
+  "card_rev": "ea0ad441b88ee1ef",
   "title": "Lehmer totient 猜想（不存在合数 n 使 φ(n) | n−1）",
   "title_en": "Lehmer's totient problem: is there a composite n with phi(n) dividing n-1?",
   "aliases": [],

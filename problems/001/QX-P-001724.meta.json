@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001724",
   "revision": 2,
-  "card_rev": "fa9430743f00cf11",
+  "card_rev": "ff78a2a93caca50f",
   "title": "⌊n·sin n⌋ 是否满射 N→Z",
   "title_en": "Is the map n -> floor(n sin n) from N to Z surjective?",
   "aliases": [],

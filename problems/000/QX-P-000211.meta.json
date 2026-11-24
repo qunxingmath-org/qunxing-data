@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000211",
   "revision": 2,
-  "card_rev": "845462a222385824",
+  "card_rev": "55b33e37dcfa461a",
   "title": "Erdos P101: n points, no five collinear -> o(n^2) four-point lines",
   "title_en": "Erdos P101: with no five collinear points, are there o(n^2) lines carrying four points?",
   "aliases": [],

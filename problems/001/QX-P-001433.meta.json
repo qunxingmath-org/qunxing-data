@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001433",
   "revision": 2,
-  "card_rev": "f124d0218fd6977c",
+  "card_rev": "4c112f3a44d57fc4",
   "title": "batch_I I-041：g(x)=x^{−δ}(1+Σ_{i≥1}c_i x^{Δ_i})，c_i>0，0<Δ₁<Δ₂<…，",
   "title_en": "The optimal upper bound for the first exponent gap of a symmetric power series with positive coefficients",
   "aliases": [],

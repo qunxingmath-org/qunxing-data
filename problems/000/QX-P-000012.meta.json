@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000012",
   "revision": 2,
-  "card_rev": "fbfbe21dcc152c57",
+  "card_rev": "5bd8cc5e4ed48520",
   "title": "Erdos P60: >ex(n;C4) edges force many C4 copies",
   "title_en": "Above the extremal number for C4, must the number of C4 copies grow like sqrt(n)?",
   "aliases": [],

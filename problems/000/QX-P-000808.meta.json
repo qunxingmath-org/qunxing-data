@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000808",
   "revision": 2,
-  "card_rev": "af0984ec877e905a",
+  "card_rev": "e613784f9e84de72",
   "title": "OEIS A067720：φ(k²+1)=k·φ(k+1) 且 k≠8 ⇒ k+1 为素数",
   "title_en": "phi(k^2+1) = k phi(k+1) forces k+1 prime, with one exception",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001710",
   "revision": 2,
-  "card_rev": "95751894c08a93f0",
+  "card_rev": "08df63cdab56d796",
   "title": "命中所有最长路（chordal；3条最长路公共点）",
   "title_en": "Hitting all longest paths in chordal graphs",
   "aliases": [],

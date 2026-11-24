@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000605",
   "revision": 2,
-  "card_rev": "6767d093265b3427",
+  "card_rev": "2a450ad0f2c45fe7",
   "title": "（来源 C-012）对每个 k 是否存在（素数）p 使 √p 的连分数周期恰为 k？",
   "title_en": "For every k, is there a prime p whose sqrt(p) has continued fraction period exactly k?",
   "aliases": [],

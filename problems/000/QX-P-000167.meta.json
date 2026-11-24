@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000167",
   "revision": 2,
-  "card_rev": "9d0e18f2d7463d91",
+  "card_rev": "1346e9a3501b4ea1",
   "title": "Kourovka 12.87：顶点传递图三择一（稳定子有限 or 因子图稳定子有限 or 距离-n 幂含 3 价正则树）【2026-11-21 标题修正留痕：原标题\"顶点传递局部有限图二择一（稳定子有限 or 亚指数增长）\"两处失准——原文",
   "title_en": "Trofimov's trichotomy for vertex-transitive connected graphs",
   "aliases": [],

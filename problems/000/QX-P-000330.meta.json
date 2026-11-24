@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000330",
   "revision": 2,
-  "card_rev": "6ef7c7b5926191d4",
+  "card_rev": "0c486761d07746df",
   "title": "Erdos P30: maximal Sidon set h(N) = N^(1/2) + O(N^epsilon)",
   "title_en": "Erdős's problem on the error term of the largest Sidon subset of [1,N]: h(N) = sqrt(N) + O(N^eps)?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001491",
   "revision": 2,
-  "card_rev": "51cee29f6206caa1",
+  "card_rev": "16b9fecb53e5e471",
   "title": "batch_I I-155：双无穷三对角 Laurent 算子 T 加有限个对角扰动 K 后，周期有限截断（加同样扰动）的谱在 Ha",
   "title_en": "Do spectra of periodic truncations of a Laurent operator with finite diagonal perturbations converge?",
   "aliases": [],

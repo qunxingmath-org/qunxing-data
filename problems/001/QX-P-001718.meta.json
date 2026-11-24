@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001718",
   "revision": 2,
-  "card_rev": "2a3035729e32fa1d",
+  "card_rev": "aea556ee0e7e5987",
   "title": "中心三角形周围占位博弈必胜策略",
   "title_en": "Which player wins when equilateral triangles are packed around an initial one?",
   "aliases": [],

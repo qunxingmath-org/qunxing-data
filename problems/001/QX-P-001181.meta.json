@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001181",
   "revision": 2,
-  "card_rev": "f55149ebedb76b00",
+  "card_rev": "5aef4b3adaccbb08",
   "title": "Freeze-Tag 机器人唤醒常数因子最优逼近",
   "title_en": "Freeze-Tag: the best constant-factor approximation for waking a robot swarm",
   "aliases": [],

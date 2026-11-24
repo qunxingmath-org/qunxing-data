@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000729",
   "revision": 2,
-  "card_rev": "b465ca0247680875",
+  "card_rev": "e8e77fdd73837ee5",
   "title": "2^k·3^l 的整数复杂度 = 2k+3l",
   "title_en": "Integer complexity of 2^k 3^l equals 2k+3l",
   "aliases": [],

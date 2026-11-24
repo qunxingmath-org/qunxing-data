@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001420",
   "revision": 2,
-  "card_rev": "37d47ddd0849508a",
+  "card_rev": "6205bb3dfc1cac8b",
   "title": "batch_I I-008：X_k=E[X_{k−1}|G_k]，{G_k} 取自有限个不同 σ-代数集合。(X_k) 是否必在",
   "title_en": "Do iterated conditional expectations over a finite family of sigma-algebras always converge in L^2?",
   "aliases": [],

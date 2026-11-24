@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001486",
   "revision": 2,
-  "card_rev": "6fdebfdf1a9286cb",
+  "card_rev": "36dc08ab5faacb2b",
   "title": "batch_I I-148：Baer*-环 A 中，x 为单边移位（存在游荡投影 p 使 Σ[xⁿp]=1）、q 为有限投影：是否必",
   "title_en": "Is inf_n [x^{*n} q] = 0 for unilateral shifts and finite projections in Baer*-rings?",
   "aliases": [],

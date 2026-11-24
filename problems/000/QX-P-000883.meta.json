@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000883",
   "revision": 2,
-  "card_rev": "fd26265d49c7416c",
+  "card_rev": "4f5ba018238dff1c",
   "title": "R³ 中\"几乎不交\"几何三角形最大数是否 o(n²)（OWR 2024/3）",
   "title_en": "Is the maximum number of almost-disjoint geometric triangles in R^3 equal to o(n^2)?",
   "aliases": [],

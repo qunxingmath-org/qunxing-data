@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000595",
   "revision": 2,
-  "card_rev": "35059f145bff8712",
+  "card_rev": "d0740e598debc833",
   "title": "（来源 C-002）n≥3 时是否恒有 ⌊7^n/2^n⌋ mod 2^n ≠ 0？",
   "title_en": "Is floor(7^n/2^n) mod 2^n always nonzero for n >= 3?",
   "aliases": [],

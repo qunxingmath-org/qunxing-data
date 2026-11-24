@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000102",
   "revision": 2,
-  "card_rev": "92863630109994a1",
+  "card_rev": "97b92f3264fd80cf",
   "title": "均衡列表染色猜想（EGRES）",
   "title_en": "Equitable list coloring with k > Delta(G): each color used at most ceil(|V|/k) times",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001448",
   "revision": 2,
-  "card_rev": "88402cde0e5c59a1",
+  "card_rev": "9e4fc516ee2ba05f",
   "title": "batch_I I-065：设 n∈N, λ>1, k=λn, c=(k−1)/(k−n), r=∏aᵢ^c（aᵢ≥0）。证明或否定",
   "title_en": "Prove or disprove the parametric inequality sum (1-a_i)/(1-a_i^{lambda n}) >= (1-r)/(1-r^lambda)",
   "aliases": [],

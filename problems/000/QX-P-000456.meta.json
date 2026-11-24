@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000456",
   "revision": 2,
-  "card_rev": "b1746c3e8f1f863c",
+  "card_rev": "582ba4d7f58184c0",
   "title": "Tao 优化常数 14：BB(n) 不可判定的最小 n 上下界（Aaronson Conjecture 11）",
   "title_en": "Improving bounds on the least n for which BB(n) is undecidable",
   "aliases": [],

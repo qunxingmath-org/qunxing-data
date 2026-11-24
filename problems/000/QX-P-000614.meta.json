@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000614",
   "revision": 2,
-  "card_rev": "ea1e41a4c6226bdb",
+  "card_rev": "a88b2f7e1aaf3925",
   "title": "（来源 C-021）用 1..n 的方形（各一块）拼出可铺满平面的 patch：n=10 及以上是否存在？",
   "title_en": "Can squares of sides 1 to n be assembled into a patch that tiles the plane, for n >= 10?",
   "aliases": [],

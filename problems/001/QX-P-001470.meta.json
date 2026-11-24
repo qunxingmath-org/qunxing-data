@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001470",
   "revision": 2,
-  "card_rev": "43119bd742c422e8",
+  "card_rev": "9d835692570e4e67",
   "title": "batch_I I-110：双向（ambidextrous）沙发问题（需同时能通过左转与右转走廊的沙发最大面积）是否存在非平凡上界？",
   "title_en": "Is there a non-trivial upper bound for the ambidextrous sofa problem?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000437",
   "revision": 2,
-  "card_rev": "4b855045368f8555",
+  "card_rev": "5ae7103025c36c72",
   "title": "s-递增 r-元组序列长度上界 F(n)≤n^{3/2}",
   "title_en": "Upper bound F(n) <= n^{3/2} for s-increasing sequences of r-tuples",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000089",
   "revision": 2,
-  "card_rev": "2eb3d76faf7accae",
+  "card_rev": "d6a2fe8a73156c29",
   "title": "Erdős #743：Gyárfás–Lehel/Graham 树打包猜想",
   "title_en": "Erdos problem 743: packing every tree T_2,...,T_n edge-disjointly into K_n",
   "aliases": [],

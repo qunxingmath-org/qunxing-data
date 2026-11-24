@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001761",
   "revision": 2,
-  "card_rev": "807ce079b2e8ae82",
+  "card_rev": "b618776b27534ad2",
   "title": "gcd{ord_p(q)} 偏大现象",
   "title_en": "Why is gcd{ord_p(q)} unexpectedly large?",
   "aliases": [],

@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-000500",
   "revision": 2,
-  "card_rev": "74e1daf9df322dcc",
+  "card_rev": "62793d77e6366e61",
   "title": "3SUM 是否有 O(n^{2−ε}) 型实质改进（atlas: 3SUM 复杂度）",
   "title_en": "Is 3SUM solvable in strongly subquadratic time, i.e. O(n^{2-eps})?",
   "aliases": [],

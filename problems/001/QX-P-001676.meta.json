@@ -3,7 +3,7 @@
   "format_version": "2.2",
   "id": "QX-P-001676",
   "revision": 2,
-  "card_rev": "565f70d4a6056535",
+  "card_rev": "1eba5b86cb3b8fd7",
   "title": "线性森林度猜想（Akiyama–Exoo–Harary）",
   "title_en": "Linear arboricity: covering a d-regular graph by ceil((d+1)/2) linear forests",
   "aliases": [],
