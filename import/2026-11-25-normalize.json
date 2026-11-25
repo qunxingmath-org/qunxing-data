@@ -1,0 +1,1757 @@
+{
+ "note": "整理草稿时对每份草稿做的改动；原稿不入库",
+ "drafts": {
+  "abc-conjecture.md": {
+   "slug": "abc-conjecture",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "archdeacon-integer-heffter-array-conjecture.md": {
+   "slug": "archdeacon-integer-heffter-array-conjecture",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "bochner-riesz-conjecture.md": {
+   "slug": "bochner-riesz-conjecture",
+   "changes": [
+    "删去本机路径 4 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "c2-monotone-lagrangian-torus-classification.md": {
+   "slug": "c2-monotone-lagrangian-torus-classification",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "calabi-croke-sphere-systolic-conjecture.md": {
+   "slug": "calabi-croke-sphere-systolic-conjecture",
+   "changes": [
+    "删去本机路径 5 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "carleson-high-dimensional-convergence.md": {
+   "slug": "carleson-high-dimensional-convergence",
+   "changes": [
+    "删去本机路径 5 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "cayley-graph-hamiltonicity.md": {
+   "slug": "cayley-graph-hamiltonicity",
+   "changes": [
+    "删去本机路径 10 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.hits[15].url 不是公开链接，去掉",
+    "novelty.hits[16].url 不是公开链接，去掉",
+    "novelty.hits[17].url 不是公开链接，去掉",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "cramer-prime-gap-conjecture.md": {
+   "slug": "cramer-prime-gap-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "elliott-halberstam-conjecture.md": {
+   "slug": "elliott-halberstam-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "erdos-sarkozy-sumset-convolution.md": {
+   "slug": "erdos-sarkozy-sumset-convolution",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：counterexample → object",
+    "statement_issues 移到 novelty 下面",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "fermat-catalan-conjecture.md": {
+   "slug": "fermat-catalan-conjecture",
+   "changes": [
+    "删去本机路径 4 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "finite-projective-plane-prime-power-order.md": {
+   "slug": "finite-projective-plane-prime-power-order",
+   "changes": [
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "fourier-restriction-conjecture.md": {
+   "slug": "fourier-restriction-conjecture",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "grimm-conjecture-distinct-prime-divisors.md": {
+   "slug": "grimm-conjecture-distinct-prime-divisors",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "harborth-integral-fary-embedding.md": {
+   "slug": "harborth-integral-fary-embedding",
+   "changes": []
+  },
+  "hofer-zehnder-conjecture.md": {
+   "slug": "hofer-zehnder-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "msc：'37J10; 53D40' 拆成主分类 37J10 和次分类 ['53D40']",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "jackson-bipartite-tournament-conjecture.md": {
+   "slug": "jackson-bipartite-tournament-conjecture",
+   "changes": [
+    "删去本机路径 8 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['disprove', 'verify'] → ['disprove', 'check_proof']（领域词去掉，同义词换成规定取值）",
+    "statement_issues 移到 novelty 下面",
+    "novelty.hits[9].url 不是公开链接，去掉"
+   ]
+  },
+  "jones-polynomial-unknot-detection-verification.md": {
+   "slug": "jones-polynomial-unknot-detection-verification",
+   "changes": [
+    "删去本机路径 4 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['verify', 'prove', 'disprove'] → ['check_proof', 'prove', 'disprove']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "kakeya-high-dimensional-conjecture.md": {
+   "slug": "kakeya-high-dimensional-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "msc：'28A75；42B15' 拆成主分类 28A75 和次分类 ['42B15']",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "kalai-3d-face-count-conjecture.md": {
+   "slug": "kalai-3d-face-count-conjecture",
+   "changes": []
+  },
+  "kervaire-126-invariant-one-verification.md": {
+   "slug": "kervaire-126-invariant-one-verification",
+   "changes": [
+    "problem_type：['verify', 'prove'] → ['check_proof', 'prove']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "kourovka-20-100-distinct-powers-ordering.md": {
+   "slug": "kourovka-20-100-distinct-powers-ordering",
+   "changes": [
+    "sources[2].role：related → progress"
+   ]
+  },
+  "kourovka-20-116-profinite-torsion-finite-exponent.md": {
+   "slug": "kourovka-20-116-profinite-torsion-finite-exponent",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "sources[1].role：background → survey",
+    "sources[2].role：background → survey",
+    "sources[3].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-24-hilbert-modular-amenable-action.md": {
+   "slug": "kourovka-20-24-hilbert-modular-amenable-action",
+   "changes": [
+    "sources[1].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-35-mapping-class-hyperbolic-quotient.md": {
+   "slug": "kourovka-20-35-mapping-class-hyperbolic-quotient",
+   "changes": [
+    "sources[3].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-37-finite-group-two-subset-factorization.md": {
+   "slug": "kourovka-20-37-finite-group-two-subset-factorization",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-39-root-adjunction-degree-two-linearity.md": {
+   "slug": "kourovka-20-39-root-adjunction-degree-two-linearity",
+   "changes": [
+    "sources[3].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-42-rf-nonamenable-group-law.md": {
+   "slug": "kourovka-20-42-rf-nonamenable-group-law",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-43-uniformly-amenable-common-law-families.md": {
+   "slug": "kourovka-20-43-uniformly-amenable-common-law-families",
+   "changes": [
+    "sources[2].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-48-partition-p-group-fpfa-exponent.md": {
+   "slug": "kourovka-20-48-partition-p-group-fpfa-exponent",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "sources[2].role：background → survey",
+    "sources[3].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-49-two-generated-same-exponent-subgroup.md": {
+   "slug": "kourovka-20-49-two-generated-same-exponent-subgroup",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-67-brauer-block-defect-derived-length.md": {
+   "slug": "kourovka-20-67-brauer-block-defect-derived-length",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-71a-two-card-types-vertex-orbits.md": {
+   "slug": "kourovka-20-71a-two-card-types-vertex-orbits",
+   "changes": [
+    "sources[2].role：related → progress"
+   ]
+  },
+  "kourovka-20-77-boundedly-generated-residually-finite-linear.md": {
+   "slug": "kourovka-20-77-boundedly-generated-residually-finite-linear",
+   "changes": [
+    "sources[2].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-78-qian-codegree-conjecture-claimed.md": {
+   "slug": "kourovka-20-78-qian-codegree-conjecture-claimed",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "sources[1].role：claim → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-80-p-character-monomial-solvable-claimed.md": {
+   "slug": "kourovka-20-80-p-character-monomial-solvable-claimed",
+   "changes": [
+    "sources[1].role：claim → progress"
+   ]
+  },
+  "kourovka-20-81-finite-group-class-baer-suzuki-width.md": {
+   "slug": "kourovka-20-81-finite-group-class-baer-suzuki-width",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-82-isospectral-recognizable-socle-quotient.md": {
+   "slug": "kourovka-20-82-isospectral-recognizable-socle-quotient",
+   "changes": [
+    "sources[2].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-84-class-three-fifth-dimension-subgroup.md": {
+   "slug": "kourovka-20-84-class-three-fifth-dimension-subgroup",
+   "changes": [
+    "sources[2].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-20-86-p-elements-sylow-inequality.md": {
+   "slug": "kourovka-20-86-p-elements-sylow-inequality",
+   "changes": [
+    "sources[2].role：related → progress"
+   ]
+  },
+  "kourovka-20-89-almost-engel-elements-subgroup.md": {
+   "slug": "kourovka-20-89-almost-engel-elements-subgroup",
+   "changes": [
+    "sources[2].role：related → progress"
+   ]
+  },
+  "kourovka-20-99-disjoint-cosets-index-gcd.md": {
+   "slug": "kourovka-20-99-disjoint-cosets-index-gcd",
+   "changes": [
+    "sources[2].role：related → progress"
+   ]
+  },
+  "kourovka-21-138-surface-group-conjecture.md": {
+   "slug": "kourovka-21-138-surface-group-conjecture",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-143-thompson-f-automatic.md": {
+   "slug": "kourovka-21-143-thompson-f-automatic",
+   "changes": [
+    "sources[1].role：early → original",
+    "sources[9].role：community → restatement",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-144-brin-sapir-subgroup-dichotomy.md": {
+   "slug": "kourovka-21-144-brin-sapir-subgroup-dichotomy",
+   "changes": [
+    "sources[1].role：early → original",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-146-finiteness-type-embeddings.md": {
+   "slug": "kourovka-21-146-finiteness-type-embeddings",
+   "changes": [
+    "sources[1].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-22-hopfian-wreath-products.md": {
+   "slug": "kourovka-21-22-hopfian-wreath-products",
+   "changes": [
+    "sources[2].role：background → survey",
+    "sources[3].role：claim → progress",
+    "sources[4].role：claim → progress",
+    "sources[5].role：claim → progress",
+    "sources[6].role：claim → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-35-verbal-subgroup-p-nilpotency.md": {
+   "slug": "kourovka-21-35-verbal-subgroup-p-nilpotency",
+   "changes": [
+    "problem_type：['decide', 'verify'] → ['decide', 'check_proof']（领域词去掉，同义词换成规定取值）",
+    "sources[8].role：related → progress",
+    "sources[9].role：related → progress"
+   ]
+  },
+  "kourovka-21-36-tdlc-kropholler-profinite-extensions.md": {
+   "slug": "kourovka-21-36-tdlc-kropholler-profinite-extensions",
+   "changes": [
+    "sources[3].role：related → progress",
+    "sources[4].role：related → progress",
+    "sources[6].role：related → progress",
+    "sources[8].role：related → progress",
+    "sources[9].role：related → progress",
+    "sources[10].role：related → progress",
+    "sources[11].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-45-finitely-presented-simple-three-generators.md": {
+   "slug": "kourovka-21-45-finitely-presented-simple-three-generators",
+   "changes": [
+    "external_refs 来源名：aim → other",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-46-finitely-presented-simple-cohomological-dimension.md": {
+   "slug": "kourovka-21-46-finitely-presented-simple-cohomological-dimension",
+   "changes": [
+    "sources[4].role：related → progress",
+    "sources[5].role：related → progress",
+    "sources[6].role：related → progress",
+    "sources[7].role：related → progress",
+    "sources[8].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-47-finitely-presented-self-direct-product.md": {
+   "slug": "kourovka-21-47-finitely-presented-self-direct-product",
+   "changes": [
+    "sources[5].role：related → progress",
+    "sources[6].role：related → progress",
+    "sources[7].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-59-almost-simple-character-degrees.md": {
+   "slug": "kourovka-21-59-almost-simple-character-degrees",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-72-amenable-tarski-monsters.md": {
+   "slug": "kourovka-21-72-amenable-tarski-monsters",
+   "changes": [
+    "sources[8].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-78-pro-p-cohomology-finite-generation.md": {
+   "slug": "kourovka-21-78-pro-p-cohomology-finite-generation",
+   "changes": [
+    "sources[3].role：background → survey",
+    "sources[4].role：background → survey",
+    "sources[6].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-79-left-orderable-all-elements-distorted.md": {
+   "slug": "kourovka-21-79-left-orderable-all-elements-distorted",
+   "changes": [
+    "sources[1].role：background → survey",
+    "sources[2].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "kourovka-21-83-metabelian-permutation-stability.md": {
+   "slug": "kourovka-21-83-metabelian-permutation-stability",
+   "changes": [
+    "sources[5].role：background → survey",
+    "sources[6].role：background → survey",
+    "sources[7].role：background → survey"
+   ]
+  },
+  "kourovka-21-84-sl-nz-flexible-permutation-stability.md": {
+   "slug": "kourovka-21-84-sl-nz-flexible-permutation-stability",
+   "changes": [
+    "sources[1].role：background → survey",
+    "sources[4].role：background → survey",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "lang-trotter-conjecture.md": {
+   "slug": "lang-trotter-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove', 'dis前', 'disprove'] → ['prove', 'disprove']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "leopoldt-conjecture.md": {
+   "slug": "leopoldt-conjecture",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "littlewood-conjecture.md": {
+   "slug": "littlewood-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "malle-conjecture.md": {
+   "slug": "malle-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.hits[5].relation：partial_result → special_or_weaker",
+    "novelty.hits[13].relation：partial_result → special_or_weaker",
+    "novelty.hits[18].relation：partial_result → special_or_weaker",
+    "novelty.hits[20].relation：partial_result → special_or_weaker",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "meyniel-cop-number-conjecture.md": {
+   "slug": "meyniel-cop-number-conjecture",
+   "changes": [
+    "删去本机路径 4 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "morley-rank-faithful-irreducible-actions.md": {
+   "slug": "morley-rank-faithful-irreducible-actions",
+   "changes": [
+    "sources[1].role：related → progress",
+    "sources[4].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "nagata-plane-curves-conjecture.md": {
+   "slug": "nagata-plane-curves-conjecture",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "nagell-ljunggren-repunit-perfect-powers.md": {
+   "slug": "nagell-ljunggren-repunit-perfect-powers",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "nearby-lagrangian-conjecture.md": {
+   "slug": "nearby-lagrangian-conjecture",
+   "changes": [
+    "删去本机路径 7 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['verify', 'check_proof'] → ['check_proof']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "one-relator-groups-haagerup.md": {
+   "slug": "one-relator-groups-haagerup",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "petty-equidistant-set-conjecture.md": {
+   "slug": "petty-equidistant-set-conjecture",
+   "changes": [
+    "删去本机路径 5 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/"
+   ]
+  },
+  "pillai-conjecture.md": {
+   "slug": "pillai-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "planar-falconer-distance-proof-verification.md": {
+   "slug": "planar-falconer-distance-proof-verification",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['verify'] → ['check_proof']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24/colton-refactorable-prime-count-claim.md": {
+   "slug": "colton-refactorable-prime-count-claim",
+   "changes": []
+  },
+  "qunxing-card-drafts-2026-11-24/elliptic-divisibility-finite-prime-terms.md": {
+   "slug": "elliptic-divisibility-finite-prime-terms",
+   "changes": []
+  },
+  "qunxing-card-drafts-2026-11-24/minimal-prime-base17-f19-family.md": {
+   "slug": "minimal-prime-base17-f19-family",
+   "changes": [
+    "sources[3].role：data → database",
+    "sources[4].role：data → database"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24/rowland-gcd-all-odd-primes.md": {
+   "slug": "rowland-gcd-all-odd-primes",
+   "changes": []
+  },
+  "qunxing-card-drafts-2026-11-24/wowii-372-two-path-claim.md": {
+   "slug": "wowii-372-two-path-claim",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch2/balanced-primes-infinitude.md": {
+   "slug": "balanced-primes-infinitude",
+   "changes": [
+    "problem_type：['prove_or_disprove', 'infinitude'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch2/field-u-invariant-13.md": {
+   "slug": "field-u-invariant-13",
+   "changes": [
+    "problem_type：['prove_or_disprove', 'construction'] → ['decide', 'construct']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch2/kaplansky-direct-finiteness-char2-claim.md": {
+   "slug": "kaplansky-direct-finiteness-char2-claim",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch2/mills-constant-transcendence.md": {
+   "slug": "mills-constant-transcendence",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch2/riemann-zeta-density-hypothesis.md": {
+   "slug": "riemann-zeta-density-hypothesis",
+   "changes": [
+    "problem_type：['check_proof', 'implication'] → ['check_proof', 'decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch3/dean-conjecture-k5.md": {
+   "slug": "dean-conjecture-k5",
+   "changes": [
+    "problem_type：['existence', 'graph_theory'] → ['existence']（领域词去掉，同义词换成规定取值）",
+    "difficulty：8（按 10 分制写的）→ 4"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch3/dedekind-number-10.md": {
+   "slug": "dedekind-number-10",
+   "changes": [
+    "problem_type：['compute', 'exact_value'] → ['compute', 'value']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch3/factorial-primes-infinitude.md": {
+   "slug": "factorial-primes-infinitude",
+   "changes": [
+    "problem_type：['prove_or_disprove', 'infinitude'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch3/four-dimensional-euler-brick.md": {
+   "slug": "four-dimensional-euler-brick",
+   "changes": [
+    "problem_type：['existence', 'diophantine'] → ['existence']（领域词去掉，同义词换成规定取值）",
+    "external_refs 来源名：mathoverflow → mo",
+    "external_refs 来源名：mathoverflow → mo",
+    "external_refs 来源名：mathstackexchange → mse",
+    "difficulty：9（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch3/perfect-cuboid-existence.md": {
+   "slug": "perfect-cuboid-existence",
+   "changes": [
+    "problem_type：['existence', 'diophantine'] → ['existence']（领域词去掉，同义词换成规定取值）",
+    "sources[8].role：related → progress",
+    "difficulty：10（按 10 分制写的）→ 5",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch4/bayesian-security-games-bne.md": {
+   "slug": "bayesian-security-games-bne",
+   "changes": [
+    "problem_type：['algorithm', 'complexity', 'game_theory'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty：9（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch4/factorial-separation-conjecture.md": {
+   "slug": "factorial-separation-conjecture",
+   "changes": [
+    "problem_type：['conjecture', 'number_theory', 'diophantine'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty：9（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch4/multiplicative-persistence-bound-11.md": {
+   "slug": "multiplicative-persistence-bound-11",
+   "changes": [
+    "problem_type：['conjecture', 'computation', 'number_theory'] → ['decide', 'compute']（领域词去掉，同义词换成规定取值）",
+    "difficulty：8（按 10 分制写的）→ 4"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch4/point-charge-equilibria-polynomial-bound.md": {
+   "slug": "point-charge-equilibria-polynomial-bound",
+   "changes": [
+    "problem_type：['conjecture', 'bound', 'geometry'] → ['decide', 'bound']（领域词去掉，同义词换成规定取值）",
+    "difficulty：9（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch4/real-projective-second-eigenvalue-sharp-bound.md": {
+   "slug": "real-projective-second-eigenvalue-sharp-bound",
+   "changes": [
+    "problem_type：['conjecture', 'bound', 'spectral_geometry'] → ['decide', 'bound']（领域词去掉，同义词换成规定取值）",
+    "difficulty：8（按 10 分制写的）→ 4"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch5/polycirculant-conjecture.md": {
+   "slug": "polycirculant-conjecture",
+   "changes": [
+    "problem_type：['conjecture', 'group_theory', 'graph_theory'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "sources[3].role：claim → progress",
+    "difficulty：9（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch5/pythagorean-partition-regularity.md": {
+   "slug": "pythagorean-partition-regularity",
+   "changes": [
+    "problem_type：['conjecture', 'ramsey_theory', 'number_theory'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty：9（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch5/reflexive-banach-nonexpansive-fixed-point-claim.md": {
+   "slug": "reflexive-banach-nonexpansive-fixed-point-claim",
+   "changes": [
+    "problem_type：['claimed_solution', 'functional_analysis', 'fixed_point'] → ['check_proof']（领域词去掉，同义词换成规定取值）",
+    "sources[1].role：formal → formalization",
+    "sources[2].role：formal → formalization",
+    "sources[4].role：claim → progress",
+    "difficulty：10（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch5/regular-tetrahedron-packing-density.md": {
+   "slug": "regular-tetrahedron-packing-density",
+   "changes": [
+    "problem_type：['value', 'packing', 'geometry'] → ['value']（领域词去掉，同义词换成规定取值）",
+    "external_refs 来源名：pmc → other",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch5/truncated-octahedron-proof-claim.md": {
+   "slug": "truncated-octahedron-proof-claim",
+   "changes": [
+    "problem_type：['claimed_solution', 'geometry', 'isoperimetric'] → ['check_proof']（领域词去掉，同义词换成规定取值）",
+    "sources[1].role：claim → progress",
+    "difficulty：10（按 10 分制写的）→ 5",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch6/ellipsoid-packing-density.md": {
+   "slug": "ellipsoid-packing-density",
+   "changes": [
+    "problem_type：['value', 'packing', 'geometry'] → ['value']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch6/erdos-1184-dickman-short-interval.md": {
+   "slug": "erdos-1184-dickman-short-interval",
+   "changes": [
+    "problem_type：['conjecture', 'number_theory', 'prime_factors', 'asymptotics'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "sources[1].role：status → novelty",
+    "sources[4].role：related → progress",
+    "external_refs 来源名：erdosproblems → erdos",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch6/kakeya-local-smoothing-claim.md": {
+   "slug": "kakeya-local-smoothing-claim",
+   "changes": [
+    "problem_type：['claimed_solution', 'kakeya', 'harmonic_analysis'] → ['check_proof']（领域词去掉，同义词换成规定取值）",
+    "sources[1].role：claim → progress",
+    "sources[2].role：claim → progress",
+    "external_refs 来源名：github → other",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch6/meyniel-cop-number-conjecture.md": {
+   "dropped": "同名草稿有两份，保留更完整的那份"
+  },
+  "qunxing-card-drafts-2026-11-24-batch6/oberwolfach-problem-all-odd-orders.md": {
+   "slug": "oberwolfach-problem-all-odd-orders",
+   "changes": [
+    "problem_type：['conjecture', 'graph_decomposition', 'existence'] → ['decide', 'existence']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch7/cerny-synchronizing-word-conjecture.md": {
+   "slug": "cerny-synchronizing-word-conjecture",
+   "changes": [
+    "problem_type：['conjecture', 'automata', 'synchronization', 'upper_bound'] → ['decide', 'bound']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch7/juggler-conjecture.md": {
+   "slug": "juggler-conjecture",
+   "changes": [
+    "problem_type：['conjecture', 'iteration', 'termination'] → ['decide']（领域词去掉，同义词换成规定取值）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch7/parkin-shanks-partition-parity-density.md": {
+   "slug": "parkin-shanks-partition-parity-density",
+   "changes": [
+    "problem_type：['conjecture', 'partition_function', 'parity', 'natural_density'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "sources[0].access_note 并进 cite",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch7/poset-product-dimension-loss-two.md": {
+   "slug": "poset-product-dimension-loss-two",
+   "changes": [
+    "problem_type：['conjecture', 'poset', 'dimension', 'product'] → ['decide']（领域词去掉，同义词换成规定取值）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-24-batch7/universal-poset-minimum-order.md": {
+   "slug": "universal-poset-minimum-order",
+   "changes": [
+    "problem_type：['open_problem', 'poset', 'universality', 'optimization'] → []（领域词去掉，同义词换成规定取值）",
+    "sources[2].role：related → progress"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch10/bing-borsuk-homogeneous-anr-conjecture.md": {
+   "slug": "bing-borsuk-homogeneous-anr-conjecture",
+   "changes": [
+    "删去本机路径 4 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch10/equational-theories-677-implies-255.md": {
+   "slug": "equational-theories-677-implies-255",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch10/hajos-five-six-subdivision-conjecture.md": {
+   "slug": "hajos-five-six-subdivision-conjecture",
+   "changes": [
+    "删去本机路径 4 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch10/kotzig-cyclic-tree-decomposition.md": {
+   "slug": "kotzig-cyclic-tree-decomposition",
+   "changes": [
+    "删去本机路径 4 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch10/weak-tiling-proper-tiling-problem-4-2.md": {
+   "slug": "weak-tiling-proper-tiling-problem-4-2",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch11/approximate-stable-matching-threshold.md": {
+   "slug": "approximate-stable-matching-threshold",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch11/goodman-coefficient-conjecture.md": {
+   "slug": "goodman-coefficient-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch11/homogeneous-compactum-convergent-sequence.md": {
+   "slug": "homogeneous-compactum-convergent-sequence",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch11/monochromatic-quantum-graph-n8-d3.md": {
+   "slug": "monochromatic-quantum-graph-n8-d3",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch11/zfc-weakly-first-countable-compactum.md": {
+   "slug": "zfc-weakly-first-countable-compactum",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch12/determinantal-conjecture-normal-matrices.md": {
+   "slug": "determinantal-conjecture-normal-matrices",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch12/elekes-szabo-triple-lines-cubic-curves.md": {
+   "slug": "elekes-szabo-triple-lines-cubic-curves",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch12/sierpinski-5-n-egyptian-fractions.md": {
+   "slug": "sierpinski-5-n-egyptian-fractions",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch12/vaught-conjecture-countable-models.md": {
+   "slug": "vaught-conjecture-countable-models",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch12/weighing-matrix-conjecture.md": {
+   "slug": "weighing-matrix-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：construct → object",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch13/grigorchuk-group-growth-gap-conjecture.md": {
+   "slug": "grigorchuk-group-growth-gap-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch13/positive-characteristic-resolution-of-singularities.md": {
+   "slug": "positive-characteristic-resolution-of-singularities",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch13/smooth-four-dimensional-poincare-conjecture.md": {
+   "slug": "smooth-four-dimensional-poincare-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch13/unforced-3d-navier-stokes-global-smoothness.md": {
+   "slug": "unforced-3d-navier-stokes-global-smoothness",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove', 'disprove', 'verify'] → ['prove', 'disprove', 'check_proof']（领域词去掉，同义词换成规定取值）",
+    "answer_type：prove → proof",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch13/wowii-conjecture-199-hamiltonian-path.md": {
+   "slug": "wowii-conjecture-199-hamiltonian-path",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch14/commutative-auslander-reiten-conjecture.md": {
+   "slug": "commutative-auslander-reiten-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch14/finite-group-scheme-optimal-exponent.md": {
+   "slug": "finite-group-scheme-optimal-exponent",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch14/pfister-pythagoras-number-conjecture.md": {
+   "slug": "pfister-pythagoras-number-conjecture",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch14/riemann-zeta-sixth-moment-asymptotic.md": {
+   "slug": "riemann-zeta-sixth-moment-asymptotic",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：prove → proof",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch14/tarski-exponential-decidability.md": {
+   "dropped": "与 tarski-exponential-field-decidability 是同一题，保留更完整的那份"
+  },
+  "qunxing-card-drafts-2026-11-25-batch15/compact-space-homogeneous-preimage.md": {
+   "slug": "compact-space-homogeneous-preimage",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch15/finite-field-four-no-three-collinear.md": {
+   "slug": "finite-field-four-no-three-collinear",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch15/irving-leather-max-stable-matchings.md": {
+   "slug": "irving-leather-max-stable-matchings",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch15/no-complete-disjoint-conop-pair.md": {
+   "slug": "no-complete-disjoint-conop-pair",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch15/waldschmidt-en-modulo-one-lower-bound.md": {
+   "slug": "waldschmidt-en-modulo-one-lower-bound",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch16/brennan-bounded-image-spectrum.md": {
+   "slug": "brennan-bounded-image-spectrum",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch16/lovasz-hamiltonian-path-conjecture.md": {
+   "slug": "lovasz-hamiltonian-path-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty：4 → 5（传奇）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch16/moser-telescoping-rectangle-packing.md": {
+   "slug": "moser-telescoping-rectangle-packing",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch16/p-equals-bpp-conjecture.md": {
+   "slug": "p-equals-bpp-conjecture",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch16/strong-rudin-squares-conjecture.md": {
+   "slug": "strong-rudin-squares-conjecture",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch17/erdos-100-separated-distances-diameter.md": {
+   "slug": "erdos-100-separated-distances-diameter",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch17/erdos-995-lacunary-strong-law.md": {
+   "slug": "erdos-995-lacunary-strong-law",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch17/homogeneous-omega-monolithic-first-countable.md": {
+   "slug": "homogeneous-omega-monolithic-first-countable",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch17/jacobson-radical-power-intersection.md": {
+   "slug": "jacobson-radical-power-intersection",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch17/positive-characteristic-local-uniformization.md": {
+   "slug": "positive-characteristic-local-uniformization",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.sources：带冒号被读成键值的几条，改回一句话",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch18/emirp-infinitude.md": {
+   "slug": "emirp-infinitude",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove_or_disprove'] → ['decide']（领域词去掉，同义词换成规定取值）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch18/mandelbrot-local-connectivity.md": {
+   "slug": "mandelbrot-local-connectivity",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove_or_disprove'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch18/toronto-space-problem.md": {
+   "slug": "toronto-space-problem",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove_or_disprove', 'construction'] → ['decide', 'construct']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch18/tournament-anti-sidorenko-trees.md": {
+   "slug": "tournament-anti-sidorenko-trees",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove_or_disprove'] → ['decide']（领域词去掉，同义词换成规定取值）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch18/u-invariant-fifteen-existence.md": {
+   "slug": "u-invariant-fifteen-existence",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove_or_disprove', 'construction'] → ['decide', 'construct']（领域词去掉，同义词换成规定取值）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch19/convex-moser-worm-cover-constant.md": {
+   "slug": "convex-moser-worm-cover-constant",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[6].url 不是公开链接，去掉",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch19/eswarathasan-levine-harmonic-finiteness.md": {
+   "slug": "eswarathasan-levine-harmonic-finiteness",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "problem_type：['prove_or_disprove'] → ['decide']（领域词去掉，同义词换成规定取值）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch19/lennon-pittel-stable-matching-concentration.md": {
+   "slug": "lennon-pittel-stable-matching-concentration",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[6].url 不是公开链接，去掉"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch19/schanuel-conjecture.md": {
+   "slug": "schanuel-conjecture",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "problem_type：['prove_or_disprove'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch19/zeta-seven-irrationality.md": {
+   "slug": "zeta-seven-irrationality",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "problem_type：['prove_or_disprove'] → ['decide']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch20/erdos-1113-sierpinski-without-finite-cover.md": {
+   "slug": "erdos-1113-sierpinski-without-finite-cover",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch20/erdos-200-prime-arithmetic-progressions.md": {
+   "slug": "erdos-200-prime-arithmetic-progressions",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch20/erdos-282-greedy-odd-unit-fractions.md": {
+   "slug": "erdos-282-greedy-odd-unit-fractions",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[6].url 不是公开链接，去掉",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch20/erdos-340-mian-chowla-growth.md": {
+   "slug": "erdos-340-mian-chowla-growth",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch20/erdos-535-constant-pairwise-gcd.md": {
+   "slug": "erdos-535-constant-pairwise-gcd",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch21/diophantine-triple-unique-extension.md": {
+   "slug": "diophantine-triple-unique-extension",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[7].url 不是公开链接，去掉"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch21/erdos-125-digit-sumset-upper-density.md": {
+   "slug": "erdos-125-digit-sumset-upper-density",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[6].url 不是公开链接，去掉",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch21/erdos-479-graham-power-congruence.md": {
+   "slug": "erdos-479-graham-power-congruence",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[6].url 不是公开链接，去掉",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch21/erdos-887-divisors-near-square-root.md": {
+   "slug": "erdos-887-divisors-near-square-root",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch21/moser-telescoping-rectangle-covering.md": {
+   "slug": "moser-telescoping-rectangle-covering",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[7].url 不是公开链接，去掉"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch22/boyd-mahler-measure-strict-hierarchy.md": {
+   "slug": "boyd-mahler-measure-strict-hierarchy",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch22/de-giorgi-dimension-four.md": {
+   "slug": "de-giorgi-dimension-four",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch22/pierce-birkhoff-conjecture.md": {
+   "slug": "pierce-birkhoff-conjecture",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch22/small-cohen-macaulay-modules.md": {
+   "slug": "small-cohen-macaulay-modules",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch22/zeta-simple-zero-proportion-improvement.md": {
+   "slug": "zeta-simple-zero-proportion-improvement",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch23/bass-trace-conjecture-integral-domain.md": {
+   "slug": "bass-trace-conjecture-integral-domain",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch23/euler-seventh-power-sum-conjecture.md": {
+   "slug": "euler-seventh-power-sum-conjecture",
+   "changes": []
+  },
+  "qunxing-card-drafts-2026-11-25-batch23/fermat-catalan-finiteness.md": {
+   "slug": "fermat-catalan-finiteness",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch23/hasse-weil-analytic-continuation.md": {
+   "slug": "hasse-weil-analytic-continuation",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch23/large-steiner-system-small-parameters.md": {
+   "slug": "large-steiner-system-small-parameters",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch24/dixmier-conjecture-dimension-two.md": {
+   "slug": "dixmier-conjecture-dimension-two",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch24/five-nonmerging-selfprime-orbits.md": {
+   "slug": "five-nonmerging-selfprime-orbits",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[7].url 不是公开链接，去掉"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch24/moll-p-adic-valuation-asymptotic.md": {
+   "slug": "moll-p-adic-valuation-asymptotic",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/",
+    "novelty.hits[6].url 不是公开链接，去掉"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch24/semi-magic-square-distinct-cubes.md": {
+   "slug": "semi-magic-square-distinct-cubes",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch24/wowii-61-induced-forest-residue-diameter.md": {
+   "slug": "wowii-61-induced-forest-residue-diameter",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/",
+    "sources[2].url 不是公开链接，去掉",
+    "novelty.hits[2].url 不是公开链接，去掉"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch25/erdos-1159-projective-plane-blocking-set.md": {
+   "slug": "erdos-1159-projective-plane-blocking-set",
+   "changes": [
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch25/erdos-1160-finite-group-counts.md": {
+   "slug": "erdos-1160-finite-group-counts",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch25/erdos-1169-negative-partition-relation.md": {
+   "slug": "erdos-1169-negative-partition-relation",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch25/erdos-1178-sparse-hypergraph-threshold.md": {
+   "slug": "erdos-1178-sparse-hypergraph-threshold",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch25/erdos-1180-inverse-residue-sums.md": {
+   "slug": "erdos-1180-inverse-residue-sums",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch8/butson-fourth-root-hadamard-conjecture.md": {
+   "slug": "butson-fourth-root-hadamard-conjecture",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch8/dirichlet-divisor-problem.md": {
+   "slug": "dirichlet-divisor-problem",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch8/green-87-permutation-monotonicity.md": {
+   "slug": "green-87-permutation-monotonicity",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch8/petersen-coloring-counterexample-claim.md": {
+   "slug": "petersen-coloring-counterexample-claim",
+   "changes": []
+  },
+  "qunxing-card-drafts-2026-11-25-batch8/pyjama-set-double-exponential-bound.md": {
+   "slug": "pyjama-set-double-exponential-bound",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch9/green-35-autoconvolution-lower-bound.md": {
+   "slug": "green-35-autoconvolution-lower-bound",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.hits[12].url 不是公开链接，去掉"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch9/green-77-small-triangle-unit-disc.md": {
+   "slug": "green-77-small-triangle-unit-disc",
+   "changes": [
+    "去掉本机临时目录名 .scratch/、.research/",
+    "external_refs 来源名：green → green100",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch9/green-86-integer-dilate-discrepancy.md": {
+   "slug": "green-86-integer-dilate-discrepancy",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch9/littlewood-polynomial-asymptotic-flatness.md": {
+   "slug": "littlewood-polynomial-asymptotic-flatness",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "novelty.hits[17].url 不是公开链接，去掉",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "qunxing-card-drafts-2026-11-25-batch9/rado-boundedness-conjecture.md": {
+   "dropped": "同名草稿有两份，保留更完整的那份"
+  },
+  "rado-boundedness-conjecture.md": {
+   "slug": "rado-boundedness-conjecture",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "ramsey-r3-10-exact-value.md": {
+   "slug": "ramsey-r3-10-exact-value",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "statement_issues 移到 novelty 下面",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "schinzel-hypothesis-h.md": {
+   "slug": "schinzel-hypothesis-h",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "schur-six-exact-value.md": {
+   "slug": "schur-six-exact-value",
+   "changes": [
+    "statement_issues 移到 novelty 下面",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "skew-hadamard-conjecture.md": {
+   "slug": "skew-hadamard-conjecture",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "smith-longest-cycles-conjecture.md": {
+   "slug": "smith-longest-cycles-conjecture",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "statement_fidelity：audited_secondary → unaudited（只对过二手文献）",
+    "sources[11].role：related → progress",
+    "novelty.hits[2].relation：partial_result → special_or_weaker",
+    "novelty.hits[4].relation：partial_result → special_or_weaker",
+    "novelty.hits[5].relation：partial_result → special_or_weaker",
+    "novelty.hits[8].relation：partial_result → special_or_weaker",
+    "novelty.hits[9].relation：partial_result → special_or_weaker",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "smooth-four-dimensional-poincare-conjecture.md": {
+   "slug": "smooth-four-dimensional-poincare-conjecture-claim",
+   "changes": [
+    "problem_type：['verify', 'prove'] → ['check_proof', 'prove']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "smooth-four-dimensional-schoenflies-conjecture.md": {
+   "slug": "smooth-four-dimensional-schoenflies-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove', 'refute'] → ['prove', 'disprove']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "tarski-exponential-field-decidability.md": {
+   "slug": "tarski-exponential-field-decidability",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "thomassen-connected-line-graph-conjecture.md": {
+   "slug": "thomassen-connected-line-graph-conjecture",
+   "changes": [
+    "删去本机路径 6 处（换成公开仓库里的相对路径或'本机文件'）",
+    "去掉本机临时目录名 .scratch/、.research/",
+    "statement_fidelity：audited_secondary → unaudited（只对过二手文献）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "thompson-group-f-amenability-verification.md": {
+   "slug": "thompson-group-f-amenability-verification",
+   "changes": [
+    "删去本机路径 3 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['verify'] → ['check_proof']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "two-point-chowla-conjecture.md": {
+   "slug": "two-point-chowla-conjecture",
+   "changes": [
+    "删去本机路径 5 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['prove', 'refute'] → ['prove', 'disprove']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "unit-distance-exponent-problem.md": {
+   "slug": "unit-distance-exponent-problem",
+   "changes": [
+    "删去本机路径 5 处（换成公开仓库里的相对路径或'本机文件'）",
+    "answer_type：exact_value → value",
+    "statement_issues 移到 novelty 下面",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "valiant-matrix-rigidity-conjecture.md": {
+   "slug": "valiant-matrix-rigidity-conjecture",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "vizing-planar-delta-six.md": {
+   "slug": "vizing-planar-delta-six",
+   "changes": [
+    "删去本机路径 7 处（换成公开仓库里的相对路径或'本机文件'）",
+    "statement_issues 移到 novelty 下面",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "whitehead-asphericity-conjecture.md": {
+   "slug": "whitehead-asphericity-conjecture",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "zeta-five-irrationality-verification.md": {
+   "slug": "zeta-five-irrationality-verification",
+   "changes": [
+    "删去本机路径 2 处（换成公开仓库里的相对路径或'本机文件'）",
+    "problem_type：['verify', 'prove', 'disprove'] → ['check_proof', 'prove', 'disprove']（领域词去掉，同义词换成规定取值）",
+    "difficulty_note 前面加一句传奇的理由"
+   ]
+  },
+  "群星题卡草稿-2026-11-24/gardam-promislow-unit-minimum-support.md": {
+   "slug": "gardam-promislow-unit-minimum-support",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24/odd-primitive-abundant-central-divisor-sums.md": {
+   "slug": "odd-primitive-abundant-central-divisor-sums",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24/stolz-witten-genus-positive-ricci.md": {
+   "slug": "stolz-witten-genus-positive-ricci",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-24-第三批/k-union-closed-weighted-product-conjecture.md": {
+   "slug": "k-union-closed-weighted-product-conjecture",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24-第三批/tetration-diagonal-sum-prime-uniqueness.md": {
+   "slug": "tetration-diagonal-sum-prime-uniqueness",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24-第三批/three-prime-reciprocal-dirichlet-nonvanishing.md": {
+   "slug": "three-prime-reciprocal-dirichlet-nonvanishing",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "删掉 ## 原文摘录（Erdős problems 网站的文字不摘录，链接留在 sources 里）"
+   ]
+  },
+  "群星题卡草稿-2026-11-24-第二批/bounded-height-polynomials-consecutive-primes.md": {
+   "slug": "bounded-height-polynomials-consecutive-primes",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24-第二批/composite-repunit-single-zero-prime.md": {
+   "slug": "composite-repunit-single-zero-prime",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24-第二批/weighted-union-closed-elementary-symmetric.md": {
+   "slug": "weighted-union-closed-elementary-symmetric",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24-第四批/finite-order-unimodular-zero-one-conjugacy.md": {
+   "slug": "finite-order-unimodular-zero-one-conjugacy",
+   "changes": []
+  },
+  "群星题卡草稿-2026-11-24-第四批/finitely-presented-simple-group-not-two-generated.md": {
+   "slug": "finitely-presented-simple-group-not-two-generated",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "群星题卡草稿-2026-11-24-第四批/short-interval-prime-poisson-limit.md": {
+   "slug": "short-interval-prime-poisson-limit",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第七批/finite-group-variety-free-growth-limit.md": {
+   "slug": "finite-group-variety-free-growth-limit",
+   "changes": [
+    "sources[2].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第七批/finite-spectrum-generated-cstar-algebra-dimension.md": {
+   "slug": "finite-spectrum-generated-cstar-algebra-dimension",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第七批/free-q-group-scl-rationality.md": {
+   "slug": "free-q-group-scl-rationality",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第七批/handlebody-disc-complex-uniform-hyperbolicity.md": {
+   "slug": "handlebody-disc-complex-uniform-hyperbolicity",
+   "changes": [
+    "sources[2].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第七批/thompson-f-automaticity.md": {
+   "dropped": "与 kourovka-21-143-thompson-f-automatic 是同一题，保留带 Kourovka 编号的那份"
+  },
+  "群星题卡草稿-2026-11-25-第五批/cocompact-torsion-generated-hyperbolic-groups.md": {
+   "slug": "cocompact-torsion-generated-hyperbolic-groups",
+   "changes": [
+    "answer_type：construct → object",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第五批/large-exotic-four-ball-existence.md": {
+   "slug": "large-exotic-four-ball-existence",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第五批/manifold-sheaves-model-category.md": {
+   "slug": "manifold-sheaves-model-category",
+   "changes": [
+    "answer_type：construct → object",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第五批/non-sheaf-infinity-topos-existence.md": {
+   "slug": "non-sheaf-infinity-topos-existence",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第五批/s4-symplectohomeomorphic-atlas.md": {
+   "slug": "s4-symplectohomeomorphic-atlas",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第八批/raag-bestvina-brady-kernel-dehn-lower-bound.md": {
+   "slug": "raag-bestvina-brady-kernel-dehn-lower-bound",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "sources[5].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第八批/raag-standard-rips-contractibility.md": {
+   "slug": "raag-standard-rips-contractibility",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "sources[4].role：related → progress",
+    "sources[5].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第八批/sl2-laurent-ring-finite-generation.md": {
+   "slug": "sl2-laurent-ring-finite-generation",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "sources[3].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第八批/sl3z-coherence.md": {
+   "slug": "sl3z-coherence",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "sources[4].role：related → progress",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第八批/z-product-type-f-finiteness-implication.md": {
+   "slug": "z-product-type-f-finiteness-implication",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第六批/acyclic-subcomplex-contractibility.md": {
+   "slug": "acyclic-subcomplex-contractibility",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第六批/finitely-presented-if-group-classification.md": {
+   "slug": "finitely-presented-if-group-classification",
+   "changes": [
+    "删去本机路径 1 处（换成公开仓库里的相对路径或'本机文件'）",
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第六批/pi-thousand-consecutive-zeroes.md": {
+   "slug": "pi-thousand-consecutive-zeroes",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第六批/quaternion-moat-bounded-walk.md": {
+   "slug": "quaternion-moat-bounded-walk",
+   "changes": [
+    "difficulty：5 → 4（5 只给传奇：提出 30 年以上、领域外也有名、公认极难）"
+   ]
+  },
+  "群星题卡草稿-2026-11-25-第六批/unit-square-perimeter-area-supremum.md": {
+   "slug": "unit-square-perimeter-area-supremum",
+   "changes": []
+  }
+ }
+}
