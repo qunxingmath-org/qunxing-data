@@ -1,0 +1,3239 @@
+{
+  "date": "2026-11-25",
+  "bank": "qunxing-data/problems",
+  "package": "card-drafts-2026-11-25",
+  "drafts": 241,
+  "built": 241,
+  "failed": 0,
+  "first_id": "QX-P-002263",
+  "last_id": "QX-P-002503",
+  "schema_errors": [],
+  "results": [
+    {
+      "draft": "abc-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002263",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "acyclic-subcomplex-contractibility.md",
+      "ok": true,
+      "id": "QX-P-002264",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "approximate-stable-matching-threshold.md",
+      "ok": true,
+      "id": "QX-P-002265",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "archdeacon-integer-heffter-array-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002266",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "balanced-primes-infinitude.md",
+      "ok": true,
+      "id": "QX-P-002267",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "bass-trace-conjecture-integral-domain.md",
+      "ok": true,
+      "id": "QX-P-002268",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "bayesian-security-games-bne.md",
+      "ok": true,
+      "id": "QX-P-002269",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "bing-borsuk-homogeneous-anr-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002270",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "bochner-riesz-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002271",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "bounded-height-polynomials-consecutive-primes.md",
+      "ok": true,
+      "id": "QX-P-002272",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "boyd-mahler-measure-strict-hierarchy.md",
+      "ok": true,
+      "id": "QX-P-002273",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "brennan-bounded-image-spectrum.md",
+      "ok": true,
+      "id": "QX-P-002274",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "butson-fourth-root-hadamard-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002275",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "c2-monotone-lagrangian-torus-classification.md",
+      "ok": true,
+      "id": "QX-P-002276",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "calabi-croke-sphere-systolic-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002277",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "carleson-high-dimensional-convergence.md",
+      "ok": true,
+      "id": "QX-P-002278",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "cayley-graph-hamiltonicity.md",
+      "ok": true,
+      "id": "QX-P-002279",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "cerny-synchronizing-word-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002280",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "cocompact-torsion-generated-hyperbolic-groups.md",
+      "ok": true,
+      "id": "QX-P-002281",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "colton-refactorable-prime-count-claim.md",
+      "ok": true,
+      "id": "QX-P-002282",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "commutative-auslander-reiten-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002283",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "compact-space-homogeneous-preimage.md",
+      "ok": true,
+      "id": "QX-P-002284",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "composite-repunit-single-zero-prime.md",
+      "ok": true,
+      "id": "QX-P-002285",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "convex-moser-worm-cover-constant.md",
+      "ok": true,
+      "id": "QX-P-002286",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "cramer-prime-gap-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002287",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "de-giorgi-dimension-four.md",
+      "ok": true,
+      "id": "QX-P-002288",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "dean-conjecture-k5.md",
+      "ok": true,
+      "id": "QX-P-002289",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "dedekind-number-10.md",
+      "ok": true,
+      "id": "QX-P-002290",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "determinantal-conjecture-normal-matrices.md",
+      "ok": true,
+      "id": "QX-P-002291",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "diophantine-triple-unique-extension.md",
+      "ok": true,
+      "id": "QX-P-002292",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "dirichlet-divisor-problem.md",
+      "ok": true,
+      "id": "QX-P-002293",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "dixmier-conjecture-dimension-two.md",
+      "ok": true,
+      "id": "QX-P-002294",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "elekes-szabo-triple-lines-cubic-curves.md",
+      "ok": true,
+      "id": "QX-P-002295",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "elliott-halberstam-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002296",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "ellipsoid-packing-density.md",
+      "ok": true,
+      "id": "QX-P-002297",
+      "errors": [],
+      "warnings": [
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "elliptic-divisibility-finite-prime-terms.md",
+      "ok": true,
+      "id": "QX-P-002298",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "emirp-infinitude.md",
+      "ok": true,
+      "id": "QX-P-002299",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "equational-theories-677-implies-255.md",
+      "ok": true,
+      "id": "QX-P-002300",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-100-separated-distances-diameter.md",
+      "ok": true,
+      "id": "QX-P-002301",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-1113-sierpinski-without-finite-cover.md",
+      "ok": true,
+      "id": "QX-P-002302",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-1159-projective-plane-blocking-set.md",
+      "ok": true,
+      "id": "QX-P-002303",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-1160-finite-group-counts.md",
+      "ok": true,
+      "id": "QX-P-002304",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-1169-negative-partition-relation.md",
+      "ok": true,
+      "id": "QX-P-002305",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-1178-sparse-hypergraph-threshold.md",
+      "ok": true,
+      "id": "QX-P-002306",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-1180-inverse-residue-sums.md",
+      "ok": true,
+      "id": "QX-P-002307",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-1184-dickman-short-interval.md",
+      "ok": true,
+      "id": "QX-P-002308",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-125-digit-sumset-upper-density.md",
+      "ok": true,
+      "id": "QX-P-002309",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-200-prime-arithmetic-progressions.md",
+      "ok": true,
+      "id": "QX-P-002310",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-282-greedy-odd-unit-fractions.md",
+      "ok": true,
+      "id": "QX-P-002311",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-340-mian-chowla-growth.md",
+      "ok": true,
+      "id": "QX-P-002312",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-479-graham-power-congruence.md",
+      "ok": true,
+      "id": "QX-P-002313",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-535-constant-pairwise-gcd.md",
+      "ok": true,
+      "id": "QX-P-002314",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-887-divisors-near-square-root.md",
+      "ok": true,
+      "id": "QX-P-002315",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-995-lacunary-strong-law.md",
+      "ok": true,
+      "id": "QX-P-002316",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "erdos-sarkozy-sumset-convolution.md",
+      "ok": true,
+      "id": "QX-P-002317",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "eswarathasan-levine-harmonic-finiteness.md",
+      "ok": true,
+      "id": "QX-P-002318",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "euler-seventh-power-sum-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002319",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "factorial-primes-infinitude.md",
+      "ok": true,
+      "id": "QX-P-002320",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "factorial-separation-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002321",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "fermat-catalan-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002322",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "fermat-catalan-finiteness.md",
+      "ok": true,
+      "id": "QX-P-002323",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "first_published：难度 5 的题要写最早提出的年份"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "field-u-invariant-13.md",
+      "ok": true,
+      "id": "QX-P-002324",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finite-field-four-no-three-collinear.md",
+      "ok": true,
+      "id": "QX-P-002325",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finite-group-scheme-optimal-exponent.md",
+      "ok": true,
+      "id": "QX-P-002326",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finite-group-variety-free-growth-limit.md",
+      "ok": true,
+      "id": "QX-P-002327",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finite-order-unimodular-zero-one-conjugacy.md",
+      "ok": true,
+      "id": "QX-P-002328",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finite-projective-plane-prime-power-order.md",
+      "ok": true,
+      "id": "QX-P-002329",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finite-spectrum-generated-cstar-algebra-dimension.md",
+      "ok": true,
+      "id": "QX-P-002330",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finitely-presented-if-group-classification.md",
+      "ok": true,
+      "id": "QX-P-002331",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "finitely-presented-simple-group-not-two-generated.md",
+      "ok": true,
+      "id": "QX-P-002332",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "five-nonmerging-selfprime-orbits.md",
+      "ok": true,
+      "id": "QX-P-002333",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "four-dimensional-euler-brick.md",
+      "ok": true,
+      "id": "QX-P-002334",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "fourier-restriction-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002335",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "free-q-group-scl-rationality.md",
+      "ok": true,
+      "id": "QX-P-002336",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "gardam-promislow-unit-minimum-support.md",
+      "ok": true,
+      "id": "QX-P-002337",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "goodman-coefficient-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002338",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "green-35-autoconvolution-lower-bound.md",
+      "ok": true,
+      "id": "QX-P-002339",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "green-77-small-triangle-unit-disc.md",
+      "ok": true,
+      "id": "QX-P-002340",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "green-86-integer-dilate-discrepancy.md",
+      "ok": true,
+      "id": "QX-P-002341",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "green-87-permutation-monotonicity.md",
+      "ok": true,
+      "id": "QX-P-002342",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "grigorchuk-group-growth-gap-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002343",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "grimm-conjecture-distinct-prime-divisors.md",
+      "ok": true,
+      "id": "QX-P-002344",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "hajos-five-six-subdivision-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002345",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "handlebody-disc-complex-uniform-hyperbolicity.md",
+      "ok": true,
+      "id": "QX-P-002346",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "harborth-integral-fary-embedding.md",
+      "ok": true,
+      "id": "QX-P-002347",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "hasse-weil-analytic-continuation.md",
+      "ok": true,
+      "id": "QX-P-002348",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "hofer-zehnder-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002349",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "homogeneous-compactum-convergent-sequence.md",
+      "ok": true,
+      "id": "QX-P-002350",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "homogeneous-omega-monolithic-first-countable.md",
+      "ok": true,
+      "id": "QX-P-002351",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "irving-leather-max-stable-matchings.md",
+      "ok": true,
+      "id": "QX-P-002352",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "jackson-bipartite-tournament-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002353",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "jacobson-radical-power-intersection.md",
+      "ok": true,
+      "id": "QX-P-002354",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "jones-polynomial-unknot-detection-verification.md",
+      "ok": true,
+      "id": "QX-P-002355",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "juggler-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002356",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "k-union-closed-weighted-product-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002357",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kakeya-high-dimensional-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002358",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kakeya-local-smoothing-claim.md",
+      "ok": true,
+      "id": "QX-P-002359",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kalai-3d-face-count-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002360",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kaplansky-direct-finiteness-char2-claim.md",
+      "ok": true,
+      "id": "QX-P-002361",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kervaire-126-invariant-one-verification.md",
+      "ok": true,
+      "id": "QX-P-002362",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kotzig-cyclic-tree-decomposition.md",
+      "ok": true,
+      "id": "QX-P-002363",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-100-distinct-powers-ordering.md",
+      "ok": true,
+      "id": "QX-P-002364",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-116-profinite-torsion-finite-exponent.md",
+      "ok": true,
+      "id": "QX-P-002365",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-24-hilbert-modular-amenable-action.md",
+      "ok": true,
+      "id": "QX-P-002366",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-35-mapping-class-hyperbolic-quotient.md",
+      "ok": true,
+      "id": "QX-P-002367",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-37-finite-group-two-subset-factorization.md",
+      "ok": true,
+      "id": "QX-P-002368",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-39-root-adjunction-degree-two-linearity.md",
+      "ok": true,
+      "id": "QX-P-002369",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-42-rf-nonamenable-group-law.md",
+      "ok": true,
+      "id": "QX-P-002370",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-43-uniformly-amenable-common-law-families.md",
+      "ok": true,
+      "id": "QX-P-002371",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-48-partition-p-group-fpfa-exponent.md",
+      "ok": true,
+      "id": "QX-P-002372",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-49-two-generated-same-exponent-subgroup.md",
+      "ok": true,
+      "id": "QX-P-002373",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-67-brauer-block-defect-derived-length.md",
+      "ok": true,
+      "id": "QX-P-002374",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-71a-two-card-types-vertex-orbits.md",
+      "ok": true,
+      "id": "QX-P-002375",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-77-boundedly-generated-residually-finite-linear.md",
+      "ok": true,
+      "id": "QX-P-002376",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-78-qian-codegree-conjecture-claimed.md",
+      "ok": true,
+      "id": "QX-P-002377",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-80-p-character-monomial-solvable-claimed.md",
+      "ok": true,
+      "id": "QX-P-002378",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-81-finite-group-class-baer-suzuki-width.md",
+      "ok": true,
+      "id": "QX-P-002379",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-82-isospectral-recognizable-socle-quotient.md",
+      "ok": true,
+      "id": "QX-P-002380",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-84-class-three-fifth-dimension-subgroup.md",
+      "ok": true,
+      "id": "QX-P-002381",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-86-p-elements-sylow-inequality.md",
+      "ok": true,
+      "id": "QX-P-002382",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-89-almost-engel-elements-subgroup.md",
+      "ok": true,
+      "id": "QX-P-002383",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-20-99-disjoint-cosets-index-gcd.md",
+      "ok": true,
+      "id": "QX-P-002384",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-138-surface-group-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002385",
+      "errors": [],
+      "warnings": [
+        "疑似重复，已写进 provenance.possible_duplicates，请人工确认"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": [
+          "finitely-presented-if-group-classification.md"
+        ]
+      }
+    },
+    {
+      "draft": "kourovka-21-143-thompson-f-automatic.md",
+      "ok": true,
+      "id": "QX-P-002386",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-144-brin-sapir-subgroup-dichotomy.md",
+      "ok": true,
+      "id": "QX-P-002387",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-146-finiteness-type-embeddings.md",
+      "ok": true,
+      "id": "QX-P-002388",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-22-hopfian-wreath-products.md",
+      "ok": true,
+      "id": "QX-P-002389",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-35-verbal-subgroup-p-nilpotency.md",
+      "ok": true,
+      "id": "QX-P-002390",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-36-tdlc-kropholler-profinite-extensions.md",
+      "ok": true,
+      "id": "QX-P-002391",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-45-finitely-presented-simple-three-generators.md",
+      "ok": true,
+      "id": "QX-P-002392",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-46-finitely-presented-simple-cohomological-dimension.md",
+      "ok": true,
+      "id": "QX-P-002393",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-47-finitely-presented-self-direct-product.md",
+      "ok": true,
+      "id": "QX-P-002394",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-59-almost-simple-character-degrees.md",
+      "ok": true,
+      "id": "QX-P-002395",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-72-amenable-tarski-monsters.md",
+      "ok": true,
+      "id": "QX-P-002396",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-78-pro-p-cohomology-finite-generation.md",
+      "ok": true,
+      "id": "QX-P-002397",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-79-left-orderable-all-elements-distorted.md",
+      "ok": true,
+      "id": "QX-P-002398",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-83-metabelian-permutation-stability.md",
+      "ok": true,
+      "id": "QX-P-002399",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "kourovka-21-84-sl-nz-flexible-permutation-stability.md",
+      "ok": true,
+      "id": "QX-P-002400",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "lang-trotter-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002401",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "large-exotic-four-ball-existence.md",
+      "ok": true,
+      "id": "QX-P-002402",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "large-steiner-system-small-parameters.md",
+      "ok": true,
+      "id": "QX-P-002403",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "lennon-pittel-stable-matching-concentration.md",
+      "ok": true,
+      "id": "QX-P-002404",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "leopoldt-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002405",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "littlewood-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002406",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "littlewood-polynomial-asymptotic-flatness.md",
+      "ok": true,
+      "id": "QX-P-002407",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "lovasz-hamiltonian-path-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002408",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "malle-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002409",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "mandelbrot-local-connectivity.md",
+      "ok": true,
+      "id": "QX-P-002410",
+      "errors": [],
+      "warnings": [
+        "difficulty：难度 5 只给提出 30 年以上的著名猜想；不是的话改为 4。如果 first_published 写的是证明声明的年份，在 difficulty_note 里写明问题本身是哪一年提出的"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "manifold-sheaves-model-category.md",
+      "ok": true,
+      "id": "QX-P-002411",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "meyniel-cop-number-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002412",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "mills-constant-transcendence.md",
+      "ok": true,
+      "id": "QX-P-002413",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "minimal-prime-base17-f19-family.md",
+      "ok": true,
+      "id": "QX-P-002414",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "moll-p-adic-valuation-asymptotic.md",
+      "ok": true,
+      "id": "QX-P-002415",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "monochromatic-quantum-graph-n8-d3.md",
+      "ok": true,
+      "id": "QX-P-002416",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "morley-rank-faithful-irreducible-actions.md",
+      "ok": true,
+      "id": "QX-P-002417",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "moser-telescoping-rectangle-covering.md",
+      "ok": true,
+      "id": "QX-P-002418",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "moser-telescoping-rectangle-packing.md",
+      "ok": true,
+      "id": "QX-P-002419",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "multiplicative-persistence-bound-11.md",
+      "ok": true,
+      "id": "QX-P-002420",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "nagata-plane-curves-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002421",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "nagell-ljunggren-repunit-perfect-powers.md",
+      "ok": true,
+      "id": "QX-P-002422",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "nearby-lagrangian-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002423",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "no-complete-disjoint-conop-pair.md",
+      "ok": true,
+      "id": "QX-P-002424",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "non-sheaf-infinity-topos-existence.md",
+      "ok": true,
+      "id": "QX-P-002425",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "oberwolfach-problem-all-odd-orders.md",
+      "ok": true,
+      "id": "QX-P-002426",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "odd-primitive-abundant-central-divisor-sums.md",
+      "ok": true,
+      "id": "QX-P-002427",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "one-relator-groups-haagerup.md",
+      "ok": true,
+      "id": "QX-P-002428",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "p-equals-bpp-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002429",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "parkin-shanks-partition-parity-density.md",
+      "ok": true,
+      "id": "QX-P-002430",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "perfect-cuboid-existence.md",
+      "ok": true,
+      "id": "QX-P-002431",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "petersen-coloring-counterexample-claim.md",
+      "ok": true,
+      "id": "QX-P-002432",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "petty-equidistant-set-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002433",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "pfister-pythagoras-number-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002434",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "pi-thousand-consecutive-zeroes.md",
+      "ok": true,
+      "id": "QX-P-002435",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "pierce-birkhoff-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002436",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "pillai-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002437",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "planar-falconer-distance-proof-verification.md",
+      "ok": true,
+      "id": "QX-P-002438",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "point-charge-equilibria-polynomial-bound.md",
+      "ok": true,
+      "id": "QX-P-002439",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "polycirculant-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002440",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "poset-product-dimension-loss-two.md",
+      "ok": true,
+      "id": "QX-P-002441",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "positive-characteristic-local-uniformization.md",
+      "ok": true,
+      "id": "QX-P-002442",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "positive-characteristic-resolution-of-singularities.md",
+      "ok": true,
+      "id": "QX-P-002443",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "pyjama-set-double-exponential-bound.md",
+      "ok": true,
+      "id": "QX-P-002444",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "pythagorean-partition-regularity.md",
+      "ok": true,
+      "id": "QX-P-002445",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "quaternion-moat-bounded-walk.md",
+      "ok": true,
+      "id": "QX-P-002446",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "raag-bestvina-brady-kernel-dehn-lower-bound.md",
+      "ok": true,
+      "id": "QX-P-002447",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "raag-standard-rips-contractibility.md",
+      "ok": true,
+      "id": "QX-P-002448",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "rado-boundedness-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002449",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "ramsey-r3-10-exact-value.md",
+      "ok": true,
+      "id": "QX-P-002450",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "real-projective-second-eigenvalue-sharp-bound.md",
+      "ok": true,
+      "id": "QX-P-002451",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "reflexive-banach-nonexpansive-fixed-point-claim.md",
+      "ok": true,
+      "id": "QX-P-002452",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "regular-tetrahedron-packing-density.md",
+      "ok": true,
+      "id": "QX-P-002453",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "riemann-zeta-density-hypothesis.md",
+      "ok": true,
+      "id": "QX-P-002454",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "riemann-zeta-sixth-moment-asymptotic.md",
+      "ok": true,
+      "id": "QX-P-002455",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "rowland-gcd-all-odd-primes.md",
+      "ok": true,
+      "id": "QX-P-002456",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "s4-symplectohomeomorphic-atlas.md",
+      "ok": true,
+      "id": "QX-P-002457",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "schanuel-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002458",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "schinzel-hypothesis-h.md",
+      "ok": true,
+      "id": "QX-P-002459",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "schur-six-exact-value.md",
+      "ok": true,
+      "id": "QX-P-002460",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "semi-magic-square-distinct-cubes.md",
+      "ok": true,
+      "id": "QX-P-002461",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "short-interval-prime-poisson-limit.md",
+      "ok": true,
+      "id": "QX-P-002462",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "sierpinski-5-n-egyptian-fractions.md",
+      "ok": true,
+      "id": "QX-P-002463",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "skew-hadamard-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002464",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 special_or_weaker 的线索，结论应为 partial_result",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "sl2-laurent-ring-finite-generation.md",
+      "ok": true,
+      "id": "QX-P-002465",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "sl3z-coherence.md",
+      "ok": true,
+      "id": "QX-P-002466",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "small-cohen-macaulay-modules.md",
+      "ok": true,
+      "id": "QX-P-002467",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "smith-longest-cycles-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002468",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "smooth-four-dimensional-poincare-conjecture-claim.md",
+      "ok": true,
+      "id": "QX-P-002469",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "smooth-four-dimensional-poincare-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002470",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "difficulty：难度 5 只给提出 30 年以上的著名猜想；不是的话改为 4。如果 first_published 写的是证明声明的年份，在 difficulty_note 里写明问题本身是哪一年提出的"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "smooth-four-dimensional-schoenflies-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002471",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "## 原文摘录：最后一行最好写上作者、出处和链接",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "stolz-witten-genus-positive-ricci.md",
+      "ok": true,
+      "id": "QX-P-002472",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "strong-rudin-squares-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002473",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "tarski-exponential-field-decidability.md",
+      "ok": true,
+      "id": "QX-P-002474",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "tetration-diagonal-sum-prime-uniqueness.md",
+      "ok": true,
+      "id": "QX-P-002475",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "thomassen-connected-line-graph-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002476",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "thompson-group-f-amenability-verification.md",
+      "ok": true,
+      "id": "QX-P-002477",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "three-prime-reciprocal-dirichlet-nonvanishing.md",
+      "ok": true,
+      "id": "QX-P-002478",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "toronto-space-problem.md",
+      "ok": true,
+      "id": "QX-P-002479",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "tournament-anti-sidorenko-trees.md",
+      "ok": true,
+      "id": "QX-P-002480",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "truncated-octahedron-proof-claim.md",
+      "ok": true,
+      "id": "QX-P-002481",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "two-point-chowla-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002482",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "u-invariant-fifteen-existence.md",
+      "ok": true,
+      "id": "QX-P-002483",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "unforced-3d-navier-stokes-global-smoothness.md",
+      "ok": true,
+      "id": "QX-P-002484",
+      "errors": [],
+      "warnings": [
+        "difficulty：难度 5 只给提出 30 年以上的著名猜想；不是的话改为 4。如果 first_published 写的是证明声明的年份，在 difficulty_note 里写明问题本身是哪一年提出的"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "unit-distance-exponent-problem.md",
+      "ok": true,
+      "id": "QX-P-002485",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "unit-square-perimeter-area-supremum.md",
+      "ok": true,
+      "id": "QX-P-002486",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "universal-poset-minimum-order.md",
+      "ok": true,
+      "id": "QX-P-002487",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "valiant-matrix-rigidity-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002488",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "vaught-conjecture-countable-models.md",
+      "ok": true,
+      "id": "QX-P-002489",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "vizing-planar-delta-six.md",
+      "ok": true,
+      "id": "QX-P-002490",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "waldschmidt-en-modulo-one-lower-bound.md",
+      "ok": true,
+      "id": "QX-P-002491",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "weak-tiling-proper-tiling-problem-4-2.md",
+      "ok": true,
+      "id": "QX-P-002492",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "weighing-matrix-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002493",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "weighted-union-closed-elementary-symmetric.md",
+      "ok": true,
+      "id": "QX-P-002494",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "whitehead-asphericity-conjecture.md",
+      "ok": true,
+      "id": "QX-P-002495",
+      "errors": [],
+      "warnings": [
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "wowii-372-two-path-claim.md",
+      "ok": true,
+      "id": "QX-P-002496",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "wowii-61-induced-forest-residue-diameter.md",
+      "ok": true,
+      "id": "QX-P-002497",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "wowii-conjecture-199-hamiltonian-path.md",
+      "ok": true,
+      "id": "QX-P-002498",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "z-product-type-f-finiteness-implication.md",
+      "ok": true,
+      "id": "QX-P-002499",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "zeta-five-irrationality-verification.md",
+      "ok": true,
+      "id": "QX-P-002500",
+      "errors": [],
+      "warnings": [
+        "difficulty：难度 5 只给提出 30 年以上的著名猜想；不是的话改为 4。如果 first_published 写的是证明声明的年份，在 difficulty_note 里写明问题本身是哪一年提出的",
+        "## 原文摘录：最后一行最好写上作者、出处和链接"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "zeta-seven-irrationality.md",
+      "ok": true,
+      "id": "QX-P-002501",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有 claim_unverified 的线索，结论应为 claimed_solution，题放验证轨道",
+        "difficulty：难度 5 只给提出 30 年以上的著名猜想；不是的话改为 4。如果 first_published 写的是证明声明的年份，在 difficulty_note 里写明问题本身是哪一年提出的"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "zeta-simple-zero-proportion-improvement.md",
+      "ok": true,
+      "id": "QX-P-002502",
+      "errors": [],
+      "warnings": [],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    },
+    {
+      "draft": "zfc-weakly-first-countable-compactum.md",
+      "ok": true,
+      "id": "QX-P-002503",
+      "errors": [],
+      "warnings": [
+        "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inconclusive",
+        "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记"
+      ],
+      "possible_duplicates": {
+        "bank": [],
+        "batch": []
+      }
+    }
+  ],
+  "summary": {
+    "difficulty": {
+      "3": 8,
+      "4": 190,
+      "5": 43
+    },
+    "track_status": {
+      "open:open": 57,
+      "open:partially_solved": 151,
+      "verify:claimed": 33
+    },
+    "legend": [
+      {
+        "id": "QX-P-002263",
+        "title": "abc 猜想：互素 a+b=c 的根基上界"
+      },
+      {
+        "id": "QX-P-002271",
+        "title": "高维 Bochner–Riesz 猜想：临界指标以上的 Lp 乘子有界性"
+      },
+      {
+        "id": "QX-P-002279",
+        "title": "Cayley 图 Hamilton 圈猜想：有限连通无向 Cayley 图是否都有 Hamilton 圈"
+      },
+      {
+        "id": "QX-P-002280",
+        "title": "Černý 猜想：同步自动机的最短复位字长度"
+      },
+      {
+        "id": "QX-P-002287",
+        "title": "Cramér 猜想：相邻素数间隙是否为 O((log p_n)^2)？"
+      },
+      {
+        "id": "QX-P-002288",
+        "title": "四维 De Giorgi 单调解刚性命题的 2026 预印本声称是否成立"
+      },
+      {
+        "id": "QX-P-002293",
+        "title": "狄利克雷除数问题：余项能否达到 x 的四分之一次幂"
+      },
+      {
+        "id": "QX-P-002296",
+        "title": "Elliott–Halberstam 猜想：素数在等差数列中的近满水平平均分布"
+      },
+      {
+        "id": "QX-P-002322",
+        "title": "Fermat–Catalan 猜想：变化指数下互素幂和的有限性"
+      },
+      {
+        "id": "QX-P-002323",
+        "title": "费马–卡塔兰方程的幂三元组是否只有有限多个"
+      },
+      {
+        "id": "QX-P-002329",
+        "title": "每个有限射影平面的阶都是素数幂吗？"
+      },
+      {
+        "id": "QX-P-002335",
+        "title": "Fourier 限制猜想：非零高斯曲率超曲面的高维非 L² 范围"
+      },
+      {
+        "id": "QX-P-002348",
+        "title": "任意数域上椭圆曲线的哈塞–韦伊 L 级数能否解析延拓到全复平面"
+      },
+      {
+        "id": "QX-P-002355",
+        "title": "归一化 Jones 多项式识别平凡结：核验 2026 Carmi–Cohen 证明声称"
+      },
+      {
+        "id": "QX-P-002358",
+        "title": "高维 Kakeya 猜想：n≥4 时挂谷集具有满 Minkowski 维数 n"
+      },
+      {
+        "id": "QX-P-002359",
+        "title": "全维 Kakeya 集合猜想的 2026 年局部光滑化证明声称"
+      },
+      {
+        "id": "QX-P-002362",
+        "title": "126 维 Kervaire 不变量为 1 的光滑闭标架流形是否存在？"
+      },
+      {
+        "id": "QX-P-002405",
+        "title": "Leopoldt 猜想：任意数域和素数的 p 进调节子非零"
+      },
+      {
+        "id": "QX-P-002406",
+        "title": "Littlewood 猜想：任意两个实数的乘法同时逼近"
+      },
+      {
+        "id": "QX-P-002408",
+        "title": "每个有限连通顶点传递简单图是否都有哈密顿路"
+      },
+      {
+        "id": "QX-P-002410",
+        "title": "曼德博集合是否局部连通"
+      },
+      {
+        "id": "QX-P-002421",
+        "title": "Nagata 猜想的 2026 年证明核验：复射影平面曲线的严格度数—多重性不等式"
+      },
+      {
+        "id": "QX-P-002423",
+        "title": "附近拉格朗日猜想：核验 2026-09-23 的高维反例声称"
+      },
+      {
+        "id": "QX-P-002429",
+        "title": "确定性多项式时间是否等于有界误差概率多项式时间"
+      },
+      {
+        "id": "QX-P-002431",
+        "title": "完美长方体是否存在"
+      },
+      {
+        "id": "QX-P-002437",
+        "title": "Pillai 猜想：固定非零差的两完全幂只有有限多组表示"
+      },
+      {
+        "id": "QX-P-002443",
+        "title": "正特征完美域上任意维数整概形的奇点消解是否存在光滑真双有理模型"
+      },
+      {
+        "id": "QX-P-002453",
+        "title": "正四面体一般最密堆积的精确密度"
+      },
+      {
+        "id": "QX-P-002454",
+        "title": "验证黎曼 ζ 密度假设：Alpöge 的 RH 证明能否给出均匀指数 2"
+      },
+      {
+        "id": "QX-P-002458",
+        "title": "复指数下 Schanuel 猜想是否成立"
+      },
+      {
+        "id": "QX-P-002459",
+        "title": "Schinzel 假设 H：有限个本原不可约整多项式同时无穷多次取素值"
+      },
+      {
+        "id": "QX-P-002469",
+        "title": "光滑四维 Poincaré 猜想：每个闭光滑同伦四球面都与标准 S^4 微分同胚"
+      },
+      {
+        "id": "QX-P-002470",
+        "title": "四维光滑庞加莱猜想：同伦等价于四维球面的光滑流形是否必与它微分同胚"
+      },
+      {
+        "id": "QX-P-002471",
+        "title": "光滑四维 Schoenflies 猜想：S^3 光滑嵌入 S^4 的两侧都是光滑四球面"
+      },
+      {
+        "id": "QX-P-002474",
+        "title": "实指数域的完整一阶理论是否可判定"
+      },
+      {
+        "id": "QX-P-002477",
+        "title": "Thompson 群 F 的可均性：核验 2026 年非可均证明声称"
+      },
+      {
+        "id": "QX-P-002482",
+        "title": "两点 Chowla 猜想：固定不同平移的 Liouville 普通相关和"
+      },
+      {
+        "id": "QX-P-002484",
+        "title": "三维无外力不可压纳维–斯托克斯方程是否对光滑初值总有全局光滑解"
+      },
+      {
+        "id": "QX-P-002485",
+        "title": "平面单位距离数指数：求 limsup log u(n)/log n 的精确值"
+      },
+      {
+        "id": "QX-P-002489",
+        "title": "Vaught 猜想是否排除介于可数与连续统之间的可数模型数"
+      },
+      {
+        "id": "QX-P-002495",
+        "title": "Whitehead asphericity conjecture：二维 aspherical CW 复形的连通子复形是否仍 aspherical"
+      },
+      {
+        "id": "QX-P-002500",
+        "title": "ζ(5) 是否无理：核验 2026 Fauzan 预印本及 Lean 形式化"
+      },
+      {
+        "id": "QX-P-002501",
+        "title": "黎曼 ζ 函数在 7 处的值是否无理"
+      }
+    ],
+    "warnings": {
+      "novelty.result：有打不开的关键原文；如果它可能回答了本题，结论应为 inco": 108,
+      "## 原文摘录：最后一行最好写上作者、出处和链接": 36,
+      "novelty.result：有 claim_unverified 的线索，结论应为 cl": 21,
+      "novelty.result：有 special_or_weaker 的线索，结论应为 p": 16,
+      "人工确认：与同一出处的另一道题不是同一题，已去掉疑似重复标记": 11,
+      "difficulty：难度 5 只给提出 30 年以上的著名猜想；不是的话改为 4": 5,
+      "first_published：难度 5 的题要写最早提出的年份": 1,
+      "疑似重复，已写进 provenance.possible_duplicates，请人工确认": 1
+    },
+    "dropped_drafts": {
+      "qunxing-card-drafts-2026-11-24-batch6/meyniel-cop-number-conjecture.md": "同名草稿有两份，保留更完整的那份",
+      "qunxing-card-drafts-2026-11-25-batch14/tarski-exponential-decidability.md": "与 tarski-exponential-field-decidability 是同一题，保留更完整的那份",
+      "qunxing-card-drafts-2026-11-25-batch9/rado-boundedness-conjecture.md": "同名草稿有两份，保留更完整的那份",
+      "群星题卡草稿-2026-11-25-第七批/thompson-f-automaticity.md": "与 kourovka-21-143-thompson-f-automatic 是同一题，保留带 Kourovka 编号的那份"
+    },
+    "possible_duplicates_confirmed": [
+      [
+        "QX-P-002331",
+        "QX-P-002385"
+      ]
+    ],
+    "not_duplicates_cleared": "6 对同一出处的不同题，人工确认后去掉了疑似重复标记，见各题的 warnings"
+  }
+}
