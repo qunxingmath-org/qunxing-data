@@ -1,0 +1,554 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.qunxingmath.org/schema/qunxing.novelty-handoff-2.schema.json",
+  "title": "查新回传 qunxing.novelty-handoff/2（固定结构，由取值表生成）",
+  "description": "每题一行。标签字段只写取值表里的写法，细节写进 note / scope_note。字段名固定，不要换成 status、verdict、result、actual_request 之类。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "batch_id",
+    "id",
+    "card_rev",
+    "checked_at",
+    "search_summary",
+    "math_results",
+    "queries",
+    "evidence",
+    "duplicates",
+    "card_actions",
+    "pending"
+  ],
+  "properties": {
+    "schema": {
+      "const": "qunxing.novelty-handoff/2"
+    },
+    "batch_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^QX-P-\\d{6}$"
+    },
+    "card_rev": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{16}$"
+    },
+    "checked_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        {
+          "const": ""
+        }
+      ]
+    },
+    "search_summary": {
+      "enum": [
+        "仅批量筛选",
+        "只做了批量筛选",
+        "定向核查",
+        "当前版定向核查",
+        "旧版仅供参考",
+        "旧版记录不可迁移",
+        "旧版记录，仅供参考",
+        "未启动",
+        "逐题深查达标",
+        "逐题粗查有缺口",
+        "逐题粗查达标",
+        "逐题粗查，有缺口"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 400,
+      "description": "一两句话的人读总结"
+    },
+    "math_results": {
+      "type": "array",
+      "minItems": 1,
+      "contains": {
+        "type": "object",
+        "properties": {
+          "subquestion": {
+            "const": "主问题"
+          }
+        },
+        "required": [
+          "subquestion"
+        ]
+      },
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "subquestion",
+          "math_status"
+        ],
+        "properties": {
+          "subquestion": {
+            "type": "string",
+            "minLength": 1,
+            "description": "主问题必须单独一行，写\"主问题\""
+          },
+          "math_status": {
+            "enum": [
+              "主问题状态待定",
+              "仅特例",
+              "仅特例/条件性结果/实质进展",
+              "原题已反驳",
+              "原题已推翻",
+              "原题已证",
+              "原题已证明",
+              "完整反例声明",
+              "完整声明待核",
+              "完整证明/反例声明待核",
+              "完整证明声明",
+              "完整证明或反例声明待核",
+              "实质进展",
+              "已知独立于公理",
+              "已知独立性",
+              "已知算法不可判定",
+              "已知算法不可判定性",
+              "无法判定",
+              "暂未找到可验证结果",
+              "有人声称已推翻",
+              "有人声称已解决",
+              "有人声称已证明",
+              "有冲突",
+              "有部分进展",
+              "未作判断",
+              "未评估",
+              "本次范围未发现确证",
+              "条件性结果",
+              "来源互相矛盾",
+              "现有材料无法判定",
+              "部分进展",
+              "题面有误",
+              "题面错误",
+              "题面错误或缺条件"
+            ]
+          },
+          "scope_note": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "route",
+          "site",
+          "query",
+          "date",
+          "outcome"
+        ],
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "description": "同一次请求给多道题共用时，各题写同一个编号"
+          },
+          "route": {
+            "anyOf": [
+              {
+                "enum": [
+                  "代码、公开 AI 和社区",
+                  "原题与出处",
+                  "学术",
+                  "库内查重"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^其他：.+"
+              }
+            ]
+          },
+          "site": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "outcome": {
+            "enum": [
+              "不适用",
+              "仅摘要",
+              "仅标题",
+              "仅标题/索引或摘要",
+              "仅标题、索引或摘要",
+              "全文不可访问",
+              "原文已阅且同题",
+              "原文已阅但范围不同",
+              "命中但同一性待定",
+              "命中已排除",
+              "工具失败",
+              "执行无命中",
+              "未执行",
+              "权限",
+              "档案或版本缺失",
+              "限流",
+              "限流或权限"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "result_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "shared_with": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^QX-P-\\d{6}$"
+            }
+          },
+          "match_reason": {
+            "type": "string",
+            "description": "共用请求时，这道题的命中理由"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "locator",
+          "version",
+          "subquestions",
+          "scope_match"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1,
+            "description": "arXiv 版本、日期或提交号"
+          },
+          "subquestions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "role": {
+            "enum": [
+              "勘误",
+              "原始提出",
+              "反例",
+              "完整证明",
+              "形式化",
+              "撤回",
+              "撤回/勘误",
+              "最早可核实出处",
+              "目前最早可核实出处",
+              "证书",
+              "进展",
+              "重述"
+            ]
+          },
+          "publication": {
+            "enum": [
+              "PR",
+              "个人索引",
+              "二手索引",
+              "代码仓库",
+              "代码仓库或 PR",
+              "作者主页",
+              "作者主页/个人索引",
+              "原始档案",
+              "正式刊发",
+              "社区帖子",
+              "项目报告",
+              "预印本"
+            ]
+          },
+          "scope_match": {
+            "enum": [
+              "严格蕴含",
+              "仅子问",
+              "仅某子问",
+              "原题等价",
+              "同源不同问",
+              "尚未确认",
+              "有附加假设",
+              "特例"
+            ]
+          },
+          "claim_state": {
+            "enum": [
+              "公开声称",
+              "关键步骤受质疑",
+              "完全撤回",
+              "完整稿已取得",
+              "已取得完整稿",
+              "无声明",
+              "有修订",
+              "部分撤回"
+            ]
+          },
+          "review_status": {
+            "enum": [
+              "仅核关键步骤",
+              "已有独立数学复核",
+              "已读未核关键步骤",
+              "已读，未核关键步骤",
+              "未读全文",
+              "本轮独立数学核对",
+              "核对发现漏洞",
+              "核过关键步骤",
+              "群星本轮独立数学核对"
+            ]
+          },
+          "formal_status": {
+            "enum": [
+              "仅有形式化题面或骨架",
+              "他人声称已形式化验证",
+              "只有形式化题面",
+              "复跑仅覆盖部分",
+              "复跑受阻",
+              "复跑只覆盖一部分",
+              "复跑失败",
+              "复跑遇阻",
+              "已取得代码未检查",
+              "已取得代码未重跑",
+              "已拿到代码，未检查",
+              "已静态检查未复跑",
+              "已静态检查，未复跑",
+              "未检到形式化",
+              "未检索",
+              "未检索形式化",
+              "本轮独立复跑通过",
+              "第三方独立复跑通过",
+              "群星独立复跑通过"
+            ]
+          },
+          "claimant": {
+            "type": "string"
+          },
+          "claim_date": {
+            "type": "string"
+          },
+          "rerun": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [],
+            "properties": {
+              "commit": {
+                "type": "string"
+              },
+              "theorem": {
+                "type": "string"
+              },
+              "toolchain": {
+                "type": "string"
+              },
+              "command": {
+                "type": "string"
+              },
+              "log_url": {
+                "type": "string"
+              },
+              "cache": {
+                "type": "string"
+              },
+              "axioms": {
+                "type": "string"
+              }
+            }
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "duplicates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "other_id",
+          "other_card_rev",
+          "relation",
+          "reason"
+        ],
+        "properties": {
+          "other_id": {
+            "type": "string",
+            "pattern": "^QX-P-\\d{6}$"
+          },
+          "other_card_rev": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{16}$"
+          },
+          "relation": {
+            "enum": [
+              "严格同题",
+              "主卡/验证卡",
+              "仅相似",
+              "同意图但残缺",
+              "同源不同问",
+              "同题",
+              "弱化",
+              "强化",
+              "强化或弱化",
+              "待定",
+              "待核",
+              "特例",
+              "特例/强化",
+              "相关但不等价"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "positions": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [],
+            "properties": {
+              "self": {
+                "type": "string"
+              },
+              "other": {
+                "type": "string"
+              }
+            }
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "card_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "action"
+        ],
+        "properties": {
+          "action": {
+            "enum": [
+              "修复公式",
+              "修正人话版",
+              "关联验证卡",
+              "建议主卡",
+              "建议修订",
+              "暂不改卡",
+              "补声明",
+              "补最早出处",
+              "补条件量词",
+              "补进展",
+              "补进展/声明",
+              "补量词",
+              "调整数学状态",
+              "题面纠错"
+            ]
+          },
+          "field": {
+            "type": "string"
+          },
+          "old": {
+            "type": "string"
+          },
+          "new": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "small_case_check": {
+            "type": "string",
+            "description": "改题面时：用小例或空对象试过的结果"
+          }
+        }
+      }
+    },
+    "pending": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "next_step"
+        ],
+        "properties": {
+          "route": {
+            "anyOf": [
+              {
+                "enum": [
+                  "代码、公开 AI 和社区",
+                  "原题与出处",
+                  "学术",
+                  "库内查重"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^其他：.+"
+              }
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "next_step": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

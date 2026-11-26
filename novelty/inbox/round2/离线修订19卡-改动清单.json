@@ -1,0 +1,412 @@
+{
+  "QX-P-000016": {
+    "base_card_rev": "2ddf7e5f4bc4f6b1",
+    "card_rev": "2ddf7e5f4bc4f6b1",
+    "old_math_status": "open",
+    "current_math_status": "solved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://users.renyi.hu/~furedi/PUBS3/furedi_118_seress_Maximal-triangle%E2%80%90free-graphs-with-restrictions-on-the-degrees.pdf",
+        "locator": "Füredi–Seress, J. Graph Theory 18 (1994), Example 2.2、Lemma 2.4",
+        "role": "progress"
+      }
+    ],
+    "change": "Füredi–Seress 1994 Example 2.2 与 Lemma 2.4 给出 $f(n)=O(\\sqrt n)$；直径 2 的度数计数 $n\\le1+\\Delta^2$ 给出反向界。因此本卡问的增长阶为 $\\Theta(\\sqrt n)$，发散问题答案为否；不等于已证明精确渐近主项 $f(n)\\sim\\sqrt n$。",
+    "formal_verification": null,
+    "repository_path": "problems/000/QX-P-000016.meta.json"
+  },
+  "QX-P-000019": {
+    "base_card_rev": "11d02a92b20f628a",
+    "card_rev": "2f6b480acaa3362a",
+    "old_math_status": "open",
+    "current_math_status": "proved",
+    "scope": "固定模数版（含奇偶）；增长模数不在范围内",
+    "evidence": [
+      {
+        "url": "https://doi.org/10.1006/jnth.1998.2351",
+        "locator": "Kolountzakis 1999（作者稿 arXiv:math/9808061，Theorem 2 与 Remarks）",
+        "role": "progress"
+      },
+      {
+        "url": "https://arxiv.org/abs/math/9808061",
+        "locator": "Kolountzakis 作者稿 Theorem 2",
+        "role": "progress"
+      }
+    ],
+    "change": "固定模数下答案为是。Kolountzakis Theorem 2 得每个剩余类内 $|A|/m+o(|A|)$ 个元素；对和的剩余类数作循环卷积得到有序表示数 $|A|^2/m+o(|A|^2)$。Sidon 性使无序和互异；对角线修正至多 $|A|$，故比例趋于 $1/m$。这里不声称任意增长的模数也满足该结论。",
+    "formal_verification": null,
+    "repository_path": "problems/000/QX-P-000019.meta.json"
+  },
+  "QX-P-000066": {
+    "base_card_rev": "ab770e61983c1fe7",
+    "card_rev": "ab770e61983c1fe7",
+    "old_math_status": "open",
+    "current_math_status": "disproved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/2603.29127v5",
+        "locator": "作者预印本 v5 §6 及 Open Problem 2",
+        "role": "progress"
+      },
+      {
+        "url": "https://github.com/minamominamoto/c4free-hypercube/blob/main/q8_odd_square_682.json",
+        "locator": "682 边证书 edges；本轮独立枚举 1792 个方形",
+        "role": "progress"
+      }
+    ],
+    "change": "等式 $ex(Q_8,C_4)=680$ 为假。公开构造有 682 条互不重复的合法超立方体边；本次独立枚举全部 1792 个方形，未发现四边俱在的方形。因此 $ex(Q_8,C_4)\\ge682$；这没有确定精确值。",
+    "formal_verification": {
+      "label": "本轮独立执行普通精确计算",
+      "scope": "核反例证书，非 Lean，非整体最优性"
+    },
+    "repository_path": "problems/000/QX-P-000066.meta.json"
+  },
+  "QX-P-000202": {
+    "base_card_rev": "e90e532de0c42ad4",
+    "card_rev": "e90e532de0c42ad4",
+    "old_math_status": "open",
+    "current_math_status": "disproved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://link.springer.com/article/10.1007/s00453-025-01318-8",
+        "locator": "Algorithmica 87 (2025), 1199–1221, §3.1 Lemma 5",
+        "role": "progress"
+      }
+    ],
+    "change": "否。Feghali–Lucke–Paulusma–Ries 2025 Lemma 5 对每个 $g\\ge3$ 构造围长至少 $g$ 的 14 正则图且无匹配割；取 $k=15$，平均度 14 小于 15，反驳原题。这个推论不依赖复杂性假设。",
+    "formal_verification": null,
+    "repository_path": "problems/000/QX-P-000202.meta.json"
+  },
+  "QX-P-000319": {
+    "base_card_rev": "090f3cd2e646731c",
+    "card_rev": "0092eaffb83b1392",
+    "old_math_status": "partially_solved",
+    "current_math_status": "disproved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://www.openproblemgarden.org/op/circular_flow_numbers_of_r_graphs",
+        "locator": "Open Problem Garden 原题及 r-图定义",
+        "role": "original"
+      },
+      {
+        "url": "https://doi.org/10.1002/jgt.22746",
+        "locator": "J. Graph Theory 99 (2022), 399–413, Theorem 3.4、Corollary 3.5",
+        "role": "progress"
+      },
+      {
+        "url": "https://arxiv.org/abs/2001.02484",
+        "locator": "作者稿 Theorem 3.4、Corollary 3.5",
+        "role": "progress"
+      }
+    ],
+    "change": "Theorem 3.4、Corollary 3.5 给出奇 $p\\ge3$ 的 $(4p+1)$-正则 class 1 反例，$\\phi_c>2+1/p$。此类图的边分为 $4p+1$ 个完美匹配，每个奇割至少穿过每个匹配一次，故满足原题；取 $t=2p$。",
+    "formal_verification": null,
+    "repository_path": "problems/000/QX-P-000319.meta.json"
+  },
+  "QX-P-000486": {
+    "base_card_rev": "53cd5d1e52ddd2fe",
+    "card_rev": "f94be76f1d949116",
+    "old_math_status": "open",
+    "current_math_status": "disproved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2312.05240v2",
+        "locator": "Gardam, Theorem A、§2、显式单位与无挠群",
+        "role": "progress"
+      },
+      {
+        "url": "https://arxiv.org/src/2312.05240v2/anc/verify_complex_unit.sage",
+        "locator": "Gardam v2 补充复算文件",
+        "role": "progress"
+      }
+    ],
+    "change": "Gardam v2 Theorem A 给出无挠 Promislow 群在 $\\mathbb C[P]$ 中的非平凡单位，显式系数可取在 $\\mathbb Q(\\zeta_8)$。QX-05 回传另以整数四元组和稀疏仿射群环复算，报告两侧乘积均为 1。这足以反驳特征 0 域及特征不等于 2 的全称断言，不表示在 $\\mathbb Q$ 或 $\\mathbb Z$ 上已得反例；复算也不等于 Lean 核验。",
+    "formal_verification": {
+      "label": "另一查新会话报告普通精确复算",
+      "scope": "未在本次汇总复跑，非 Lean"
+    },
+    "repository_path": "problems/000/QX-P-000486.meta.json"
+  },
+  "QX-P-000493": {
+    "base_card_rev": "cd10054696f75a90",
+    "card_rev": "cd10054696f75a90",
+    "old_math_status": "open",
+    "current_math_status": "disproved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/abs/math/9803030",
+        "locator": "Burdzy–Werner, Ann. Math. 149 (1999), Theorem 1",
+        "role": "progress"
+      }
+    ],
+    "change": "对当前不加几何条件的命题，Burdzy–Werner 1999 Theorem 1 给出两孔有界连通平面区域，第二 Neumann 特征函数严格最大值位于内部。因此字面命题为否；光滑单连通域、凸域等是必须分开评估的版本。",
+    "formal_verification": null,
+    "repository_path": "problems/000/QX-P-000493.meta.json"
+  },
+  "QX-P-000506": {
+    "base_card_rev": "182bdbe6afba8a16",
+    "card_rev": "182bdbe6afba8a16",
+    "old_math_status": "open",
+    "current_math_status": "disproved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://doi.org/10.1016/j.ejc.2008.09.014",
+        "locator": "Eur. J. Combin. 30 (2009), 1101–1113, Theorem 3.8",
+        "role": "progress"
+      },
+      {
+        "url": "https://users.fmf.uni-lj.si/klavzar/preprints/PackChrInf.pdf",
+        "locator": "作者稿 pp.7–8, Theorem 3.8",
+        "role": "progress"
+      }
+    ],
+    "change": "对普通最近邻格图，每个 $d\\ge3$ 都有 $\\chi_\\rho(\\mathbb Z^d)=\\infty$。Fiala–Klavžar–Lidický 2009 Theorem 3.8 证明 $P_2\\square\\mathbb Z^2$ 已不能有限 packing 染色；它等距嵌入 $\\mathbb Z^d$，任何格图有限染色都可限制到该子图。",
+    "formal_verification": null,
+    "repository_path": "problems/000/QX-P-000506.meta.json"
+  },
+  "QX-P-001720": {
+    "base_card_rev": "f90bcf44a6eaf6ab",
+    "card_rev": "62bd66fb0aac8d2d",
+    "old_math_status": "open",
+    "current_math_status": "open",
+    "scope": "题面校准及排除边界；未查全主命题",
+    "evidence": [
+      {
+        "url": "https://math.stackexchange.com/questions/3800570/is-the-frog-game-solvable-in-the-root-of-a-full-binary-tree",
+        "locator": "Math.SE #3800570，Question 段",
+        "role": "original"
+      }
+    ],
+    "change": "原帖指定完美二叉树及 $h\\ne2$。本轮复跑高度 2 的 7 点状态：允许根出发有 401 状态，禁止根出发有 177 状态；两种均不能聚根。高度 2 原已排除，不是反例。原帖另提 $h\\ge4$ 时每个顶点可解，为更强问题。",
+    "formal_verification": null,
+    "repository_path": "problems/001/QX-P-001720.meta.json"
+  },
+  "QX-P-001900": {
+    "base_card_rev": "fa5b702e827f8dcc",
+    "card_rev": "20a387a5da315568",
+    "old_math_status": "open",
+    "current_math_status": "open",
+    "scope": "原始问题定位与变体分离",
+    "evidence": [
+      {
+        "url": "https://mathoverflow.net/questions/516975/does-the-theory-of-rx-eventually-stabilise",
+        "locator": "MathOverflow #516975，题文及 Wojowu 评论",
+        "role": "original"
+      }
+    ],
+    "change": "原帖明确上述量词与系数环。每次数只允许有限项是另一个定义；由于单一元素只使用可数变量，该变体可用变量置换和 Tarski–Vaught 从 $\\aleph_1$ 起稳定，不能推出原题。原帖的 $R_\\eta$ 例展示稳定阈值依赖 $R$，并不否定固定 $R$ 后存在阈值。",
+    "formal_verification": null,
+    "repository_path": "problems/001/QX-P-001900.meta.json"
+  },
+  "QX-P-002122": {
+    "base_card_rev": "688217d6ab1f36cf",
+    "card_rev": "0b78954e2d815801",
+    "old_math_status": "open",
+    "current_math_status": "independent",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://math.stackexchange.com/questions/3040258",
+        "locator": "Math.SE #3040258 原问",
+        "role": "original"
+      },
+      {
+        "url": "https://shelah.logic.at/files/199195/675.pdf#page=14",
+        "locator": "Shelah 1997，Conclusion 3.4、Proposition 3.6",
+        "role": "progress"
+      },
+      {
+        "url": "https://doi.org/10.4064/fm-85-2-177-183",
+        "locator": "Davies 1974：逐点有限项变体",
+        "role": "progress"
+      }
+    ],
+    "change": "对普通逐点收敛、无正则性的版本，答案相对独立于 ZFC。Shelah 1997 Conclusion 3.4、Proposition 3.6：MA($\\sigma$-centered) 模型中所有函数可表示；添加 $\\aleph_2$ 个 Cohen 实数的模型中有不可表示的函数。Davies 的逐点有限非零项版本另行记载。",
+    "formal_verification": null,
+    "repository_path": "problems/002/QX-P-002122.meta.json"
+  },
+  "QX-P-002416": {
+    "base_card_rev": "79d1f3c4b6d2e947",
+    "card_rev": "79d1f3c4b6d2e947",
+    "old_math_status": "partially_solved",
+    "current_math_status": "claimed",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://github.com/google-deepmind/formal-conjectures/pull/6627",
+        "locator": "PR #6627，外部复跑者报告与锁定依赖",
+        "role": "formalization"
+      },
+      {
+        "url": "https://arxiv.org/html/2611.26300v1",
+        "locator": "Krenn 等，Table I、outlook、ref. 36",
+        "role": "progress"
+      }
+    ],
+    "change": "Rajasekaran 的固定提交 FullProof.lean/no_solution_three 声称任意偶数 $N\\ge6$ 时任意复边权和端点着色的 $D=3$ 完整否定结果。PR #6627 中独立复跑者报告固定 Lean 4.33.1、使用官方 Mathlib 缓存，仅标准公理；本次未复跑，PR 仍待合并。Krenn 等自己证明的是 $D\\ge N$，不能替代这项 $D=3$ 外部证据。",
+    "formal_verification": {
+      "label": "第三方独立复跑通过（见报告；本轮未执行）",
+      "scope": "D=3、偶数 N≥6、复权，固定提交及有缓存流程"
+    },
+    "repository_path": "problems/002/QX-P-002416.meta.json"
+  },
+  "QX-P-002421": {
+    "base_card_rev": "d982814cfdda59a3",
+    "card_rev": "452b9d37960e342a",
+    "old_math_status": "claimed",
+    "current_math_status": "claimed",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2610.30050v1#S1",
+        "locator": "Tevelev v1 Theorem A",
+        "role": "progress"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.41931v1#S6.SS6",
+        "locator": "Bruce v1 Lemma 6.17 及 Theorem D",
+        "role": "progress"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openai/math/f5702854040e97fa7675c21ba37a9608f5f92dd3/lean/docs/039.md",
+        "locator": "OpenAI 项目形式化范围报告",
+        "role": "formalization"
+      }
+    ],
+    "change": "Tevelev Theorem A 给出等重数结论；Bruce Lemma 6.17 给出严格的范围转换，Theorem D 直接采用任意重数。OpenAI 项目报告已形式化；本次未独立重跑，不将其记为独立通过。",
+    "formal_verification": {
+      "label": "他人声称已形式化验证",
+      "scope": "OpenAI 项目报告；本轮未独立复跑"
+    },
+    "repository_path": "problems/002/QX-P-002421.meta.json"
+  },
+  "QX-P-002440": {
+    "base_card_rev": "ef4511c9c9e2e7a0",
+    "card_rev": "ef4511c9c9e2e7a0",
+    "old_math_status": "partially_solved",
+    "current_math_status": "claimed",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2607.23423v2",
+        "locator": "Freedman–Lee v2, Theorem 1.3、Corollary 1.5、Computational Propositions 4.1–4.2",
+        "role": "progress"
+      },
+      {
+        "url": "https://arxiv.org/html/2611.21894v1#S3.SS12",
+        "locator": "Harper 综述 Example 3.39",
+        "role": "survey"
+      }
+    ],
+    "change": "Freedman–Lee v2 Theorem 1.3、Corollary 1.5 以及 Computational Propositions 4.1–4.2 给出 16,464 点的特定忠实传递 2-闭 elusive 作用，并给出 7 张全自同构群为该作用的连通无向顶点传递图。Harper 综述 Example 3.39 将猜想记为被否证；本次未重跑公开 Magma 计算，不主张规模最小，也不外推同一抽象群的其他作用。",
+    "formal_verification": {
+      "label": "公开反例及第二来源采录",
+      "scope": "Magma 计算未独立重跑，不是 Lean 声明"
+    },
+    "repository_path": "problems/002/QX-P-002440.meta.json"
+  },
+  "QX-P-002450": {
+    "base_card_rev": "3feec8d7d253342f",
+    "card_rev": "3feec8d7d253342f",
+    "old_math_status": "partially_solved",
+    "current_math_status": "partially_solved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v32i4p30",
+        "locator": "Angeltveit, Theorem 1（2025 正刊）",
+        "role": "progress"
+      },
+      {
+        "url": "https://unsolvedlab.com/problems/ramsey-r310",
+        "locator": "Unsolved Lab，部分对称类、度数和结构排除",
+        "role": "novelty"
+      }
+    ],
+    "change": "已刊界仍为 $40\\le R(3,10)\\le41$。构造合格的 40 点图定值 41；完整排除定值 40。Unsolved Lab 项目报告的局部排除不覆盖所有 40 点图，本轮未重跑 DRAT 证书。",
+    "formal_verification": null,
+    "repository_path": "problems/002/QX-P-002450.meta.json"
+  },
+  "QX-P-000127": {
+    "base_card_rev": "c71ad2ade7c63575",
+    "card_rev": "ed3dd0b15075cadf",
+    "old_math_status": "open",
+    "current_math_status": "claimed",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/PlanarPacking/Main.lean#L32",
+        "locator": "OpenAI math, Main.lean: sharp_fourier_certificate",
+        "role": "formalization"
+      }
+    ],
+    "change": "原卡把 Fourier 符号写反，还与 $\\widehat f(0)>0$ 自相矛盾。OpenAI 固定提交 Main.lean 的 sharp_fourier_certificate 声明径向 Schwartz 证书，使用 Fourier 非负条件。已定位声明，未独立复跑其代码与尺度换算的全部证明，不据此补记“独立形式化通过”。",
+    "formal_verification": {
+      "label": "他人声称已形式化验证",
+      "scope": "OpenAI 固定提交；本轮读取定理陈述，未独立复跑"
+    },
+    "repository_path": "problems/000/QX-P-000127.meta.json"
+  },
+  "QX-P-001420": {
+    "base_card_rev": "6205bb3dfc1cac8b",
+    "card_rev": "6205bb3dfc1cac8b",
+    "old_math_status": "open",
+    "current_math_status": "disproved",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/1903.03917v3",
+        "locator": "Lan–Hu–Sun 作者稿 Theorem 1.1、1.3",
+        "role": "progress"
+      },
+      {
+        "url": "https://doi.org/10.1007/s10959-020-01000-5",
+        "locator": "J. Theor. Probab. 正刊 Theorem 1.1",
+        "role": "progress"
+      }
+    ],
+    "change": "否。Lan–Hu–Sun 论文 Theorem 1.1：取含相互独立标准正态起点与非原子子 $\\sigma$-域的概率空间，可构造三个固定子 $\\sigma$-域及选取顺序，迭代甚至不依概率收敛，故不可能在 $L^2$ 中收敛。纯原子空间的正面定理是另一范围。",
+    "formal_verification": null,
+    "repository_path": "problems/001/QX-P-001420.meta.json"
+  },
+  "QX-P-001440": {
+    "base_card_rev": "2f27668ed071600f",
+    "card_rev": "2f27668ed071600f",
+    "old_math_status": "open",
+    "current_math_status": "disproved",
+    "scope": "本卡公式；直接有限反例",
+    "evidence": [],
+    "change": "字面公式可直接反驳：取 $n=5,k=3$ 和数组 $(-2,-2,-2,3,3)$，总和为 0。三个数的和非负恰在选两个 3 再选任一个 −2 时发生，共 3 个；而公式给 $\\binom43=4$。故 $A(5,3)\\le3<4$。这不反驳 $n\\ge4k$ 的 Manickam–Miklós–Singhi 命题，也不证明其余参数的最优值。",
+    "formal_verification": null,
+    "repository_path": "problems/001/QX-P-001440.meta.json"
+  },
+  "QX-P-002080": {
+    "base_card_rev": "284ef83bf653d0c9",
+    "card_rev": "284ef83bf653d0c9",
+    "old_math_status": "solved",
+    "current_math_status": "open",
+    "scope": "主问题",
+    "evidence": [
+      {
+        "url": "https://bwuebben.github.io/papers/exotic-four-manifolds/",
+        "locator": "Wuebben 作者页 2026-10-21 修订，Abstract 明确撤回单连通断言",
+        "role": "progress"
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.17267",
+        "locator": "同一稿件 arXiv 版本历史",
+        "role": "progress"
+      }
+    ],
+    "change": "撤下旧 “solved” 标记。Wuebben 2026-10-21 修订说明明确撤回由错误群关系推出填充后单连通的断言，且说明最终填充问题仍未解决。此线索不能作为 exotic $S^2\\times S^2$ 已构造的证据；也不等于能证明它不存在。",
+    "formal_verification": null,
+    "repository_path": "problems/002/QX-P-002080.meta.json"
+  }
+}

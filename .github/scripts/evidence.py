@@ -135,15 +135,27 @@ class Vocab:
     def raw(self, dim, item):
         return pick(item, *(self.dims[dim].get('fields') or [dim])) if dim in self.dims else None
 
+    def lookup(self, dim, item):
+        """按 fields 的顺序逐个字段找，第一个认得出的取值算数。返回 (代号, 写了的原文列表)。"""
+        found = []
+        for f in (self.dims[dim].get('fields') or [dim]) if dim in self.dims else []:
+            v = item.get(f)
+            if v in (None, '', []) or isinstance(v, dict):
+                continue
+            for x in (v if isinstance(v, list) else [v]):
+                found.append(x)
+                c = self.code(dim, x)
+                if c:
+                    return c, found
+        return None, found
+
     def item_code(self, dim, item):
         """一条记录在这个维度上的代号：没写用 item_default；认不出时 unknown 是代号就用它。"""
-        r = self.raw(dim, item)
-        if r is None:
+        c, found = self.lookup(dim, item)
+        if c:
+            return c
+        if not found:
             return (self.dims.get(dim) or {}).get('item_default')
-        for x in (r if isinstance(r, list) else [r]):
-            c = self.code(dim, x)
-            if c:
-                return c
         u = self.dims[dim].get('unknown', 'quarantine')
         return u if u in self.values[dim] else None
 
@@ -207,6 +219,7 @@ class Bank:
             for x in rm.get('removed', []):
                 self.removed[x['id']] = f'这张题卡 {rm.get("date", "")} 已删除：{rm.get("decision", "")}'
         self.docs, self.orig, self.unknown = {}, {}, Counter()
+        self.assume_schema = False
 
     def doc(self, pid):
         if pid not in self.docs:
@@ -320,12 +333,15 @@ def compute(doc, card, vc, batch=None):
                                     'routes': routes}
 
         # 数学结论：每个子问取最近一批的说法；闭合状态先当"提议"，二审后才算数
-        main = {norm(x) for x in vc.dims['math_status'].get('main_subquestion') or []} | {''}
+        msd = vc.dims['math_status']
+        main = {norm(x) for x in msd.get('main_subquestion') or []} | {''}
+        patterns = [re.compile(x) for x in msd.get('main_patterns') or []]
         closed = vc.flagged('math_status', 'closed')
         mains = {}
         for m in sorted(recs['math_results'], key=lambda m: order[m['batch_id']]):
-            sub = str(m.get('subquestion') or '').strip()
-            k = '' if re.sub(r'\s+', '', sub) in main or (norm(sub) and norm(sub) in main) else sub  # '(a)' 去掉括号是空串
+            sub = str(pick(m, *(msd.get('subquestion_fields') or ['subquestion'])) or '').strip()
+            compact = re.sub(r'\s+', '', sub)
+            k = '' if compact in main or (norm(sub) and norm(sub) in main) or any(p.search(compact) for p in patterns) else sub
             v = m['codes'].get('math_status') or vc.default('math_status')
             prev = latest.get(k)
             if prev and prev[0]['batch_id'] == m['batch_id'] and vc.rank('math_status', prev[1]) >= vc.rank('math_status', v):
@@ -333,6 +349,19 @@ def compute(doc, card, vc, batch=None):
             latest[k] = (m, v)
             if not k:
                 mains[m['batch_id']] = v
+        if '' not in latest and latest:
+            # 没有单独的主问题结论：按子问保守推出，只会排除、不会结案（取值表 math_status 的 note）
+            codes = [v for _, v in latest.values()]
+            stmt, claims = vc.flagged('math_status', 'statement_problem'), vc.flagged('math_status', 'claim') | closed
+            if any(c in stmt for c in codes):
+                derived = vc.rule('math_status', 'derive_statement')
+            elif any(c in claims for c in codes):
+                derived = vc.rule('math_status', 'derive_pending')
+            else:
+                derived = max(codes, key=lambda c: vc.rank('math_status', c))
+            newest = max((m for m, _ in latest.values()), key=lambda m: order[m['batch_id']])
+            s['math_status'] = {'value': derived, 'as_of': when[newest['batch_id']], 'basis': ['derived:subquestions'],
+                                'note': '没有单独的主问题结论，按子问保守推出'}
         if '' in latest:
             m, v = latest['']
             s['math_status'] = {'value': vc.get('math_status', v, 'pending_as', v), 'as_of': when[m['batch_id']],
@@ -432,11 +461,15 @@ def parse_row(raw, bank):
     if not isinstance(r, dict):
         return None, ['不是 JSON 对象']
     errs = []
+    if r.get('schema') is None and bank.assume_schema:
+        r['schema'] = HANDOFF
     if r.get('schema') != HANDOFF:
         errs.append(f'schema 不是 {HANDOFF}')
     for k in ('batch_id', 'id', 'card_rev'):
         if not isinstance(r.get(k), str) or not r[k].strip():
             errs.append(f'缺 {k}')
+    if isinstance(r.get('search_summary'), dict):  # 有的回传把覆盖写成对象，级别在 depth 里；原样另存
+        r['search_summary_detail'], r['search_summary'] = r['search_summary'], r['search_summary'].get('depth') or ''
     for k in LISTS:
         v = r.get(k) or []
         if not isinstance(v, list):
@@ -458,12 +491,11 @@ def parse_row(raw, bank):
         if dim in vc.facets or not d.get('from'):
             continue
         for it in [r] if d['from'] == 'row' else r.get(d['from']) or []:
-            raw = vc.raw(dim, it)
-            for x in [] if raw is None else raw if isinstance(raw, list) else [raw]:
-                if vc.code(dim, x) is None:
-                    bank.unknown[(dim, str(x))] += 1
-                    if d.get('unknown', 'quarantine') == 'quarantine':
-                        errs.append(f'{d.get("zh", dim)}的取值不认识：{x}')
+            c, found = vc.lookup(dim, it)
+            if found and c is None:
+                bank.unknown[(dim, str(found[0])[:60])] += 1
+                if d.get('unknown', 'quarantine') == 'quarantine':
+                    errs.append(f'{d.get("zh", dim)}的取值不认识：{str(found[0])[:60]}')
     for e in r['evidence']:
         if vc.raw('scope_match', e) is None and (vc.raw('formal_evidence', e) or vc.raw('claim_state', e)):
             bank.unknown[('scope_match', '（没写）')] += 1
@@ -611,6 +643,7 @@ def cmd_import(args):
     if args.ids and sum(not f.lower().endswith('.md') for f in args.files) > 1:
         sys.exit('--ids 只配一个回传文件')
     bank = Bank(args.data, args.vocab)
+    bank.assume_schema = args.assume_schema
     expected = set(Path(args.ids).read_text(encoding='utf-8').split()) if args.ids else None
     total = Counter()
     for src in map(Path, args.files):
@@ -760,6 +793,68 @@ def cmd_check(args):
     sys.exit(1 if errors else 0)
 
 
+def labels(vc, dim):
+    """取值表里一类取值能用的写法：中文名和别名。"""
+    return sorted({v['zh'] for v in vc.values[dim].values() if v.get('zh')} |
+                  {a for v in vc.values[dim].values() for a in v.get('aliases') or []})
+
+
+def handoff_schema(vc):
+    """查新回传的固定结构（经验总结第 7 条）。取值都从取值表来，取值表改了重新生成。"""
+    S = lambda **k: {'type': 'string', **k}  # noqa: E731
+    E = lambda dim: {'enum': labels(vc, dim)}  # noqa: E731
+    obj = lambda props, req: {'type': 'object', 'additionalProperties': False, 'required': req, 'properties': props}  # noqa: E731
+    date, rev, pid = S(pattern=r'^\d{4}-\d{2}-\d{2}$'), S(pattern='^[0-9a-f]{16}$'), S(pattern=r'^QX-P-\d{6}$')
+    route = {'anyOf': [E('route'), S(pattern='^其他：.+')]}
+    strs = {'type': 'array', 'items': {'type': 'string'}}
+    return {
+        '$schema': 'https://json-schema.org/draft/2020-12/schema',
+        '$id': 'https://www.qunxingmath.org/schema/qunxing.novelty-handoff-2.schema.json',
+        'title': '查新回传 qunxing.novelty-handoff/2（固定结构，由取值表生成）',
+        'description': '每题一行。标签字段只写取值表里的写法，细节写进 note / scope_note。字段名固定，不要换成 status、verdict、result、actual_request 之类。',
+        **obj({
+            'schema': {'const': HANDOFF}, 'batch_id': S(minLength=1), 'id': pid, 'card_rev': rev,
+            'checked_at': {'anyOf': [date, {'const': ''}]}, 'search_summary': E('search_coverage'),
+            'summary': S(maxLength=400, description='一两句话的人读总结'),
+            'math_results': {'type': 'array', 'minItems': 1,
+                             'contains': {'type': 'object', 'properties': {'subquestion': {'const': '主问题'}}, 'required': ['subquestion']},
+                             'items': obj({'subquestion': S(minLength=1, description='主问题必须单独一行，写"主问题"'),
+                                           'math_status': E('math_status'), 'scope_note': S(), 'evidence_ids': strs},
+                                          ['subquestion', 'math_status'])},
+            'queries': {'type': 'array', 'items': obj({
+                'request_id': S(description='同一次请求给多道题共用时，各题写同一个编号'), 'route': route, 'site': S(), 'query': S(),
+                'date': date, 'outcome': E('query_outcome'), 'url': S(), 'locator': S(), 'result_count': {'type': 'integer', 'minimum': 0},
+                'shared_with': {'type': 'array', 'items': pid}, 'match_reason': S(description='共用请求时，这道题的命中理由'), 'note': S()},
+                ['route', 'site', 'query', 'date', 'outcome'])},
+            'evidence': {'type': 'array', 'items': obj({
+                'evidence_id': S(), 'url': S(minLength=1), 'locator': S(minLength=1), 'version': S(minLength=1, description='arXiv 版本、日期或提交号'),
+                'subquestions': strs, 'role': E('role'), 'publication': E('publication'), 'scope_match': E('scope_match'),
+                'claim_state': E('claim_state'), 'review_status': E('claim_review'), 'formal_status': E('formal_evidence'),
+                'claimant': S(), 'claim_date': S(), 'rerun': obj({'commit': S(), 'theorem': S(), 'toolchain': S(), 'command': S(),
+                                                                  'log_url': S(), 'cache': S(), 'axioms': S()}, []),
+                'note': S()}, ['url', 'locator', 'version', 'subquestions', 'scope_match'])},
+            'duplicates': {'type': 'array', 'items': obj({
+                'other_id': pid, 'other_card_rev': rev, 'relation': E('duplicate_relation'), 'reason': S(minLength=1),
+                'positions': obj({'self': S(), 'other': S()}, []), 'note': S()}, ['other_id', 'other_card_rev', 'relation', 'reason'])},
+            'card_actions': {'type': 'array', 'items': obj({
+                'action': E('card_action'), 'field': S(), 'old': S(), 'new': S(), 'reason': S(), 'evidence_ids': strs,
+                'small_case_check': S(description='改题面时：用小例或空对象试过的结果')}, ['action'])},
+            'pending': {'type': 'array', 'items': obj({'route': route, 'reason': S(), 'next_step': S(minLength=1)}, ['next_step'])},
+        }, ['schema', 'batch_id', 'id', 'card_rev', 'checked_at', 'search_summary', 'math_results', 'queries', 'evidence',
+            'duplicates', 'card_actions', 'pending']),
+    }
+
+
+def cmd_handoff_schema(args):
+    vc = Bank(args.data, args.vocab).vc if args.data else Vocab(args.vocab or HERE.parent / 'qunxing.vocab-1.json')
+    text = json.dumps(handoff_schema(vc), ensure_ascii=False, indent=2) + '\n'
+    if args.out:
+        put(Path(args.out), text)
+        print(f'已写入 {args.out}')
+    else:
+        print(text, end='')
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description='群星证据文件：生成和重算、导入查新回传、二审、人工改状态和分类、检查')
     sub = ap.add_subparsers(dest='cmd', required=True)
@@ -775,6 +870,7 @@ def main(argv=None):
     a.add_argument('files', nargs='+')
     a.add_argument('--ids', help='这批应有的题号清单，空白分隔')
     a.add_argument('--replace', action='store_true', help='同一批改过以后重新导入：先删掉这批原来的记录')
+    a.add_argument('--assume-schema', action='store_true', help='回传行没写 schema 时当作 qunxing.novelty-handoff/2（旧交付用）')
     a.add_argument('--check', action='store_true', help='试导：只报结果，不写')
     a = cmd('review', '列出待二审的结案提议；或记一条二审结论')
     a.add_argument('id', nargs='?')
@@ -791,12 +887,17 @@ def main(argv=None):
     a.add_argument('--note')
     a.add_argument('--basis', nargs='*', help='依据：链接、commit 等')
     a.add_argument('--check', action='store_true', help='只检查，不写')
+    a = sub.add_parser('handoff-schema', help='按取值表生成查新回传的 JSON Schema（交给查新 GPT 用）')
+    a.add_argument('--data', help='qunxing-data 的目录；不写就用 --vocab 或契约里的取值表')
+    a.add_argument('--vocab')
+    a.add_argument('--out')
     a = cmd('check', '检查全部证据文件：格式、取值、和重算结果是否一致')
     a.add_argument('--skip-schema', action='store_true')
     args = ap.parse_args(argv)
     if args.cmd == 'set':
         args.dimension = args.dimension or args.dimension_opt
-    {'sync': cmd_sync, 'import': cmd_import, 'review': cmd_review, 'set': cmd_set, 'check': cmd_check}[args.cmd](args)
+    {'sync': cmd_sync, 'import': cmd_import, 'review': cmd_review, 'set': cmd_set, 'check': cmd_check,
+     'handoff-schema': cmd_handoff_schema}[args.cmd](args)
 
 
 if __name__ == '__main__':
