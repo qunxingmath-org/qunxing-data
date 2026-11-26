@@ -1,0 +1,559 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.qunxingmath.org/schema/qunxing.evidence-1.schema.json",
+  "title": "群星题目证据文件 qunxing.evidence/1",
+  "description": "每题一个文件，由 evidence.py 生成。这里只管结构；状态和分类有哪些取值，看取值表 qunxing.vocab-1.json。summary、facets 和各条记录的 codes 都是按题卡、回传记录、decisions 和取值表算出来的，不要手改。见 docs/specs/查新与证据状态-设计.md。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "id",
+    "card_rev",
+    "summary",
+    "batches",
+    "math_results",
+    "queries",
+    "evidence",
+    "duplicates",
+    "card_actions",
+    "pending"
+  ],
+  "properties": {
+    "schema": {
+      "const": "qunxing.evidence/1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^QX-P-\\d{6}$"
+    },
+    "card_rev": {
+      "$ref": "#/$defs/rev",
+      "description": "题卡的当前版本；summary 按这个版本算"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "math_status",
+        "formal_evidence",
+        "search_coverage"
+      ],
+      "properties": {
+        "math_status": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "$ref": "#/$defs/code"
+            },
+            "as_of": {
+              "$ref": "#/$defs/date"
+            },
+            "basis": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "reviewed": {
+              "$ref": "#/$defs/reviewed"
+            },
+            "parts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "subquestion",
+                  "value"
+                ],
+                "properties": {
+                  "subquestion": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "$ref": "#/$defs/code"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "math_status_proposed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "batch_id"
+          ],
+          "properties": {
+            "value": {
+              "$ref": "#/$defs/code"
+            },
+            "batch_id": {
+              "type": "string"
+            },
+            "basis": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        },
+        "formal_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "$ref": "#/$defs/code"
+            },
+            "as_of": {
+              "$ref": "#/$defs/date"
+            },
+            "basis": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "reviewed": {
+              "$ref": "#/$defs/reviewed"
+            }
+          }
+        },
+        "search_coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "$ref": "#/$defs/code"
+            },
+            "checked_at": {
+              "$ref": "#/$defs/date"
+            },
+            "basis": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "reviewed": {
+              "$ref": "#/$defs/reviewed"
+            },
+            "routes": {
+              "type": "object",
+              "propertyNames": {
+                "$ref": "#/$defs/code"
+              },
+              "additionalProperties": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "claim": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state"
+          ],
+          "properties": {
+            "state": {
+              "$ref": "#/$defs/code"
+            },
+            "review": {
+              "$ref": "#/$defs/code"
+            },
+            "by": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "basis": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "legacy": {
+          "type": "boolean",
+          "description": "true：没有当前版本的 v2 回传，摘要来自题卡旧字段或旧版本记录，仅供参考"
+        }
+      }
+    },
+    "facets": {
+      "type": "object",
+      "description": "以后加的分类，取值见取值表的 facets",
+      "propertyNames": {
+        "$ref": "#/$defs/code"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "value",
+          "by",
+          "at"
+        ],
+        "properties": {
+          "value": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "by": {
+            "type": "string"
+          },
+          "at": {
+            "$ref": "#/$defs/date"
+          },
+          "note": {
+            "type": "string"
+          },
+          "basis": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "batches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "batch_id",
+          "card_rev",
+          "imported_at"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "card_rev_sent": {
+            "type": "string",
+            "description": "回传里写的旧写法（题面没变、只换了哈希算法）"
+          },
+          "checked_at": {
+            "type": "string"
+          },
+          "imported_at": {
+            "$ref": "#/$defs/date"
+          },
+          "search_summary": {
+            "type": "string",
+            "description": "回传原文"
+          },
+          "codes": {
+            "$ref": "#/$defs/codes"
+          }
+        }
+      }
+    },
+    "math_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "batch_id",
+          "card_rev"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "codes": {
+            "$ref": "#/$defs/codes"
+          },
+          "issue": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "回传原样，另加 batch_id、card_rev 和算出的 codes"
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "batch_id",
+          "card_rev"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "codes": {
+            "$ref": "#/$defs/codes"
+          },
+          "issue": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "回传原样，另加 batch_id、card_rev 和算出的 codes"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "batch_id",
+          "card_rev"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "codes": {
+            "$ref": "#/$defs/codes"
+          },
+          "issue": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "回传原样，另加 batch_id、card_rev 和算出的 codes"
+    },
+    "duplicates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "batch_id",
+          "card_rev"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "codes": {
+            "$ref": "#/$defs/codes"
+          },
+          "issue": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "回传原样，另加 batch_id、card_rev 和算出的 codes"
+    },
+    "card_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "batch_id",
+          "card_rev"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "codes": {
+            "$ref": "#/$defs/codes"
+          },
+          "issue": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "回传原样，另加 batch_id、card_rev 和算出的 codes"
+    },
+    "pending": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "batch_id",
+          "card_rev"
+        ],
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "codes": {
+            "$ref": "#/$defs/codes"
+          },
+          "issue": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "回传原样，另加 batch_id、card_rev 和算出的 codes"
+    },
+    "decisions": {
+      "type": "array",
+      "description": "人工决定（二审、set），只追加",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dimension",
+          "action",
+          "by",
+          "at"
+        ],
+        "properties": {
+          "dimension": {
+            "$ref": "#/$defs/code"
+          },
+          "action": {
+            "enum": [
+              "set",
+              "clear",
+              "accept",
+              "reject"
+            ]
+          },
+          "value": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "card_rev": {
+            "$ref": "#/$defs/rev"
+          },
+          "batch_id": {
+            "type": "string"
+          },
+          "by": {
+            "type": "string"
+          },
+          "at": {
+            "$ref": "#/$defs/date"
+          },
+          "note": {
+            "type": "string"
+          },
+          "basis": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "code": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "取值表里的代号"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}"
+    },
+    "rev": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{16}$"
+    },
+    "codes": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/code"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/code"
+      }
+    },
+    "reviewed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "by",
+        "at"
+      ],
+      "properties": {
+        "by": {
+          "type": "string"
+        },
+        "at": {
+          "$ref": "#/$defs/date"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
