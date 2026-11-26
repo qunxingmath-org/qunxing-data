@@ -10,6 +10,7 @@
 > - 2469 张题卡，全部是**草稿**（card_status = draft）。首批导入 2262 张，2026-11-24 删除了题面有异议的 34 张；2026-11-25 加入 Agent 出的 241 张。
 > - 题面、来源和查新记录来自原包。
 > - 题型、答案形式、MSC 分类、人话版和验收条件由 AI（DeepSeek）补出，经过机器检查，但**未经人工审校**。
+> - 每题有一个证据文件（`evidence/`），记数学结论、形式化、查新覆盖和最强声明四个状态。现在都是由题卡旧字段映射的初值，查新 GPT 的 v2 回传导入以后更新。
 
 ## 目录
 
@@ -19,6 +20,10 @@
 | `problems/000/QX-P-000001.text.md` | 题卡正文：题面、原文摘录、已知结果、边界与约定、证据（CC BY-SA 4.0） |
 | `schema/qunxing.problem-2.schema.json` | 题卡格式（qunxing.problem/2，v2.2），每个字段带中英文说明 |
 | `import/` | 每次批量导入的报告：数量、疑似重复、题面过短、核对不通过 |
+| `evidence/000/QX-P-000001.json` | 每题的证据文件：四个摘要状态、查新记录、人工决定和分类（CC0 1.0）。由脚本生成，不要手改 |
+| `schema/qunxing.vocab-1.json` | 状态和分类的取值表：中英文名、颜色、强弱顺序、查新回传的各种写法 |
+| `schema/qunxing.evidence-1.schema.json` | 证据文件格式（qunxing.evidence/1） |
+| `novelty/` | 查新回传原件、隔离区、待复核清单，见 `novelty/README.md` |
 
 每 1000 张题卡放一个目录。提交题卡的 PR 会自动检查格式（`cards` 工作流）。
 
@@ -82,6 +87,18 @@
   - 21 张开放题的查新里有"有人声称解决、尚未核实"的线索，作者判断不影响开放状态，是否改到验证轨道要人工决定；
   - 108 张有打不开的关键原文；36 张的原文摘录缺出处行。
 
+## 证据文件（2026-11-26）
+
+- **为什么单独放**：已装好的桌面端按打包时的题卡格式校验题库，题卡加字段会让它们更新失败。所以状态和证据放在每题的证据文件里，题卡不动，`card_rev` 不变。
+- **四个状态分开记**：
+  - 数学结论；
+  - 形式化，其中"他人声称已形式化验证"单独一级，和"复跑通过"分开；
+  - 查新覆盖；
+  - 最强声明及其复核情况。
+- **初值**：由题卡的旧字段映射。数学结论：本次范围未发现确证 1930、有部分进展 426、有人声称已证明 98、现有材料无法判定 15；形式化全部是"未检索形式化"；查新覆盖全部是"旧版记录，仅供参考"。
+- **取值都在取值表里**：加状态、改名、加分类，改 `schema/qunxing.vocab-1.json`，再运行 `python3 .github/scripts/evidence.py sync --data .`。
+- **检查**：`cards` 工作流会重算全部证据文件，和文件不一致就报错。
+
 ## 许可
 
 | 内容 | 许可 |
@@ -99,13 +116,15 @@
 - 题面有错：开 Issue，选"题面异议"。
 - 题卡的改动请走 PR，`cards` 和 `checks` 两项检查都要通过。
 - 统计由群星的自动流程生成，请不要直接改。
+- 证据文件由 `.github/scripts/evidence.py` 生成，请不要直接改；查新结果走 `novelty/`，人工二审和改状态用脚本的 `review`、`set`。
 
 ---
 
 **English.** Public data of Qunxing:
 
 - problem cards: natural-language and Lean statements, sources, classification and status;
-- weekly aggregated statistics, published with a two-week delay and without installation IDs.
+- weekly aggregated statistics, published with a two-week delay and without installation IDs;
+- one evidence file per problem (`evidence/`): mathematical status, formal verification, search coverage and the strongest claim, with the underlying search records. Allowed values live in `schema/qunxing.vocab-1.json`.
 
 Licenses:
 

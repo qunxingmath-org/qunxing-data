@@ -1,4 +1,6 @@
 # 题卡检查：每张题卡符合 schema/qunxing.problem-2.schema.json，文件名与 id 一致，有正文和"## 题面"。
+# 证据文件检查：每张题卡有一个证据文件，符合 schema/qunxing.evidence-1.schema.json，取值都在 schema/qunxing.vocab-1.json 里，
+# 并且和按题卡、记录、取值表重算的结果一致。
 # 只读权限；不用第三方 Action；jsonschema 固定版本。
 name: cards
 
@@ -24,3 +26,6 @@ jobs:
 
       - name: 检查题卡
         run: python3 .github/scripts/validate_cards.py schema/qunxing.problem-2.schema.json problems --summary
+
+      - name: 检查证据文件
+        run: python3 .github/scripts/evidence.py check --data .
