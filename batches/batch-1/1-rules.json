@@ -1,0 +1,35 @@
+{
+  "schema": "qunxing.batch-commitment/1",
+  "batch": "batch-1",
+  "step": "1-rules",
+  "date": "2026-11-26",
+  "by": "Claude（群星项目协调）",
+  "rules": [
+    {
+      "file": "projects/qunxing/docs/specs/批次一抽题方案.md",
+      "repo": "1200r3/claude-gpt-collab",
+      "commit": "febeccd2f01aa246b39273db299d10ffa6de0f5a",
+      "sha256": "d400561375392c2aeeb6ba2cbfb991b89aec80162a01f96b794ecfcf7047173c",
+      "note": "抽题方案：抽样框规则 F0–F10、分层、排序、并发时的开题和停止规则、种子规则"
+    },
+    {
+      "file": "projects/qunxing/backend/batch-draw/draw_batch.py",
+      "version": "batch-draw/2",
+      "repo": "1200r3/claude-gpt-collab",
+      "commit": "febeccd2f01aa246b39273db299d10ffa6de0f5a",
+      "sha256": "d4f9faf54b8b4c57d352399a50dff792bac76270c7f1c1b4b4c61ab59efd91bb",
+      "note": "抽题脚本；同样的题库、种子和参数，任何人重跑结果相同"
+    }
+  ],
+  "novelty_queue": {
+    "file": "batches/batch-1/novelty-queue.tsv",
+    "sha256": "50d10b20585395de504e22321fb284b812704fa18f9fb21c35765fb47bc19520",
+    "candidates": 2114,
+    "rule": "候选按 sha256(\"qunxing.batch-1.novelty|\" + 题号) 升序；第二次承诺时只用从头连续查完的那一段（F0）。这份文件是按 qunxing-data 36d1e3e 算的副本，正式以第二次承诺时按规则重算的为准"
+  },
+  "seed_rule": "drand 主网 default 链在 max(T1 + 24 小时, T2 + 10 分钟) 之后的第一轮；T1 是本文件合并进 main 的时间，T2 是 2-snapshot.json 合并进 main 的时间；seed = sha256(\"qunxing.batch-1|\" + randomness)",
+  "next": [
+    "2-snapshot.json：查新导入、查重以后要抽的 qunxing-data 提交号和取值表的 sha256",
+    "3-run-order.json：抽题以后、开第一道题之前，种子、drand 轮次号和 run_order 的 sha256"
+  ]
+}

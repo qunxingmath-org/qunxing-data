@@ -24,6 +24,7 @@
 | `schema/qunxing.vocab-1.json` | 状态和分类的取值表：中英文名、颜色、强弱顺序、查新回传的各种写法 |
 | `schema/qunxing.evidence-1.schema.json` | 证据文件格式（qunxing.evidence/1） |
 | `novelty/` | 查新回传原件、隔离区、待复核清单，见 `novelty/README.md` |
+| `batches/` | 批次一等研究批次的公开承诺（抽题规则、题库快照、题单的哈希），见 `batches/batch-1/README.md` |
 
 每 1000 张题卡放一个目录。提交题卡的 PR 会自动检查格式（`cards` 工作流）。
 
