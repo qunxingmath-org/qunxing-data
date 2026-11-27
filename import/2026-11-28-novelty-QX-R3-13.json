@@ -1,0 +1,30 @@
+{
+  "source": "QX-R3-13_v02.jsonl",
+  "batches": [
+    "QX-R3-13"
+  ],
+  "vocab": "qunxing.vocab-1.json",
+  "rows": 10,
+  "accepted": 10,
+  "updated": 10,
+  "already_imported": 0,
+  "quarantined": 0,
+  "legacy_version": 0,
+  "proposed_closures": 0,
+  "card_actions": 42,
+  "duplicates": 19,
+  "notes": 0,
+  "missing_ids": [],
+  "updated_ids": [
+    "QX-P-000058",
+    "QX-P-000784",
+    "QX-P-000154",
+    "QX-P-000141",
+    "QX-P-001061",
+    "QX-P-000610",
+    "QX-P-000644",
+    "QX-P-001198",
+    "QX-P-000959",
+    "QX-P-001137"
+  ]
+}

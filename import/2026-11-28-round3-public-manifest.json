@@ -1,0 +1,89 @@
+{
+  "schema": "qunxing.public-novelty-import/1",
+  "batch": "round3-v02",
+  "rows": 1210,
+  "files": [
+    {
+      "file": "QX-R3-01_v02.jsonl",
+      "rows": 100,
+      "sha256": "ebf68eb6f7c6c0567170b88463934fd1afeb22e85deb1d1c607921687941de25",
+      "bytes": 2341965
+    },
+    {
+      "file": "QX-R3-02_v02.jsonl",
+      "rows": 100,
+      "sha256": "42f18a396cdfd1a895fb7692bb2b629141b68f91376f11e8a211f69c066c5f82",
+      "bytes": 4342284
+    },
+    {
+      "file": "QX-R3-03_v02.jsonl",
+      "rows": 100,
+      "sha256": "05db7fc2bae21576e7b6cd27fa03dcc9de6880a0596a407d3dc1d06713b326e9",
+      "bytes": 3015902
+    },
+    {
+      "file": "QX-R3-04_v02.jsonl",
+      "rows": 100,
+      "sha256": "e529a8c5dfea327ca7739d49215ade3a5f73a7d226f191cdac069ce14d9e8e89",
+      "bytes": 4847539
+    },
+    {
+      "file": "QX-R3-05_v02.jsonl",
+      "rows": 100,
+      "sha256": "5aa8c182a074f0fc7cfd1689e4dee81f27f33c85f1721b2bf5506ddf27f37e70",
+      "bytes": 2756155
+    },
+    {
+      "file": "QX-R3-06_v02.jsonl",
+      "rows": 100,
+      "sha256": "53e32663433c313dc17fda037ba409e0a380892404ccb64a8bb68594cabb9ffa",
+      "bytes": 1947623
+    },
+    {
+      "file": "QX-R3-07_v02.jsonl",
+      "rows": 100,
+      "sha256": "b519837f3397ec4d4cbceec7813e8fbec160b8976f6ec6d0d9c04f87454ea585",
+      "bytes": 3046916
+    },
+    {
+      "file": "QX-R3-08_v02.jsonl",
+      "rows": 100,
+      "sha256": "9c667d1e15cf6ab127ba7138b63ec38b141691564c664c71394784042529c859",
+      "bytes": 2096006
+    },
+    {
+      "file": "QX-R3-09_v02.jsonl",
+      "rows": 100,
+      "sha256": "c1d7f87cd73ac18f7958d8241896dfe16854da66793bd63140f5f43f3e8f162a",
+      "bytes": 1905687
+    },
+    {
+      "file": "QX-R3-10_v02.jsonl",
+      "rows": 100,
+      "sha256": "14b9cd66fdb915fd06249d30100933715a75443aff786b832b9106c2d0cffce4",
+      "bytes": 2197577
+    },
+    {
+      "file": "QX-R3-11_v02.jsonl",
+      "rows": 100,
+      "sha256": "d1d2f200743c4f49d518efab2329c45ef8e6290732fd296ca6d72c4b493c865e",
+      "bytes": 4513708
+    },
+    {
+      "file": "QX-R3-12_v02.jsonl",
+      "rows": 100,
+      "sha256": "648a8218f99bfbc68ca35a3261e5a6382f3e7d47e2bbb14a23a10a8ab1c13d21",
+      "bytes": 1622521
+    },
+    {
+      "file": "QX-R3-13_v02.jsonl",
+      "rows": 10,
+      "sha256": "79c37c3163906e6934d9643b64d8de903fece0c435e24d807a557efa75ea499f",
+      "bytes": 450111
+    }
+  ],
+  "manifest_sha256": "47e9d71150e8afe2b7494d28d1b9a42535afc551032f54df3a8e86325c4e20dd",
+  "scope": "Sanitized public novelty records only. Original inputs, private proofs, reviews, local paths and private source mappings are retained privately.",
+  "semantics": "Original question IDs, card revisions and structured classifications are preserved. Public citations are retained. Redaction does not independently validate any mathematical claim.",
+  "import_policy": "Existing importer and vocabulary unchanged. Closure proposals require separate review. Problem cards and batch sampling rules unchanged."
+}
